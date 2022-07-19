@@ -1,0 +1,984 @@
+tatal error rate:
+        class   0.384053
+        sex     0.0841258
+        race    0.10534
+person0 error rate:
+        class   0.566667
+        sex     0.333333
+        race    0.233333
+person1 error rate:
+        class   0.578947
+        sex     0.184211
+        race    0.210526
+person2 error rate:
+        class   0.307692
+        sex     0.0384615
+        race    0.0384615
+person3 error rate:
+        class   0.407407
+        sex     0
+        race    0.037037
+person4 error rate:
+        class   0.45
+        sex     0.1
+        race    0
+person5 error rate:
+        class   0.5
+        sex     0.15
+        race    0.1
+person6 error rate:
+        class   0.512821
+        sex     0.0769231
+        race    0.025641
+person7 error rate:
+        class   0.235294
+        sex     0
+        race    0
+person8 error rate:
+        class   0.351351
+        sex     0.027027
+        race    0.0810811
+person9 error rate:
+        class   0.5
+        sex     0.0909091
+        race    0
+person10 error rate:
+        class   0.24
+        sex     0
+        race    0
+person11 error rate:
+        class   0.135135
+        sex     0.027027
+        race    0.0810811
+person12 error rate:
+        class   0.483871
+        sex     0.16129
+        race    0.0645161
+person13 error rate:
+        class   0.444444
+        sex     0.177778
+        race    0.0888889
+person14 error rate:
+        class   0.347826
+        sex     0.0869565
+        race    0.0869565
+person15 error rate:
+        class   0.555556
+        sex     0.111111
+        race    0.296296
+person16 error rate:
+        class   0.2
+        sex     0
+        race    0
+person17 error rate:
+        class   0.576923
+        sex     0.153846
+        race    0.115385
+person18 error rate:
+        class   0.571429
+        sex     0.107143
+        race    0.107143
+person19 error rate:
+        class   0.52381
+        sex     0.142857
+        race    0.428571
+person20 error rate:
+        class   0.526316
+        sex     0.0526316
+        race    0.105263
+person21 error rate:
+        class   0.7
+        sex     0.166667
+        race    0.2
+person22 error rate:
+        class   0.764706
+        sex     0.294118
+        race    0.235294
+person23 error rate:
+        class   0.633333
+        sex     0.1
+        race    0.533333
+person24 error rate:
+        class   0.318182
+        sex     0.181818
+        race    0.0227273
+person25 error rate:
+        class   0.322581
+        sex     0.0322581
+        race    0.193548
+person26 error rate:
+        class   0.533333
+        sex     0.1
+        race    0.166667
+person27 error rate:
+        class   0.361111
+        sex     0
+        race    0.166667
+person28 error rate:
+        class   0.428571
+        sex     0.047619
+        race    0.404762
+person29 error rate:
+        class   0.590909
+        sex     0.0909091
+        race    0.0454545
+person30 error rate:
+        class   0.32
+        sex     0.04
+        race    0.04
+person31 error rate:
+        class   0.384615
+        sex     0.0384615
+        race    0
+person32 error rate:
+        class   0.416667
+        sex     0.125
+        race    0.0416667
+person33 error rate:
+        class   0.289474
+        sex     0
+        race    0.131579
+person34 error rate:
+        class   0.0357143
+        sex     0
+        race    0
+person35 error rate:
+        class   0.333333
+        sex     0.047619
+        race    0
+person36 error rate:
+        class   0.142857
+        sex     0
+        race    0
+person37 error rate:
+        class   0.391304
+        sex     0.26087
+        race    0.0869565
+person38 error rate:
+        class   0.047619
+        sex     0
+        race    0
+person39 error rate:
+        class   0.48
+        sex     0.24
+        race    0.04
+person40 error rate:
+        class   0.222222
+        sex     0.0277778
+        race    0
+person41 error rate:
+        class   0.205882
+        sex     0
+        race    0
+person42 error rate:
+        class   0.15
+        sex     0
+        race    0.15
+person43 error rate:
+        class   0.205128
+        sex     0
+        race    0.102564
+person44 error rate:
+        class   0.47619
+        sex     0.190476
+        race    0
+person45 error rate:
+        class   0.352941
+        sex     0.0294118
+        race    0
+person46 error rate:
+        class   0.142857
+        sex     0.0571429
+        race    0.0571429
+person47 error rate:
+        class   0.52381
+        sex     0.047619
+        race    0.047619
+
+
+bkock:8*8, with weight
+tatal error rate:
+        class   0.351134
+        sex     0.0709583
+        race    0.103146
+person0 error rate:
+        class   0.466667
+        sex     0.0666667
+        race    0.133333
+person1 error rate:
+        class   0.368421
+        sex     0.105263
+        race    0.184211
+person2 error rate:
+        class   0.192308
+        sex     0.0384615
+        race    0
+person3 error rate:
+        class   0.222222
+        sex     0.037037
+        race    0.037037
+person4 error rate:
+        class   0.4
+        sex     0
+        race    0.15
+person5 error rate:
+        class   0.55
+        sex     0.1
+        race    0.1
+person6 error rate:
+        class   0.487179
+        sex     0.0769231
+        race    0.025641
+person7 error rate:
+        class   0.352941
+        sex     0.117647
+        race    0.0588235
+person8 error rate:
+        class   0.351351
+        sex     0
+        race    0.108108
+person9 error rate:
+        class   0.428571
+        sex     0
+        race    0
+person10 error rate:
+        class   0.0769231
+        sex     0
+        race    0
+person11 error rate:
+        class   0.166667
+        sex     0
+        race    0.111111
+person12 error rate:
+        class   0.5625
+        sex     0.1875
+        race    0.03125
+person13 error rate:
+        class   0.377778
+        sex     0.0666667
+        race    0.0666667
+person14 error rate:
+        class   0.26087
+        sex     0.0869565
+        race    0.0869565
+person15 error rate:
+        class   0.555556
+        sex     0.111111
+        race    0.259259
+person16 error rate:
+        class   0.5
+        sex     0.0714286
+        race    0.0714286
+person17 error rate:
+        class   0.555556
+        sex     0.111111
+        race    0.0740741
+person18 error rate:
+        class   0.464286
+        sex     0.0357143
+        race    0.178571
+person19 error rate:
+        class   0.285714
+        sex     0.047619
+        race    0.238095
+person20 error rate:
+        class   0.222222
+        sex     0.0555556
+        race    0
+person21 error rate:
+        class   0.677419
+        sex     0.225806
+        race    0.193548
+person22 error rate:
+        class   0.588235
+        sex     0.176471
+        race    0.176471
+person23 error rate:
+        class   0.6
+        sex     0.1
+        race    0.266667
+person24 error rate:
+        class   0.295455
+        sex     0.159091
+        race    0.0681818
+person25 error rate:
+        class   0.483871
+        sex     0.0645161
+        race    0.129032
+person26 error rate:
+        class   0.5
+        sex     0.2
+        race    0.0666667
+person27 error rate:
+        class   0.361111
+        sex     0.0277778
+        race    0.166667
+person28 error rate:
+        class   0.357143
+        sex     0.119048
+        race    0.309524
+person29 error rate:
+        class   0.5
+        sex     0.136364
+        race    0.0909091
+person30 error rate:
+        class   0.2
+        sex     0
+        race    0.04
+person31 error rate:
+        class   0.2
+        sex     0
+        race    0
+person32 error rate:
+        class   0.4
+        sex     0.08
+        race    0.12
+person33 error rate:
+        class   0.263158
+        sex     0
+        race    0.131579
+person34 error rate:
+        class   0.142857
+        sex     0
+        race    0
+person35 error rate:
+        class   0.047619
+        sex     0
+        race    0
+person36 error rate:
+        class   0.238095
+        sex     0
+        race    0
+person37 error rate:
+        class   0.391304
+        sex     0.217391
+        race    0.0434783
+person38 error rate:
+        class   0.2
+        sex     0
+        race    0.1
+person39 error rate:
+        class   0.423077
+        sex     0.0384615
+        race    0
+person40 error rate:
+        class   0.277778
+        sex     0.0555556
+        race    0.111111
+person41 error rate:
+        class   0.264706
+        sex     0.0588235
+        race    0.0882353
+person42 error rate:
+        class   0.375
+        sex     0.05
+        race    0.375
+person43 error rate:
+        class   0.230769
+        sex     0.0512821
+        race    0.0769231
+person44 error rate:
+        class   0.428571
+        sex     0.238095
+        race    0.047619
+person45 error rate:
+        class   0.323529
+        sex     0.0588235
+        race    0.0294118
+person46 error rate:
+        class   0.0294118
+        sex     0.0294118
+        race    0.0294118
+person47 error rate:
+        class   0.318182
+        sex     0
+        race    0.0454545
+
+
+------------------------------
+
+block:8*8 without weight
+person0 error rate:
+    class0.533333
+    sex0.166667
+    race0.133333
+person1 error rate:
+    class0.552632
+    sex0.157895
+    race0.184211
+person2 error rate:
+    class0.115385=
+    sex0.0384615
+    race0
+person3 error rate:
+    class0.333333
+    sex0.148148
+    race0.111111
+person4 error rate:
+    class0.4
+    sex0
+    race0.15
+person5 error rate:
+    class0.5
+    sex0.05
+    race0.15
+person6 error rate:
+    class0.461538
+    sex0.0512821
+    race0
+person7 error rate:
+    class0.352941
+    sex0.0588235
+    race0.0588235
+person8 error rate:
+    class0.513514
+    sex0.0810811
+    race0.189189
+person9 error rate:
+    class0.428571
+    sex0
+    race0.047619
+person10 error rate:
+    class0.192308
+    sex0.0384615
+    race0
+person11 error rate:
+    class0.138889
+    sex0
+    race0.138889
+person12 error rate:
+    class0.53125
+    sex0.25
+    race0.125
+person13 error rate:
+    class0.333333
+    sex0.0888889
+    race0.0666667
+person14 error rate:
+    class0.434783
+    sex0.217391
+    race0
+person15 error rate:
+    class0.555556
+    sex0.111111
+    race0.259259
+person16 error rate:
+    class0.428571
+    sex0.0714286
+    race0
+person17 error rate:
+    class0.666667
+    sex0.185185
+    race0.037037
+person18 error rate:
+    class0.392857
+    sex0
+    race0.178571
+person19 error rate:
+    class0.238095
+    sex0.047619
+    race0.142857
+person20 error rate:
+    class0.166667
+    sex0.0555556
+    race0
+person21 error rate:
+    class0.677419
+    sex0.354839
+    race0.0322581
+person22 error rate:
+    class0.588235
+    sex0.411765
+    race0.117647
+person23 error rate:
+    class0.533333
+    sex0.0666667
+    race0.4
+person24 error rate:
+    class0.318182
+    sex0.181818
+    race0.0681818
+person25 error rate:
+    class0.419355
+    sex0
+    race0.16129
+person26 error rate:
+    class0.433333
+    sex0.133333
+    race0.0666667
+person27 error rate:
+    class0.361111
+    sex0.0833333
+    race0.194444
+person28 error rate:
+    class0.333333
+    sex0.047619
+    race0.285714
+person29 error rate:
+    class0.590909
+    sex0.136364
+    race0.0909091
+person30 error rate:
+    class0.2
+    sex0
+    race0.04
+person31 error rate:
+    class0.2
+    sex0
+    race0
+person32 error rate:
+    class0.4
+    sex0.04
+    race0.16
+person33 error rate:
+    class0.263158
+    sex0
+    race0.105263
+person34 error rate:
+    class0.178571
+    sex0.0714286
+    race0
+person35 error rate:
+    class0.047619
+    sex0
+    race0
+person36 error rate:
+    class0.285714
+    sex0.047619
+    race0
+person37 error rate:
+    class0.26087
+    sex0.130435
+    race0
+person38 error rate:
+    class0.25
+    sex0
+    race0.05
+person39 error rate:
+    class0.538462
+    sex0.115385
+    race0.0384615
+person40 error rate:
+    class0.333333
+    sex0.0555556
+    race0.111111
+person41 error rate:
+    class0.411765
+    sex0.147059
+    race0
+person42 error rate:
+    class0.275
+    sex0
+    race0.2
+person43 error rate:
+    class0.358974
+    sex0.128205
+    race0.102564
+person44 error rate:
+    class0.380952
+    sex0.190476
+    race0.0952381
+person45 error rate:
+    class0.382353
+    sex0.147059
+    race0
+person46 error rate:
+    class0.176471
+    sex0.0294118
+    race0.0882353
+person47 error rate:
+    class0.454545
+    sex0
+    race0.0454545
+
+----------------------------
+
+block 3*4, with weight
+person0 error rate:
+class0.5
+sex0.0666667
+race0.2
+person1 error rate:
+class0.657895
+sex0.157895
+race0.105263
+person2 error rate:
+class0.5
+sex0.192308
+race0.153846
+person3 error rate:
+class0.37037
+sex0.0740741
+race0.037037
+person4 error rate:
+class0.6
+sex0
+race0.25
+person5 error rate:
+class0.65
+sex0.25
+race0
+person6 error rate:
+class0.769231
+sex0.153846
+race0.0769231
+person7 error rate:
+class0.470588
+sex0.0588235
+race0.235294
+person8 error rate:
+class0.513514
+sex0.0810811
+race0.162162
+person9 error rate:
+class0.52381
+sex0.190476
+race0.047619
+person10 error rate:
+class0.615385
+sex0.153846
+race0.0769231
+person11 error rate:
+class0.416667
+sex0.0277778
+race0.361111
+person12 error rate:
+class0.5625
+sex0.25
+race0.15625
+person13 error rate:
+class0.488889
+sex0.2
+race0.111111
+person14 error rate:
+class0.695652
+sex0.347826
+race0.130435
+person15 error rate:
+class0.444444
+sex0.148148
+race0.148148
+person16 error rate:
+class0.642857
+sex0.142857
+race0.0714286
+person17 error rate:
+class0.740741
+sex0.148148
+race0.148148
+person18 error rate:
+class0.571429
+sex0.107143
+race0.0357143
+person19 error rate:
+class0.380952
+sex0.0952381
+race0.285714
+person20 error rate:
+class0.666667
+sex0.166667
+race0.111111
+person21 error rate:
+class0.83871
+sex0.16129
+race0.290323
+person22 error rate:
+class0.647059
+sex0.294118
+race0.176471
+person23 error rate:
+class0.633333
+sex0.1
+race0.433333
+person24 error rate:
+class0.545455
+sex0.318182
+race0.136364
+person25 error rate:
+class0.548387
+sex0.0322581
+race0.290323
+person26 error rate:
+class0.533333
+sex0.0666667
+race0.0666667
+person27 error rate:
+class0.388889
+sex0.0277778
+race0.305556
+person28 error rate:
+class0.428571
+sex0.190476
+race0.309524
+person29 error rate:
+class0.681818
+sex0.227273
+race0.0454545
+person30 error rate:
+class0.44
+sex0.2
+race0.08
+person31 error rate:
+class0.16
+sex0
+race0
+person32 error rate:
+class0.56
+sex0.04
+race0.16
+person33 error rate:
+class0.605263
+sex0.0526316
+race0.157895
+person34 error rate:
+class0.357143
+sex0.142857
+race0
+person35 error rate:
+class0.142857
+sex0.047619
+race0.047619
+person36 error rate:
+class0.142857
+sex0.047619
+race0
+person37 error rate:
+class0.521739
+sex0.217391
+race0.0869565
+person38 error rate:
+class0.35
+sex0
+race0.15
+person39 error rate:
+class0.576923
+sex0.115385
+race0.230769
+person40 error rate:
+class0.222222
+sex0
+race0.0555556
+person41 error rate:
+class0.5
+sex0.176471
+race0.147059
+person42 error rate:
+class0.45
+sex0.15
+race0.4
+person43 error rate:
+class0.384615
+sex0
+race0.0512821
+person44 error rate:
+class0.285714
+sex0.142857
+race0
+person45 error rate:
+class0.323529
+sex0.0882353
+race0
+person46 error rate:
+class0.235294
+sex0.0294118
+race0.117647
+person47 error rate:
+class0.590909
+sex0.0909091
+race0.136364
+
+-------------------------
+
+block4*4, with weights
+person0 error rate:
+class0.566667
+sex0.0666667
+race0.2
+person1 error rate:
+class0.631579
+sex0.236842
+race0.184211
+person2 error rate:
+class0.423077
+sex0.153846
+race0.0769231
+person3 error rate:
+class0.407407
+sex0.0740741
+race0.0740741
+person4 error rate:
+class0.55
+sex0
+race0.15
+person5 error rate:
+class0.55
+sex0.2
+race0.1
+person6 error rate:
+class0.564103
+sex0.0769231
+race0.0512821
+person7 error rate:
+class0.411765
+sex0.0588235
+race0.0588235
+person8 error rate:
+class0.432432
+sex0.027027
+race0.108108
+person9 error rate:
+class0.428571
+sex0.0952381
+race0.047619
+person10 error rate:
+class0.461538
+sex0.0769231
+race0
+person11 error rate:
+class0.222222
+sex0
+race0.194444
+person12 error rate:
+class0.46875
+sex0.21875
+race0.0625
+person13 error rate:
+class0.444444
+sex0.111111
+race0.0444444
+person14 error rate:
+class0.434783
+sex0.26087
+race0.0434783
+person15 error rate:
+class0.481481
+sex0.185185
+race0.037037
+person16 error rate:
+class0.571429
+sex0.142857
+race0
+person17 error rate:
+class0.666667
+sex0.111111
+race0.0740741
+person18 error rate:
+class0.428571
+sex0.0714286
+race0.0357143
+person19 error rate:
+class0.333333
+sex0.0952381
+race0.285714
+person20 error rate:
+class0.444444
+sex0.111111
+race0.0555556
+person21 error rate:
+class0.677419
+sex0.193548
+race0.0967742
+person22 error rate:
+class0.529412
+sex0.235294
+race0.176471
+person23 error rate:
+class0.566667
+sex0.1
+race0.4
+person24 error rate:
+class0.272727
+sex0.0909091
+race0.0681818
+person25 error rate:
+class0.483871
+sex0.0322581
+race0.0967742
+person26 error rate:
+class0.566667
+sex0.1
+race0.1
+person27 error rate:
+class0.444444
+sex0.0555556
+race0.277778
+person28 error rate:
+class0.47619
+sex0.142857
+race0.261905
+person29 error rate:
+class0.5
+sex0.181818
+race0.136364
+person30 error rate:
+class0.28
+sex0.04
+race0.08
+person31 error rate:
+class0.28
+sex0
+race0
+person32 error rate:
+class0.4
+sex0.12
+race0.08
+person33 error rate:
+class0.368421
+sex0
+race0.131579
+person34 error rate:
+class0.107143
+sex0.0357143
+race0.0357143
+person35 error rate:
+class0.0952381
+sex0
+race0
+person36 error rate:
+class0.285714
+sex0
+race0
+person37 error rate:
+class0.434783
+sex0.304348
+race0.173913
+person38 error rate:
+class0.05
+sex0
+race0
+person39 error rate:
+class0.423077
+sex0.0769231
+race0.0769231
+person40 error rate:
+class0.222222
+sex0.0277778
+race0.0555556
+person41 error rate:
+class0.441176
+sex0.0588235
+race0.0882353
+person42 error rate:
+class0.4
+sex0.025
+race0.375
+person43 error rate:
+class0.25641
+sex0.025641
+race0.0512821
+person44 error rate:
+class0.428571
+sex0.285714
+race0
+person45 error rate:
+class0.382353
+sex0.147059
+race0
+person46 error rate:
+class0.176471
+sex0.0294118
+race0.0588235
+person47 error rate:
+class0.454545
+sex0
+race0.0909091'

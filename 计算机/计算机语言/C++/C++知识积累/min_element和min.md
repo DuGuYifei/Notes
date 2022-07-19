@@ -1,0 +1,3 @@
+# min_element和min
+min_element可以遍历整个vector
+min只能获得两者之间的最小值

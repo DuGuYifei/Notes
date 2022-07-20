@@ -35,7 +35,14 @@ git pull origin main --allow-unrelated-histories # git pull origin main会报错
 git push origin main
 ```
 
-## Git 大文件
+# 改变git buffer支持大文件
+500MB*1024*1024
+```
+git config http.postBuffer 524288000
+```
+
+
+## Git 大文件 LFS (Large file storage)
 
 [GitHub大文件(大于100M)上传_往復不息的博客-CSDN博客_github 大文件](https://blog.csdn.net/wifi74262580/article/details/85060187)
 ```bash

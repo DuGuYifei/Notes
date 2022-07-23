@@ -58,6 +58,7 @@
 57. [min_element和min](min_element和min.md)
 58. [科学计数法](科学计数法.md)
 59. [string_view](string_view.md)
+60. [accumulate](accumulate.md)
     
 ***WinAPI(below)***
 

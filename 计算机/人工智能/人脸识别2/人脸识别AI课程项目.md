@@ -1,5 +1,9 @@
 # AI Peoject : face recognize
 
+## 报告
+[AI报告](项目/Famous48%20Face%20Recognize%20Report.pdf)
+使用了 **Haar**, **LBPH**, **Hog。** 并根据情况针对项目，创意性地构造了**LHH算法**加强联动准确率。
+
 ## Methods
 ### Overview
 #### Traditional methods

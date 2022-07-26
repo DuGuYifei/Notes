@@ -59,6 +59,7 @@
 58. [科学计数法](科学计数法.md)
 59. [string_view](string_view.md)
 60. [accumulate](accumulate.md)
+61. [随机数_mt19937_random_device_uniform_real_distribution](随机数_mt19937_random_device_uniform_real_distribution.md)
     
 ***WinAPI(below)***
 

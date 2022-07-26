@@ -1,7 +1,15 @@
 # Robomaster能量靶识别
 
+[RoboMaster能量机关识别的简易实现_海人007的博客-CSDN博客_robomaster 能量机关](https://blog.csdn.net/qq_45742471/article/details/105183884)
+[RoboMaster视觉教程（9）风车能量机关识别2_Raring_Ringtail的博客-CSDN博客_能量机关](https://blog.csdn.net/u010750137/article/details/100825793)
+[内附代码｜今年的大风车能量机关识别就是这么地so easy！](https://mp.weixin.qq.com/s/3B-iR32GX7jfVyxvNQVRXw)
+
 1. [RGB 识别红光](#rgb-识别红光)
 2. [二值化](#二值化)
+3. [轮廓查找](#轮廓查找)
+4. [透视变换](#透视变换)
+5. [SVM or 模板匹配法](#svm-or-模板匹配法)
+6. [圆形拟合 最小二乘法](#圆形拟合-最小二乘法)
 
 ## RGB 识别红光
 风车上会有红光，如何变为容易识别的图像？
@@ -53,3 +61,20 @@ HSV 或 YUV:
    ```
 
 ## 二值化
+
+
+## 轮廓查找
+[](../../AI算法/轮廓查找.md)
+
+## 透视变换
+
+
+## SVM or 模板匹配法
+1. [SVM](../../AI算法/SVM.md)
+
+2. 模版匹配法
+   [模版匹配](https://baike.baidu.com/item/模板匹配/20823665)
+   
+   其实就是将两个图片进行比较，看看相关性啦，差距啦之类的。
+
+## 圆形拟合 最小二乘法

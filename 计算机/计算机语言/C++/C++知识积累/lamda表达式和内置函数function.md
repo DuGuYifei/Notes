@@ -3,7 +3,7 @@
 
 `[]()->int{}`
 
--   `[]`里放要引入的参数 (例2)，可以省略
+-   `[]`里放要引入的参数 (例2)，可以省略 [传值的两种用法速度](#[]两种用法速度)
 
     -   \[=] 按值捕获 (例4)
 
@@ -140,3 +140,22 @@ refLambda();
 
 //输出： 1 13
 ```
+
+# []两种用法速度
+
+```cpp
+    vector<int> arrayRankTransform(vector<int>& arr) {
+        int n = arr.size();
+        vector<int> idx(n,0);
+        iota(idx.begin(), idx.end(), 0);
+        sort(idx.begin(), idx.end(), 
+            //[&arr]
+            [r = arr.data()]
+            (int a, int b)
+            {return r[a] < r[b];});
+            //{return arr[a] < arr[b];});
+    }
+```
+
+1. `[r = arr.data()]` 快
+2. `[&arr]` 慢

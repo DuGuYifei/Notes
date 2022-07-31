@@ -60,6 +60,9 @@
 59. [string_view](string_view.md)
 60. [accumulate](accumulate.md)
 61. [随机数_mt19937_random_device_uniform_real_distribution](随机数_mt19937_random_device_uniform_real_distribution.md)
+62. [异常_throw_try_catch](异常_throw_try_catch.md)
+63. [C++的三种继承_public_protected_private](C++的三种继承_public_protected_private.md)
+64. [class继承导致的构造函数问题](class继承导致的构造函数问题.md)
     
 ***WinAPI(below)***
 

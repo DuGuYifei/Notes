@@ -41,3 +41,19 @@ key:注意这个sort里是`+3`，因为sort要到最后一个的后面一个才�
     pair<int, char> alphabet[3] = { {3,'a'},{5,'b'},{1,'c'} };
     sort(alphabet, alphabet + 3);
 ```
+
+## sort 可以根据另一个数组排序
+
+```cpp
+    vector<int> arrayRankTransform(vector<int>& arr) {
+        int n = arr.size();
+        vector<int> idx(n,0);
+        iota(idx.begin(), idx.end(), 0);
+        sort(idx.begin(), idx.end(), 
+            //[&arr]
+            [r = arr.data()]
+            (int a, int b)
+            {return r[a] < r[b];});
+            //{return arr[a] < arr[b];});
+    }
+```

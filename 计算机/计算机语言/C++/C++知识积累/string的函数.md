@@ -23,3 +23,6 @@ string.substr(start)
 [find和find_first_of](find和find_first_of.md)
 
 ## str.rfind(s)
+
+## accumulate
+[accumulate](accumulate.md)

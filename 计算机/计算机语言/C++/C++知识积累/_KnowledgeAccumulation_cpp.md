@@ -66,6 +66,7 @@
 65. [连续等于_等于的右结合性](连续等于_等于的右结合性.md)
 66. [scanf_sscanf_fscanf和%占位符](scanf_sscanf_fscanf和百分号占位符.md)
 67. [push和emplace](push和emplace区别.md)
+68. [string的s操作符](string的s操作符.md)
     
 ***WinAPI(below)***
 

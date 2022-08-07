@@ -55,4 +55,7 @@ accumulate带有四个形参：连乘的元素起始地址；连乘的元素结�
 如果`con_product= accumulate(list, list+3, 10, multiplies<int>())` ;得出`sum=60`.
 
 ## 求string合并，
-`string a_sum=accumulate(a.begin(), a.end(),string("out: "))`;得到out: `1-2345+6`
+- 注意最后的参数会成为开头，所以还可以以 `""s` 为第三个参数 
+- `""`作为第三个参数是不行的
+
+`string a_sum=accumulate(a.begin(), a.end(),string("out: "))`;得到`out: 1-2345+6`

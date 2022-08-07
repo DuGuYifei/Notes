@@ -3,6 +3,12 @@
 
 如果要降序，就要自己写`compare`函数
 
+或者
+```cpp
+sort(a,a+len,greater<int>());//内置类型的由大到小排序
+sort(subs.begin(), subs.end(), greater<string>{});
+```
+
 **Key**自己的函数要是static不然会报错，所以最好写成lambda表达式
 
 sort vector 时候， 加上`&`会加速（加的多），加上const又加速一次（加的少）

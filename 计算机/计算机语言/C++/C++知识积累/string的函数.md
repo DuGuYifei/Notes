@@ -11,9 +11,15 @@ string.substr(start)
 [将string转为char* str.c_str()](string转为char星指针c_str().md)
 
 ## str.find(s)
+[find和find_first_of](find和find_first_of.md)
+
+`words[j].find(words[i]) != string::npos`
 
 * find会返回发现子字符串的index（从0开始）
 * 如果没发现返回4294967295
 * string::npos = 4294967295
+
+## find_first_of
+[find和find_first_of](find和find_first_of.md)
 
 ## str.rfind(s)

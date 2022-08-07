@@ -63,6 +63,9 @@
 62. [异常_throw_try_catch](异常_throw_try_catch.md)
 63. [C++的三种继承_public_protected_private](C++的三种继承_public_protected_private.md)
 64. [class继承导致的构造函数问题](class继承导致的构造函数问题.md)
+65. [连续等于_等于的右结合性](连续等于_等于的右结合性.md)
+66. [scanf_sscanf_fscanf和%占位符](scanf_sscanf_fscanf和百分号占位符.md)
+67. [push和emplace](push和emplace区别.md)
     
 ***WinAPI(below)***
 

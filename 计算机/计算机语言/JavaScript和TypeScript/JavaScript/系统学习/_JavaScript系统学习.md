@@ -46,3 +46,20 @@
 
 ## 数据类型
 ### [原始类型的方法](0501原始类型的方法.md)
+### [数字类型](0502数字类型.md)
+### [字符串](0503字符串.md)
+### [数组](0504数组.md)
+### [数组方法](0505数组方法.md)
+### [Iterable_object(可迭代对象)](0506Iterable_object(可迭代对象).md)
+### [Map和Set(映射和集合)](0507Map和Set(映射和集合).md)
+### [WeakMap和WeakSet(弱映射和弱集合)](0508WeakMap和WeakSet(弱映射和弱集合)].md)
+### [Object.keys和values和entries](0509Object.keys和values和entries.md)
+### [解构赋值](0510解构赋值.md)
+### [日期和时间](0511日期和时间.md)
+### [JSON方法——toJSon](0512JSON方法——toJSon.md)
+
+## 函数进阶内容
+[老旧的var](0604老旧的var.md)
+
+## Document
+### [Dom树](1502Dom树.md)

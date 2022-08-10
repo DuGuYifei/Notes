@@ -7,3 +7,4 @@
 5. [多个相同元素的列表](多个相同元素的列表.md)
 6. [hdf52txt](hdf52txt.md)
 7. [numpy2string](numpy2string.md)
+8. [电脑中多个python版本](电脑中多个python版本.md)

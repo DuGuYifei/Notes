@@ -67,6 +67,7 @@
 66. [scanf_sscanf_fscanf和%占位符](scanf_sscanf_fscanf和百分号占位符.md)
 67. [push和emplace](push和emplace区别.md)
 68. [string的s操作符](string的s操作符.md)
+69. [子类访问父类属性和自身同名属性](子类访问父类属性和自身同名属性.md)
     
 ***WinAPI(below)***
 

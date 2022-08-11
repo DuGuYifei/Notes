@@ -16,7 +16,7 @@
 15. [if中的局部变量if(int a = 1;a==0.md)](if中的局部变量if(;).md)
 16. [&和const的加速](&和const的加速.md)
 17. [stringstream](stringstream.md)
-18. [string转为char* str.c_str(.md)](string转为char星指针c_str().md)
+18. [string转为constchar* str.c_str(.md)](string转为constchar星指针c_str().md)
 19. [move()浅拷贝](move()浅拷贝.md)
 20. [二维数组指针](二维数组指针.md)
 21. [malloc, realloc and free](malloc_realloc_free.md)
@@ -68,6 +68,8 @@
 67. [push和emplace](push和emplace区别.md)
 68. [string的s操作符](string的s操作符.md)
 69. [子类访问父类属性和自身同名属性](子类访问父类属性和自身同名属性.md)
+70. [互相引用的类怎么解决error](互相引用的类怎么解决error.md)
+71. [string最后一位的一些思考和push_back](string最后一位的一些思考和push_back.md)
     
 ***WinAPI(below)***
 

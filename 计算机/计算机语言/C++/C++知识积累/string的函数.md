@@ -8,7 +8,7 @@ string.substr(start)
 其中`str.append(size,char)`注意`size和char`的顺序
 
 ## str.c_str()
-[将string转为char* str.c_str()](string转为char星指针c_str().md)
+[将string转为char* str.c_str()](string转为constchar星指针c_str().md)
 
 ## str.find(s)
 [find和find_first_of](find和find_first_of.md)

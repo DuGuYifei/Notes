@@ -10,3 +10,8 @@
 8. [MessageBox](MessageBox.md)
 9. [最小化到托盘(dotNet)](最小化到托盘(dotNet).md)
 10. [文件复制和删除](文件复制和删除.md)
+11. [拆箱装箱](拆箱装箱.md)
+12. [值类型和引用类型](值类型和引用类型.md)
+13. [Type](Type.md)
+14. [GC](GC.md)
+15. [Thread和Task区别](Thread和Task区别.md)

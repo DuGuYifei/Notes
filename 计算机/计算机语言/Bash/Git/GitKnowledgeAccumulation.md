@@ -92,3 +92,16 @@ git rm --cached */ffplay.exe
 ```bash
 git rm --f  "文件路径"
 ```
+
+## 同时push多个仓库
+进入你的项目目录，打开.git/config文件(.git是隐藏目录，需要打开显示隐藏文件...)
+![](2022-08-13-00-55-55.png)
+![](2022-08-13-00-56-10.png)
+
+## 克隆到指定文件夹
+```bash
+git clone https://github.com/next-theme/hexo-theme-next.git themes/next
+```
+
+## gh-pages的分支
+github只要是`gh-pages`的branch都可以同过`github.io/project`来访问，所以可以看上图中的deploy的url并不是io仓库

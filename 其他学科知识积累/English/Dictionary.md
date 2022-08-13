@@ -28,6 +28,7 @@ Word|Meaning
 campaign|活动
 clustering|聚类
 cognitive|认知的，感知的
+concise|简洁的
 confectionery|糖果
 consent|同意
 contiguous|相邻的，相近的
@@ -47,6 +48,7 @@ distractor|干扰器
 ## E
 Word|Meaning
 :-:|:-:
+elicitation|引出
 endure|忍受，持续存在
 entrepreneur|创业人，企业家
 envision|构想，展望
@@ -55,6 +57,7 @@ ergonomics|人体工程学
 Word|Meaning
 :-:|:-:
 Facilitate|促进，使便利
+furious|狂怒的，激烈的，吵闹的
 ## G
 Word|Meaning
 :-:|:-:
@@ -97,7 +100,8 @@ mutation|突变
 ## N
 Word|Meaning
 :-:|:-:
-neutrally|中立地
+narrative|叙事
+neutral|中立的,中性的
 ## O
 Word|Meaning
 :-:|:-:
@@ -111,6 +115,7 @@ paraphrase|释义
 particular|细节
 perceive|感知
 pigeonhole|归档
+preliminary|初步的
 prevail|盛行
 prism|棱镜
 procrastinate|拖延
@@ -125,6 +130,7 @@ Word|Meaning
 rampant|猖獗的，泛滥的  
 recap|回顾
 refraction|折射
+refurbish|翻新
 reluctant|不情愿的
 repertoire|全部才能，全部本领
 reproduction|繁殖
@@ -147,6 +153,7 @@ spiral|螺旋
 sprint|冲刺
 stinking|臭气熏天的
 surcharge|附加费
+synthesis|合成
 ## T
 Word|Meaning
 :-:|:-:
@@ -163,6 +170,7 @@ voucher|凭证
 ## W
 Word|Meaning
 :-:|:-:
+waggle|摇摆
 ## X
 Word|Meaning
 :-:|:-:

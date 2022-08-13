@@ -52,7 +52,7 @@
 ### [数组方法](0505数组方法.md)
 ### [Iterable_object(可迭代对象)](0506Iterable_object(可迭代对象).md)
 ### [Map和Set(映射和集合)](0507Map和Set(映射和集合).md)
-### [WeakMap和WeakSet(弱映射和弱集合)](0508WeakMap和WeakSet(弱映射和弱集合)].md)
+### [WeakMap和WeakSet(弱映射和弱集合)](0508WeakMap和WeakSet(弱映射和弱集合).md)
 ### [Object.keys和values和entries](0509Object.keys和values和entries.md)
 ### [解构赋值](0510解构赋值.md)
 ### [日期和时间](0511日期和时间.md)

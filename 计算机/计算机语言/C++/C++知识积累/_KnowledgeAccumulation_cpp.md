@@ -88,6 +88,7 @@
 13. [GetLastError()](GetLastError().md)
 14. [CreateProcess()创建进程](CreateProcess()创建进程.md)
 15. [获取显示器放大倍数](获取显示器放大倍数.md)
+16. [SetWindowPos和MoveWindow](SetWindowPos和MoveWindow.md)
 
 ***WinAPI(above)***
 

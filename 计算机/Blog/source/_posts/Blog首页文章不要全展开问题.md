@@ -5,7 +5,7 @@ tags:
 - Blog
 categories:
 - Blog 
-description: 
+description: 解决Blog文章在首页全部展开，占位置的问题
 ---
 
 # Blog首页文章不要全展开问题

@@ -6,4 +6,8 @@
 
 由此，在大多数情况下应该优先使用`emplace_back`来代替`push_back`。所有的标准库容器（array除外，因为它的长度不可改变，不能插入元素）都增加了类似的方法：`emplace`、`emplace_hint`、`emplace_front`、`emplace_after`、`emplace_back`等.
 
+
 [C++11中emplace的使用\_MaloFleur-CSDN博客\_emplace](https://blog.csdn.net/u013700358/article/details/52623985)
+
+支持传入参数直接构造，详情见
+[push和emplace区别](push和emplace区别.md)

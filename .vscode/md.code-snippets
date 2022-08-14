@@ -15,13 +15,30 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"markdown_frontMatter template": {
+	"markdown_frontMatter part template ": {
 		"scope": "markdown",
 		"prefix": "ca",
 		"body": [
 		  "categories: ",
 		  "description: "
 		],
-		"description": "html 简单模板"
+		"description": "markdown 开头补全模板"
+	},
+	"markdown_frontMatter template": {
+		"scope": "markdown",
+		"prefix": "frontmatter",
+		"body": [
+			"---",
+			"title: ",
+			"date: 2022-08-13 21:34:41",
+			"tags:",
+			"- ",
+			"categories:",
+			"- ",
+			"description: ",
+			"---"
+		],
+		"description": "markdown 开头模板"
 	  }
+
 }

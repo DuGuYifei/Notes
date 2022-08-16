@@ -8,9 +8,8 @@
 6. [v-show](v-show.md)
 7. [v-if](v-if.md)
 8. [v-bind](v-bind.md)
-9. []
+9. [v-for](v-for.md)
 10. [v-cloak](v-cloak.md)
 11. [v-pre](v-pre.md)
 12. [v-once](v-once.md)
-13. [img的title属性](img的title.md)
-14. [：class绑定](：class绑定.md)
+13. [：class绑定](：class绑定.md)

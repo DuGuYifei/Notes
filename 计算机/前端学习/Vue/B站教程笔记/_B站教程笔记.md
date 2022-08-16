@@ -38,7 +38,7 @@ Vue指令：
 * v-for
 * v-model
   
-### v-test指令
+### v-text指令
 [v-text](../Vue知识积累/v-text.md)
 
 ### v-html
@@ -56,7 +56,7 @@ Vue指令：
 * v-text指令作用是设置文本值，作用等同于{{}}
 * v-html指令作用时设置元素的innerHTML
 
-## v-shou
+## v-show
 [v-show](../Vue知识积累/v-show.md)
 
 ## v-if
@@ -64,3 +64,13 @@ Vue指令：
 
 ## v-bind
 [v-bind](../Vue知识积累/v-bind.md)
+
+## 图片切换
+[图片切换](vue学习用案例模板/图片切换.html)
+
+* 列表数据使用数组保存
+* v-bind指令可以设置元素属性，比如src
+* v-show和v-if都可以切换元素的显示状态，频繁切换用v-show
+
+## v-for
+[v-for](../Vue知识积累/v-for.md)

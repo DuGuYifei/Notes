@@ -8,6 +8,8 @@
    4. [meta](#meta)
 3. [div和span的区别](#div和span的区别)
 4. [button和input type button区别](#button和input-type-button区别)
+5. [img](#img)
+   1. [title属性](#title属性)
 
 ## html5标记
 <!DOCTYPE html>
@@ -76,3 +78,25 @@ input type="button" 跟 button type="button" 差不多，都需要自定义
 * 差别2
 button 有 `<button>****</button>` 闭合标签
 input 只有 `<input>` 但是可以属性 `value=`
+
+## img
+### title属性
+```html
+    <div id="app">
+        <img v-bind:src="imgSrc">
+        <br>
+        <img :src="imgSrc" alt="" :title="imgTitle+'!!!'">
+    </div>
+
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                imgSrc:"http://127.0.0.1:5500//计算机/前端学习/Vue/Vue知识积累/2022-08-12-17-42-50.png",
+                imgTitle:"嘿嘿"
+            }
+        })
+    </script>
+```
+
+鼠标悬浮到图片上会有提示字出现，是title的内容

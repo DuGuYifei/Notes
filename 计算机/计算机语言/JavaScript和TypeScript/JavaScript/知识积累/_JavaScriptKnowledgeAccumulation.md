@@ -7,3 +7,4 @@
 5. [getElementById](getElementById.md)
 6. [console.log](console.log.md)
 7. [mouseenter不支持button](mouseenter不支持button.md)
+8. [javascript:void(0)](javascript：void(0).md)

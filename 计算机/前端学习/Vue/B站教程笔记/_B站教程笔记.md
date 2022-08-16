@@ -1,0 +1,66 @@
+# B站教程笔记
+
+[Getting Title at 45:34](http://[视频地址]
+
+[官方文档](https://cn.vuejs.org)
+
+## Vue基础
+
+### Vue简介
+1. JS框架
+2. 简化Dom操作
+3. 响应式数据驱动
+ 
+### 第一个Vue程序
+1. 导入开发版本的Vue.js
+2. 创建Vue实例对象，设置el属性和data属性
+3. 使用简介的模板语法把数据渲染到页面上
+
+### el挂载点
+1. Vue实例的作用范围
+   Vue会管理el选项命中的元素及其内部的后代元素
+2. 是否可以使用其他选择器
+   id，class，标签都可以，但建议ID选择器
+3. 是否可以设置其他dom元素
+   不能挂在<html>和<body>
+
+### data 数据对象
+Vue中的数据定义在data中
+
+## 本地应用-介绍
+Vue指令：
+* v-text
+* v-html
+* v-on
+* v-show
+* v-if
+* v-bind
+* v-for
+* v-model
+  
+### v-test指令
+[v-text](../Vue知识积累/v-text.md)
+
+### v-html
+[v-html](../Vue知识积累/v-html.md)
+
+### v-on
+[v-on]
+
+## 计数器
+
+[计数器](vue学习用案例模板/计数器.html)
+* 创建vue示例时：el（挂载点），data（数据），methods（方法）
+* v-on指令的作用时绑定事件，简写为@
+* 通过this关键字获取data中的数据
+* v-text指令作用是设置文本值，作用等同于{{}}
+* v-html指令作用时设置元素的innerHTML
+
+## v-shou
+[v-show](../Vue知识积累/v-show.md)
+
+## v-if
+[v-if](../Vue知识积累/v-if.md)
+
+## v-bind
+[v-bind](../Vue知识积累/v-bind.md)

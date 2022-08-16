@@ -1,5 +1,14 @@
 # html
 
+1. [html5标记](#html5标记)
+2. [head](#head)
+   1. [base](#base)
+   2. [link](#link)
+   3. [style](#style)
+   4. [meta](#meta)
+3. [div和span的区别](#div和span的区别)
+4. [button和input type button区别](#button和input-type-button区别)
+
 ## html5标记
 <!DOCTYPE html>
 
@@ -50,4 +59,20 @@ META 元素通常用于指定网页的描述，关键词，文件的最后修改
 
 `<meta>` 一般放置于 `<head>` 区域
 
-## body
+## div和span的区别
+div和span的区别是：
+* div标签是块级元素，每个div标签都会从新行开始显示，占据一行；div标签内可以添加其他的标签元素（行内元素、块级元素都行）。
+* span标签是行内元素，会在一行显示；span标签内只能添加行内元素的标签或文本。
+
+## button和input type button区别
+[https://www.jianshu.com/p/14f18aad2d2f](https://www.jianshu.com/p/14f18aad2d2f)
+
+* 差别1
+button 默认和 type="submit" 一样，点击后会自动提交，但是最好还是写上type属性
+button type="button", 按了什么都没有，要自己绑定click函数之类的
+
+input type="button" 跟 button type="button" 差不多，都需要自定义
+
+* 差别2
+button 有 `<button>****</button>` 闭合标签
+input 只有 `<input>` 但是可以属性 `value=`

@@ -10,6 +10,7 @@ analogical|类比的
 anomalous|异常
 apparatus|仪器
 apprentice|学徒
+arbitrary|随意的
 archive|档案
 arrogant|自大的
 articulate|明确表达，口齿清晰，铰接的

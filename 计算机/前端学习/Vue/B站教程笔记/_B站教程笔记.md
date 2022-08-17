@@ -74,3 +74,9 @@ Vue指令：
 
 ## v-for
 [v-for](../Vue知识积累/v-for.md)
+
+## v-on 补充
+[v-on](../Vue知识积累/v-on.md)
+
+## v-model
+[v-model](../Vue知识积累/v-model.md)

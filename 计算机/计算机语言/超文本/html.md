@@ -8,8 +8,8 @@
    4. [meta](#meta)
 3. [div和span的区别](#div和span的区别)
 4. [button和input type button区别](#button和input-type-button区别)
-5. [img](#img)
-   1. [title属性](#title属性)
+5. [title属性](#title属性)
+6. [key属性](#key属性)
 
 ## html5标记
 <!DOCTYPE html>
@@ -79,8 +79,7 @@ input type="button" 跟 button type="button" 差不多，都需要自定义
 button 有 `<button>****</button>` 闭合标签
 input 只有 `<input>` 但是可以属性 `value=`
 
-## img
-### title属性
+## title属性
 ```html
     <div id="app">
         <img v-bind:src="imgSrc">
@@ -100,3 +99,6 @@ input 只有 `<input>` 但是可以属性 `value=`
 ```
 
 鼠标悬浮到图片上会有提示字出现，是title的内容
+
+## key属性
+key 属性是对这个元素的唯一标识

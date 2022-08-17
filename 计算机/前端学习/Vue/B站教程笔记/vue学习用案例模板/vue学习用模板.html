@@ -12,14 +12,11 @@
         }
     </style>
 </head>
-
 <body>
     <div id="app">
-        <img v-bind:src="imgSrc">
-        <br>
-        <img :src="imgSrc" alt="" :title="imgTitle+'!!!'" :class="isActive?'active':''" @click="toggleActive">
-        <br>
-        <img :src="imgSrc" alt="" :title="imgTitle+'!!!'" :class="{active:isActive}" @click="toggleActive">
+        <input type="button" value="修改message的值" @click="setM">
+        <input type="text"  v-model="message" @keyup.enter="getM">
+        <h2 v-text="message"></h2>
     </div>
     <!-- 开发环境版本，包含了有帮助的命令行警告 -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -27,20 +24,18 @@
         var app = new Vue({
             el:"#app",
             data:{
-                imgSrc:"http://127.0.0.1:5500//计算机/前端学习/Vue/Vue知识积累/2022-08-12-17-42-50.png",
-                imgTitle:"嘿嘿",
-                isActive:false
+                message:"独孤逸飞"
             },
             methods:{
-                toggleActive(){
-                    this.isActive = !this.isActive;
+                getM(){
+                    alert(this.message);
+                },
+                setM(){
+                    this.message+='新';
                 }
             }
         })
     </script>
-    <template>
-        <input v-bind:class="{ active: isActive }" name="asd" value="123">
-    </template>
 </body>
 
 </html>

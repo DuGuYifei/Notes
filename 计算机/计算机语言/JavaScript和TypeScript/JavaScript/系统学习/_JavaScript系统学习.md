@@ -63,3 +63,4 @@
 
 ## Document
 ### [Dom树](1502Dom树.md)
+### [搜索：getElement*，querySelector*](1504搜索：getElement，querySelector.md)

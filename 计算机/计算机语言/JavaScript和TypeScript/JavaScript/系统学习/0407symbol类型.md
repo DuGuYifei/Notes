@@ -7,6 +7,17 @@
 否则，如果使用另一种类型，例如数字，它会被**自动转换为字符串**
 所以 `obj[1]` 与 `obj["1"]` 相同，而 `obj[true]` 与 `obj["true"]` 相同。
 
+1. [symbol](#symbol)
+   1. [注意symbol不能自动转换为字符串](#注意symbol不能自动转换为字符串)
+2. [隐藏属性](#隐藏属性)
+3. [对象字面量中的使用方法](#对象字面量中的使用方法)
+4. [symbol在for...in中会被跳过](#symbol在forin中会被跳过)
+5. [Object.key和assign](#objectkey和assign)
+6. [全局symbol](#全局symbol)
+   1. [Symbol.for(key)](#symbolforkey)
+   2. [Symbol.keyFor](#symbolkeyfor)
+7. [系统symbol](#系统symbol)
+
 ## symbol
 symbol值表示唯一的标识符
 

@@ -47,7 +47,7 @@ Vue指令：
 ### v-on
 [v-on]
 
-## 计数器
+### 计数器
 
 [计数器](vue学习用案例模板/计数器.html)
 * 创建vue示例时：el（挂载点），data（数据），methods（方法）
@@ -56,32 +56,32 @@ Vue指令：
 * v-text指令作用是设置文本值，作用等同于{{}}
 * v-html指令作用时设置元素的innerHTML
 
-## v-show
+### v-show
 [v-show](../Vue知识积累/v-show.md)
 
-## v-if
+### v-if
 [v-if](../Vue知识积累/v-if.md)
 
-## v-bind
+### v-bind
 [v-bind](../Vue知识积累/v-bind.md)
 
-## 图片切换
+### 图片切换
 [图片切换](vue学习用案例模板/图片切换.html)
 
 * 列表数据使用数组保存
 * v-bind指令可以设置元素属性，比如src
 * v-show和v-if都可以切换元素的显示状态，频繁切换用v-show
 
-## v-for
+### v-for
 [v-for](../Vue知识积累/v-for.md)
 
-## v-on 补充
+### v-on 补充
 [v-on](../Vue知识积累/v-on.md)
 
-## v-model
+### v-model
 [v-model](../Vue知识积累/v-model.md)
 
-## 记事本
+### 记事本
 * 新增
   * 生成列表结构  （v-for数组）
   * 获取用户输入  （v-model）
@@ -106,3 +106,17 @@ Vue指令：
 * 基于数据的开发方式
   * 早期是基于dom，每次获得dom元素再进行开发
   * 现在要先想到数据再开发
+
+## 网络应用
+* axios
+* axios + vue
+
+### axios 网络请求库
+* 在线地址，联网使用
+`<script src="https://unpkg.com/axios/dist/axios.min.js"></script>`
+
+* get方法
+  `axios.get(地址?key=value&key2=values).then(functioon(response){},function(err){})`
+* post方法
+  `axios.post(地址,{key:value,key2:value2}).then(function(response){},function(err){})
+

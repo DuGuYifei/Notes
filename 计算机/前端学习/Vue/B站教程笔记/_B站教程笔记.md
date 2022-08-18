@@ -112,11 +112,70 @@ Vue指令：
 * axios + vue
 
 ### axios 网络请求库
-* 在线地址，联网使用
+* axios必须先导入才能使用：在线地址，联网使用
 `<script src="https://unpkg.com/axios/dist/axios.min.js"></script>`
 
-* get方法
+* get方法发送对应请求
   `axios.get(地址?key=value&key2=values).then(functioon(response){},function(err){})`
-* post方法
+* post方法发送对应请求
   `axios.post(地址,{key:value,key2:value2}).then(function(response){},function(err){})
 
+* then方法种的回调函数会在请求成功或失败时触发
+
+* 通过回调函数的形参可以获取相应内容或错误信息
+
+传送门：https://github.com/axios/axios
+
+```html
+<body>
+    <input type="button" value="get请求" class="get">
+    <input type="button" value="post请求" class="post">
+    <!-- 官网提供的 axios 在线地址 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        /*
+            接口1:随机笑话
+            请求地址:https://autumnfish.cn/api/joke/list
+            请求方法:get
+            请求参数:num(笑话条数,数字)
+            响应内容:随机笑话
+        */
+        document.querySelector(".get").onclick = function(){
+            //axios.get("https://autumnfish.cn/api/joke/list?num=6")
+            axios.get("https://autumnfish.cn/api/joke/list?num=3")
+            //axios.get("https://autumnfish.cn/api/joke/list1234?num=3")
+            .then(function(response){
+                console.log(response);
+            },function(err){
+                console.log(err);
+            })
+        }
+
+        /*
+             接口2:用户注册
+             请求地址:https://autumnfish.cn/api/user/reg
+             请求方法:post
+             请求参数:username(用户名,字符串)
+             响应内容:注册成功或失败
+         */
+        document.querySelector(".post").onclick = function(){
+            axios.post("https://autumnfish.cn/api/user/reg", 
+            //axios.post("https://autumnfish.cn/api/user/reg123", 
+            {username:"西兰花"})
+            .then(function(response){
+                console.log(response);
+            },function(err){
+                console.log(err);
+            })
+        }
+    </script>
+</body>
+```
+
+### axios+vue
+[axios+vue](../Vue知识积累/axios+vue.md)
+
+
+### 查天气
+1. 回车查询
+2. 点击查询

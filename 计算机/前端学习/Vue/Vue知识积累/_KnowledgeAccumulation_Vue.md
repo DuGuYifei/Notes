@@ -15,3 +15,4 @@
 13. [v-once](v-once.md)
 14. [：class绑定](：class绑定.md)
 15. [事件修饰符](事件修饰符.md)
+16. [axios+vue](axios+vue.md)

@@ -24,7 +24,9 @@
         "xlocinfo": "cpp",
         "xlocnum": "cpp",
         "xmemory": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "ios": "cpp",
+        "xiosbase": "cpp"
     },
 
     "[markdown]": {

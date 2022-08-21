@@ -35,7 +35,13 @@ git pull origin main --allow-unrelated-histories # git pull origin main会报错
 git push origin main
 ```
 
-# 改变git buffer支持大文件
+### Git 新仓库切换分支
+```bash
+git branch -M main
+git remote add origin git@github.com:DuGuYifei/Vue_MusicPlayer_Demo.git
+```
+
+## 改变git buffer支持大文件
 500MB*1024*1024
 ```
 git config http.postBuffer 524288000

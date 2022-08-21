@@ -16,6 +16,7 @@
    2. [autocomplete](#autocomplete)
 8. [title属性](#title属性)
 9. [key属性](#key属性)
+10. [audio](#audio)
 
 ## html5标记
 <!DOCTYPE html>
@@ -144,3 +145,6 @@ input 只有 `<input>` 但是可以属性 `value=`
 
 ## key属性
 key 属性是对这个元素的唯一标识
+
+## audio
+可以播放音乐

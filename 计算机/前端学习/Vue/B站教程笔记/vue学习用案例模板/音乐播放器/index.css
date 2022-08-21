@@ -12,7 +12,7 @@ dd {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/bg.jpg") no-repeat;
+  background: url("images/bg.jpg") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -49,7 +49,7 @@ dd {
   height: 34px;
   border-radius: 17px;
   border: 0px;
-  background: url("../images/zoom.png") 265px center no-repeat
+  background: url("images/zoom.png") 265px center no-repeat
     rgba(255, 255, 255, 0.45);
   text-indent: 15px;
   outline: none;
@@ -107,7 +107,7 @@ dd {
   display: block;
   width: 17px;
   height: 17px;
-  background-image: url("../images/play.png");
+  background-image: url("images/play.png");
   background-size: 100%;
   margin-right: 5px;
   box-sizing: border-box;
@@ -139,7 +139,7 @@ dd {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  background: url("../images/table.png") left -48px no-repeat;
+  background: url("images/table.png") left -48px no-repeat;
 }
 
 .song_list li em,
@@ -343,7 +343,7 @@ dd {
   position: fixed;
   width: 40px;
   height: 40px;
-  background: url("../images/shutoff.png") no-repeat;
+  background: url("images/shutoff.png") no-repeat;
   left: 50%;
   margin-left: 400px;
   margin-top: -273px;

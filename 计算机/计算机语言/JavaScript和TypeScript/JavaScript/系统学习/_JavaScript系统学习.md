@@ -60,6 +60,9 @@
 
 ## 函数进阶内容
 [老旧的var](0604老旧的var.md)
+[调度：setTimeout 和 setInterval](0608调度：setTimeout和setInterval.md)
+[函数绑定](0610函数绑定.md)
+[深入理解箭头函数](0611深入理解箭头函数.md)
 
 ## Document
 ### [Dom树](1502Dom树.md)

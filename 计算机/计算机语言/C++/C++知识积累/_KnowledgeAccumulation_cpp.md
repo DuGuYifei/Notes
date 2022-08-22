@@ -71,6 +71,7 @@
 70. [互相引用的类怎么解决error](互相引用的类怎么解决error.md)
 71. [string最后一位的一些思考和push_back](string最后一位的一些思考和push_back.md)
 72. [符号运算顺序](符号运算顺序.md)
+73. [__builtin_popcount()计算二进制数字多少个1](计算二进制数字多少个1__builtin_popcount().md)
     
 ***WinAPI(below)***
 

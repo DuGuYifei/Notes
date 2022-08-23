@@ -88,16 +88,28 @@ cat C:/Users/独孤逸飞/.gitconfig
 在右侧有一个release按钮
 ![release](2022-02-14-13-37-58.png)
 
-## 从缓存区删除文件
+## 从缓存区删除文件（适用于删除仓库文件不过需要commit再push）
 ```bash
 git rm --cached */ffplay.exe
 ```
 加上`-r`可以递归删除该文件夹下的所有文件
 
+**注意：如果子文件夹有.git，这个子文件夹是没法操作的，需要忽视这个.git，见下面忽略文件**
+
 ## 彻底删除（包括物理的）
 ```bash
 git rm --f  "文件路径"
 ```
+
+## 忽略某个文件/文件夹
+```bash
+touch .gitignore
+```
+编辑器打开生成的 .gitignore 文件，加入:
+
+node_modules
+/*以及其他你想要忽略的文件或文件夹*/
+
 
 ## 同时push多个仓库
 进入你的项目目录，打开.git/config文件(.git是隐藏目录，需要打开显示隐藏文件...)

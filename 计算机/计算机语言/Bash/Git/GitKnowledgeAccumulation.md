@@ -104,6 +104,11 @@ git rm --f  "文件路径"
 ## 子模块
 [Github子模块(submodule)使用介绍_cain-won的博客-CSDN博客_github submodule](https://blog.csdn.net/kaijkl/article/details/118752830)
 
+解决仓库包含仓库问题
+```bash
+git submodule add 子仓库url
+```
+
 ## 忽略某个文件/文件夹
 ```bash
 touch .gitignore

@@ -106,7 +106,7 @@ git rm --f  "文件路径"
 
 解决仓库包含仓库问题
 ```bash
-git submodule add 子仓库url
+git submodule add 子仓库url [目标文件夹]
 ```
 
 ## 忽略某个文件/文件夹

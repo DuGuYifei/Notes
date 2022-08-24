@@ -59,12 +59,17 @@
 ### [JSON方法——toJSon](0512JSON方法——toJSon.md)
 
 ## 函数进阶内容
-[Rest参数与Spread语法](0602Rest参数与Spread语法.md)
-[老旧的var](0604老旧的var.md)
-[调度：setTimeout 和 setInterval](0608调度：setTimeout和setInterval.md)
-[装饰器模式和转发，call/apply](0609装饰器模式和转发，call和apply.md)
-[函数绑定](0610函数绑定.md)
-[深入理解箭头函数](0611深入理解箭头函数.md)
+### [递归和堆栈](0601递归和堆栈.md)
+### [Rest参数与Spread语法](0602Rest参数与Spread语法.md)
+### [变量作用域，闭包](0603变量作用域，闭包.md)
+### [老旧的var](0604老旧的var.md)
+### [全局对象](0605全局对象.md)
+### [函数对象，NFE](0606函数对象，NFE.md)
+### ["new Function" 语法](0607new_Function语法.md)
+### [调度：setTimeout 和 setInterval](0608调度：setTimeout和setInterval.md)
+### [装饰器模式和转发，call/apply](0609装饰器模式和转发，call和apply.md)
+### [函数绑定](0610函数绑定.md)
+### [深入理解箭头函数](0611深入理解箭头函数.md)
 
 ## Document
 ### [Dom树](1502Dom树.md)

@@ -23,3 +23,10 @@
 reserve 100 后: 100, 200
 
 reserve后还可以push_back，就像正常情况下capacity乘以2了但是还是push_back
+
+## vector 用vector初始化
+```cpp
+    vector<int>a({ 1,2,3,4,5 });
+    vector<int>b(a.begin(), a.begin() + 2); // 1,2
+```
+**不包含 begin()+2**

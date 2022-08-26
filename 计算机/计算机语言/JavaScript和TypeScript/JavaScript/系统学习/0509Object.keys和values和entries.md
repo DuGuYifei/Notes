@@ -14,6 +14,10 @@
 
 普通对象也支持类似的方法，但是语法上有一些不同。
 
+1. [Object.keys，values，entries](#objectkeysvaluesentries)
+   1. [Object.keys/values/entries 会忽略 symbol 属性](#objectkeysvaluesentries-会忽略-symbol-属性)
+2. [转换对象](#转换对象)
+
 ## Object.keys，values，entries
 对于普通对象，下列这些方法是可用的：
 

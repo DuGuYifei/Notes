@@ -37,8 +37,16 @@ transition只有两个关键帧，animation有多个
 ## margin, border, padding
 由外向里的三层
 
+由内到外各个部分的含义如下：
+* content - 内容部分。文本或者图片
+* padding - 边框到内容中间的部分。透明的、不可见
+* border - 边框。围绕着padding和content，如果设置了宽度则可见
+* margin - 边框以外的区域。透明不可见
+
 ## 子元素选择器
 father>child
+
+也可以直接空格隔开
 
 ## ul偏右
 ```css

@@ -350,3 +350,13 @@ dd {
   top: 50%;
   z-index: 995;
 }
+
+.liric{
+  margin: 0 auto;
+  margin-top: 82%;
+  text-align: center;
+}
+
+.liric .p2{
+  color: rgb(199, 26, 214);
+}

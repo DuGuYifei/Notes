@@ -9,6 +9,18 @@
 
 ***这两个方法并不在 JavaScript 的规范中。***但是大多数运行环境都有内建的调度程序，并且提供了这些方法。目前来讲，所有浏览器以及 Node.js 都支持这两个方法。
 
+1. [setTimeout](#settimeout)
+   1. [传入一个函数，但不要执行它](#传入一个函数但不要执行它)
+   2. [用 clearTimeout 来取消调度](#用-cleartimeout-来取消调度)
+2. [setInterval](#setinterval)
+   1. [alert 弹窗显示的时候计时器依然在进行计时](#alert-弹窗显示的时候计时器依然在进行计时)
+3. [嵌套的 setTimeout](#嵌套的-settimeout)
+   1. [周期调用时间比较](#周期调用时间比较)
+   2. [垃圾回收和 setInterval/setTimeout 回调（callback）](#垃圾回收和-setintervalsettimeout-回调callback)
+4. [零延时的 setTimeout](#零延时的-settimeout)
+   1. [零延时实际上不为零（在浏览器中）](#零延时实际上不为零在浏览器中)
+5. [总结](#总结)
+
 ## setTimeout
 
 ```

@@ -5,6 +5,15 @@
 * 对象，存储带有键的数据的集合。
 * 数组，存储有序集合。
 
+1. [Map](#map)
+   1. [map[key] 不是使用 Map 的正确方式](#mapkey-不是使用-map-的正确方式)
+2. [Map 迭代](#map-迭代)
+3. [Object.entries：从对象创建 Map](#objectentries从对象创建-map)
+4. [Object.fromEntries：从 Map 创建对象](#objectfromentries从-map-创建对象)
+5. [Set](#set)
+6. [Set 迭代（iteration）](#set-迭代iteration)
+7. [总结](#总结)
+
 ## Map
 
 Map 是一个带键的数据项的集合，就像一个 Object 一样。 但是它们最大的差别是 Map 允许任何类型的键（key）。

@@ -1,6 +1,7 @@
 # JavaScript 系统学习
 [现代 JavaScript 教程](https://zh.javascript.info/)
 
+## JavaScript 编程语言
 1. 简介
    1. [JavaScript简介](0101JavaScript简介.md)
    2. [规范与手册](0102规范与手册.md)
@@ -71,6 +72,18 @@
    10. [函数绑定](0610函数绑定.md)
    11. [深入理解箭头函数](0611深入理解箭头函数.md)
 
-15. Document
-    2. [Dom树](1502Dom树.md)
-    4. [搜索：getElement*，querySelector*](1504搜索：getElement，querySelector.md)
+7. 对象属性配置
+   1. [属性标志和属性描述符](0701属性标志和属性描述符.md)
+
+8. 原型，继承
+9.  类
+10. 错误处理
+11. Promise，async/await
+12. Generator，高级iteration
+13. 模块
+14. 杂项
+
+## 浏览器：文档，事件，接口
+15.  Document
+    1. [Dom树](1502Dom树.md)
+    2. [搜索：getElement*，querySelector*](1504搜索：getElement，querySelector.md)

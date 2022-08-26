@@ -36,7 +36,11 @@ var app = new Vue({
         musicComment: "",
         mvUrl: "",
         isPlaying: false,
-        isShow: false
+        isShow: false,
+        lyric:[],
+        singleLyric:"",
+        singleLyric_prev:"",
+        singleLyric_next:"",
     },
     methods: {
         searchMusic: function () {
@@ -62,13 +66,78 @@ var app = new Vue({
             axios.get('https://autumnfish.cn/comment/hot?type=0&id=' + id)
                 .then(function (response) {
                     that.musicComment = response.data.hotComments;
-                }, function (err) { })
+                }, function (err) { });
+            axios.get('https://autumnfish.cn//lyric?id=' + id)
+                .then(function(response){
+                    //console.log(response.data.lrc.lyric);
+                    let rows = response.data.lrc.lyric.split('\n');
+                    rows.forEach(element => {
+                        let index = element.indexOf(':');
+                        let min = element.slice(1, index);
+                        let index2 = element.indexOf(']');
+                        let sec = element.slice(index + 1, index2);
+                        let word = element.slice(index2 + 1);
+                        let time = min * 60 + (+sec);
+                        that.lyric.push([time, word]);
+                    });
+                    //console.log(that.lyric);
+                    that.lyric.index = 0;
+                    that.singleLyric = that.lyric[0][1];
+                    if(that.lyric.length > 1)
+                    {
+                        that.singleLyric_next = that.lyric[1][1];
+                    }
+                })
         },
         play() {
+            //console.log(document.getElementById("audioPlay").currentTime);
+            //console.log(document.getElementById("audioPlay").duration);
+
             this.isPlaying = true;
+            let audio = document.getElementById("audioPlay");
+            this.lyric.timerId = setInterval(() => {
+                if(audio.currentTime < 1)
+                {
+                    this.lyric.index = 0;
+                    this.singleLyric = this.lyric[0][1];
+                    this.singleLyric_next = this.lyric[1][1];
+                    this.singleLyric_prev = " ";
+                }
+                if(this.lyric.index < this.lyric.length - 1)
+                {
+                    //console.log(audio.currentTime);
+                    if(audio.currentTime > this.lyric[this.lyric.index + 1][0])
+                    {
+                        while(audio.currentTime > this.lyric[this.lyric.index + 1][0])
+                        {
+                            this.lyric.index++;
+                        }
+                        while(audio.currentTime < this.lyric[this.lyric.index][0])
+                        {
+                            this.lyric.index--;
+                        }
+                        this.singleLyric_prev = this.lyric[this.lyric.index - 1][1];
+                        this.singleLyric = this.lyric[this.lyric.index][1];
+                        if(this.lyric.index + 1 < this.lyric.length)
+                        {
+                            this.singleLyric_next = this.lyric[this.lyric.index + 1][1];
+                        }
+                        else
+                        {
+                            this.singleLyric_next = " ";
+                        }
+                        //console.log(this.singleLyric);
+                    }
+                }
+                else if(this.lyric.index == this.lyric.length - 1)                
+                {
+                    this.lyric.index = 0;
+                }
+            }, 500);
         },
         pause() {
             this.isPlaying = false;
+            clearInterval(this.lyric.timerId);
         },
         playMV(mvid) {
             var that = this;

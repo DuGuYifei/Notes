@@ -37,6 +37,11 @@
           <!-- 黑胶碟片 -->
           <img src="images/disc.png" class="disc autoRotate" />
           <img :src="musicCover" class="cover autoRotate" />
+          <div class="liric">
+            <p>{{ singleLyric_prev }}</p>
+            <p class="p2">{{ singleLyric }}</p>
+            <p>{{ singleLyric_next }}</p>
+          </div>
         </div>
         <!-- 评论容器 -->
         <div class="comment_wrapper">
@@ -54,7 +59,7 @@
         </div>
       </div>
       <div class="audio_con">
-        <audio ref='audio' @play="play" @pause="pause" :src="musicUrl" controls autoplay loop class="myaudio"></audio>
+        <audio id="audioPlay" ref='audio' @play="play" @pause="pause" :src="musicUrl" controls autoplay loop class="myaudio"></audio>
       </div>
       <div class="video_con" v-show="isShow" style="display: none;">
         <video :src="mvUrl" controls="controls"></video>

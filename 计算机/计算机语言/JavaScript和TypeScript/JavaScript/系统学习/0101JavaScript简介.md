@@ -1,4 +1,4 @@
-# JavaScript简介
+# 0101JavaScript简介
 1. [什么是JavaScript](#什么是javascript)
 2. [JavaScript能做什么](#javascript能做什么)
 3. [JavaScript不能做什么](#javascript不能做什么)

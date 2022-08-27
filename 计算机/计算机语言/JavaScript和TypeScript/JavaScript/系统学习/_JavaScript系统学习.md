@@ -74,8 +74,14 @@
 
 7. 对象属性配置
    1. [属性标志和属性描述符](0701属性标志和属性描述符.md)
+   2. [属性的getter和setter](0702属性的getter和setter.md)
 
 8. 原型，继承
+   1. [原型继承](0801原型继承.md)
+   2. [F.prototype](0802F.prototype.md)
+   3. [原生的原型](0803原生的原型.md)
+   4. [原型方法，没有 `__proto__` 的对象](原型方法，没有__proto__的对象.md)
+
 9.  类
 10. 错误处理
 11. Promise，async/await

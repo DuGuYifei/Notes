@@ -83,6 +83,10 @@
    4. [原型方法，没有 `__proto__` 的对象](原型方法，没有__proto__的对象.md)
 
 9.  类
+    1.  [Class基本语法](0901Class基本语法.md)
+    2.  [类继承](0902类继承.md)
+    3.  [静态属性和静态方法](0903静态属性和静态方法.md)
+
 10. 错误处理
 11. Promise，async/await
 12. Generator，高级iteration

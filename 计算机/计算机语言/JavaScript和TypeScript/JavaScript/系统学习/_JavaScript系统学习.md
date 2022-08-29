@@ -96,12 +96,15 @@
     2. [自定义Error，扩展Error](1002自定义Error，扩展Error.md)
 
 11. Promise，async/await
+    1. [简介：回调](1101简介：回调.md)
+    2. [Promise](1102Promise.md)
 12. Generator，高级iteration
     1. [generator](1201generator.md)
     2. [异步迭代和 generator](1202异步迭代和generator.md)
 
 13. 模块
-    1. [模块 (Module) 简介](模块(Module)简介.md)
+    1. [模块 (Module) 简介](1301模块(Module)简介.md)
+    2. [导入和导出.md](1302导入和导出.md)
 14. 杂项
 
 ## 浏览器：文档，事件，接口

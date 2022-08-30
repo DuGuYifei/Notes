@@ -98,6 +98,13 @@
 11. Promise，async/await
     1. [简介：回调](1101简介：回调.md)
     2. [Promise](1102Promise.md)
+    3. [Promise链](1103Promise链.md)
+    4. [使用 promise 进行错误处理](1104使用promise进行错误处理.md)
+    5. [Promise API](1105Primise_API.md)
+    6. [Promisification](1106Promisification.md)
+    7. [微任务(Microtask)](1107微任务(Microtask).md)
+    8. [async/await](1108async_await.md)
+
 12. Generator，高级iteration
     1. [generator](1201generator.md)
     2. [异步迭代和 generator](1202异步迭代和generator.md)

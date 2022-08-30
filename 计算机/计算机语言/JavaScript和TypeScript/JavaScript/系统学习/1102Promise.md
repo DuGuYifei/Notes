@@ -179,4 +179,142 @@ promise.catch(alert); // 1 秒后显示 "Error: Whoops!"
 
 **.catch(f) 调用是 .then(null, f) 的完全的模拟，它只是一个简写形式。**
 
-## 
+## 清理：finally
+就像常规 try {...} catch {...} 中的 finally 子句一样，promise 中也有 finally。
+
+**调用 .finally(f) 类似于 .then(f, f)**，因为当 promise settled 时 f 就会执行：无论 promise 被 resolve 还是 reject。
+
+finally 的功能是设置一个处理程序在前面的操作完成后，执行清理/终结。
+
+例如，停止加载指示器，关闭不再需要的连接等。
+
+把它想象成派对的终结者。无论派对是好是坏，有多少朋友参加，我们都需要（或者至少应该）在它之后进行清理。
+
+代码可能看起来像这样：
+```js
+new Promise((resolve, reject) => {
+  /* 做一些需要时间的事，之后调用可能会 resolve 也可能会 reject */
+})
+  // 在 promise 为 settled 时运行，无论成功与否
+  .finally(() => stop loading indicator)
+  // 所以，加载指示器（loading indicator）始终会在我们继续之前停止
+  .then(result => show result, err => show error)
+```
+
+**请注意，finally(f) 并不完全是 then(f,f) 的别名。**
+
+它们之间有重要的区别：
+
+1. finally 处理程序（handler）没有参数。在 finally 中，我们不知道 promise 是否成功。没关系，因为我们的任务通常是执行“常规”的完成程序（finalizing procedures）。
+
+请看上面的例子：如你所见，finally 处理程序没有参数，promise 的结果由下一个处理程序处理。
+
+2. finally 处理程序将结果或 error “传递”给下一个合适的处理程序。
+
+例如，在这结果被从 finally 传递给了 then：
+```js
+new Promise((resolve, reject) => {
+  setTimeout(() => resolve("value"), 2000)
+})
+  .finally(() => alert("Promise ready")) // 先触发
+  .then(result => alert(result)); // <-- .then 显示 "value"
+```
+
+正如我们所看到的，第一个 promise 返回的 value 通过 finally 被传递给了下一个 then。
+
+这非常方便，因为 finally 并不意味着处理一个 promise 的结果。如前所述，无论结果是什么，它都是进行常规清理的地方。
+
+下面是一个 promise 返回结果为 error 的示例，让我们看看它是如何通过 finally 被传递给 catch 的：
+```js
+new Promise((resolve, reject) => {
+  throw new Error("error");
+})
+  .finally(() => alert("Promise ready")) // 先触发
+  .catch(err => alert(err));  // <-- .catch 显示这个 error
+```
+
+3. finally 处理程序也不应该返回任何内容。如果它返回了，返回的值会默认被忽略。
+
+此规则的唯一例外是当 finally 处理程序抛出 error 时。此时这个 error（而不是任何之前的结果）会被转到下一个处理程序。
+
+总结：
+
+* finally 处理程序没有得到前一个处理程序的结果（它没有参数）。而这个结果被传递给了下一个合适的处理程序。
+* 如果 finally 处理程序返回了一些内容，那么这些内容会被忽略。
+* 当 finally 抛出 error 时，执行将转到最近的 error 的处理程序。
+
+如果我们正确使用 finally（将其用于常规清理），那么这些功能将很有用。
+
+### 我们可以对 settled 的 promise 附加处理程序
+如果 promise 为 pending 状态，.then/catch/finally 处理程序（handler）将等待它的结果。
+
+有时候，当我们向一个 promise 添加处理程序时，它可能已经 settled 了。
+
+在这种情况下，这些处理程序会立即执行：
+```js
+// 下面这 promise 在被创建后立即变为 resolved 状态
+let promise = new Promise(resolve => resolve("done!"));
+
+promise.then(alert); // done!（现在显示）
+```
+
+请注意这使得 promise 比现实生活中的“订阅列表”方案强大得多。如果歌手已经发布了他们的单曲，然后某个人在订阅列表上进行了注册，则他们很可能不会收到该单曲。实际生活中的订阅必须在活动开始之前进行。
+
+Promise 则更加灵活。我们可以随时添加处理程序（handler）：如果结果已经在了，它们就会执行。
+
+## 示例：loadScript
+
+接下来，让我们看一下关于 promise 如何帮助我们编写异步代码的更多实际示例。
+
+我们从上一章获得了用于加载脚本的 loadScript 函数。
+
+这是基于回调函数的变体，记住它：
+```js
+function loadScript(src, callback) {
+  let script = document.createElement('script');
+  script.src = src;
+
+  script.onload = () => callback(null, script);
+  script.onerror = () => callback(new Error(`Script load error for ${src}`));
+
+  document.head.append(script);
+}
+```
+
+让我们用 promise 重写它。
+
+新函数 loadScript 将不需要回调。取而代之的是，它将创建并返回一个在加载完成时 resolve 的 promise 对象。外部代码可以使用 .then 向其添加处理程序（订阅函数）：
+```js
+function loadScript(src) {
+  return new Promise(function(resolve, reject) {
+    let script = document.createElement('script');
+    script.src = src;
+
+    script.onload = () => resolve(script);
+    script.onerror = () => reject(new Error(`Script load error for ${src}`));
+
+    document.head.append(script);
+  });
+}
+```
+
+用法：
+```js
+let promise = loadScript("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js");
+
+promise.then(
+  script => alert(`${script.src} is loaded!`),
+  error => alert(`Error: ${error.message}`)
+);
+
+promise.then(script => alert('Another handler...'));
+```
+
+我们立刻就能发现 promise 相较于基于回调的模式的一些好处：
+
+promise	|callback
+-|-
+promise 允许我们按照自然顺序进行编码。首先，我们运行 loadScript 和 .then 来处理结果。	|在调用 loadScript(script, callback) 时，我们必须有一个 callback 函数可供使用。换句话说，在调用 loadScript 之前，我们必须知道如何处理结果。
+我们可以根据需要，在 promise 上多次调用 .then。每次调用，我们都会在“订阅列表”中添加一个新的“粉丝”，一个新的订阅函数。在下一章将对此内容进行详细介绍：Promise 链。|只能有一个回调。
+
+因此，promise 为我们提供了更好的代码流和灵活性。但其实还有更多相关内容。我们将在下一章看到。

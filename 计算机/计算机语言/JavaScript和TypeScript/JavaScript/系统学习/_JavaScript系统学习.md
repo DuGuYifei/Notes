@@ -115,6 +115,11 @@
     3. [动态导入](1303动态导入.md)
 
 14. 杂项
+    1. [Proxy和Reflect](1401Proxy和Reflect.md)
+    2. [Eval：执行代码字符串](1402Eval：执行代码字符串.md)
+    3. [柯里化（Currying）](1403柯里化（Currying）.md)
+    4. [Reference Type](1404Reference_Type.md)
+    5. [BigInt](1405BigInt.md)
 
 ## 浏览器：文档，事件，接口
 15.  Document

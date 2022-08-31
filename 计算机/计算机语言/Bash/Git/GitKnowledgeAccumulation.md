@@ -131,3 +131,13 @@ git clone https://github.com/next-theme/hexo-theme-next.git themes/next
 
 ## gh-pages的分支
 github只要是`gh-pages`的branch都可以同过`github.io/project`来访问，所以可以看上图中的deploy的url并不是io仓库
+
+## pull request
+
+### 当原主人更新时
+
+```bash
+git remote add upstream 开源项目原地址
+git checkout master # 因为一般fork一个项目到自己的master后会自己再复制一个branch，所以要切换回去
+git pull --rebase upstream master  # 把最新的更新放到我的branch里
+```

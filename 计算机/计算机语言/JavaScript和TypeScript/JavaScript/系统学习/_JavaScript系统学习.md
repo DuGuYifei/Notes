@@ -82,19 +82,19 @@
    3. [原生的原型](0803原生的原型.md)
    4. [原型方法，没有 `__proto__` 的对象](0804原型方法，没有__proto__的对象.md)
 
-9.  类
-    1. [Class基本语法](0901Class基本语法.md)
-    2. [类继承](0902类继承.md)
-    3. [静态属性和静态方法](0903静态属性和静态方法.md)
-    4. [私有的和受保护的属性和方法](0904私有的受保护的属性和方法.md)
-    5. [扩展内建类](0905扩展内建类.md)
-    6. [类检查："instanceof"](0906类检查：“instanceof”.md)
-    7. [Mixin模式](0907Mixin模式.md)
+9. 类
+   1. [Class基本语法](0901Class基本语法.md)
+   2. [类继承](0902类继承.md)
+   3. [静态属性和静态方法](0903静态属性和静态方法.md)
+   4. [私有的和受保护的属性和方法](0904私有的受保护的属性和方法.md)
+   5. [扩展内建类](0905扩展内建类.md)
+   6. [类检查："instanceof"](0906类检查：“instanceof”.md)
+   7. [Mixin模式](0907Mixin模式.md)
 
 10. 错误处理
     1. [错误处理，"try...catch"](1001错误处理，“try...catch”.md)
     2. [自定义Error，扩展Error](1002自定义Error，扩展Error.md)
-
+   
 11. Promise，async/await
     1. [简介：回调](1101简介：回调.md)
     2. [Promise](1102Promise.md)
@@ -122,6 +122,22 @@
     5. [BigInt](1405BigInt.md)
 
 ## 浏览器：文档，事件，接口
-15.  Document
-    1. [Dom树](1502Dom树.md)
-    2. [搜索：getElement*，querySelector*](1504搜索：getElement，querySelector.md)
+15. Document
+    1. [浏览器环境，规格](1501浏览器环境，规格.md)
+    2. [Dom树](1502Dom树.md)
+    3. [遍历DOM](1503遍历DOM.md)
+    4. [搜索：getElement*，querySelector*](1504搜索：getElement，querySelector.md)
+    5. [节点属性：type，tag 和 content](1505节点属性：type，tag和content.md)
+    6. [特性和属性（Attributes and properties）](1506特性和属性（Attributes_properties）.md)
+    7. [修改文档（document）](1507修改文档（document）.md)
+    8. [样式和类](1508样式和类.md)
+    9. [元素大小和滚动](1509元素大小和滚动.md)
+    10. [Window 大小和滚动](1510Window大小和滚动.md)
+    11. [坐标](1511坐标.md)
+
+16. 事件简介
+    1. [浏览器事件简介](1601浏览器事件简介.md)
+    2. [冒泡和捕获](1602冒泡和捕获.md)
+    3. [事件委托](1603事件委托.md)
+    4. [浏览器默认行为](1604浏览器默认行为.md)
+    5. [创建自定义事件](1605创建自定义事件.md)

@@ -63,3 +63,71 @@ key:注意这个sort里是`+3`，因为sort要到最后一个的后面一个才�
             //{return arr[a] < arr[b];});
     }
 ```
+
+## sort 自定义compare加速问题
+慢1
+```cpp
+class Solution {
+public:
+    int findLongestChain(vector<vector<int>>& pairs) {
+        sort(pairs.begin(),pairs.end(), [&](vector<int>a, vector<int>b){
+            return a[0]>b[0];
+        });
+        int ans = 0;
+        int num = INT_MAX;
+        for(auto& i : pairs)
+        {
+            if(i[1] < num)
+            {
+                ans++;
+                num = i[0];
+            }
+        }
+        return ans;
+    }
+};
+```
+慢2
+```cpp
+class Solution {
+public:
+    int findLongestChain(vector<vector<int>>& pairs) {
+        sort(pairs.begin(),pairs.end(), [&](const vector<int>a, const vector<int>b){
+            return a[0]>b[0];
+        });
+        int ans = 0;
+        int num = INT_MAX;
+        for(auto& i : pairs)
+        {
+            if(i[1] < num)
+            {
+                ans++;
+                num = i[0];
+            }
+        }
+        return ans;
+    }
+};
+```
+快
+```cpp
+class Solution {
+public:
+    int findLongestChain(vector<vector<int>>& pairs) {
+        sort(pairs.begin(),pairs.end(), [](const vector<int>&a, const vector<int>&b){
+            return a[0]>b[0];
+        });
+        int ans = 0;
+        int num = INT_MAX;
+        for(auto& i : pairs)
+        {
+            if(i[1] < num)
+            {
+                ans++;
+                num = i[0];
+            }
+        }
+        return ans;
+    }
+};
+```

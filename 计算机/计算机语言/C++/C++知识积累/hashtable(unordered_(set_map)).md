@@ -71,3 +71,19 @@ unordered_set.insert()\
 unordered_set.erase()\
 unordered_set.find()\
 这三个函数平均复杂度是O(1)因为这个是哈希表不是数组要一个一个查
+
+#### find
+```cpp
+t_map.find(tp) != t_map.end()
+```
+
+## 自定义hash
+[自定义](hash和自构建hash函数给hashset.md)
+```cpp
+    static constexpr auto hash_t = [fn = hash<int>()](const tuple<int,int,int>& t)->size_t{
+        auto &[x,y,z] = t;
+        return fn(x)<< 16 ^ fn(y) << 8 ^ fn(z);
+    };
+    unordered_map<tuple<int,int,int>, pair<TreeNode*, int>, decltype(hash_t)> t_map{0, hash_t};
+```
+注意声明时那个0，是size_type

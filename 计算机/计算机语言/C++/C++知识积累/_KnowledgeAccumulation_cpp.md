@@ -74,6 +74,9 @@
 73. [__builtin_popcount()计算二进制数字多少个1](计算二进制数字多少个1__builtin_popcount().md)
 74. [heap堆](heap堆.md)
 75. [heap堆和stack栈的区别](heap堆和stack栈的区别.md)
+76. [tuple](tuple.md)
+77. [类里auto直接获得函数类型](类里auto直接获得函数类型.md)
+78. [unordered_set转vector](unordered_set转vector.md)
     
 ***WinAPI(below)***
 

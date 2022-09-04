@@ -72,6 +72,8 @@
 71. [string最后一位的一些思考和push_back](string最后一位的一些思考和push_back.md)
 72. [符号运算顺序](符号运算顺序.md)
 73. [__builtin_popcount()计算二进制数字多少个1](计算二进制数字多少个1__builtin_popcount().md)
+74. [heap堆](heap堆.md)
+75. [heap堆和stack栈的区别](heap堆和stack栈的区别.md)
     
 ***WinAPI(below)***
 

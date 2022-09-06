@@ -11,7 +11,7 @@ description: 使用Yolov5对屏幕实时检测，并控制鼠标
 ---
 
 # 使用Yolov5对fps游戏AI挂的原理研究项目
-![](Yolov5-fps游戏AI挂的原理研究\2022-09-06-17-22-27.png)
+![](Yolov5_fps游戏AI挂的原理研究/2022-09-06-17-22-27.png)
 [yolov5_valorant项目网址](https://github.com/DuGuYifei/Yolov5_FPS_AICheatPrinciple)
 
 # 流程设计

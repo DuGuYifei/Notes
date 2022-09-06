@@ -9,3 +9,7 @@
 7. [numpy2string](numpy2string.md)
 8. [电脑中多个python版本](电脑中多个python版本.md)
 9. [鼠标输入事件](鼠标输入事件.md)
+10. [argparse自定义命令行参数](argparse自定义命令行参数.md)
+11. [ [::-1] 和 [:2] ](数组读取的冒号.md)
+12. [窗口句柄](窗口句柄.md)
+13. [屏幕截图](屏幕截图.md)

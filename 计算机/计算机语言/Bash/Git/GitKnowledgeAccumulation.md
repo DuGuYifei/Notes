@@ -141,3 +141,12 @@ git remote add upstream 开源项目原地址
 git checkout master # 因为一般fork一个项目到自己的master后会自己再复制一个branch，所以要切换回去
 git pull --rebase upstream master  # 把最新的更新放到我的branch里
 ```
+
+## git commit 修改
+还未push时
+```bash
+git commit --amend
+```
+按 i 进入修改模式
+
+:wq 退出

@@ -12,3 +12,5 @@
 11. [getStructuringElement](getStructuringElement.md)
 12. [最小外接矩形_minAreaRect](最小外接矩形_minAreaRect.md)
 13. [透视变换_getPerspectiveTransform_warpPerspective](透视变换_getPerspectiveTransform_warpPerspective.md)
+14. [opencv-python函数缺失](opencv-python函数缺失.md)
+15. [Mat和numpy的关系以及python屏幕截图并转换成opencv可读的形式](Mat和numpy的关系以及python屏幕截图并转换成opencv可读的形式.md)

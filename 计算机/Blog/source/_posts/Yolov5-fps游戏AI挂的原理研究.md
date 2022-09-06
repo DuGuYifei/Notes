@@ -1,16 +1,34 @@
-# Yolo
+---
+title: Yolov5 fps游戏AI挂的原理研究
+date: 2022-09-06 17:08:41
+tags:
+- AI
+- Yolo
+- 机器视觉
+categories:
+- AI
+description: 使用Yolov5对屏幕实时检测，并控制鼠标
+---
 
-## 介绍
-因为只需要看一次，YOLO被称为Region-free方法，相比于Region-based方法，YOLO不需要提前找到可能存在目标的Region。
-
-也就是说，一个典型的Region-base方法的流程是这样的：先通过计算机图形学（或者深度学习）的方法，对图片进行分析，找出若干个可能存在物体的区域，将这些区域裁剪下来，放入一个图片分类器中，由分类器分类。
-
-## detect
-```bash
-python detect.py --weights ../valorant-v12.pt --source ../test.mp4 --view-img --save-txt
-```
-### detect关键函数提取以自使用测试
+# 使用Yolov5对fps游戏AI挂的原理研究项目
+![](Yolov5-fps游戏AI挂的原理研究\2022-09-06-17-22-27.png)
 [yolov5_valorant项目网址](https://github.com/DuGuYifei/Yolov5_FPS_AICheatPrinciple)
+
+# 流程设计
+1. 中键开关挂
+2. 左键按下时检测（即非自动开火模式）
+3. 抓取屏幕
+4. yolo检测
+5. 鼠标控制模拟
+
+# 屏幕抓取
+```py
+from PIL import ImageGrab
+im = ImageGrab.grab(bbox=rect)
+img0 = np.array(im)
+```
+
+# yolov5的检测关键代码提取
 ```py
 import win32api
 import win32con
@@ -86,18 +104,6 @@ if __name__ == "__main__":
     run()
 ```
 
-
-加上`--device 0` 意思是第1个gpu的cuda，但其实如果存在会默认使用
-
-### pytorch 和 cuda
-现在pytorch自带了cuda和cudnn的功能，所以大胆点用gpu是真的快！
-
-不用 90ms 一次检测，用了9ms一次检测
-
-## export
-[用opencv的dnn模块做yolov5目标检测](https://blog.csdn.net/nihate/article/details/112731327)
-
-1. 一开始export的onnx在c++里用opencv读取总是失败，
-2. 然后将conda环境里的pytorch按yolov5文档下载版本，但是要先将conda环境按pytorch官网要求小于等于3.8。
-3. 然后发现import onnx出现问题，只需要将onnx包降低版本即可。
-4. 此时export出的onnx可以被opencv阅读了。
+# 鼠标的操控和窗口句柄问题
+[鼠标](https://github.com/DuGuYifei/Notes/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/Python/Python%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/%E9%BC%A0%E6%A0%87%E8%BE%93%E5%85%A5%E4%BA%8B%E4%BB%B6.md)
+[窗口句柄](https://github.com/DuGuYifei/Notes/blob/main/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/Python/Python%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/%E7%AA%97%E5%8F%A3%E5%8F%A5%E6%9F%84.md)

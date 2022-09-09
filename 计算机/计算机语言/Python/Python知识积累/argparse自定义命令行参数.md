@@ -32,7 +32,7 @@ python arg.py -h
 
 ![](2022-09-05-02-37-26.png)
 
-我们可以直接通过args.addresses获得它的参数值。
+我们可以直接通过**args.addresses**获得它的参数值。
 
 当我们敲入python arg.py --addresses this-is-parameter-of-addresses 命令时
 

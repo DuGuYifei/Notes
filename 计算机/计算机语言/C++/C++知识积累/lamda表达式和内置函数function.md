@@ -8,7 +8,7 @@
     -   []表示不捕获任何变量
     -   [var]表示值传递方式捕获变量var
     -   [=]表示值传递方式捕获所有父作用域的变量（包括this） (例4)
-    -   [&]表示引用传递方式捕捉所有父作用域的变量（包括this）
+    -   [&]表示引用传递方式捕捉所有父作用域的变量（包括this）(例4，5)
     -   [&var]表示引用传递捕捉变量var
     -   [this]表示值传递方式捕捉当前的this指针
     -   [=, &] 拷贝与引用混合
@@ -153,7 +153,21 @@ refLambda();
 //输出： 1 13
 ```
 
-# []两种用法速度
+例5
+```cpp
+    double mincostToHireWorkers(vector<int>& quality, vector<int>& wage, int k) {
+        int n = quality.size();
+        vector<int> idx(n);
+        iota(idx.begin(),idx.end(),0);
+        sort(idx.begin(), idx.end(), [&](const int& a, const int& b)->bool{
+            return wage[a]/quality[a] <= wage[b]/quality[b];
+        });
+    ...
+    }
+如果去掉船只符号 & 则会报错
+```
+
+## []两种用法速度
 
 ```cpp
     vector<int> arrayRankTransform(vector<int>& arr) {

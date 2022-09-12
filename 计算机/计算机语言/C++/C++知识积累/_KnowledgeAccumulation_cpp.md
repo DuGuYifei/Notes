@@ -80,6 +80,7 @@
 79. [++的问题](++的问题.md)
 80. [计算运行时间](计算运行时间.md)
 81. [for循环条件为计算](for循环条件为计算.md)
+82. [itoa和iota](itoa和iota.md)
     
 ***WinAPI(below)***
 

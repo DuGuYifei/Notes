@@ -15,3 +15,4 @@
 13. [Type](Type.md)
 14. [GC](GC.md)
 15. [Thread和Task区别](Thread和Task区别.md)
+16. [string转换为其他类型](string转换为其他类型.md)

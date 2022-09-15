@@ -17,6 +17,7 @@
 8. [title属性](#title属性)
 9. [key属性](#key属性)
 10. [audio](#audio)
+11. [邮箱 mailto](#邮箱-mailto)
 
 ## html5标记
 <!DOCTYPE html>
@@ -148,3 +149,6 @@ key 属性是对这个元素的唯一标识
 
 ## audio
 可以播放音乐
+
+## 邮箱 mailto
+`<a href="mailto:chnliuyifei@gmail.com" title="E-Mail → mailto:chnliuyifei@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>`

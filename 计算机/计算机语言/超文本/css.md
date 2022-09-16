@@ -1,7 +1,13 @@
 # css
+[css知识积累](css知识积累/_KnowledgeAccumulation_css.md)
 
 1. [overflow](#overflow)
-2. [display:flex](#displayflex)
+2. [display](#display)
+   1. [flex](#flex)
+      1. [flex-wrap](#flex-wrap)
+   2. [block](#block)
+   3. [inline](#inline)
+   4. [inline-block](#inline-block)
 3. [float](#float)
 4. [transition和animation](#transition和animation)
 5. [margin, border, padding](#margin-border-padding)
@@ -13,12 +19,47 @@
    1. [常规规则](#常规规则)
    2. [嵌套规则](#嵌套规则)
       1. [@media](#media)
+11. [background](#background)
+   1. [background-size](#background-size)
+   2. [background-attachment](#background-attachment)
+12. [vh vw](#vh-vw)
+13. [transform](#transform)
+   1. [scale 放大缩小](#scale-放大缩小)
+14. [font](#font)
+   1. [行距 line-height](#行距-line-height)
+15. [border](#border)
+   1. [border-image-source 设置边框具体样式](#border-image-source-设置边框具体样式)
    
 ## overflow
 内容溢出元素框时的布局设置
 
-## display:flex
+## display
+### flex
 [浅谈CSS3中display属性的Flex布局 - 孙冠醇 - 博客园](https://www.cnblogs.com/sunwk/p/9049384.html)
+
+[display-flex详解](https://blog.csdn.net/idealistic/article/details/79955806)
+```css
+/*关键样式代码*/
+#father{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
+```
+#### flex-wrap
+wrap 值可实现拆行或拆列
+
+### block
+默认就是block
+
+设置width和height的特性
+
+### inline
+不换行
+
+### inline-block
+设置了inline-block属性的元素既拥有了block元素可以设置width和height的特性，又保持了inline元素不换行的特性。
 
 ## float
 块靠哪里浮动，左/右
@@ -116,3 +157,51 @@ father>child
     /* IE7*/
 }
 ```
+
+## background
+```css
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/bg.png");
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+```
+### background-size
+* cover 放大到覆盖整个屏幕
+* contain 使得被图片能够全部显示
+
+### background-attachment
+scroll:默认值，背景图相对于元素固定，背景随页面滚动而移动，即背景和内容绑定。
+
+fixed：背景图相对于视口固定，所以随页面滚动背景不动，相当于背景被设置在了body上。
+
+local：背景图相对于元素内容固定
+
+## vh vw
+按照view屏幕的 height 和 width
+
+## transform
+### scale 放大缩小
+`transform: scale(1.05);`
+
+
+## font
+### 行距 line-height
+
+## border
+### border-image-source 设置边框具体样式
+语法：
+`border-image-source [border-image-width]{1,4} [border-image-repeat]{0,2}`
+
+border-image-source 设置背景图片 可以使用绝对或相对URL地址指定边框的背景图片
+
+border-image-width 设置边框图片的宽度。 可以是具体的像素（px），也可以是百分比（%）
+
+border-image-repeat 设置背景图片的铺放方式 平铺(repeated)、铺满(rounded)或拉伸(stretched)
+
+例如：border-image:url(border.png) 27 repeat;，指的就是图片(url(border.png))，剪裁位置(27)，重复方式(repeat)。

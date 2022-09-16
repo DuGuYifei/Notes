@@ -22,6 +22,7 @@ description: A part of interesting self practice projects.
 5. webkit browser (wenkit.Net)
 6. webkit chrome browswer (cefsharp)
 7. Sokoban (SDL)
+8. Vue Music Player (front project)
 
 # 图像识别 Robomaster 风车能量靶识别
 ![](A-part-of-old-projects/2022-09-15-04-26-13.png)
@@ -79,3 +80,8 @@ Use sokoban and simulate the idea of Unity Engine.
 
 代码：https://github.com/DuGuYifei/Sokoban_SDL
 视频：https://www.bilibili.com/video/BV1UG411879L/
+
+# Vue Music Player (front project)
+![](A-part-of-old-projects/2022-09-15-05-15-04.png)
+A Vue project of music player.
+代码：https://github.com/DuGuYifei/Vue_MusicPlayer_Demo

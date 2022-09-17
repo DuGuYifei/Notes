@@ -11,4 +11,5 @@
 9. [value—index数组循环](value—index数组循环.md)
 10. [字符串和数字混合运算](字符串和数字混合运算.md)
 11. [prototype和__proto__的区别](prototype和__proto__的区别.md)
-12. [onmouseover和onmouseenter](onmouseover和onmouseenter.md)
+12. [onmouseover_enter_out_leave](onmouseover_enter_out_leave.md)
+13. [获取元素css样式_backgroundPosition](获取元素css样式_backgroundPosition.md)

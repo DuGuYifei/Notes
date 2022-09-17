@@ -13,22 +13,22 @@
 5. [margin, border, padding](#margin-border-padding)
 6. [子元素选择器](#子元素选择器)
 7. [ul偏右](#ul偏右)
-8. [li图片不居中](#li图片不居中)
-9. [井号，点，不加 选择器](#井号点不加-选择器)
-10. [@规则](#规则)
+8. [井号，点，不加 选择器](#井号点不加-选择器)
+9. [@规则](#规则)
    1. [常规规则](#常规规则)
    2. [嵌套规则](#嵌套规则)
       1. [@media](#media)
-11. [background](#background)
+10. [background](#background)
    1. [background-size](#background-size)
    2. [background-attachment](#background-attachment)
-12. [vh vw](#vh-vw)
-13. [transform](#transform)
+11. [vh vw](#vh-vw)
+12. [transform](#transform)
    1. [scale 放大缩小](#scale-放大缩小)
-14. [font](#font)
+13. [font](#font)
    1. [行距 line-height](#行距-line-height)
-15. [border](#border)
+14. [border](#border)
    1. [border-image-source 设置边框具体样式](#border-image-source-设置边框具体样式)
+15. [a 连接](#a-连接)
    
 ## overflow
 内容溢出元素框时的布局设置
@@ -95,13 +95,6 @@ father>child
 	margin-left: 10%;
 	margin-top: 50px;
 	padding: 0;
-}
-```
-
-## li图片不居中
-```css
-#leftbar>ul>li>img{
-	vertical-align: bottom;
 }
 ```
 
@@ -205,3 +198,27 @@ border-image-width 设置边框图片的宽度。 可以是具体的像素（px�
 border-image-repeat 设置背景图片的铺放方式 平铺(repeated)、铺满(rounded)或拉伸(stretched)
 
 例如：border-image:url(border.png) 27 repeat;，指的就是图片(url(border.png))，剪裁位置(27)，重复方式(repeat)。
+
+## a 连接
+值 描述
+none 默认。定义标准的文本。
+underline 定义文本下的一条线。
+overline 定义文本上的一条线。
+line-through 定义穿过文本下的一条线。
+blink 定义闪烁的文本。
+inherit 规定应该从父元素继承 text-decoration 属性的值。
+
+```css
+a:link{
+	text-decoration:none;   /* 指正常的未被访问过的链接*/ 
+}
+a:visited{
+	text-decoration:none; /*指已经访问过的链接*/
+}
+a:hover{
+	text-decoration:none;/*指鼠标在链接*/
+}
+a:active{
+	text-decoration:none;/* 指正在点的链接*/
+}
+```

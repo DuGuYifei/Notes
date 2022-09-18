@@ -46,6 +46,10 @@
       1. [::before](#before)
       2. [::before 和 :before](#before-和-before)
       3. [before 和 after](#before-和-after)
+20. [变量](#变量)
+   1. [声明](#声明)
+   2. [var()](#var)
+   3. [作用域](#作用域)
    
 ## overflow
 内容溢出元素框时的布局设置
@@ -340,3 +344,49 @@ after 生成在后面
 ![](2022-09-17-22-48-47.png)
 
 
+## 变量
+[Getting Title at 5:59](https://blog.csdn.net/qq_32247819/article/details/123788346)
+### 声明
+变量名前面要加两根连词线–，变量名大小写敏感。
+```css
+:root {
+  --main-color: #4d4e53;
+  --main-bg: rgb(255, 255, 255);
+  --logo-border-color: rebeccapurple;
+  --header-height: 68px;
+  --content-padding: 10px 20px;
+  --base-color: var(----main-color); 
+}
+```
+
+### var()
+```css
+.box {
+  color: var(--main-color);
+  height: var(--header-height);
+}
+```
+
+var()函数还可以使用第二个参数，表示变量的默认值。**如果该变量不存在，就会使用这个默认值。**
+```css
+.box {
+  color: var(--main-color, #000);
+  height: var(--header-height, 80px);
+}
+```
+
+### 作用域
+三个选择器都声明了–color变量。不同元素读取这个变量的时候，会采用优先级最高的规则，因此三段文字的颜色是不一样的。
+```css
+<style>
+  :root { --color: blue; }
+  div { --color: green; }
+  #alert { --color: red; }
+  * { color: var(--color); }
+</style>
+
+<p>蓝色</p>
+<div>绿色</div>
+<div id="alert">红色</div>
+
+```

@@ -8,27 +8,44 @@
    2. [block](#block)
    3. [inline](#inline)
    4. [inline-block](#inline-block)
-3. [float](#float)
-4. [transition和animation](#transition和animation)
-5. [margin, border, padding](#margin-border-padding)
-6. [子元素选择器](#子元素选择器)
-7. [ul偏右](#ul偏右)
-8. [井号，点，不加 选择器](#井号点不加-选择器)
-9. [@规则](#规则)
+3. [position](#position)
+   1. [fixed](#fixed)
+   2. [relative](#relative)
+4. [clip 和 clippath](#clip-和-clippath)
+   1. [clip](#clip)
+   2. [clippath](#clippath)
+5. [overflow](#overflow-1)
+   1. [溢出隐藏](#溢出隐藏)
+   2. [清除浮动](#清除浮动)
+   3. [外边距塌陷](#外边距塌陷)
+6. [float](#float)
+7. [transition和animation](#transition和animation)
+8. [margin, border, padding](#margin-border-padding)
+9. [子元素选择器](#子元素选择器)
+10. [ul偏右](#ul偏右)
+11. [井号，点，不加 选择器](#井号点不加-选择器)
+12. [@规则](#规则)
    1. [常规规则](#常规规则)
    2. [嵌套规则](#嵌套规则)
       1. [@media](#media)
-10. [background](#background)
+13. [background](#background)
    1. [background-size](#background-size)
    2. [background-attachment](#background-attachment)
-11. [vh vw](#vh-vw)
-12. [transform](#transform)
+14. [vh vw](#vh-vw)
+15. [transform](#transform)
    1. [scale 放大缩小](#scale-放大缩小)
-13. [font](#font)
+16. [font](#font)
    1. [行距 line-height](#行距-line-height)
-14. [border](#border)
+17. [border](#border)
    1. [border-image-source 设置边框具体样式](#border-image-source-设置边框具体样式)
-15. [a 连接](#a-连接)
+   2. [设置某方向的边框](#设置某方向的边框)
+18. [a 连接](#a-连接)
+19. [伪](#伪)
+   1. [伪类](#伪类)
+   2. [伪元素](#伪元素)
+      1. [::before](#before)
+      2. [::before 和 :before](#before-和-before)
+      3. [before 和 after](#before-和-after)
    
 ## overflow
 内容溢出元素框时的布局设置
@@ -60,6 +77,36 @@ wrap 值可实现拆行或拆列
 
 ### inline-block
 设置了inline-block属性的元素既拥有了block元素可以设置width和height的特性，又保持了inline元素不换行的特性。
+
+## position
+### fixed
+使元素不动
+
+### relative
+相对正常位置进行调整, 如下就会让元素向正常位置左侧移动20px
+```css
+position: relative;
+left: -20px;
+```
+
+## clip 和 clippath
+### clip
+已经落后并取消
+clip: rect()
+
+### clippath
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 剪了一个长方形
+
+## overflow
+溢出隐藏、清除浮动、解决外边距塌陷等等
+### 溢出隐藏
+遇到 position:fixed 时应使用clip-path来代替
+
+### 清除浮动
+父元素没有高度，小叔叔元素从下面顶上来作为了子元素的背景
+
+### 外边距塌陷
+子元素设置了margintop使父元素上边框也跟着向下，导致上面有空白
 
 ## float
 块靠哪里浮动，左/右
@@ -199,6 +246,16 @@ border-image-repeat 设置背景图片的铺放方式 平铺(repeated)、铺满(
 
 例如：border-image:url(border.png) 27 repeat;，指的就是图片(url(border.png))，剪裁位置(27)，重复方式(repeat)。
 
+### 设置某方向的边框
+```css
+border-top:2px dotted #185598;
+none：无样式；dotted：点线；dashed：虚线；solid：实线；
+double：双线；groove：槽线；ridge：脊线；inset：内凹；outset：外凸;groove 上颜色  skyblue 下颜色。
+.style-one /*内嵌水平线*/
+.style-two /*透明渐变水平线*/
+.style-three/*渐变*/
+```
+
 ## a 连接
 值 描述
 none 默认。定义标准的文本。
@@ -222,3 +279,64 @@ a:active{
 	text-decoration:none;/* 指正在点的链接*/
 }
 ```
+
+## 伪
+### 伪类
+常见伪类——:hover,:link,:active,:target,:not(),:focus。
+### 伪元素
+[原生js获取css伪类元素并设置属性](../JavaScript和TypeScript/JavaScript/知识积累/原生js获取css伪类元素并设置属性.md)
+常见伪元素——::first-letter,::first-line,::before,::after,::selection。
+
+&::before 和  &::after都不是CSS中的内容，而是Sass和SCSS中的属性, 通常可以写成这样：test.scss
+```css
+li{
+   /*  some style 1   */
+  &::after{
+     /* some style 2  */  
+    }
+}
+```
+
+它经过使用gulp进行编译后，就会生成test.css文件，如下test.css
+```css
+
+li { /*  some style 1 */}
+
+li::after {/* some style 2 */}
+```
+
+由于使用伪元素插入的内容未插入到DOM内，因此通常无法使用浏览器的开发者工具查看和检查插入的内容。但是，Chrome 32+和Firebug for Firefox允许你查看伪元素在DOM中的位置，通过选择它，你可以在CSS面板中查看与其相关联的样式。在Chrome的开发工具中检查上述演示会显示以下结果：
+![](2022-09-17-22-48-47.png)
+
+说明：
+
+1. 伪类元素要配合content属性一起使用
+2. 伪类元素是css渲染层加入的，不能通过js来操作
+3. 伪类对象特效通常通过：hover伪类样式来激活
+
+#### ::before
+在css中，::before 是一个伪类元素，代表生成的内容元素，表示相应元素的可抽象样式的第一个子元素，即：所选元素的第一个子元素。
+
+利用::before可以把需插入的内容插入到元素的其他内容之前，并且默认内联显示。::before需要使用content属性来指定内容的值。
+
+#### ::before 和 :before
+
+相同点：
+
+1. 伪类对象，用来设置对象前的内容
+
+2. ::before和:before写法是等效的
+
+不同点：
+
+1. :befor是Css2的写法，::before是Css3的写法
+
+2. :before的兼容性要比::before好 ，不过在H5开发中建议使用::before比较好
+
+#### before 和 after
+before 生成在前面
+after 生成在后面
+
+![](2022-09-17-22-48-47.png)
+
+

@@ -13,3 +13,6 @@
 11. [prototype和__proto__的区别](prototype和__proto__的区别.md)
 12. [onmouseover_enter_out_leave](onmouseover_enter_out_leave.md)
 13. [获取元素css样式_backgroundPosition](获取元素css样式_backgroundPosition.md)
+14. [原生js获取css伪类元素并设置属性](原生js获取css伪类元素并设置属性.md)
+15. [获取机型](获取机型.md)
+16. [按需加载js脚本](按需加载js脚本.md)

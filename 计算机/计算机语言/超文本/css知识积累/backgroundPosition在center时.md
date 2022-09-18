@@ -16,3 +16,5 @@ function getStyle( obj , attr ){
 let box=document.getElementById('profile');
 alert(getStyle(box, 'background-position'));
 ```
+
+[获取元素css样式_backgroundPosition](../../JavaScript和TypeScript/JavaScript/知识积累/获取元素css样式_backgroundPosition.md)

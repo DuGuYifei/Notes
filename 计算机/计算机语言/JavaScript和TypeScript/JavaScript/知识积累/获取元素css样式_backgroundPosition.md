@@ -12,3 +12,10 @@ function getStyle( obj , attr ){
 let box=document.getElementById('profile');
 alert(getStyle(box, 'background-position'));
 ```
+
+修改：
+```js
+let back = document.getElementById('back');
+back.style.backgroundPositionX = x+"px";
+back.style.backgroundPositionY = y+"px";
+```

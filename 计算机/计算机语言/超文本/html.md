@@ -19,6 +19,7 @@
 9. [key属性](#key属性)
 10. [audio](#audio)
 11. [邮箱 mailto](#邮箱-mailto)
+12. [data-属性](#data-属性)
 
 ## html5标记
 <!DOCTYPE html>
@@ -153,3 +154,15 @@ key 属性是对这个元素的唯一标识
 
 ## 邮箱 mailto
 `<a href="mailto:chnliuyifei@gmail.com" title="E-Mail → mailto:chnliuyifei@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>`
+
+## data-属性
+使用 data-* 属性来嵌入自定义数据
+```html
+<ul>
+<li data-animal-type="鸟类">喜鹊</li>
+<li data-animal-type="鱼类">金枪鱼</li> 
+<li data-animal-type="蜘蛛">蝇虎</li> 
+</ul>
+```
+
+css种获取案例：[attr()获取属性值配合data-](css知识积累/attr()获取属性值配合data-.md)

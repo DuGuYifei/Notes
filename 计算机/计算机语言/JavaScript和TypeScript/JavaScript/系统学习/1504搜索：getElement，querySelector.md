@@ -298,7 +298,7 @@ document.getElementsByTagName('input')[0].value = 5;
 此外：
 
 * `elem.matches(css)` 用于检查 elem 与给定的 CSS 选择器是否匹配。
-* e`lem.closest(css)` 用于查找与给定 CSS 选择器相匹配的最近的祖先。elem 本身也会被检查。
+* `elem.closest(css)` 用于查找与给定 CSS 选择器相匹配的最近的祖先。elem 本身也会被检查。
 
 ### elem.contains(elemB)
 让我们在这里提一下另一种用来**检查子级与父级之间关系的方法**，因为它有时很有用：

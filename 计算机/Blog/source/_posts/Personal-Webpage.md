@@ -19,11 +19,12 @@ description: The personal webpage in my github io (https://duguyifei.github.io).
 2. Support different browser, device and screen
 3. Js get different device
 4. Know more about svg
-5. clip-path, calc, cubic-bezier, etc.
-6. Know the existance of scss sass
-7. scroll snap
-8. Special border
-9. Basic usage of javascript
-10. Cool button animation/transition
-11. Open pdf.
-12. etc...
+5. browser tag icon
+6. clip-path, calc, cubic-bezier, etc.
+7. Know the existance of scss sass
+8. scroll snap
+9. Special border
+10. Basic usage of javascript
+11. Cool button animation/transition
+12. Open pdf.
+13. etc...

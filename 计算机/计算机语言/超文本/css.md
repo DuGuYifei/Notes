@@ -21,35 +21,37 @@
 6. [float](#float)
 7. [transition和animation](#transition和animation)
 8. [margin, border, padding](#margin-border-padding)
-9. [子元素选择器](#子元素选择器)
-10. [ul偏右](#ul偏右)
-11. [井号，点，不加 选择器](#井号点不加-选择器)
-12. [@规则](#规则)
+9. [ul偏右](#ul偏右)
+10. [井号，点，不加 选择器](#井号点不加-选择器)
+   1. [子元素选择器](#子元素选择器)
+   2. [序号选择器](#序号选择器)
+11. [@规则](#规则)
    1. [常规规则](#常规规则)
    2. [嵌套规则](#嵌套规则)
       1. [@media](#media)
-13. [background](#background)
+12. [background](#background)
    1. [background-size](#background-size)
    2. [background-attachment](#background-attachment)
-14. [vh vw](#vh-vw)
-15. [transform](#transform)
+13. [vh vw](#vh-vw)
+14. [transform](#transform)
    1. [scale 放大缩小](#scale-放大缩小)
-16. [font](#font)
+15. [font](#font)
    1. [行距 line-height](#行距-line-height)
-17. [border](#border)
+16. [border](#border)
    1. [border-image-source 设置边框具体样式](#border-image-source-设置边框具体样式)
    2. [设置某方向的边框](#设置某方向的边框)
-18. [a 连接](#a-连接)
-19. [伪](#伪)
+17. [a 连接](#a-连接)
+18. [伪](#伪)
    1. [伪类](#伪类)
    2. [伪元素](#伪元素)
       1. [::before](#before)
       2. [::before 和 :before](#before-和-before)
       3. [before 和 after](#before-和-after)
-20. [变量](#变量)
+19. [变量](#变量)
    1. [声明](#声明)
    2. [var()](#var)
    3. [作用域](#作用域)
+20. [text-transform](#text-transform)
    
 ## overflow
 内容溢出元素框时的布局设置
@@ -135,11 +137,6 @@ transition只有两个关键帧，animation有多个
 * border - 边框。围绕着padding和content，如果设置了宽度则可见
 * margin - 边框以外的区域。透明不可见
 
-## 子元素选择器
-father>child
-
-也可以直接空格隔开
-
 ## ul偏右
 ```css
 #leftbar>ul{
@@ -153,6 +150,22 @@ father>child
 * `#`对应id
 * `.`对应class
 * 不加则对应标签
+
+### 子元素选择器
+father>child
+
+也可以直接空格隔开
+
+### 序号选择器
+1. :first-child：表示选择第一个子元素，如 .box1 p:first-child 表示选择box盒子中的第一个p
+
+2. ：nth-child():表示选择任意序号的子元素，如 .box2 p:nth-child(3)表示选择box2盒子中的第三个p。另外nth-child还可以写成an+b的形式，如 .box2 p:nth-child(3n+2)表示从第二个p开始，每三个p选择一个 ps：2n+1等价于odd及奇数，2n等价于even及偶数
+
+3. :nth-of-type：表示选择同种标签指定序号的子元素，如 .box3  p:nth-of-type(3)表示box中p类型的第三个p
+
+4. :nth-last-child()：表示倒数选择
+
+5. :nth-last-of-type()：表示倒数选择
 
 ## @规则
 [CSS @规则（详细）](http://c.biancheng.net/css3/at-rule.html)
@@ -388,5 +401,11 @@ var()函数还可以使用第二个参数，表示变量的默认值。**如果�
 <p>蓝色</p>
 <div>绿色</div>
 <div id="alert">红色</div>
-
 ```
+
+## text-transform
+1. text-transform:none 默认，定义带有小写字母和大写字母的标准文本
+2. text-transform:capitalize 文本中的每个单词以大写字母开头
+3. text-transform:lowercase 定义无大写字母，仅有小写字母
+4. ext-transform:uppercase 定义无小写字母，仅有大写字母
+5. text-transform:inherit 规定应该从父元素继承text-transform属性的值

@@ -25,4 +25,5 @@ description: The personal webpage in my github io (https://duguyifei.github.io).
 8. Special border
 9. Basic usage of javascript
 10. Cool button animation/transition
-11. etc...
+11. Open pdf.
+12. etc...

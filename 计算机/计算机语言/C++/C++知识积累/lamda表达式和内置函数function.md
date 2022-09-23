@@ -27,7 +27,7 @@
 
 -   `{}`里放的是函数体
 
-有时候要给它一个`function`不然没有办法递归(recursion)自身
+有时候要给它一个`function`不然没有办法递归(recursion)自身，会报错：“auto说明符的变量不能出现在自身”
 - `function<void(int a)>`
 - `#include <functional>`
 ```cpp

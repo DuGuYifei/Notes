@@ -19,3 +19,6 @@ For a set of integer,
 
 * key1：lower_bound 没有的时候就是`end()`
 * key2：迭代器可以`*it`
+
+
+set原理是红黑树

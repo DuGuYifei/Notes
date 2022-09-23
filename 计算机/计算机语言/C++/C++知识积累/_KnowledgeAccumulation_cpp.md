@@ -82,6 +82,8 @@
 81. [for循环条件为计算](for循环条件为计算.md)
 82. [itoa和iota](itoa和iota.md)
 83. [传参时的const](传参时的const.md)
+84. [unique和erase](unique和erase.md)
+85. [map，unordered_map，set，unordered_set，priority_queue，堆，红黑树](map，unordered_map，set，unordered_set，priority_queue，堆，红黑树.md)
     
 ***WinAPI(below)***
 

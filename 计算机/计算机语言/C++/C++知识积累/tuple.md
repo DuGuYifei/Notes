@@ -8,3 +8,15 @@ std::tuple<T1, T2, TN> t2(v1, v2, ... TN); //创建一个tuple对象，它的两
 std::tuple<T1&> t3(ref&); // tuple的元素类型可以是一个引用
 std::make_tuple(v1, v2); // 像pair一样也可以通过make_tuple进行创建一个tuple对象
 ```
+
+## get<>()
+
+要么返回的是: &引用, 要么返回的是: const &常量引用;
+
+即, std::get<0>( t), 他返回的, 一定是 t这个tuple的 第一个元素的 **引用**, **不会产生 临时对象**!!!
+
+至于是不是const 引用, 自然**取决于: t对象本身, 是不是const**
+
+## auuto &&
+
+auto&& [_, idx, diff] = sweep[k];

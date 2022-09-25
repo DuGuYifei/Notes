@@ -50,6 +50,12 @@ npm install hexo-deployer-git --save
 先上面的 url 和 root 补充完整，不然会没有 css 样式和 js 脚本
 ![](Blog创建/2022-08-13-16-18-27.png)
 
+**关于root的深入理解 以及 解决自定义url后出现的无法加载资源问题**
+如果是靠 liuyifei.tech/blog 连接就不会出问题，如果单独设置了一个CNAME连接比如'blog.liuyifei.tech'，并将root设置为 `/blog` 那么发送请求就变成了 blog.liuyifei.tech/blog/ 就不对了，
+我们需要**blog.liuyifei.tech**，所以这时候只需要将root设置为`../`即可。
+暂时放弃子域名链接，由于hexo的结构经过长时间维护已经很混乱，对于不同的url解读代码太过分散，修改太浪费精力了，以后有时间自己写。
+
+
 也可以加上 branch:[自定义分支名称] 和 massage:[自定义提交消息]  
 ![](Blog创建/2022-08-13-16-18-35.png)
 

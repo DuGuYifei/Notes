@@ -14,6 +14,7 @@ description: 使用Yolov5对屏幕实时检测，并控制鼠标
 ![](Yolov5_fps游戏AI挂的原理研究/2022-09-06-17-22-27.png)
 [yolov5_valorant项目网址](https://github.com/DuGuYifei/Yolov5_FPS_AICheatPrinciple)
 
+
 # 流程设计
 1. 中键开关挂
 2. 左键按下时检测（即非自动开火模式）

@@ -32,6 +32,7 @@ This is my notes blog. It includes:
     6. front
        1. Tree of front-learning route
        2. Vue
+       3. nodejs
     7. AI
        1. Building Environment
        2. Computer Vision

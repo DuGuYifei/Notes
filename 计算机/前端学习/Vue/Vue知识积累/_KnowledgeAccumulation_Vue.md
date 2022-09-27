@@ -16,3 +16,6 @@
 14. [：class绑定](：class绑定.md)
 15. [事件修饰符](事件修饰符.md)
 16. [axios+vue](axios+vue.md)
+17. [ElementPlus按需导入](ElementPlus按需导入.md)
+18. [ref](ref.md)
+19. [setup](setup.md)

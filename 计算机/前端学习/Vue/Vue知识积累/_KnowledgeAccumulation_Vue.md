@@ -19,3 +19,8 @@
 17. [ElementPlus按需导入](ElementPlus按需导入.md)
 18. [ref](ref.md)
 19. [setup](setup.md)
+20. [项目文件夹的作用](项目文件夹的作用.md)
+21. [lang](lang.md)
+22. [scoped](scoped.md)
+23. [router模板](router.md)
+24. [createApp.use.mount](createApp.use.mount.md)

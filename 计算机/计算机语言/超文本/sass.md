@@ -1,8 +1,10 @@
 # sass
 1. [什么是sass](#什么是sass)
-2. [安装](#安装)
-3. [使用](#使用)
-4. [@include和@mixin](#include和mixin)
+2. [sass 和 scss](#sass-和-scss)
+3. [安装](#安装)
+4. [使用](#使用)
+5. [@include和@mixin](#include和mixin)
+6. [&](#)
 
 ## 什么是sass
 sass是css的扩展语言。用来写css的。
@@ -14,6 +16,15 @@ sass是css的扩展语言。用来写css的。
 - 权重不好区分
 
 [https://www.runoob.com/sass/sass-install.html](https://www.runoob.com/sass/sass-install.html)
+
+## sass 和 scss
+sass和scss的区别
+
+Sass 和 SCSS 其实是同一种东西，我们平时都称之为 Sass，两者之间不同之处有以下两点：
+
+* 文件扩展名不同，Sass 是以“.sass”后缀为扩展名，而 SCSS 是以“.scss”后缀为扩展名
+
+* 语法书写方式不同，Sass 是以严格的缩进式语法规则来书写，不带大括号({})和分号(;)，而 SCSS 的语法书写和我们的 CSS 语法书写方式非常类似。
 
 ## 安装
 `npm install -g sass`
@@ -91,3 +102,25 @@ mixin 创建模板，include使用
 ```
 案例：
 [切角边框](css知识积累/切角边框和背景.md)
+
+## &
+这是sass的语法，代表上一级选择器
+```scss
+ul{
+
+    margin-bottom: 20px;
+
+    & >li {
+
+        margin-bottom: 0;
+
+    }
+
+  }
+```
+解释成CSS代码如下
+```css
+ul{margin-bottom: 20px;}
+
+ul > li {margin-bottom: 0;}
+```

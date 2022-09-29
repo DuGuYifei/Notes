@@ -24,3 +24,5 @@
 22. [scoped](scoped.md)
 23. [router模板](router.md)
 24. [createApp.use.mount](createApp.use.mount.md)
+25. [v-bind和v-model的区别](v-bind和v-model的区别.md)
+26. [reactive和ref](reactive和ref.md)

@@ -26,3 +26,5 @@
 24. [createApp.use.mount](createApp.use.mount.md)
 25. [v-bind和v-model的区别](v-bind和v-model的区别.md)
 26. [reactive和ref](reactive和ref.md)
+27. [:deep()](：deep().md)
+28. [ElementPlus组建的class问题](ElementPlus组建的class问题.md)

@@ -20,6 +20,9 @@
 10. [audio](#audio)
 11. [邮箱 mailto](#邮箱-mailto)
 12. [data-属性](#data-属性)
+13. [svg](#svg)
+   1. [symbol 和 use](#symbol-和-use)
+   2. [xlink:href](#xlinkhref)
 
 ## html5标记
 <!DOCTYPE html>
@@ -166,3 +169,15 @@ key 属性是对这个元素的唯一标识
 ```
 
 css种获取案例：[attr()获取属性值配合data-](css知识积累/attr()获取属性值配合data-.md)
+
+## svg 
+
+### symbol 和 use
+
+`<use>` 元素从 SVG 文档中获取节点，并在其他地方复制它们。
+
+![](2022-09-30-19-59-36.png)
+![](2022-09-30-19-59-40.png)
+
+### xlink:href
+动态赋值svg图片

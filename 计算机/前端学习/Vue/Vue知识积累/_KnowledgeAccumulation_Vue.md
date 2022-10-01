@@ -28,3 +28,7 @@
 26. [reactive和ref](reactive和ref.md)
 27. [:deep()](：deep().md)
 28. [ElementPlus组建的class问题](ElementPlus组建的class问题.md)
+29. [defineProps](defineProps.md)
+30. [computed](computed.md)
+31. [构建工具功能：Vite-glob导入或者webpack-require.context](构建工具功能：Vite-glob导入或者webpack-require.context.md)
+32. [app.component()](app.component.md)

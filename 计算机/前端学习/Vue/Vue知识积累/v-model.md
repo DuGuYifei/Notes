@@ -29,3 +29,5 @@
 
 注意如果同时使用 input text 的value属性和v-model属性，会按照v-model的来
 
+## v-model.numer
+v-model 默认绑定的都是字符串，而使用 number 修饰符，就会将其自动转换为number类型

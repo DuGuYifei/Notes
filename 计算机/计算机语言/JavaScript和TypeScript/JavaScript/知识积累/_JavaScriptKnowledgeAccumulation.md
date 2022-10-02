@@ -20,3 +20,5 @@
 18. [$](dollar符号.md)
 19. [防抖和节流](防抖和节流.md)
 20. [箭头函数return与大括号省略问题](箭头函数return与大括号省略问题.md)
+21. [export default](export-default.md)
+22. [Proxy和Reflect](Proxy和Reflect.md)

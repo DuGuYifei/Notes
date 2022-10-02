@@ -32,3 +32,6 @@
 30. [computed](computed.md)
 31. [构建工具功能：Vite-glob导入或者webpack-require.context](构建工具功能：Vite-glob导入或者webpack-require.context.md)
 32. [app.component()](app.component.md)
+33. [自定义注册svg：vite-plugin-svg-icons](自定义注册svg：vite-plugin-svg-icons.md)
+34. [ElementPlus表单校验trigger](ElementPlus表单校验trigger.md)
+35. [ElementPlus表单校验prop属性](ElementPlus表单校验prop属性.md)

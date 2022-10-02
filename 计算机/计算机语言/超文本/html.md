@@ -23,6 +23,7 @@
 13. [svg](#svg)
    1. [symbol 和 use](#symbol-和-use)
    2. [xlink:href](#xlinkhref)
+14. [颜色属性](#颜色属性)
 
 ## html5标记
 <!DOCTYPE html>
@@ -181,3 +182,6 @@ css种获取案例：[attr()获取属性值配合data-](css知识积累/attr()�
 
 ### xlink:href
 动态赋值svg图片
+
+## 颜色属性
+fill

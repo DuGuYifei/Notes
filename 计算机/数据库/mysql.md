@@ -4,7 +4,11 @@
    1. [安装](#安装)
    2. [让root远程可访问](#让root远程可访问)
    3. [数据库管理](#数据库管理)
-2. [查询用户](#查询用户)
+2. [查询端口号](#查询端口号)
+3. [查询用户](#查询用户)
+4. [数据库管理](#数据库管理-1)
+   1. [备份与回复](#备份与回复)
+   2. [创建与删除内容](#创建与删除内容)
 
 ## linux
 写在前面：
@@ -129,7 +133,7 @@ update mysql.user set host = '%' where user ='root' limit 1;
 ```bash
 vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
-将bind 127.0.0.1这行注释掉
+将bind 127.0.0.1这行注释掉 （也有可能是改成0.0.0.0，待尝试）
 
 3. 修改root密码验证方式
 ```bash
@@ -147,9 +151,40 @@ update mysql.user set authentication_string=PASSWORD('123'),plugin='mysql_native
 ### 数据库管理
 [Ubuntu下的MySQL数据库_m0_63228448的博客-CSDN博客_ubuntu查看mysql数据库](https://blog.csdn.net/m0_63228448/article/details/121739771)
 
+## 查询端口号
+```bash
+netstat -anp|grep mysql
+```
+或进入mysql：
+```sql
+show global variables like 'port';
+```
+
+
 ## 查询用户
 ```SQL
 SELECT USER, HOST FROM mysql.user
 ```
 
 该表中 grant_priv 是grant权限，grant是授权权限
+
+## 数据库管理
+
+### 备份与回复
+```bash
+mysqldump [OPTIONS] database [tables]
+ 
+例子
+mysqldump -h 192.168.1.200 -u root –p123456 wdg >/home/wdg/wdg.sql 
+恢复数据库
+mysql -u root –p123456 wdg < /home/wdg/wdg.sql 
+```
+
+### 创建与删除内容
+| 代码                      | 作用                 |
+| ------------------------- | -------------------- |
+| show databases;           | 显示所有数据库       |
+| use 数据库名;             | 切换到某个数据库     |
+| show tables;              | 显示某个数据库里的表 |
+| create database 数据库名; | 创建                 |
+| drop database 数据库名;   | 删除                 |

@@ -4,6 +4,7 @@
    1. [安装](#安装)
    2. [让root远程可访问](#让root远程可访问)
    3. [数据库管理](#数据库管理)
+2. [查询用户](#查询用户)
 
 ## linux
 写在前面：
@@ -22,7 +23,9 @@ sudo systemctl start mysql.service # 确保服务器正在运行
 ------------------------------------------------
 
 安全保护
-**是否靠用户名密码登录**，
+**root是否靠用户名密码登录**，
+
+**注意ubuntu默认不支持root密码登录，哪怕sudo passwd也不行，需要其他操作：** [ubuntu 设置root用户密码并实现root用户登录 - CharyGao - 博客园](https://www.cnblogs.com/Chary/p/14849542.html)
 
 * 如果是，则直接：
 ```bash
@@ -34,9 +37,10 @@ sudo mysql_secure_installation
 sudo mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 exit
-mysql -u root -p
-ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+# mysql -u root -p
+# ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
 sudo mysql_secure_installation
+# 输入密码，然后所有问题都选 n
 ```
 ------------------------------------------------
 
@@ -83,17 +87,18 @@ mysql -u root -p
 创建用户并授予权限
 
 ```bash
-CREATE USER 'username'@'host' IDENTIFIED BY 'password’;
+CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 ```
 
 GRANT privileges ON databasename.tablename TO ‘username’@‘host’；
 ```bash
-GRANT ALL ON *.* TO 'ubuntu'@'%'
+GRANT ALL ON *.* TO 'username'@'%';
 ```
 
 **privileges：用户的操作权限，如SELECT，INSERT，UPDATE等，如果要授予所的权限则使用ALL**
 
-补充各种操作权限：
+
+**补充**各种操作权限：
 ```bash
 GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
 ```
@@ -141,3 +146,10 @@ update mysql.user set authentication_string=PASSWORD('123'),plugin='mysql_native
 
 ### 数据库管理
 [Ubuntu下的MySQL数据库_m0_63228448的博客-CSDN博客_ubuntu查看mysql数据库](https://blog.csdn.net/m0_63228448/article/details/121739771)
+
+## 查询用户
+```SQL
+SELECT USER, HOST FROM mysql.user
+```
+
+该表中 grant_priv 是grant权限，grant是授权权限

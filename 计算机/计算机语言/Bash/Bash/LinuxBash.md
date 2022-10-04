@@ -31,3 +31,15 @@ crontab -r 删除
 ```
 */5 * * * * free -h >> file1
 ```
+
+## 给root账户设置密码
+```bash
+sudo password
+```
+
+但是ubuntu默认不支持root密码登录，需要其他操作：[ubuntu 设置root用户密码并实现root用户登录 - CharyGao - 博客园](https://www.cnblogs.com/Chary/p/14849542.html)
+
+## 进入root账户
+```
+sudo su
+```

@@ -152,6 +152,7 @@ update mysql.user set authentication_string=PASSWORD('123'),plugin='mysql_native
 [Ubuntu下的MySQL数据库_m0_63228448的博客-CSDN博客_ubuntu查看mysql数据库](https://blog.csdn.net/m0_63228448/article/details/121739771)
 
 ## 查询端口号
+默认3306
 ```bash
 netstat -anp|grep mysql
 ```

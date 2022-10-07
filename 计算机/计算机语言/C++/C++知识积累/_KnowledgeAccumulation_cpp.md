@@ -37,7 +37,7 @@
 36. [constexpr](constexpr.md)
 37. [连续等于](连续等于.md)
 38. [longlong转化问题](longlong转化问题.md)
-39. [iata](iota.md)
+39. [iota生成顺序递增序列](iota生成顺序递增序列.md)
 40. [erase和remove](erase和remove.md)
 41. [queue](queue.md)
 42. [switch中的变量声明问题](switch中的变量声明问题.md)

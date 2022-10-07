@@ -2,7 +2,7 @@
 
 ## iota
 数组赋值
-[iota](iota.md)
+[iota生成顺序递增序列](iota生成顺序递增序列.md)
 
 ## itoa
 整数转字符串

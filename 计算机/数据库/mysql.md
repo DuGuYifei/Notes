@@ -3,10 +3,11 @@
 1. [linux](#linux)
    1. [安装](#安装)
    2. [让root远程可访问](#让root远程可访问)
-   3. [数据库管理](#数据库管理)
-2. [查询端口号](#查询端口号)
-3. [查询用户](#查询用户)
-4. [数据库管理](#数据库管理-1)
+2. [要允许访问 mysql 端口](#要允许访问-mysql-端口)
+   1. [数据库管理](#数据库管理)
+3. [查询端口号](#查询端口号)
+4. [查询用户](#查询用户)
+5. [数据库管理](#数据库管理-1)
    1. [备份与回复](#备份与回复)
    2. [创建与删除内容](#创建与删除内容)
 
@@ -41,10 +42,11 @@ sudo mysql_secure_installation
 sudo mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 exit
+sudo mysql_secure_installation
+# 安全脚本完成后，您可以重新打开 MySQL 并将根用户的身份验证方法更改回默认值 auth_socket 。要使用密码以根MySQL用户的身份进行身份验证，请运行以下命令：
 # mysql -u root -p
 # ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
-sudo mysql_secure_installation
-# 输入密码，然后所有问题都选 n
+# 输入密码，然后所有问题都选 Y
 ```
 ------------------------------------------------
 
@@ -93,7 +95,6 @@ mysql -u root -p
 ```bash
 CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 ```
-
 GRANT privileges ON databasename.tablename TO ‘username’@‘host’；
 ```bash
 GRANT ALL ON *.* TO 'username'@'%';
@@ -119,7 +120,11 @@ drop user 'carl'@'%';
 ```
 
 ### 让root远程可访问 
+方发1：
+[How To Allow Remote Access to MySQL  | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql)
 
+要允许访问 mysql 端口
+-----------------------------------------------------
 **来自于教程二，如果根据教程一，则可以只要第一步**
 
 **注意当时可能已经设置为 % 了**
@@ -127,6 +132,10 @@ drop user 'carl'@'%';
 1. 更新root@localhost为 root@%
 ```bash
 update mysql.user set host = '%' where user ='root' limit 1;
+
+GRANT ALL PRIVILEGES ON *.* TO 'ubuntu'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+GRANT ALL ON *.* TO 'username'@'%';
 ```
 
 2. 修改监听地址
@@ -146,6 +155,9 @@ update mysql.user set authentication_string=PASSWORD('123'),plugin='mysql_native
 /etc/init.d/mysql restart 
 
 ```
+
+服务器需要允许访问 mysql （默认3306） 端口。
+比如腾讯云要在防火墙中添加，自制服务器应该直接用命令就行。
 
 
 ### 数据库管理

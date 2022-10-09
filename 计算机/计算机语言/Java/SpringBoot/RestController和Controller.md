@@ -1,0 +1,5 @@
+# RestController和Controller
+
+@RestController注解，代表返回的是json格式的数据，这个注解是Spring4之后新加的注解，原来返回json格式的数据需要@ResponseBody配合@Controller一起使用；
+
+如果我们在项目中使用的是@Conrtroller注解的话，不加@Response注解，则当直接返回一个字符串的时候，就好比返回的是一个模板页面，类似我们返回一个jsp页面一样。所以我们需要加上模板引擎（这种返回html一类的模板的开发方式现在一般不会再用了，因为现在都是前后端分离式的开发，后台服务器一般只需要返回json格式的数据即可，所以了解即可）

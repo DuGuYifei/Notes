@@ -11,6 +11,19 @@ Ensure that an existing relationship will never point to a non-existing endpoint
 
 调用：`$name`
 
+## 语法补充
+```cypher
+MATCH (n {name: 'Teresa'}) 
+REMOVE n:PERSON RETURN labels(n);
+
+
+match (n)-->(m) return n,m;
+match (n)-[rel]->(m) return type(rel);
+match (n:Person)-[rel]->(m:Person) return distinct type(rel)
+
+match ()-[]->()<-[]-() return.... LIMIT 2
+```
+
 ### 曾经的作业
 ```sql
 CREATE (N:PERSON {name:'John', age:12});

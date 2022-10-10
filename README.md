@@ -22,32 +22,35 @@ This is my notes blog. It includes:
            4. windows command
         3. C++
         4. CSharp
-        5. JavaScript and TypeScript
-        6. Markdown
-        7. Programming language
+        5. Java
+        6. JavaScript and TypeScript
+        7. Markdown
+        8. Programming language
            1. ada & smalltalk
            2. haskell & prolog
-        8. Python
+        9. Python
     5. build model
-    6. front
+    6. front end
        1. Tree of front-learning route
        2. Vue
        3. nodejs
-    7. AI
+    7. back end
+       1. SpringBoot
+    8. AI
        1. Building Environment
        2. Computer Vision
           1. class recognize
           2. pose detection
        3. AI algorithm
-    8. database
-    9.  Algorithm
-    10. small knowlege accumulation
-    11. Game
-    12. Blog
-    13. CTF
-    14. Leetcode
-    15. plugin development
-    16. PS
+    9.  database
+    10. Algorithm
+    11. small knowlege accumulation
+    12. Game
+    13. Blog
+    14. CTF
+    15. Leetcode
+    16. plugin development
+    17. PS
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

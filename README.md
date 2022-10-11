@@ -43,6 +43,15 @@ This is my notes blog. It includes:
           2. pose detection
        3. AI algorithm
     9.  database
+        1.  relational database
+        2.  sql langauge
+        3.  nosql
+            1.  graph database - neo4j
+        4.  mysql
+        5.  Data warehouse
+            1.  basic info
+            2.  multidimensional mode
+            3.  tabular mode
     10. Algorithm
     11. small knowlege accumulation
     12. Game

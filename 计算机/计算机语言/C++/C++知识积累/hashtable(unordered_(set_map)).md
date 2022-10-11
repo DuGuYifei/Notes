@@ -73,8 +73,10 @@ unordered_set.find()\
 这三个函数平均复杂度是O(1)因为这个是哈希表不是数组要一个一个查
 
 #### find
+1. **注意用的是end，不是back**
+2. **因为找完，如果遍历输出会发现，find的key第一个出现了，即最后插入了它**
 ```cpp
-t_map.find(tp) != t_map.end()
+t_map.find(key) != t_map.end()
 ```
 
 ## 自定义hash
@@ -87,3 +89,29 @@ t_map.find(tp) != t_map.end()
     unordered_map<tuple<int,int,int>, pair<TreeNode*, int>, decltype(hash_t)> t_map{0, hash_t};
 ```
 注意声明时那个0，是size_type
+
+
+## 遍历unordered_map
+输出顺序是 **是乱序的**，因为会根据hash值放入不同的bucket里。
+
+```cpp
+for(pair<int,int> kv:map){
+  cout<<kv.first<<kv.second<<endl;
+}
+
+for(auto kv:map){
+  cout<<kv.first<<kv.second<<endl;
+}
+for(auto&& [_,v]:map){
+  cout<<v<<endl;
+}
+///////////////////////////////////////////////
+
+for(unordered_map<int,int>::iterator it=map.begin();it!=map.end();it++){
+  cout<<it->first<<it->second<<endl;
+}
+
+for(auto it=map.begin();it!=map.end();it++){
+  cout<<it->first<<it->second<<endl;
+}
+```

@@ -10,6 +10,9 @@ SQL Server Analysis Services
 measure:  The measure is a numerical value describing a fact (an event  taking place in the organisation). The examples can be the cost of buying a product or  the tax related to this purchase. The measure has often aggregation function  assigned (i.e. the function which aggregates single values of a measure - average,  sum, min, max etc.) The other notion is KPI (Key Performance Indicator). What is it?
 This is a measure which has additional values associated. These are bounds which  defines if the value of the measure is beneficial for the organisation (e.g. if the number  of sold books meets the goals set) or not.
 
+This means to measure value is not stored in the memory. The measure **will not consume Memory or RAM** at all. On the other hand, Measures consume CPU, because their calculation should be done right at the time of visualizing it. 
+**It is not Stored and is not pre-calculated**
+
 ## ELT
 extract, transform, load
 

@@ -16,14 +16,13 @@ Tabular models in Analysis Services are databases that run **in-memory** or in *
 (**DirectQuery mode**) or as a **database** which runs in the **memory** (**in-memory**). ）
 
 ### DirectQuery
-**和ELT比较而言**
-During ETL (extract, transform, load) process the data are retrieved from data sources and uploaded to the data warehouse in the needed format. 
-
+**和 multidimensional model 比较而言**
+**Multidimensional model,** during ETL (extract, transform, load), process the data are retrieved from data sources and uploaded to the data warehouse in the needed format. 
 The **ETL process** is executed at the **specific time** and all data at this time are **loaded** to the data warehouse. 
 
 In the **DirectQuery** mode when the query is issued it is executed by **issuing it to the data source**. You must remember that **only one data source is allowed**.
 
-关键点：和in-memory相比，它有把query发到外部数据源。
+关键点：和in-memory以及multidimensional model相比，它把query发到外部数据源。
 
 #### Advantages
 1. Data is always real-time.

@@ -1,5 +1,10 @@
 # LinuxBash笔记
 
+## win下的linux进入win系统盘
+```bash
+cd /mnt/e/"Gdansk University of Technology"/"first semester"/"Operating System"/BigScript/Lab6
+```
+
 ## Xlaunch 帮助zenity在windows上图形化
 ```bash
 DISPLAY=:0 bash **.sh

@@ -54,6 +54,9 @@ During processing query the table will be accessed at least once for  each query
 
 （in-memory index没有用）
 
+#### 其他
+Power BI 可以直接选择这个模式，如果从sql数据库直接读而不是用VS创建的analyis services数据库。
+
 ### In-memory
 All needed data from external **data sources are loaded into memory** and the **query is executed in the memory**. 
 

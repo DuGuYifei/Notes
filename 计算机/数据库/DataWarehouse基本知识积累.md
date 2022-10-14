@@ -1,8 +1,5 @@
 # DataWarehouse基本知识积累
 
-## OLAP
-OLAP: online analytical processing
-
 ## SSAS
 SQL Server Analysis Services
 
@@ -25,10 +22,25 @@ The ETL process is executed at the specific time and all data at this time are l
 2. ⭐ Relational model does not provide fast access of complex 
 analytical queries.
 
-### 其他
+
+
+### 为什么不用multidimensional model
 multidimensional model 太复杂
 
+## 几种数据仓库模式
+### multidimensional mode
+#### OLAP
+指代Multidimensional model
+OLAP: online analytical processing
+
+#### MDX
+支持MDX语言
+
+### Tabular mode
 Tabular = realtional + multidimensional
+#### DAX
+支持DAX语言
+
 
 ## 列存储和行存储
 ![](2022-10-11-21-09-19.png)

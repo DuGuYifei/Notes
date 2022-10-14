@@ -15,6 +15,8 @@ Tabular models in Analysis Services are databases that run **in-memory** or in *
 （Tabular model has one more feature - it can be designed as a **non-materialized view**
 (**DirectQuery mode**) or as a **database** which runs in the **memory** (**in-memory**). ）
 
+Tabular model can work in two modes: **In-Memory**, similar to **MOLAP**, and **DirectQuery**, similar to **ROLAP**.
+
 ### DirectQuery
 **和 multidimensional model 比较而言**
 **Multidimensional model,** during ETL (extract, transform, load), process the data are retrieved from data sources and uploaded to the data warehouse in the needed format. 
@@ -88,7 +90,7 @@ The data are stored in memory. It means that the data are stored in columnar sto
 数据存储在内存中。 这意味着数据存储在列式存储引擎（xVelocity）中，该引擎已针对数据的高性能分析和探索进行了优化。 它为聚合查询提供了快速的查询时间。
 
 (The in-memory analytics engine used in Power Pivot is called xVelocity, but it is commonly referred to by its original name, Vertipaq. 
-Power Pivot 中使用的内存分析引擎称为 xVelocity，但通常以其原始名称 Vertipaq 来指代它。)
+Power Pivot 中使用的内存分析引擎称为 xVelocity，但通常以其原始名称 Vertipaq 来指代它。不是说Tabular mode就没有In-memory模式。)
 
 #### Design tips
 当数据加载到 xVelocity 时，引擎会从表中检索所有数据。这导致了如下tips：

@@ -1,5 +1,12 @@
 # GraphDatabase_neo4j
 
+1. [no broken links](#no-broken-links)
+2. [cypher command](#cypher-command)
+   1. [变量](#变量)
+3. [语法补充](#语法补充)
+   1. [曾经的作业](#曾经的作业)
+4. [Graph analysis](#graph-analysis)
+
 ## no broken links
 Ensure that an existing relationship will never point to a non-existing endpoint. Since a relationship always has a start and end node, you cannot delete a node without also deleting its associated relationships.
 
@@ -63,3 +70,9 @@ MATCH (M:PERSON) - [r:READ] -> (B:BOOK {name:'Graph Databases'})
 WITH M,r ORDER BY r.start_date desc limit 1
 RETURN M.name;
 ```
+
+## Graph analysis
+- community detection algorithm
+- centrality algorithm
+- similarity algorithm
+- path

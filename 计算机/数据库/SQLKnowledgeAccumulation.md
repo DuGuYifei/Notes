@@ -12,9 +12,10 @@
 10. [WHILE](#while)
 11. [变量_@_Declare_SET](#变量__declare_set)
 12. [Datetime](#datetime)
-   1. [datediff](#datediff)
-   2. [datepart](#datepart)
-   3. [format](#format)
+	1. [datediff](#datediff)
+	2. [datepart](#datepart)
+	3. [format](#format)
+13. [sum(a+b) 和 sum(a) + sum(b)](#sumab-和-suma--sumb)
 
 ## definition
 
@@ -143,3 +144,14 @@ FROM (SELECT ID_R, MAX(Distance) AS Route_Dist
 WHERE Route.ID_R = B.ID_R
 ORDER BY ID_R
 ```
+
+## sum(a+b) 和 sum(a) + sum(b)
+![](2022-10-17-00-00-24.png)
+![](2022-10-17-00-00-31.png)
+![](2022-10-17-00-01-15.png)
+sum(a+b) 会先横向算，如果表A是null，表B不是，但是那一行结果会是null
+
+sum(a) + sum(b) 会先纵向算，某个表中的某一行null不影响sum结果
+
+所以要用 a+b 可以用IS_NULL
+

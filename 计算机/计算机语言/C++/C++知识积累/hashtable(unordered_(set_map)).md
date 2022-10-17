@@ -1,6 +1,16 @@
-# hashtable `(`unordered_set/map)
+# hashtable (unordered_set/map)
 
-#### `map` 和 `unordered map`区别：
+1. [`map` 和 `unordered map`区别：](#map-和-unordered-map区别)
+2. [自己写hash给特殊的unordered_set](#自己写hash给特殊的unordered_set)
+3. [自定义hash](#自定义hash)
+4. [遍历unordered_map](#遍历unordered_map)
+5. [函数](#函数)
+   1. [count()](#count)
+   2. [insert() 和 erase()](#insert-和-erase)
+   3. [find](#find)
+
+
+## `map` 和 `unordered map`区别：
 
 ```c++
 //前者是红黑树，有序的，后者是无序的哈希表
@@ -29,7 +39,7 @@ key相同后一个插入失败，（`insert` or `emplace`）\
     //输出 b
 ```
 
-#### 自己写hash给特殊的unordered_set
+## 自己写hash给特殊的unordered_set
 [hash](hash和自构建hash函数给hashset.md)
 
 有时候，unordered_set 不会处理一些类型，需要自己写hash
@@ -62,22 +72,6 @@ key相同后一个插入失败，（`insert` or `emplace`）\
   };
   unordered_set<pair<int, int>, decltype(hash_p)> lamp(0, hash_p);
   ```
-
-#### count()
-unordered_set.count()
-
-#### insert() 和 erase()
-unordered_set.insert()\
-unordered_set.erase()\
-unordered_set.find()\
-这三个函数平均复杂度是O(1)因为这个是哈希表不是数组要一个一个查
-
-#### find
-1. **注意用的是end，不是back**
-2. **因为找完，如果遍历输出会发现，find的key第一个出现了，即最后插入了它**
-```cpp
-t_map.find(key) != t_map.end()
-```
 
 ## 自定义hash
 [自定义](hash和自构建hash函数给hashset.md)
@@ -114,4 +108,21 @@ for(unordered_map<int,int>::iterator it=map.begin();it!=map.end();it++){
 for(auto it=map.begin();it!=map.end();it++){
   cout<<it->first<<it->second<<endl;
 }
+```
+
+## 函数
+### count()
+unordered_set.count()
+
+### insert() 和 erase()
+unordered_set.insert()\
+unordered_set.erase()\
+unordered_set.find()\
+这三个函数平均复杂度是O(1)因为这个是哈希表不是数组要一个一个查
+
+### find
+1. **注意用的是end，不是back**
+2. **因为找完，如果遍历输出会发现，find的key第一个出现了，即最后插入了它**
+```cpp
+t_map.find(key) != t_map.end()
 ```

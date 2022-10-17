@@ -19,15 +19,15 @@
    3. [Community detection algorithms](#community-detection-algorithms)
       1. [Triangle Count and Clustering Coefficient 三角形计数和聚类系数](#triangle-count-and-clustering-coefficient-三角形计数和聚类系数)
          1. [Local clustering ciefficient](#local-clustering-ciefficient)
-      2. [global clustering coefficient](#global-clustering-coefficient)
-      3. [Strongly connected component](#strongly-connected-component)
-      4. [Weakly connected component (connected component)](#weakly-connected-component-connected-component)
-      5. [Labeled Propagation Algorithm 标记传播算法](#labeled-propagation-algorithm-标记传播算法)
+         2. [global clustering coefficient](#global-clustering-coefficient)
+      2. [Strongly connected component](#strongly-connected-component)
+      3. [Weakly connected component (connected component)](#weakly-connected-component-connected-component)
+      4. [Labeled Propagation Algorithm 标记传播算法](#labeled-propagation-algorithm-标记传播算法)
          1. [formal description of steps](#formal-description-of-steps)
    4. [Centrality algorithms](#centrality-algorithms)
       1. [Degree centrality](#degree-centrality)
       2. [Closeness centrality](#closeness-centrality)
-         1. [非联通图 Harmonic centrality](#非联通图-harmonic-centrality)
+         1. [非联通图用 Harmonic centrality](#非联通图用-harmonic-centrality)
       3. [Betweenness centrality](#betweenness-centrality)
       4. [Page Rank](#page-rank)
    5. [Similarity algorithms](#similarity-algorithms)
@@ -49,12 +49,29 @@ Ensure that an existing relationship will never point to a non-existing endpoint
 MATCH (n {name: 'Teresa'}) 
 REMOVE n:PERSON RETURN labels(n);
 
-
 match (n)-->(m) return n,m;
 match (n)-[rel]->(m) return type(rel);
 match (n:Person)-[rel]->(m:Person) return distinct type(rel)
 
 match ()-[]->()<-[]-() return.... LIMIT 2
+
+MATCH (p:Person) WHERE NOT EXISTS(p.born) RETURN p
+
+match(n:Person)-->(f:Movie) 
+where n.born is not null
+with distinct n order by n.born desc limit 5
+return n.name;
+
+MATCH (person:Person)   //遍历所有 Person
+MERGE (city:City { name: person.bornIn }) //如果不存在 出生地的城市，则创建
+MERGE (person)-[r:BORN_IN]->(city)  //如果不存在关系则创建
+RETURN person.name, person.bornIn, city;
+
+match (a),(b) where id(a)=25 and id(b)=8  
+merge (a)-[r:gogogo]->(b) //如果不存在 gogogo 关系则创建
+on create set r.w = 1   //当关系不存在时，新增关系时，增加或修改其属性
+on match set r.w = coalesce(r.w, 0) + 1  //当关系已存在时，增加或修改其属性
+return a,b,r;
 ```
 
 ### 曾经的作业
@@ -103,6 +120,7 @@ RETURN M.name;
 - [Community detection algorithms](#community-detection-algorithms)
   - evaluate how a group is clustered or  partitioned, as well as its tendency to strengthen or break apart
   - 评估一个群体是如何聚集或划分的，以及其加强或分裂的趋势 
+  - 包含 TC（triangle count）, CC（clustering coefficient），Labeled Propagation algorithm 等
 - centrality algorithms
   - determine the importance of distinct nodes in a network
   - 确定网络中不同节点的重要性
@@ -143,6 +161,9 @@ CALL gds.graph.create.cypher(
    RETURN DISTINCT id(n) AS source, id(m) AS target, count(r) AS weight';
 )
 ```
+新版应该是 ：`gds.graph.project.cypher()`
+使用`CALL dbms.procedures()`看所有的函数
+
 讲解：
 ###### 图表目录 Graph Catalog
 姓名	|描述
@@ -179,7 +200,7 @@ It is also worth notice why we additionally **add WHERE ID(n) < ID(m) statement.
 - nodeQuery: 
   - id() as id 选择点
   - labels() as labels 继承label
-  - X as Y 自定义属性
+  - X as Y 自定义属性(同时是节点的权重)
 - relationshipQuery
   - as source 源头
   - as target 目标
@@ -218,7 +239,7 @@ u - vertex
 Ru  - number of triangles passing through the u vertex 
 ku  - degree of vertex u
 
-#### global clustering coefficient
+##### global clustering coefficient
 即 average clustering coefficient: normalised sum over all the local clustering coefficients
 $C = \frac{1}{n}\sum_{i=1}^{n}C_i$
 
@@ -308,7 +329,7 @@ calculates which node has the shortest path to all other nodes.
 ![](2022-10-17-12-45-14.png)
 接近中心性的值与最短路径的长度之和成反比。 这两种计算接近中心性的方法中的任何一种都不适用于断开的图，因为分母的值趋于无穷大，因此接近中心性趋于 0。
 
-##### 非联通图 Harmonic centrality
+##### 非联通图用 Harmonic centrality
 ![](2022-10-17-12-53-11.png)
 
 #### Betweenness centrality

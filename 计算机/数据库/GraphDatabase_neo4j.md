@@ -32,6 +32,7 @@
       4. [Page Rank](#page-rank)
    5. [Similarity algorithms](#similarity-algorithms)
       1. [Jaccard similarity](#jaccard-similarity)
+5. [python 连接 并 query](#python-连接-并-query)
 
 ## no broken links
 Ensure that an existing relationship will never point to a non-existing endpoint. Since a relationship always has a start and end node, you cannot delete a node without also deleting its associated relationships.
@@ -286,6 +287,19 @@ One interesting feature of LPA is that nodes can be assigned preliminary labels 
 
 LPA 的一个有趣特性是可以为节点分配初步标签以缩小生成的解决方案的范围。 这意味着它可以用作寻找社区的半监督方式，我们在其中手工挑选一些初始社区。
 
+```sql
+CALL gds.graph.project(
+  'lbl',
+  ['Team', 'Player'],
+  'IS_MEMBER_OF'
+)
+
+CALL gds.labelPropagation.stream('lbl')
+YIELD nodeId, communityId AS Community
+RETURN gds.util.asNode(nodeId).name AS Name, Community
+ORDER BY Community, Name
+```
+
 ##### formal description of steps
 C - node label 
 1. Assign labels to nodes in the graph. For given node x, Cx  (0) = x, where 0 stands for the iteration number.
@@ -322,6 +336,20 @@ $DC_i = \frac{k_i}{N-1}$
 - ki 表示现有的与节点 i 相连的边的数量
 - N−1 表示节点 i 与其他节点都相连的边的数量
 ![](2022-10-17-12-43-36.png)
+
+```sql
+CALL gds.graph.project(
+  'lbl2',
+  ['Team', 'Player', 'Match'],
+  ['IS_MEMBER_OF', 'FIGHT_IN']
+)
+
+CALL gds.degree.stream('lbl2')
+YIELD nodeId, score
+WHERE EXISTS(gds.util.asNode(nodeId).league)
+RETURN gds.util.asNode(nodeId).name AS name, score AS followers
+ORDER BY followers DESC, name DESC
+```
 
 #### Closeness centrality
 calculates which node has the shortest path to all other nodes.
@@ -360,3 +388,17 @@ It is possible to use Jaccard similarity to compute the similarity of the two no
 
 Jaccard 相似度计算两组节点的相似度。 它被定义为交集的大小除以两个集合的并集的大小。
 可以使用 Jaccard 相似度来计算两个节点的相似度。 为此，首先我们通过定义我们感兴趣的边缘类型来选择每个节点的特定邻域，然后计算这两个集合的 Jaccard 相似度。
+
+```sql
+MATCH (p1:Player {name: 'Gumayusi'})-[:IS_MEMBER_OF]->(m:Team)
+WITH p1, collect(id(m)) AS p1team
+MATCH (p2:Player)-[:IS_MEMBER_OF]->(m2:Team) WHERE p1 <> p2
+WITH p1, p1team, p2, collect(id(m2)) AS p2team
+RETURN p1.name AS from,
+       p2.name AS to,
+       gds.similarity.jaccard(p1team, p2team) AS similarity
+ORDER BY similarity DESC
+```
+
+## python 连接 并 query
+[连接GraphDatabase_neo4j](../计算机语言/Python/Python知识积累/连接GraphDatabase_neo4j.md)

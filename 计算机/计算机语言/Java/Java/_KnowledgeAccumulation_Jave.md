@@ -3,3 +3,6 @@
 1. [Sha256Utility.hash(password)](Sha256Utility.hash(password).md)
 2. [Scan.nectInt()](scan.nextInt().md)
 3. [Enum](Enum.md)
+4. [int和Interger以及包装类问题](int和Interger以及包装类问题.md)
+5. [类型转换](类型转换.md)
+6. [final](final.md)

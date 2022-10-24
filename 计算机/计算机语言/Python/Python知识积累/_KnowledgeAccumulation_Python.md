@@ -12,4 +12,6 @@
 10. [argparse自定义命令行参数](argparse自定义命令行参数.md)
 11. [ [::-1] 和 [:2] ](数组读取的冒号.md)
 12. [窗口句柄](窗口句柄.md)
-13. [屏幕截图](屏幕截图.md)
+13. [屏幕截图](屏幕截图.md)、
+14. [连接GraphDatabase_neo4j](连接GraphDatabase_neo4j.md)
+15. [雷达图](雷达图.md)

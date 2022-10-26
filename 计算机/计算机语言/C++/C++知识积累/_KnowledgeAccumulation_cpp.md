@@ -84,6 +84,7 @@
 83. [传参时的const](传参时的const.md)
 84. [unique和erase](unique和erase.md)
 85. [map，unordered_map，set，unordered_set，priority_queue，堆，红黑树](map，unordered_map，set，unordered_set，priority_queue，堆，红黑树.md)
+86. [deque以及和queue对比](deque以及和queue对比.md)
     
 ***WinAPI(below)***
 

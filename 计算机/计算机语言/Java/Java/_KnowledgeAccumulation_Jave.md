@@ -6,3 +6,4 @@
 4. [int和Interger以及包装类问题](int和Interger以及包装类问题.md)
 5. [类型转换](类型转换.md)
 6. [final](final.md)
+7. [dequeue和queue](deque和queue.md)

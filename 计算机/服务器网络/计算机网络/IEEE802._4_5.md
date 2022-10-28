@@ -23,6 +23,7 @@ In the bus LAN of the **CSMA/CD (IEEE 802.3) protocol**, each node occupies the 
 ## IEEE 802.4 Efficiency analysis
 
 ### General
+[Performance analysis of the IEEE 802.4 token-passing system with finite buffers and asymmetric loads](https://www.sciencedirect.com/science/article/pii/S0140366498001200)
 In *Performance analysis of the IEEE 802.4 token-passing system with finite buffers and asymmetric loads (1999)*, a performance analysis of the IEEE 802.4 token-passing system with finite buffers, a single access class and asymmetric loads is presented under the realistic assumption that frames can arrive at any arbitrary instant. 
 
 ![](2022-10-28-21-37-06.png)

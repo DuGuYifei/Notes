@@ -83,6 +83,12 @@ npm run build
 1. build完进入dist文件夹，将index.html, 404.html中 `"/asset` 改为 `"./asset`
 2. `/asset/index.****.js` 中将 `/静态文件` 改为 `repo_name/静态文件`，比如'/2022'改为'/slidev/2022'
 
+#### export
+```
+npm i -D playwright-chromium
+npm run export
+```
+
 #### 其他命令
 可在 package.json 中自定义
 ```json

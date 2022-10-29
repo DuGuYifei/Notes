@@ -3,14 +3,14 @@
 
 ## General Description
 ### Comparison
-| IEEE 802.4 | IEEE 802.5                                                     |
-| ---------- | -------------------------------------------------------------- |
-| 1          | The topology used is a bus or tree topology.                   | The topology used is a ring topology.                                                                                         |
-| 2          | Size of the frame format in IEEE 802.4 standard is 8202 bytes. | Frame format in IEEE 802.5 standard is of the variable size.                                                                  |
-| 3          | Size of the data field is 0 to 8182 bytes.                     | No limit is on the size of the data field.                                                                                    |
-| 4          | It can handle short minimum frames.                            | It supports both short and large frames.                                                                                      |
-| 5          | Protocol is extremely complex.                                 | Protocol is moderately complex.                                                                                               |
-| 6          | It is applicable to Real time traffic.                         | It can be applied for Real time applications and interactive applications because there is no limitation on the size of data. |
+|     | IEEE 802.4                                                     | IEEE 802.5                                                                                                                    |
+| --- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1   | The topology used is a bus or tree topology.                   | The topology used is a ring topology.                                                                                         |
+| 2   | Size of the frame format in IEEE 802.4 standard is 8202 bytes. | Frame format in IEEE 802.5 standard is of the variable size.                                                                  |
+| 3   | Size of the data field is 0 to 8182 bytes.                     | No limit is on the size of the data field.                                                                                    |
+| 4   | It can handle short minimum frames.                            | It supports both short and large frames.                                                                                      |
+| 5   | Protocol is extremely complex.                                 | Protocol is moderately complex.                                                                                               |
+| 6   | It is applicable to Real time traffic.                         | It can be applied for Real time applications and interactive applications because there is no limitation on the size of data. |
 
 ### Token Ring and Token Bus
 In the bus LAN of the **CSMA/CD (IEEE 802.3) protocol**, each node occupies the right to access the media through competition. After a conflict occurs, the retransmission must be delayed. The time from when a node prepares to send data to when it successfully sends data cannot be determined. It is not suitable for Transmission of real-time data that requires high latency. Its advantages are simple structure, convenient network maintenance, easy addition and deletion of nodes, and high network efficiency under light load (small number of nodes). 
@@ -34,7 +34,7 @@ But this article didn't consider the priority mechanism of the IEEE 802.4 token-
 
 ### Consider the priority mechanism
 [IEEE  802.4  令牌总线网实时应用性能分析算法](https://www.doc88.com/p-2394901303386.html)
-type|access classes|buffer capacity|package arrival rate (package/s) | package avg service time (ms) | Token rotate time (ms) | Token transmission time (ms)
+
 ![](2022-10-28-23-58-52.png)
 
 The abscissa is the relative velocity where 1.0 is base velocity. 

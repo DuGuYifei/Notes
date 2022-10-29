@@ -93,3 +93,13 @@ npm run build
   },
 ```
 
+#### style无效问题
+因为style是挂载在最外面的，所以必须将完整路径写出来，style才能挂上，比如修改表格行td，需要将外面的先写上。
+```html
+<style>
+.slidev-layout td{
+  padding: 6px;
+}
+</style>
+```
+

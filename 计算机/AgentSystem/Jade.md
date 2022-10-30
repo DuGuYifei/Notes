@@ -36,7 +36,7 @@ java -cp lib/jade.jar jade.Boot -­host des01.eti.pg.gda.pl -­port 5656 -­loca
 ```
 联合容器：(faderal container)
 ```cmd
-java -cp lib/jade.jar jade.Boot -host des01.eti.pg.gda.pl -port 5656 -local-host des02.eti.pg.gda.pl -local-port 4646 -continer
+java -cp lib/jade.jar jade.Boot -host des01.eti.pg.gda.pl -port 5656 -local-host des02.eti.pg.gda.pl -local-port 4646 -container
 ```
 要测试组装环境的正确性，可以使用 DummyAgent 代理。 它是 JADE 库中提供的用于环境测试的现成代理。 可以使用 RMA 代理来运行它。 为此，请选择将在其上启动代理的目标容器，然后选择 DummyAgent 图标（带有显示语言的帽子中的代理）。  RMA 代理允许您在任何容器上创建代理，也可以在另一台物理机器上创建代理。
 DummyAgent 代理允许您创建任何消息并将其发送给驻留在平台上的任何代理。 请注意，代理 ID 的格式为 agent_name @platform_name，其中默认（除非另有设置）平台名称为 main_container_address: main_container_port / JADE。 仅指定代理名称不足以正确地将消息传递给它。 在正确配置环境的情况下，驻留在所有容器上的代理之间的通信应该是可能的。

@@ -16,6 +16,8 @@
 	2. [datepart](#datepart)
 	3. [format](#format)
 13. [sum(a+b) 和 sum(a) + sum(b)](#sumab-和-suma--sumb)
+14. [DELETE](#delete)
+	1. [删除所有](#删除所有)
 
 ## definition
 
@@ -154,4 +156,12 @@ sum(a+b) 会先横向算，如果表A是null，表B不是，但是那一行结�
 sum(a) + sum(b) 会先纵向算，某个表中的某一行null不影响sum结果
 
 所以要用 a+b 可以用IS_NULL
+
+## DELETE
+### 删除所有
+```sql
+DELETE FROM TABLE_NAME
+DELETE * FROM TABLE_NAME
+```
+第二个不一定在所有数据库可用
 

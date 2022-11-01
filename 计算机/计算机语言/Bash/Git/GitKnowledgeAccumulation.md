@@ -25,7 +25,8 @@ git push origin --delete 分支名
 
 ```bash
 git checkout -b main
-# Switched to a new branch 'main'
+# Switched to a new branch 'main',
+# 没有-b就是切换已存在的分支
 git branch
 # * main
 #  master
@@ -35,18 +36,26 @@ git pull origin main --allow-unrelated-histories # git pull origin main会报错
 git push origin main
 ```
 
-### Git 新仓库切换分支
+### Git 新仓库切换分支，其实就是创建分支
 ```bash
 git branch -M main
 git remote add origin git@github.com:DuGuYifei/Vue_MusicPlayer_Demo.git
 ```
 
+## 设置默认分支为main
+
+```bash
+cat C:/Users/独孤逸飞/.gitconfig
+git config --global init.defaultBranch main
+cat C:/Users/独孤逸飞/.gitconfig
+```
+
 ## 改变git buffer支持大文件
+
 500MB*1024*1024
 ```
 git config http.postBuffer 524288000
 ```
-
 
 ## Git 大文件 LFS (Large file storage)
 
@@ -74,14 +83,6 @@ git push origin master #上传属性文件
 git add * #添加要上传的大文件，*表示路径下的所有文件
 git commit -m "Git LFS commit" #添加大文件上传的说明
 git push origin master #上传大文件
-```
-
-## 设置默认分支为main
-
-```bash
-cat C:/Users/独孤逸飞/.gitconfig
-git config --global init.defaultBranch main
-cat C:/Users/独孤逸飞/.gitconfig
 ```
 
 ## asset release

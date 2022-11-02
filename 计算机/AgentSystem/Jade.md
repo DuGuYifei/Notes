@@ -141,7 +141,7 @@ keytool -­export ­-keystore des01.jks -­alias des01 -­file des01.cer
 
 3. 将公钥导入到可信密钥容器中：
 ```cmd
-keytool -­import -file des01.cer -alias des01 -­keystore -des02­ ca.jks
+keytool -­import -file des01.cer -alias des01 -­keystore -des02­-ca.jks
 ```
 
 以下是运行具有加密和身份验证的环境的示例。

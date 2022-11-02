@@ -14,7 +14,7 @@ java17 -cp jade.jar jade.Boot -host 127.0.0.1 -port 5656 -container
 ## Lab1
 使用以下命令启动单个容器：
 ```
-java ­cp lib/jade.jar jade.Boot
+java -cp lib/jade.jar jade.Boot
 ```
 
 jade.Boot 类是主要的 JADE 类，它包括运行单个容器的 main () 方法。 可以使用以下可选参数配置容器启动：
@@ -32,7 +32,7 @@ jade.Boot 类是主要的 JADE 类，它包括运行单个容器的 main () 方�
 在两台机器上运行两个容器示例：
 主容器：
 ```cmd
-java -cp lib/jade.jar jade.Boot -­host des01.eti.pg.gda.pl -­port 5656 -­local-­host des01.eti.pg.gda.pl ­-local-­port 5656
+java -cp lib/jade.jar jade.Boot -host des01.eti.pg.gda.pl -port 5656 -local-host des01.eti.pg.gda.pl -local-port 5656
 ```
 联合容器：(faderal container)
 ```cmd
@@ -74,30 +74,30 @@ jade.Boot 类是主要的 JADE 类，它包括运行单个容器的 main () 方�
 
 1. 主容器：
 ```cmd
-java -cp lib/jade.jar jade.Boot \ 
--host des01.eti.pg.gda.pl -port 5656 \
--local-host des01.eti.pg.gda.pl -local-host 5656 \
--services \
-jade.core.replication.MainReplicationService \;\
+java -cp lib/jade.jar jade.Boot ^ 
+-host des01.eti.pg.gda.pl -port 5656 ^
+-local-host des01.eti.pg.gda.pl -local-host 5656 ^
+-services ^
+jade.core.replication.MainReplicationService ^;^
 jade.core.replication.AddressNotificationService
 ```
 
 2. 备用容器：
 ```cmd
-java -cp lib/jade.jar jade.Boot \ 
--host des01.eti.pg.gda.pl -port 5656 \
--local-host des02.eti.pg.gda.pl -local-host 4646 -backupmain \
--services \
-jade.core.replication.MainReplicationService \;\
+java -cp lib/jade.jar jade.Boot ^ 
+-host des01.eti.pg.gda.pl -port 5656 ^
+-local-host des02.eti.pg.gda.pl -local-host 4646 -backupmain ^
+-services ^
+jade.core.replication.MainReplicationService ^;^
 jade.core.replication.AddressNotificationService
 ```
 
 3. 联合容器：
 ```cmd
-java -cp lib/jade.jar jade.Boot \ 
--host des01.eti.pg.gda.pl -port 5656 \
--local-host des03.eti.pg.gda.pl -local-host 4646 -container \
--services \
+java -cp lib/jade.jar jade.Boot ^ 
+-host des01.eti.pg.gda.pl -port 5656 ^
+-local-host des03.eti.pg.gda.pl -local-host 4646 -container ^
+-services ^
 jade.core.replication.AddressNotificationService
 ```
 
@@ -107,17 +107,17 @@ jade.core.replication.AddressNotificationService
 
 1. 主容器：
 ```cmd
-java -cp lib/jade.jar jade.Boot \
--host des01.eti.pg.gda.pl -port 5656 \
--local-host des01.eti.pg.gda.pl -local-port 5656 \
+java -cp lib/jade.jar jade.Boot ^
+-host des01.eti.pg.gda.pl -port 5656 ^
+-local-host des01.eti.pg.gda.pl -local-port 5656 ^
 -nomtp -icps jade.imtp.leap.JICP.JICPSPeer
 ```
 
 2. 联合容器：
 ```cmd
-java -cp lib/jade.jar jade.Boot \
--host des01.eti.pg.gda.pl -port 5656 \
--local-host des02.eti.pg.gda.pl -local-port 4646 -container \
+java -cp lib/jade.jar jade.Boot ^
+-host des01.eti.pg.gda.pl -port 5656 ^
+-local-host des02.eti.pg.gda.pl -local-port 4646 -container ^
 -nomtp -icps jade.imtp.leap.JICP.JICPSPeer
 ```
 
@@ -131,44 +131,82 @@ INFO: JICP Secure Peer acticated. (auth=false, ta=jicp://des01.eti.pg.gda.pl:565
 
 1. 为它们生成一对密钥和一个容器： 
 ```cmd
-keytool -­genkeypair -­keystore des01.jks ­-alias des01 
+keytool -genkeypair -keystore des01.jks -alias des01 -keyalg rsa
+keytool -genkeypair -keystore des02.jks -alias des02 -keyalg rsa
 ```
 
 2. 导出公钥：
 ```cmd
-keytool -­export ­-keystore des01.jks -­alias des01 -­file des01.cer
+keytool -export -keystore des01.jks -alias des01 -file des01.cer
+keytool -export -keystore des02.jks -alias des02 -file des02.cer
 ```
 
 3. 将公钥导入到可信密钥容器中：
 ```cmd
-keytool -­import -file des01.cer -alias des01 -­keystore -des02­-ca.jks
+keytool -import -file des01.cer -alias des01 -keystore des02-ca.jks
+keytool -import -file des02.cer -alias des02 -keystore des01-ca.jks
 ```
 
 以下是运行具有加密和身份验证的环境的示例。
+
+* keyStore 存储自身的公钥和私钥
+* trustStore 存储对方的公钥
+
 1. 主容器
 ```cmd
-java -Djavax.net.ssl.keyStore=des01.jks \
--Djavax.net.ssl.keyStorePassword=changeit \
--­Djavax.net.ssl.trustStore=des01-­ca.jks \
--­cp lib/jade.jar jade.Boot \
--host des01.eti.pg.gda.pl -port 5656 \
--local-host des01.eti.pg.gda.pl -local-port 5656 \
--nomtp \
+java -Djavax.net.ssl.keyStore=des01.jks ^
+-Djavax.net.ssl.keyStorePassword=changeit ^
+-Djavax.net.ssl.trustStore=des01-ca.jks ^
+-cp lib/jade.jar jade.Boot ^
+-host des01.eti.pg.gda.pl -port 5656 ^
+-local-host des01.eti.pg.gda.pl -local-port 5656 ^
+-nomtp ^
 -icps jade.imtp.leap.JICP.JICPSPeer
 ```
+
+```cmd
+java -Djavax.net.ssl.keyStore=des01.jks ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=des01-ca.jks ^
+-Djavax.net.ssl.trustStorePassword=123456 ^
+-cp jade.jar jade.Boot ^
+-host 127.0.0.1 -port 5656 ^
+-local-host 127.0.0.1 -local-port 5656 ^
+-nomtp ^
+-icps jade.imtp.leap.JICP.JICPSPeer ^
+-gui
+```
+
+
 2. 联合容器
 ```cmd
-java \
--Djavax.net.ssl.keyStore=des02.jks \
--Djavax.net.ssl.keyStorePassword=changeit \
--­Djavax.net.ssl.trustStore=des02-­ca.jks \
--cp lib/jade.jar jade.Boot \
--host des01.eti.pg.gda.pl \
--port 5656 \
--local-host des02.eti.pg.gda.pl \
--local-port 4646 \
--container \
--nomtp \
+java ^
+-Djavax.net.ssl.keyStore=des02.jks ^
+-Djavax.net.ssl.keyStorePassword=changeit ^
+-Djavax.net.ssl.trustStore=des02-ca.jks ^
+-cp lib/jade.jar jade.Boot ^
+-host des01.eti.pg.gda.pl ^
+-port 5656 ^
+-local-host des02.eti.pg.gda.pl ^
+-local-port 4646 ^
+-container ^
+-nomtp ^
+-icps jade.imtp.leap.JICP.JICPSPeer
+```
+
+```cmd
+java ^
+-Djavax.net.ssl.keyStore=des02.jks ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=des02-ca.jks ^
+-Djavax.net.ssl.trustStorePassword=123456 ^
+-cp jade.jar jade.Boot ^
+-host 127.0.0.1 ^
+-port 5656 ^
+-local-host 127.0.0.1 ^
+-local-port 4646 ^
+-container ^
+-nomtp ^
 -icps jade.imtp.leap.JICP.JICPSPeer
 ```
 
@@ -189,15 +227,15 @@ INFO: JICP Secure Peer activated. (auth=true, ta=jicp://des01.eti.pg.gda.pl:5656
 以同样的方式运行下一个关联的容器
 联合容器启动：
 ```cmd
-java\
--Djavax.net.ssl.keyStore=keystore1 \
--Djavax.net.ssl.keyStorePassword=changeit\
--Djavax.net.ssl.trustStore=truststore1\
--cp lib/jade.jarjade.Boot \
--host localhost \ 
--port 5500 \
--container \
--nomtp \
--icps jam.imtp.leap.JICP.JICPSPeer \
+java ^
+-Djavax.net.ssl.keyStore=keystore1 ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=truststore1 ^
+-cp jade.jar jade.Boot ^
+-host 127.0.0.1 ^
+-port 5500 ^
+-container ^
+-nomtp ^
+-icps jam.imtp.leap.JICP.JICPSPeer ^
 -container-name jam-container1 
 ```

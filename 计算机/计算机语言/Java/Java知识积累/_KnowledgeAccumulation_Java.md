@@ -12,3 +12,4 @@
 10. [Optional](Optional.md)
 11. [Function](Function.md)
 12. [BiFunction](BiFuction.md)
+13. [List和ArrayList](List和ArrayList.md)

@@ -1,5 +1,28 @@
 # Jade
 
+1. [Java Agent 概述](#java-agent-概述)
+   1. [Java Agent 的作用](#java-agent-的作用)
+2. [教程](#教程)
+3. [命令行创建](#命令行创建)
+   1. [Lab1](#lab1)
+   2. [Lab2](#lab2)
+4. [Java 代码创建](#java-代码创建)
+
+## Java Agent 概述
+Java Agent 本质上是 JDK 提供的一个工具。
+
+在 JDK1.5 之后，可以使用 Java Agent 技术构建一个独立于应用程序的代理程序（即Agent）。
+
+可以用来协助监测、运行甚至替换其他JVM上的程序。使用它可以实现虚拟机级别的 AOP 功能，比如字节码注入。
+
+### Java Agent 的作用
+我们可以通过 Java Agent 的类加载拦截功能，修改某个类所对应的字节码二进制数组，并利用这个修改过后的二进制数组完成接下来的类加载。
+
+JavaAgent 是运行在 main 方法之前的拦截器，它内定的方法名叫 premain ，也就是说先执行 premain 方法然后再执行 main 方法。
+
+## 教程
+[jade的中文资料_fire1175的博客-CSDN博客_jade createrequestmsg](https://blog.csdn.net/fire1175/article/details/1584164)
+
 ## 命令行创建
 Main Container
 ```cmd
@@ -11,7 +34,7 @@ Federate Container
 java17 -cp jade.jar jade.Boot -host 127.0.0.1 -port 5656 -container
 ```
 
-## Lab1
+### Lab1
 使用以下命令启动单个容器：
 ```
 java -cp lib/jade.jar jade.Boot
@@ -50,7 +73,7 @@ DummyAgent 代理允许您创建任何消息并将其发送给驻留在平台上
 注意： 
 * 每个任务都需要为平台、所有容器和代理设置自己的名称。
 
-## Lab2
+### Lab2
 该任务的目的是编译分布式多代理环境并将基础架构级别的安全性引入其中。 接下来，您应该测试驻留在不同容器中的代理之间的通信。
 在环境的基本配置中，一个容器始终充当主容器，其他容器作为联合容器加入。 这种配置创建了一个集中的星型拓扑基础设施，所有联合容器都依赖于主容器。 任何联合容器的故障只会导致驻留在平台上的代理从平台上移除，并且只要主容器运行，整个平台就会继续运行。 为了防止这种情况，可以引入备份主容器，与主容器一起形成环形拓扑。 如果当前作为主容器的容器发生故障，其他容器将检测到它并选择一个新的主容器来负责管理平台。 联合容器可以连接到主容器或任何备份容器以加入平台。
 默认情况下，代理之间的通信不受任何保护，很容易被窃听。 为了防止消息被环境外的元素读取，您可以在容器级别进行加密通信。 为此，每个容器都可以配备一组密钥，用于加密通信。请注意，加密不是代理的责任（其代码和内容可能在通过网络迁移期间被截获），而是它当前所在的容器。
@@ -239,3 +262,19 @@ java ^
 -icps jam.imtp.leap.JICP.JICPSPeer ^
 -container-name jam-container1 
 ```
+
+
+## Java 代码创建
+
+* jade.core实现系统的核心.它包含必须被应用程序员继承的Agent类
+  * jade.core.behaviours子包还包含一个Behaviour类层次结构.行为实现了一个Agent的任务或意图.它们是逻辑活动单元,并且可以以不同的方式组合,以获取不同的执行方式,当然,它们是可以并行执行的.应用程序员定义Agent的操作,编写行为以及Agent的执行路径.
+* jade.lang.acl子包用于依照FIPA标准规定处理Agent通讯语言(ACL).
+* jade.content包包含了一组类用于支持用户定义的概念和语言.
+* jade.domain包包含了所有那些由FIPA标准定义的,描述Agent管理实体的JAVA类,特别是AMS和DF Agent,它们提供生命周期服务和白黄页服务.
+  * 子包jade.domain.FIPAAgentManagement包含了FIPA Agent管理的概念和描述其概念的类.
+  * 子包jade.domain.JADEAgentManagement则包含了JADE对Agent管理的扩展(例如,对消息的探测以及控制Agent的生命周期).
+  * 子包jade.domain.introspection包含了用于描述在JADE工具和JADE内核之间沟通领域的概念.
+  * 子包jade.domain.mobility包含了描述移动通信的概念.
+* Jade.gui包含了一组一般的类,用于建立用户图形界面,用来显示和编辑Agent标识符,Agent描述,ACL消息……
+* jade.mtp包包含了一个JAVA接口.为了容易用JADE框架集成,每个消息传送协议必须利用这个接口,它还包含了一组这些协议的执行.
+* jade.proto包包含了建模标准交互协议的类(如:fipa-request, fipa-query, fipa-contract-net, fipa-subscribe和其他一些被FIPA定义的类),同时也包含了帮助应用程序员建立自定义的协议的类.

@@ -1,5 +1,13 @@
 # LinuxBash笔记
 
+1. [win下的linux进入win系统盘](#win下的linux进入win系统盘)
+2. [Xlaunch 帮助zenity在windows上图形化](#xlaunch-帮助zenity在windows上图形化)
+3. [定时任务](#定时任务)
+   1. [举例](#举例)
+4. [给root账户设置密码](#给root账户设置密码)
+5. [进入root账户](#进入root账户)
+6. [多行命令](#多行命令)
+
 ## win下的linux进入win系统盘
 ```bash
 cd /mnt/e/"Gdansk University of Technology"/"first semester"/"Operating System"/BigScript/Lab6

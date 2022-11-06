@@ -1,5 +1,92 @@
 # 知识积累 Git
 
+1. [连接账户（多个账户）](#连接账户多个账户)
+2. [know_hosts文件](#know_hosts文件)
+3. [GitLens 和 在VSCode中使用自带git功能](#gitlens-和-在vscode中使用自带git功能)
+4. [Git系统基础介绍](#git系统基础介绍)
+5. [Git基本操作](#git基本操作)
+6. [Git删除branch](#git删除branch)
+7. [Git 切换分支](#git-切换分支)
+   1. [Git 新仓库切换分支，其实就是创建分支](#git-新仓库切换分支其实就是创建分支)
+8. [设置默认分支为main](#设置默认分支为main)
+9. [改变git buffer支持大文件](#改变git-buffer支持大文件)
+10. [Git 大文件 LFS (Large file storage)](#git-大文件-lfs-large-file-storage)
+11. [asset release](#asset-release)
+12. [从缓存区删除文件（适用于删除仓库文件不过需要commit再push）](#从缓存区删除文件适用于删除仓库文件不过需要commit再push)
+13. [彻底删除（包括物理的）](#彻底删除包括物理的)
+14. [子模块](#子模块)
+   1. [子模块的更新](#子模块的更新)
+15. [忽略某个文件/文件夹](#忽略某个文件文件夹)
+16. [同时push多个仓库](#同时push多个仓库)
+17. [克隆到指定文件夹](#克隆到指定文件夹)
+18. [gh-pages的分支](#gh-pages的分支)
+19. [pull request](#pull-request)
+   1. [当原主人更新时](#当原主人更新时)
+20. [git commit 修改](#git-commit-修改)
+
+## 连接账户（多个账户）
+[一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
+
+**注**:
+**创建的私钥公钥在哪不重要，重要的是config文件要在.ssh里**
+
+1. 生成两份包含私钥和公钥的共 4 个文件，后缀为 .pub 的文件为公钥文件。
+```git
+ssh-keygen -t rsa -C "one@gmail.com"
+ssh-keygen -t rsa -C "two@gmail.com"
+```
+运行命令后不要一路回车，分别在第一次对话出现 “Enter file in which to save the key” 的时候**输入文件名**（此处文件名为 id_rsa 和 id_rsa_two ），第二次会话是让你输密码，一般回车密码设置为空就好了。第三次再次确认密码，同样回车。
+
+Windows用户则在“ `C:\Users\用户名\.ssh` ”目录下运行命令行。
+
+2. 在 .ssh 目录下创建 config 文件，在 config 文件中添加以下内容：
+```
+# one(one@gmail.com)
+Host one.github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_one
+User one
+    
+# two(two@gmail.com)
+Host two.github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_two
+User two
+```
+
+翻译：
+```
+Host myhost（这里是自定义的host简称，以后连接远程服务器就可以用命令ssh myhost）
+HostName 主机名可用ip也可以是域名(如:github.com或者bitbucket.org)
+Port 服务器open-ssh端口（默认：22,默认时一般不写此行）
+PreferredAuthentications   配置登录时用什么权限认证--可设为publickey,password publickey,keyboard-interactive等
+IdentityFile 证书文件路径（如~/.ssh/id_rsa_*)
+User 登录用户名(如：git)
+```
+
+**Host 的名字可以自定义名字，不过这个会影响 git 相关命令**，例如：
+Host mygithub 这样定义的话，
+使用命令 `git clone git@mygithub:PopFisher/AndroidRotateAnim.git`，git@后面紧跟的名字改为mygithub。
+
+3. 部署 SSH key
+这里以配置 Github 为例，分别登陆两个 github 账号，进入Settings –> SSH and GPG keys，点击"new SSH key"， 把下面两个公钥（.pub文件）的内容分别添加到相应的 Github 账号中，其中 Title 为自定义的名字，Key 为 .pub 文件的内容，最后点击“ Add SSH key ”即可。
+
+4. 远程测试
+输入以下命令进行测试
+```bash
+ssh -T git@one.github.com
+ssh -T git@two.github.com
+```
+
+此处 “one.github.com” 和“ two.github.com ”为 config 文件中你配置的 Host 名字
+
+运行命令后如果出现“Hi xxxx! You’ve successfully authenticated, but GitHub does not provide shell access.”，其中“xxxx”为你配置的 User 名字，这时恭喜你，配置成功了~
+
+## know_hosts文件
+A通过ssh首次连接到B，B会将公钥1（host key）传递给A，A将公钥1存入known_hosts文件中，以后A再连接B时，B依然会传递给A一个公钥2，OpenSSH会核对公钥，通过对比公钥1与公钥2 是否相同来进行简单的验证，如果公钥不同，OpenSSH会发出警告， 避免你受到DNS Hijack之类的攻击。
+
 ## GitLens 和 在VSCode中使用自带git功能
 [前端技能树中提及的vscode](../../../前端学习/前端学习技能树.md##VSCode)
 

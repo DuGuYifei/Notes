@@ -4,9 +4,10 @@
    1. [Java Agent 的作用](#java-agent-的作用)
 2. [教程](#教程)
 3. [命令行创建](#命令行创建)
+4. [发送消息的交互界面](#发送消息的交互界面)
    1. [Lab1](#lab1)
    2. [Lab2](#lab2)
-4. [Java 代码创建](#java-代码创建)
+5. [Java 代码创建](#java-代码创建)
 
 ## Java Agent 概述
 Java Agent 本质上是 JDK 提供的一个工具。
@@ -26,13 +27,16 @@ JavaAgent 是运行在 main 方法之前的拦截器，它内定的方法名叫 
 ## 命令行创建
 Main Container
 ```cmd
-java17 -cp jade.jar jade.Boot -host 127.0.0.1 -port 5656 -local-host 127.0.0.1 -local-port 5656 -gui
+java -cp jade.jar jade.Boot -host 127.0.0.1 -port 5656 -local-host 127.0.0.1 -local-port 5656 -gui
 ```
 
 Federate Container
 ```cmd
-java17 -cp jade.jar jade.Boot -host 127.0.0.1 -port 5656 -container
+java -cp jade.jar jade.Boot -host 127.0.0.1 -port 5656 -container
 ```
+
+## 发送消息的交互界面
+创建 dummy agent
 
 ### Lab1
 使用以下命令启动单个容器：
@@ -270,7 +274,7 @@ java ^
   * jade.core.behaviours子包还包含一个Behaviour类层次结构.行为实现了一个Agent的任务或意图.它们是逻辑活动单元,并且可以以不同的方式组合,以获取不同的执行方式,当然,它们是可以并行执行的.应用程序员定义Agent的操作,编写行为以及Agent的执行路径.
 * jade.lang.acl子包用于依照FIPA标准规定处理Agent通讯语言(ACL).
 * jade.content包包含了一组类用于支持用户定义的概念和语言.
-* jade.domain包包含了所有那些由FIPA标准定义的,描述Agent管理实体的JAVA类,特别是AMS和DF Agent,它们提供生命周期服务和白黄页服务.
+* jade.domain包包含了所有那些由FIPA标准定义的,描述Agent管理实体的JAVA类,特别是AMS (Agent Management Services) 和 DF(Directory Facilitator) Agent,它们提供生命周期服务和白黄页服务.
   * 子包jade.domain.FIPAAgentManagement包含了FIPA Agent管理的概念和描述其概念的类.
   * 子包jade.domain.JADEAgentManagement则包含了JADE对Agent管理的扩展(例如,对消息的探测以及控制Agent的生命周期).
   * 子包jade.domain.introspection包含了用于描述在JADE工具和JADE内核之间沟通领域的概念.
@@ -278,3 +282,7 @@ java ^
 * Jade.gui包含了一组一般的类,用于建立用户图形界面,用来显示和编辑Agent标识符,Agent描述,ACL消息……
 * jade.mtp包包含了一个JAVA接口.为了容易用JADE框架集成,每个消息传送协议必须利用这个接口,它还包含了一组这些协议的执行.
 * jade.proto包包含了建模标准交互协议的类(如:fipa-request, fipa-query, fipa-contract-net, fipa-subscribe和其他一些被FIPA定义的类),同时也包含了帮助应用程序员建立自定义的协议的类.
+
+`[我的github网址](还没定)`
+
+1. [AID](AID.md)

@@ -23,6 +23,12 @@
 19. [pull request](#pull-request)
    1. [当原主人更新时](#当原主人更新时)
 20. [git commit 修改](#git-commit-修改)
+21. [git merge / rebase](#git-merge--rebase)
+22. [git pull / fetch](#git-pull--fetch)
+   1. [拉取代码，如果本地代码没有改变](#拉取代码如果本地代码没有改变)
+23. [git stash](#git-stash)
+   1. [应用场景1：改动同一分支](#应用场景1改动同一分支)
+   2. [应用场景2：不小心改动其他分支](#应用场景2不小心改动其他分支)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -109,6 +115,11 @@ git push origin --delete 分支名
 ```
 
 ## Git 切换分支
+```
+git checkout -b ＜new-branch＞ ＜existing-branch＞
+```
+
+默认的git checkout -b命令会从当前所在的HEAD指针所指的分支来派生出新建的分支。但git checkout命令仍然可以接受一个可选的分支名作为参数。在上面的例子中，`<existing-branch>` 作为这个参数传递给git checkout命令，这一命令意味着从指定的existing-branch分支派生创建了一个名为new-branch的新分支。
 
 ```bash
 git checkout -b main
@@ -245,3 +256,85 @@ git commit --amend
 按 i 进入修改模式
 
 :wq 退出
+
+## git merge / rebase
+[git merge 和 git rebase 小结_wh_19910525的博客-CSDN博客_git merge和rebase](https://blog.csdn.net/wh_19910525/article/details/7554489)
+
+git merge是用来合并两个分支的。
+
+`git merge b` 将b分支合并到当前分支
+
+`git rebase b` 将b分支合并到当前分支
+
+* 假设你现在基于远程分支"origin"，创建一个叫"mywork"的分支。
+```
+git checkout -b mywork origin
+```
+![](2022-11-07-04-27-10.png)
+
+* 但是与此同时，有些人也在"origin"分支上做了一些修改并且做了提交了. 这就意味着"origin"和"mywork"这两个分支各自"前进"了，它们之间"分叉"了。
+
+![](2022-11-07-04-27-33.png)
+
+* 在这里，你可以用"pull"命令把"origin"分支上的修改拉下来并且和你的修改合并； 结果看起来就像一个新的"合并的提交"(merge commit):
+
+![](2022-11-07-04-27-57.png)
+
+* 但是，如果你想让"mywork"分支历史看起来像没有经过任何合并一样，你也许可以用 git rebase:
+```bash
+git checkout mywork
+git rebase origin
+```
+这些命令会把你的"mywork"分支里的每个提交(commit)取消掉，并且把它们临时 保存为补丁(patch)(这些补丁放到".git/rebase"目录中),然后把"mywork"分支更新 为最新的"origin"分支，最后把保存的这些补丁应用到"mywork"分支上。
+![](2022-11-07-04-28-47.png)
+
+当'mywork'分支更新之后，它会指向这些新创建的提交(commit),而那些老的提交会被丢弃。 如果运行垃圾收集命令(pruning garbage collection), 这些被丢弃的提交就会删除. （请查看 git gc)
+
+![](2022-11-07-04-30-43.png)
+
+
+## git pull / fetch
+`git pull = git fetch + merge`
+
+**git pull 和 fetch 区别：**
+* git fetch: 从远程获取最新版本到本地，不会自动merge
+* git pull：从远程获取最新版本并merge到本地仓库
+* 从安全角度出发，git fetch比git pull更安全，因为我们可以先比较本地与远程的区别后，选择性的合并。
+
+### 拉取代码，如果本地代码没有改变
+```
+git add .
+ 
+git commit -m 'magic'
+ 
+git stash
+```
+
+## git stash
+[git stash 与 git add 作用详解-云社区-华为云](https://bbs.huaweicloud.com/blogs/352507)
+git stash命令的作用就是将目前还不想提交的但是已经修改的内容进行保存至堆栈中，后续可以在某个分支上恢复出堆栈中的内容。 这也就是说，stash中的内容不仅仅可以恢复到原先开发的分支，也可以恢复到其他任意指定的分支上。 
+
+git stash作用的范围包括工作区和暂存区中的内容，也就是说没有提交的内容都会保存至堆栈中。
+
+### 应用场景1：改动同一分支
+我在本地修改好后，发现远程分支已经被改动了，此时我本地也被改动了就造成了冲突，无法push或者pull。
+此时可以使用git stash：
+```git
+git stash save "本地缓存内容标识" //把本地的改动暂存起来;
+git pull //拉取远端分支（此时本地分支会回滚到上次commit的情况，新的改动都已保存在了stash中）;
+git stash pop // 将栈顶改动内容重新加回本地分支，就可以继续修改了，当然，如果改好了就是add,commit,push操作。
+```
+
+### 应用场景2：不小心改动其他分支
+当正在dev分支上开发某个项目，这时项目中出现一个bug，需要紧急修复，但是正在开发的内容只是完成一半，还不想提交，这时可以用git stash命令将修改的内容保存至堆栈区，然后顺利切换到hotfix分支进行bug修复，修复完成后，再次切回到dev分支，从堆栈中恢复刚刚保存的内容。
+
+或者由于疏忽，本应该在dev分支开发的内容，却在master上进行了开发，需要重新切回到dev分支上进行开发，可以用git stash将内容保存至堆栈中，切回到dev分支后，再次恢复内容即可。
+
+例如忘记切换分支，直接在master分支上做改动，这里假设我的分支是test分支。
+
+```git
+git stash save "本地缓存内容标识" // 把本地当前改动暂存起来，此时master分支就恢复到了上次拉取时的状态
+git checkout test                // 切换到需要改动的分支
+git stash pop　　　              // 将改动pop到自己当前的分支
+```
+

@@ -13,3 +13,4 @@
 
 ## 其他
 1. [控制台上下左右键](控制台上下左右键.md)
+2. [Redis](../数据库/KeyValueDatabase_Redis.md)

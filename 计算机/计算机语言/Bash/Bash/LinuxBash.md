@@ -7,6 +7,9 @@
 4. [给root账户设置密码](#给root账户设置密码)
 5. [进入root账户](#进入root账户)
 6. [多行命令](#多行命令)
+7. [apt-get](#apt-get)
+   1. [卸载](#卸载)
+8. [内存占用查询](#内存占用查询)
 
 ## win下的linux进入win系统盘
 ```bash
@@ -60,3 +63,26 @@ sudo su
 ## 多行命令
 
 `\`
+
+## apt-get
+
+### 卸载
+[Ubuntu apt-get彻底卸载软件包_享学IT的博客-CSDN博客_卸载软件包](https://blog.csdn.net/get_set/article/details/51276609)
+```bash
+# 删除软件及其配置文件
+apt-get --purge remove <package>
+# 删除没用的依赖包
+apt-get autoremove <package>
+# 此时dpkg的列表中有“rc”状态的软件包，可以执行如下命令做最后清理：
+dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
+```
+
+当然如果要删除暂存的软件安装包，也可以再使用clean命令。
+```bash
+apt-get clean
+```
+
+## 内存占用查询
+```
+free -h
+```

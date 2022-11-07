@@ -13,6 +13,7 @@
 • ACID 不是规则。
 
 [Graph database - neo4j](GraphDatabase_neo4j.md)
+[Key Value database - Redis](KeyValueDatabase_Redis.md)
 
 
 1. [CAP 理论](#cap-理论)

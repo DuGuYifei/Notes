@@ -29,6 +29,7 @@
 23. [git stash](#git-stash)
    1. [应用场景1：改动同一分支](#应用场景1改动同一分支)
    2. [应用场景2：不小心改动其他分支](#应用场景2不小心改动其他分支)
+24. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -338,3 +339,7 @@ git checkout test                // 切换到需要改动的分支
 git stash pop　　　              // 将改动pop到自己当前的分支
 ```
 
+## 关于git所在文件夹和操作系统的思考
+git 其实会有linux操作系统，因为
+1. 使用win的ssh根本无法访问我的中文路径 .ssh 文件夹，
+2. 并且在git bash上，使用`cd ~/.ssh`进入文件夹，使用`ls`以及`cat config`命令就会发现这就是中文路径下的.ssh文件夹，`~`就是root文件夹，其实就是`C:/user/XXX`。

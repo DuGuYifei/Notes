@@ -164,6 +164,8 @@ docker run --name redis -p 6379:6379 -v /E/Redis/conf/redis.conf:/etc/redis/redi
 ![](2022-11-07-05-02-37.png)
 如果密钥已经存在并且设置了生命周期，则 KEEPTTL 选项将保持生命周期设置不变，而不是更改为无限时间（默认行为）
 
+* SETNX = SET key value NX
+* 
 * GET - 获取值 
 * APPEND - 在末尾添加 
 * INCR - 将值增加 1 

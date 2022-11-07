@@ -14,3 +14,4 @@
 12. [BiFunction](BiFuction.md)
 13. [List和ArrayList](List和ArrayList.md)
 14. [new classname(params){@Override}](newClassname（params）{@Override}.md)
+15. [Dictionary](Dictionary.md)

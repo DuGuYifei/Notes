@@ -158,6 +158,7 @@ docker run --name redis -p 6379:6379 -v /E/Redis/conf/redis.conf:/etc/redis/redi
 * TTL - 检查密钥的剩余时间 life 
 * TYPE - 检查分配给键的数据类型
 * DBSIZE - 返沪数据库大小
+* fullshall - 清空数据库
 
 #### KEYS 
 KEYS* - 用正则表达式返回所有匹配key，比如`KEYS key[xyz]`返回`keyx/keyy/keyz`

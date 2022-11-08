@@ -1,26 +1,40 @@
 # LinuxBash笔记
 
 1. [win下的linux进入win系统盘](#win下的linux进入win系统盘)
-2. [Xlaunch 帮助zenity在windows上图形化](#xlaunch-帮助zenity在windows上图形化)
-3. [定时任务](#定时任务)
+2. [Xlaunch 帮助在windows上图形化](#xlaunch-帮助在windows上图形化)
+3. [命令中包含含号](#命令中包含含号)
+4. [定时任务](#定时任务)
    1. [举例](#举例)
-4. [给root账户设置密码](#给root账户设置密码)
-5. [进入root账户](#进入root账户)
-6. [多行命令](#多行命令)
-7. [apt-get](#apt-get)
+5. [给root账户设置密码](#给root账户设置密码)
+6. [进入root账户](#进入root账户)
+7. [多行命令](#多行命令)
+8. [apt-get](#apt-get)
    1. [卸载](#卸载)
-8. [内存占用查询](#内存占用查询)
-9. [~路径](#路径)
+9. [内存占用查询](#内存占用查询)
+10. [磁盘空间](#磁盘空间)
+11. [~路径](#路径)
+12. [url下载](#url下载)
+13. [mv 移动/重命名](#mv-移动重命名)
+   1. [移动](#移动)
+   2. [重命名](#重命名)
+14. [解压和压缩](#解压和压缩)
+   1. [解压](#解压)
+15. [mkdir 创建文件夹](#mkdir-创建文件夹)
+16. [rm 删除](#rm-删除)
+17. [ls](#ls)
 
 ## win下的linux进入win系统盘
 ```bash
 cd /mnt/e/"Gdansk University of Technology"/"first semester"/"Operating System"/BigScript/Lab6
 ```
 
-## Xlaunch 帮助zenity在windows上图形化
+## Xlaunch 帮助在windows上图形化
 ```bash
 DISPLAY=:0 bash **.sh
 ```
+
+## 命令中包含含号
+用转义字符`\(\)`
 
 ## 定时任务
 crontab -e 编辑
@@ -88,5 +102,54 @@ apt-get clean
 free -h
 ```
 
+## 磁盘空间
+```
+df -hl
+```
+
 ## ~路径
 ~ 就是root文件夹
+
+## url下载
+```bash
+wget url
+```
+如果`Unable to locally verify the issuer's authority`就是root文件夹
+```bash
+wget url --no-check-certificate
+```
+
+## mv 移动/重命名
+### 移动
+```
+mv 文件名 另一个目录
+mv 子文件夹/* 另一个目录
+```
+
+### 重命名
+```
+mv origin.txt later.txt
+```
+
+## 解压和压缩
+
+### 解压
+```
+unzip file.zip
+```
+
+## mkdir 创建文件夹
+创建文件夹
+
+## rm 删除
+```
+rm -rf 目录名字   
+```
+
+-r 向下递归，不管有多少级目录，一并删除。
+
+-f 直接强行删除，没有任何提示。
+
+## ls
+隐藏文件
+`ls -a`

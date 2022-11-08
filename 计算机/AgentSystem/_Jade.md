@@ -5,9 +5,11 @@
 2. [教程](#教程)
 3. [命令行创建](#命令行创建)
 4. [发送消息的交互界面](#发送消息的交互界面)
+5. [imtp 和 mtp](#imtp-和-mtp)
    1. [Lab1](#lab1)
+      1. [操作](#操作)
    2. [Lab2](#lab2)
-5. [Java 代码创建](#java-代码创建)
+6. [Java 代码创建](#java-代码创建)
 
 ## Java Agent 概述
 Java Agent 本质上是 JDK 提供的一个工具。
@@ -37,6 +39,11 @@ java -cp jade.jar jade.Boot -host 127.0.0.1 -port 5656 -container
 
 ## 发送消息的交互界面
 创建 dummy agent
+
+## imtp 和 mtp
+* imtp Internal Message Transport Protocol 内部消息传输协议
+* mtp 消息传输协议 包含了Http和IIOP两个子包
+
 
 ### Lab1
 使用以下命令启动单个容器：
@@ -76,6 +83,29 @@ DummyAgent 代理允许您创建任何消息并将其发送给驻留在平台上
    
 注意： 
 * 每个任务都需要为平台、所有容器和代理设置自己的名称。
+
+#### 操作
+同一台电脑不需要新的mtp
+```cmd
+E:
+cd E:\Download\Jade\JADE-all-4.5.0\jade\lib
+java -cp jade.jar jade.Boot -gui -mtp jade.mtp.http.MessageTransportProtocol(http://172.18.144.1:1114/acc)
+java -cp jade.jar jade.Boot -port 1100 -gui -mtp jade.mtp.http.MessageTransportProtocol(http://172.18.144.1:1118/acc)
+```
+
+或者
+
+1. 创建两个gui,java11可以，java17不行
+`java -cp jade.jar jade.Boot -gui` 默认port1099
+`java -cp jade.jar jade.Boot -port 1100 -gui`
+
+
+2. 安装新的MTP，
+class: jade.mtp.http.MessageTransportProtocol
+地址：http://172.18.144.1:1114/acc (注意用的是"大"ip，不是192本地ip，http可以https不行)
+
+3. 个创建dummyagent
+4. 设置收件人即可，Name+address(mtp)
 
 ### Lab2
 该任务的目的是编译分布式多代理环境并将基础架构级别的安全性引入其中。 接下来，您应该测试驻留在不同容器中的代理之间的通信。

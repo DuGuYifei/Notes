@@ -24,12 +24,12 @@ echo xfce4-session >~/.xsession
 sudo service xrdp restart
 ```
 
-## 设置本地用户账户密码
+## 设置本地（remote机器）用户账户密码
 不过可以跳过如果第一步里做了
 ```bash
 sudo passwd azureuser
 ```
-## linux里安装AZURE CLI
+## 本地机器linux里安装AZURE CLI
 CLI: Command Line Interface
 ```bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash

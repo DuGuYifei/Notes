@@ -157,6 +157,18 @@ docker run --name redis -p 6379:6379 -v /E/Redis/conf/redis.conf:/etc/redis/redi
 * RENAME - 更改密钥名称 
 * TTL - 检查密钥的剩余时间 life 
 * TYPE - 检查分配给键的数据类型
+* DBSIZE - 返沪数据库大小
+
+#### KEYS 
+KEYS* - 用正则表达式返回所有匹配key，比如`KEYS key[xyz]`返回`keyx/keyy/keyz`
+
+#### SCAN
+SCAN 0 MATCH key* COUNT 5
+1. 从0开始设游标，进行扫描，匹配正则，返回5个
+2. 不会真返回5个，有些key在一个slot里
+3. 返回两中参数，第一个是让你从下一个继续扫描，第二个是返回的所有key
+4. 最多一次性返回10个
+
 
 ![](2022-11-07-05-03-11.png)
 
@@ -165,11 +177,11 @@ docker run --name redis -p 6379:6379 -v /E/Redis/conf/redis.conf:/etc/redis/redi
 如果密钥已经存在并且设置了生命周期，则 KEEPTTL 选项将保持生命周期设置不变，而不是更改为无限时间（默认行为）
 
 * SETNX = SET key value NX
-* 
 * GET - 获取值 
 * APPEND - 在末尾添加 
 * INCR - 将值增加 1 
-* INCRBY - 将值增加一个整数 
+* INCRBY - 将值增加一个整数
+* INCRBYFLOAT - 增加浮点数
 * DECR - 将值减少 1 
 * DECRBY - 将值减少一个整数 
 * STLEN - 检查字符串的长度 
@@ -190,6 +202,8 @@ docker run --name redis -p 6379:6379 -v /E/Redis/conf/redis.conf:/etc/redis/redi
 * RPUSH - 从右边添加项目
 * LRANGE - 从给定范围内获取元素（不删除）
 * LTRIM - 从范围之外删除项目
+* LRANGE mylist 0 -1 - 返回元素，**不能用GET**
+* LPOS mylist a RANK -2 COUNT 2 - 返回倒数第二和第三的a的位置
 
 #### 哈希表 hash
 ![](2022-11-07-05-06-10.png)
@@ -252,6 +266,61 @@ redis> SUNION key1 key2
 5) "d"
 redis> 
 ```
+
+##### 集合的其他命令
+1. SISMEMBER myset d - d是不是myset的元素
+2. SMEMBERS myset - 返回所有元素
+3. SREM myset value -  去掉
+4. SPOP myset - 随机去掉
+5. SUNIONSTORE sumset set1 (set2...) - 将几个集合并集并保存扫sumset
+6. SCARD myset - 返回数量
+
+#### 有序集合sorted
+1. ZADD my.sorted.set 0 john 1 clara 2 ivona 3 bob 4 michel
+2. ZRANGE my.sorted.set 0 -1 --elements returned according to the score (lowest to highest)
+3. ZRANGE my.sorted.set 0 -1 WITHSCORES -- 连分数一起返回
+4. ZRANK my.sorted.set ivona
+5. ZADD my.sorted.set INCR 3 ivona --ivona’s score increased by 3 (to 5)
+6. ZINCRBY my.sorted.set 1 ivona --ivona’s score increased by 1 (to 6)
+7. ZRANGE my.sorted.set 0 -1
+8. ZRANGEBYSCORE my.sorted.set 2 4 --elements with scores in the range are returned
+9. ZADD second.sorted.set 0 Tom 0 Alice 0 Frank 0 Bob 0 Clara
+10. ZRANGE second.sorted.set 0 -1 --if all elements have identical score, they are sorted alphabetically
+11. ZRANGEBYLEX second.sorted.set - + --all values
+12. ZRANGEBYLEX second.sorted.set (A [F --from A excluding to F including (why is Frank missing? 因为F在Frank前面)
+13. ZCARD second.sorted.set
+14. ZREM second.sorted.set A F
+15. ZCARD second.sorted.set
+16. ZRANGEBYSCORE sortie -inf 40
+
+#### HyperLogLog 基数
+
+Redis 在 2.8.9 版本添加了 HyperLogLog 结构。
+
+Redis HyperLogLog 是用来做基数统计的算法，HyperLogLog 的优点是，在输入元素的数量或者体积非常非常大时，计算基数所需的空间总是固定 的、并且是很小的。
+
+在 Redis 里面，每个 HyperLogLog 键只需要花费 12 KB 内存，就可以计算接近 2^64 个不同元素的基 数。这和计算基数时，元素越多耗费内存就越多的集合形成鲜明对比。
+
+但是，因为 HyperLogLog 只会根据输入元素来计算基数，而不会储存输入元素本身，所以 HyperLogLog 不能像集合那样，返回输入的各个元素。
+##### 什么是基数
+{1，2，3，4，5，5} 基数就是不重复的数量，即5个
+
+##### 命令
+1. PFADD myHyperLogLog a c d b a g d h s a d j f w h l w f n a s p w t c n m --adding elements to hyperloglog
+2. PFCOUNT myHyperLogLog --retrieving number of elements 但只返回了14, 所以是近似基数
+3. SADD checking a c d b a g d h s a d j f w h l w f n a s p w t c n m
+4. SCARD checking --返回了15
+5. MEMORY USAGE myHyperLogLog SAMPLES 0 -- 168
+6. MEMORY USAGE checking SAMPLES 0 -- 720
+
+#### MEMORY
+MRMORY USAGE key [SAMPLES count]
+
+MEMORY USAGE 命令给出一个 key 和它的值在 RAM 中所占用的字节数。
+
+返回的结果是 key 的值以及为管理该 key 分配的内存总字节数。
+
+对于嵌套数据类型，可以使用选项 SAMPLES，其中 count 表示抽样的元素个数，默认值为 5 。**当需要抽样所有元素时，使用 SAMPLES 0**。
 
 #### 其他
 ![](2022-11-07-05-08-16.png)

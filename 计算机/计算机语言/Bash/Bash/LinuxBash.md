@@ -1,34 +1,44 @@
 # LinuxBash笔记
 
 1. [win下的linux进入win系统盘](#win下的linux进入win系统盘)
-2. [Xlaunch 帮助在windows上图形化](#xlaunch-帮助在windows上图形化)
+2. [DISPLAY](#display)
+   1. [Xlaunch 帮助在windows上图形化](#xlaunch-帮助在windows上图形化)
 3. [命令中包含含号](#命令中包含含号)
 4. [定时任务](#定时任务)
    1. [举例](#举例)
 5. [给root账户设置密码](#给root账户设置密码)
 6. [进入root账户](#进入root账户)
 7. [多行命令](#多行命令)
-8. [apt-get](#apt-get)
-   1. [卸载](#卸载)
+8. [安装卸载包管理](#安装卸载包管理)
+   1. [apt-get](#apt-get)
+      1. [卸载](#卸载)
+   2. [dpkg 安装包管理](#dpkg-安装包管理)
 9. [内存占用查询](#内存占用查询)
 10. [磁盘空间](#磁盘空间)
-11. [~路径](#路径)
-12. [url下载](#url下载)
-13. [mv 移动/重命名](#mv-移动重命名)
+11. [清理缓存](#清理缓存)
+12. [~路径](#路径)
+13. [url下载](#url下载)
+14. [mv 移动/重命名](#mv-移动重命名)
    1. [移动](#移动)
    2. [重命名](#重命名)
-14. [解压和压缩](#解压和压缩)
+15. [解压和压缩](#解压和压缩)
    1. [解压](#解压)
-15. [mkdir 创建文件夹](#mkdir-创建文件夹)
-16. [rm 删除](#rm-删除)
-17. [ls](#ls)
+16. [mkdir 创建文件夹](#mkdir-创建文件夹)
+17. [rm 删除](#rm-删除)
+18. [ls](#ls)
+19. [查询私有ip](#查询私有ip)
 
 ## win下的linux进入win系统盘
 ```bash
 cd /mnt/e/"Gdansk University of Technology"/"first semester"/"Operating System"/BigScript/Lab6
 ```
+## DISPLAY
+```
+DISPLAY=ip:0.0
+```
+0.0 是默认主显示器
 
-## Xlaunch 帮助在windows上图形化
+### Xlaunch 帮助在windows上图形化
 ```bash
 DISPLAY=:0 bash **.sh
 ```
@@ -79,9 +89,10 @@ sudo su
 
 `\`
 
-## apt-get
+## 安装卸载包管理
 
-### 卸载
+### apt-get
+#### 卸载
 [Ubuntu apt-get彻底卸载软件包_享学IT的博客-CSDN博客_卸载软件包](https://blog.csdn.net/get_set/article/details/51276609)
 ```bash
 # 删除软件及其配置文件
@@ -97,6 +108,12 @@ dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
 apt-get clean
 ```
 
+### dpkg 安装包管理
+查询包
+```bash
+dpkg -l | grep "软件或者包的名字"
+```
+
 ## 内存占用查询
 ```
 free -h
@@ -105,6 +122,14 @@ free -h
 ## 磁盘空间
 ```
 df -hl
+```
+
+## 清理缓存
+```
+free -h
+sync
+echo 3 > /proc/sys/vm/drop_caches
+free -h
 ```
 
 ## ~路径
@@ -153,3 +178,8 @@ rm -rf 目录名字
 ## ls
 隐藏文件
 `ls -a`
+
+## 查询私有ip
+```
+ip addr show
+```

@@ -1,5 +1,4 @@
-# NoSQL
-
+# Nonrelational Database
 • Multi-Model,
 • Easily scalable, 
 • Easily distributed, 
@@ -15,6 +14,7 @@
 [Graph database - neo4j](GraphDatabase_neo4j.md)
 [Key Value database - Redis](KeyValueDatabase_Redis.md)
 
+----------------------------------------------------------------------------------------------------
 
 1. [CAP 理论](#cap-理论)
    1. [Consistency 在 CAP 和 ACID 理论里不同](#consistency-在-cap-和-acid-理论里不同)
@@ -30,6 +30,8 @@
    1. [when use](#when-use-1)
 6. [Graph database](#graph-database)
    1. [when use](#when-use-2)
+
+----------------------------------------------------------------------------------------------------
 
 ## CAP 理论
 1. Consistency: A guarantee that every node in a distributed cluster returns  the same, most recent, successful write. Consistency refers to  every client having the same view of the data.

@@ -401,4 +401,4 @@ ORDER BY similarity DESC
 ```
 
 ## python 连接 并 query
-[连接GraphDatabase_neo4j](../计算机语言/Python/Python知识积累/连接GraphDatabase_neo4j.md)
+[连接GraphDatabase_neo4j](../../../计算机语言/Python/Python知识积累/连接GraphDatabase_neo4j.md)

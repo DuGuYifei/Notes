@@ -10,7 +10,13 @@ This is my notes blog. It includes:
     1. self meditation
     2. Compiler
     3. server & internet
-    4. computer language
+       1. Computer Network
+       2. domain, website and http(s)
+       3. AZURE
+       4. Tencent
+       5. Cloud server knowlege accumulation
+    4. Agent System
+    5. computer language
         1. Hypertext
            1. css
            2. html
@@ -29,38 +35,45 @@ This is my notes blog. It includes:
            1. ada & smalltalk
            2. haskell & prolog
         9. Python
-    5. build model
-    6. front end
+    6. build model
+    7. front end
        1. Tree of front-learning route
        2. Vue
        3. nodejs
-    7. back end
+    8. back end
        1. SpringBoot
-    8. AI
+    9. AI
        1. Building Environment
        2. Computer Vision
           1. class recognize
           2. pose detection
        3. AI algorithm
-    9.  database
-        1.  relational database
-        2.  sql langauge
-        3.  nosql
-            1.  graph database - neo4j
-        4.  mysql
-        5.  Data warehouse
+    10. database
+        1.  SQL
+            1.  relational database
+            2.  sql
+            3.  mysql
+        2.  NoSQL
+            1.  NDB (Nonrelational Database)
+                1.  graph database - Neo4j
+                2.  key-value database - Redis
+            2.  ANDB (Advanced Nonrelational Database)
+                1.  BigTable
+                2.  Hadoop
+        3.  Data warehouse
             1.  basic info
             2.  multidimensional mode
             3.  tabular mode
-    10. Algorithm
-    11. small knowlege accumulation
-    12. Game
-    13. Blog
-    14. CTF
-    15. Docker
-    16. Leetcode
-    17. plugin development
-    18. PS
+    11. Algorithm
+    12. small knowlege accumulation
+    13. Game
+    14. Blog
+    15. CTF
+    16. Docker
+    17. Leetcode
+    18. plugin development
+    19. PS
+    20. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

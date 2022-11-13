@@ -19,6 +19,7 @@
    7. [Sharing information between nodes](#sharing-information-between-nodes)
    8. [Reporting and Counting](#reporting-and-counting)
    9. [example](#example)
+5. [积累](#积累)
 
 ## 简介
 建立在 Google 的 [BigTable](../BigTable/BigTable.md) 的基础上，即文件系统的组织及其分布式处理。 它最初的用途是 Nutch 网络搜索引擎的存储子系统。
@@ -195,7 +196,7 @@ REDUCE: (word, list(number of occurences)) -> (word, number of occurences)
 * 可以通过调用setMapOutputKeyClass 和setMapOutputValueClass 方法更改类型
 
 ### Combiner
-* To reduce the network overhead one might want to already  preaggregate the results on a single node, 
+* To reduce the network overhead one might want to already preaggregate the results on a single node, 
 * Such preaggregation is done by a Combiner, 
 * Reducer interface extends the one of Combiner so the same  class can be used for combining (as for reducing), 
 * Therefore in the Word Counting example the only code that  is needed for combining is:  conf.setCombinerClass(Reduce.class)
@@ -263,3 +264,8 @@ REDUCE: (word, list(number of occurences)) ->  (word, number of occurences)
 
 ![](2022-11-12-14-31-01.png)
 ![](2022-11-12-14-31-17.png)
+
+
+## 积累
+1. [BasicOperations](BasicOperations.md)
+2. [Combiner和Reducer](Combiner和Reducer.md)

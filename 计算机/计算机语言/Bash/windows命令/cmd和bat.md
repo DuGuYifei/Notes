@@ -1,5 +1,7 @@
 # cmd和bat
 
+[Command-line reference A-Z](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490890(v=technet.10)?redirectedfrom=MSDN)
+
 1. 本质上没有区别，都是简单的文本编码方式，都可以用记事本创建、编辑和查看。
 2. 两者所用的命令行代码也是共用的，只是cmd文件中允许使用的命令要比bat文件多。
 3. cmd文件只有在windows2000以上的系统中才能运行，而bat文件则没有这个限制。

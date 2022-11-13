@@ -9,6 +9,7 @@
    1. [Lab1](#lab1)
       1. [操作](#操作)
    2. [Lab2](#lab2)
+   3. [命令使用](#命令使用)
 6. [Java 代码创建](#java-代码创建)
 
 ## Java Agent 概述
@@ -295,6 +296,106 @@ java ^
 -nomtp ^
 -icps jam.imtp.leap.JICP.JICPSPeer ^
 -container-name jam-container1 
+---------------------------------------------
+java ^
+-Djavax.net.ssl.keyStore=des02.jks ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=des02-ca.jks ^
+-Djavax.net.ssl.trustStorePassword=123456 ^
+-cp jade.jar jade.Boot ^
+-host 127.0.0.1 ^
+-port 5656 ^
+-local-host 127.0.0.1 ^
+-local-port 4647 ^
+-container ^
+-nomtp ^
+-icps jade.imtp.leap.JICP.JICPSPeer
+```
+
+### 命令使用
+主容器
+```cmd
+java -Djavax.net.ssl.keyStore=des01.jks ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=des01-ca.jks ^
+-Djavax.net.ssl.trustStorePassword=123456 ^
+-cp jade.jar jade.Boot ^
+-host 127.0.0.1 -port 5656 ^
+-local-host 127.0.0.1 -local-port 5656 ^
+-nomtp ^
+-icps jade.imtp.leap.JICP.JICPSPeer ^
+-gui ^
+-services ^
+jade.core.replication.MainReplicationService ^;^
+jade.core.replication.AddressNotificationService
+```
+
+备份容器
+```cmd
+java -cp jade.jar jade.Boot ^
+-host 127.0.0.1 -port 5656 ^
+-local-host 127.0.0.1 -local-port 4650 -backupmain ^
+-services ^
+jade.core.replication.MainReplicationService ^;^
+jade.core.replication.AddressNotificationService ^
+-Djavax.net.ssl.keyStore=des01.jks ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=des01-ca.jks ^
+-Djavax.net.ssl.trustStorePassword=123456 ^
+-nomtp ^
+-icps jade.imtp.leap.JICP.JICPSPeer^
+-container-name back1
+```
+
+```cmd
+java -cp jade.jar jade.Boot ^
+-host 127.0.0.1 -port 5656 ^
+-local-host 127.0.0.1 -local-port 4649 -backupmain ^
+-services ^
+jade.core.replication.MainReplicationService ^;^
+jade.core.replication.AddressNotificationService ^
+-Djavax.net.ssl.keyStore=des01.jks ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=des01-ca.jks ^
+-Djavax.net.ssl.trustStorePassword=123456 ^
+-nomtp ^
+-icps jade.imtp.leap.JICP.JICPSPeer ^
+-container-name back2
+```
+
+联合容器
+```cmd
+java ^
+-Djavax.net.ssl.keyStore=des02.jks ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=des02-ca.jks ^
+-Djavax.net.ssl.trustStorePassword=123456 ^
+-cp jade.jar jade.Boot ^
+-host 127.0.0.1 ^
+-port 5656 ^
+-local-host 127.0.0.1 ^
+-local-port 4646 ^
+-container ^
+-nomtp ^
+-icps jade.imtp.leap.JICP.JICPSPeer
+-container-name fade1
+```
+
+```cmd
+java ^
+-Djavax.net.ssl.keyStore=des02.jks ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=des02-ca.jks ^
+-Djavax.net.ssl.trustStorePassword=123456 ^
+-cp jade.jar jade.Boot ^
+-host 127.0.0.1 ^
+-port 5656 ^
+-local-host 127.0.0.1 ^
+-local-port 4647 ^
+-container ^
+-nomtp ^
+-icps jade.imtp.leap.JICP.JICPSPeer
+-container-name fade2
 ```
 
 

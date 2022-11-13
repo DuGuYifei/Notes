@@ -22,7 +22,7 @@ Typical operations in the key-value database are:
 3. 一个值只能通过用一个新值覆盖它来改变。
 
 #### 灰盒
-Redis不算是完全的key-value数据库，它不是黑盒，是灰盒
+Redis不算是完全的key-value数据库，它不是黑盒，是灰盒 （它知道里面是啥）
 
 ### 使用场景
 1. 键值数据库使用的一个例子是存储用户会话：在 Web 应用程序中，可能有大量用户，每个用户都有分配给其会话的信息，并且通常一起访问。 同时，不同用户的会话之间没有依赖关系。
@@ -333,5 +333,31 @@ Redis 还允许您订阅频道（您也可以取消订阅）。 通过注册，�
 * `UNSUBSCRIBE [channel [channel...]]`
 * `PUBLISH channel message`
 
+第一个`redis-cli`:
+```bash
+redis 127.0.0.1:6379> SUBSCRIBE runoobChat
+
+Reading messages... (press Ctrl-C to quit)
+1) "subscribe"
+2) "runoobChat"
+3) (integer) 1
+```
+
+第二个`redis-cli`:
+```bash
+redis 127.0.0.1:6379> PUBLISH runoobChat "Redis PUBLISH test"
+
+(integer) 1
+
+redis 127.0.0.1:6379> PUBLISH runoobChat "Learn redis by runoob.com"
+
+(integer) 1
+```
+
+第一个客户端会继续显示新的信息。
+
 ### Other features
 ![](2022-11-07-05-09-15.png)
+
+## Redis的简单应用 - 超卖
+[Redis的简单应用 - 超卖](appendix/Redis的简单应用_超卖.md)

@@ -4,7 +4,8 @@
 2. [自己写hash给特殊的unordered_set](#自己写hash给特殊的unordered_set)
 3. [自定义hash](#自定义hash)
 4. [遍历unordered_map](#遍历unordered_map)
-5. [函数](#函数)
+5. [遍历unoreder_set](#遍历unoreder_set)
+6. [函数](#函数)
    1. [count()](#count)
    2. [insert() 和 erase()](#insert-和-erase)
    3. [find](#find)
@@ -108,6 +109,33 @@ for(unordered_map<int,int>::iterator it=map.begin();it!=map.end();it++){
 for(auto it=map.begin();it!=map.end();it++){
   cout<<it->first<<it->second<<endl;
 }
+```
+
+## 遍历unoreder_set
+```c++
+    unordered_set<int> a;
+    a.insert(1);
+    a.insert(2);
+    a.insert(3);
+    a.insert(5);
+    a.insert(4);
+    for (auto& i : a)
+        cout << i;
+
+    cout << endl;
+
+    unordered_set <int> b = { 1,2,3,5,4 };
+    for (auto& i : b)
+        cout << i;
+    cout << endl;
+
+    for (unordered_set<int>::iterator it = b.begin(); it != b.end(); it++)
+        cout << *it << " ";
+-----------------------------
+输出：
+12354
+12354
+1 2 3 5 4
 ```
 
 ## 函数

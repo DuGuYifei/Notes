@@ -62,7 +62,7 @@ In such a configuration, in the event of a failure of the master node, the datab
 在 Redis 集群中，节点数可能会在集群运行时发生变化。
 
 ### 持久化
-#### RDB
+#### RDB (Redis Database)
 1. Periodical snapshot of the database saved to disc
 2. RDB:
    1. compact
@@ -73,7 +73,7 @@ In such a configuration, in the event of a failure of the master node, the datab
 创建备份时的易用性源于您只需要复制一个最新的文件。
 长时间拍摄快照可能会导致数据库暂时停止响应查询。
 
-#### AOF
+#### AOF (Append-Only File)
 1. Every operation changing state of database data written to the end of a log file
 2. Periodically log file is compacted （similar to RDB process）
 3. Three different appendfsync policies: always, everysec, no
@@ -82,7 +82,7 @@ In such a configuration, in the event of a failure of the master node, the datab
    * greater room for error
 
 写入应该与未选择 appendfsync 策略的 RDB 一样快。
-everysec 的默认策略仍然提供良好的性能（如果在给定时刻没有同步，新的写入不会延迟）。
+everysec 是默认策略，仍然提供良好的性能（如果在给定时刻没有同步，新的写入不会延迟）。
 
 ### Keys
 1. 不支持复杂key，
@@ -94,6 +94,10 @@ everysec 的默认策略仍然提供良好的性能（如果在给定时刻没�
 7. Hash tags 可以 使Key在一个 hash slot里。`{user:1000}:name`和`{user:1000}:surname`
    * 创建密钥的建议。
    * 对于示例中的两个键，您必须输入整个键才能获取值，但只有哈希标签（“user:1000”）将决定为哪个哈希槽（以及因此哪个主节点）分配这些值。
+   * 哈希槽是第一个`{`和第一个`}`之间的内容别管里面是什么。
+
+### 哈希槽
+一个cluster有16384个hash slots，然后redis会根据数据量之类的考量将哈希槽分配到不同节点。
 
 
 
@@ -158,7 +162,7 @@ docker run --name redis -p 6379:6379 -v /E/Redis/conf/redis.conf:/etc/redis/redi
 * TTL - 检查密钥的剩余时间 life 
 * TYPE - 检查分配给键的数据类型
 * DBSIZE - 返沪数据库大小
-* fullshall - 清空数据库
+* flushall - 清空数据库
 
 #### KEYS 
 KEYS* - 用正则表达式返回所有匹配key，比如`KEYS key[xyz]`返回`keyx/keyy/keyz`

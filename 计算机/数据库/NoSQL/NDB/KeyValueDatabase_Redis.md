@@ -1,5 +1,43 @@
 # KeyValueDatabase_Redis
 
+1. [理论](#理论)
+   1. [解决哈希冲突](#解决哈希冲突)
+   2. [黑盒和灰盒](#黑盒和灰盒)
+      1. [黑盒](#黑盒)
+      2. [灰盒](#灰盒)
+   3. [使用场景](#使用场景)
+   4. [Redis理论](#redis理论)
+   5. [架构](#架构)
+   6. [Replication](#replication)
+   7. [集群](#集群)
+   8. [持久化](#持久化)
+      1. [RDB (Redis Database)](#rdb-redis-database)
+      2. [AOF (Append-Only File)](#aof-append-only-file)
+   9. [Keys](#keys)
+   10. [哈希槽](#哈希槽)
+2. [Redis实操](#redis实操)
+   1. [docker 运行Redis](#docker-运行redis)
+   2. [语法](#语法)
+      1. [基础](#基础)
+      2. [KEYS](#keys-1)
+      3. [SCAN](#scan)
+      4. [SET](#set)
+      5. [List](#list)
+      6. [哈希表 hash](#哈希表-hash)
+      7. [集合set](#集合set)
+         1. [Sadd](#sadd)
+         2. [Sunion](#sunion)
+         3. [集合的其他命令](#集合的其他命令)
+      8. [有序集合sorted](#有序集合sorted)
+      9. [HyperLogLog 基数](#hyperloglog-基数)
+         1. [什么是基数](#什么是基数)
+         2. [命令](#命令)
+      10. [MEMORY](#memory)
+      11. [其他](#其他)
+   3. [Pub/Sub 发布和订阅](#pubsub-发布和订阅)
+   4. [Other features](#other-features)
+3. [Redis的简单应用 - 超卖](#redis的简单应用---超卖)
+
 ## 理论
 在经典的键值数据库中，数据库存储由键标识的值。 **数据库无法解释值的内容（它只存储和返回它）**。与任何非关系数据库一样，键值数据库专注于horizontal scaling。 通常通过使用**散列函数**来实现**跨多个服务器**的值的有效分配。
 
@@ -126,7 +164,7 @@ tcp-keepalive 300
 2. 命令启动
 由于没有执行`docker pull redis`命令，这里会自动执行
 ```bash
-docker run --name redis -p 6379:6379 -v /E/Redis/conf/redis.conf:/etc/redis/redis_6379.conf -v /E/Redis/data:/data/ -d redis:latest redis-server /etc/redis/redis_6379.conf --appendonly yes
+docker run --name redis -p 6379:6379 -v /E/Redis/conf:/etc/redis -v /E/Redis/conf/redis.conf:/etc/redis/redis.conf -v /E/Redis/data:/data/ -d redis:latest redis-server /etc/redis/redis.conf --appendonly yes
 ```
 参数说明
 * –name="容器新名字"：为容器指定一个名称

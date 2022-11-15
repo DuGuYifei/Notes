@@ -18,6 +18,8 @@
 2. 讲解2
 WSL 2 不能与 windows 跨操作系统文件操作(Windows 访问 WSL2 的方法为进行 WSL2 环境键入 “cd ~” 进入主目录后，再键入"explorer.exe ."可在windows 文件管理器中访问 WSL 2 文件，此外还可以通过虚拟机的方法互通文件，如网络，文件共享等)
 
+windows访问WSL2: 在文件资源管理器输入`\\wsl$`
+
 ## 查看WSL版本（ubuntu正在使用的WSL版本）以及修改版本
 [IOS 中启用虚拟化问题_AD_钙的博客-CSDN博客_win10家庭版wsl2](https://blog.csdn.net/weixin_44121966/article/details/122815547)
 

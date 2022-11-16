@@ -35,7 +35,9 @@
       10. [MEMORY](#memory)
       11. [其他](#其他)
    3. [Pub/Sub 发布和订阅](#pubsub-发布和订阅)
-   4. [Other features](#other-features)
+   4. [Stream](#stream)
+   5. [Cluster 及 docker使用cluster](#cluster-及-docker使用cluster)
+   6. [Other features](#other-features)
 3. [Redis的简单应用 - 超卖](#redis的简单应用---超卖)
 
 ## 理论
@@ -163,9 +165,10 @@ tcp-keepalive 300
 
 2. 命令启动
 由于没有执行`docker pull redis`命令，这里会自动执行
-```bash
-docker run --name redis -p 6379:6379 -v /E/Redis/conf:/etc/redis -v /E/Redis/conf/redis.conf:/etc/redis/redis.conf -v /E/Redis/data:/data/ -d redis:latest redis-server /etc/redis/redis.conf --appendonly yes
+```cmd
+docker run --name redis -p 6379:6379 -v /E/Redis/conf:/etc/redis -v /E/Redis/conf/redis.conf:/etc/redis/redis.conf -v /E/Redis/data:/data/ -d redis:latest redis-server /etc/redis/redis.conf ::--appendonly yes
 ```
+
 参数说明
 * –name="容器新名字"：为容器指定一个名称
 * -p: 指定端口映射，格式为：主机(宿主)端口:容器端口
@@ -173,7 +176,7 @@ docker run --name redis -p 6379:6379 -v /E/Redis/conf:/etc/redis -v /E/Redis/con
 * -v /D/docker/redis/conf/redis.conf:/etc/redis/redis_6379.conf 把宿主机配置好的redis.conf放到容器内的这个位置中
 * -v /D/docker/redis/data:/data/ 把redis持久化的数据在宿主机内显示，做数据备份
 
-3. 操作
+1. 操作
    1. 直接在docker desktop软件的terminal里操作
         ```
         redis-cli
@@ -397,6 +400,17 @@ redis 127.0.0.1:6379> PUBLISH runoobChat "Learn redis by runoob.com"
 ```
 
 第一个客户端会继续显示新的信息。
+
+### Stream
+* XACK 清除当前组的这个信息，其他组不影响
+* 每个consumer的 `0` 消息是不一样的，决定于它读过的消息，所以当XACK一条ID为XXXX消息时，可能只影响其中一个consumer的0
+* XACK不支持`0`ID
+[Redis的简单应用 - 超卖](appendix/Redis的简单应用_超卖.md)
+
+### Cluster 及 docker使用cluster
+[Redis的简单应用 - 超卖](appendix/Redis的简单应用_超卖.md)
+[Getting Title at 53:29](https://blog.csdn.net/qq_43753724/article/details/120397440)
+注意链接中命令`-itd`没必要。`--privileged=true`必要。
 
 ### Other features
 ![](2022-11-07-05-09-15.png)

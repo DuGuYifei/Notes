@@ -38,7 +38,7 @@
    4. [Stream](#stream)
    5. [Cluster 及 docker使用cluster](#cluster-及-docker使用cluster)
    6. [Other features](#other-features)
-3. [Redis的简单应用 - 超卖](#redis的简单应用---超卖)
+3. [Redis的简单应用 - 超卖 : Stream, 哈希槽分配, Cluster, Stream, Docker 构建 Cluster](#redis的简单应用---超卖--stream-哈希槽分配-cluster-stream-docker-构建-cluster)
 
 ## 理论
 在经典的键值数据库中，数据库存储由键标识的值。 **数据库无法解释值的内容（它只存储和返回它）**。与任何非关系数据库一样，键值数据库专注于horizontal scaling。 通常通过使用**散列函数**来实现**跨多个服务器**的值的有效分配。
@@ -416,5 +416,5 @@ redis 127.0.0.1:6379> PUBLISH runoobChat "Learn redis by runoob.com"
 ### Other features
 ![](2022-11-07-05-09-15.png)
 
-## Redis的简单应用 - 超卖
+## Redis的简单应用 - 超卖 : Stream, 哈希槽分配, Cluster, Stream, Docker 构建 Cluster
 [Redis的简单应用 - 超卖](appendix/Redis的简单应用_超卖.md)

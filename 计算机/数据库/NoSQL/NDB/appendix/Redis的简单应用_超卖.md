@@ -1,5 +1,9 @@
 # Redis的简单应用 - 超卖
 
+[使用Redis搭建电商秒杀系统](https://help.aliyun.com/document_detail/63920.html)
+[Redis第三篇-秒杀案例_silhouette10的博客-CSDN博客](https://blog.csdn.net/weixin_44295084/article/details/120009453)
+[【Redis 学习】Redis事务秒杀案例_南淮北安的博客-CSDN博客_redis事务秒杀](https://blog.csdn.net/nanhuaibeian/article/details/124969158)
+
 1. [Introduction](#introduction)
    1. [Scenario – Lighting Deal](#scenario--lighting-deal)
    2. [Features Analysis in simple case](#features-analysis-in-simple-case)

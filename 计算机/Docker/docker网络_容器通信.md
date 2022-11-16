@@ -57,3 +57,8 @@ yum install -y net-tools  #安装网络工具包
 ping c2      #处于backend 通
 ping c3      #处于backend 通
 ```
+
+### 容器间通信
+
+#### ip问题
+不要写 127.0.0.1 用 `docker network inspect bridge` 查询出来的ip，默认应该是从 `172.17.0.2` 开始，然后最后的`.2`开始累加。

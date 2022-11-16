@@ -166,7 +166,7 @@ tcp-keepalive 300
 2. 命令启动
 由于没有执行`docker pull redis`命令，这里会自动执行
 ```cmd
-docker run --name redis -p 6379:6379 -v /E/Redis/conf:/etc/redis -v /E/Redis/conf/redis.conf:/etc/redis/redis.conf -v /E/Redis/data:/data/ -d redis:latest redis-server /etc/redis/redis.conf ::--appendonly yes
+docker run -d --privileged=true --name redis -p 6379:6379 -v /E/Redis/conf:/etc/redis -v /E/Redis/data:/data/ redis:latest redis-server /etc/redis/redis.conf ::--appendonly yes注释掉是因为可以写在config里
 ```
 
 参数说明
@@ -409,7 +409,8 @@ redis 127.0.0.1:6379> PUBLISH runoobChat "Learn redis by runoob.com"
 
 ### Cluster 及 docker使用cluster
 [Redis的简单应用 - 超卖](appendix/Redis的简单应用_超卖.md)
-[Getting Title at 53:29](https://blog.csdn.net/qq_43753724/article/details/120397440)
+[Docker搭建Redis的cluster集群_别团等shy哥发育的博客-CSDN博客](https://blog.csdn.net/qq_43753724/article/details/120397440)
+[Docker-redis集群+混合持久化 - 灰信网（软件开发博客聚合）](https://www.freesion.com/article/42951253970/)
 注意链接中命令`-itd`没必要。`--privileged=true`必要。
 
 ### Other features

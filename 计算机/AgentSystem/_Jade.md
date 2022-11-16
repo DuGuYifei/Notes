@@ -3,14 +3,17 @@
 1. [Java Agent 概述](#java-agent-概述)
    1. [Java Agent 的作用](#java-agent-的作用)
 2. [教程](#教程)
-3. [命令行创建](#命令行创建)
-4. [发送消息的交互界面](#发送消息的交互界面)
-5. [imtp 和 mtp](#imtp-和-mtp)
+3. [发送消息的交互界面](#发送消息的交互界面)
+4. [imtp 和 mtp](#imtp-和-mtp)
+5. [dynamic 和 static environment](#dynamic-和-static-environment)
+6. [命令行创建](#命令行创建)
    1. [Lab1](#lab1)
       1. [操作](#操作)
    2. [Lab2](#lab2)
    3. [命令使用](#命令使用)
-6. [Java 代码创建](#java-代码创建)
+7. [Java 代码创建](#java-代码创建)
+   1. [AID](#aid)
+   2. [Jade的基本程序关系](#jade的基本程序关系)
 
 ## Java Agent 概述
 Java Agent 本质上是 JDK 提供的一个工具。
@@ -27,6 +30,18 @@ JavaAgent 是运行在 main 方法之前的拦截器，它内定的方法名叫 
 ## 教程
 [jade的中文资料_fire1175的博客-CSDN博客_jade createrequestmsg](https://blog.csdn.net/fire1175/article/details/1584164)
 
+
+
+## 发送消息的交互界面
+创建 dummy agent
+
+## imtp 和 mtp
+* imtp Internal Message Transport Protocol 内部消息传输协议
+* mtp 消息传输协议 包含了Http和IIOP两个子包
+
+## dynamic 和 static environment
+就是Container可能会变化
+
 ## 命令行创建
 Main Container
 ```cmd
@@ -37,13 +52,6 @@ Federate Container
 ```cmd
 java -cp jade.jar jade.Boot -host 127.0.0.1 -port 5656 -container
 ```
-
-## 发送消息的交互界面
-创建 dummy agent
-
-## imtp 和 mtp
-* imtp Internal Message Transport Protocol 内部消息传输协议
-* mtp 消息传输协议 包含了Http和IIOP两个子包
 
 
 ### Lab1
@@ -416,5 +424,5 @@ java ^
 
 `[我的github网址](还没定)`
 
-1. [AID](AID.md)
-2. [Jade的基本程序关系](Jade的基本程序关系.md)
+### [AID](AID.md)
+### [Jade的基本程序关系](Jade的基本程序关系.md)

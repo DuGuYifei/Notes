@@ -11,8 +11,10 @@
 1. [查看容器](查看容器.md)
 2. [-itd](-itd.md)
 3. [--privileged](--privileged.md)
-4. [挂载硬盘不能直接在命令中使用硬盘内文件](挂载硬盘不能直接在命令中使用硬盘内文件.md)
+4. [docker网络_容器通信](docker网络_容器通信.md)
 
 ## 其他
 1. [控制台上下左右键](控制台上下左右键.md)
 2. [Redis](../数据库/NoSQL/NDB/KeyValueDatabase_Redis.md)
+3. [挂载硬盘不能直接在命令中使用硬盘内文件](挂载硬盘不能直接在命令中使用硬盘内文件.md)
+4. [container和image](container和image.md)

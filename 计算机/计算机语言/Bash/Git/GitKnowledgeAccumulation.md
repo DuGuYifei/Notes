@@ -24,15 +24,15 @@
 20. [pull request](#pull-request)
    1. [当原主人更新时](#当原主人更新时)
 21. [git commit 修改](#git-commit-修改)
+   1. [继续上次commit](#继续上次commit)
 22. [git merge / rebase](#git-merge--rebase)
 23. [git pull / fetch](#git-pull--fetch)
    1. [拉取代码，如果本地代码没有改变](#拉取代码如果本地代码没有改变)
 24. [git stash](#git-stash)
    1. [应用场景1：改动同一分支](#应用场景1改动同一分支)
    2. [应用场景2：不小心改动其他分支](#应用场景2不小心改动其他分支)
-25. [继续上次commit](#继续上次commit)
-26. [强制推送](#强制推送)
-27. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
+25. [强制推送](#强制推送)
+26. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -124,6 +124,8 @@ git checkout -b ＜new-branch＞ ＜existing-branch＞
 ```
 
 默认的git checkout -b命令会从当前所在的HEAD指针所指的分支来派生出新建的分支。但git checkout命令仍然可以接受一个可选的分支名作为参数。在上面的例子中，`<existing-branch>` 作为这个参数传递给git checkout命令，这一命令意味着从指定的existing-branch分支派生创建了一个名为new-branch的新分支。
+
+没有-b就是切换已存在的分支
 
 ```bash
 git checkout -b main
@@ -273,6 +275,14 @@ git commit --amend
 
 :wq 退出
 
+### 继续上次commit
+```bash
+# 继续上次commit 
+git commit --amend --no-edit
+# 继续上次commit 但是修改message
+git commit --amend -m "xxxx"
+```
+
 ## git merge / rebase
 [git merge 和 git rebase 小结_wh_19910525的博客-CSDN博客_git merge和rebase](https://blog.csdn.net/wh_19910525/article/details/7554489)
 
@@ -352,14 +362,6 @@ git stash pop // 将栈顶改动内容重新加回本地分支，就可以继续
 git stash save "本地缓存内容标识" // 把本地当前改动暂存起来，此时master分支就恢复到了上次拉取时的状态
 git checkout test                // 切换到需要改动的分支
 git stash pop　　　              // 将改动pop到自己当前的分支
-```
-
-## 继续上次commit
-```bash
-# 继续上次commit 
-git commit --amend --no-edit
-# 继续上次commit 但是修改message
-git commit --amend -m "xxxx"
 ```
 
 ## 强制推送

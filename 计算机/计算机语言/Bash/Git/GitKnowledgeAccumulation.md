@@ -29,10 +29,11 @@
 23. [git pull / fetch](#git-pull--fetch)
    1. [拉取代码，如果本地代码没有改变](#拉取代码如果本地代码没有改变)
 24. [git stash](#git-stash)
-   1. [应用场景1：改动同一分支](#应用场景1改动同一分支)
+   1. [应用场景1：改动同一分支/不想git pull产生新的commit点](#应用场景1改动同一分支不想git-pull产生新的commit点)
    2. [应用场景2：不小心改动其他分支](#应用场景2不小心改动其他分支)
 25. [强制推送](#强制推送)
 26. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
+27. [撤销](#撤销)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -292,6 +293,8 @@ git merge是用来合并两个分支的。
 
 `git rebase b` 将b分支合并到当前分支
 
+`git rebase --abort` 放弃rebase
+
 * 假设你现在基于远程分支"origin"，创建一个叫"mywork"的分支。
 ```
 git checkout -b mywork origin
@@ -342,7 +345,7 @@ git stash命令的作用就是将目前还不想提交的但是已经修改的�
 
 git stash作用的范围包括工作区和暂存区中的内容，也就是说没有提交的内容都会保存至堆栈中。
 
-### 应用场景1：改动同一分支
+### 应用场景1：改动同一分支/不想git pull产生新的commit点
 我在本地修改好后，发现远程分支已经被改动了，此时我本地也被改动了就造成了冲突，无法push或者pull。
 此时可以使用git stash：
 ```git
@@ -375,3 +378,16 @@ git push -f
 git 其实会有linux操作系统，因为
 1. 使用win的ssh根本无法访问我的中文路径 .ssh 文件夹，
 2. 并且在git bash上，使用`cd ~/.ssh`进入文件夹，使用`ls`以及`cat config`命令就会发现这就是中文路径下的.ssh文件夹，`~`就是root文件夹，其实就是`C:/user/XXX`。
+
+## 撤销
+`git reset`
+`--mixed` 为**默认**，可以不用带该参数，用于**重置暂存区的文件与上一次的提交(commit)保持一致，工作区文件内容保持不变**。
+`--hard`  **撤销工作区中所有未提交的修改内容**，**将暂存区与工作区都回到上一次版本，并删除之前的所有信息提交**，其实就是恢复到某个版本，记得用 `git push -f` 强制更改
+`--soft`  **用于回退到某个版本**
+
+```
+git reset --soft HEAD~3 # 退回到上上上个版本
+git reset --soft HEAD^  # 退回到上个版本
+git reset  052e         # 回退到指定版本
+git reset HEAD^ hello.php  # 回退 hello.php 文件的版本到上一个版本  
+```

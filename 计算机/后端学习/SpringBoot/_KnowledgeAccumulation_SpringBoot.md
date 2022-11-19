@@ -7,13 +7,25 @@
 1. [@service_@repository和@component的本质区别](@service_@repository和@component的本质区别.md)
 2. [@XXXMapping](@XXXMapping.md)
 3. [@RestController和@Controller](@RestController和@Controller.md)
-4. [@GeneratedValue](@GeneratedValue.md)
-5. [@Transient](@Transient.md)
-6. [@JoinColumn](@JoinColumn.md)
-7. [@Autowired](@Autowired.md)
+4. [@PathVariable@RequestParam@PathParam@QueryParam](@PathVariable@RequestParam@PathParam@QueryParam.md)
+5. [@RequestBody](@RequestBody)
+6. [@Entity@Table](@Entity@Table.md)
+7. [@Basic](@Basic.md)
+8. [@GeneratedValue](@GeneratedValue.md)
+9. [@Transient](@Transient.md)
+10. [@JoinColumn](@JoinColumn.md)
+11. [@OneToMany@ManyToOne](@OneToMany@ManyToOne.md)
+12. [@OneToMany的mappedby](@OneToMany的mappedby.md)
+13. [@的属性的cascade](cascade.md)
+14. [@的属性的fetch](fetch.md) 
+15. [@Autowired](@Autowired.md)
 
 ## ResponseEntity
-1. [BadRequest添加错误信息](BadRequest添加错误信息.md)
+1. [body-BadRequest添加错误信息](body-BadRequest添加错误信息.md)
+
+## 代码知识
+1. [双向单向数据库表映射关系](双向单向数据库表映射关系.md)
+2. [api带文件](api带文件.md)
 
 ## 其他
 1. [创建工程](创建工程.md)

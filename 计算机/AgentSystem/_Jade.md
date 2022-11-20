@@ -139,7 +139,7 @@ jade.Boot 类是主要的 JADE 类，它包括运行单个容器的 main () 方�
 
 1. 主容器：
 ```cmd
-java -cp lib/jade.jar jade.Boot ^ 
+java -cp lib/jade.jar jade.Boot ^
 -host des01.eti.pg.gda.pl -port 5656 ^
 -local-host des01.eti.pg.gda.pl -local-host 5656 ^
 -services ^
@@ -198,18 +198,42 @@ INFO: JICP Secure Peer acticated. (auth=false, ta=jicp://des01.eti.pg.gda.pl:565
 ```cmd
 keytool -genkeypair -keystore des01.jks -alias des01 -keyalg rsa
 keytool -genkeypair -keystore des02.jks -alias des02 -keyalg rsa
+keytool -genkeypair -keystore des03.jks -alias des03 -keyalg rsa
+keytool -genkeypair -keystore des04.jks -alias des04 -keyalg rsa
+keytool -genkeypair -keystore des05.jks -alias des05 -keyalg rsa
 ```
 
 2. 导出公钥：
 ```cmd
 keytool -export -keystore des01.jks -alias des01 -file des01.cer
 keytool -export -keystore des02.jks -alias des02 -file des02.cer
+keytool -export -keystore des03.jks -alias des03 -file des03.cer
+keytool -export -keystore des04.jks -alias des04 -file des04.cer
+keytool -export -keystore des05.jks -alias des05 -file des05.cer
 ```
 
 3. 将公钥导入到可信密钥容器中：
 ```cmd
 keytool -import -file des01.cer -alias des01 -keystore des02-ca.jks
+keytool -import -file des03.cer -alias des03 -keystore des02-ca.jks
+keytool -import -file des04.cer -alias des04 -keystore des02-ca.jks
+keytool -import -file des05.cer -alias des05 -keystore des02-ca.jks
 keytool -import -file des02.cer -alias des02 -keystore des01-ca.jks
+keytool -import -file des03.cer -alias des03 -keystore des01-ca.jks
+keytool -import -file des04.cer -alias des04 -keystore des01-ca.jks
+keytool -import -file des05.cer -alias des05 -keystore des01-ca.jks
+keytool -import -file des01.cer -alias des01 -keystore des03-ca.jks
+keytool -import -file des02.cer -alias des02 -keystore des03-ca.jks
+keytool -import -file des04.cer -alias des04 -keystore des03-ca.jks
+keytool -import -file des05.cer -alias des05 -keystore des03-ca.jks
+keytool -import -file des01.cer -alias des01 -keystore des04-ca.jks
+keytool -import -file des02.cer -alias des02 -keystore des04-ca.jks
+keytool -import -file des03.cer -alias des03 -keystore des04-ca.jks
+keytool -import -file des05.cer -alias des05 -keystore des04-ca.jks
+keytool -import -file des01.cer -alias des01 -keystore des05-ca.jks
+keytool -import -file des02.cer -alias des02 -keystore des05-ca.jks
+keytool -import -file des03.cer -alias des03 -keystore des05-ca.jks
+keytool -import -file des04.cer -alias des04 -keystore des05-ca.jks
 ```
 
 以下是运行具有加密和身份验证的环境的示例。
@@ -314,13 +338,18 @@ java ^
 -port 5656 ^
 -local-host 127.0.0.1 ^
 -local-port 4647 ^
--container ^
+-container ^option
 -nomtp ^
 -icps jade.imtp.leap.JICP.JICPSPeer
 ```
 
 ### 命令使用
-主容器
+**注意：**
+```
+密钥之类的一定要在-cp前面，因为那不是jade的命令
+```
+
+* 主容器
 ```cmd
 java -Djavax.net.ssl.keyStore=des01.jks ^
 -Djavax.net.ssl.keyStorePassword=123456 ^
@@ -333,44 +362,43 @@ java -Djavax.net.ssl.keyStore=des01.jks ^
 -icps jade.imtp.leap.JICP.JICPSPeer ^
 -gui ^
 -services ^
-jade.core.replication.MainReplicationService ^;^
-jade.core.replication.AddressNotificationService
+jade.core.replication.MainReplicationService;jade.core.replication.AddressNotificationService
 ```
 
-备份容器
+* 备份容器
 ```cmd
-java -cp jade.jar jade.Boot ^
--host 127.0.0.1 -port 5656 ^
--local-host 127.0.0.1 -local-port 4650 -backupmain ^
--services ^
-jade.core.replication.MainReplicationService ^;^
-jade.core.replication.AddressNotificationService ^
--Djavax.net.ssl.keyStore=des01.jks ^
+java ^
+-Djavax.net.ssl.keyStore=des04.jks ^
 -Djavax.net.ssl.keyStorePassword=123456 ^
--Djavax.net.ssl.trustStore=des01-ca.jks ^
+-Djavax.net.ssl.trustStore=des04-ca.jks ^
 -Djavax.net.ssl.trustStorePassword=123456 ^
--nomtp ^
--icps jade.imtp.leap.JICP.JICPSPeer^
--container-name back1
-```
-
-```cmd
-java -cp jade.jar jade.Boot ^
+-cp jade.jar jade.Boot ^
 -host 127.0.0.1 -port 5656 ^
--local-host 127.0.0.1 -local-port 4649 -backupmain ^
--services ^
-jade.core.replication.MainReplicationService ^;^
-jade.core.replication.AddressNotificationService ^
--Djavax.net.ssl.keyStore=des01.jks ^
--Djavax.net.ssl.keyStorePassword=123456 ^
--Djavax.net.ssl.trustStore=des01-ca.jks ^
--Djavax.net.ssl.trustStorePassword=123456 ^
+-local-host 127.0.0.1 -local-port 4648 -backupmain ^
+-container-name back1 ^
 -nomtp ^
 -icps jade.imtp.leap.JICP.JICPSPeer ^
--container-name back2
+-services ^
+jade.core.replication.MainReplicationService;jade.core.replication.AddressNotificationService
 ```
 
-联合容器
+```cmd
+java ^
+-Djavax.net.ssl.keyStore=des05.jks ^
+-Djavax.net.ssl.keyStorePassword=123456 ^
+-Djavax.net.ssl.trustStore=des05-ca.jks ^
+-Djavax.net.ssl.trustStorePassword=123456 ^
+-cp jade.jar jade.Boot ^
+-host 127.0.0.1 -port 5656 ^
+-local-host 127.0.0.1 -local-port 4649 -backupmain ^
+-container-name back2 ^
+-nomtp ^
+-icps jade.imtp.leap.JICP.JICPSPeer ^
+-services ^
+jade.core.replication.MainReplicationService;jade.core.replication.AddressNotificationService
+```
+
+* 联合容器
 ```cmd
 java ^
 -Djavax.net.ssl.keyStore=des02.jks ^
@@ -384,15 +412,15 @@ java ^
 -local-port 4646 ^
 -container ^
 -nomtp ^
--icps jade.imtp.leap.JICP.JICPSPeer
+-icps jade.imtp.leap.JICP.JICPSPeer ^
 -container-name fade1
 ```
 
 ```cmd
 java ^
--Djavax.net.ssl.keyStore=des02.jks ^
+-Djavax.net.ssl.keyStore=des03.jks ^
 -Djavax.net.ssl.keyStorePassword=123456 ^
--Djavax.net.ssl.trustStore=des02-ca.jks ^
+-Djavax.net.ssl.trustStore=des03-ca.jks ^
 -Djavax.net.ssl.trustStorePassword=123456 ^
 -cp jade.jar jade.Boot ^
 -host 127.0.0.1 ^
@@ -401,8 +429,9 @@ java ^
 -local-port 4647 ^
 -container ^
 -nomtp ^
--icps jade.imtp.leap.JICP.JICPSPeer
--container-name fade2
+-icps jade.imtp.leap.JICP.JICPSPeer ^
+-container-name fade2 ^
+-services jade.core.replication.AddressNotificationService
 ```
 
 

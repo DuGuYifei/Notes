@@ -19,7 +19,10 @@
    7. [Sharing information between nodes](#sharing-information-between-nodes)
    8. [Reporting and Counting](#reporting-and-counting)
    9. [example](#example)
-5. [积累](#积累)
+5. [Hadoop, HDFS, Hive, HBase](#hadoop-hdfs-hive-hbase)
+6. [积累](#积累)
+   1. [BasicOperations](#basicoperations)
+   2. [Combiner和Reducer](#combiner和reducer)
 
 ## 简介
 建立在 Google 的 [BigTable](../BigTable/BigTable.md) 的基础上，即文件系统的组织及其分布式处理。 它最初的用途是 Nutch 网络搜索引擎的存储子系统。
@@ -265,7 +268,9 @@ REDUCE: (word, list(number of occurences)) ->  (word, number of occurences)
 ![](2022-11-12-14-31-01.png)
 ![](2022-11-12-14-31-17.png)
 
+## Hadoop, HDFS, Hive, HBase
+[Hadoop-HDFS-Hive-HBase](Hadoop-HDFS-Hive-HBase.md)
 
 ## 积累
-1. [BasicOperations](BasicOperations.md)
-2. [Combiner和Reducer](Combiner和Reducer.md)
+### [BasicOperations](BasicOperations.md)
+### [Combiner和Reducer](Combiner和Reducer.md)

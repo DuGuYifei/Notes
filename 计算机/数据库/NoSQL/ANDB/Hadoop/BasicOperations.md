@@ -1,4 +1,9 @@
 # Basic Operations
+1. [Login to the Hadoop client machine](#login-to-the-hadoop-client-machine)
+2. [上传下载文件从 Hadoop client machine](#上传下载文件从-hadoop-client-machine)
+3. [查询时间](#查询时间)
+4. [Simple operations on HDFS](#simple-operations-on-hdfs)
+
 
 ## Login to the Hadoop client machine
 [ssh](../../../../服务器网络/云服务器知识积累/ssh命令连接服务器.md)

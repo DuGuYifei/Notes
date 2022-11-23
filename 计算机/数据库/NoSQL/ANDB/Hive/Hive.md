@@ -1,5 +1,28 @@
 # Hive
 
+1. [定义](#定义)
+2. [Hive components](#hive-components)
+3. [Storing data](#storing-data)
+   1. [可以创建的两种table](#可以创建的两种table)
+   2. [数据可以如何储存](#数据可以如何储存)
+      1. [TextFile](#textfile)
+      2. [SequenceFile](#sequencefile)
+         1. [基本介绍](#基本介绍)
+         2. [the structure of sequence file](#the-structure-of-sequence-file)
+         3. [为什么使用它](#为什么使用它)
+         4. [Horizontal row-store](#horizontal-row-store)
+      3. [Parquet](#parquet)
+         1. [Column-store](#column-store)
+      4. [RCFile](#rcfile)
+         1. [Row Columnar File 行列式文件](#row-columnar-file-行列式文件)
+         2. [Optimized Row Columnar File](#optimized-row-columnar-file)
+      5. [Json](#json)
+      6. [AVRO - data serialization system](#avro---data-serialization-system)
+         1. [介绍](#介绍)
+         2. [The example of Avro schema](#the-example-of-avro-schema)
+      7. [ORC](#orc)
+4. [Hive 操作](#hive-操作)
+
 
 ## 定义
 Apache Hive 是一个建立在 Apache Hadoop 之上的数据仓库软件项目，用于提供数据查询(query)和分析(analysis)。
@@ -9,6 +32,14 @@ Apache Hive 是一个建立在 Apache Hadoop 之上的数据仓库软件项目�
 Hive 的独特部署是为了在处理**大量数据（large volumes of data）**时提供数据查询、强大的数据分析和数据汇总 （querying of data, powerful data analysis, and data summarization）。
 
 Hive 的组成部分是 **HiveQL**，它是一个类似于 SQL 的接口，广泛用于查询存储在数据库中的数据。
+
+HIVE 是 Hadoop 平台上存储在 HDFS 文件中的数据的 SQL 标准。 提供对 HDFS 数据的类似 SQL 的访问。  Hive 中的数据模型提供高级结构，类似于关系数据库中已知的表。
+
+**Hive Query Language (HQL)** 类似于 SQL，支持 [DDL、DML 和 DCL](../../../SQL/SQLKnowledgeAccumulation.md) 操作
+
+Hive 可以被视为存储在 HDFS 文件中的数据的**附加层**。
+
+Hive **不是为 [OLTP](../../../DataWarehouse/DataWarehouse基本知识积累.md) 处理而设计**的。 因此，它通常不被称为“数据库”，而是被称为“**数据仓库**”，这意味着它针对分析查询进行了优化。
 
 ## Hive components
 ![](2022-11-21-10-47-03.png)
@@ -146,8 +177,8 @@ Now, one of the main problem that sequence file format solves is the problem  of
 
 现在，序列文件格式解决的主要问题之一是**Hadoop中处理过多小文件的问题**。 如您所知，**Hadoop 不适合处理大量小文件**，因为引用（内存）大量小文件会为名称节点产生大量开销。 除了这个内存开销之外，**第二个问题是映射器（Mapper）的数量**，因为每个文件将执行更多的映射器（因为文件大小小于块的大小）。
 
-### RCFile
-#### Horizontal row-store
+
+##### Horizontal row-store
 ![](2022-11-22-21-29-22.png)
 
 Now, let me remind the idea of **horizontal row-store**. **The set of rows is stored in one block. The whole block is always stored on the same node**
@@ -171,7 +202,8 @@ Now, let me remind the idea of **horizontal row-store**. **The set of rows is st
 - 对动态工作负载的适应能力强； 
 - 行存储保证同一记录中的所有字段位于同一集群节点中，因为它们位于同一 HDFS 块中。
 
-#### Parquet: Column-store
+#### Parquet
+##### Column-store
 
 ![](2022-11-22-21-35-44.png)
 
@@ -191,7 +223,8 @@ Now, let me remind the idea of **horizontal row-store**. **The set of rows is st
 - 可以避免在查询执行期间读取不必要的列；  
 - 可以通过压缩同一数据域内的每一列轻松实现高压缩率；
 
-#### Row Columnar File 行列式文件
+#### RCFile
+##### Row Columnar File 行列式文件
 ![](2022-11-22-21-39-48.png)
 问题是如何提供快速查询处理并确保同一记录的所有字段都位于同一节点中。 这个需求的答案是Row Columnar File，**它把所有的记录分成行组，每个行组存储在同一个节点上，但是是以列的方式。**
 
@@ -203,7 +236,7 @@ Now, let me remind the idea of **horizontal row-store**. **The set of rows is st
 - 通过在表扫描期间避免不必要的列读取来进行读取优化，
 - 使用列式压缩，从而提供高效的存储空间利用率。
 
-#### Optimized Row Columnar File
+##### Optimized Row Columnar File
 - complex types are supported (struct, list, map, union) 
 - simple indexes stored within the file (skip row groups that do not pass  predicate filtering, seek to a given row) 
 - compression depending on the data types 
@@ -214,11 +247,11 @@ Now, let me remind the idea of **horizontal row-store**. **The set of rows is st
 - 根据数据类型进行压缩 
 - ...
 
-### Json
+#### Json
 The other way of storing the data are JSON files.
 
-## AVRO - data serialization system
-### 介绍
+#### AVRO - data serialization system
+##### 介绍
 Serialization is the **process of converting an object into a stream of bytes to store the object or transmit it to memory, a database, or a file.**
 Its main purpose is to save the **state of an object** in order to be able to **recreate it when needed**.
 The **reverse process** is called **deserialization**.
@@ -228,7 +261,7 @@ The **reverse process** is called **deserialization**.
 The producer provides **binary data** and **data schema**. The consumer according to data  schema **deserialize** binary data.
 生产者提供二进制数据和数据模式。 消费者根据数据模式反序列化二进制数据。
 
-### The example of Avro schema 
+##### The example of Avro schema 
 ![](2022-11-22-21-49-44.png)
 An Avro schema is created using JSON format.
 
@@ -249,3 +282,11 @@ It defines what fields are contained in the value, and the data  type for each f
 唯一标识商店中的架构。 在上面的示例中，架构的完全限定名称是 com.example.FullName。
 * fields：实际的模式定义。
 它定义值中包含哪些字段，以及每个字段的数据类型。 字段可以是简单的数据类型，例如整数或字符串，也可以是复杂的数据。
+
+#### ORC
+column-oriented. 比rcfile效率高。
+Divide into stripes. Each stripe includes an index, data, and Footer. The index stores the maximum/minimum values of each column and the position of each row in the column.
+![](2022-11-23-20-40-50.png)
+
+## Hive 操作
+[Hive_Operations](Hive_Operations.md)

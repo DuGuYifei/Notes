@@ -33,6 +33,10 @@ multidimensional model 太复杂
 指代Multidimensional model
 OLAP: online analytical processing
 
+##### 补充OLTP
+On-Line Transaction Processing 联机事务处理过程，也叫面向交易的处理过程。
+OLTP是传统的关系型数据库的主要应用，主要是基本的、日常的事务处理，例如银行交易。
+
 #### MDX
 支持MDX语言
 
@@ -40,7 +44,6 @@ OLAP: online analytical processing
 Tabular = realtional + multidimensional
 #### DAX
 支持DAX语言
-
 
 ## 列存储和行存储
 ![](2022-10-11-21-09-19.png)

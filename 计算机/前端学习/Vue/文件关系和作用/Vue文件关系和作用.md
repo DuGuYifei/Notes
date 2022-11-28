@@ -54,7 +54,6 @@ npm i -D vue-loader vue-template-compiler css-loader vue-style-loader html-webpa
 
 #### 配置webpack文件
 ```js
-  module:.{ 规则 :.[ { test:./\.js$/,'use:.'babel-loader'.}, {.test:./\.vue$/,.use:.'vue-loader'.}, { test:./\.css$/,'use:.['vue-style-loader',.'css-loader'l}, 1 plugins::l new HtmlWebpackPlugin({ template: :./src/index .html' Y new VueLoaderPlugin(),
 // 引入刚安装的两个依赖作为webpack的插件
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {VueLoaderPlugin} = reguire('vue-loaderi');

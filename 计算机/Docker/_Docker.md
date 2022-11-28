@@ -16,5 +16,6 @@
 ## 其他
 1. [控制台上下左右键](控制台上下左右键.md)
 2. [Redis](../数据库/NoSQL/NDB/KeyValueDatabase_Redis.md)
-3. [挂载硬盘不能直接在命令中使用硬盘内文件](挂载硬盘不能直接在命令中使用硬盘内文件.md)
-4. [container和image](container和image.md)
+3. [Redis_Cluster多个客户端](../数据库/NoSQL/NDB/appendix/Redis的简单应用_超卖.md)
+4. [挂载硬盘不能直接在命令中使用硬盘内文件](挂载硬盘不能直接在命令中使用硬盘内文件.md)
+5. [container和image](container和image.md)

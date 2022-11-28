@@ -13,6 +13,7 @@
 
 [Graph database - neo4j](GraphDatabase_neo4j.md)
 [Key Value database - Redis](KeyValueDatabase_Redis.md)
+[Document database](DocumentDatabase.md)
 
 ----------------------------------------------------------------------------------------------------
 

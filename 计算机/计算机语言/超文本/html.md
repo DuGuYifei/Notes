@@ -9,7 +9,7 @@
       1. [各种meta的属性](#各种meta的属性)
    5. [header](#header)
 3. [section](#section)
-4. [div\section\article](#divsectionarticle)
+4. [div\\section\\article](#divsectionarticle)
 5. [div和span的区别](#div和span的区别)
 6. [button和input type button区别](#button和input-type-button区别)
 7. [input](#input)
@@ -21,8 +21,8 @@
 11. [邮箱 mailto](#邮箱-mailto)
 12. [data-属性](#data-属性)
 13. [svg](#svg)
-   1. [symbol 和 use](#symbol-和-use)
-   2. [xlink:href](#xlinkhref)
+    1. [symbol 和 use](#symbol-和-use)
+    2. [xlink:href](#xlinkhref)
 14. [颜色属性](#颜色属性)
 
 ## html5标记

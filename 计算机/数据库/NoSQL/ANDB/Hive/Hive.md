@@ -21,7 +21,17 @@
          1. [介绍](#介绍)
          2. [The example of Avro schema](#the-example-of-avro-schema)
       7. [ORC](#orc)
-4. [Hive 操作](#hive-操作)
+4. [Data Type](#data-type)
+   1. [All Types reference](#all-types-reference)
+   2. [Complex types](#complex-types)
+      1. [Basic Complex Types](#basic-complex-types)
+         1. [STRUCT](#struct)
+         2. [ARRAY](#array)
+         3. [MAP](#map)
+         4. [UNIONTYPE](#uniontype)
+      2. [more complicated examples](#more-complicated-examples)
+      3. [Collection functions](#collection-functions)
+5. [Hive 操作](#hive-操作)
 
 
 ## 定义
@@ -287,6 +297,92 @@ It defines what fields are contained in the value, and the data  type for each f
 column-oriented. 比rcfile效率高。
 Divide into stripes. Each stripe includes an index, data, and Footer. The index stores the maximum/minimum values of each column and the position of each row in the column.
 ![](2022-11-23-20-40-50.png)
+
+## Data Type
+### All Types reference
+[LanguageManual Types - Apache Hive - Apache Software Foundation](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Types#LanguageManualTypes-Overview)
+
+### Complex types
+#### Basic Complex Types
+* STRUCT - a complex data type, representing multiple fields of a single item
+* ARRAY - A complex data type that can represent an arbitrary number of ordered elements. The elements can be scalars or another complex type.
+* MAP - Map is a collection of key-value pairs where fields accessed using array notation of keys.
+* UNIONTYPE - Union can hold any one of the specified data types.
+
+##### STRUCT
+```
+column_name STRUCT < name : type, ... >
+type ::= primitive_type | complex_type
+
+example:
+employee_info STRUCT < employer: STRING, id: BIGINT, address: STRING >
+```
+
+STRUCT 类型允许创建由复杂或原始类型的其他元素组成的任何结构。
+
+##### ARRAY
+```
+column_name ARRAY < type >
+type ::= primitive_type | complex_type
+
+Example:
+pets ARRAY <STRING>
+```
+
+##### MAP
+```
+column_name MAP < primitive_type, type >
+type ::= primitive_type | complex_type
+
+Example:
+metrics MAP <STRING, BIGINT>
+```
+Map 复杂类型用于表示键值对。 **键值必须是原始类型**，值可以是原始类型或复杂类型。
+
+##### UNIONTYPE
+```
+column_name UNIONTYPE <type, ... >
+type ::= primitive_type | complex_type
+
+Example:
+column1 UNIONTYPE<INT, DOUBLE, VARCHAR>
+```
+
+Uniontype 允许定义数据可以是各种类型的列（在示例中为 int、double 或 varchar）
+
+#### more complicated examples
+```
+places_lived ARRAY < STRUCT <street: STRING, city: STRING, country: STRING >>
+
+current_address STRUCT 
+< 
+   street_address: 
+      STRUCT <street_number: INT, street_name: STRING, street_type: STRING>, 
+   country: 
+      STRING, 
+   postal_code: 
+      STRING 
+>
+
+marriages ARRAY < 
+STRUCT <
+ spouse: STRING,
+ children: ARRAY <STRING>>
+>
+
+notables MAP <STRING, ARRAY <STRING>>
+```
+
+#### Collection functions
+```
+size(array<A>):int // it returns the total number of elements in the array
+array_contains(array<A>,value):Boolean // it returns true if the array contains the value
+sort_array(array<A>) // it returns a sorted array of given array
+
+size(map<k,v>):int // it returns the total number of elements in the map
+map_keys(map<k,v>) // it returns an unordered array of keys of the map
+map_values(map<k,v>) //...............................values.........
+```
 
 ## Hive 操作
 [Hive_Operations](Hive_Operations.md)

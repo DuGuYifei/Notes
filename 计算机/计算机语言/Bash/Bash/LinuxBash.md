@@ -39,6 +39,7 @@
 29. [awk](#awk)
 
 ## win下的linux进入win系统盘
+或者直接在问价夹导航栏里输入`bash`就像输入`cmd`打开command一样。
 ```bash
 cd /mnt/e/"Gdansk University of Technology"/"first semester"/"Operating System"/BigScript/Lab6
 ```

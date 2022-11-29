@@ -1,5 +1,25 @@
 # Hive Operations
 
+1. [连接](#连接)
+2. [数据库](#数据库)
+   1. [创建数据库](#创建数据库)
+   2. [使用指定数据库](#使用指定数据库)
+   3. [表](#表)
+      1. [显示所有表或数据库](#显示所有表或数据库)
+      2. [Create internal table:](#create-internal-table)
+      3. [加载数据](#加载数据)
+      4. [create external table:](#create-external-table)
+      5. [Display the description of newly created table:](#display-the-description-of-newly-created-table)
+      6. [drop](#drop)
+      7. [文件夹变化](#文件夹变化)
+      8. [各种storing type](#各种storing-type)
+         1. [TEXTFILE SEQUENCEFILE ORC PARQUET RCFILE](#textfile-sequencefile-orc-parquet-rcfile)
+         2. [AVRO](#avro)
+3. [Complex data type](#complex-data-type)
+   1. [create table](#create-table)
+   2. [select data](#select-data)
+
+
 ## 连接
 ```bash
 $ ssh atndb13@153.19.52.196
@@ -33,6 +53,19 @@ show databases;
 create table if not exists simpletable(Number int)
 stored as textfile;
 ```
+
+[Complex see below](#complex-data-type)
+```bash
+CREATE TABLE employee(name string, work_place ARRAY<string>,
+sex_age STRUCT<sex:string,age:int>, skills_score MAP<string,int>,
+depart_title MAP<string,ARRAY<string>>)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '|'
+COLLECTION ITEMS TERMINATED BY ','
+MAP KEYS TERMINATED BY ':';
+```
+**注意：Collection items 指的是elements in arrays or structures**
+
 #### 加载数据
 **也可以加载对应存储形式的二进制文件，比如sequencefile，avro等**
 ```bash
@@ -151,3 +184,8 @@ TBLPROPERTIES ('avro.schema.literal'='{
 ]
 }');
 ```
+
+## Complex data type
+### create table
+
+### select data

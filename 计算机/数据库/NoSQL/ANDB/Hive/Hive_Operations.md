@@ -18,6 +18,7 @@
 3. [Complex data type](#complex-data-type)
    1. [create table](#create-table)
    2. [select data](#select-data)
+      1. [完整案例](#完整案例)
 
 
 ## 连接
@@ -55,15 +56,7 @@ stored as textfile;
 ```
 
 [Complex see below](#complex-data-type)
-```bash
-CREATE TABLE employee(name string, work_place ARRAY<string>,
-sex_age STRUCT<sex:string,age:int>, skills_score MAP<string,int>,
-depart_title MAP<string,ARRAY<string>>)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY '|'
-COLLECTION ITEMS TERMINATED BY ','
-MAP KEYS TERMINATED BY ':';
-```
+
 **注意：Collection items 指的是elements in arrays or structures**
 
 #### 加载数据
@@ -187,5 +180,99 @@ TBLPROPERTIES ('avro.schema.literal'='{
 
 ## Complex data type
 ### create table
+```bash
+CREATE TABLE employee(name string, work_place ARRAY<string>,
+sex_age STRUCT<sex:string,age:int>, skills_score MAP<string,int>,
+depart_title MAP<string,ARRAY<string>>)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '|'
+COLLECTION ITEMS TERMINATED BY ','
+MAP KEYS TERMINATED BY ':';
+
+create table companies (company STRING, city STRING, props
+MAP<STRING,STRING>)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+COLLECTION ITEMS TERMINATED BY '#'
+MAP KEYS TERMINATED BY '@'
+STORED AS TEXTFILE;
+```
+
 
 ### select data
+```
+SELECT s.*, c.city FROM companies c JOIN sales s ON c.company = s.company;
+
+SELECT s.*, c.props['wlasciciel'] FROM companies c JOIN sales s ON c.company = s.company;
+```
+
+#### 完整案例
+```
+create table sales (wh DATE, company STRING, value DOUBLE) ROW
+FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+
+LOAD DATA LOCAL INPATH 'SampleData.txt' INTO TABLE sales;
+
+create table companies (company STRING, city STRING, form
+STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS
+TEXTFILE;
+
+LOAD DATA LOCAL  INPATH 'SampleData2.txt' OVERWRITE INTO
+TABLE companies;
+
+SELECT s.*, c.city FROM companies c JOIN sales s ON c.company =
+s.company;
+
+create table companies (company STRING, city STRING, props
+MAP<STRING,STRING>)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+COLLECTION ITEMS TERMINATED BY '#'
+MAP KEYS TERMINATED BY '@'
+STORED AS TEXTFILE;
+
+LOAD DATA LOCAL INPATH 'SampleData3.txt' OVERWRITE INTO
+TABLE companies;
+
+SELECT s.*, c.props['wlasciciel'] FROM companies c JOIN sales s
+ON c.company = s.company;
+```
+
+SampleData.txt
+```
+2017-10-01,antracyt,205.03
+2017-10-02,antracyt,229.20
+2017-10-03,antracyt,13.73
+2017-10-04,antracyt,17.73
+2017-10-01,magnetyt,118.42
+2017-10-02,magnetyt,215.12
+2017-10-03,magnetyt,76.12
+2017-10-04,magnetyt,89.62
+2017-10-05,magnetyt,57.82
+2017-10-06,magnetyt,89.22
+2017-10-07,magnetyt,132.52
+2017-10-08,magnetyt,43.02
+2017-10-09,magnetyt,55.12
+2017-10-10,magnetyt,77.72
+2017-10-04,chalkopiryt,98.61
+2017-10-05,chalkopiryt,75.81
+2017-10-06,chalkopiryt,99.21
+2017-10-07,chalkopiryt,315.21
+2017-10-08,chalkopiryt,34.11
+2017-10-09,chalkopiryt,55.71
+```
+
+SampleData2.txt
+```
+antracyt,Gdynia,sp. z o.o.
+magnetyt,Warszawa,sp. z o.o.
+chalkopiryt,Warszawa,S.A.
+```
+
+SampleData3.txt
+```
+antracyt,Gdynia,forma@sp. z o.o.#obrot@umiarkowany
+magnetyt,Warszawa,forma@sp. z o.o.#wlasciciel@Janina Kowalska
+chalkopiryt,Warszawa,forma@S.A.#wlasciciel@Jason Unlimited#obrot@ogromny
+
+```

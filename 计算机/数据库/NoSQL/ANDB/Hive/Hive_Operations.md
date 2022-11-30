@@ -19,6 +19,12 @@
    1. [create table](#create-table)
    2. [select data](#select-data)
       1. [完整案例](#完整案例)
+4. [partitioning and bucketing](#partitioning-and-bucketing)
+   1. [partitioning](#partitioning)
+      1. [static partitioning](#static-partitioning)
+      2. [dynamic partitioning](#dynamic-partitioning)
+   2. [bucketing](#bucketing)
+   3. [文件夹比较](#文件夹比较)
 
 
 ## 连接
@@ -276,3 +282,83 @@ magnetyt,Warszawa,forma@sp. z o.o.#wlasciciel@Janina Kowalska
 chalkopiryt,Warszawa,forma@S.A.#wlasciciel@Jason Unlimited#obrot@ogromny
 
 ```
+
+## partitioning and bucketing
+### partitioning
+#### static partitioning
+```
+CREATE TABLE partitioned_test_managed(
+empId INT,
+firstname STRING,
+lastname STRING,
+city STRING,
+mobile STRING)
+PARTITIONED BY (yearofexperience INT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED as TEXTFILE;
+```
+#### dynamic partitioning
+```bash
+# 先创建没有partition的table
+CREATE TABLE partitioned_test_managed_temp(
+empId INT,
+firstname STRING,
+lastname STRING,
+city STRING,
+mobile STRING,
+yearofexperience INT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED as TEXTFILE;
+
+ALTER TABLE partitioned_test_managed_temp SET TBLPROPERTIES ("skip.header.line.count"="1");
+
+# 创建partition的
+CREATE TABLE partitioned_test_managed_DP(
+empId INT,
+firstname STRING,
+lastname STRING,
+city STRING,
+mobile STRING)
+PARTITIONED BY (yearofexperience INT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED as TEXTFILE;
+
+# 加载数据
+INSERT OVERWRITE TABLE partitioned_test_managed_dp
+partition(yearofexperience)
+SELECT empId,firstname,lastname,city,mobile, yearofexperience FROM
+partitioned_test_managed_temp;
+```
+
+### bucketing
+```bash
+# 创建表格
+CREATE TABLE partitioned_test_managed_PC(
+empId INT,
+firstname STRING,
+lastname STRING,
+mobile STRING,yearofexperience INT)
+PARTITIONED BY (city STRING)
+CLUSTERED BY (yearofexperience) INTO 3 buckets
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED as TEXTFILE;
+
+# 加载数据
+INSERT OVERWRITE TABLE partitioned_test_managed_pc
+partition(city)
+SELECT empId,firstname,lastname,city,mobile, yearofexperience FROM
+partitioned_test_managed_temp;
+```
+
+### 文件夹比较
+partition 出现子文件夹，每个子文件夹一个文件。
+
+partition + bucket 出现子文件夹，每个文件夹下均分bucket文件。

@@ -17,6 +17,10 @@ struct cmp {
 
 priority_queue<Node,vector<Node>,cmp> re;
 ```
+```cpp
+auto cmp = [&](const int &a, const int &b) { return freq[a] > freq[b]; };
+priority_queue<int, vector<int>, decltype(cmp)> qu;
+```
 2. 也可以直接重载原类型的 `>`和`<`
 注意：这里将`<`写成了`>`号的功能，这样就将less大根堆变成了小根堆，因为`less`用的`小于号`，`greater`用的`大于号`
 ```cpp

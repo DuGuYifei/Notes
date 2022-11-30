@@ -31,7 +31,19 @@
          4. [UNIONTYPE](#uniontype)
       2. [more complicated examples](#more-complicated-examples)
       3. [Collection functions](#collection-functions)
-5. [Hive 操作](#hive-操作)
+5. [Partitioning and bucketing 分区和分桶](#partitioning-and-bucketing-分区和分桶)
+   1. [Partitioning](#partitioning)
+      1. [Static Partitioning](#static-partitioning)
+         1. [加载数据](#加载数据)
+         2. [features](#features)
+      2. [Dynamic partitioning](#dynamic-partitioning)
+         1. [features](#features-1)
+      3. [悟：为什么查询快慢](#悟为什么查询快慢)
+   2. [Bucketing](#bucketing)
+      1. [Features](#features-2)
+      2. [advantages](#advantages)
+      3. [limitations](#limitations)
+6. [Hive 操作](#hive-操作)
 
 
 ## 定义
@@ -383,6 +395,149 @@ size(map<k,v>):int // it returns the total number of elements in the map
 map_keys(map<k,v>) // it returns an unordered array of keys of the map
 map_values(map<k,v>) //...............................values.........
 ```
+
+## Partitioning and bucketing 分区和分桶
+### Partitioning
+- Partitioning is a way of dividing a table into related parts based on the values of particular columns like date, city, and department.
+- Each table in the hive can have one or more partition keys to identify a particular partition.
+
+- 分区是一种根据日期、城市和部门等特定列的值将表划分为相关部分的方法。
+- hive 中的每个表都可以有一个或多个分区键来标识特定分区。
+
+Why?
+1. Apache Hive converts the SQL queries into MapReduce jobs and then submits it to the Hadoop cluster.
+2. When we submit a SQL query, Hive read the entire data-set.
+3. It becomes inefficient to run MapReduce jobs over a large table.
+4. When querying a particular table, appropriate partition of the table is queried which contains the query value.
+
+1. Apache Hive 将SQL 查询转换为 MapReduce 作业，然后将其提交给 Hadoop 集群。
+2. 当我们提交 SQL 查询时，Hive 读取整个数据集。
+3. 在大表上运行 MapReduce 作业变得低效。
+4. 查询特定表时，查询包含查询值的表的适当分区。
+
+首先我们讨论分区的想法。 我们有两种类型的分区：静态和动态。
+
+#### Static Partitioning
+- We manually decide how many partitions tables will have and also value for those partitions
+- 我们手动决定有多少个分区表以及这些分区的值
+```
+CREATE TABLE partitioned_test_managed(
+empId INT,
+firstname STRING,
+lastname STRING,
+city STRING,
+mobile STRING)
+PARTITIONED BY (yearofexperience INT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED as TEXTFILE;
+```
+
+In Static Partitioning, we have to manually decide how many partitions tables will have  and also value for those partitions. One of the major drawbacks of static partitioning  is, when we are loading data to some partition, **we have to make sure we are putting  the right data in the right partition.**
+在静态分区中，我们必须手动决定有多少个分区表以及这些分区的值。 静态分区的主要缺点之一是，当我们将数据加载到某个分区时，我们必须确保将正确的数据放入正确的分区中。
+
+让我创建静态分区的示例表。 该表根据经验年份进行分区。 请注意，**此列未在 CREATE TABLE 语句后列出**。
+
+##### 加载数据
+```
+LOAD DATA LOCAL INPATH ‘/user/data/employee.txt’ INTO TABLE partitioned_test_managed PARTITION (yearofexperience=3);
+```
+我们必须**自己定义将数据加载到 yearofexperience 等于 3 的分区中**。
+现在您应该看到此方法的另一个缺点。 如果您有 1 到 30 年的经验，这不是一个大问题。 但是年份分区列呢？ 您必须手动创建它，这很不好玩！
+
+##### features
+1. When we are loading data to some partition, we have to make sure we are putting the right data in the right partition.
+2. Static partitioning is faster for loading data as all of the information is already present in the query.
+
+1. 当我们将数据加载到某个分区时，我们必须确保将正确的数据放入正确的分区中。
+2. 静态分区加载数据更快，因为所有信息都已存在于查询中。
+
+With all these drawbacks you might think, static partitions are not that useful. But when you have limited and well know a set of values (like departments or state names etc), you can use static partitioning. Static partitioning is faster for loading data as all of the information is already present in the query. Also, it will stop you from creating unnecessary partitions creating performance issues the very thing which partitions are supposed to help us with.
+[https://analyticshut.com/static-vs-dynamic-partitioning-in-hive/]
+
+由于所有这些缺点，您可能会认为静态分区不是那么有用。 但是，当您有限且非常了解一组值（如部门或州名称等）时，您可以使用静态分区。 静态分区加载数据的速度更快，因为所有信息都已存在于查询中。 此外，它会阻止您创建不必要的分区，从而导致性能问题，而分区应该可以帮助我们解决这些问题。
+[https://analyticshut.com/static-vs-dynamic-partitioning-in-hive/]
+
+#### Dynamic partitioning
+Inserting data into Hive table having Dynamic Partition, is a two step process:
+1. Create **staging table** in **staging database** in hive and load data into that table from external source such as RDBMS, document database or local files using Hive load.
+2. Insert data into actual table into ODS (operational data store/final  database) using Hive insert.
+
+1. 在 hive 的暂存数据库中创建暂存表，并使用 Hive 加载从外部源（如 RDBMS(Relational Database Management System)、文档数据库或本地文件）将数据加载到该表中。
+2. 使用Hive 插入将数据插入实际表到ODS（操作数据存储/最终数据库）中。
+
+In most cases, you will find yourself using Dynamic partitions. Dynamic partitions provide us with flexibility and create partitions automatically depending on the data that we are inserting into the table.[https://analyticshut.com/static-vs-dynamic-partitioning-in-hive/] 
+
+##### features
+1. During data loading the right partition is chosen by HIVE.
+2. For big tables the time of loading is **much longer than for the static partitioning**.
+
+#### 悟：为什么查询快慢
+因为static查询要输入在哪个表查询，dynamic是自动的。
+
+### Bucketing
+Basically, the concept of Hive **Partitioning provides a way of segregating （隔离） hive table data into multiple files/directories**. However, it only gives effective results in few  scenarios. Such as: 
+– When there is the limited number of partitions.
+– Or, while partitions are of comparatively equal size.
+
+基本上，Hive 的概念**分区提供了一种将（隔离）Hive 表数据隔离到多个文件/目录中的方法**。 但是，它仅在少数情况下提供有效结果。 如： 
+– 当分区数量有限时。
+– 或者，分区的大小相对相等。
+
+虽然，并非在所有情况下都可行。 例如，何时根据国家/地区等地理位置对我们的表进行分区。 因此，一些较大的国家/地区将有较大的分区（例如：4-5 个国家/地区本身贡献了总数据的 70-80%）。
+虽然小国家数据会创建小分区（世界上其余所有国家可能只占总数据的 20-30%）。 因此，那时分区将不理想。
+然后，为了解决过度分区的问题，Hive 提供了 Bucketing 概念。 这是将表数据集分解为更易于管理的部分的另一种有效技术。
+[https://data-flair.training/blogs/bucketing-in-hive/] 
+
+#### Features
+1. This concept is based on hashing function on the bucketed column.
+2. The hash_function depends on the type of the bucketing column.
+3. Bucketing can be done without partitioning.
+
+1. 这个概念是基于分桶列上的哈希函数。
+2. hash_function 取决于
+3. 分桶列的类型。
+4. 分桶可以不用分区。
+
+Basically, this concept is based on **hashing function** on the bucketed column. Along with **mod** (by the total number of buckets).
+1. Where the hash_function depends on the **type** of the bucketing column.
+2. However, the Records with the **same bucketed column** will always be **stored in the same bucket**.
+3. Moreover, to divide the table into buckets we use `CLUSTERED BY` clause.
+4. Generally, in the table directory, **each bucket is just a file**, and **Bucket numbering is  1-based**.
+5. **Along with** Partitioning on Hive tables bucketing can be done and even **without** partitioning.
+6. Moreover, Bucketed tables will create **almost equally distributed** data file parts.
+
+基本上，这个概念是基于分桶列上的hashing函数。 连同 mod（按桶的总数）。
+1. 其中 hash_function 取决于分桶列的类型。
+2. 但是，具有相同分桶列的记录将始终存储在同一个桶中。
+3. 此外，为了将表划分为桶，我们使用 CLUSTERED BY 子句。
+4. 一般在table目录下，每个bucket就是一个文件，Bucket编号从1开始。
+5. 与 Hive 表的分区一起，分桶也可以完成，甚至不需要分区。
+6. 此外，Bucketed tables 将创建几乎均匀分布的数据文件部分。
+
+#### advantages
+1. On comparing with non-bucketed tables, Bucketed tables offer the **efficient sampling**.
+2. **Map-side joins** will be **faster** on bucketed tables than non-bucketed tables, as the data files are equal sized parts.
+3. Here also bucketed tables offer **faster query** responses than non-bucketed tables as compared to Similar to partitioning.
+4. This concept offers the **flexibility** to keep the records in each bucket to be **sorted by  one or more columns**.
+5. Since the **join of each bucket becomes an efficient merge-sort**, this makes map-side  joins even more efficient.
+
+1. 与非分桶表相比，分桶表提供了高效的采样。
+2. 映射端连接在分桶表上比非分桶表更快，因为数据文件是大小相等的部分。
+3. 与类似于分区相比，这里分桶表也提供比非分桶表更快的查询响应。
+4. 这个概念提供了灵活性，可以让每个桶中的记录按一个或多个列排序。
+5. 由于每个桶的连接变成了高效的合并排序，这使得 map-side 连接更加高效。
+
+#### limitations
+1. However, it doesn’t ensure that the table is properly populated.
+2. So, we need to handle Data Loading into buckets by our-self.
+
+1. 但是，它并不能确保表格被正确填充。
+2. 因此，我们需要自己处理数据加载到桶中。
+[https://data-flair.training/blogs/bucketing-in-hive/]
+
+
 
 ## Hive 操作
 [Hive_Operations](Hive_Operations.md)

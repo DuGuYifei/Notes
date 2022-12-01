@@ -1,4 +1,4 @@
-# dequeue 和 ququq
+# dequeue 和 quque
 
 Deque是双端队列，可以从队头队尾入队出队。 
 Queue是单向队列 只能从对尾入队，队头出队。(FIFO)

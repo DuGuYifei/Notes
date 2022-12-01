@@ -29,3 +29,6 @@ list.forEach(i->System.out.print(i+", "))
 ```java
 list.forEach(System.out::println);
 ```
+
+## List 和 ArrayList
+[List和ArrayList](List和ArrayList.md)

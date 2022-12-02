@@ -8,36 +8,39 @@
    1. [举例](#举例)
 5. [给root账户设置密码](#给root账户设置密码)
 6. [进入root账户](#进入root账户)
-7. [多行命令](#多行命令)
-8. [安装卸载包管理](#安装卸载包管理)
+7. [vim](#vim)
+8. [多行命令](#多行命令)
+9. [安装卸载包管理](#安装卸载包管理)
    1. [apt-get](#apt-get)
       1. [卸载](#卸载)
    2. [dpkg 安装包管理](#dpkg-安装包管理)
-9. [内存占用查询](#内存占用查询)
-10. [磁盘空间](#磁盘空间)
-11. [清理缓存](#清理缓存)
-12. [~路径](#路径)
-13. [url下载](#url下载)
-14. [mv 移动/重命名](#mv-移动重命名)
+10. [内存占用查询](#内存占用查询)
+11. [磁盘空间](#磁盘空间)
+12. [清理缓存](#清理缓存)
+13. [~路径](#路径)
+14. [url下载](#url下载)
+15. [mv 移动/重命名](#mv-移动重命名)
     1. [移动](#移动)
     2. [重命名](#重命名)
-15. [解压和压缩](#解压和压缩)
+16. [解压和压缩](#解压和压缩)
     1. [解压](#解压)
-16. [mkdir 创建文件夹](#mkdir-创建文件夹)
-17. [rm 删除](#rm-删除)
-18. [ls](#ls)
-19. [显示整个路径名](#显示整个路径名)
-20. [查询私有ip](#查询私有ip)
-21. [解决ssh连接后显示为 \[。。@。。 ~\]](#解决ssh连接后显示为--)
-22. [服务器](#服务器)
-23. [查询命令位置](#查询命令位置)
-24. [{ }](#-)
-25. [seq](#seq)
-26. [cut](#cut)
-27. [tr](#tr)
-28. [uniq和sort](#uniq和sort)
-29. [awk](#awk)
-30. [grep](#grep)
+17. [mkdir 创建文件夹](#mkdir-创建文件夹)
+18. [rm 删除](#rm-删除)
+19. [ls](#ls)
+20. [显示整个路径名](#显示整个路径名)
+21. [查询私有ip](#查询私有ip)
+22. [解决ssh连接后显示为 \[。。@。。 ~\]](#解决ssh连接后显示为--)
+23. [服务器](#服务器)
+24. [查询命令位置](#查询命令位置)
+25. [{ }](#-)
+26. [seq](#seq)
+27. [cut](#cut)
+28. [tr](#tr)
+29. [uniq和sort](#uniq和sort)
+30. [awk](#awk)
+    1. [NR NF FNR](#nr-nf-fnr)
+    2. [BEGIN END for循环](#begin-end-for循环)
+31. [grep](#grep)
     1. [grep -P](#grep--p)
 
 ## win下的linux进入win系统盘
@@ -97,6 +100,9 @@ sudo password
 ```
 sudo su
 ```
+
+## vim
+[vim](vim.md)
 
 ## 多行命令
 
@@ -322,6 +328,75 @@ awk '{print $1,$2}'
 ```bash
 # 正则查询
 awk '/^([0-9]{3}-|\([0-9]{3}\) )[0-9]{3}-[0-9]{4}$/' file.txt
+```
+
+### NR NF FNR
+NR是指awk正在处理的记录位于文件中的位置（行号）
+NF是指awk正在处理的记录包含几个域（字段），这于域分隔符有关，默认为空格
+在awk处理多个输入文件的时候，在处理完第一个文件后，NR并不会从1开始，而是继续累加，因此就出现了FNR，每当处理一个新文件的时候，FNR就从1开始计数，`FNR`可以理解为`File Number of Record`。
+
+```bash
+September 2003 # NR=1;NF=2
+Su Mo Tu We Th Fr Sa # NR=2;NF=7
+1 2 3 4 5 6 # NR=3;NF=6
+7 8 9 10 11 12 13 # NR=4;NF=7
+14 15 16 17 18 19 20 # NR=5;NF=7
+21 22 23 24 25 26 27 # NR=6;NF=7
+28 29 30 # NR=7;NF=3
+```
+
+```bash
+CodingAnts@ubuntu:~/awk$ cat class1
+zhaoyun 85 87
+guanyu 87 88
+liubei 90 86
+
+CodingAnts@ubuntu:~/awk$ cat class2
+caocao 92 87 90
+guojia 99 96 92
+
+CodingAnts@ubuntu:~/awk$ awk '{print NR,$0}' class1 class2
+1 zhaoyun 85 87
+2 guanyu 87 88
+3 liubei 90 86
+4 caocao 92 87 90
+5 guojia 99 96 92
+
+CodingAnts@ubuntu:~/awk$ awk '{print FNR,$0}' class1 class2
+1 zhaoyun 85 87
+2 guanyu 87 88
+3 liubei 90 86
+1 caocao 92 87 90
+2 guojia 99 96 92
+```
+
+### BEGIN END for循环
+在Unix awk中两个特别的表达式，BEGIN和END，这两者都可用于pattern中（参考前面的awk语法），提供BEGIN和END的作用是给程序赋予初始状态和在程序结束之后执行一些扫尾的工作。
+* 通常使用BEGIN在循环文件之前设置变量；
+* 使用END来输出最终结果。
+
+```bash
+awk
+'BEGIN {print "统计销售金额";total=0} # 输出提示语"统计销售金额"，并设置total变量为0
+{print $3;total=total+$3;}  # 逐行扫描文件
+END {print "销售金额总计",total}' file.txt # 在扫描文件之后执行，打印total变量
+```
+
+```bash
+awk '{
+        for (i=1;i<=NF;i++){
+            if (NR==1){
+                res[i]=$i
+            }
+            else{
+                res[i]=res[i]" "$i
+            }
+        }
+    }END{
+        for(j=1;j<=NF;j++){
+            print res[j]
+        }
+    }' file.txt
 ```
 
 ## grep

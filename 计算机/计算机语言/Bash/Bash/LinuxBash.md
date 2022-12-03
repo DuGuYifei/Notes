@@ -42,6 +42,7 @@
     2. [BEGIN END for循环](#begin-end-for循环)
 31. [grep](#grep)
     1. [grep -P](#grep--p)
+32. [tail head](#tail-head)
 
 ## win下的linux进入win系统盘
 或者直接在问价夹导航栏里输入`bash`就像输入`cmd`打开command一样。
@@ -416,3 +417,9 @@ Perl的正则表达式的三种形式，分别是匹配，替换和转化:
 ```
 grep -P '^([0-9]{3}-|\([0-9]{3}\) )[0-9]{3}-[0-9]{4}$' file.txt
 ```
+
+## tail head
+* `-n +10`    表示从第 10 行开始显示
+* `-n 10`或`-10`     表示显示最后的 10 行
+* `-c NUM`    显示指定NUM个字节的内容
+* `-c +NUM`   从第NUM个字节开始显示整个文件内容

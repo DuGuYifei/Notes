@@ -32,3 +32,6 @@ list.forEach(System.out::println);
 
 ## List 和 ArrayList
 [List和ArrayList](List和ArrayList.md)
+
+## list.subList(from, to)
+报错：(fromIndex < 0 || toIndex > size || fromIndex > toIndex)

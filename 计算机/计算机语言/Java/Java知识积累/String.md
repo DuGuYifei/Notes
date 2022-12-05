@@ -60,7 +60,7 @@ Java字符串类strip()方法返回一个字符串，该字符串提供一个除
 ```java
 String[] splitAddr=address.split("@");
 
-// 多个分隔符 + 转义
+// 多个分隔符 + 转义（双斜杠转义后一位）
 String address="上海^上海市@闵行区#吴中路";
 String[] splitAddr=address.split("\\^|@|#");
 ```

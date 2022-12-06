@@ -1,5 +1,18 @@
 # DocumentDatabase
 
+1. [Document store](#document-store)
+2. [常见文档数据库](#常见文档数据库)
+3. [MongoDB](#mongodb)
+   1. [MongoDB features](#mongodb-features)
+   2. [Tools](#tools)
+   3. [JSON](#json)
+      1. [JSON format](#json-format)
+   4. [BSON format](#bson-format)
+   5. [Representing related document](#representing-related-document)
+      1. [Embedding](#embedding)
+      2. [Referencing](#referencing)
+
+
 ## Document store
 * semi-structured data
   * XML
@@ -19,7 +32,8 @@
 * Unstandardised CRUD operations
   * creation
   * retrieval
-  * updatesdeletion
+  * updates
+  * deletion
 * 尽管for XML Stores有很多标准化query（接上点）
   * XQuery (XML Query)
   * XQuery Update

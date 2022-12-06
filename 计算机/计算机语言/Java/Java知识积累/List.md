@@ -35,3 +35,11 @@ list.forEach(System.out::println);
 
 ## list.subList(from, to)
 报错：(fromIndex < 0 || toIndex > size || fromIndex > toIndex)
+
+## list.contains(x)
+`String str1 = new String("sd");`
+
+创建了两个内容相同的String对象：str1和str2，将str1存入了集合list中。
+
+**这两个对象不是同一个对象，所以“str1==str2”输出的结果是false。但是通过“list.contains(str2)”判断集合中是否包含str2时，返回的却是true。**
+

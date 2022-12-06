@@ -42,7 +42,7 @@ str.charAt(i)
 ```
 
 ## str.codePointAt(index)
-返回unicode值（就理解为ascii值的扩展版呗）
+返回unicode值
 
 ## str.toCharArray() for-each 循环
 ```java

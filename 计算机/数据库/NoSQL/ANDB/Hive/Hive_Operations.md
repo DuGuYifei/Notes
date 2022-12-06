@@ -7,6 +7,8 @@
    3. [表](#表)
       1. [显示所有表或数据库](#显示所有表或数据库)
       2. [Create internal table:](#create-internal-table)
+         1. [复杂类型](#复杂类型)
+         2. [跳过第一行](#跳过第一行)
       3. [加载数据](#加载数据)
       4. [create external table:](#create-external-table)
       5. [Display the description of newly created table:](#display-the-description-of-newly-created-table)
@@ -61,7 +63,11 @@ create table if not exists simpletable(Number int)
 stored as textfile;
 ```
 
+##### 复杂类型
 [Complex see below](#complex-data-type)
+
+##### 跳过第一行
+[dynamic partitioning](#dynamic-partitioning)
 
 **注意：Collection items 指的是elements in arrays or structures**
 

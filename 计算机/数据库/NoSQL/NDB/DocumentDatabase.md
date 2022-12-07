@@ -11,7 +11,7 @@
    5. [Representing related document](#representing-related-document)
       1. [Embedding](#embedding)
       2. [Referencing](#referencing)
-
+   6. [Mongo Operations](#mongo-operations)
 
 ## Document store
 * semi-structured data
@@ -206,3 +206,5 @@ For references, the **maximum document size is also a potential limitation** (es
 The Mongo database does not support foreign keys, so it may happen that the inserted values ​that point to another document will not actually point to anything, or that the document will be deleted despite the existence of a reference to it. When using references, it is the user's responsibility to maintain referential consistency.
 Mongo 数据库不支持外键，因此可能会发生指向另一个文档的插入值实际上不会指向任何内容，或者尽管存在对它的引用，但该文档将被删除。 使用引用时，用户有责任保持引用的一致性。
 
+### Mongo Operations
+[Mongo_Operations](appendix/Mongo_Operations.md)

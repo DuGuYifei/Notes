@@ -29,3 +29,4 @@
 27. [compareTo](compareTo.md)
 28. [properties文件](properties文件.md)
 29. [映射类名函数名并调用](映射类名函数名并调用.md)
+30. [PriorityQueue](PriorityQueue.md)

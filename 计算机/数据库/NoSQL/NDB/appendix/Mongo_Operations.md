@@ -99,7 +99,7 @@ For collection "albums" write queries:
 }
 ```
 3. Queris:
-   1. find the distance from Kałużów to Pacynków,
+  1. find the distance from Kałużów to Pacynków,
     ```bash
     test> db.cities.find({city:"Pacynków","reachable_from.city":"Kałużów"},{_id:0,city:1,"reachable_from.$":1})
     [
@@ -109,3 +109,7 @@ For collection "albums" write queries:
       }
     ]
     ```
+  2. add a connection from Pacynków to Pacynków with a distance of 40
+   ```bash
+   
+   ```

@@ -1,6 +1,6 @@
 # README
 
-Learning Tree
+Learning Tree Graph
 ![](2022-12-09-01-59-01.png)
 
 This is my notes blog. It includes:

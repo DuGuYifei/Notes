@@ -199,7 +199,7 @@ alert("This line is never reached (error in the line above)");
 如果我们忘记这样做，或返回任何假（falsy）值，则该操作将触发 TypeError。
 
 ## 使用 “ownKeys” 和 “getOwnPropertyDescriptor” 进行迭代
-Object.keys，for..in 循环和大多数其他遍历对象属性的方法都使用内部方法 [[OwnPropertyKeys]]（由 ownKeys 捕捉器拦截) 来获取属性列表。
+Object.keys，for..in 循环和大多数其他遍历对象属性的方法都使用内部方法 `[[OwnPropertyKeys]]`（由 ownKeys 捕捉器拦截) 来获取属性列表。
 
 这些方法在细节上有所不同：
 
@@ -697,7 +697,7 @@ let proxy = new Proxy(map, {});
 proxy.set('test', 1); // Error
 ```
 
-在内部，一个 Map 将所有数据存储在其 [[MapData]] 内部插槽中。代理对象没有这样的插槽。内建方法 Map.prototype.set 方法试图访问内部属性 this.[[MapData]]，但由于 this=proxy，在 proxy 中无法找到它，只能失败。
+在内部，一个 Map 将所有数据存储在其 `[[MapData]]` 内部插槽中。代理对象没有这样的插槽。内建方法 Map.prototype.set 方法试图访问内部属性 `this.[[MapData]]`，但由于 this=proxy，在 proxy 中无法找到它，只能失败。
 
 幸运的是，这有一种解决方法：
 
@@ -717,7 +717,7 @@ alert(proxy.get('test')); // 1（工作了！）
 
 现在它正常工作了，因为 get 捕捉器将函数属性（例如 map.set）绑定到了目标对象（map）本身。
 
-与前面的示例不同，proxy.set(...) 内部 this 的值并不是 proxy，而是原始的 map。因此，当set 捕捉器的内部实现尝试访问 this.[[MapData]] 内部插槽时，它会成功。
+与前面的示例不同，proxy.set(...) 内部 this 的值并不是 proxy，而是原始的 map。因此，当set 捕捉器的内部实现尝试访问 `this.[[MapData]]` 内部插槽时，它会成功。
 
 ### Array 没有内部插槽
 一个值得注意的例外：内建 Array 没有使用内部插槽。那是出于历史原因，因为它出现于很久以前。
@@ -727,7 +727,7 @@ alert(proxy.get('test')); // 1（工作了！）
 ### 私有字段
 类的私有字段也会发生类似的情况。
 
-例如，getName() 方法访问私有的 #name 属性，并在代理后中断：
+例如，getName() 方法访问私有的 `#name` 属性，并在代理后中断：
 
 ```js
 class User {
@@ -745,7 +745,7 @@ user = new Proxy(user, {});
 alert(user.getName()); // Error
 ```
 
-原因是私有字段是通过内部插槽实现的。JavaScript 在访问它们时不使用 [[Get]]/[[Set]]。
+原因是私有字段是通过内部插槽实现的。JavaScript 在访问它们时不使用 `[[Get]]/[[Set]]`。
 
 在调用 getName() 时，this 的值是代理后的 user，它没有带有私有字段的插槽。
 

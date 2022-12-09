@@ -99,6 +99,7 @@ For collection "albums" write queries:
 }
 ```
 3. Queris:
+**Task1:**
   1. find the distance from Kałużów to Pacynków,
     ```bash
     test> db.cities.find({city:"Pacynków","reachable_from.city":"Kałużów"},{_id:0,city:1,"reachable_from.$":1})
@@ -111,5 +112,40 @@ For collection "albums" write queries:
     ```
   2. add a connection from Pacynków to Pacynków with a distance of 40
    ```bash
-   
+   test> db.cities.updateOne({city:"Pacynków"},{$push:{"reachable_from":{city:"Pacynków", distance:40}}})
+   {
+     acknowledged: true,
+     insertedId: null,
+     matchedCount: 1,
+     modifiedCount: 1,
+     upsertedCount: 0
+   }
    ```
+  3. calculate a combined population of cities reachable from Pacynków.
+    ```bash
+    test> db.cities.aggregate([{$unwind:"$reachable_from"},{$group:{_id:"$reachable_from.city",sum_pop:{$sum:"$population"}}},{$match:{_id:"Pacynków"}}])
+    [ { _id: 'Pacynków', sum_pop: 106729 } ]
+    ```
+**Task2:**
+  1. find artists that had "Big Bad" as a guest,
+   ```bash
+   test> db.albums.find({"tracks.guest":"Big Bad"},{_id:0, artist:1})
+   [ { artist: 'Rock' }, { artist: 'Short' } ]
+   ```
+  2. add "Bonjo" as a guest artist in the track "100m",
+   ```bash
+   test> db.albums.updateMany({"tracks.title":"100m"},{$set:{"tracks.$[modify].guest":"Bonjo"}},{arrayFilters:[{"modify.title":"100m"}]})
+   {
+     acknowledged: true,
+     insertedId: null,
+     matchedCount: 1,
+     modifiedCount: 1,
+     upsertedCount: 0
+   }
+   ```
+  3. calculate the combined length of the tracks performed by "Bonjo" (both his as well as guest performances).
+   ```bash
+   test> db.albums.aggregate([{$unwind:"$tracks"},{$match:{$or:[{artist: 'Bonjo'},{"tracks.guest":"Bonjo"}]}},{$group:{_id:"total",sumLen:{$sum:"$tracks.length"}}}])
+   [ { _id: 'total', sumLen: 20.78 } ]
+   ```
+  

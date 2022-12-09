@@ -26,7 +26,7 @@
 24. [HashMap_HashTable_Dictionary](HashMap_HashTable_Dictionary.md)
 25. [HashSet](HashSet.md)
 26. [自定义元组](自定义元组.md)
-27. [compareTo](compareTo.md)
+27. [compareTo](Comparable泛型接口_compareTo.md)
 28. [properties文件](properties文件.md)
 29. [映射类名函数名并调用](映射类名函数名并调用.md)
 30. [PriorityQueue](PriorityQueue.md)

@@ -78,3 +78,6 @@ isEmpty()//判断队列是否为空，为空返回true,不空返回false
 	    }
 	
 ```
+
+## 修改类型自带比较器
+[Comparable泛型接口_compareTo](Comparable泛型接口_compareTo.md)

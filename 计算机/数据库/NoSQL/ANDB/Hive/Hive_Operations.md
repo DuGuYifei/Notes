@@ -1,7 +1,8 @@
 # Hive Operations
 
 1. [连接](#连接)
-2. [数据库](#数据库)
+2. [学校练习备注-便于理解](#学校练习备注-便于理解)
+3. [数据库](#数据库)
    1. [创建数据库](#创建数据库)
    2. [使用指定数据库](#使用指定数据库)
    3. [表](#表)
@@ -17,16 +18,17 @@
       8. [各种storing type](#各种storing-type)
          1. [TEXTFILE SEQUENCEFILE ORC PARQUET RCFILE](#textfile-sequencefile-orc-parquet-rcfile)
          2. [AVRO](#avro)
-3. [Complex data type](#complex-data-type)
+4. [Complex data type](#complex-data-type)
    1. [create table](#create-table)
    2. [select data](#select-data)
       1. [完整案例](#完整案例)
-4. [partitioning and bucketing](#partitioning-and-bucketing)
+5. [partitioning and bucketing](#partitioning-and-bucketing)
    1. [partitioning](#partitioning)
       1. [static partitioning](#static-partitioning)
       2. [dynamic partitioning](#dynamic-partitioning)
    2. [bucketing](#bucketing)
    3. [文件夹比较](#文件夹比较)
+6. [数据仓库案例](#数据仓库案例)
 
 
 ## 连接
@@ -36,7 +38,19 @@ $ beeline
 beeline> !connect jdbc:hive2://
 Connecting to jdbc:hive2://
 Enter username for jdbc:hive2://: atndb13
-Enter password for jdbc:hive2://: ******
+Enter password for jdbc:hive2://: ****** (AT-NDB)
+```
+
+## 学校练习备注-便于理解
+```
+username: atndb13
+password:AT-NDB
+
+client位置：/home/atndb13
+数据库名称:atndb13_liu_db
+数据仓库路径: /user/hive/warehouse/atndb13_liu_db.db
+数据仓库外部数据库路径: /user/Liu/database (自定义位置)
+CopyFromLocal位置: /user/Liu（自定义位置）
 ```
 
 ## 数据库
@@ -368,3 +382,7 @@ partitioned_test_managed_temp;
 partition 出现子文件夹，每个子文件夹一个文件。
 
 partition + bucket 出现子文件夹，每个文件夹下均分bucket文件。
+
+
+## 数据仓库案例
+[Hive_DataWarehouse_Example](Hive_DataWarehouse_Example.md)

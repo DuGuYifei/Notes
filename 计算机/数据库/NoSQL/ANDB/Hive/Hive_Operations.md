@@ -5,17 +5,19 @@
 3. [数据库](#数据库)
    1. [创建数据库](#创建数据库)
    2. [使用指定数据库](#使用指定数据库)
-   3. [表](#表)
-      1. [显示所有表或数据库](#显示所有表或数据库)
-      2. [Create internal table:](#create-internal-table)
+   3. [删除数据库](#删除数据库)
+   4. [表](#表)
+      1. [删除表](#删除表)
+      2. [显示所有表或数据库](#显示所有表或数据库)
+      3. [Create internal table:](#create-internal-table)
          1. [复杂类型](#复杂类型)
          2. [跳过第一行](#跳过第一行)
-      3. [加载数据](#加载数据)
-      4. [create external table:](#create-external-table)
-      5. [Display the description of newly created table:](#display-the-description-of-newly-created-table)
-      6. [drop](#drop)
-      7. [文件夹变化](#文件夹变化)
-      8. [各种storing type](#各种storing-type)
+      4. [加载数据](#加载数据)
+      5. [create external table:](#create-external-table)
+      6. [DESCRIBE - Display the description of newly created table:](#describe---display-the-description-of-newly-created-table)
+      7. [drop](#drop)
+      8. [文件夹变化](#文件夹变化)
+      9. [各种storing type](#各种storing-type)
          1. [TEXTFILE SEQUENCEFILE ORC PARQUET RCFILE](#textfile-sequencefile-orc-parquet-rcfile)
          2. [AVRO](#avro)
 4. [Complex data type](#complex-data-type)
@@ -29,6 +31,8 @@
    2. [bucketing](#bucketing)
    3. [文件夹比较](#文件夹比较)
 6. [数据仓库案例](#数据仓库案例)
+   1. [external + static](#external--static)
+   2. [select struct](#select-struct)
 
 
 ## 连接
@@ -52,6 +56,7 @@ client位置：/home/atndb13
 数据仓库外部数据库路径: /user/Liu/database (自定义位置)
 CopyFromLocal位置: /user/Liu（自定义位置）
 ```
+[copyFromLocal](../Hadoop/BasicOperations.md)
 
 ## 数据库
 其实就是一文件夹
@@ -59,12 +64,25 @@ CopyFromLocal位置: /user/Liu（自定义位置）
 ```bash
 create database atndb13_liu_db;
 ```
+
 ### 使用指定数据库
 ```
 0: jdbc:hive2://> use atndb13_liu_db;
 ```
 
+### 删除数据库
+```bash
+drop database xxx cascade;
+```
+
 ### 表
+
+#### 删除表
+```bash
+drop table xxx;
+```
+删除所有表见上面的删除数据库。
+
 #### 显示所有表或数据库
 ```bash
 # Check if there are any tables created:
@@ -82,8 +100,6 @@ stored as textfile;
 
 ##### 跳过第一行
 [dynamic partitioning](#dynamic-partitioning)
-
-**注意：Collection items 指的是elements in arrays or structures**
 
 #### 加载数据
 **也可以加载对应存储形式的二进制文件，比如sequencefile，avro等**
@@ -110,7 +126,7 @@ stored as textfile;
 create external table simpleexternaltable(Numberint)
 location ‘hdfs:///user/[login]/database’;
 ```
-#### Display the description of newly created table:
+#### DESCRIBE - Display the description of newly created table:
 ```bash
 describe simpletable;
 describe formatted simpletable;
@@ -205,6 +221,9 @@ TBLPROPERTIES ('avro.schema.literal'='{
 ```
 
 ## Complex data type
+
+**注意：Collection items 指的是elements in arrays or structures or uniontype**
+
 ### create table
 ```bash
 CREATE TABLE employee(name string, work_place ARRAY<string>,
@@ -306,7 +325,7 @@ chalkopiryt,Warszawa,forma@S.A.#wlasciciel@Jason Unlimited#obrot@ogromny
 ## partitioning and bucketing
 ### partitioning
 #### static partitioning
-```
+```bash
 CREATE TABLE partitioned_test_managed(
 empId INT,
 firstname STRING,
@@ -318,8 +337,17 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED as TEXTFILE;
+
+#加载数据
+LOAD DATA LOCAL INPATH ‘./employees_P.txt’ INTO TABLE
+partitioned_test_managed PARTITION (yearofexperience=3);
 ```
 #### dynamic partitioning
+```bash
+set hive.exec.dynamic.partition=true;
+set hive.exec.dynamic.partition.mode=nonstrict;
+```
+
 ```bash
 # 先创建没有partition的table
 CREATE TABLE partitioned_test_managed_temp(
@@ -358,6 +386,10 @@ partitioned_test_managed_temp;
 
 ### bucketing
 ```bash
+SET hive.enforce.bucketing = true;
+```
+
+```bash
 # 创建表格
 CREATE TABLE partitioned_test_managed_PC(
 empId INT,
@@ -385,4 +417,6 @@ partition + bucket 出现子文件夹，每个文件夹下均分bucket文件。
 
 
 ## 数据仓库案例
+### external + static
+### select struct
 [Hive_DataWarehouse_Example](Hive_DataWarehouse_Example.md)

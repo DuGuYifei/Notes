@@ -43,6 +43,8 @@
 31. [grep](#grep)
     1. [grep -P](#grep--p)
 32. [tail head](#tail-head)
+33. [sed](#sed)
+34. ['s///g'](#sg)
 
 ## win下的linux进入win系统盘
 或者直接在问价夹导航栏里输入`bash`就像输入`cmd`打开command一样。
@@ -400,6 +402,43 @@ awk '{
     }' file.txt
 ```
 
+```bash
+awk -F ',' '{
+    if($2<=365)
+        print $0
+}' signing_in.csv > signing_in_2015.txt
+
+awk -F ',' '{
+    if($2>365 && $2<=731)
+        print $0
+}' signing_in.csv > signing_in_2016.txt
+
+awk -F ',' '{
+    if($2>731 && $2<=1096)
+        print $0
+}' signing_in.csv > signing_in_2017.txt
+
+awk -F ',' '{
+    if($2>1096 && $2<=1461)
+        print $0
+}' signing_in.csv > signing_in_2018.txt
+
+awk -F ',' '{
+    if($2>1461 && $2<=1826)
+        print $0
+}' signing_in.csv > signing_in_2019.txt
+
+awk -F ',' '{
+    if($2>1826 && $2<=2192)
+        print $0
+}' signing_in.csv > signing_in_2020.txt
+
+awk -F ',' '{
+    if($2>2192 && $2<=2557)
+        print $0
+}' signing_in.csv > signing_in_2021.txt
+```
+
 ## grep
 
 ### grep -P
@@ -423,3 +462,20 @@ grep -P '^([0-9]{3}-|\([0-9]{3}\) )[0-9]{3}-[0-9]{4}$' file.txt
 * `-n 10`或`-10`     表示显示最后的 10 行
 * `-c NUM`    显示指定NUM个字节的内容
 * `-c +NUM`   从第NUM个字节开始显示整个文件内容
+
+## sed
+
+## 's///g'
+注意：
+1. 用`\(\)`将要作为变量的包裹起来
+2. `\0`表示整个匹配值
+3. `\1`等表示用括号括起来的匹配值
+4. 修改的字符串使用变量`\1`等时，若匹配时正则有两个`\(.*\)`，应注意，可能会被扔到第二行，如`cat employee.txt|sed 's/\(.*\),\([M,F]\)\(.*\)\([0-9]*\|[0-9]*\)/\1\3\2\4/g'`
+
+```bash
+# 将 "from 数字 to 数字" 改成 "数字|数字","more than 数字" 改成 "数字|1000"
+cat employee.csv|sed 's/from \([0-9]*\) to \([0-9]*\)/\1|\2/g'|sed 's/more than \([0-9]*\)/\1|1000/g'>employee.txt
+
+# 注意这里必须输出到一个新文件，不然会变成空
+cat employee.txt|sed 's/\(.*\),\([M,F]\)\(,.*-[0-9]\{4\},\)\([0-9]*|[0-9]*\)/\1\3\4\|\2/g'>employee1.txt
+```

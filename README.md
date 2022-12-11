@@ -18,17 +18,17 @@ This is my notes blog. It includes:
        5. Cloud server knowlege accumulation
     5. Agent System
     6. computer language
-        1. Hypertext
-           1. css
-           2. html
-           3. sass
-        2. Bash
+        1. CLT
            1. linux Bash
            2. git
            3. npm
            4. windows command
-        3. C++
-        4. CSharp
+        2. C++
+        3. CSharp
+        4. Hypertext
+           1. css
+           2. html
+           3. sass
         5. Java
         6. JavaScript and TypeScript
         7. Markdown

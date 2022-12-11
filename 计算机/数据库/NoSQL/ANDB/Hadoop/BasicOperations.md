@@ -29,6 +29,8 @@
    hdfs dfs -mkdir /user/Liu
    ```
 3. 上传hadoop客户机文件到hdfs文件夹
+   **注意**
+   `copyFromLocal`用`./`时会将所有文件包括隐藏文件上传，`./*`将只上传非隐藏文件。
    ```bash
    hdfs dfs -copyFromLocal smalltext.txt /user/Liu/
    ```
@@ -127,7 +129,7 @@
 
         }
         ```
-      2. 旧：
+      1. 旧：
         ```java
         package pl.edu.pg;
 

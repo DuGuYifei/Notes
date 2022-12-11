@@ -225,8 +225,10 @@ Now, let me remind the idea of **horizontal row-store**. **The set of rows is st
 - 行存储保证同一记录中的所有字段位于同一集群节点中，因为它们位于同一 HDFS 块中。
 
 #### Parquet
-##### Column-store
+![](2022-12-10-16-46-40.png)
+**支持将嵌套类型柱状存储**
 
+##### Column-store
 ![](2022-11-22-21-35-44.png)
 
 1. Disadvantages: 
@@ -397,6 +399,19 @@ map_values(map<k,v>) //...............................values.........
 ```
 
 ## Partitioning and bucketing 分区和分桶
+有partition为什么还要bucket：
+[Hive中Bucket的应用 - JueFan_C - 博客园](https://www.cnblogs.com/juefan/p/3414476.html)
+
+假设我们有一张日志表，我们需要按照日期和用户id来分区，目的是为了加快查询谁哪天干了什么，　　
+
+但是这里面用user_id去分区的话，就会产生很多很多的分区了，这些分区可大可小，这个数量是文件系统所不能承受的。
+
+在这种情况下，**我们既想加快查询速度，又避免出现如此多的小分区**，篮子（bucket）就出现了。
+
+首先按照日期分区，分区结束之后再按照user_id把日志放在96个篮子，这样同一个用户的所有日志都会在同一个篮子里面，并且一个篮子里面有好多用户的日志。
+
+
+
 ### Partitioning
 - Partitioning is a way of dividing a table into related parts based on the values of particular columns like date, city, and department.
 - Each table in the hive can have one or more partition keys to identify a particular partition.
@@ -489,6 +504,8 @@ Basically, the concept of Hive **Partitioning provides a way of segregating （�
 虽然小国家数据会创建小分区（世界上其余所有国家可能只占总数据的 20-30%）。 因此，那时分区将不理想。
 然后，为了解决过度分区的问题，Hive 提供了 Bucketing 概念。 这是将表数据集分解为更易于管理的部分的另一种有效技术。
 [https://data-flair.training/blogs/bucketing-in-hive/] 
+
+Buckets 对指定列计算 hash，根据 hash 值切分数据，目的是为了并行，每一个 Bucket 对应一个文件。如将 user 列分散至 32 个 bucket，首先对 user 列的值计算 hash，对应 hash 值为 0 的 HDFS 目录为：`/ warehouse /xiaojun/dt =20100801/ctry=US/part-00000`；hash 值为 20 的 HDFS 目录为：`/ warehouse /xiaojun/dt =20100801/ctry=US/part-00020` 
 
 #### Features
 1. This concept is based on hashing function on the bucketed column.

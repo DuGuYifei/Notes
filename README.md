@@ -16,6 +16,7 @@ This is my notes blog. It includes:
        3. AZURE
        4. Tencent
        5. Cloud server knowlege accumulation
+       6. Server knowlege accumulation
     5. Agent System
     6. computer language
         1. CLT
@@ -69,6 +70,9 @@ This is my notes blog. It includes:
     12. Algorithm
     13. small knowlege accumulation
     14. Game
+        1.  Unity
+        2.  Game Design
+        3.  VFX
     15. Blog
     16. CTF
     17. Docker

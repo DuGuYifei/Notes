@@ -35,3 +35,5 @@
 33. [自定义注册svg：vite-plugin-svg-icons](自定义注册svg：vite-plugin-svg-icons.md)
 34. [ElementPlus表单校验trigger](ElementPlus表单校验trigger.md)
 35. [ElementPlus表单校验prop属性](ElementPlus表单校验prop属性.md)
+36. [去除井号](去除井号.md)
+37. [Build问题](Build问题.md)

@@ -5,13 +5,16 @@
 
 ## 安装问题
 1. 打开linux子系统就行，不用开“windows虚拟机监视程序平台”
-2. 需要WSL2，见[【WSL】Windows下Linux子系统](../小知识积累/【WSL】Windows下Linux子系统.md)
+2. 需要WSL2/docker目录，
+   见[【WSL】Windows下Linux子系统](../小知识积累/【WSL】Windows下Linux子系统.md)
 
 ## 命令
-1. [查看容器](查看容器.md)
+1. [容器](容器.md)
 2. [-itd](-itd.md)
 3. [--privileged](--privileged.md)
 4. [docker网络_容器通信](docker网络_容器通信.md)
+5. [挂载硬盘](挂载硬盘.md)
+6. [-p](-p.md)
 
 ## 其他
 1. [控制台上下左右键](控制台上下左右键.md)
@@ -19,3 +22,5 @@
 3. [Redis_Cluster多个客户端](../数据库/NoSQL/NDB/appendix/Redis的简单应用_超卖.md)
 4. [挂载硬盘不能直接在命令中使用硬盘内文件](挂载硬盘不能直接在命令中使用硬盘内文件.md)
 5. [container和image](container和image.md)
+6. [创建反向代理](创建反向代理.md)
+7. [nginx](nginx.md)

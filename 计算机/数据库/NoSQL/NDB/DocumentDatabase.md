@@ -11,7 +11,17 @@
    5. [Representing related document](#representing-related-document)
       1. [Embedding](#embedding)
       2. [Referencing](#referencing)
-   6. [Mongo Operations](#mongo-operations)
+4. [Distribution in document databases](#distribution-in-document-databases)
+   1. [replication](#replication)
+      1. [read performance?](#read-performance)
+      2. [心跳验证可用性](#心跳验证可用性)
+         1. [主节点选举](#主节点选举)
+            1. [Delayed nodes](#delayed-nodes)
+      3. [Read concern \& Tags](#read-concern--tags)
+      4. [Write concern \& Tags](#write-concern--tags)
+   2. [Sharding](#sharding)
+      1. [shard key](#shard-key)
+   3. [Mongo Operations](#mongo-operations)
 
 ## Document store
 * semi-structured data
@@ -205,6 +215,192 @@ For references, the **maximum document size is also a potential limitation** (es
 
 The Mongo database does not support foreign keys, so it may happen that the inserted values ​that point to another document will not actually point to anything, or that the document will be deleted despite the existence of a reference to it. When using references, it is the user's responsibility to maintain referential consistency.
 Mongo 数据库不支持外键，因此可能会发生指向另一个文档的插入值实际上不会指向任何内容，或者尽管存在对它的引用，但该文档将被删除。 使用引用时，用户有责任保持引用的一致性。
+
+## Distribution in document databases
+Different solutions were used for relational databases depending on the problems:
+* Read / Write Performance - A more efficient server.
+* Failure Tolerance - Backup.
+* Data availability - more reliable server.
+* Capacity - larger drives.
+
+In NoSQL databases, the basic solution to most of the problems is to add **more servers**.
+
+### replication
+* Many servers store the same data
+* Advantages:
+  * resilience to Failure
+  * data availability
+  * read performance?
+
+在多台服务器上存储相同的数据意味着如果其中一台发生故障，数据库不必停止，数据几乎可以连续使用。
+**有可能**通过在不同的服务器之间spread它们来**提高读取的效率**。 然而，这种方法有一些**禁忌症**，稍后讨论
+
+![](2022-12-12-13-18-56.png)
+In a replica set there are multiple Mongo servers (mongod) that store the same data.
+One of them (primary) handles all write operations, which the server then **asynchronously replicates** to the secondary replicas. The replica set may contain an  arbiter. An arbiter is a server that does not store data, but votes for the primary  server.
+在副本集中有多个 Mongo 服务器（mongod）**存储相同的数据**。
+其中之一（主要）处理所有写操作，然后服务器将其**异步复制**到次要副本。 **副本集可能包含一个仲裁者**。 仲裁器是**不存储数据**但**用于主服务器投票（见下【选举】）**的**服务器**。
+
+#### read performance?
+* reading from primary by default
+* other read preference mode can be set:
+  * primary
+  * primaryPreferred
+  * secondary
+  * secondaryPreferred
+  * nearest
+* Contraindications
+  * secondary write the same amount of data as primary
+  * replication is asynchonic
+  * distribution of reads decreases performance after failure
+  * migration delay with sharding
+  * mirrored reads used for cache 'pre-warming'
+
+To refer to secondary nodes, set the following in the client: 
+`db.getMongo().setReadPref("secondaryPreferred", [{"dc":"1"}])` or separately for each read operation (`db.collection.find().readPref("secondaryPreferred")`) (options  "primaryPreferred" and "secondary" will also enable reading from secondary) 
+
+The **read preference** values ​mean:
+* Primary - read from primary only
+* primaryPreferred - read from primary, if available
+* Secondary - read from secondary only
+* secondaryPreferred - read from secondary, if available
+* Nearest - reading from the replica with the **lowest latency**
+
+通过使用来自**secondary nods**的读取，您可以提高性能，但要考虑以下因素:
+* Secondary nodes do the same number of writes as a primary - with a small number of  reads, reading from a secondary node will not be faster 
+* Replication is asynchronous - data on secondary may be out of date 
+* Read scattering decreases performance during failures - a reduced number of servers is  serving the same number of reads 
+* Migration delays when sharding - due to delays in applying data migrations on secondary  replicas, it may happen that the same data is read 2 times or certain data is omitted
+
+• 辅助节点与主节点执行相同数量的写入 - 但读取次数较少，从辅助节点读取不会更快 
+• 复制是异步的 - 辅助节点上的数据可能已过时 
+• Read scattering（分散）会降低故障期间的性能 - 减少数量的服务器提供相同数量的读取 
+• 分片时的迁移延迟 - 由于在辅助副本上应用数据迁移的延迟，可能会发生相同数据被读取 2 次或某些数据被省略的情况
+
+#### 心跳验证可用性
+![](2022-12-12-13-33-28.png)
+Servers in a replica set control the database status through messages called  **heartbeat**. Heartbeat is sent every 2 seconds, **if there is no response from any of the  servers for 10 seconds, this server is treated as unavailable.**
+副本集中的服务器通过称为心跳的消息控制数据库状态。 **心跳每 2 秒发送一次，如果 10 秒内没有任何服务器响应，则该服务器被视为不可用。**
+
+##### 主节点选举
+![](2022-12-12-13-36-07.png)
+如果检测到主节点不可用，则选择一个新节点（从可以成为主节点的副本中（稍后详细介绍））
+
+* priority
+  * floating point number in 0-1000 range
+  * the higher the value the greater the chance to become primary (1 by default)
+  * **nodes with poriority 0 cannot become primary; cannot call for all election**
+* if an eligible (有资格的) secondary receives no communication from primary it calls for an election
+* if primary cannot communicate with majority of secondaries it steps down (下台) (network partitioning)
+* other election conditions
+
+自动选择主节点，具有最高优先级的节点成为主节点（最终）。
+
+在以下情况下宣布选举： 
+1. 将新节点添加到副本集， 
+2. 副本集初始化， 
+3. 使用 `rs.stepDown()` 或 `rs.reconfig()` 等方法执行管理活动， 
+4. 在固定时间段内（默认为 10 秒）从辅助节点丢失与主节点的连接，
+5. 或者如果副本集中有一个节点的优先级高于当前主节点。
+6. 如果主节点无法与大多数辅助节点通信，它会下台（下台）（网络分区）
+7. 如果符合条件的次级没有收到来自初级的通信，则它要求进行选举
+
+* 副本集最多可以容纳50个节点，但是只有7个可以投票
+  * 投票节点数量应该是奇数 
+  * 如果节点不够多，可以添加arbiter（一个不存储数据但投票的节点 
+  * 部分节点可能配置为不投票（需要优先级为0）
+* 一些节点可以配置为隐藏 (hidden)（需要0的优先级）
+* 一些节点可以配置为延迟 (delay)（需要0的优先级）
+
+###### Delayed nodes
+1. Delayed replica set nodes:
+  延迟节点包含copy of the replica set data。 但是，延迟节点数据集反映了集合的早期（延迟）状态。 例如，如果当前时间是 09:52，一个节点延迟一个小时，则该节点上的数据将不会反映任何比 08:52 更新的操作
+
+  Since delayed nodes are **a rolling backup** (滚动备份) (a working **'historical' snapshot** of a dataset),  they can help you fix all sorts of human errors. For example, a delayed node may allow data recovery after unsuccessful application updates or from operator errors,  including deleted databases and/or collections.例如，延迟节点可能允许在应用程序更新失败或操作员错误（包括删除的数据库和/或集合）之后恢复数据。
+
+2. Delayed nodes:
+   * Must have priority 0.
+   * They should be configured as hidden.
+   * Should be configured as non-voting: Delayed nodes may vote in elections if  members[n].votes is set to 1. This will also have the effect that data write  acknowledgments from the delayed node will be taken into account for an write  concern „majority”, and such confirmations will be sent with a delay equal to the  node delay.
+   * 优先级必须为 0。
+   * 它们应该配置为**隐藏**。
+   * 应配置为**非投票**：如果 `members[n].votes` 设置为 1，则延迟节点可能会在选举中投票。这也会产生延迟节点的数据写入确认将被考虑用于写入问题的效果 “多数”，并且此类确认将以等于节点延迟的延迟发送。
+
+#### Read concern & Tags
+* local
+* majority
+* available, linearization, snapshot
+* Tags
+  * Tags can be assigned to replica nodes
+  * a set of tags given for a read **defines which node should be asked for data** (**not compatible with primary Read Preference Mode**)
+
+
+* majority - 返回保存到**副本集中大多数节点的最新数**据（**不会回滚**） 
+* local - 返回**本地节点的最新数据**，即使它还没有写入到大多数副本（并且**可能 因此被回滚**）
+* available - 与本地相同，但在**分片时速度更快**，并且可以返回**孤立文档** (孤立文档 - 在分片集群中，孤立文档是指由于异常关闭导致迁移失败或迁移清理不完整而导致分片上的那些文档也存在于其他分片上的块中。)
+*  linearizable - 查询返回反映所有**成功写入的，被大多数节点确认的，在读取操作开始之前已完成的**数据。 在返回结果之前，查询可以等待**并发写入**以传播到大多数副本集节点
+
+snapshot - Available only in **transactions**:
+* 如果事务**不是因果一致**会话的一部分，当提交具有**关注"majority"的write**的事务的时，**可以保证事务读取的数据属于副本集中大多数节点提交的数据快照**。
+* 如果事务**是因果一致**会话的一部分，当提交具有**关注“majority”**的write的事务的时，**可以保证事务读取的数据属于副本集中大多数节点提交的数据快照 which 快照确保与事务开始前的操作的因果一致性**。
+
+#### Write concern & Tags
+* number (default of 1 in same situation)
+* majority (usually default since Mongo 5.0)
+* tags:
+  * tags can be assigned to replica nodes
+  * a set of tags given for a write **defines which node should receive the write**
+* j option
+* wtimeout
+
+Write concern dictates how many nodes must confirm execution of the requested data  modification operation before mongo informs the client about the successful completion of  the operation.
+Write concern 指示在 mongo 通知客户端操作成功完成之前，有多少节点必须确认执行请求的数据修改操作。
+
+* number - 在确认"majority"成功之前在给定数量的节点上写入的数据  - 需要确认写入操作已在**大多数投票数据节点**上成功执行（即 `members[n].votes` 大于 0 的主要和次要节点）  .
+
+  在 Mongo 5.0 之前，默认的写入关注点是 w:1。 从 MongoDB 5.0 开始，默认写关 注 `w:majority`。 使用仲裁者时，默认值可以更改为 w:1：所需多数计算为 `1(仲 裁者) + 投票节点的一半`向下舍入和非仲裁者比较。
+  如果可以持有数据的投票节点数不大于这个数，则默认的write concern设置为w:1
+
+  For example, with the following numbers of nodes:
+
+  non-arbiters | arbiters | voting nodes | req.majority | default Write   Concern
+  ---------|----------|---------|-|- 
+  2 |1 |3 |2 |{w: 1}
+  4 |1 |5 |3 |{w: "majority"}
+
+  悟：所以导致了在节点多的时候被设置为majority，少的时候有仲裁者可以变为1。
+
+* j Option - true：数据存储在磁盘操作日志（on-disk journal），false：数据存储在内存中
+* wtimeout - 限制等待响应（以毫秒为单位）。如果 Mongo 无法在这段时间过去之前确认写入操作是否成功，则会报告失败。但是，**向客户端返回失败信息并不会停止写入数据的尝试**，数据最终可能会写入副本集的所有节点。
+
+### Sharding
+* Automatic division of data between different servers
+* Advantages
+  * read performance
+  * write performance
+  * storage space
+  * data availability?
+
+由于分片将数据拆分为由不同服务器存储的块，因此它允许您在这些服务器之间分散读取和写入操作。
+添加新服务器的能力还意味着可以轻松添加新驱动器(drivers)，让您轻松解决容量问题。
+由于数据分散在多个分片中，如果其中一个分片发生故障，**只会丢失对它存储的那部分数据的访问。**
+
+
+![](2022-12-12-14-22-28.png)
+分片集群由以下组件组成： 
+• Shard分片：每个分片包含数据的一个子集。 每个分片都设置为副本集(replica set)。
+• mongos：mongos 充当查询路由器(query router)和客户端应用程序与分片集群(sharded cluster)之间的中介(intermediary)。 从 Mongo 4.4 开始，mongos 支持“**对冲读取(hedged reads)**”，可用于**提高响应速度**（**从副本replica读取数据时，查询被发送到两个副本并返回更快的响应**） 
+• 配置服务器：一个副本集，用于**存储元数据和集群配置。**
+
+#### shard key
+* Distribution of data between shards based on a shar key
+  * single document field
+  * a collection of document fields (in a specified order)
+* Shard key defined on collection level
+* Limtations:
+  * 强制使compound keys 复合键unique
+  * 
+
 
 ### Mongo Operations
 [Mongo_Operations](appendix/Mongo_Operations.md)

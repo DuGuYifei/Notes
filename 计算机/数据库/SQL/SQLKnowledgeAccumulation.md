@@ -10,14 +10,25 @@
 8. [CASE WHEN](#case-when)
 9. [SIGN](#sign)
 10. [WHILE](#while)
-11. [变量_@_Declare_SET](#变量__declare_set)
+11. [变量\_@\_Declare\_SET](#变量__declare_set)
 12. [Datetime](#datetime)
-	1. [datediff](#datediff)
-	2. [datepart](#datepart)
-	3. [format](#format)
+	 1. [datediff](#datediff)
+	 2. [datepart](#datepart)
+	 3. [format](#format)
 13. [sum(a+b) 和 sum(a) + sum(b)](#sumab-和-suma--sumb)
 14. [DELETE](#delete)
-	1. [删除所有](#删除所有)
+	 1. [删除所有](#删除所有)
+15. [Union](#union)
+	 1. [Union ALL 和 Union](#union-all-和-union)
+16. [Join](#join)
+	 1. [Natural join](#natural-join)
+	 2. [Full outer join](#full-outer-join)
+	 3. [left join](#left-join)
+17. [with](#with)
+18. [aggregation](#aggregation)
+	 1. [count](#count)
+		 1. [group by 问题](#group-by-问题)
+
 
 ## definition
 
@@ -48,8 +59,12 @@ LIKE "J$?%%" ESCAPE "?"
 ```
 
 ## 顺序排列
-`ASC` 升序，ascending\
+`ASC` 升序，ascending
+
 `DESC` 降序，descending
+```sql
+order by 表字段 desc
+```
 
 ## DECIMAL(a,b)
 其中`a`是指一共多少位，包括小数点后的`b`位, 后面的必须大于等于前面的数字
@@ -165,3 +180,57 @@ DELETE * FROM TABLE_NAME
 ```
 第二个不一定在所有数据库可用
 
+## Union
+### Union ALL 和 Union
+union all 不管重复行
+
+union 要去重，但是是先合并再去重，效率低，好的操作是先去重再union all
+
+## Join
+
+### Natural join
+每一位相等
+
+### Full outer join
+两边都保留，补null
+
+### left join
+左边保留行，右边Null表
+
+## with
+```sql
+With 
+	Subtable1 as (select 1...), //as和select中的括号都不能省略
+	Subtable2 as (select 2...), //后面的没有with，逗号分割，同一个主查询同级别地方，with子查询只能定义一次
+	…
+	Subtablen as (select n...) //与下面的实际查询之间没有逗号
+Select ….
+
+--hive 注意 from t
+with 
+    t as (
+        select date_id
+        from date_par
+        where month_no > 6
+    )
+select year, count(year) as account_num
+from signing_in_ext, t
+where 
+    year = 2021 and
+    signing_in_ext.sign_in_date_id = t.date_id
+group by year
+UNION ALL
+select year, count(year) as user_cnt
+from signing_in_ext, t
+where 
+    year = 2020 and 
+    signing_in_ext.sign_in_date_id = t.date_id
+GROUP BY year;
+```
+
+
+## aggregation
+
+### count
+#### group by 问题
+当count有其他列时，需要group by

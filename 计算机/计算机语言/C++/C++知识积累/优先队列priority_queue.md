@@ -7,7 +7,7 @@
 
 
 ## 基本语法，默认，less，greater
-[priority_queue](优先队列priority_queue.md)
+[priority_queue](优先队列greater和less.md)
 
 `priority_queue<Type, Container, Functional>`\
 默认大根堆，即`Functional`是`less`

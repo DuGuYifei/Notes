@@ -22,3 +22,6 @@
 20. [箭头函数return与大括号省略问题](箭头函数return与大括号省略问题.md)
 21. [export default](export-default.md)
 22. [Proxy和Reflect](Proxy和Reflect.md)
+23. [string遍历](string遍历.md)
+24. [如果用char代替数组或字典的key](如果用char代替数组或字典的key.md)
+25. [判断是否是数字](判断是否是数字.md)

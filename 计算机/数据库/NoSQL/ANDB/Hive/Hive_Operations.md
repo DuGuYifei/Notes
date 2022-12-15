@@ -8,26 +8,28 @@
    3. [删除数据库](#删除数据库)
    4. [表](#表)
       1. [删除表](#删除表)
-      2. [显示所有表或数据库](#显示所有表或数据库)
-      3. [Create internal table:](#create-internal-table)
+      2. [修改](#修改)
+      3. [显示所有表或数据库](#显示所有表或数据库)
+      4. [Create internal table:](#create-internal-table)
          1. [复杂类型](#复杂类型)
          2. [跳过第一行](#跳过第一行)
-      4. [加载数据](#加载数据)
-      5. [create external table:](#create-external-table)
-      6. [DESCRIBE - Display the description of newly created table:](#describe---display-the-description-of-newly-created-table)
-      7. [drop](#drop)
-      8. [文件夹变化](#文件夹变化)
-      9. [各种storing type](#各种storing-type)
-         1. [TEXTFILE SEQUENCEFILE ORC PARQUET RCFILE](#textfile-sequencefile-orc-parquet-rcfile)
-         2. [AVRO](#avro)
+      5. [加载数据](#加载数据)
+      6. [create external table:](#create-external-table)
+      7. [DESCRIBE - Display the description of newly created table:](#describe---display-the-description-of-newly-created-table)
+      8. [drop](#drop)
+      9. [文件夹变化](#文件夹变化)
+      10. [各种storing type](#各种storing-type)
+          1. [TEXTFILE SEQUENCEFILE ORC PARQUET RCFILE](#textfile-sequencefile-orc-parquet-rcfile)
+          2. [AVRO](#avro)
 4. [Complex data type](#complex-data-type)
    1. [create table](#create-table)
    2. [select data](#select-data)
       1. [完整案例](#完整案例)
 5. [partitioning and bucketing](#partitioning-and-bucketing)
    1. [partitioning](#partitioning)
-      1. [static partitioning](#static-partitioning)
-      2. [dynamic partitioning](#dynamic-partitioning)
+      1. [show](#show)
+      2. [static partitioning](#static-partitioning)
+      3. [dynamic partitioning](#dynamic-partitioning)
    2. [bucketing](#bucketing)
    3. [文件夹比较](#文件夹比较)
 6. [数据仓库案例](#数据仓库案例)
@@ -82,6 +84,18 @@ drop database xxx cascade;
 drop table xxx;
 ```
 删除所有表见上面的删除数据库。
+
+#### 修改
+```sql
+ALTER TABLE employee RENAME TO emp;
+
+ALTER TABLE table_name CHANGE
+[CLOUMN] col_old_name col_new_name column_type
+[CONMMENT col_conmment]
+[FIRST|AFTER column_name];
+--比如
+alter table junk_chat_ext change is_customer_service_called is_call_service_needed boolean;
+```
 
 #### 显示所有表或数据库
 ```bash
@@ -222,7 +236,9 @@ TBLPROPERTIES ('avro.schema.literal'='{
 
 ## Complex data type
 
-**注意：Collection items 指的是elements in arrays or structures or uniontype**
+**注意：**
+1. Collection items 指的是elements in arrays or structures or uniontype
+2. uniontype 目前不怎么支持，在各种语句中基本无法使用，也不能提取值也不能比较
 
 ### create table
 ```bash
@@ -324,6 +340,8 @@ chalkopiryt,Warszawa,forma@S.A.#wlasciciel@Jason Unlimited#obrot@ogromny
 
 ## partitioning and bucketing
 ### partitioning
+#### show
+`show partitions tableName;`
 #### static partitioning
 ```bash
 CREATE TABLE partitioned_test_managed(

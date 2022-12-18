@@ -20,7 +20,13 @@
       3. [Read concern \& Tags](#read-concern--tags)
       4. [Write concern \& Tags](#write-concern--tags)
    2. [Sharding](#sharding)
-      1. [shard key](#shard-key)
+      1. [primary shard (per database)](#primary-shard-per-database)
+      2. [shard key](#shard-key)
+      3. [after shard key configuration for a collection](#after-shard-key-configuration-for-a-collection)
+      4. [choosing a shard key:](#choosing-a-shard-key)
+         1. [two sharding strategies](#two-sharding-strategies)
+      5. [Zones](#zones)
+      6. [Read](#read)
    3. [Mongo Operations](#mongo-operations)
 
 ## Document store
@@ -392,15 +398,87 @@ Write concern 指示在 mongo 通知客户端操作成功完成之前，有多�
 • mongos：mongos 充当查询路由器(query router)和客户端应用程序与分片集群(sharded cluster)之间的中介(intermediary)。 从 Mongo 4.4 开始，mongos 支持“**对冲读取(hedged reads)**”，可用于**提高响应速度**（**从副本replica读取数据时，查询被发送到两个副本并返回更快的响应**） 
 • 配置服务器：一个副本集，用于**存储元数据和集群配置。**
 
+#### primary shard (per database)
+![](2022-12-18-20-07-52.png)
+
+分片集群中的每个数据库都有其主分片，其上存储非分片集合。
+
 #### shard key
 * Distribution of data between shards based on a shar key
   * single document field
   * a collection of document fields (in a specified order)
 * Shard key defined on collection level
 * Limtations:
-  * 强制使compound keys 复合键unique
-  * 
+  * 可以强制使compound keys 复合键unique
+  * create unique indexes on fields not in the key is not possible 在不在键中的字段上创建唯一索引是不可能的
+  * up to v4.2 shard key fields could not be updated
+  * starting in mongo4.4, you can refine a collection's shard key by adding a suffix field or firlds to the existing key
+  * srating in mongo5.0 collections can be resharded (by changing the shard key)
 
+Mongo 中的分片基于在集合级别指定的分片键将文档分散到不同的分片上。
+对集合进行分片有一些限制： 
+• 强制文档字段的唯一值仅适用于以分片键开头的复合键。 无法在其他字段上设置唯一索引 
+• 在 4.2 版本之前，无法更新分片键字段的值。
+• 从 4.4 版开始，可以使用其他字段扩展分片键（在末尾添加） 
+• 从 5.0 版开始，可以在称为重新分片的过程中更改分片键 
+• 在 4.4 版之前，必须设置所有分片键字段 到一个值。 从 4.4 版开始不再需要它——在没有设置字段的情况下，文档被视为（为了将文档分发到分片或路由查询的目的），就好像该字段被设置为 null 一样。
+
+#### after shard key configuration for a collection
+- data in the collection is divided into chunks with a specified maximum size (64MB by default)
+- each chunk has a specified key range it holds
+- balancer spreads the chunk uniformly between clusters shards
+- chunks that exceed maximum size are split
+- information about key ranges and chunk locations is stored in a **configuaration server**
+
+为了在分片上分布数据，数据被分成在服务器之间迁移的块。 每个块都有一个特定范围的键，它包含范围内的较低值始终包含在内，而较高值则不包含在内。 默认最大块大小为 64MB，超过该大小的块将被拆分。 Mongo 数据库中有一个平衡器，其目的是在分片之间传输块，使块在各个分片之间均匀分布。
+有关每个块的密钥位置和范围的信息存储在配置服务器上。
+**应该注意的是，要对现有集合进行分片，该集合不应大于最大块大小（例如 64MB）**
+
+#### choosing a shard key:
+* large shard key cardinality 基数
+* low shard key frequence
+* non-monotonically changeing shard keys 非单调变化的分片键
+
+![](2022-12-18-20-49-58.png)
+
+选择分片键时，请记住以下几点： 
+• 键值数量少时，数据可拆分成的块数有限，这会降低分布收益。
+• 如果许多文档具有相同的键（或键的子集），则情况变得类似于具有少量值的键。 rare-key 数据会很好地分布，但是 frequent-key 数据会被分成几个不能拆分的块。
+• 如果根据键序列对数据执行某些操作（搜索、插入），则当前处理的块成为瓶颈-例如 如果键在插入新文档时自动递增
+
+##### two sharding strategies
+1. Hashed Sharding
+   * Data distribution based on the hashed shard key values
+   * solves the problem of monotonicity
+   * range queries are not grouped
+  散列分片是一种方法，其中散列函数的值是根据键的值计算的，并且仅根据该值将文档分配给块。
+  这会导致处理具有相似键值的文档的分散，但会阻止对具有给定键值范围的文档的查询被定向到选定的分片子集。
+2. Ranged sharding
+   1. Data distribution based on the key value
+   2. monotonicity and frequency a problem
+   3. range queries can be grouped
+  第二种方法是直接根据关键字段的值将文档分配给块。 在这种情况下，具有相似键的文档的处理将集中在单个分片上，但范围查询可以分组。
+  分组范围读取允许您将对选定范围的分片键值的查询定向到仅包含该范围的那些分片，从而提高性能（其他分片不需要搜索它们的基础）。
+
+#### Zones
+![](2022-12-18-20-53-49.png)
+
+- it is possible to create zones defined by shard key ranges and assign them to shards
+- balancer will move chunks only to shards in the appropriate zone
+
+可以为分片分配多个标签，每个标签具有特定范围的有效键值。
+添加文档时，将其键与标签中包含的范围进行比较，然后转到标有正确范围的分片之一。 如果分片键未被任何标签覆盖，则文档可以放置在任何分片上（一个没有分配标签或一个分配有标签）。
+
+#### Read
+1. without reference to shard key
+   ![](2022-12-18-21-09-43.png)
+   A read request that does not query a shard key is forwarded by the router to all  shards. The router combines the received responses and returns them to the client.
+2. with reference to shard key or shard key prefix
+   ![](2022-12-18-21-10-02.png)
+   With a shard key given, the router selects an appropriate shard based on the  configuration, sends a query to it, and the received response is forwarded to the  client.
+  Possible intermediate version: 
+  Shard key {a: 1, b: 1, c: 1} 
+  {a: 1} {a: 1, b: 1} queries can go to 1 or several (i.e. not all) shards - depends on the distribution of data
 
 ### Mongo Operations
 [Mongo_Operations](appendix/Mongo_Operations.md)

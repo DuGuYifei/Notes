@@ -1,6 +1,11 @@
 # Mongo_Operations
 
-## Task Example
+## basic query + aggregation
+[Basic](MongoDB_lab1.pdf)
+[Aggregation](MongoDB_lab2.pdf)
+
+
+### Task Example
 1. Tasks
 ```
 For collection "cities" write queries (note that connections between cities are unidirectional):
@@ -149,3 +154,31 @@ For collection "albums" write queries:
    [ { _id: 'total', sumLen: 20.78 } ]
    ```
   
+## Distribution
+[distribution](MongoDB_Dist_lab1.pdf)
+
+```cmd
+start cmd /K mongod --port 27017 --dbpath .\data_dbs\db1 --replSet replicaSet
+timeout /T 5
+start cmd /K mongod --port 27018 --dbpath .\data_dbs\db2 --replSet replicaSet
+timeout /T 5
+start cmd /K mongod --port 27019 --dbpath .\data_dbs\db3 --replSet replicaSet
+timeout /T 5
+start cmd /K mongod --port 27020 --dbpath .\data_dbs\db4 --replSet replicaSet
+timeout /T 5
+start cmd /K mongod --port 27021 --dbpath .\data_dbs\db5 --replSet replicaSet
+timeout /T 5
+start cmd /K mongosh --host "127.0.0.1:27017"
+```
+
+### non-vote一次只能设置一个节点为non-vote
+否则会报错
+
+```bash
+cfg=rs.conf()
+cfg.members[3].votes=0 
+rs.reconfig(cfg) 
+cfg.members[4].votes=0 
+rs.reconfig(cfg)
+```
+

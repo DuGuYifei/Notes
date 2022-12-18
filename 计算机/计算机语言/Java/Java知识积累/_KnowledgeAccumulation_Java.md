@@ -33,3 +33,4 @@
 31. [sort](sort.md)
 32. [lambda表达式](lambda表达式.md)
 33. [泛型](泛型.md)
+34. [Deque](Deque.md)

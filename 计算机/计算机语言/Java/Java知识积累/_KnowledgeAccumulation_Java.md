@@ -34,3 +34,5 @@
 32. [lambda表达式](lambda表达式.md)
 33. [泛型](泛型.md)
 34. [Deque](Deque.md)
+35. [flatMap和map](flatMap和map.md)
+36. [Stream](Stream.md)

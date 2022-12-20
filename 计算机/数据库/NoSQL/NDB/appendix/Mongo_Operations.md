@@ -182,3 +182,10 @@ cfg.members[4].votes=0
 rs.reconfig(cfg)
 ```
 
+## Sharding
+```bash
+sh.startBalancer()
+# 上一条不一定有效，下一条强制移动
+sh.moveChunk("ourBase.col1", {a:'eee', b:'ffff'}, 'shard1Set')
+```
+

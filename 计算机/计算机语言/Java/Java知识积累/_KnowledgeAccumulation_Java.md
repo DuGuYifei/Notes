@@ -36,3 +36,4 @@
 34. [Deque](Deque.md)
 35. [flatMap和map](flatMap和map.md)
 36. [Stream](Stream.md)
+37. [二进制中1的个数](二进制中1的个数.md)

@@ -37,3 +37,5 @@
 35. [flatMap和map](flatMap和map.md)
 36. [Stream](Stream.md)
 37. [二进制中1的个数](二进制中1的个数.md)
+38. [StringBuffer和StringBuilder](StringBuffer和StringBuilder.md)
+39. [线程锁](线程锁.md)

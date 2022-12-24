@@ -1,5 +1,16 @@
 # String
 
+1. [对象？数据类型？](#对象数据类型)
+   1. [new 和 不new 的区别](#new-和-不new-的区别)
+2. [比较](#比较)
+3. [str.charAt(index)](#strcharatindex)
+4. [str.codePointAt(index)](#strcodepointatindex)
+5. [str.toCharArray() for-each 循环](#strtochararray-for-each-循环)
+6. [str.strip()](#strstrip)
+7. [str.split(char)](#strsplitchar)
+8. [str.substring(int begin)](#strsubstringint-begin)
+
+
 ## 对象？数据类型？
 首先String不属于8种基本数据类型，**String是一个对象**。 因为对象的默认值是null，所以String的默认值也是null；**但它又是一种特殊的对**象，有其它对象没有的一些特性。
 
@@ -66,3 +77,6 @@ String[] splitAddr=address.split("\\^|@|#");
 ```
 
 默认忽略空值，保存空值:`split(";"，-1)`
+
+## str.substring(int begin)
+`word1.substring(id1)`

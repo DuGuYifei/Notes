@@ -23,7 +23,12 @@
 13. [svg](#svg)
     1. [symbol 和 use](#symbol-和-use)
     2. [xlink:href](#xlinkhref)
-14. [颜色属性](#颜色属性)
+    3. [颜色属性](#颜色属性)
+14. [input](#input-1)
+    1. [name属性](#name属性)
+    2. [radio 单选](#radio-单选)
+    3. [checkbox 多选](#checkbox-多选)
+       1. [checked属性](#checked属性)
 
 ## html5标记
 <!DOCTYPE html>
@@ -183,5 +188,38 @@ css种获取案例：[attr()获取属性值配合data-](css知识积累/attr()�
 ### xlink:href
 动态赋值svg图片
 
-## 颜色属性
+### 颜色属性
 fill
+
+## input
+
+### name属性
+比如单选多选时，相同name就会是同一个问题下的。
+例：
+```html
+	<label for="fd1">carnivore</label>
+	<input id="fd1" name="fd" type="radio" value="carnivore" v-model="foodType"/>
+	<br/>
+	<label for="fd2">herbivore</label>
+	<input id="fd2" name="fd" type="radio" value="herbivore" v-model="foodType"/>
+	<br/>
+	<label for="fd3">omnivore</label>
+	<input id="fd3" name="fd" type="radio" value="omnivore" v-model="foodType"/>
+```
+
+### radio 单选
+```html
+	<label for="fd1">carnivore</label>
+	<input id="fd1" name="fd" type="radio" value="carnivore" v-model="foodType"/>
+	<br/>
+	<label for="fd2">herbivore</label>
+	<input id="fd2" name="fd" type="radio" value="herbivore" v-model="foodType"/>
+	<br/>
+	<label for="fd3">omnivore</label>
+	<input id="fd3" name="fd" type="radio" value="omnivore" v-model="foodType"/>
+```
+
+### checkbox 多选
+
+#### checked属性
+`checkboxObject.checked = true|false`

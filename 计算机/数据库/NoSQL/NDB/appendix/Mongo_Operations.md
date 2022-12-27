@@ -1,5 +1,14 @@
 # Mongo_Operations
 
+1. [basic query + aggregation](#basic-query--aggregation)
+   1. [Task Example](#task-example)
+2. [Distribution](#distribution)
+   1. [non-vote一次只能设置一个节点为non-vote](#non-vote一次只能设置一个节点为non-vote)
+3. [Sharding](#sharding)
+   1. [Task Example](#task-example-1)
+   2. [moveChunk](#movechunk)
+
+
 ## basic query + aggregation
 [Basic](MongoDB_lab1.pdf)
 [Aggregation](MongoDB_lab2.pdf)
@@ -183,6 +192,34 @@ rs.reconfig(cfg)
 ```
 
 ## Sharding
+[sharding](MongoDB_Dist_lab2.pdf)
+
+### Task Example
+创建一个有 3 个分片的分片集群，使主分片有一个副本和一个仲裁者。
+创建 3 个集合，保留一个未分片，在非默认分片之间分配一个，第三个使用散列分片进行分配。
+
+**下面启动命令中17是configure server，16是router**
+```cmd
+start cmd /K mongod --configsvr --port 27017 --dbpath .\data_dbs\config --replSet replicaSet
+timeout /T 5
+start cmd /K mongod --shardsvr --port 27018 --dbpath .\data_dbs\db1 --replSet replicaSet
+timeout /T 5
+start cmd /K mongod --shardsvr --port 27019 --dbpath .\data_dbs\db2 --replSet replicaSet
+timeout /T 5
+start cmd /K mongod --shardsvr --port 27020 --dbpath .\data_dbs\db3 --replSet replicaSet
+timeout /T 5
+start cmd /K mongod --port 27021 --dbpath .\data_dbs\db4 --replSet replicaSet
+timeout /T 5
+start cmd /K mongod --port 27022 --dbpath .\data_dbs\db5 --replSet replicaSet
+timeout /T 5
+start cmd /K mongos --configdb confSet/127.0.0.1:27017 --port 27016
+timeout /T 5
+start cmd /K mongosh --host "127.0.0.1:27017"
+start cmd /K mongosh --host "127.0.0.1:27016"
+start cmd /K mongosh --host "127.0.0.1:27018"
+```
+
+### moveChunk
 ```bash
 sh.startBalancer()
 # 上一条不一定有效，下一条强制移动

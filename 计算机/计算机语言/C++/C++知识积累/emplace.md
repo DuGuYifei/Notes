@@ -1,7 +1,18 @@
 # emplace
 
-在vector中`emplace_back`没有`push_back`快
 
+## 效率
+**正确说法：**`emplace比其他方法快，因为
+* 其他：
+  * 构造一个临时对象
+  * 调用移动构造函数把临时对象的副本拷贝到容器末尾增加的元素中
+  * 调用析构释放临时对象
+* emplace：
+  * 调用构造函数
+
+**错误说法：**在vector中`emplace_back`没有`push_back`快
+
+## 用法
 但是emplace可以直接传入构造用的参数，比如pair，可以直接传两个值进去自动生成pair。
 
 最近在刷题的时候看别人优雅的代码，发现一个叫做“emplace”的新朋友，检索了网上的相关资料后知道，这是C++11中加入的新特性，`emplace_back`能通过参数构造对象，不需要拷贝或者移动内存，相比`push_back`能更好地避免内存的拷贝与移动，使容器插入元素的性能得到进一步提升。
@@ -13,6 +24,10 @@
 
 支持传入参数直接构造，详情见
 [push和emplace区别](push和emplace区别.md)
+
+## emplace_hint
+`emplace_hint(const_iterator hint, Args&&...args)`
+hint是位置，比如`.begin()`
 
 ## emplace 和 emplace_back 在vector中
 ```cpp
@@ -69,5 +84,5 @@ int main ()
     vi.back().show();
  
     return 0;
-
+}
 ```

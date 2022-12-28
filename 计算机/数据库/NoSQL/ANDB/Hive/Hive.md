@@ -417,7 +417,7 @@ map_values(map<k,v>) //...............................values.........
 - Each table in the hive can have one or more partition keys to identify a particular partition.
 
 - 分区是一种根据日期、城市和部门等特定列的值将表划分为相关部分的方法。
-- hive 中的每个表都可以有一个或多个分区键来标识特定分区。
+- **hive 中的每个表都可以有一个或多个分区键来标识特定分区。**
 
 Why?
 1. Apache Hive converts the SQL queries into MapReduce jobs and then submits it to the Hadoop cluster.

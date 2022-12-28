@@ -27,9 +27,10 @@
       1. [完整案例](#完整案例)
 5. [partitioning and bucketing](#partitioning-and-bucketing)
    1. [partitioning](#partitioning)
-      1. [show](#show)
-      2. [static partitioning](#static-partitioning)
-      3. [dynamic partitioning](#dynamic-partitioning)
+      1. [多个分区键](#多个分区键)
+      2. [show](#show)
+      3. [static partitioning](#static-partitioning)
+      4. [dynamic partitioning](#dynamic-partitioning)
    2. [bucketing](#bucketing)
    3. [文件夹比较](#文件夹比较)
 6. [数据仓库案例](#数据仓库案例)
@@ -340,6 +341,8 @@ chalkopiryt,Warszawa,forma@S.A.#wlasciciel@Jason Unlimited#obrot@ogromny
 
 ## partitioning and bucketing
 ### partitioning
+#### 多个分区键
+会按照分区键先后分别创建文件夹和子文件(夹)
 #### show
 `show partitions tableName;`
 #### static partitioning

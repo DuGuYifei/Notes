@@ -247,6 +247,8 @@ One of them (primary) handles all write operations, which the server then **asyn
 在副本集中有多个 Mongo 服务器（mongod）**存储相同的数据**。
 其中之一（主要）处理所有写操作，然后服务器将其**异步复制**到次要副本。 **副本集可能包含一个仲裁者**。 仲裁器是**不存储数据**但**用于主服务器投票（见下【选举】）**的**服务器**。
 
+**偶数个节点才需要仲裁器**
+
 #### read performance?
 * reading from primary by default
 * other read preference mode can be set:
@@ -430,7 +432,7 @@ Mongo 中的分片基于在集合级别指定的分片键将文档分散到不�
 - chunks that exceed maximum size are split
 - information about key ranges and chunk locations is stored in a **configuaration server**
 
-为了在分片上分布数据，数据被分成在服务器之间迁移的块。 每个块都有一个特定范围的键，它包含范围内的较低值始终包含在内，而较高值则不包含在内。 默认最大块大小为 64MB，超过该大小的块将被拆分。 Mongo 数据库中有一个平衡器，其目的是在分片之间传输块，使块在各个分片之间均匀分布。
+为了在分片上分布数据，数据被分成在服务器之间迁移的块。 每个块都有一个特定范围的键，**它包含范围内的较低值始终包含在内，而较高值则不包含在内。相当于[min,max)** 默认最大块大小为 64MB，超过该大小的块将被拆分。 Mongo 数据库中有一个平衡器，其目的是在分片之间传输块，使块在各个分片之间均匀分布。
 有关每个块的密钥位置和范围的信息存储在配置服务器上。
 **应该注意的是，要对现有集合进行分片，该集合不应大于最大块大小（例如 64MB）**
 

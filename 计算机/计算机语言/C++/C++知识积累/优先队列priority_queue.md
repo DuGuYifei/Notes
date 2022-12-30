@@ -23,6 +23,9 @@ priority_queue<string> b;
 ```
 
 ## 自写cmp或重载 > <
+
+**！！！注意：return left < right 是大根堆**
+
 1. 可以自己写一个cmp
 ```cpp
 struct Node {
@@ -32,8 +35,8 @@ struct Node {
 struct cmp {
     bool operator() (Node a,Node b) {
         if(a.i==b.i)
-            return a.j<b.j;///j的升序
-        return a.i<b.i;　　　　///i的升序
+            return a.j<b.j;   //j的降序
+        return a.i<b.i;　　　　//i的降序
         }
 };
 
@@ -42,6 +45,11 @@ priority_queue<Node,vector<Node>,cmp> re;
 ```cpp
 auto cmp = [&](const int &a, const int &b) { return freq[a] > freq[b]; };
 priority_queue<int, vector<int>, decltype(cmp)> qu;
+
+function<bool(const pair<int, int>, const pair<int, int>)> cmp = [&](const pair<int, int>& a,const pair<int, int>& b){
+        return min(a.first, a.second) > min(b.first, b.second);
+    };
+    priority_queue<pair<int, int>, vector<pair<int,int>>, decltype(cmp)>qu;
 ```
 2. 也可以直接重载原类型的 `>`和`<`
 注意：这里将`<`写成了`>`号的功能，这样就将less大根堆变成了小根堆，因为`less`用的`小于号`，`greater`用的`大于号`

@@ -48,7 +48,7 @@ isEmpty()//判断队列是否为空，为空返回true,不空返回false
 	}
 ```
 
-2. 自定义
+2. 自定义1
 ```java
 	    //自定义比较类，先比较长，长升序排列，若长相等再比较宽，宽降序
 	    static Comparator<Node> cNode=new Comparator<Node>() {
@@ -77,6 +77,14 @@ isEmpty()//判断队列是否为空，为空返回true,不空返回false
 	        }
 	    }
 	
+```
+
+3. 自定义2
+```java
+PriorityQueue<int[]>pq = new PriorityQueue<>((a,b) -> {
+    int d1 = (a[1] - a[0])/2, d2 = (b[1] - b[0])/2;
+    return d1 != d2? d2 - d1 : a[0] - b[0]; // 按d降序，按x[0]升序
+});
 ```
 
 ## 修改类型自带比较器

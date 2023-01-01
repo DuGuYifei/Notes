@@ -7,7 +7,7 @@
 5. [return值和对象问题](return值和对象问题.md)
 6. [类型转换](类型转换.md)
 7. [final](final.md)
-8. [dequeue和queue](deque和queue.md)
+8. [deque和queue](deque和queue.md)
 9. [List](List.md)
 10. [JDBC_mysql](JDBC_mysql.md)
 11. [Optional](Optional.md)

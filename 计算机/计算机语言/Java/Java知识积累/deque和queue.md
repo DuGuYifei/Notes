@@ -1,5 +1,6 @@
-# dequeue 和 quque
+# deque 和 quque
 
+## 区别
 Deque是双端队列，可以从队头队尾入队出队。 
 Queue是单向队列 只能从对尾入队，队头出队。(FIFO)
 ![](2022-10-26-22-34-33.png)
@@ -13,3 +14,8 @@ remove() 和 poll() 方法都是从队列中删除第一个元素。如果队列
 element() 和 peek() 用于在队列的头部查询元素。与 remove() 方法类似，在队列为空时， element() 抛出一个异常，而 peek() 返回 null。
 
 **所以添加元素推荐offer() 删除元素推荐poll() 查看队首元素推荐peek()**
+
+## queue
+```Java
+Queue<String> queue = new LinkedList<String>();
+```

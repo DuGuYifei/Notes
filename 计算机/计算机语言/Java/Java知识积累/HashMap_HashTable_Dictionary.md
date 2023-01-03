@@ -12,6 +12,10 @@
 
 ## 遍历
 ```java
+// Variable used in lambda expression should be final or effectively final
+AtomicInteger totalGold = new AtomicInteger();
+goldMap.forEach((k, v) -> totalGold.addAndGet(v.getGold()));
+
 hm.forEach((k,v)->{
     if((v & (v - 1)) > 0)
         ans.add(k);

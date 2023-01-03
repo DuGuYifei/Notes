@@ -2,8 +2,8 @@
 [priority_queue](优先队列priority_queue.md)
 
 源码中：
-* greater 是 大于号
-* less 是 小于号
+* greater 是 大于号 小根堆
+* less 是 小于号 大根堆
 
 原理：红黑树
 

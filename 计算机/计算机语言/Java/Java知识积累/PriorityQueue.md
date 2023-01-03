@@ -79,7 +79,7 @@ isEmpty()//判断队列是否为空，为空返回true,不空返回false
 	
 ```
 
-3. 自定义2
+3. 自定义2lambda
 ```java
 PriorityQueue<int[]>pq = new PriorityQueue<>((a,b) -> {
     int d1 = (a[1] - a[0])/2, d2 = (b[1] - b[0])/2;

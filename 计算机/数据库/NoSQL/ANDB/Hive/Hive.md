@@ -44,6 +44,7 @@
       2. [advantages](#advantages)
       3. [limitations](#limitations)
 6. [Hive 操作](#hive-操作)
+7. [谓词下推](#谓词下推)
 
 
 ## 定义
@@ -555,6 +556,9 @@ Basically, this concept is based on **hashing function** on the bucketed column.
 [https://data-flair.training/blogs/bucketing-in-hive/]
 
 
-
 ## Hive 操作
 [Hive_Operations](Hive_Operations.md)
+[Hive_DataWarehouse_Example](Hive_DataWarehouse_Example.md)
+
+## 谓词下推
+[数据库其他知识积累](../../../数据库其他知识积累.md)

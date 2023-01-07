@@ -9,6 +9,7 @@
 6. [str.strip()](#strstrip)
 7. [str.split(char)](#strsplitchar)
 8. [str.substring(int begin)](#strsubstringint-begin)
+9. [str.startsWith(string)](#strstartswithstring)
 
 
 ## 对象？数据类型？
@@ -80,3 +81,6 @@ String[] splitAddr=address.split("\\^|@|#");
 
 ## str.substring(int begin)
 `word1.substring(id1)`
+
+## str.startsWith(string)
+return boolean

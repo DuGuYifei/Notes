@@ -26,3 +26,6 @@ string.substr(start)
 
 ## accumulate
 [accumulate](accumulate.md)
+
+## str.compare(str), str.compare(start, end, str)
+相等输出0，不等输出1

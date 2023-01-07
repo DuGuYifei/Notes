@@ -14,6 +14,17 @@
          3. [配置replication](#配置replication)
          4. [开始使用](#开始使用)
          5. [result](#result)
+3. [project - logistic system](#project---logistic-system)
+   1. [Nodes setting](#nodes-setting)
+      1. [start servers](#start-servers)
+      2. [initiate configure server and shard server](#initiate-configure-server-and-shard-server)
+      3. [start router](#start-router)
+      4. [add replication nodes](#add-replication-nodes)
+         1. [shard1](#shard1)
+         2. [shard2](#shard2)
+   2. [set range shard of one collection](#set-range-shard-of-one-collection)
+   3. [Create documents](#create-documents)
+      1. [collection - packages](#collection---packages)
 
 
 ## basic query + aggregation
@@ -268,8 +279,8 @@ mongosh --port 27016
 
 ##### 配置router（mongos进程）
 ```bash
-sh.addShard("shard1Set/127.0.0.1:27017")
-sh.addShard("shard2Set/127.0.0.1:27018")
+sh.addShard("shard1Set/127.0.0.1:27018")
+sh.addShard("shard2Set/127.0.0.1:27019")
 sh.addShard("shard3Set/127.0.0.1:27020")
 sh.enableSharding("ourBase")
 ```
@@ -633,3 +644,452 @@ shard1Set [direct: primary] ourBase> rs.status()
   operationTime: Timestamp({ t: 1672239635, i: 1 })
 }
 ```
+
+## project - logistic system
+
+### Nodes setting
+
+#### start servers
+```cmd
+mongod --configsvr --port 27017 --dbpath .\data_dbs\config --replSet confSet
+mongod --shardsvr --port 27018 --dbpath .\data_dbs\db1 --replSet shard1Set
+mongod --shardsvr --port 27019 --dbpath .\data_dbs\db2 --replSet shard2Set
+mongod --port 27020 --dbpath .\data_dbs\db3 --replSet shard1Set
+mongod --port 27021 --dbpath .\data_dbs\db4 --replSet shard1Set
+mongod --port 27022 --dbpath .\data_dbs\db5 --replSet shard1Set
+mongod --port 27023 --dbpath .\data_dbs\db6 --replSet shard2Set
+mongod --port 27024 --dbpath .\data_dbs\db7 --replSet shard2Set
+mongod --port 27025 --dbpath .\data_dbs\db8 --replSet shard2Set
+mongos --configdb confSet/127.0.0.1:27017 --port 27016
+start cmd /K mongosh --port 27017
+start cmd /K mongosh --port 27018
+start cmd /K mongosh --port 27019
+```
+
+#### initiate configure server and shard server
+```cmd
+rs.initiate({_id:"confSet", configsvr: true, members: [{_id: 0, host: "127.0.0.1:27017"}]})
+rs.initiate( { _id: "shard1Set", members: [ { _id: 0, host: "127.0.0.1:27018"}]})
+rs.initiate( { _id: "shard2Set", members: [ { _id: 0, host: "127.0.0.1:27019"}]})
+```
+
+#### start router
+```cmd
+mongosh --port 27016
+sh.addShard("shard1Set/127.0.0.1:27018")
+sh.addShard("shard2Set/127.0.0.1:27019")
+sh.enableSharding("logistic")
+```
+
+#### add replication nodes
+##### shard1
+```cmd
+rs.add('127.0.0.1:27020')
+rs.add('127.0.0.1:27021')
+rs.add('127.0.0.1:27022')
+cfg=rs.conf()
+cfg.members[3].proprity=0
+cfg.members[3].votes=0 
+cfg.members[3].hidden=true
+rs.reconfig(cfg)
+```
+
+##### shard2
+```cmd
+rs.add('127.0.0.1:27023')
+rs.add('127.0.0.1:27024')
+rs.add('127.0.0.1:27025')
+cfg=rs.conf()
+cfg.members[3].proprity=0
+cfg.members[3].votes=0 
+cfg.members[3].hidden=true
+rs.reconfig(cfg)
+```
+
+### set range shard of one collection
+1. in **mongos** process (i.e. port 27016)
+  ```cmd
+  use logistic
+  sh.shardCollection("logistic.packages", {"from.city": 1})
+  sh.splitAt("logistic.packages", {"from.city":"Gdansk"})
+  sh.splitAt("logistic.packages", {"from.city":"Gdynia"})
+  sh.splitAt("logistic.packages", {"from.city":"Sopot"})
+  sh.splitAt("logistic.packages", {"from.city":"Warsaw"})
+  ```
+
+2. see which shard is primary shard
+  ```
+  sh.status()
+  ```
+
+3. move chunks
+  ```
+  sh.moveChunk("logistic.packages", {"from.city":"Sopot"},  'shard1Set')
+  sh.moveChunk("logistic.packages", {"from.city":"Warsaw"},   'shard1Set')
+  ```
+
+4. Later can use it to check shard
+  ```
+  db.packages.find({},{_id:1,"from.city":1})
+  ```
+
+### Create documents
+#### collection - packages
+```bash
+db.packages.insertMany([
+  {
+    "_id" : "package_0",
+    "status" : "delivering",
+    "from" : {
+      "city": "Gdansk",
+      "address" : "xxxx street",
+      "name" : "DuGuYifei",
+      "phone" : "606505111"
+   },
+   "delivery" : {
+      "city": "Warsaw",
+      "address" : "xxxx street",
+      "name" : "Jakub",
+      "phone" : "606505222"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 1234",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_0",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_1",
+        "date" : ISODate("2022-06-21T23:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_2",
+        "date" : ISODate("2022-06-22T07:00:00Z")
+      },
+      {
+        "action" : "delivering",
+        "operator" : "deliverer 6789",
+        "date" : ISODate("2022-06-23T02:00:00Z")
+      }
+   ]
+  },
+  {
+    "_id" : "package_1",
+    "status" : "finished",
+    "from" : {
+      "city": "Gdynia",
+      "address" : "xxxx street",
+      "name" : "Jak",
+      "phone" : "606505333"
+   },
+   "delivery" : {
+      "city": "Warsaw",
+      "address" : "xxxx street",
+      "name" : "Piot",
+      "phone" : "606505444"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 2234",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_0",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_1",
+        "date" : ISODate("2022-06-21T23:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_2",
+        "date" : ISODate("2022-06-22T07:00:00Z")
+      },
+      {
+        "action" : "delivering",
+        "operator" : "deliverer 6789",
+        "date" : ISODate("2022-06-23T02:00:00Z")
+      },
+      {
+        "action" : "in_express_locker",
+        "operator" : "deliverer 6789",
+        "date" : ISODate("2022-06-23T02:00:00Z")
+      },
+      {
+        "action" : "finished",
+        "date" : ISODate("2016-06-23T08:00:00Z")
+      }
+   ]
+  },
+  {
+    "_id" : "package_2",
+    "status" : "shipping",
+    "from" : {
+      "city": "Gdansk",
+      "address" : "xxxx street",
+      "name" : "Jak",
+      "phone" : "606505333"
+   },
+   "delivery" : {
+      "city": "Sopot",
+      "address" : "xxxx street",
+      "name" : "Fei",
+      "phone" : "606505666"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 2234",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_0",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_1",
+        "date" : ISODate("2022-06-21T23:00:00Z")
+      }
+   ]
+  },
+  {
+    "_id" : "package_3",
+    "status" : "shipping",
+    "from" : {
+      "city": "Gdansk",
+      "address" : "xxxx street",
+      "name" : "Piot",
+      "phone" : "606505444"
+   },
+   "delivery" : {
+      "city": "Gdynia",
+      "address" : "xxxx street",
+      "name" : "Yifei",
+      "phone" : "606505223"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 2234",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_4",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_5",
+        "date" : ISODate("2022-06-21T23:00:00Z")
+      }
+   ]
+  },
+  {
+    "_id" : "package_4",
+    "status" : "shipping",
+    "from" : {
+      "city": "Warsaw",
+      "address" : "xxxx street",
+      "name" : "Yifei",
+      "phone" : "606505223"
+   },
+   "delivery" : {
+      "city": "Gdynia",
+      "address" : "xxxx street",
+      "name" : "Tobi",
+      "phone" : "606505425"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 2234",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_5",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      }
+   ]
+  },
+  {
+    "_id" : "package_5",
+    "status" : "shipping",
+    "from" : {
+      "city": "Warsaw",
+      "address" : "xxxx street",
+      "name" : "Yifei",
+      "phone" : "606505223"
+   },
+   "delivery" : {
+      "city": "Gdynia",
+      "address" : "xxxx street",
+      "name" : "Tobi",
+      "phone" : "606505425"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 5234",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_5",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      }
+   ]
+  },
+  {
+    "_id" : "package_6",
+    "status" : "in_express_locker",
+    "from" : {
+      "city": "Sopot",
+      "address" : "xxxx street",
+      "name" : "Yifei",
+      "phone" : "606505223"
+   },
+   "delivery" : {
+      "city": "Gdansk",
+      "address" : "xxxx street",
+      "name" : "Tobi",
+      "phone" : "606505425"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 5234",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_5",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      },
+      {
+        "action" : "in_express_locker",
+        "operator" : "deliverer 6789",
+        "date" : ISODate("2022-06-22T02:00:00Z")
+      }
+   ]
+  },
+  {
+    "_id" : "package_7",
+    "status" : "in_express_locker",
+    "from" : {
+      "city": "Sopot",
+      "address" : "xxxx street",
+      "name" : "Yifei",
+      "phone" : "606505223"
+   },
+   "delivery" : {
+      "city": "Gdynia",
+      "address" : "xxxx street",
+      "name" : "Tobi Lu",
+      "phone" : "606505625"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 5234",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_8",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      },
+      {
+        "action" : "in_express_locker",
+        "operator" : "deliverer 2789",
+        "date" : ISODate("2022-06-22T02:00:00Z")
+      }
+   ]
+  },
+  {
+    "_id" : "package_8",
+    "status" : "finished",
+    "from" : {
+      "city": "Warsaw",
+      "address" : "xxxx street",
+      "name" : "Yifei",
+      "phone" : "606505723"
+   },
+   "delivery" : {
+      "city": "Warsaw",
+      "address" : "xxxx street",
+      "name" : "Jak",
+      "phone" : "606505825"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 5234",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_3",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      },
+      {
+        "action" : "in_express_locker",
+        "operator" : "deliverer 2789",
+        "date" : ISODate("2022-06-22T02:00:00Z")
+      },
+      {
+        "action" : "finished",
+        "date" : ISODate("2022-06-23T02:00:00Z")
+      }
+   ]
+  },
+  {
+    "_id" : "package_9",
+    "status" : "shipping",
+    "from" : {
+      "city": "Gdynia",
+      "address" : "xxxx street",
+      "name" : "Yifei DuGu",
+      "phone" : "606505923"
+   },
+   "delivery" : {
+      "city": "Warsaw",
+      "address" : "xxxx street",
+      "name" : "Piot",
+      "phone" : "606505855"
+   },
+   "details" : [
+      {
+        "action" : "reviced",
+        "operator" : "deliverer 5934",
+        "date" : ISODate("2022-06-21T01:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_6",
+        "date" : ISODate("2022-06-21T17:00:00Z")
+      },
+      {
+        "action" : "shipping",
+        "station" : "station_9",
+        "date" : ISODate("2022-06-22T17:00:00Z")
+      }
+   ]
+  }
+])
+```
+

@@ -25,6 +25,7 @@
    2. [set range shard of one collection](#set-range-shard-of-one-collection)
    3. [Create documents](#create-documents)
       1. [collection - packages](#collection---packages)
+   4. [query:](#query)
 
 
 ## basic query + aggregation
@@ -666,6 +667,24 @@ start cmd /K mongosh --port 27018
 start cmd /K mongosh --port 27019
 ```
 
+**第二次**打开后，primary replicaSet 可能是会变的，同时，对于replica应添加命令 `--shardsvr`
+```cmd
+mongod --configsvr --port 27017 --dbpath .\data_dbs\config --replSet confSet
+mongod --shardsvr --port 27018 --dbpath .\data_dbs\db1 --replSet shard1Set
+mongod --shardsvr --port 27019 --dbpath .\data_dbs\db2 --replSet shard2Set
+mongod --shardsvr --port 27020 --dbpath .\data_dbs\db3 --replSet shard1Set
+mongod --shardsvr --port 27021 --dbpath .\data_dbs\db4 --replSet shard1Set
+mongod --shardsvr --port 27022 --dbpath .\data_dbs\db5 --replSet shard1Set
+mongod --shardsvr --port 27023 --dbpath .\data_dbs\db6 --replSet shard2Set
+mongod --shardsvr --port 27024 --dbpath .\data_dbs\db7 --replSet shard2Set
+mongod --shardsvr --port 27025 --dbpath .\data_dbs\db8 --replSet shard2Set
+mongos --configdb confSet/127.0.0.1:27017 --port 27016
+start cmd /K mongosh --port 27017
+start cmd /K mongosh --port 27018
+start cmd /K mongosh --port 27019
+start cmd /K mongosh --port 27016
+```
+
 #### initiate configure server and shard server
 ```cmd
 rs.initiate({_id:"confSet", configsvr: true, members: [{_id: 0, host: "127.0.0.1:27017"}]})
@@ -1093,3 +1112,840 @@ db.packages.insertMany([
 ])
 ```
 
+```sh
+db.stations.insertMany([
+    {
+        _id: "station_0",
+        station_name: "Moonstone",
+        station_address: "Gdansk, Turkusowa 43",
+        principal: "employee_4",
+        packages_stored: ["package_2", "package_7"]
+    },
+    {
+        _id: "station_1",
+        station_name: "Emerald",
+        station_address: "Olsztyn, Sowia 144",
+        principal: "employee_0",
+        packages_stored: []
+    },
+    {
+        _id: "station_2",
+        station_name: "Diamond",
+        station_address: "Krakow, Podmiejska 70",
+        principal: "employee_3",
+        packages_stored: ["package_0"]
+    },
+    {
+        _id: "station_3",
+        station_name: "Aquamarine",
+        station_address: "Poznan, Dobrochny 127",
+        principal: "employee_7",
+        packages_stored: []
+    },
+    {
+        _id: "station_4",
+        station_name: "Garnet",
+        station_address: "Lodz, Admiralska 97",
+        principal: "employee_9",
+        packages_stored: ["package_8", "package_4"]
+    },
+    {
+        _id: "station_5",
+        station_name: "Malachite",
+        station_address: "Pcim, Dworcowa 40",
+        principal: "employee_8",
+        packages_stored: ["package_9", "package_6"]
+    },
+    {
+        _id: "station_6",
+        station_name: "Citrine",
+        station_address: "Warszawa, Gajdy 46",
+        principal: "employee_2",
+        packages_stored: []
+    },
+    {
+        _id: "station_7",
+        station_name: "Lapis Lazuli",
+        station_address: "Bydgoszcz, Polczynska 47",
+        principal: "employee_1",
+        packages_stored: []
+    },
+    {
+        _id: "station_8",
+        station_name: "Onyx",
+        station_address: "Wroclaw, Marianna 77",
+        principal: "employee_5",
+        packages_stored: []
+    },
+    {
+        _id: "station_9",
+        station_name: "Opal",
+        station_address: "Szczecin, Warszawska 16",
+        principal: "employee_6",
+        packages_stored: ["package_1", "package_3", "package_5"]
+    }
+]);
+```
+
+```sh
+db.cabinets.insertMany([
+  {
+  	"_id": "cabinet_0",
+  	"city": "Warsaw",
+  	"address": "xxxx street",
+  	"packages": [
+  		{
+  			"package_id": "package_1",
+  			"code": "254878",
+  			"expiration_date": ISODate("2022-06-27T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-23T02:00:00Z"),
+  			"delivery_operator": "deliverer 6789"
+  		},
+  		{
+  			"package_id": "package_8",
+  			"code": "824655",
+  			"expiration_date": ISODate("2022-06-26T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-22T02:00:00Z"),
+  			"delivery_operator": "deliverer 2789"
+  		},
+  		{
+  			"package_id": "package_9",
+  			"code": "798775",
+  			"expiration_date": ISODate("2022-06-27T17:00:00Z"),
+  			"operation_date": ISODate("2022-06-17T23:00:00Z"),
+  			"delivery_operator": "deliverer 2789"
+  		}
+  	]
+  },
+  {
+  	"_id": "cabinet_1",
+  	"city": "Sopot",
+  	"address": "xxxx street",
+  	"packages": [
+  		{
+  			"package_id": "package_2",
+  			"code": "846548",
+  			"expiration_date": ISODate("2022-06-25T23:00:00Z"),
+  			"operation_date": ISODate("2022-06-21T23:00:00Z"),
+  			"delivery_operator": "deliverer 8635"
+  		}
+  	]
+  },
+  {
+  	"_id": "cabinet_2",
+  	"city": "Gdynia",
+  	"address": "xxxx street",
+  	"packages": [
+  		{
+  			"package_id": "package_3",
+  			"code": "487421",
+  			"expiration_date": ISODate("2022-06-26T23:00:00Z"),
+  			"operation_date": ISODate("2022-06-22T23:00:00Z"),
+  			"delivery_operator": "deliverer 2789"
+  		},
+  		{
+  			"package_id": "package_4",
+  			"code": "376323",
+  			"expiration_date": ISODate("2022-06-26T17:00:00Z"),
+  			"operation_date": ISODate("2022-06-22T17:00:00Z"),
+  			"delivery_operator": "deliverer 2789"
+  		},
+  		{
+  			"package_id": "package_7",
+  			"code": "986542",
+  			"expiration_date": ISODate("2022-06-26T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-22T02:00:00Z"),
+  			"delivery_operator": "deliverer 2789"
+  		},
+  		{
+  			"package_id": "package_3",
+  			"code": "852456",
+  			"expiration_date": ISODate("2022-06-27T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-23T02:00:00Z"),
+  			"delivery_operator": "deliverer 2789"
+  		}
+  	]
+  },
+  {
+  	"_id": "cabinet_3",
+  	"city": "Gdansk",
+  	"address": "xxxx street",
+  	"packages": [
+  		{
+  			"package_id": "package_6",
+  			"code": "387985",
+  			"expiration_date": ISODate("2022-06-26T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-22T02:00:00Z"),
+  			"delivery_operator": "deliverer 6789"
+  		}
+  	]
+  },
+  {
+  	"_id": "cabinet_4",
+  	"city": "Poznan",
+  	"address": "xxxx street",
+  	"packages": [
+  		{
+  			"package_id": "package_9",
+  			"code": "467931",
+  			"expiration_date": ISODate("2022-06-27T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-23T02:00:00Z"),
+  			"delivery_operator": "deliverer 7470"
+  		},
+  		{
+  			"package_id": "package_8",
+  			"code": "813279",
+  			"expiration_date": ISODate("2022-06-27T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-23T02:00:00Z"),
+  			"delivery_operator": "deliverer 7470"
+  		}
+  	]
+  },
+  {
+  	"_id": "cabinet_5",
+  	"city": "Krakow",
+  	"address": "xxxx street",
+  	"packages": [
+  		{
+  			"package_id": "package_2",
+  			"code": "513579",
+  			"expiration_date": ISODate("2022-06-27T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-23T02:00:00Z"),
+  			"delivery_operator": "deliverer 3263"
+  		}
+  	]
+  },
+  {
+  	"_id": "cabinet_6",
+  	"city": "Szczecin",
+  	"address": "xxxx street",
+  	"packages": []
+  },
+  {
+  	"_id": "cabinet_7",
+  	"city": "Wroclaw",
+  	"address": "xxxx street",
+  	"packages": [
+  		{
+  			"package_id": "package_4",
+  			"code": "827193",
+  			"expiration_date": ISODate("2022-06-27T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-23T02:00:00Z"),
+  			"delivery_operator": "deliverer 6698"
+  		}
+  	]
+  },
+  {
+  	"_id": "cabinet_8",
+  	"city": "Lublin",
+  	"address": "xxxx street",
+  	"packages": [
+  		{
+  			"package_id": "package_1",
+  			"code": "785096",
+  			"expiration_date": ISODate("2022-06-25T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-21T02:00:00Z"),
+  			"delivery_operator": "deliverer 6725"
+  		},
+  		{
+  			"package_id": "package_2",
+  			"code": "323545",
+  			"expiration_date": ISODate("2022-06-25T02:00:00Z"),
+  			"operation_date": ISODate("2022-06-21T02:00:00Z"),
+  			"delivery_operator": "deliverer 6725"
+  		}
+  	]
+  },
+  {
+  	"_id": "cabinet_9",
+  	"city": "Bialystok",
+  	"address": "xxxx street",
+  	"packages": []
+  }
+])
+```
+
+### query:
+1. Send the code of package to customers phone number
+  ```bash
+  db.cabinets.aggregate([
+    {$unwind: "$packages"}, 
+    {$lookup: {
+        from:"packages", 
+        localField: "packages.package_id", 
+        foreignField: "_id", 
+        as: "joined"
+      } 
+    }, 
+    {$project: {"packages.code":1, "joined.delivery.phone":1}}
+  ])
+  ```
+2. Transfer station "Moonstone" want to send the status of package to the user’s phone number
+  ```bash
+  db.stations.aggregate([
+    {$match: {"station_name":"Moonstone"}}, 
+    {$unwind:"$packages_stored"}, 
+    {$lookup: {
+        from:"packages", 
+        localField: "packages_stored", 
+        foreignField: "_id", 
+        as: "joined"
+      }
+    }, 
+    {$project: {"_id":0, "station_name":1, "packages_stored":1, "joined.status":1, "joined.delivery.phone":1}}
+  ])
+  ```
+3. User want to call to ask where is their package, so we need get the newest status of packages by phone number of receiver xxx-xxx-xxx (606505444)
+  ```bash
+  db.packages.aggregate([
+    {$match:{"from.phone":"606505444"}}, 
+    {$project:{latest:{$arrayElemAt:["$details",-1]}}}
+  ]);
+  ```
+4. Customer which is sender of packges_3 wants to cancel the delivery, then he calls customer service, the customer servicer will try to find responsible person of the transfer station or the deliverer (depend on the status of package, "shipping" or "in_express_locker")
+  ```bash
+  db.packages.aggregate([
+    {$match: {_id: "package_3"}},
+    {$lookup: {
+              from: "stations",
+              localField: "details.station",
+              foreignField: "_id",
+              as: "joined"
+            }},
+    {
+      $project:{
+        responsible_person:{
+          $cond:{
+            if: {$eq: ["$status", "in_express_locker"]},
+            then: {$arrayElemAt:["$details.operator",-1]},
+            else: {$arrayElemAt:["$joined.principal",-1]}
+          }
+        }
+      }
+    }
+  ])
+
+  db.packages.aggregate([
+    {$match: {_id: "package_6"}},
+    {$lookup: {
+              from: "stations",
+              localField: "details.station",
+              foreignField: "_id",
+              as: "joined"
+            }},
+    {
+      $project:{
+        responsible_person:{
+          $cond:{
+            if: {$eq: ["$status", "in_express_locker"]},
+            then: {$arrayElemAt:["$details.operator",-1]},
+            else: {$arrayElemAt:["$joined.principal",-1]}
+          }
+        }
+      }
+    }
+  ])
+  ```
+
+```bash
+shard1Set [direct: primary] test> rs.conf()
+{
+  _id: 'shard1Set',
+  version: 8,
+  term: 6,
+  members: [
+    {
+      _id: 0,
+      host: '127.0.0.1:27018',
+      arbiterOnly: false,
+      buildIndexes: true,
+      hidden: false,
+      priority: 1,
+      tags: {},
+      secondaryDelaySecs: Long("0"),
+      votes: 1
+    },
+    {
+      _id: 1,
+      host: '127.0.0.1:27020',
+      arbiterOnly: false,
+      buildIndexes: true,
+      hidden: false,
+      priority: 1,
+      tags: {},
+      secondaryDelaySecs: Long("0"),
+      votes: 1
+    },
+    {
+      _id: 2,
+      host: '127.0.0.1:27021',
+      arbiterOnly: false,
+      buildIndexes: true,
+      hidden: false,
+      priority: 1,
+      tags: {},
+      secondaryDelaySecs: Long("0"),
+      votes: 1
+    },
+    {
+      _id: 3,
+      host: '127.0.0.1:27022',
+      arbiterOnly: false,
+      buildIndexes: true,
+      hidden: true,
+      priority: 0,
+      tags: {},
+      secondaryDelaySecs: Long("0"),
+      votes: 0
+    }
+  ],
+  protocolVersion: Long("1"),
+  writeConcernMajorityJournalDefault: true,
+  settings: {
+    chainingAllowed: true,
+    heartbeatIntervalMillis: 2000,
+    heartbeatTimeoutSecs: 10,
+    electionTimeoutMillis: 10000,
+    catchUpTimeoutMillis: -1,
+    catchUpTakeoverDelayMillis: 30000,
+    getLastErrorModes: {},
+    getLastErrorDefaults: { w: 1, wtimeout: 0 },
+    replicaSetId: ObjectId("63b8c337f136c93d2afb3f28")
+  }
+}
+###########################################################################
+shard1Set [direct: primary] test> rs.status()
+{
+  set: 'shard1Set',
+  date: ISODate("2023-01-08T17:50:40.790Z"),
+  myState: 1,
+  term: Long("6"),
+  syncSourceHost: '',
+  syncSourceId: -1,
+  heartbeatIntervalMillis: Long("2000"),
+  majorityVoteCount: 2,
+  writeMajorityCount: 2,
+  votingMembersCount: 3,
+  writableVotingMembersCount: 3,
+  optimes: {
+    lastCommittedOpTime: { ts: Timestamp({ t: 1673200239, i: 1 }), t: Long("6") },
+    lastCommittedWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+    readConcernMajorityOpTime: { ts: Timestamp({ t: 1673200239, i: 1 }), t: Long("6") },
+    appliedOpTime: { ts: Timestamp({ t: 1673200239, i: 1 }), t: Long("6") },
+    durableOpTime: { ts: Timestamp({ t: 1673200239, i: 1 }), t: Long("6") },
+    lastAppliedWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+    lastDurableWallTime: ISODate("2023-01-08T17:50:39.816Z")
+  },
+  lastStableRecoveryTimestamp: Timestamp({ t: 1673200219, i: 1 }),
+  electionCandidateMetrics: {
+    lastElectionReason: 'electionTimeout',
+    lastElectionDate: ISODate("2023-01-08T13:32:36.975Z"),
+    electionTerm: Long("6"),
+    lastCommittedOpTimeAtElection: { ts: Timestamp({ t: 0, i: 0 }), t: Long("-1") },
+    lastSeenOpTimeAtElection: { ts: Timestamp({ t: 1673184647, i: 2 }), t: Long("5") },
+    numVotesNeeded: 2,
+    priorityAtElection: 1,
+    electionTimeoutMillis: Long("10000"),
+    numCatchUpOps: Long("0"),
+    newTermStartDate: ISODate("2023-01-08T13:32:38.506Z"),
+    wMajorityWriteAvailabilityDate: ISODate("2023-01-08T13:32:38.533Z")
+  },
+  members: [
+    {
+      _id: 0,
+      name: '127.0.0.1:27018',
+      health: 1,
+      state: 1,
+      stateStr: 'PRIMARY',
+      uptime: 15505,
+      optime: { ts: Timestamp({ t: 1673200239, i: 1 }), t: Long("6") },
+      optimeDate: ISODate("2023-01-08T17:50:39.000Z"),
+      lastAppliedWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+      lastDurableWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+      syncSourceHost: '',
+      syncSourceId: -1,
+      infoMessage: '',
+      electionTime: Timestamp({ t: 1673184756, i: 1 }),
+      electionDate: ISODate("2023-01-08T13:32:36.000Z"),
+      configVersion: 8,
+      configTerm: 6,
+      self: true,
+      lastHeartbeatMessage: ''
+    },
+    {
+      _id: 1,
+      name: '127.0.0.1:27020',
+      health: 1,
+      state: 2,
+      stateStr: 'SECONDARY',
+      uptime: 15486,
+      optime: { ts: Timestamp({ t: 1673200229, i: 1 }), t: Long("6") },
+      optimeDurable: { ts: Timestamp({ t: 1673200229, i: 1 }), t: Long("6") },
+      optimeDate: ISODate("2023-01-08T17:50:29.000Z"),
+      optimeDurableDate: ISODate("2023-01-08T17:50:29.000Z"),
+      lastAppliedWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+      lastDurableWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+      lastHeartbeat: ISODate("2023-01-08T17:50:39.238Z"),
+      lastHeartbeatRecv: ISODate("2023-01-08T17:50:39.792Z"),
+      pingMs: Long("0"),
+      lastHeartbeatMessage: '',
+      syncSourceHost: '127.0.0.1:27018',
+      syncSourceId: 0,
+      infoMessage: '',
+      configVersion: 8,
+      configTerm: 6
+    },
+    {
+      _id: 2,
+      name: '127.0.0.1:27021',
+      health: 1,
+      state: 2,
+      stateStr: 'SECONDARY',
+      uptime: 15483,
+      optime: { ts: Timestamp({ t: 1673200229, i: 1 }), t: Long("6") },
+      optimeDurable: { ts: Timestamp({ t: 1673200229, i: 1 }), t: Long("6") },
+      optimeDate: ISODate("2023-01-08T17:50:29.000Z"),
+      optimeDurableDate: ISODate("2023-01-08T17:50:29.000Z"),
+      lastAppliedWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+      lastDurableWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+      lastHeartbeat: ISODate("2023-01-08T17:50:39.239Z"),
+      lastHeartbeatRecv: ISODate("2023-01-08T17:50:39.346Z"),
+      pingMs: Long("0"),
+      lastHeartbeatMessage: '',
+      syncSourceHost: '127.0.0.1:27018',
+      syncSourceId: 0,
+      infoMessage: '',
+      configVersion: 8,
+      configTerm: 6
+    },
+    {
+      _id: 3,
+      name: '127.0.0.1:27022',
+      health: 1,
+      state: 2,
+      stateStr: 'SECONDARY',
+      uptime: 15479,
+      optime: { ts: Timestamp({ t: 1673200239, i: 1 }), t: Long("6") },
+      optimeDurable: { ts: Timestamp({ t: 1673200239, i: 1 }), t: Long("6") },
+      optimeDate: ISODate("2023-01-08T17:50:39.000Z"),
+      optimeDurableDate: ISODate("2023-01-08T17:50:39.000Z"),
+      lastAppliedWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+      lastDurableWallTime: ISODate("2023-01-08T17:50:39.816Z"),
+      lastHeartbeat: ISODate("2023-01-08T17:50:40.324Z"),
+      lastHeartbeatRecv: ISODate("2023-01-08T17:50:39.430Z"),
+      pingMs: Long("0"),
+      lastHeartbeatMessage: '',
+      syncSourceHost: '127.0.0.1:27021',
+      syncSourceId: 2,
+      infoMessage: '',
+      configVersion: 8,
+      configTerm: 6
+    }
+  ],
+  ok: 1,
+  lastCommittedOpTime: Timestamp({ t: 1673200239, i: 1 }),
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1673200239, i: 2 }),
+    signature: {
+      hash: Binary(Buffer.from("0000000000000000000000000000000000000000", "hex"), 0),
+      keyId: Long("0")
+    }
+  },
+  operationTime: Timestamp({ t: 1673200239, i: 1 })
+}
+##################################################################
+shard2Set [direct: primary] test> rs.conf()
+{
+  _id: 'shard2Set',
+  version: 8,
+  term: 6,
+  members: [
+    {
+      _id: 0,
+      host: '127.0.0.1:27019',
+      arbiterOnly: false,
+      buildIndexes: true,
+      hidden: false,
+      priority: 1,
+      tags: {},
+      secondaryDelaySecs: Long("0"),
+      votes: 1
+    },
+    {
+      _id: 1,
+      host: '127.0.0.1:27023',
+      arbiterOnly: false,
+      buildIndexes: true,
+      hidden: false,
+      priority: 1,
+      tags: {},
+      secondaryDelaySecs: Long("0"),
+      votes: 1
+    },
+    {
+      _id: 2,
+      host: '127.0.0.1:27024',
+      arbiterOnly: false,
+      buildIndexes: true,
+      hidden: false,
+      priority: 1,
+      tags: {},
+      secondaryDelaySecs: Long("0"),
+      votes: 1
+    },
+    {
+      _id: 3,
+      host: '127.0.0.1:27025',
+      arbiterOnly: false,
+      buildIndexes: true,
+      hidden: true,
+      priority: 0,
+      tags: {},
+      secondaryDelaySecs: Long("0"),
+      votes: 0
+    }
+  ],
+  protocolVersion: Long("1"),
+  writeConcernMajorityJournalDefault: true,
+  settings: {
+    chainingAllowed: true,
+    heartbeatIntervalMillis: 2000,
+    heartbeatTimeoutSecs: 10,
+    electionTimeoutMillis: 10000,
+    catchUpTimeoutMillis: -1,
+    catchUpTakeoverDelayMillis: 30000,
+    getLastErrorModes: {},
+    getLastErrorDefaults: { w: 1, wtimeout: 0 },
+    replicaSetId: ObjectId("63b8c340db5bd34aa318d25d")
+  }
+}
+###############################
+shard2Set [direct: primary] test> rs.status()
+{
+  set: 'shard2Set',
+  date: ISODate("2023-01-08T17:50:16.679Z"),
+  myState: 1,
+  term: Long("6"),
+  syncSourceHost: '',
+  syncSourceId: -1,
+  heartbeatIntervalMillis: Long("2000"),
+  majorityVoteCount: 2,
+  writeMajorityCount: 2,
+  votingMembersCount: 3,
+  writableVotingMembersCount: 3,
+  optimes: {
+    lastCommittedOpTime: { ts: Timestamp({ t: 1673200216, i: 1 }), t: Long("6") },
+    lastCommittedWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+    readConcernMajorityOpTime: { ts: Timestamp({ t: 1673200216, i: 1 }), t: Long("6") },
+    appliedOpTime: { ts: Timestamp({ t: 1673200216, i: 1 }), t: Long("6") },
+    durableOpTime: { ts: Timestamp({ t: 1673200216, i: 1 }), t: Long("6") },
+    lastAppliedWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+    lastDurableWallTime: ISODate("2023-01-08T17:50:16.395Z")
+  },
+  lastStableRecoveryTimestamp: Timestamp({ t: 1673200156, i: 1 }),
+  electionCandidateMetrics: {
+    lastElectionReason: 'electionTimeout',
+    lastElectionDate: ISODate("2023-01-08T13:32:52.800Z"),
+    electionTerm: Long("6"),
+    lastCommittedOpTimeAtElection: { ts: Timestamp({ t: 0, i: 0 }), t: Long("-1") },
+    lastSeenOpTimeAtElection: { ts: Timestamp({ t: 1673184647, i: 1 }), t: Long("4") },
+    numVotesNeeded: 2,
+    priorityAtElection: 1,
+    electionTimeoutMillis: Long("10000"),
+    numCatchUpOps: Long("0"),
+    newTermStartDate: ISODate("2023-01-08T13:32:55.014Z"),
+    wMajorityWriteAvailabilityDate: ISODate("2023-01-08T13:32:55.856Z")
+  },
+  members: [
+    {
+      _id: 0,
+      name: '127.0.0.1:27019',
+      health: 1,
+      state: 1,
+      stateStr: 'PRIMARY',
+      uptime: 15476,
+      optime: { ts: Timestamp({ t: 1673200216, i: 1 }), t: Long("6") },
+      optimeDate: ISODate("2023-01-08T17:50:16.000Z"),
+      lastAppliedWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+      lastDurableWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+      syncSourceHost: '',
+      syncSourceId: -1,
+      infoMessage: '',
+      electionTime: Timestamp({ t: 1673184772, i: 2 }),
+      electionDate: ISODate("2023-01-08T13:32:52.000Z"),
+      configVersion: 8,
+      configTerm: 6,
+      self: true,
+      lastHeartbeatMessage: ''
+    },
+    {
+      _id: 1,
+      name: '127.0.0.1:27023',
+      health: 1,
+      state: 2,
+      stateStr: 'SECONDARY',
+      uptime: 15447,
+      optime: { ts: Timestamp({ t: 1673200206, i: 1 }), t: Long("6") },
+      optimeDurable: { ts: Timestamp({ t: 1673200206, i: 1 }), t: Long("6") },
+      optimeDate: ISODate("2023-01-08T17:50:06.000Z"),
+      optimeDurableDate: ISODate("2023-01-08T17:50:06.000Z"),
+      lastAppliedWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+      lastDurableWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+      lastHeartbeat: ISODate("2023-01-08T17:50:15.808Z"),
+      lastHeartbeatRecv: ISODate("2023-01-08T17:50:16.483Z"),
+      pingMs: Long("0"),
+      lastHeartbeatMessage: '',
+      syncSourceHost: '127.0.0.1:27019',
+      syncSourceId: 0,
+      infoMessage: '',
+      configVersion: 8,
+      configTerm: 6
+    },
+    {
+      _id: 2,
+      name: '127.0.0.1:27024',
+      health: 1,
+      state: 2,
+      stateStr: 'SECONDARY',
+      uptime: 15444,
+      optime: { ts: Timestamp({ t: 1673200206, i: 1 }), t: Long("6") },
+      optimeDurable: { ts: Timestamp({ t: 1673200206, i: 1 }), t: Long("6") },
+      optimeDate: ISODate("2023-01-08T17:50:06.000Z"),
+      optimeDurableDate: ISODate("2023-01-08T17:50:06.000Z"),
+      lastAppliedWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+      lastDurableWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+      lastHeartbeat: ISODate("2023-01-08T17:50:15.782Z"),
+      lastHeartbeatRecv: ISODate("2023-01-08T17:50:16.548Z"),
+      pingMs: Long("0"),
+      lastHeartbeatMessage: '',
+      syncSourceHost: '127.0.0.1:27019',
+      syncSourceId: 0,
+      infoMessage: '',
+      configVersion: 8,
+      configTerm: 6
+    },
+    {
+      _id: 3,
+      name: '127.0.0.1:27025',
+      health: 1,
+      state: 2,
+      stateStr: 'SECONDARY',
+      uptime: 15441,
+      optime: { ts: Timestamp({ t: 1673200206, i: 1 }), t: Long("6") },
+      optimeDurable: { ts: Timestamp({ t: 1673200206, i: 1 }), t: Long("6") },
+      optimeDate: ISODate("2023-01-08T17:50:06.000Z"),
+      optimeDurableDate: ISODate("2023-01-08T17:50:06.000Z"),
+      lastAppliedWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+      lastDurableWallTime: ISODate("2023-01-08T17:50:16.395Z"),
+      lastHeartbeat: ISODate("2023-01-08T17:50:15.809Z"),
+      lastHeartbeatRecv: ISODate("2023-01-08T17:50:14.822Z"),
+      pingMs: Long("0"),
+      lastHeartbeatMessage: '',
+      syncSourceHost: '127.0.0.1:27019',
+      syncSourceId: 0,
+      infoMessage: '',
+      configVersion: 8,
+      configTerm: 6
+    }
+  ],
+  ok: 1,
+  lastCommittedOpTime: Timestamp({ t: 1673200216, i: 1 }),
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1673200216, i: 1 }),
+    signature: {
+      hash: Binary(Buffer.from("0000000000000000000000000000000000000000", "hex"), 0),
+      keyId: Long("0")
+    }
+  },
+  operationTime: Timestamp({ t: 1673200216, i: 1 })
+}
+####################################
+[direct: mongos] logistic> sh.status()
+shardingVersion
+{
+  _id: 1,
+  minCompatibleVersion: 5,
+  currentVersion: 6,
+  clusterId: ObjectId("63b8c316dc5855d8a554d822")
+}
+---
+shards
+[
+  {
+    _id: 'shard1Set',
+    host: 'shard1Set/127.0.0.1:27018,127.0.0.1:27020,127.0.0.1:27021',
+    state: 1,
+    topologyTime: Timestamp({ t: 1673053829, i: 3 })
+  },
+  {
+    _id: 'shard2Set',
+    host: 'shard2Set/127.0.0.1:27019,127.0.0.1:27023,127.0.0.1:27024',
+    state: 1,
+    topologyTime: Timestamp({ t: 1673053830, i: 3 })
+  }
+]
+---
+active mongoses
+[ { '6.0.3': 1 } ]
+---
+autosplit
+{ 'Currently enabled': 'yes' }
+---
+balancer
+{
+  'Currently running': 'no',
+  'Currently enabled': 'yes',
+  'Failed balancer rounds in last 5 attempts': 0,
+  'Migration Results for the last 24 hours': 'No recent migrations'
+}
+---
+databases
+[
+  {
+    database: { _id: 'config', primary: 'config', partitioned: true },
+    collections: {
+      'config.system.sessions': {
+        shardKey: { _id: 1 },
+        unique: false,
+        balancing: true,
+        chunkMetadata: [ { shard: 'shard1Set', nChunks: 1024 } ],
+        chunks: [
+          'too many chunks to print, use verbose if you want to force print'
+        ],
+        tags: []
+      }
+    }
+  },
+  {
+    database: {
+      _id: 'logistic',
+      primary: 'shard2Set',
+      partitioned: false,
+      version: {
+        uuid: new UUID("cb426d2e-fda6-4a54-8978-b5244bd37fa4"),
+        timestamp: Timestamp({ t: 1673053941, i: 1 }),
+        lastMod: 1
+      }
+    },
+    collections: {
+      'logistic.packages': {
+        shardKey: { 'from.city': 1 },
+        unique: false,
+        balancing: true,
+        chunkMetadata: [
+          { shard: 'shard1Set', nChunks: 2 },
+          { shard: 'shard2Set', nChunks: 3 }
+        ],
+        chunks: [
+          { min: { 'from.city': MinKey() }, max: { 'from.city': 'Gdansk' }, 'on shard': 'shard2Set', 'last modified': Timestamp({ t: 3, i: 1 }) },
+          { min: { 'from.city': 'Gdansk' }, max: { 'from.city': 'Gdynia' }, 'on shard': 'shard2Set', 'last modified': Timestamp({ t: 1, i: 3 }) },
+          { min: { 'from.city': 'Gdynia' }, max: { 'from.city': 'Sopot' }, 'on shard': 'shard2Set', 'last modified': Timestamp({ t: 1, i: 5 }) },
+          { min: { 'from.city': 'Sopot' }, max: { 'from.city': 'Warsaw' }, 'on shard': 'shard1Set', 'last modified': Timestamp({ t: 2, i: 0 }) },
+          { min: { 'from.city': 'Warsaw' }, max: { 'from.city': MaxKey() }, 'on shard': 'shard1Set', 'last modified': Timestamp({ t: 3, i: 0 }) }
+        ],
+        tags: []
+      }
+    }
+  }
+]
+```

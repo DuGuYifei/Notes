@@ -17,3 +17,6 @@ ans.append(word2.substring(id2));
 ans.append(word1.charAt(id1));
 return ans.toString();
 ```
+
+### 清空
+`sb.setLength(0)`

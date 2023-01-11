@@ -1,5 +1,8 @@
 # Hadoop_Pig
 
+## introduction and operations teaching
+[课件](AZTNBD_Pig.pdf)
+
 ## 操作
 
 ```bash

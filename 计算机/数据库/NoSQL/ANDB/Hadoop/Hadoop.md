@@ -25,6 +25,7 @@
    1. [BasicOperations](#basicoperations)
    2. [Combiner和Reducer](#combiner和reducer)
 7. [pig](#pig)
+8. [HBase](#hbase)
 
 ## 简介
 建立在 Google 的 [BigTable](../BigTable/BigTable.md) 的基础上，即文件系统的组织及其分布式处理。 它最初的用途是 Nutch 网络搜索引擎的存储子系统。
@@ -282,3 +283,6 @@ REDUCE: (word, list(number of occurences)) ->  (word, number of occurences)
 
 ## pig
 [pig](../Hadoop_Pig/Hadoop_Pig.md)
+
+## HBase
+[HBase](../Hadoop_HBase/Hadoop_HBase.md)

@@ -10,6 +10,7 @@
 7. [str.split(char)](#strsplitchar)
 8. [str.substring(int begin)](#strsubstringint-begin)
 9. [str.startsWith(string)](#strstartswithstring)
+10. ["x".repeat(n)](#xrepeatn)
 
 
 ## 对象？数据类型？
@@ -84,3 +85,6 @@ String[] splitAddr=address.split("\\^|@|#");
 
 ## str.startsWith(string)
 return boolean
+
+## "x".repeat(n)
+返回重复多少次的string

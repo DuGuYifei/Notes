@@ -90,6 +90,8 @@
 89. [explicit和implicit](explicit和implicit.md)
 90. [return赋值语句](return赋值语句.md)
 91. [iterator_prev_next](iterator_prev_next.md)
+92. [继承重写函数调用问题](继承重写函数调用问题.md)
+93. [virtual和=0的函数_虚函数和纯虚函数](virtual和=0的函数_虚函数和纯虚函数.md)
 
     
 ***WinAPI(below)***

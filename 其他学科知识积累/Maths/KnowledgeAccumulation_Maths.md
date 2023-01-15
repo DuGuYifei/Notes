@@ -21,6 +21,18 @@ int gcd(int a, int b){
     return gcd(b,a%b);
 }
 ```
+
+```java
+    public int gcd(int num1, int num2) {
+        while (num2 != 0) {
+            int temp = num1;
+            num1 = num2;
+            num2 = temp % num2;
+        }
+        return num1;
+    }
+```
+
 证明：
 [公约数](https://blog.csdn.net/qq_25847123/article/details/95753295)
 

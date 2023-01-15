@@ -26,19 +26,20 @@ This is my notes blog. It includes:
            2. git
            3. npm
            4. windows command
-        2. C++
-        3. CSharp
-        4. Hypertext
+        2. C
+        3. C++
+        4. CSharp
+        5. Hypertext
            1. css
            2. html
            3. sass
-        5. Java
-        6. JavaScript and TypeScript
-        7. Markdown
-        8. Programming language
+        6. Java
+        7. JavaScript and TypeScript
+        8. Markdown
+        9. Programming language
            1. ada & smalltalk
            2. haskell & prolog
-        9. Python
+        10. Python
     7. build model
     8. front end
        1. Tree of front-learning route

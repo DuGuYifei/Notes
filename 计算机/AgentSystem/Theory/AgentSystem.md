@@ -163,11 +163,13 @@ It’s similar to big corporation decision making scheme. Decisions on each laye
 ##### double-pass (dwuprzebiegowa)
 It’s similar to a military decision making scheme. Information is represented to next layers in more and more synthetic form. Two-pass gives a way of correcting a decision made in the lower layer based on the information from the higher level.
 这类似于军事决策方案。 信息以越来越多的合成形式呈现给下一层。  Two-pass 给出了一种根据来自较高层的信息来纠正较低层做出的决定的方法。
+
 ![](2023-01-18-10-10-55.png)
 
 #### Horizontal Architecture
 Layers are placed independently - when the data goes through a layer it goes directly to the decision module that decides on a reaction, so it needs to be very fast.
 层是独立放置的——当数据通过一个层时，它会直接进入决定反应的决策模块，因此它需要非常快。
+
 ![](2023-01-18-10-11-22.png)
 
 ## comparison of BDI and reactive approaches
@@ -243,10 +245,11 @@ efectors - the methods by which agent can influence the environment
 
 
 ## cooperation strategies
-The basic strategy shared by most collaboration protocols is to **decompose** a task into **subtasks**. The divide-and-conquer approach may allow the use of simpler, less powerful agents. There is a problem of place and type of decomposition:
-大多数协作协议共享的基本策略是将任务分解为子任务。 分而治之的方法可能允许使用更简单、功能更弱的代理。 
 
-见下一条 decomposition strategies
+The basic strategy shared by most collaboration protocols is to **decompose** a task into **subtasks**. The divide-and-conquer approach may allow the use of simpler, less powerful agents. There is a problem of place and type of decomposition: (见下一条 decomposition strategies)
+
+大多数协作协议共享的基本策略是将任务分解为子任务。 分而治之的方法可能允许使用更简单、功能更弱的代理。 存在分解的位置和类型的问题: （见下一条 decomposition strategies）
+
 
 ### cooperation protocal application
 Main goals and desirable properties of cooperation protocols:
@@ -346,7 +349,7 @@ They then try to reach an agreement by making concessions or looking for alterna
 2. Documents identified as common are assigned to one of the agents (for example, toss a coin). 
 3. Each agent retrieves his documents by paying for them.
 4. Agents share common documents with each other
-
+---
 1. 各agent广播自己需要的文件名。
 2. 被识别为公共的文件被分配给其中一个代理人（例如，掷硬币） 
 3. 每个代理人通过支付来检索他的文件。

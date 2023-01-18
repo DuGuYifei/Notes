@@ -39,7 +39,7 @@
 18. [blackboard 董事会](#blackboard-董事会)
     1. [特点：](#特点)
 19. [negotiations and negotiation sets](#negotiations-and-negotiation-sets)
-    1. [过程](#过程)
+    1. [面向任务的例子过程](#面向任务的例子过程)
     2. [谈判的基本特点](#谈判的基本特点)
 20. [properties of ideal negotiations](#properties-of-ideal-negotiations)
 21. [negotiations stability](#negotiations-stability)
@@ -241,8 +241,6 @@ efectors - the methods by which agent can influence the environment
 通用语言和世界描述（实体、概念）：Ontology
 
 ## communication, coordination and cooperation
-见negotiation sets
-
 
 ## cooperation strategies
 
@@ -344,7 +342,7 @@ They then try to reach an agreement by making concessions or looking for alterna
 在谈判过程中，代理人首先传达自己的立场，可能会出现分歧。
 然后他们试图通过做出让步或寻找替代方案来达成协议。
 
-### 过程
+### 面向任务的例子过程
 1. Each agent broadcasts the names of the documents it needs.
 2. Documents identified as common are assigned to one of the agents (for example, toss a coin). 
 3. Each agent retrieves his documents by paying for them.
@@ -381,15 +379,18 @@ There are three domains in which the issue of negotiation stability occurs：谈
 “最佳策略”没有通用的处方。 但是，有两种通用方法。
 1. 第一种方法适用于使用形式逻辑表达的言语行为的逻辑代理
 2. 第二种方法的基础是代理人的经济理性假设。 此外，代理人的集合必须很小，代理人必须使用共同的语言、共同的抽象规则（问题描述）并且必须制定出共同的解决方案（交易）。
-   常见的解决方案是以满足所有代理人目标的行动计划的形式出现。解决方案对代理人的效用（利润）是代理人的目标价值与实现目标的成本之间的差值。 每个代理人都试图最大化他的利润
+   常见的解决方案是以满足所有代理人目标的行动计划的形式出现。解决方案对代理人的效用（利润）是代理人的目标价值与实现目标的成本之间的差值。 每个代理人都试图最大化他的利润。
+
    `<T, A, C>`, task, agents, cost_function 
+
    `Uk(d) = c(Tk) – c(dk)`
 
 ### negotiation sets
 上面提到 代理人的经济理性假设 时，
 The basis of the second approach is the assumption of economic rationality of agents. In addition, the set of agents must be small, the agents must use a common language, common rules of abstraction (problem description) and must work out a common solution (deal).
 
-agent k, protocal d
+agent k, protocal d：
+
 `Uk(d) = c(Tk) – c(dk)`
 
 当代理人无法达成协议时，就会出现冲突协议 D。

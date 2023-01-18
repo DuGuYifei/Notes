@@ -20,6 +20,8 @@ This is my notes blog. It includes:
           1. Nginx
           2. Server knowlege accumulation
     5. Agent System
+       1. Theory learning
+       2. Jade
     6. computer language
         1. CLT
            1. linux Bash
@@ -45,7 +47,7 @@ This is my notes blog. It includes:
        1. Tree of front-learning route
        2. Vue
        3. nodejs
-    9. back end
+    9.  back end
        1. SpringBoot
     10. AI
        1. Building Environment

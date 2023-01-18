@@ -76,10 +76,10 @@ Rationality and flexibility are achieved by：
 Intelligence (in terms of rationality and elasticity) is achieved by having following behaviours:
 
 这个不如上面那条，上面是原文，下面这个以防遇见选择题：
-Learning
-Conclusions from experience
-Planning
-Problem solving and Decision making
+* Learning
+* Conclusions from experience
+* Planning
+* Problem solving and Decision making
 
 ## common properties of agents
 1. Autonomy 自治（自力更生）
@@ -249,6 +249,7 @@ The basic strategy shared by most collaboration protocols is to **decompose** a 
 见下一条 decomposition strategies
 
 ### cooperation protocal application
+Main goals and desirable properties of cooperation protocols:
 * Setting a common goal
 * Establishing a common task
 * Avoiding conflict situations

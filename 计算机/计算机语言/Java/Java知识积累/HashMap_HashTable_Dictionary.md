@@ -10,6 +10,14 @@
 ### put, replace
 使用replace来更新比put更安全
 
+### putIfAbsent
+```java
+for(int[]i:logs){
+    hmap.putIfAbsent(i[0], new HashSet<>());
+    hmap.get(i[0]).add(i[1]);
+}
+```
+
 ## 遍历
 ```java
 // Variable used in lambda expression should be final or effectively final

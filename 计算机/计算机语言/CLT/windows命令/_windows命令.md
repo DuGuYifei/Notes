@@ -13,3 +13,4 @@
 11. [ifconfig](ifconfig.md)
 12. [打开另一个cmd并执行命令](打开另一个cmd并执行命令.md)
 13. [延时](延时.md)
+14. [删除文件del](删除文件del.md)

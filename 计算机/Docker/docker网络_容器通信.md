@@ -12,6 +12,7 @@
 ```cmd
 docker network inspect bridge
 docker network inspect host
+docker network ls
 ```
 
 ### 使用Docker自定义网络

@@ -15,6 +15,7 @@
 4. [docker网络_容器通信](docker网络_容器通信.md)
 5. [挂载硬盘](挂载硬盘.md)
 6. [-p](-p.md)
+7. [-t_--tag](-t_--tag.md)
 
 ## Dockerfile 和 docker-compose.yml
 [启动命令](启动命令.md)

@@ -1,7 +1,7 @@
 # Spring Boot 知识积累
 
 ## 系统学习
-[SpringBoot_Angular_JS_TS 学校PDF](SpringBoot_Angular_JS_TS.pdf)
+[SpringBoot_Angular_JS_TS 学校PDF](../../InternetServiceArchitecture/_InternetServiceArchitecture.md)
 
 ## 注解
 1. [@service_@repository和@component的本质区别](@service_@repository和@component的本质区别.md)
@@ -37,6 +37,8 @@
 3. [Controller_Service_DAO](Controller_Service_DAO.md)
 4. [H2数据库配置](H2数据库配置.md)
 5. [IoC_DI_DL](IoC_DI_DL.md)
+6. [SpringBoot_MySQL](SpringBoot_MySQL.md)
+7. [前端form传来的POST](前端form传来的POST.md)
 
 ## 实操基础案例
 [老师操作simple-rpg](https://git.pg.edu.pl/internet-services-architectures/simple-rpg)

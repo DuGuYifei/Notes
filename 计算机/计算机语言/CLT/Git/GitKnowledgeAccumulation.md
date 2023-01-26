@@ -212,6 +212,7 @@ git push origin master #上传大文件
 ## 从缓存区删除文件（适用于删除仓库文件不过需要commit再push）
 ```bash
 git rm --cached */ffplay.exe
+git rm --cached -r **
 ```
 加上`-r`可以递归删除该文件夹下的所有文件
 

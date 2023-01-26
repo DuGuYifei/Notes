@@ -1,5 +1,6 @@
 # Docker
 
+[deployement](../InternetServiceArchitecture/09%20deployment%20introduction.pdf)
 [Docker 1小时快速上手教程，无废话纯干货](https://www.bilibili.com/video/BV11L411g7U1/?spm_id_from=333.337.search-card.all.click)
 [🎉 Docker 快速入门](https://docker.easydoc.net/doc/81170005/cCewZWoN/lTKfePfP)
 
@@ -12,13 +13,17 @@
 1. [容器](容器.md)
 2. [-itd](-itd.md)
 3. [--privileged](--privileged.md)
-4. [docker网络_容器通信](docker网络_容器通信.md)
-5. [挂载硬盘](挂载硬盘.md)
-6. [-p](-p.md)
-7. [-t_--tag](-t_--tag.md)
+4. [挂载硬盘](挂载硬盘.md)
+5. [-p](-p.md)
+6. [-t_--tag](-t_--tag.md)
+7. [exec](exec.md)
+8. [network](docker网络_容器通信.md)
 
 ## Dockerfile 和 docker-compose.yml
-[启动命令](启动命令.md)
+1. [docker_compose](docker_compose.md)
+2. [Dockerfile](Dockerfile.md)
+3. [command中bash脚本不可用](command中bash脚本不可用.md)
+
 
 ## 其他
 1. [控制台上下左右键](控制台上下左右键.md)
@@ -28,3 +33,8 @@
 5. [container和image](container和image.md)
 6. [创建反向代理](创建反向代理.md)
 7. [nginx](nginx.md)
+8. [docker网络_容器通信](docker网络_容器通信.md)
+9. [EXPOSE](EXPOSE.md)
+10. [java自定义](java自定义.md)
+11. [mysql](docker_mysql.md)
+12. [DockerHub](DockerHub.md)

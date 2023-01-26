@@ -25,4 +25,6 @@
 23. [string遍历](string遍历.md)
 24. [如果用char代替数组或字典的key](如果用char代替数组或字典的key.md)
 25. [判断是否是数字](判断是否是数字.md)
-26. []
+26. [XHR_AJAX_axios发送请求](XHR_AJAX_axios发送请求.md)
+27. [form发送请求](form发送请求.md)
+28. [下载文件请求](下载文件请求.md)

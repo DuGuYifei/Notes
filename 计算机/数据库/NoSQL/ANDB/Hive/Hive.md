@@ -3,8 +3,9 @@
 1. [定义](#定义)
 2. [Hive components](#hive-components)
 3. [Storing data](#storing-data)
-   1. [可以创建的两种table](#可以创建的两种table)
-   2. [数据可以如何储存](#数据可以如何储存)
+   1. [相关链接](#相关链接)
+   2. [可以创建的两种table](#可以创建的两种table)
+   3. [数据可以如何储存](#数据可以如何储存)
       1. [TextFile](#textfile)
       2. [SequenceFile](#sequencefile)
          1. [基本介绍](#基本介绍)
@@ -79,6 +80,11 @@ Components:
 The UI calls the execute interface to the Driver (step 1). The Driver creates a session handle for the query and sends the query to the compiler to generate an execution plan (step 2 and 5). The compiler gets the necessary metadata from the metastore (steps 3 and 4). The execution engine executes the query (big blue arrow)
 
 ## Storing data
+
+### 相关链接
+[Hadoop文件存储格式（Avro、Parquet、ORC及其他）_RunningShare的博客-CSDN博客_hadoop orc](https://blog.csdn.net/JacksonKing/article/details/126076959)
+[RCFile和ORCFile_JNSimba的博客-CSDN博客_rcfile和orcfile的区别](https://blog.csdn.net/u014307117/article/details/52381383)
+
 ### 可以创建的两种table
 1. Internal
   - 数据是**临时**的 

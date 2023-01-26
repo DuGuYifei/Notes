@@ -3,14 +3,18 @@
 1. [对象？数据类型？](#对象数据类型)
    1. [new 和 不new 的区别](#new-和-不new-的区别)
 2. [比较](#比较)
-3. [str.charAt(index)](#strcharatindex)
-4. [str.codePointAt(index)](#strcodepointatindex)
-5. [str.toCharArray() for-each 循环](#strtochararray-for-each-循环)
-6. [str.strip()](#strstrip)
-7. [str.split(char)](#strsplitchar)
-8. [str.substring(int begin)](#strsubstringint-begin)
-9. [str.startsWith(string)](#strstartswithstring)
-10. ["x".repeat(n)](#xrepeatn)
+3. [String函数](#string函数)
+   1. [String.valueOf()](#stringvalueof)
+4. [字符串函数](#字符串函数)
+5. [str 变量也可以直接用`"x"`](#str-变量也可以直接用x)
+   1. [str.charAt(index)](#strcharatindex)
+   2. [str.codePointAt(index)](#strcodepointatindex)
+   3. [str.toCharArray() for-each 循环](#strtochararray-for-each-循环)
+   4. [str.strip()](#strstrip)
+   5. [str.split(char)](#strsplitchar)
+   6. [str.substring(int begin)](#strsubstringint-begin)
+   7. [str.startsWith(string)](#strstartswithstring)
+   8. [str.repeat(n)](#strrepeatn)
 
 
 ## 对象？数据类型？
@@ -48,28 +52,36 @@ public class test1 {
     }
 }
 ```
+## String函数
 
-## str.charAt(index)
+### String.valueOf() 
+char,int注意区分
+
+## 字符串函数
+
+## str 变量也可以直接用`"x"`
+
+### str.charAt(index)
 ```java
 str.charAt(i)
 ```
 
-## str.codePointAt(index)
+### str.codePointAt(index)
 返回unicode值
 
-## str.toCharArray() for-each 循环
+### str.toCharArray() for-each 循环
 ```java
 for (char ch: "xyz".toCharArray()) {
 }
 ```
 
-## str.strip()
+### str.strip()
 Java字符串类strip()方法返回一个字符串，该字符串提供一个除去了所有前导和尾随空格的字符串。此方法类似于String.trim()方法。
 * `str.strip()`
 * `str.stripLeading()`
 * `str.stripTrailing()`
 
-## str.split(char)
+### str.split(char)
 ```java
 String[] splitAddr=address.split("@");
 
@@ -80,11 +92,11 @@ String[] splitAddr=address.split("\\^|@|#");
 
 默认忽略空值，保存空值:`split(";"，-1)`
 
-## str.substring(int begin)
+### str.substring(int begin)
 `word1.substring(id1)`
 
-## str.startsWith(string)
+### str.startsWith(string)
 return boolean
 
-## "x".repeat(n)
+### str.repeat(n)
 返回重复多少次的string

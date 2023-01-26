@@ -1,11 +1,13 @@
 # hashtable (unordered_set/map)
 
 1. [`map` 和 `unordered map`区别：](#map-和-unordered-map区别)
-2. [自己写hash给特殊的unordered_set](#自己写hash给特殊的unordered_set)
+2. [自己写hash给特殊的unordered\_set](#自己写hash给特殊的unordered_set)
 3. [自定义hash](#自定义hash)
-4. [遍历unordered_map](#遍历unordered_map)
-5. [遍历unoreder_set](#遍历unoreder_set)
-6. [函数](#函数)
+4. [遍历unordered\_map](#遍历unordered_map)
+5. [遍历unoreder\_set](#遍历unoreder_set)
+6. [声明](#声明)
+   1. [string/vector/其他container](#stringvector其他container)
+7. [函数](#函数)
    1. [count()](#count)
    2. [insert() 和 erase()](#insert-和-erase)
    3. [find](#find)
@@ -136,6 +138,23 @@ for(auto it=map.begin();it!=map.end();it++){
 12354
 12354
 1 2 3 5 4
+```
+
+## 声明
+### string/vector/其他container
+```cpp
+class Solution {
+public:
+    string greatestLetter(string s) {
+        unordered_set<char> ht(s.begin(), s.end());
+        for (int i = 25; i >= 0; i--) {
+            if (ht.count('a' + i) > 0 && ht.count('A' + i) > 0) {
+                return string(1, 'A' + i);
+            }
+        }
+        return "";
+    }
+};
 ```
 
 ## 函数

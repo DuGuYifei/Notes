@@ -28,6 +28,7 @@
 18. [aggregation](#aggregation)
 	 1. [count](#count)
 		 1. [group by 问题](#group-by-问题)
+19. [Prepared statement](#prepared-statement)
 
 
 ## definition
@@ -234,3 +235,11 @@ GROUP BY year;
 ### count
 #### group by 问题
 当count有其他列时，需要group by
+
+
+## Prepared statement
+Prepared statement
+`INSERT INTO products (name, price) VALUES (?, ?);`
+
+执行时：
+`INSER INTO products (name, price) VALUES ("bike", "10900");`

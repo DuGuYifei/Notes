@@ -12,11 +12,12 @@ This is my notes blog. It includes:
     3. Compiler
     4. server & internet
        1. Computer Network
-       2. domain, website and http(s)
-       3. AZURE
-       4. Tencent
-       5. Cloud server knowlege accumulation
-       6. Server
+       2. Network attack and defense
+       3. domain, website and http(s)
+       4. AZURE
+       5. Tencent
+       6. Cloud server operation knowlege accumulation
+       7. Server
           1. Nginx
           2. Server knowlege accumulation
     5. Agent System
@@ -79,14 +80,13 @@ This is my notes blog. It includes:
         2.  Game Design
         3.  VFX
     15. Blog
-    16. CTF
-    17. Docker
-    18. InternetServiceArchitecture
-    19. Web3
-    20. Leetcode
-    21. plugin development
-    22. PS
-    23. Personal thinking
+    16. Docker
+    17. InternetServiceArchitecture
+    18. Web3
+    19. Leetcode
+    20. plugin development
+    21. PS
+    22. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

@@ -24,11 +24,15 @@
     1. [symbol 和 use](#symbol-和-use)
     2. [xlink:href](#xlinkhref)
     3. [颜色属性](#颜色属性)
-14. [input](#input-1)
-    1. [name属性](#name属性)
-    2. [radio 单选](#radio-单选)
-    3. [checkbox 多选](#checkbox-多选)
-       1. [checked属性](#checked属性)
+14. [form](#form)
+    1. [method](#method)
+       1. [GET](#get)
+       2. [POST](#post)
+    2. [input](#input-1)
+       1. [name属性](#name属性)
+       2. [radio 单选](#radio-单选)
+       3. [checkbox 多选](#checkbox-多选)
+          1. [checked属性](#checked属性)
 
 ## html5标记
 <!DOCTYPE html>
@@ -191,9 +195,50 @@ css种获取案例：[attr()获取属性值配合data-](css知识积累/attr()�
 ### 颜色属性
 fill
 
-## input
+## form
+### method
+[HTML &lt;form&gt; 标签的 method 属性](https://www.w3school.com.cn/tags/att_form_method.asp)
 
-### name属性
+method 属性规定如何发送表单数据（表单数据发送到 action 属性所规定的页面）。
+
+表单数据可以作为 URL 变量（method="get"）或者 HTTP post （method="post"）的方式来发送。
+
+```html
+<form class="modal-content animate" action="/register" method="post">
+<div class="imgcontainer">
+<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+<img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+</div>
+<div class="container">
+<label for="uname"><b>Username</b></label>
+<input type="text" placeholder="Enter Username" name="uname" required>
+<label for="psw"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+<button type="submit">Register</button>
+</div>
+<div class="container" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+</div>
+</form>
+```
+
+#### GET
+相当于`<a href="http://www.example.com/example/program?x=28&y=66">`
+
+唯一的问题是，分隔参数所用的 & 符号也是字符实体中的插入符号。如果在 `<a>` 标签的 href 属性中放入一个 & 符号，浏览器就会将其后面的字符替换成相应的字符实体。
+
+为了防止出现这种情况，我们必须用它的实体对等物来替换 & 符号，也就是用 `&#38;` 或 `&amp;` 来替换。替换之后，上面的那个引用服务器应用程序的非表单示例将如下所示：
+
+`<a href="http://www.example.com/example/program?x=28&amp;y=66">`
+
+再就是一般的用IIS（非法关键字过滤器）过滤器的只接受get参数，这就是为什么那些大型搜索引擎后面都是一大堆的内容了，因为post不能发过去，只能用get。看看Goole或是yahoo等知道了！
+
+#### POST
+就是加到http header里发送post的正常post请求
+
+### input
+
+#### name属性
 比如单选多选时，相同name就会是同一个问题下的。
 例：
 ```html
@@ -207,7 +252,7 @@ fill
 	<input id="fd3" name="fd" type="radio" value="omnivore" v-model="foodType"/>
 ```
 
-### radio 单选
+#### radio 单选
 ```html
 	<label for="fd1">carnivore</label>
 	<input id="fd1" name="fd" type="radio" value="carnivore" v-model="foodType"/>
@@ -219,7 +264,7 @@ fill
 	<input id="fd3" name="fd" type="radio" value="omnivore" v-model="foodType"/>
 ```
 
-### checkbox 多选
+#### checkbox 多选
 
-#### checked属性
+##### checked属性
 `checkboxObject.checked = true|false`

@@ -1,4 +1,0 @@
-People told me it is stupid because messages can't be decoded, prove them wrong please.
-y=0xab;
-
-http://146.59.45.28:8080/

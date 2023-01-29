@@ -23,7 +23,7 @@
 | networking         | 联网       |
 | venue              | 会场       |
 
-## Market Leader Unit 2 Vocabulary
+## Unit 2
 | words                 | 解释       |
 | --------------------- | ---------- |
 | vocational training   | 职业培训   |
@@ -39,7 +39,7 @@
 | versatile             | 多才多艺的 |
 | pejorative            | 贬义的     |
 
-## Market Leader Unit 3 Vocabulary
+## Unit 3
 | words                                        | 解释                           |
 | -------------------------------------------- | ------------------------------ |
 | carbon emissions                             | 碳排放量                       |
@@ -56,7 +56,7 @@
 | watchdog                                     | 看门狗                         |
 | to collate (e.g. data, information, results) | 整理（例如数据、信息、结果）   |
 
-## Market Leader Vocabulary Review Unit 4
+## Unit 4
 | words | 解释 |
 | ----- | ---- |
 catalogues| 目录
@@ -72,7 +72,7 @@ unsolicited e-mails| 未经请求的电子邮件
 glass consumer| 被看穿的消费者
 appealing| 有吸引力的
 
-## Market Leader Vocabulary Review Unit 5
+## Unit 5
 | words                             | 解释                    |
 | --------------------------------- | ----------------------- |
 | absenteeism                       | 旷工                    |
@@ -137,3 +137,49 @@ appealing| 有吸引力的
 | pay out                | 付出           |
 | get away with          | 逃脱， to succeed in avoiding punishment for something|
 | bring down             | 打倒，降低           |
+
+## Unit 8
+| words                  | 解释           |
+| ---------------------- | -------------- |
+scope|范围，余地，机会
+expertise|专业知识
+implement/implementation|实施
+milestones|里程碑
+deliverables|可交付成果
+brief (n.)|简报
+debrief (v.n.)|详细询问，盘问
+tangible|有形的
+alignment|对齐，结盟
+
+## Unit 9
+| words                  | 解释           |
+| ---------------------- | -------------- |
+thrive|兴旺发达，繁荣
+downturn|经济低迷，衰退，下降
+deductible|可免除的，可减免的。免赔额，自负额
+viable (plan, idea, method, etc.)|可行的，可实施的，能独立发展的
+resilient/resilience|有弹性的，有复原能力的，有适应力的
+hidebound|守旧的，迂腐的
+slack (about business, market, etc)|萧条的，冷清的，松弛的
+
+## Unit 12
+| words                  | 解释           |
+| ---------------------- | -------------- |
+to delegate tasks|委派任务
+dependency|依靠，附属
+overview|概览，概述
+ahead of schedule|先于预定时间
+behind schedule|晚于预定时间
+to do sth idly|漫不经心地做某事，闲散地做某事
+slack time|空闲时间
+to juggle|权衡，平衡
+to set milestones|设置里程碑
+tender|柔软的，嫩的。投标，提议，提出。
+procurement|采购，政府采购
+bid (v.n.) (=offer)|投标，出价，命令，企图获得，努力争取
+cutbacks|削减
+company’s resources (=e.g.: staff, knowledge, money & time)|企业资源
+to keep track of …|跟踪，掌握...的进展情况
+to take a roll-call|点名
+to shout foul|喊粗口 （直译foul：犯规）
+cry foul|哭闹（比如抱怨，叫屈）

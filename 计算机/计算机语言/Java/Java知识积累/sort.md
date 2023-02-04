@@ -11,3 +11,29 @@ Arrays.sort(cuboids, (a,b)->{int s = (a[2] - b[2]); return s == 0? (a[1] - b[1] 
 
 a-b 升序
 b-a 降序
+
+
+```Java
+//降序排序
+Student studentWang = new Student("王小二", 10);
+Student studentZhang = new Student("张三", 1);
+Student studentGou = new Student("狗子", 99);
+Student studentZhao = new Student("赵六", 40);
+Student studentLi = new Student("李四", null);
+List<Student> students = new ArrayList<Student>(Arrays.asList(studentWang, studentZhang, studentGou, studentZhao, studentLi));
+Collections.sort(students, new Comparator<Student>() {
+    public int compare(Student o1, Student o2) {
+        if(null == o1.getAge()) {
+            return 1;
+        }
+        if(null == o2.getAge()) {
+            return -1;
+        }
+        return o2.getAge().compareTo(o1.getAge());
+    }
+});
+System.out.println("自定义对象，降序排序：");
+for(Student student : students) {
+    System.out.println(student.toString());
+}
+```

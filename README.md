@@ -77,8 +77,9 @@ This is my notes blog. It includes:
     13. small knowlege accumulation
     14. Game
         1.  Unity
-        2.  Game Design
-        3.  VFX
+        2.  UE
+        3.  Game Design
+        4.  VFX
     15. Blog
     16. Docker
     17. InternetServiceArchitecture

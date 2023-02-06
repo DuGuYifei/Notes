@@ -33,6 +33,8 @@ new String()和new String(“”)都是申明一个新的空字符串，**是空
 ![](2022-12-04-13-06-42.png)
 
 ## 比较
+`equals()` 方法、`equalsIgnoreCase()` 方法、 `compareTo()`方法
+
 ```java
 public class test1 {
     public static void main(String[] args) {

@@ -37,3 +37,8 @@ for(Student student : students) {
     System.out.println(student.toString());
 }
 ```
+
+## 根据另一个数组排序
+`Collections`即`List`可以，用上述`new Comparator`,
+
+`Arrays`不可以

@@ -1,19 +1,26 @@
 # hashtable (unordered_set/map)
 
-1. [`map` 和 `unordered map`区别：](#map-和-unordered-map区别)
-2. [自己写hash给特殊的unordered\_set](#自己写hash给特殊的unordered_set)
-3. [自定义hash](#自定义hash)
-4. [遍历unordered\_map](#遍历unordered_map)
-5. [遍历unoreder\_set](#遍历unoreder_set)
-6. [声明](#声明)
-   1. [string/vector/其他container](#stringvector其他container)
-7. [函数](#函数)
+1. [unordered\_map](#unordered_map)
+   1. [`map` 和 `unordered map`区别：](#map-和-unordered-map区别)
+   2. [遍历unordered\_map](#遍历unordered_map)
+2. [unordered\_set](#unordered_set)
+   1. [自己写hash给特殊的unordered\_set](#自己写hash给特殊的unordered_set)
+   2. [自定义hash](#自定义hash)
+   3. [遍历unoreder\_set](#遍历unoreder_set)
+   4. [string/vector/其他container 来初始化](#stringvector其他container-来初始化)
+   5. [unordered\_set 转 vector](#unordered_set-转-vector)
+   6. [unordered\_set(pair)的不能使用问题](#unordered_setpair的不能使用问题)
+3. [函数](#函数)
    1. [count()](#count)
    2. [insert() 和 erase()](#insert-和-erase)
    3. [find](#find)
+   4. [size()](#size)
 
 
-## `map` 和 `unordered map`区别：
+## unordered_map
+### `map` 和 `unordered map`区别：
+[map，unordered_map，set，unordered_set，priority_queue，堆，红黑树](map，unordered_map，set，unordered_set，priority_queue，堆，红黑树.md)
+
 
 ```c++
 //前者是红黑树，有序的，后者是无序的哈希表
@@ -42,7 +49,33 @@ key相同后一个插入失败，（`insert` or `emplace`）\
     //输出 b
 ```
 
-## 自己写hash给特殊的unordered_set
+### 遍历unordered_map
+输出顺序是 **是乱序的**，因为会根据hash值放入不同的bucket里。
+
+```cpp
+for(pair<int,int> kv:map){
+  cout<<kv.first<<kv.second<<endl;
+}
+
+for(auto kv:map){
+  cout<<kv.first<<kv.second<<endl;
+}
+for(auto&& [_,v]:map){
+  cout<<v<<endl;
+}
+///////////////////////////////////////////////
+
+for(unordered_map<int,int>::iterator it=map.begin();it!=map.end();it++){
+  cout<<it->first<<it->second<<endl;
+}
+
+for(auto it=map.begin();it!=map.end();it++){
+  cout<<it->first<<it->second<<endl;
+}
+```
+
+## unordered_set
+### 自己写hash给特殊的unordered_set
 [hash](hash和自构建hash函数给hashset.md)
 
 有时候，unordered_set 不会处理一些类型，需要自己写hash
@@ -76,7 +109,7 @@ key相同后一个插入失败，（`insert` or `emplace`）\
   unordered_set<pair<int, int>, decltype(hash_p)> lamp(0, hash_p);
   ```
 
-## 自定义hash
+### 自定义hash
 [自定义](hash和自构建hash函数给hashset.md)
 ```cpp
     static constexpr auto hash_t = [fn = hash<int>()](const tuple<int,int,int>& t)->size_t{
@@ -88,32 +121,7 @@ key相同后一个插入失败，（`insert` or `emplace`）\
 注意声明时那个0，是size_type
 
 
-## 遍历unordered_map
-输出顺序是 **是乱序的**，因为会根据hash值放入不同的bucket里。
-
-```cpp
-for(pair<int,int> kv:map){
-  cout<<kv.first<<kv.second<<endl;
-}
-
-for(auto kv:map){
-  cout<<kv.first<<kv.second<<endl;
-}
-for(auto&& [_,v]:map){
-  cout<<v<<endl;
-}
-///////////////////////////////////////////////
-
-for(unordered_map<int,int>::iterator it=map.begin();it!=map.end();it++){
-  cout<<it->first<<it->second<<endl;
-}
-
-for(auto it=map.begin();it!=map.end();it++){
-  cout<<it->first<<it->second<<endl;
-}
-```
-
-## 遍历unoreder_set
+### 遍历unoreder_set
 ```c++
     unordered_set<int> a;
     a.insert(1);
@@ -140,8 +148,8 @@ for(auto it=map.begin();it!=map.end();it++){
 1 2 3 5 4
 ```
 
-## 声明
-### string/vector/其他container
+### string/vector/其他container 来初始化
+
 ```cpp
 class Solution {
 public:
@@ -156,6 +164,13 @@ public:
     }
 };
 ```
+
+### unordered_set 转 vector
+[unordered_set转vector](unordered_set转vector.md)
+
+
+### unordered_set(pair)的不能使用问题
+[unordered_set(pair)的不能使用问题](unordered_set(pair)的不能使用问题.md)
 
 ## 函数
 ### count()
@@ -173,3 +188,6 @@ unordered_set.find()\
 ```cpp
 t_map.find(key) != t_map.end()
 ```
+
+### size()
+unordered_map.size()， 返回键值对个数

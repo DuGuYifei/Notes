@@ -1,6 +1,6 @@
 # unordered_set<pair<int,int>>的不能使用问题
 
-[unordered_set](hashtable(unordered_(set_map)).md)
+[unordered_set](unordered_set-unordered_map.md)
 [pair](pair.md)
 
 [哈希表之unordered_set<pairi<nt,int>案例与分析](https://blog.csdn.net/weixin_44636463/article/details/114069120)

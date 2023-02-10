@@ -1,5 +1,12 @@
 # vector
 
+1. [常用函数](#常用函数)
+2. [vector中存储正则表达式](#vector中存储正则表达式)
+3. [vector分配内存和reserve分配内存](#vector分配内存和reserve分配内存)
+4. [vector 用vector初始化](#vector-用vector初始化)
+5. [vector 声明省略式](#vector-声明省略式)
+
+
 ## 常用函数
 | code                                                                                 | Meaning                                                     |
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
@@ -32,3 +39,10 @@ reserve后还可以push_back，就像正常情况下capacity乘以2了但是还�
 **不包含 begin()+2**
 
 [iota生成顺序递增序列](iota生成顺序递增序列.md)
+
+## vector 声明省略式
+
+```cpp
+vector<vector<vector<int>>> d(n + 1, vector(6, vector<int>(16)));
+vector d(n + 1, vector(6, vector<int>(16)));
+```

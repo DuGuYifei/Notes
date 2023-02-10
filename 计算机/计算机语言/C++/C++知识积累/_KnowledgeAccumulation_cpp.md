@@ -96,6 +96,7 @@
 95. [前置声明](前置声明.md)
 96. [类名前的宏标识](类名前的宏标识.md)
 97. [函数指针](函数指针.md)
+98. [memmove和memcpy](memmove和memcpy.md)
 
     
 ***WinAPI(below)***

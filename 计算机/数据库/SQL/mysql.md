@@ -13,6 +13,7 @@
 6. [编程语言连接](#编程语言连接)
    1. [java](#java)
 7. [docker](#docker)
+8. [reserved words 保留名称](#reserved-words-保留名称)
 
 ## linux
 写在前面：
@@ -212,3 +213,6 @@ mysql -u root –p123456 wdg < /home/wdg/wdg.sql
 
 ## docker
 [docker mysql](../../Docker/docker_mysql.md)
+
+## reserved words 保留名称
+[fw_error_www](https://dev.mysql.com/doc/refman/8.0/en/keywords.html)

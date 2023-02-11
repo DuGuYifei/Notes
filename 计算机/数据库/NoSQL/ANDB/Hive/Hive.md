@@ -59,7 +59,7 @@ Hive 的组成部分是 **HiveQL**，它是一个类似于 SQL 的接口，广�
 
 HIVE 是 Hadoop 平台上存储在 HDFS 文件中的数据的 SQL 标准。 提供对 HDFS 数据的类似 SQL 的访问。  Hive 中的数据模型提供高级结构，类似于关系数据库中已知的表。
 
-**Hive Query Language (HQL)** 类似于 SQL，支持 [DDL、DML 和 DCL](../../../SQL/SQLKnowledgeAccumulation.md) 操作
+**Hive Query Language (HQL)** 类似于 SQL，支持 [DDL、DML 和 DCL](../../../SQL/SQL基础知识.md) 操作
 
 Hive 可以被视为存储在 HDFS 文件中的数据的**附加层**。
 

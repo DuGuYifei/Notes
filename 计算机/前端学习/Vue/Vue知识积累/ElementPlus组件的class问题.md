@@ -1,4 +1,4 @@
-# ElementPlus组建的class问题
+# ElementPlus组件的class问题
 
 组件的class就是组件名，如：
 

@@ -37,4 +37,4 @@ AND SUBSTRING((SELECT password FROM users WHERW user='admin'), 1, 1)='m'
 
 
 ## 防止
-[## Prepared statement](../../数据库/SQL/SQLKnowledgeAccumulation.md)
+[## Prepared statement](../../数据库/SQL/SQL基础知识.md)

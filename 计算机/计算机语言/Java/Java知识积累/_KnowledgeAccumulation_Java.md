@@ -45,3 +45,7 @@
 43. [transient和序列化(Serialization)](transient和序列化(Serialization).md)
 44. [函数参数是泛型](函数参数是泛型.md)
 45. [重写equals和hashCode](重写equals和hashCode.md)
+46. [SHA256](SHA256.md)
+47. [Date和Calendar](Date和Calendar.md)
+48. [UUID](UUID.md)
+49. [双冒号](双冒号.md)

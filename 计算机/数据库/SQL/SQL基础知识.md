@@ -11,24 +11,18 @@
 9. [SIGN](#sign)
 10. [WHILE](#while)
 11. [变量\_@\_Declare\_SET](#变量__declare_set)
-12. [Datetime](#datetime)
-	 1. [datediff](#datediff)
-	 2. [datepart](#datepart)
-	 3. [format](#format)
-13. [sum(a+b) 和 sum(a) + sum(b)](#sumab-和-suma--sumb)
-14. [DELETE](#delete)
+12. [DELETE](#delete)
 	 1. [删除所有](#删除所有)
-15. [Union](#union)
+13. [Union](#union)
 	 1. [Union ALL 和 Union](#union-all-和-union)
-16. [Join](#join)
+14. [Join](#join)
 	 1. [Natural join](#natural-join)
 	 2. [Full outer join](#full-outer-join)
 	 3. [left join](#left-join)
-17. [with](#with)
-18. [aggregation](#aggregation)
+15. [with](#with)
+16. [aggregation](#aggregation)
 	 1. [count](#count)
 		 1. [group by 问题](#group-by-问题)
-19. [Prepared statement](#prepared-statement)
 
 
 ## definition
@@ -39,11 +33,11 @@
 **DML:** Data Manipulation Language\
 **DCL:** Data Control Language
 
-component|whole name|key word
-:-:|-|-
-DDL|Data Definition Language|Create,Alter,Drop
-DML|Data Manipulation Language|Select,Insert,Update,Delete
-DCL|Data Control Language|Grant,Revoke
+| component | whole name                 | key word                    |
+| :-------: | -------------------------- | --------------------------- |
+|    DDL    | Data Definition Language   | Create,Alter,Drop           |
+|    DML    | Data Manipulation Language | Select,Insert,Update,Delete |
+|    DCL    | Data Control Language      | Grant,Revoke                |
 
 Tip:
 Select is also **DQL：Data Query Language**
@@ -127,52 +121,6 @@ BEGIN
 END
 ```
 
-## Datetime
-### datediff
-### datepart
-```sql
-select Route.ID_R,datediff(day,'20220120',DepartureTime) as ID_Date, datepart(hh,DepartureTime)* 60 + datepart(mi,DepartureTime) + 1 as ID_Time, ID_Train,70 as Distance,Amount_Seat,op from Route,
-(
-	select b.ID_R, cast((cast(sd as float)/ss) as decimal(2,2)) as op from
-	(
-		select ID_R, sum(dis) as sd from 
-		(
-			select ID_R, count(ID_Ticket) * ABS(Ordinal_Start - Ordinal_End)*10 as dis from Ticket,SubsetOfRoute
-			where Ticket.ID_SR = SubsetOfRoute.ID_SR
-			group by ID_R, Ordinal_Start,Ordinal_End
-		)a
-		group by ID_R
-	)b,
-	(
-		select ID_R, Amount_Seat * 70 as ss from Route
-	)c
-	where b.ID_R = c.ID_R
-)d
-where d.ID_R = Route.ID_R
-order by ID_R
-```
-
-### format
-```sql
-SELECT Route.ID_R, Departure_Hub_EndName, CASE SIGN(Amount_Seat - 420) WHEN 1 THEN CASE SIGN(Amount_Seat - 480) WHEN - 1 THEN 'medium' ELSE 'large' END ELSE 'small' END AS cathegory_amount, B.cathegory_dist, ID_Train, CASE format(DepartureTime,'mm') WHEN '00' THEN 0 ELSE 1 END AS isdelay, DepartureTime
-FROM Route,(SELECT ID_R, CASE SIGN(Route_Dist - 50) WHEN 1 THEN CASE SIGN(Route_Dist - 80) WHEN 1 THEN 'long' ELSE 'medium' END ELSE 'short' END AS cathegory_dist
-FROM (SELECT ID_R, MAX(Distance) AS Route_Dist
-    FROM SubsetOfRoute
-    GROUP BY ID_R) AS A) AS B
-WHERE Route.ID_R = B.ID_R
-ORDER BY ID_R
-```
-
-## sum(a+b) 和 sum(a) + sum(b)
-![](2022-10-17-00-00-24.png)
-![](2022-10-17-00-00-31.png)
-![](2022-10-17-00-01-15.png)
-sum(a+b) 会先横向算，如果表A是null，表B不是，但是那一行结果会是null
-
-sum(a) + sum(b) 会先纵向算，某个表中的某一行null不影响sum结果
-
-所以要用 a+b 可以用IS_NULL
-
 ## DELETE
 ### 删除所有
 ```sql
@@ -235,11 +183,3 @@ GROUP BY year;
 ### count
 #### group by 问题
 当count有其他列时，需要group by
-
-
-## Prepared statement
-Prepared statement
-`INSERT INTO products (name, price) VALUES (?, ?);`
-
-执行时：
-`INSER INTO products (name, price) VALUES ("bike", "10900");`

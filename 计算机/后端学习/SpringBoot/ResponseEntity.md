@@ -1,4 +1,11 @@
-# BadRequest添加错误信息
+# ResponseEntity
+
+## 常见语法
+1. `ResponseEntity.accepted().build()`
+2. ResponseEntity.notFound().build()`
+3. 
+
+## BadRequest添加错误信息
 
 ```java
     @PostMapping

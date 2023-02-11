@@ -22,23 +22,33 @@
 16. [@的属性的cascade](cascade.md)
 17. [@的属性的fetch](fetch.md) 
 18. [@Autowired](@Autowired.md)
+19. [@Column](@Column.md)
 
-## ResponseEntity
-1. [body-BadRequest添加错误信息](body-BadRequest添加错误信息.md)
-
-## 代码知识
-1. [双向单向数据库表映射关系](双向单向数据库表映射关系.md)
+## RESTFUL请求
+1. [body-BadRequest添加错误信息](ResponseEntity.md)
 2. [api带文件](api带文件.md)
 3. [请求处理](请求处理.md)
+4. [前端form传来的POST](前端form传来的POST.md)
+
+## 数据库问题
+1. [双向单向数据库表映射关系](双向单向数据库表映射关系.md)
+2. [日期时间_数据库](日期时间_数据库.md)
+3. [unique列](unique列.md)
+4. [find](find.md)
+5. [SpringBoot_MySQL](SpringBoot_MySQL.md)
+6. [H2数据库配置](H2数据库配置.md)
+7. [JPA和Hibernate](JPA和Hibernate.md)
+8. [字段带下划线findBy问题](字段带下划线findBy问题.md)
+
+## 代码知识
+1. [UriComponentsBuilder](UriComponentsBuilder.md)
 
 ## 其他
 1. [创建工程](创建工程.md)
 2. [工程目录介绍](工程目录介绍.md)
 3. [Controller_Service_DAO](Controller_Service_DAO.md)
-4. [H2数据库配置](H2数据库配置.md)
-5. [IoC_DI_DL](IoC_DI_DL.md)
-6. [SpringBoot_MySQL](SpringBoot_MySQL.md)
-7. [前端form传来的POST](前端form传来的POST.md)
+4. [IoC_DI_DL](IoC_DI_DL.md)
+
 
 ## 实操基础案例
 [老师操作simple-rpg](https://git.pg.edu.pl/internet-services-architectures/simple-rpg)

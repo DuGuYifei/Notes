@@ -1,5 +1,7 @@
 # 前端form传来的POST
 
+`@RequestBody`就不能使用`multipart/form-data`了，所以这里是RequestParam
+
 后端
 ```java
     @PostMapping

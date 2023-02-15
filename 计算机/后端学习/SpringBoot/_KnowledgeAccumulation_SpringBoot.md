@@ -25,7 +25,7 @@
 19. [@Column](@Column.md)
 
 ## RESTFUL请求
-1. [body-BadRequest添加错误信息](ResponseEntity.md)
+1. [ResponseEntity](ResponseEntity.md)
 2. [api带文件](api带文件.md)
 3. [请求处理](请求处理.md)
 4. [前端form传来的POST](前端form传来的POST.md)

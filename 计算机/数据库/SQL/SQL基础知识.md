@@ -19,8 +19,9 @@
 	 1. [Natural join](#natural-join)
 	 2. [Full outer join](#full-outer-join)
 	 3. [left join](#left-join)
-15. [with](#with)
-16. [aggregation](#aggregation)
+15. [UPDATE](#update)
+16. [with](#with)
+17. [aggregation](#aggregation)
 	 1. [count](#count)
 		 1. [group by 问题](#group-by-问题)
 
@@ -145,6 +146,16 @@ union 要去重，但是是先合并再去重，效率低，好的操作是先�
 
 ### left join
 左边保留行，右边Null表
+
+
+## UPDATE
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
+
 
 ## with
 ```sql

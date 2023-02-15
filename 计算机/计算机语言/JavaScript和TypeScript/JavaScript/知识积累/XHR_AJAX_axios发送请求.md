@@ -3,16 +3,16 @@
 1. [对比链接和关系](#对比链接和关系)
 2. [AJAX](#ajax)
 3. [Fetch](#fetch)
-   1. [特点：](#特点)
-   2. [示例](#示例)
+	1. [特点：](#特点)
+	2. [示例](#示例)
 4. [XHR](#xhr)
-   1. [POST](#post)
-   2. [GET](#get)
-   3. [DELETE](#delete)
+	1. [POST](#post)
+	2. [GET](#get)
+	3. [DELETE](#delete)
 5. [axios](#axios)
-   1. [axios 也提供了类似于 jQuery 中 $.ajax() 的函数](#axios-也提供了类似于-jquery-中-ajax-的函数)
-   2. [GET](#get-1)
-   3. [POST](#post-1)
+	1. [axios 也提供了类似于 jQuery 中 $.ajax() 的函数](#axios-也提供了类似于-jquery-中-ajax-的函数)
+	2. [GET](#get-1)
+	3. [POST](#post-1)
 
 
 ## 对比链接和关系
@@ -25,6 +25,8 @@ Asynchronous JavaScript And XML “异步的 Javascript 和 XML”
 Ajax 是一个技术统称，是一个概念模型，它囊括了很多技术，并不特指某一技术，它很重要的特性之一就是让页面实现局部刷新。
 
 局部刷新页面，无需重载整个页面。
+
+[readyState](../../../../前端学习/前端其他知识积累/readyState.md)
 
 ## Fetch
 Fetch 是在 ES6 出现的，它使用了 ES6 提出的 promise 对象。它是 XMLHttpRequest 的替代品。

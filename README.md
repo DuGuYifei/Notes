@@ -20,10 +20,7 @@ This is my notes blog. It includes:
        7. Server
           1. Nginx
           2. Server knowlege accumulation
-    5. Agent System
-       1. Theory learning
-       2. Jade
-    6. computer language
+    5. computer language
         1. CLT
            1. linux Bash
            2. git
@@ -43,13 +40,16 @@ This is my notes blog. It includes:
            1. ada & smalltalk
            2. haskell & prolog
         10. Python
-    7. build model
-    8. front end
+    6. build model
+    7. front end
        1. Tree of front-learning route
        2. Vue
        3. nodejs
-    9.  back end
+    8. back end
        1. SpringBoot
+       2. deployment
+    9. C++应用程序开发
+       1.  QT
     10. AI
        1. Building Environment
        2. Computer Vision
@@ -84,10 +84,13 @@ This is my notes blog. It includes:
     16. Docker
     17. InternetServiceArchitecture
     18. Web3
-    19. Leetcode
-    20. plugin development
-    21. PS
-    22. Personal thinking
+    19. Agent System
+       1. Theory learning
+       2. Jade
+    20. Leetcode
+    21. plugin development
+    22. PS
+    23. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

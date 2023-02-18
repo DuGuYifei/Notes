@@ -13,7 +13,7 @@
 11. [Optional](Optional.md)
 12. [Function](Function.md)
 13. [BiFunction](BiFuction.md)
-14. [List和ArrayList](List和ArrayList.md)
+14. [List和ArrayList的对比](List和ArrayList的对比.md)
 15. [数组](数组.md)
 16. [Collection](Collection.md)
 17. [new classname(params){@Override}](newClassname（params）{@Override}.md)

@@ -98,6 +98,7 @@
 97. [函数指针](函数指针.md)
 98. [memmove和memcpy](memmove和memcpy.md)
 99. [vector,map,unordered_map效率问题](vector,map,unordered_map效率问题.md)
+100. [const_cast](const_cast.md)
 
     
 ***WinAPI(below)***

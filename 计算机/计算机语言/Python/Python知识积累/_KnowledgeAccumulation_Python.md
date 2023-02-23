@@ -18,3 +18,5 @@
 16. [mutable_immutable](mutable_immutable.md)
 17. [转string的方法](转string的方法.md)
 18. [pandas](pandas.md)
+19. [index-url在requirement文件](index-url在requirement文件.md)
+20. [requirement_txt](requirement_txt.md)

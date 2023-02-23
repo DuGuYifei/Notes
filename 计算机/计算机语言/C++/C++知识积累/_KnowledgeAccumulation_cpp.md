@@ -119,6 +119,8 @@
 14. [CreateProcess()创建进程](CreateProcess()创建进程.md)
 15. [获取显示器放大倍数](获取显示器放大倍数.md)
 16. [SetWindowPos和MoveWindow](SetWindowPos和MoveWindow.md)
+17. [CreateNamedPipe](CreateNamedPipe.md)
+18. [全局监听鼠标](全局监听鼠标.md)
 
 ***WinAPI(above)***
 

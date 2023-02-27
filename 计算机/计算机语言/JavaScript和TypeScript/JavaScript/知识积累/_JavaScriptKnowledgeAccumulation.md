@@ -29,3 +29,7 @@
 27. [form发送请求](form发送请求.md)
 28. [下载文件请求](下载文件请求.md)
 29. [后端ResponseEntity的Timestamp在前端如何变为Date](后端ResponseEntity的Timestamp在前端如何变为Date.md)
+30. [读取和写入json](读取和写入json.md)
+31. [数组filter](数组filter.md)
+32. [indexedDB报错_put函数只能接受一个引用为0的对象](indexedDB报错_put函数只能接受一个引用为0的对象.md)
+33. [location.reload()](location.reload().md)

@@ -4,6 +4,30 @@
 
 Proxy 被用于了许多库和某些浏览器框架。在本文中，我们将看到许多实际应用。
 
+
+1. [Proxy](#proxy)
+   1. [不变量（Invariant）](#不变量invariant)
+2. [带有 “get” 捕捉器的默认值](#带有-get-捕捉器的默认值)
+   1. [请注意：请注意代理如何覆盖变量：](#请注意请注意代理如何覆盖变量)
+3. [使用 “set” 捕捉器进行验证](#使用-set-捕捉器进行验证)
+4. [别忘了返回 true](#别忘了返回-true)
+5. [使用 “ownKeys” 和 “getOwnPropertyDescriptor” 进行迭代](#使用-ownkeys-和-getownpropertydescriptor-进行迭代)
+6. [具有 “deleteProperty” 和其他捕捉器的受保护属性](#具有-deleteproperty-和其他捕捉器的受保护属性)
+   1. [类的私有属性](#类的私有属性)
+7. [带有 “has” 捕捉器的 “in range”](#带有-has-捕捉器的-in-range)
+8. [包装函数："apply"](#包装函数apply)
+9. [Reflect](#reflect)
+   1. [代理一个 getter](#代理一个-getter)
+10. [Proxy 的局限性](#proxy-的局限性)
+    1. [内建对象：内部插槽（Internal slot）](#内建对象内部插槽internal-slot)
+    2. [Array 没有内部插槽](#array-没有内部插槽)
+    3. [私有字段](#私有字段)
+    4. [Proxy != target](#proxy--target)
+       1. [Proxy 无法拦截严格相等性检查 ===](#proxy-无法拦截严格相等性检查-)
+11. [可撤销 Proxy](#可撤销-proxy)
+12. [总结](#总结)
+
+
 ## Proxy
 语法：
 ```js

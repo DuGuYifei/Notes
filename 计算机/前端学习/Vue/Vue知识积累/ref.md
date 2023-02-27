@@ -1,5 +1,28 @@
 # ref
 
+## DOM元素
+1. 废弃
+  ```
+  1）第1步：<input ref="item" type="text" /> ref后面跟一个字符串
+  2）第2步：this.refs.item.value  获取输入框中的数据
+  ```
+2. 方式二
+  ```
+  ref后面跟上一个回调函数，回调函数的参数就是当前的DOM元素
+  <input ref={(input)=>{
+      this.xxx = input; // 当前的DOM元素挂载到当前组件对象的xxx属性上面的
+  }} type="text" />
+  获取DOM元素：this.input.value
+  ```
+3. 方式三
+  ```
+  1）this.ref1 = React.createRef(); // ref1是一个私有属性
+  2）<input ref={this.ref1} type="text" />
+  3）this.ref1.current.value  获取DOM元素中的内容
+  ```
+
+
+## 带value
 ref() 将传入参数的值包装为一个带 .value 属性的 ref 对象：
 
 ```js

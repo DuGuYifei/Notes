@@ -41,3 +41,5 @@
 39. [Build问题](Build问题.md)
 40. [生命周期](生命周期.md)
 41. [配置跨域_代理_url](配置跨域_代理_url.md)
+42. [ElementPlus表格排序](ElementPlus表格排序.md)
+43. [ElementPlus图标icon不显示](ElementPlus图标icon不显示.md)

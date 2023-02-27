@@ -43,3 +43,6 @@
 41. [配置跨域_代理_url](配置跨域_代理_url.md)
 42. [ElementPlus表格排序](ElementPlus表格排序.md)
 43. [ElementPlus图标icon不显示](ElementPlus图标icon不显示.md)
+44. [ElementPlus上传文件](ElementPlus上传文件.md)
+45. [组件之间传递值](组件之间传递值.md)
+46. [部署问题](部署问题.md)

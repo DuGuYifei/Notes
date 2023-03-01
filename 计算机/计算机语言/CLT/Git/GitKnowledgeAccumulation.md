@@ -25,6 +25,10 @@
 19. [gh-pages的分支](#gh-pages的分支)
 20. [pull request](#pull-request)
     1. [当原主人更新时](#当原主人更新时)
+    2. [处理pull request](#处理pull-request)
+       1. [直接在原主人上修改](#直接在原主人上修改)
+       2. [直接拉取refs只读](#直接拉取refs只读)
+       3. [自己新建分支来解决](#自己新建分支来解决)
 21. [git commit 修改](#git-commit-修改)
     1. [继续上次commit](#继续上次commit)
 22. [git merge / rebase](#git-merge--rebase)
@@ -269,6 +273,39 @@ github只要是`gh-pages`的branch都可以同过`github.io/project`来访问，
 git remote add upstream 开源项目原地址
 git checkout master # 因为一般fork一个项目到自己的master后会自己再复制一个branch，所以要切换回去
 git pull --rebase upstream master  # 把最新的更新放到我的branch里
+```
+
+### 处理pull request
+
+#### 直接在原主人上修改
+```bash
+git remote add <pr-随便name> pr-url
+```
+但是pr主需要打开允许manager edit选项
+
+#### 直接拉取refs只读
+```bash
+git fetch origin pull/ID/head
+```
+
+#### 自己新建分支来解决
+当别人向你的 Git 仓库提交了一个 Pull Request（PR）时，你可以通过以下步骤来测试并合并该请求：
+
+1. 查看 PR：通过 Git 仓库的 Web 界面或 Git 客户端，查看该 PR 的内容和变更。
+2. 拉取 PR 分支：在本地克隆你的 Git 仓库之后，你可以使用命令 `git fetch origin pull/ID/head:new-branch-name`，其中 ID 是 PR 的 ID，new-branch-name 是一个新的本地分支名称，以检出该 PR 的代码。head是关键字不用管。
+3. 测试 PR：在新的本地分支上测试该 PR 的代码，包括运行测试用例、手动测试和代码审查等。
+4. 确认 PR：如果该 PR 没有任何问题，可以在 PR 页面中确认该请求，并编写合适的合并消息。
+5. 合并 PR：使用 `git merge` 命令将 PR 分支合并到主分支中。在执行合并之前，最好使用 `git fetch` 命令更新本地主分支，并使用 `git rebase` 命令将主分支与 PR 分支进行合并，以确保代码是最新的并且没有冲突。
+6. 推送更改：合并后的更改需要被推送到远程仓库，使用 git push 命令将更改推送到主分支。
+
+需要注意的是，如果有多个 PR 时，应该先将一个 PR 的更改合并到主分支中，然后再处理下一个 PR 的请求。这将确保在测试和合并代码时不会出现混乱。
+
+关于第五点：
+After I change pr code:
+```bash
+git add .
+git commit -m "fixed"
+git push
 ```
 
 ## git commit 修改

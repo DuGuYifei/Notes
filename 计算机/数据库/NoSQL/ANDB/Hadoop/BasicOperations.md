@@ -6,10 +6,10 @@
 
 
 ## Login to the Hadoop client machine
-[ssh](../../../../服务器网络/云服务器知识积累/ssh命令连接服务器.md)
+[ssh](../../../../服务器网络/云服务器操作知识积累/ssh命令连接服务器.md)
 
 ## 上传下载文件从 Hadoop client machine
-[scp 命令](../../../../服务器网络/云服务器知识积累/物理机与虚拟机文件互传.md)
+[scp 命令](../../../../服务器网络/云服务器操作知识积累/物理机与虚拟机文件互传.md)
 
 ## 查询时间
 `hdfs dfs -stat /user/Liu`
@@ -35,6 +35,10 @@
    hdfs dfs -copyFromLocal smalltext.txt /user/Liu/
    ```
    -put 类似
+    ```bash
+    hdfs dfs -put myfile /user/lada40
+    hdfs dfs -cat /user/lada40/myfile
+    ```
 4. 简单的map-reduce任务
     1. 将Hadoop.jar文件从本机上传到hadoop client machine
     2. 运行命令

@@ -89,6 +89,7 @@ This is my notes blog. It includes:
        2. Jade
     20. Leetcode
     21. plugin development
+        1.  VSCode
     22. PS
     23. Personal thinking
 3.  Other subjects

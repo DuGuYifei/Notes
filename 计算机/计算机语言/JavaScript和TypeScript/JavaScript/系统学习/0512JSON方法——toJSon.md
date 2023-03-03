@@ -1,5 +1,15 @@
 # 0512JSON方法——toJSon
 
+1. [JSON.stringify](#jsonstringify)
+2. [排除和转换：replacer](#排除和转换replacer)
+3. [格式化：space](#格式化space)
+4. [自定义 “toJSON”](#自定义-tojson)
+5. [JSON.parse](#jsonparse)
+6. [使用 reviver](#使用-reviver)
+7. [总结](#总结)
+
+
+
 假设我们有一个复杂的对象，我们希望将其转换为字符串，以通过网络发送，或者只是为了在日志中输出它。
 
 当然，这样的字符串应该包含所有重要的属性。

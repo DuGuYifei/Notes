@@ -1,19 +1,22 @@
 # XHR_AJAX_axios发送请求
 
-1. [对比链接和关系](#对比链接和关系)
-2. [AJAX](#ajax)
-3. [Fetch](#fetch)
+1. [nodejs内置](#nodejs内置)
+2. [对比链接和关系](#对比链接和关系)
+3. [AJAX](#ajax)
+4. [Fetch](#fetch)
 	1. [特点：](#特点)
 	2. [示例](#示例)
-4. [XHR](#xhr)
+5. [XHR](#xhr)
 	1. [POST](#post)
 	2. [GET](#get)
 	3. [DELETE](#delete)
-5. [axios](#axios)
+6. [axios](#axios)
 	1. [axios 也提供了类似于 jQuery 中 $.ajax() 的函数](#axios-也提供了类似于-jquery-中-ajax-的函数)
 	2. [GET](#get-1)
 	3. [POST](#post-1)
 
+## nodejs内置
+[nodejs内置的http模块](../../../../前端学习/nodejs/内置的http模块.md)
 
 ## 对比链接和关系
 [AJAX和XHR和Axios和Fetch_格雷狐思的博客-CSDN博客_xhr ajax axios fetch](https://blog.csdn.net/hangao233/article/details/122737838)

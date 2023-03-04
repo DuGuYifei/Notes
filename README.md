@@ -40,6 +40,8 @@ This is my notes blog. It includes:
            1. ada & smalltalk
            2. haskell & prolog
         10. Python
+        11. R
+        12. Lua
     6. build model
     7. front end
        1. Tree of front-learning route

@@ -3,18 +3,18 @@
 1. [对象？数据类型？](#对象数据类型)
    1. [new 和 不new 的区别](#new-和-不new-的区别)
 2. [比较](#比较)
-3. [String函数](#string函数)
+3. [字符串和数字的转换问题](#字符串和数字的转换问题)
+4. [String函数](#string函数)
    1. [String.valueOf()](#stringvalueof)
-4. [字符串函数](#字符串函数)
-5. [str 变量也可以直接用`"x"`](#str-变量也可以直接用x)
-   1. [str.charAt(index)](#strcharatindex)
-   2. [str.codePointAt(index)](#strcodepointatindex)
-   3. [str.toCharArray() for-each 循环](#strtochararray-for-each-循环)
-   4. [str.strip()](#strstrip)
-   5. [str.split(char)](#strsplitchar)
-   6. [str.substring(int begin)](#strsubstringint-begin)
-   7. [str.startsWith(string)](#strstartswithstring)
-   8. [str.repeat(n)](#strrepeatn)
+   2. [str 变量也可以直接用`"x"`](#str-变量也可以直接用x)
+   3. [str.charAt(index)](#strcharatindex)
+   4. [str.codePointAt(index)](#strcodepointatindex)
+   5. [str.toCharArray() for-each 循环](#strtochararray-for-each-循环)
+   6. [str.strip()](#strstrip)
+   7. [str.split(char)](#strsplitchar)
+   8. [str.substring(int begin)](#strsubstringint-begin)
+   9. [str.startsWith(string)](#strstartswithstring)
+   10. [str.repeat(n)](#strrepeatn)
 
 
 ## 对象？数据类型？
@@ -54,14 +54,35 @@ public class test1 {
     }
 }
 ```
+
+## 字符串和数字的转换问题
+`'0' + 1` 返回的是数字，直接加一个数字，会转成字符串。
+```java
+class Solution {
+    public String printBin(double num) {
+        StringBuilder ans = new StringBuilder("0.");
+        int cnt = 0;
+        while(cnt < 6)
+        {
+            cnt++;
+            num *= 2;
+            int digit = (int)num;
+            ans.append(digit); // 不能用append('0' + digit)
+            num -= digit;
+            if(num == 0)
+                return ans.toString();
+        }
+        return "ERROR";
+    }
+}
+```
+
 ## String函数
 
 ### String.valueOf() 
 char,int注意区分
 
-## 字符串函数
-
-## str 变量也可以直接用`"x"`
+### str 变量也可以直接用`"x"`
 
 ### str.charAt(index)
 ```java

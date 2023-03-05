@@ -42,6 +42,7 @@ This is my notes blog. It includes:
         10. Python
         11. R
         12. Lua
+        13. Go
     6. build model
     7. front end
        1. Tree of front-learning route

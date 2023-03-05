@@ -7,40 +7,41 @@
 3. [GitLens 和 在VSCode中使用自带git功能](#gitlens-和-在vscode中使用自带git功能)
 4. [Git系统基础介绍](#git系统基础介绍)
 5. [Git基本操作](#git基本操作)
-6. [Git删除branch](#git删除branch)
-7. [Git 切换分支](#git-切换分支)
+6. [更新链接](#更新链接)
+7. [Git删除branch](#git删除branch)
+8. [Git 切换分支](#git-切换分支)
    1. [Git 新仓库切换分支，其实就是创建分支](#git-新仓库切换分支其实就是创建分支)
-8. [设置默认分支为main](#设置默认分支为main)
-9. [重命名分支](#重命名分支)
-10. [改变git buffer支持大文件](#改变git-buffer支持大文件)
-11. [Git 大文件 LFS (Large file storage)](#git-大文件-lfs-large-file-storage)
-12. [asset release](#asset-release)
-13. [从缓存区删除文件（适用于删除仓库文件不过需要commit再push）](#从缓存区删除文件适用于删除仓库文件不过需要commit再push)
-14. [彻底删除（包括物理的）](#彻底删除包括物理的)
-15. [子模块](#子模块)
+9. [设置默认分支为main](#设置默认分支为main)
+10. [重命名分支](#重命名分支)
+11. [改变git buffer支持大文件](#改变git-buffer支持大文件)
+12. [Git 大文件 LFS (Large file storage)](#git-大文件-lfs-large-file-storage)
+13. [asset release](#asset-release)
+14. [从缓存区删除文件（适用于删除仓库文件不过需要commit再push）](#从缓存区删除文件适用于删除仓库文件不过需要commit再push)
+15. [彻底删除（包括物理的）](#彻底删除包括物理的)
+16. [子模块](#子模块)
     1. [子模块的更新](#子模块的更新)
-16. [忽略某个文件/文件夹](#忽略某个文件文件夹)
-17. [同时push多个仓库](#同时push多个仓库)
-18. [克隆到指定文件夹](#克隆到指定文件夹)
-19. [gh-pages的分支](#gh-pages的分支)
-20. [pull request](#pull-request)
+17. [忽略某个文件/文件夹](#忽略某个文件文件夹)
+18. [同时push多个仓库](#同时push多个仓库)
+19. [克隆到指定文件夹](#克隆到指定文件夹)
+20. [gh-pages的分支](#gh-pages的分支)
+21. [pull request](#pull-request)
     1. [当原主人更新时](#当原主人更新时)
     2. [处理pull request](#处理pull-request)
        1. [直接在原主人上修改](#直接在原主人上修改)
        2. [直接拉取refs只读](#直接拉取refs只读)
        3. [自己新建分支来解决](#自己新建分支来解决)
-21. [git commit 修改](#git-commit-修改)
+22. [git commit 修改](#git-commit-修改)
     1. [继续上次commit](#继续上次commit)
-22. [git merge / rebase](#git-merge--rebase)
-23. [git pull / fetch](#git-pull--fetch)
+23. [git merge / rebase](#git-merge--rebase)
+24. [git pull / fetch](#git-pull--fetch)
     1. [拉取代码，如果本地代码没有改变](#拉取代码如果本地代码没有改变)
-24. [git stash](#git-stash)
+25. [git stash](#git-stash)
     1. [应用场景1：改动同一分支/不想git pull产生新的commit点](#应用场景1改动同一分支不想git-pull产生新的commit点)
     2. [应用场景2：不小心改动其他分支](#应用场景2不小心改动其他分支)
-25. [强制推送](#强制推送)
-26. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
-27. [撤销](#撤销)
-28. [git cherry pick](#git-cherry-pick)
+26. [强制推送](#强制推送)
+27. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
+28. [撤销](#撤销)
+29. [git cherry pick](#git-cherry-pick)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -119,6 +120,11 @@ A通过ssh首次连接到B，B会将公钥1（host key）传递给A，A将公钥
 | git fetch  | 从远程获取代码库   |
 | git pull   | 下载远程代码并合并 |
 | git push   | 上传远程代码并合并 |
+
+## 更新链接
+```bash
+git remote set-url origin <new URL>
+```
 
 ## Git删除branch
 

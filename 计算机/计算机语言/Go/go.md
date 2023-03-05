@@ -1,6 +1,11 @@
 # go
 
-Go语言的关键字 "go" 主要有两种用途：
+## 语法
+```go
+go func(a int, b int) {
+    // do something with a and b
+}(10, 20)
+```
 
 ## 启动goroutine
 "goroutine"是 Go 语言中非常重要的概念，它是一种轻量级的线程，能够在单个程序中同时运行多个任务。在 Go 语言中，使用关键字 "go" 来启动一个新的goroutine，例如：

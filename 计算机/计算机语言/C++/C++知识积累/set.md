@@ -46,3 +46,23 @@ For a set of integer,
 * key1：lower_bound 没有的时候就是`end()`
 * key2：迭代器可以`*it`
 
+## merge
+```c++
+#include <iostream>
+#include <set>
+
+int main() {
+    std::set<int> a = {1, 3, 5};
+    std::set<int> b = {2, 4, 6};
+    a.merge(b);
+
+    for (int i : a) {
+        std::cout << i << ' ';
+    }
+
+    return 0;
+}
+
+//输出
+1 2 3 4 5 6
+```

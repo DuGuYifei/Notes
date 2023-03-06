@@ -51,7 +51,7 @@ This is my notes blog. It includes:
     8. back end
        1. SpringBoot
        2. deployment
-    9. C++应用程序开发
+    9. C++ desktop application development
        1.  QT
     10. AI
        1. Building Environment
@@ -76,25 +76,26 @@ This is my notes blog. It includes:
             1.  basic info
             2.  multidimensional mode
             3.  tabular mode
-    12. Algorithm
-    13. small knowlege accumulation
-    14. Game
+    12. Hadoop Advanced
+    13. Algorithm
+    14. small knowlege accumulation
+    15. Game
         1.  Unity
         2.  UE
         3.  Game Design
         4.  VFX
-    15. Blog
-    16. Docker
-    17. InternetServiceArchitecture
-    18. Web3
-    19. Agent System
+    16. Blog
+    17. Docker
+    18. InternetServiceArchitecture
+    19. Web3
+    20. Agent System
        1. Theory learning
        2. Jade
-    20. Leetcode
-    21. plugin development
+    21. Leetcode
+    22. plugin development
         1.  VSCode
-    22. PS
-    23. Personal thinking
+    23. PS
+    24. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

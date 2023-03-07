@@ -12,3 +12,4 @@ MinGW（Minimalist GNU for Windows）是在 Windows 平台上使用 GCC 的一�
 
 ## 命令
 1. [gcc_g++常用命令](gcc_g++常用命令.md)
+2. [-g](-g.md)

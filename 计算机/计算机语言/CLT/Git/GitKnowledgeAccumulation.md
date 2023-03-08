@@ -18,30 +18,31 @@
 13. [asset release](#asset-release)
 14. [从缓存区删除文件（适用于删除仓库文件不过需要commit再push）](#从缓存区删除文件适用于删除仓库文件不过需要commit再push)
 15. [彻底删除（包括物理的）](#彻底删除包括物理的)
-16. [子模块](#子模块)
+16. [子目录](#子目录)
+17. [子模块](#子模块)
     1. [子模块的更新](#子模块的更新)
-17. [忽略某个文件/文件夹](#忽略某个文件文件夹)
-18. [同时push多个仓库](#同时push多个仓库)
-19. [克隆到指定文件夹](#克隆到指定文件夹)
-20. [gh-pages的分支](#gh-pages的分支)
-21. [pull request](#pull-request)
+18. [忽略某个文件/文件夹](#忽略某个文件文件夹)
+19. [同时push多个仓库](#同时push多个仓库)
+20. [克隆到指定文件夹](#克隆到指定文件夹)
+21. [gh-pages的分支](#gh-pages的分支)
+22. [pull request](#pull-request)
     1. [当原主人更新时](#当原主人更新时)
     2. [处理pull request](#处理pull-request)
        1. [直接在原主人上修改](#直接在原主人上修改)
        2. [直接拉取refs只读](#直接拉取refs只读)
        3. [自己新建分支来解决](#自己新建分支来解决)
-22. [git commit 修改](#git-commit-修改)
+23. [git commit 修改](#git-commit-修改)
     1. [继续上次commit](#继续上次commit)
-23. [git merge / rebase](#git-merge--rebase)
-24. [git pull / fetch](#git-pull--fetch)
+24. [git merge / rebase](#git-merge--rebase)
+25. [git pull / fetch](#git-pull--fetch)
     1. [拉取代码，如果本地代码没有改变](#拉取代码如果本地代码没有改变)
-25. [git stash](#git-stash)
+26. [git stash](#git-stash)
     1. [应用场景1：改动同一分支/不想git pull产生新的commit点](#应用场景1改动同一分支不想git-pull产生新的commit点)
     2. [应用场景2：不小心改动其他分支](#应用场景2不小心改动其他分支)
-26. [强制推送](#强制推送)
-27. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
-28. [撤销](#撤销)
-29. [git cherry pick](#git-cherry-pick)
+27. [强制推送](#强制推送)
+28. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
+29. [撤销](#撤销)
+30. [git cherry pick](#git-cherry-pick)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -231,6 +232,11 @@ git rm --cached -r **
 ## 彻底删除（包括物理的）
 ```bash
 git rm --f  "文件路径"
+```
+
+## 子目录
+```bash
+git --git-dir=/path/to/repository.git --work-tree=.
 ```
 
 ## 子模块

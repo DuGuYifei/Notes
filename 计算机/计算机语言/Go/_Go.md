@@ -18,3 +18,6 @@
 16. [strconv库](strconv库.md)
 17. [json_Marshal](json_Marshal.md)
 18. [map](map.md)
+19. [len函数](len函数.md)
+20. [if_else](if_else.md)
+21. [不支持三目运算符](不支持三目运算符.md)

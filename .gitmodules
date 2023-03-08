@@ -1,6 +1,3 @@
 [submodule "计算机/LeetCode"]
 	path = 计算机/LeetCode
 	url = git@github.com:DuGuYifei/LeetCode_Record.git
-[submodule "计算机/Blog/Blog_gh_pages"]
-	path = 计算机/Blog/Blog_gh_pages
-	url = git@github.com:DuGuYifei/blog.git

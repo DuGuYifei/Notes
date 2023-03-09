@@ -259,9 +259,24 @@ git submodule add 子仓库url [目标文件夹]
 touch .gitignore
 ```
 编辑器打开生成的 .gitignore 文件，加入:
-
+```gitignore
 node_modules
 /*以及其他你想要忽略的文件或文件夹*/
+```
+
+也可以反排除
+```gitignore
+/*
+!/path/to/folder/ 
+```
+**注意:其实上面的会不起作用，因为pathtofolder是一个有子目录的文件夹，不可以是因为父目录被ignore了，可以写成这样：**
+```gitignore
+/*
+!source
+source/*
+!source/_posts
+!README.md
+```
 
 
 ## 同时push多个仓库

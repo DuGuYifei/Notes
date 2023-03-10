@@ -3,10 +3,11 @@ title: Personal_Webpage
 date: 2022-09-21 07:36:28
 tags:
  - website
- - front
 categories:
- - front
-description: The personal webpage in my github io (https://duguyifei.github.io).
+ - Front
+description: 
+ <img src="https://duguyifei.github.io/blog/Personal-Webpage/2022-09-21-07-40-08.png">
+ The personal webpage in my github io (https://duguyifei.github.io).
 ---
 
 # Introduction

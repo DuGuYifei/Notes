@@ -34,4 +34,13 @@ func main() {
 if providerURLs, ok := p.services[patchEntry.Name]; ok {
     
 }
+
+m := make(map[int]int)
+for i := 0; i < n; i++ {
+	m[y] = i
+	y = (y + nums[i]) % p
+	if v, ok := m[(y-x+p)%p]; ok {
+		ans = min(ans, i-v+1)
+	}
+}
 ```

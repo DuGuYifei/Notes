@@ -1,5 +1,5 @@
 ---
-title: 全栈项目KeyChcker密钥访问
+title: FullStack Project - KeyChcker <br /> An app wrapper supplying key access with time and machine limited and communication between wrapper and wrappee.
 date: 2023-02-28 00:33:53
 tags:
  - vue
@@ -9,8 +9,15 @@ tags:
  - mysql
  - python
 categories:
- - 全栈
-description: Prepare a "coat" for other programs which user can use a time-limited key to log in. User's machine is bound. Supervisor have has his own interface. Use SHA-256 encrytion, http request, Multi-processes communication(Shared Memory, Message Pipe), Multithread, WinAPI.
+ - FullStack
+description: 
+ <img src="https://duguyifei.github.io/blog/全栈项目KeyChcker密钥访问/2023-02-27-20-49-51.png" >
+ <img src="https://duguyifei.github.io/blog/全栈项目KeyChcker密钥访问/2023-02-27-21-04-32.png" >
+ Prepare a "coat" for other programs which user can use a time-limited key to log in. User's machine is bound. Supervisor have has his own interface.
+ <br />
+ Use SHA-256 encrytion, http request, Multi-processes communication(Shared Memory, Message Pipe), Multithread, WinAPI.
+ <br />
+ QtC++, Springboot, Vue.js, Python, Mysql.
 ---
 
 

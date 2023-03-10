@@ -1,12 +1,11 @@
 ---
-title: BagPack个人商铺
+title: BagPack - Personal shop record app
 date: 2023-02-28 00:46:14
 tags:
  - vue
  - indexedDB
- - typescript
 categories:
- - vue
+ - Front
 description: An app based on indexedDB which is used for merchant to record orders, customers with their pre-paid money and calculate benefit and balance.
 ---
 

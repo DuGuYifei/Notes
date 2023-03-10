@@ -1,13 +1,16 @@
 ---
 title: Yolov5 fps游戏AI挂的原理研究
-date: 2022-09-06 17:08:41
+date: 2022-09-16 13:08:41
 tags:
-- AI
-- Yolo
-- 机器视觉
+ - AI
+ - computer vision
+ - Yolo
+ - game
 categories:
-- AI
-description: 使用Yolov5对屏幕实时检测，并控制鼠标
+ - AI
+description: 
+ <img src="https://duguyifei.github.io/blog/Yolov5_fps游戏AI挂的原理研究/2022-09-06-17-22-27.png" >
+ 使用Yolov5对屏幕实时检测，并控制鼠标
 ---
 
 # 使用Yolov5对fps游戏AI挂的原理研究项目

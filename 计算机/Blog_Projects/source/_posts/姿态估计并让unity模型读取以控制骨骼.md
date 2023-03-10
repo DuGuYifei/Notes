@@ -1,14 +1,18 @@
 ---
 title: HMFormer姿态估计并让unity模型读取以控制骨骼
-date: 2022-09-14 16:33:38
+date: 2022-09-16 16:33:38
 tags:
- - Unity
+ - unity
+ - game
  - 姿态估计
  - AI
  - HMFormer
+ - computer vision
 categories:
  - AI
-description: 使用HMFormer进行非实时姿态估计，并使用unity读取结果以控制模型骨骼
+description: 
+ <img src="https://duguyifei.github.io/blog/姿态估计并让unity模型读取以控制骨骼/2022-09-14-17-01-16.png" >
+ 使用HMFormer进行非实时姿态估计，并使用unity读取结果以控制模型骨骼
 ---
 
 # 项目介绍

@@ -6,15 +6,17 @@
 3. [字符串和数字的转换问题](#字符串和数字的转换问题)
 4. [String函数](#string函数)
    1. [String.valueOf()](#stringvalueof)
-   2. [str 变量也可以直接用`"x"`](#str-变量也可以直接用x)
-   3. [str.charAt(index)](#strcharatindex)
-   4. [str.codePointAt(index)](#strcodepointatindex)
-   5. [str.toCharArray() for-each 循环](#strtochararray-for-each-循环)
-   6. [str.strip()](#strstrip)
-   7. [str.split(char)](#strsplitchar)
-   8. [str.substring(int begin)](#strsubstringint-begin)
-   9. [str.startsWith(string)](#strstartswithstring)
-   10. [str.repeat(n)](#strrepeatn)
+5. [str函数](#str函数)
+   1. [str 变量也可以直接用`"x"`](#str-变量也可以直接用x)
+   2. [str.charAt(index)](#strcharatindex)
+   3. [str.codePointAt(index)](#strcodepointatindex)
+   4. [str.toCharArray() for-each 循环](#strtochararray-for-each-循环)
+   5. [str.strip()](#strstrip)
+   6. [str.split(char)](#strsplitchar)
+   7. [str.substring(int begin)](#strsubstringint-begin)
+   8. [str.startsWith(string)](#strstartswithstring)
+   9. [str.repeat(n)](#strrepeatn)
+   10. [](#)
 
 
 ## 对象？数据类型？
@@ -82,6 +84,9 @@ class Solution {
 ### String.valueOf() 
 char,int注意区分
 
+
+## str函数
+
 ### str 变量也可以直接用`"x"`
 
 ### str.charAt(index)
@@ -123,3 +128,5 @@ return boolean
 
 ### str.repeat(n)
 返回重复多少次的string
+
+### 

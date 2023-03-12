@@ -12,3 +12,6 @@ linux: ip addr show
 ### 私有ip范围
 IPv4：
 ![](2022-11-10-00-26-02.png)
+
+### ip/mask
+[ip杠mask写法并非万能](ip杠mask写法并非万能.md)

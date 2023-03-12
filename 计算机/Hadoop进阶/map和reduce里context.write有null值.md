@@ -1,0 +1,5 @@
+# map和reduce里context.write有null值
+
+map函数里context.write的key和value都可以为null，但是reduce函数里context.write的key和value都不能为null。
+
+但是你可以在reduce函数里context.write使用NullWritable.get()来代替null。

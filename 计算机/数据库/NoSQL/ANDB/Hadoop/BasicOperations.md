@@ -3,6 +3,11 @@
 2. [上传下载文件从 Hadoop client machine](#上传下载文件从-hadoop-client-machine)
 3. [查询时间](#查询时间)
 4. [Simple operations on HDFS](#simple-operations-on-hdfs)
+   1. [1. 基础命令比如list the content](#1-基础命令比如list-the-content)
+   2. [2. 创建自己的文件夹](#2-创建自己的文件夹)
+   3. [3. 上传hadoop客户机文件到hdfs文件夹](#3-上传hadoop客户机文件到hdfs文件夹)
+   4. [4. 下载hdfs文件到hadoop客户机](#4-下载hdfs文件到hadoop客户机)
+   5. [5. 简单的map-reduce任务](#5-简单的map-reduce任务)
 
 
 ## Login to the Hadoop client machine
@@ -15,7 +20,7 @@
 `hdfs dfs -stat /user/Liu`
 
 ## Simple operations on HDFS
-1. 基础命令比如list the content
+### 1. 基础命令比如list the content
    ```bash
    hdfs dfs -ls /
    hdfs dfs -ls /user
@@ -24,11 +29,11 @@
    ```bash
    hdfs dfs -rm -r -f XXX
    ```
-2. 创建自己的文件夹
+### 2. 创建自己的文件夹
    ```bash
    hdfs dfs -mkdir /user/Liu
    ```
-3. 上传hadoop客户机文件到hdfs文件夹
+### 3. 上传hadoop客户机文件到hdfs文件夹
    **注意**
    `copyFromLocal`用`./`时会将所有文件包括隐藏文件上传，`./*`将只上传非隐藏文件。
    ```bash
@@ -39,7 +44,17 @@
     hdfs dfs -put myfile /user/lada40
     hdfs dfs -cat /user/lada40/myfile
     ```
-4. 简单的map-reduce任务
+
+### 4. 下载hdfs文件到hadoop客户机
+   ```bash
+   hdfs dfs -copyToLocal /user/Liu/smalltext.txt .
+   ```
+   -get 类似
+    ```bash
+    hdfs dfs -get /user/lada40/myfile /path
+    ```
+
+### 5. 简单的map-reduce任务
     1. 将Hadoop.jar文件从本机上传到hadoop client machine
     2. 运行命令
        ```bash

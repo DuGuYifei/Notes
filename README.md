@@ -51,8 +51,9 @@ This is my notes blog. It includes:
     8. back end
        1. SpringBoot
        2. deployment
-    9. C++ desktop application development
+    9. desktop application development
        1.  QT
+       2.  WPF
     10. AI
        1. Building Environment
        2. Computer Vision
@@ -91,11 +92,12 @@ This is my notes blog. It includes:
     20. Agent System
        1. Theory learning
        2. Jade
-    21. Leetcode
-    22. plugin development
+    21. Distributed
+    22. Leetcode
+    23. plugin development
         1.  VSCode
-    23. PS
-    24. Personal thinking
+    24. PS
+    25. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

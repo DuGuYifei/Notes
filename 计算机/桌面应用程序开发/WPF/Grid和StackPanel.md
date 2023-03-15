@@ -1,0 +1,7 @@
+# Grid和StackPanel
+
+Grid和StackPanel是WPF中常用的两种布局控件，它们在布局方式和使用方法上有所不同。
+
+Grid是一个**二维表格布局控件，可以将控件按照行和列的方式排列**，每个单元格中只能放置一个控件。在Grid中，可以通过设置RowDefinition和ColumnDefinition来指定行和列的大小、位置、对齐方式等。Grid的灵活性很高，可以用来实现复杂的布局，但同时也需要更多的代码和调整。
+
+StackPanel是一个**简单的线性布局控件，可以将控件按照水平或垂直方向依次排列**，每个控件会按照其在StackPanel中的位置自动调整大小。在StackPanel中，可以通过设置Orientation属性来指定排列方向，默认为垂直方向。StackPanel非常简单易用，适合用于简单的界面布局，但是对于复杂的布局则不够灵活。

@@ -13,14 +13,15 @@ gcc *.c
 * `-o` 选项可以指定输出文件的名称。链接多个目标文件。
 * `-l` 链接，包括动态库，静态库
   * 数学库的文件名是 `libm.a` 或 `libm.so`，所以链接时用 `-lm`。C++标准库的文件名是 `libstdc++.a` 或 `libstdc++.so`，所以链接时用 `-lstdc++`。
-  * `-L` 指库目录
+  * **注意命名`lib`前缀**
+* `-L` 指库目录
     * `-L.`当前目录
     * `-L/home/user/lib`
-    * PATH变量下的不需要
-  * 可以省略：
-    * `gcc -o my_program my_program.c /usr/lib/libm.a`
-    * `gcc -o my_program my_program.c -lm`
-    * `gcc -o my_program my_program.c -L/usr/lib/ -lm`
+    * ~~PATH变量下的不需要-L选项~~ 经过实测还是加上吧，不然会找不到[动态静态链接库](动态静态链接库.md)
+    * 可以省略：
+        * `gcc -o my_program my_program.c /usr/lib/libm.a`
+        * `gcc -o my_program my_program.c -lm`
+        * `gcc -o my_program my_program.c -L/usr/lib/ -lm`
 
 ```bash
 # 1.2.可以跳过，直接生成 object 文件

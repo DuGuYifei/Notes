@@ -23,3 +23,5 @@
 21. [if_else](if_else.md)
 22. [不支持三目运算符](不支持三目运算符.md)
 23. [遍历](遍历.md)
+24. [sort](sort.md)
+25. [二分搜索sortSearch](二分搜索sortSearch.md)

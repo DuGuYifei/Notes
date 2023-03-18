@@ -43,6 +43,7 @@
 28. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
 29. [撤销](#撤销)
 30. [git cherry pick](#git-cherry-pick)
+31. [项目迁移](#项目迁移)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -475,3 +476,10 @@ git reset HEAD^ hello.php  # 回退 hello.php 文件的版本到上一个版本
 * `git cherry-pick commit号1 commit号2`
 * `git cherry-pick commit号1..commit号n` `(1,n]`
 * `git cherry-pick commit号1^..commit号n` `[1,n]`
+
+## 项目迁移
+```bash
+git clone --bare 原仓库
+cd 原仓库.git
+git push --mirror 新仓库
+```

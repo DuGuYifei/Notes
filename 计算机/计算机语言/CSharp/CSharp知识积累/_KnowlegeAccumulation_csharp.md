@@ -23,3 +23,6 @@
 21. [对象初始化器](对象初始化器.md)
 22. [静态类](静态类.md)
 23. [using代码块](using代码块.md)
+24. [Directory_GetFiles](Directory_GetFiles.md)
+25. [Assert](Assert.md)
+26. [Any](Any.md)

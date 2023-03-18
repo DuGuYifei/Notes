@@ -78,6 +78,8 @@ This is my notes blog. It includes:
             2.  multidimensional mode
             3.  tabular mode
     12. Hadoop Advanced
+        1.  Hadoop
+        2.  Spark
     13. Algorithm
     14. small knowlege accumulation
     15. Game
@@ -85,19 +87,20 @@ This is my notes blog. It includes:
         2.  UE
         3.  Game Design
         4.  VFX
-    16. Blog
-    17. Docker
-    18. InternetServiceArchitecture
-    19. Web3
-    20. Agent System
+    16. 计算机图形学
+    17. Blog
+    18. Docker
+    19. InternetServiceArchitecture
+    20. Web3
+    21. Agent System
        1. Theory learning
        2. Jade
-    21. Distributed
-    22. Leetcode
-    23. plugin development
+    22. Distributed
+    23. Leetcode
+    24. plugin development
         1.  VSCode
-    24. PS
-    25. Personal thinking
+    25. PS
+    26. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

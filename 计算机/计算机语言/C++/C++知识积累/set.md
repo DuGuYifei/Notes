@@ -3,6 +3,23 @@
 ## 原理
 set原理是红黑树
 
+## 遍历
+```c++
+std::set<int> mySet {1, 2, 3, 4, 5};
+for (std::set<int>::const_iterator it = mySet.begin(); it != mySet.end(); ++it) {
+    std::cout << *it << " ";
+}
+// 输出：1 2 3 4 5
+```
+```c++
+std::set<int> mySet {1, 2, 3, 4, 5};
+for (auto element : mySet) {
+    std::cout << element << " ";
+}
+// 输出：1 2 3 4 5
+
+```
+
 ## erase
 set.erase(x)
 

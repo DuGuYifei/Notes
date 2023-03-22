@@ -10,6 +10,17 @@
 7. [Loading text](#loading-text)
 	1. [parquet](#parquet)
 	2. [truncate](#truncate)
+8. [lowercase](#lowercase)
+9. [replacing text](#replacing-text)
+10. [Tokenizing text (split)](#tokenizing-text-split)
+	 1. [split characters are discarded](#split-characters-are-discarded)
+	 2. [explode 拆分为行](#explode-拆分为行)
+	 3. [移除空行，筛选行 where](#移除空行筛选行-where)
+	 4. [添加行id monotonically\_increasing\_id](#添加行id-monotonically_increasing_id)
+11. [partitioning 数据](#partitioning-数据)
+	 1. [when来加列](#when来加列)
+	 2. [repartition](#repartition)
+		 1. [RDD（Resilient Distributed Datasets）](#rddresilient-distributed-datasets)
 
 
 ## 读取数据
@@ -114,13 +125,116 @@ print(df.first().value)
 print(df.count())
 ```
 
+如果是一个文件夹也可以,比如下面的[repartition](#repartition)
+
+```python
+df = spark.read.text('data')
+```
+
 ### parquet
 
 ```python
-df = spark.read.load('data.parquet')
-df.show(15, truncate=False)
+df1 = spark.read.load('data.parquet')
+# df1 = spark.read.parquet('data.parquet') 应该也行
+df1.show(15, truncate=False)
 ```
 
 ### truncate
 当truncate参数的值为True时（默认情况下），如果某一列的字符串长度超过了指定的宽度，PySpark将截断该字符串，并在结尾处添加省略号(...)以表示截断。当truncate参数的值为False时，则不对字符串进行截断，而是将完整的字符串显示出来。
+
+## lowercase
+
+```python
+df = df1.select(lower(col('value')))
+print(df.first())
+df.columns # ['lower(value)']
+
+df = df1.select(lower(col('value')).alias('v')
+df.columns # ['v']
+```
+
+## replacing text
+
+```python
+df = df1.select(regexp_replace('value', 'Mr\.', 'Mr').alias('v')) # Mr. -> Mr
+df = df1.select(regexp_replace('value', 'don\'t', 'do not').alias('v')) # don't -> do not
+```
+
+## Tokenizing text (split)
+
+```python
+df = df2.select(split('v', '[ ]').alias('words')) # split by space
+df.show(truncate=False)
+
+# ['I', 'am', 'a', 'student']
+```
+
+### split characters are discarded
+
+```python
+punctuations = '_|.\?\!\",\'\[\]\*()'
+df3 = df2.select(split('v', '[ %s]' % punctuations).alias('words')) # split by 空格+ punctuations, 这里把punctuations替换进 %s
+```
+
+### explode 拆分为行
+```python
+df4 = df3.select(explode('words').alias('word'))
+df4.show()
+```
+
+方便统计个数
+
+```python
+print(df3.count())
+print(df4.count())
+```
+
+### 移除空行，筛选行 where
+
+```python	
+nonblank_df = df.where(length('word') > 0))
+```
+
+### 添加行id monotonically_increasing_id
+
+```python
+df2 = df.select('word', monotonically_increasing_id().alias('id'))
+```
+
+## partitioning 数据
+
+### when来加列
+```python
+df2 = df.withColumn('title', when(df.id < 25000, 'Preface')
+							.when(df.id < 50000, 'Chapter 1')
+							.when(df.id < 75000, 'Chapter 2')
+							.otherwise('Chapter 3'))
+
+df2 = df2.withColumn('part', when(df2.id < 25000, 0)
+							.when(df2.id < 50000, 1)
+							.when(df2.id < 75000, 2)
+							.otherwise(3))
+							.show()
+```
+![](2023-03-22-07-14-06.png)
+
+### repartition
+
+```python
+df2 = df.repartition(4, 'part')
+print(df2.rdd.getNumPartitions()) # 4
+```
+
+会生成多个文件
+```bash
+ls sherlocl_parts
+```
+![](2023-03-22-07-18-13.png)
+
+```python
+df_parts = spark.read.text('sherlock_parts')
+```
+
+#### RDD（Resilient Distributed Datasets）
+上面函数可以从 DataFrame 对应的 RDD（弹性分布式数据集）中获取分区数。
 

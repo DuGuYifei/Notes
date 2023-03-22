@@ -12,6 +12,10 @@ Arrays.sort(cuboids, (a,b)->{int s = (a[2] - b[2]); return s == 0? (a[1] - b[1] 
 a-b 升序
 b-a 降序
 
+```java
+Arrays.sort(people, (a, b) -> a[0] != b[0] ? a[0] - b[0] : a[1] - b[1]);
+```
+
 
 ```Java
 //降序排序

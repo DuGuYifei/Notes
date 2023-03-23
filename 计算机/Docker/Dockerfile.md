@@ -22,8 +22,10 @@ CMD "/app/run.sh"
 
 ```CMD
 docker build . -t myImage
-docker container run -v /:/home/myDirectory/myImage
+docker build -t myimage /path/to/Dockerfile
+docker run -it --name mycontainer myimage
 ```
+
 
 ## EXPOSE
 [EXPOSE](EXPOSE.md)

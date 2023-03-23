@@ -44,6 +44,7 @@
 29. [撤销](#撤销)
 30. [git cherry pick](#git-cherry-pick)
 31. [项目迁移](#项目迁移)
+32. [tag](#tag)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -483,3 +484,15 @@ git clone --bare 原仓库
 cd 原仓库.git
 git push --mirror 新仓库
 ```
+
+## tag
+```bash
+git tag -a v1.0 -m "my version 1.0"  # 创建tag
+git tag -d v1.0  # 删除tag
+git push origin v1.0  # 推送tag到远程
+git push origin --tags  # 推送所有tag到远程
+git push origin :refs/tags/v1.0  # 删除远程tag
+```
+
+![](2023-03-23-01-01-01.png)
+![](2023-03-23-01-01-10.png)

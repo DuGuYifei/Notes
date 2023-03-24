@@ -1,27 +1,31 @@
 # pyspark
 
-1. [读取数据](#读取数据)
-2. [创建表和查询](#创建表和查询)
-3. [检查表结构](#检查表结构)
-4. [窗口函数](#窗口函数)
+1. [什么是pyspark](#什么是pyspark)
+2. [读取数据](#读取数据)
+3. [创建表和查询](#创建表和查询)
+4. [检查表结构](#检查表结构)
+5. [窗口函数](#窗口函数)
 	1. [WindowSpec](#windowspec)
-5. [dot notation (col, alias, withColumnRenamed, withColumn, agg, orderBy, limit, lead, groupBy)](#dot-notation-col-alias-withcolumnrenamed-withcolumn-agg-orderby-limit-lead-groupby)
-6. [groupBy](#groupby)
-7. [Loading text](#loading-text)
+6. [dot notation (col, alias, withColumnRenamed, withColumn, agg, orderBy, limit, lead, groupBy)](#dot-notation-col-alias-withcolumnrenamed-withcolumn-agg-orderby-limit-lead-groupby)
+7. [groupBy](#groupby)
+8. [Loading text](#loading-text)
 	1. [parquet](#parquet)
 	2. [truncate](#truncate)
-8. [lowercase](#lowercase)
-9. [replacing text](#replacing-text)
-10. [Tokenizing text (split)](#tokenizing-text-split)
+9. [lowercase](#lowercase)
+10. [replacing text](#replacing-text)
+11. [Tokenizing text (split)](#tokenizing-text-split)
 	 1. [split characters are discarded](#split-characters-are-discarded)
 	 2. [explode 拆分为行](#explode-拆分为行)
 	 3. [移除空行，筛选行 where](#移除空行筛选行-where)
 	 4. [添加行id monotonically\_increasing\_id](#添加行id-monotonically_increasing_id)
-11. [partitioning 数据](#partitioning-数据)
+12. [partitioning 数据](#partitioning-数据)
 	 1. [when来加列](#when来加列)
 	 2. [repartition](#repartition)
 		 1. [RDD（Resilient Distributed Datasets）](#rddresilient-distributed-datasets)
 
+
+## 什么是pyspark
+Pyspark是Apache Spark的Python API。Apache Spark是一个大数据处理框架，可以处理大规模数据，包括数据的存储、处理和分析。Pyspark提供了Python编程语言的接口，使得使用Python的开发人员可以方便地使用Apache Spark进行大数据处理。
 
 ## 读取数据
 
@@ -141,6 +145,8 @@ df1.show(15, truncate=False)
 
 ### truncate
 当truncate参数的值为True时（默认情况下），如果某一列的字符串长度超过了指定的宽度，PySpark将截断该字符串，并在结尾处添加省略号(...)以表示截断。当truncate参数的值为False时，则不对字符串进行截断，而是将完整的字符串显示出来。
+
+还可以用数字
 
 ## lowercase
 

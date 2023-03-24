@@ -53,3 +53,16 @@ spark.catalog.clearCache()
 * Only cache if more than one operation is to be performed
 * Unpersist when you no longer need the object
 * Cacge selectively
+
+## 哪些操作会使用缓存,哪些不会
+Spark中的缓存机制是基于RDD的，因此对于缓存的数据，所有基于RDD的操作都可以从中受益。以下是一些常见的基于RDD的操作，它们在使用缓存时可能会获得性能提升：
+1. count()
+2. collect()
+3. reduce()
+4. foreach()
+5. aggregate()
+6. groupBy()
+7. join() 和 cogroup(): 将两个RDD进行连接操作
+8. map() 和 flatMap(): 对RDD中的每个元素应用一个函数并返回一个新的RDD
+9. filter()
+10. first()

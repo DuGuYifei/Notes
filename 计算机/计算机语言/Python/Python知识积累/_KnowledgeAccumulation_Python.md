@@ -20,3 +20,6 @@
 18. [pandas](pandas.md)
 19. [index-url在requirement文件](index-url在requirement文件.md)
 20. [requirement_txt](requirement_txt.md)
+21. [timer](timer.md)
+22. [lambda表达式](lambda表达式.md)
+23. [set](set.md)

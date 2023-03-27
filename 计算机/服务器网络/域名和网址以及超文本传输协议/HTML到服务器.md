@@ -47,7 +47,7 @@ vim ngix.conf
 ```
 
 修改或添加：
-```bash
+```conf
 server {
     listen       80 default_server;
     listen       [::]:80 default_server;
@@ -61,3 +61,6 @@ server {
 根据include的位置打开相应文件可以找到server设置\
 并获得root默认位置信息\
 大概率这个文件名是default
+
+## html位置在
+`/var/www/html`

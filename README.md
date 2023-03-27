@@ -96,11 +96,12 @@ This is my notes blog. It includes:
        1. Theory learning
        2. Jade
     22. Distributed
-    23. Leetcode
-    24. plugin development
+    23. Large-scale Enterprise Application
+    24. Leetcode
+    25. plugin development
         1.  VSCode
-    25. PS
-    26. Personal thinking
+    26. PS
+    27. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

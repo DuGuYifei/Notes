@@ -1,4 +1,6 @@
-# DHPC
+# DHCP
+
+Dynamic Host Configuration Protocol
 
 What parameters can the DHCP server automatically assign
 1.  IP地址

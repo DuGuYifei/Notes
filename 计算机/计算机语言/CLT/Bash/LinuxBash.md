@@ -127,20 +127,25 @@ sleep 10 && java -jar /java/Animal.jar &
 
 ## $
 ### $?
-$?是用来得到最近一次命令的返回值
+`$?`是用来得到最近一次命令的返回值
 
 ## 安装卸载包管理
-
 ### apt-get
 #### 卸载
 [Ubuntu apt-get彻底卸载软件包_享学IT的博客-CSDN博客_卸载软件包](https://blog.csdn.net/get_set/article/details/51276609)
 ```bash
 # 删除软件及其配置文件
 apt-get --purge remove <package>
+# 删除软件及其配置文件和依赖包
+sudo apt-get purge --auto-remove git
 # 删除没用的依赖包
 apt-get autoremove <package>
 # 此时dpkg的列表中有“rc”状态的软件包，可以执行如下命令做最后清理：
 dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
+# 删除 git 包本身
+sudo apt-get remove git
+# 删除不再需要的 git 包和任何其他依赖包。
+sudo apt-get remove --auto-remove git
 ```
 
 当然如果要删除暂存的软件安装包，也可以再使用clean命令。

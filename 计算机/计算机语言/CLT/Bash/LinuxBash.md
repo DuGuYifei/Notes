@@ -49,6 +49,12 @@
 35. ['s///g'](#sg)
 36. [wait](#wait)
 37. [export](#export)
+38. [alias 自定义命令](#alias-自定义命令)
+39. [\>\>](#-2)
+40. [chmod](#chmod)
+    1. [参数](#参数)
+    2. [字母](#字母)
+    3. [数字](#数字)
 
 ## win下的linux进入win系统盘
 或者直接在问价夹导航栏里输入`bash`就像输入`cmd`打开command一样。
@@ -127,20 +133,25 @@ sleep 10 && java -jar /java/Animal.jar &
 
 ## $
 ### $?
-$?是用来得到最近一次命令的返回值
+`$?`是用来得到最近一次命令的返回值
 
 ## 安装卸载包管理
-
 ### apt-get
 #### 卸载
 [Ubuntu apt-get彻底卸载软件包_享学IT的博客-CSDN博客_卸载软件包](https://blog.csdn.net/get_set/article/details/51276609)
 ```bash
 # 删除软件及其配置文件
 apt-get --purge remove <package>
+# 删除软件及其配置文件和依赖包
+sudo apt-get purge --auto-remove git
 # 删除没用的依赖包
 apt-get autoremove <package>
 # 此时dpkg的列表中有“rc”状态的软件包，可以执行如下命令做最后清理：
 dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
+# 删除 git 包本身
+sudo apt-get remove git
+# 删除不再需要的 git 包和任何其他依赖包。
+sudo apt-get remove --auto-remove git
 ```
 
 当然如果要删除暂存的软件安装包，也可以再使用clean命令。
@@ -510,3 +521,37 @@ wait -n 45432 54346 76573
 ```bash
 export PATH=$PATH:/home/username/bin
 ```
+
+## alias 自定义命令
+```bash
+alias ll='ls -l'
+alias git='git.exe'
+```
+
+永久生效
+```bash
+echo "alias git='git.exe'" >> ~/.bashrc
+```
+
+## >>
+`>>`是追加重定向，将内容追加到文件末尾，而不是覆盖文件内容。
+
+## chmod
+### 参数
+`-R` 递归修改目录下的文件权限
+
+### 字母
+1. -x 代表可执行权限
+2. -w 代表可写权限
+3. -r 代表可读权限
+4. -rwx 代表可读可写可执行
+### 数字
+1. 4 代表可读
+2. 2 代表可写
+3. 1 代表可执行
+4. 7 = 4 + 2 + 1 代表可读可写可执行
+6. 6 = 4 + 2 代表可读可写
+7. 5 = 4 + 1 代表可读可执行
+8. 3 = 2 + 1 代表可写可执行
+
+![](2023-03-29-12-18-37.png)

@@ -33,3 +33,8 @@ wsl --list --verbose
 如果希望将新的 Linux 安装设置为 WSL 1，就不用将其设为默认版本。
 
 悟：在Microsoft store下载ubuntu时，有根据wsl有不同的版本。
+
+## 公用git
+```bash
+ln -s /mnt/c/Users/yourusername/.gitconfig ~/.gitconfig
+```

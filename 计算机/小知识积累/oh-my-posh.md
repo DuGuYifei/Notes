@@ -45,3 +45,6 @@ clink的安装程序带有“Autorun when cmd.exe starts"选项，但如果你�
 2. 在该键下新建一个字符串项，名为AutoRun
 3. 将AutoRun的值设置为一个bat文件的路径，比如d:\cmdstart.cmd
 4. 编辑d:\cmdstart.cmd，里面写一句 d:\tools\clink /inject （当然你也可以再添加其他命令
+
+## Vscode
+terminal会不显示一些东西，所以字体推荐：'MesloLGS Nerd Font Mono'

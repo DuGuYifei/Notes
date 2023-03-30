@@ -1,6 +1,8 @@
 # sort
 
-## sort
+## sort.Slice
+注意sort.Slice中的比较函数，放的是索引，不是里面的实体
+
 `nums []int`:
 ```go
 sort.Ints(nums)

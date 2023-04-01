@@ -16,7 +16,6 @@
    7. [str.substring(int begin)](#strsubstringint-begin)
    8. [str.startsWith(string)](#strstartswithstring)
    9. [str.repeat(n)](#strrepeatn)
-   10. [](#)
 
 
 ## 对象？数据类型？
@@ -128,5 +127,3 @@ return boolean
 
 ### str.repeat(n)
 返回重复多少次的string
-
-### 

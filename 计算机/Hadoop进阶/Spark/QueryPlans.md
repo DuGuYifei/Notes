@@ -11,7 +11,7 @@ EXPLAIN SELECT * FROM table;
 ```PYTHON
 df = spark.read.load('/temp/df.parquet')
 df.registerTempTable('df')
-sppark.sql('EXPLAIN SELECT * FROM df').first()
+spark.sql('EXPLAIN SELECT * FROM df').first()
 ``` 
 
 ![](2023-03-24-04-00-43.png)

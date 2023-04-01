@@ -60,6 +60,7 @@ This is my notes blog. It includes:
           1. class recognize
           2. pose detection
        3. AI algorithm
+       4. Python
     11. database
         1.  SQL
             1.  relational database

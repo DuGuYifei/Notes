@@ -2,6 +2,9 @@
 
 ## SparkContext类
 ```python
+conf = SparkConf().set("spark.python.profile", "true")
+sc = SparkContext('local', 'test', conf=conf, profiler_cls=MyCustomProfiler)
+
 # Verify SparkContext
 print(sc)
 

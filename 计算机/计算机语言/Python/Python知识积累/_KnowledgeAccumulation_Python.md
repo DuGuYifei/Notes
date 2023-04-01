@@ -23,3 +23,4 @@
 21. [timer](timer.md)
 22. [lambda表达式](lambda表达式.md)
 23. [set](set.md)
+24. [list](list.md)

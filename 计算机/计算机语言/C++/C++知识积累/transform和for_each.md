@@ -5,7 +5,7 @@
 ```cpp
 std::hash<int> hash_int;// Function object to hash int
 std::vector<int> {-5, -2, 2, 5, 10};
-std::transform(std::begin(n), std::end(n),std::ostream_iterator<size_t> (std:: cout," "),hash_int);
+std::transform(std::begin(n), std::end(n),std::ostream_iterator<size_t> (std:: cout," "), hash_int);
 ```
 
 注意第三个参数是一直是开始位置，但是并不会让string反过来
@@ -26,7 +26,7 @@ int main()
     string first,second;
     cin>>first;
     second.resize(first.size());
-    transform(first.begin(),first.end(),second.begin(),op);
+    transform(first.begin(),first.end(),second.begin(), op);
     cout<<second<<endl;
     return 0;
 }

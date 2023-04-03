@@ -8,7 +8,7 @@
 
 注：建议资源初始化及释放工作，分别放入方法setup()和cleanup()中进行
 
-2.执行顺序
+2. 执行顺序
+run程序，程序调用map/reduce
+
 setup---->Mapper或Reducer----->cleanup
-| |
-run

@@ -55,3 +55,4 @@
 49. [双冒号](双冒号.md)
 50. [System](System.md)
 51. [binarySearch](binarySearch.md)
+52. [Interface](Interface.md)

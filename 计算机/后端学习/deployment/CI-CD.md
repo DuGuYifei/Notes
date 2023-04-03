@@ -1,4 +1,9 @@
 # CI/CD
+
+## 实操
+[LSEA - CI/CD](../../LargeScaleEnterpriseApplication/CI_CD.md)
+
+## 概念
 CI/CD的核心概念是持续集成、持续交付和持续部署。
 
 * CI-Continuous integration，持续集成

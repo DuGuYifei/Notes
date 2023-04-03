@@ -1,5 +1,7 @@
 # 通过args参数和confiuration传递参数
 
+[Hadoop命令运行jar](Hadoop命令运行jar.md)
+
 ctrf + f: "args" or "conf"
 
 ```java

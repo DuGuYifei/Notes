@@ -3,6 +3,77 @@
 ## 原理
 set原理是红黑树
 
+## 降序
+```c++
+#include <iostream>
+#include <set>
+
+bool myCompare(int a, int b) {
+    return a > b; // 自定义比较函数，按降序排列
+}
+
+int main() {
+    std::set<int, decltype(&myCompare)> mySet(&myCompare);
+
+    mySet.insert(3);
+    mySet.insert(1);
+    mySet.insert(4);
+    mySet.insert(1); // 重复元素将被忽略
+
+    for (auto it = mySet.begin(); it != mySet.end(); it++) {
+        std::cout << *it << " ";
+    }
+    // 输出结果为：4 3 1
+    return 0;
+}
+```
+
+```c++
+class Solution {
+public:
+    bool myCompare(pair<int,int> a, pair<int,int> b) {
+        return a.first == b.first? a.second > b.second : a.first > b.first;
+    }
+    vector<int> prevPermOpt1(vector<int>& arr) {
+        int n = arr.size();
+        set<pair<int,int>, bool (Solution::*)(std::pair<int, int> a, std::pair<int, int> b)> numId(myCompare);
+        numId.emplace(arr[n - 1], n - 1);
+        for(int i = n - 2; i >= 0; i--){
+            if(arr[i] > numId.begin()->first){
+                
+            }
+        }
+        return arr;
+    }
+};
+
+/////////////////////////////////////////////
+bool myCompare(pair<int,int> a, pair<int,int> b) {
+    return a.first == b.first? a.second > b.second : a.first > b.first;
+}
+
+class Solution {
+public:
+
+    vector<int> prevPermOpt1(vector<int>& arr) {
+        int n = arr.size();
+        set<pair<int,int>, bool (std::pair<int, int> a, std::pair<int, int> b)> numId(myCompare);
+        numId.emplace(arr[n - 1], n - 1);
+        for(int i = n - 2; i >= 0; i--){
+            if(arr[i] > numId.begin()->first){
+                
+            }
+        }
+        return arr;
+    }
+};
+```
+
+## 迭代器取前一个值
+* 迭代器可以`int id = prev(numId.lower_bound({arr[i], -1}))->second;`
+* 也可以`auto it = mySet.lower_bound(3); it--;`
+* 但不能直接`mySet.lower_bound(3)--`
+
 ## 遍历
 ```c++
 std::set<int> mySet {1, 2, 3, 4, 5};

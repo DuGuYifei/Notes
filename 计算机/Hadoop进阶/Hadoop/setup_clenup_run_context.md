@@ -11,4 +11,6 @@
 2. 执行顺序
 run程序，程序调用map/reduce
 
+在运行一个 MapReduce 程序时，可以通过设置多个 Job 来完成不同的任务。在程序运行时，首先会运行 run 函数，在 run 函数中创建多个 Job 对象，对每个 Job 对象设置相应的 Mapper 和 Reducer 类，并进行一些配置。当所有的 Job 对象都创建好后，run 函数会调用 Job 对象的 waitForCompletion 方法，这个方法将会阻塞当前线程，并等待所有的 Job 完成。当所有的 Job 完成后，run 函数才会返回。
+
 setup---->Mapper或Reducer----->cleanup

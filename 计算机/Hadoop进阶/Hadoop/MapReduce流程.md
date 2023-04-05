@@ -13,8 +13,7 @@
 
 5. Shuffle 阶段（Shuffle and Sort）：
    1. Hadoop 框架自动处理，无需程序员干预。
-   2. Shuffle可以将来自同一个mapper的相同key的value合并
-   3. sort可以将来自不同mapper的相同key的value排序，**并不合并**
+   2. Shuffle可以将来自相同key的value合并
 
 6. Reducer 阶段（Reduce）：
    1. setup()：初始化 Reducer 阶段的工作，执行一次。

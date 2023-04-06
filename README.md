@@ -51,7 +51,9 @@ This is my notes blog. It includes:
     8. back end
        1. SpringBoot
        2. deployment
-    9. desktop application development
+       3. mvn
+       4. Swagger
+    9.  desktop application development
        1.  QT
        2.  WPF
     10. AI

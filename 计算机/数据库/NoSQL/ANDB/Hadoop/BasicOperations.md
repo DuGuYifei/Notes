@@ -8,6 +8,7 @@
    3. [3. 上传hadoop客户机文件到hdfs文件夹](#3-上传hadoop客户机文件到hdfs文件夹)
    4. [4. 下载hdfs文件到hadoop客户机](#4-下载hdfs文件到hadoop客户机)
    5. [5. 简单的map-reduce任务](#5-简单的map-reduce任务)
+   6. [6. fsck](#6-fsck)
 
 
 ## Login to the Hadoop client machine
@@ -400,3 +401,12 @@
         World   2
         hadoop  1
         ```
+### 6. fsck
+```bash
+hdfs fsck filename -files -blocks
+```
+fsck是Hadoop分布式文件系统（HDFS）的一个命令行工具，用于检查文件系统的完整性和一致性。它可以列出文件和目录的详细信息，如文件大小，副本数，块的位置等。它还可以检查文件系统中丢失的块，并尝试修复这些块。在进行大规模数据处理时，这个工具非常有用，因为它可以帮助您检测潜在的数据丢失或损坏问题。
+
+* filename: 需要检查的文件路径。
+* -files: 打印文件信息。
+* -blocks: 打印文件块信息。

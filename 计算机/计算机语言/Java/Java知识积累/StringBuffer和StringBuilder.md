@@ -20,3 +20,6 @@ return ans.toString();
 
 ### 清空
 `sb.setLength(0)`
+
+### reverse反转
+`sb.reverse()`

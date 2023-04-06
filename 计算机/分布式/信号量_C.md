@@ -1,7 +1,5 @@
 # C语言基础操作
 
-
-
 1. int sem_init(sem_t *sem,int pshared,unsigned int value);
    1. pshared控制信号量的类型，如果其值为0，就表示这个信号量是当前进程的局部信号量，否则信号量就可以在多个进程之间共享，
    2. value为sem的初始值。

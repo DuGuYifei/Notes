@@ -100,6 +100,7 @@
 99. [vector,map,unordered_map效率问题](vector,map,unordered_map效率问题.md)
 100. [const_cast](const_cast.md)
 101. [NVRO](NVRO.md)
+102. [reverse](reverse.md)
     
 ***WinAPI(below)***
 

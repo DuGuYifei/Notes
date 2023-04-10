@@ -10,6 +10,7 @@
 6. [list.contains(x)](#listcontainsx)
 7. [Remove](#remove)
 8. [list.removeAll(collection\<?\> c) 和 clear()](#listremoveallcollection-c-和-clear)
+9. [list.toArray()](#listtoarray)
 
 
 ## 两种List
@@ -104,3 +105,11 @@ list.forEach(System.out::println);
 * clear是删除Collection对象中的所有元素，即清空Collection对象。
 * removeAll是删除所有c里的对象。
 
+## list.toArray()
+* `toArray()` 返回一个Object数组
+* `toArray(T[] a)` 返回一个T类型的数组
+```java
+res.toArray(new Integer[res.size()])l; // 只能Integer，不能int，且不能隐式转换int[]
+
+return res.stream().mapToInt(Integer::valueOf).toArray();
+```

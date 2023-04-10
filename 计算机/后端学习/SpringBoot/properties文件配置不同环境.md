@@ -1,0 +1,34 @@
+# properties文件配置不同环境
+
+1. application.properties
+
+```properties
+spring.profiles.active=dev
+```
+
+2. application-dev.properties
+
+```properties
+server.port=8081
+```
+
+3. application-prod.properties
+
+```properties
+server.port=8082
+```
+
+4. application-test.properties
+
+```properties
+server.port=8083
+```
+
+5. 或缺环境
+```java
+Environment env = applicationContext.getEnvironment();
+String[] activeProfiles = env.getActiveProfiles();
+for (String profile : activeProfiles) {
+	System.out.println("当前环境为：" + profile);
+}
+```

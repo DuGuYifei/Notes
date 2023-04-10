@@ -16,3 +16,8 @@ List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
 List<Integer> squaresList = numbers.stream().map( i -> i*i).distinct().collect(Collectors.toList());
 ```
 
+## stream.IntStream.toArray()
+```java
+List<Integer> res = new ArrayList<>();
+return res.stream().mapToInt(Integer::valueOf).toArray();
+```

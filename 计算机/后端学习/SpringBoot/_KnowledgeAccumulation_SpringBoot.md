@@ -5,24 +5,25 @@
 
 ## 注解
 1. [@service_@repository和@component的本质区别](@service_@repository和@component的本质区别.md)
-2. [@Bean和@Component区别](@Bean和@Component区别.md)
-3. [@Repository](@Repository.md)
-4. [@XXXMapping](@XXXMapping.md)
-5. [@RestController和@Controller](@RestController和@Controller.md)
-6. [@PathVariable@RequestParam@PathParam@QueryParam](@PathVariable@RequestParam@PathParam@QueryParam.md)
-7. [@RequestBody](@RequestBody)
-8. [@Entity@Table](@Entity@Table.md)
-9. [@Basic](@Basic.md)
-10. [@GeneratedValue](@GeneratedValue.md)
-11. [@Transient](@Transient.md)
-12. [@Transaction](@Transaction.md)
-13. [@JoinColumn](@JoinColumn.md)
-14. [@OneToMany@ManyToOne](@OneToMany@ManyToOne.md)
-15. [@OneToMany的mappedby](@OneToMany的mappedby.md)
-16. [@的属性的cascade](cascade.md)
-17. [@的属性的fetch](fetch.md) 
-18. [@Autowired](@Autowired.md)
-19. [@Column](@Column.md)
+2. [@Configuration](@Configuration.md)
+3. [@Bean和@Component区别](@Bean和@Component区别.md)
+4. [@Repository](@Repository.md)
+5. [@XXXMapping](@XXXMapping.md)
+6. [@RestController和@Controller](@RestController和@Controller.md)
+7. [@PathVariable@RequestParam@PathParam@QueryParam](@PathVariable@RequestParam@PathParam@QueryParam.md)
+8. [@RequestBody](@RequestBody)
+9.  [@Entity@Table](@Entity@Table.md)
+10. [@Basic](@Basic.md)
+11. [@GeneratedValue](@GeneratedValue.md)
+12. [@Transient](@Transient.md)
+13. [@Transaction](@Transaction.md)
+14. [@JoinColumn](@JoinColumn.md)
+15. [@OneToMany@ManyToOne](@OneToMany@ManyToOne.md)
+16. [@OneToMany的mappedby](@OneToMany的mappedby.md)
+17. [@的属性的cascade](cascade.md)
+18. [@的属性的fetch](fetch.md) 
+19. [@Autowired](@Autowired.md)
+20. [@Column](@Column.md)
 
 ## RESTFUL请求
 1. [ResponseEntity](ResponseEntity.md)
@@ -42,6 +43,8 @@
 
 ## 代码知识
 1. [UriComponentsBuilder](UriComponentsBuilder.md)
+2. [properties文件配置不同环境](properties文件配置不同环境.md)
+3. [获取properties文件内容](../../计算机语言/Java/Java知识积累/properties文件)
 
 ## 其他
 1. [创建工程](创建工程.md)

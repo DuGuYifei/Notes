@@ -1,5 +1,11 @@
 # @Bean和@Component区别
 
+## 自我理解
+1. @Bean注解的作用是将方法的返回对象实例化注入到Spring容器中，而@Component注解的作用是将类注入到Spring容器中。
+2. Componeng本质上就是将一个类实例化为一个Spring bean，用于在Spring容器中管理该类的生命周期和依赖注入。使用@Component注解标记的类会被自动注册到Spring应用程序上下文中，以便在应用程序的其他地方使用。
+3. 无论是使用@Component注解还是其他注解，它们本质上都是将一个类实例化为Spring bean，并将其添加到Spring容器中管理。在应用程序中，可以使用@Autowired或@Resource等注解将这些bean注入到其他组件中，以便在应用程序中使用它们。
+
+## 学习记录
 [@bean注解和@component注解的区别_Spring 中的一些注解_我鸿的博客-CSDN博客](https://blog.csdn.net/weixin_35544490/article/details/112143211)
 
 1. 作用对象不同：@Component 注解作用于**类**，而 @Bean 注解作用于**方法**

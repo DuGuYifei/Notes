@@ -1,6 +1,9 @@
 # properties文件
 
-```
+
+文件是:`src/liuyifei/alchemists/configure.properties`
+
+```properties
 alchemist.herbPrice = 20
 ```
 

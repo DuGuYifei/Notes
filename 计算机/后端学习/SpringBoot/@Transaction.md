@@ -1,4 +1,7 @@
 # @Transaction
+
+老旧了不需要了
+
 [Spring 之 @Transaction 详解_岁月安然的博客-CSDN博客_@transaction](https://blog.csdn.net/baidu_38083619/article/details/106085287)
 
 @Transaction 是 Spring 提供用来控制事务回滚/提交的一个注解，让我们从编程式注解转换到声明式注解。在这里就不做过多的撰述，今天主要来看下 @Transaction 里面的属性使用。

@@ -3,7 +3,7 @@
 1. application.properties
 
 ```properties
-spring.profiles.active=dev
+spring.profiles.active=dev # 可以改成其他的，会自动读取下面对应文件的配置
 ```
 
 2. application-dev.properties

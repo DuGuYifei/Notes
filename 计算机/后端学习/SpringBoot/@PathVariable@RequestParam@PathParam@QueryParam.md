@@ -1,5 +1,13 @@
 # @PathVariable@RequestParam@PathParam@QueryParam
 
+1. [区别](#区别)
+2. [@PathVariable](#pathvariable)
+3. [PathParam](#pathparam)
+4. [@RequestParam](#requestparam)
+   1. [案例](#案例)
+5. [@QueryParam](#queryparam)
+
+## 区别
 1. Spring: 
    RequestParam + PathVariable
 2. JAX-RS(**JAVA EE6自带**)(**注解中只有一个配置参数**): 
@@ -23,6 +31,10 @@
 
 
 ## @RequestParam
+
+* **不加注释默认就是此类**
+* **@RequestParam 用于获取请求URL中的查询参数(`?name=xxx&x=1`)或者表单参数(见下案例：一个POJO一个表单)。**
+
 （1）不加@RequestParam前端的参数名需要和后端控制器的变量名保持一致才能生效
 
 （2）**不加@RequestParam参数为非必传，加@RequestParam写法参数为必传**。但@RequestParam可以通过@RequestParam(required = false)设置为非必传。**required 属性默认为 true**，所以如果默认下缺失该变量就报400错
@@ -45,7 +57,8 @@
     get name is : Aaron, age: 18
 ```
 
-1. Note: 后端如果是分别接收前端传过来的多个基本类型参数，可以使用上文所示的@RequsetParam来分别按名进行绑定即可。但是如果参数数量过多，上述写法下的方法中的形参列表将会过长导致可读性降低。可以直接使用一个[POJO对象](../../计算机语言/Java/Java知识积累/POJO.md来进行绑定接收，而不需要使用@RequestParam注解，其自动将参数按名绑定到对象的属性中。如下所示，形参使用Student对象进行数据绑定，其含有name，age属性
+### 案例
+1. Note: 后端如果是分别接收前端传过来的多个基本类型参数，可以使用上文所示的@RequsetParam来分别按名进行绑定即可。但是如果参数数量过多，上述写法下的方法中的形参列表将会过长导致可读性降低。可以直接使用一个[POJO对象](../../计算机语言/Java/Java知识积累/POJO.md)来进行绑定接收，而不需要使用@RequestParam注解，其自动将参数按名绑定到对象的属性中。如下所示，形参使用Student对象进行数据绑定，其含有name，age属性
 ```java
     @RequestMapping(value="/demo1")
     public void demo1(Student student){
@@ -105,3 +118,15 @@
 
 ## @QueryParam
 `@QueryParam("date") String date`
+
+在JAX-RS中，@QueryParam 注解用于获取HTTP请求中的查询参数
+```java
+@GET
+@Path("/users")
+public Response getUsers(
+  @QueryParam("page") int page,
+  @QueryParam("size") int size
+) {
+  // 查询用户列表
+}
+```

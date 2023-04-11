@@ -57,21 +57,28 @@ public class SwaggerConfig {
 		 3. `regex("/user.*")` 扫描以`/user`开头的
 		 4. `ant("/user/**")` 扫描以`/user`开头的
    2. `enable(false)` 关闭swagger，默认是打开
+   3. `select()` 返回一个`ApiSelectorBuilder`实例，可以设置要扫描的接口的方式
 
 ```java
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
 
-	// 配置了swagger的Docket的bean实例
 	@Bean
-	public Docket productApi() {
+	public Docket productApi(Environment environment) {
+
+		Profiles profiles = Profiles.of("dev", "test");
+		boolean flag = environment.acceptsProfiles(profiles);
+
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(apiInfo())
+				.groupName("sso")
+				.enable(flag)  //是否启动swagger，如果是false，在浏览器将无法访问
 				.select()
 				.apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))  //添加ApiOperiation注解的被扫描
-				.paths(PathSelectors.any())
+				.paths(PathSelectors.any()) //过滤路径
 				.build();
+				// .tags(new Tag("User", "用户管理"), new Tag("Role", "角色管理"));
 
 	}
 

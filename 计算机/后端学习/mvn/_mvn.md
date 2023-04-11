@@ -84,3 +84,6 @@ mvn dependency:analyze
 ```bash
 mvn dependency:purge-local-repository
 ```
+
+## 其他
+1. [test和选择-跳过](test和选择-跳过.md)

@@ -12,3 +12,8 @@
 是linux的函数库
 1. [pthread_mutex_t](pthread_mutex_t.md)
 2. [pthread_t](pthread_t.md)
+
+## windows.h
+1. [Global和剪切板Clipboard](Global和剪切板Clipboard.md)
+2. [WindowProc原理和CreateWindow](WindowProc原理和CreateWindow.md)
+3. [GetMessage_PeekMessage_PostMessage](GetMessage_PeekMessage_PostMessage.md)

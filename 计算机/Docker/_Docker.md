@@ -7,7 +7,7 @@
 ## 安装问题
 1. 打开linux子系统就行，不用开“windows虚拟机监视程序平台”
 2. 需要WSL2/docker目录，
-   见[【WSL】Windows下Linux子系统](../小知识积累/【WSL】Windows下Linux子系统.md)
+   见[【WSL】Windows下Linux子系统](../_小知识积累/【WSL】Windows下Linux子系统.md)
 
 ## 命令
 1. [容器](容器.md)

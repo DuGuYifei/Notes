@@ -99,13 +99,17 @@ This is my notes blog. It includes:
     21. Agent System
        1. Theory learning
        2. Jade
-    22. Distributed
+    22. Distributed Processing and Multi-threading
     23. Large-scale Enterprise Application
-    24. Leetcode
-    25. plugin development
+    24. Network Programming
+        1.  API
+            1.  RESTful
+            2.  GraphQL
+    25. Leetcode
+    26. plugin development
         1.  VSCode
-    26. PS
-    27. Personal thinking
+    27. PS
+    28. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

@@ -105,6 +105,7 @@ This is my notes blog. It includes:
         1.  API
             1.  RESTful
             2.  GraphQL
+        2. socket
     25. Leetcode
     26. plugin development
         1.  VSCode

@@ -45,6 +45,9 @@
 30. [git cherry pick](#git-cherry-pick)
 31. [项目迁移](#项目迁移)
 32. [tag](#tag)
+33. [使用操作记载](#使用操作记载)
+    1. [版本落后了，但没有自己的更新](#版本落后了但没有自己的更新)
+    2. [不想创建merge的commit号，但想代码合并](#不想创建merge的commit号但想代码合并)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -496,3 +499,16 @@ git push origin :refs/tags/v1.0  # 删除远程tag
 
 ![](2023-03-23-01-01-01.png)
 ![](2023-03-23-01-01-10.png)
+
+## 使用操作记载
+
+### 版本落后了，但没有自己的更新
+```bash
+git fetch
+git reset --hard 版本
+```
+
+### 不想创建merge的commit号，但想代码合并
+```bash
+git rebase 想要拉到本分支的目标分支
+```

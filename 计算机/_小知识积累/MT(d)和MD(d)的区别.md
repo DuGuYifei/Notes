@@ -4,6 +4,8 @@
 
 [MTd与MDd的区别_andylanzhiyong的博客-CSDN博客_mdd mtd](https://blog.csdn.net/andylanzhiyong/article/details/81198884)
 
+[动态静态链接库](../编译器/编译器知识积累/动态静态链接库.md)
+
 ## 后一个d表示debug
 
 ## T静态链接，将依赖项返回放进程序

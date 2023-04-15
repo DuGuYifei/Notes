@@ -113,7 +113,7 @@ ssh -T git@two.github.com
 A通过ssh首次连接到B，B会将公钥1（host key）传递给A，A将公钥1存入known_hosts文件中，以后A再连接B时，B依然会传递给A一个公钥2，OpenSSH会核对公钥，通过对比公钥1与公钥2 是否相同来进行简单的验证，如果公钥不同，OpenSSH会发出警告， 避免你受到DNS Hijack之类的攻击。
 
 ## GitLens 和 在VSCode中使用自带git功能
-[前端技能树中提及的vscode](../../../前端学习/前端学习技能树.md##VSCode)
+[前端技能树中提及的vscode](../%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%8A%80%E8%83%BD%E6%A0%91.md##VSCode)
 
 ## Git系统基础介绍
 [Web/02-Git的使用.md at master · qianguyihao/Web](https://github.com/qianguyihao/Web/blob/master/00-%E5%89%8D%E7%AB%AF%E5%B7%A5%E5%85%B7/02-Git%E7%9A%84%E4%BD%BF%E7%94%A8.md)

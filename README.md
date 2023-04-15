@@ -23,9 +23,7 @@ This is my notes blog. It includes:
     5. computer language
         1. CLT
            1. linux Bash
-           2. git
-           3. npm
-           4. windows command
+           2. windows command
         2. C
         3. C++
         4. CSharp
@@ -43,28 +41,29 @@ This is my notes blog. It includes:
         11. R
         12. Lua
         13. Go
-    6. build model
-    7. front end
+    6. Git
+    7. 3D Modeling
+    8. front end
        1. Tree of front-learning route
        2. Vue
        3. nodejs
-    8. back end
+    9. back end
        1. SpringBoot
        2. deployment
        3. mvn
        4. Swagger
        5. Architecture
-    9.  desktop application development
+    10. desktop application development
        1.  QT
        2.  WPF
-    10. AI
+    11. AI
        1. Building Environment
        2. Computer Vision
           1. class recognize
           2. pose detection
        3. AI algorithm
        4. Python
-    11. database
+    12. database
         1.  SQL
             1.  relational database
             2.  sql
@@ -81,36 +80,36 @@ This is my notes blog. It includes:
             1.  basic info
             2.  multidimensional mode
             3.  tabular mode
-    12. Hadoop Advanced
+    13. Hadoop Advanced
         1.  Hadoop
         2.  Spark
-    13. Algorithm
-    14. small knowlege accumulation
-    15. Game
+    14. Algorithm
+    15. small knowlege accumulation
+    16. Game
         1.  Unity
         2.  UE
         3.  Game Design
         4.  VFX
-    16. 计算机图形学
-    17. Blog
-    18. Docker
-    19. InternetServiceArchitecture
-    20. Web3
-    21. Agent System
+    17. 计算机图形学
+    18. Blog
+    19. Docker
+    20. InternetServiceArchitecture
+    21. Web3
+    22. Agent System
        1. Theory learning
        2. Jade
-    22. Distributed Processing and Multi-threading
-    23. Large-scale Enterprise Application
-    24. Network Programming
+    23. Distributed Processing and Multi-threading
+    24. Large-scale Enterprise Application
+    25. Network Programming
         1.  API
             1.  RESTful
             2.  GraphQL
         2. socket
-    25. Leetcode
-    26. plugin development
+    26. Leetcode
+    27. plugin development
         1.  VSCode
-    27. PS
-    28. Personal thinking
+    28. PS
+    29. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

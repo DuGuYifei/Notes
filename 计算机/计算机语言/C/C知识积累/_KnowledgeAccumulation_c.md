@@ -7,6 +7,8 @@
 4. [函数做参数](函数做参数.md)
 5. [函数不支持参数的引用](函数不支持参数的引用.md)
 6. [fork](fork.md)
+7. [perror](perror.md)
+8. [exit](exit.md)
 
 ## pthread
 是linux的函数库

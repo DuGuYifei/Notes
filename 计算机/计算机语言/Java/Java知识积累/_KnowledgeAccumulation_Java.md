@@ -68,3 +68,6 @@
 62. [syncronized](syncronized.md)
 63. [Lock和Condition](Lock和Condition.md)
 64. [Vector](Vector.md)
+65. [synchronized](synchronized.md)
+66. [volatile](volatile.md)
+67. [wait_notify_notifyAll](wait_notify_notifyAll.md)

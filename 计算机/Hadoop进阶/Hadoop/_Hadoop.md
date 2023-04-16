@@ -5,7 +5,7 @@
 
 ## 进阶
 1. [MapReduce流程](MapReduce流程.md)
-2. [Hadoop VSCode Environment](Hadoop_VSCodeEnvvironment.md)
+2. [Hadoop VSCode Environment](../Hadoop_VSCodeEnvvironment.md)
 3. [Mapper和Reducer的泛型](Mapper和Reducer的泛型.md)
 4. [WritableComparable接口](WritableComparable接口.md)
 5. [setup_clenup_run_context](setup_clenup_run_context.md)

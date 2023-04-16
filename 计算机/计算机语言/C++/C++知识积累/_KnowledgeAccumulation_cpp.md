@@ -101,6 +101,8 @@
 100. [const_cast](const_cast.md)
 101. [NVRO](NVRO.md)
 102. [reverse](reverse.md)
+103. [重载运算符](重载运算符.md)
+104. [初始化列表](初始化列表.md)
     
 ***WinAPI(below)***
 

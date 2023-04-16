@@ -25,7 +25,7 @@ gcc *.c
 
 ```bash
 # 1.2.可以跳过，直接生成 object 文件
-    gcc -c hello.c -o hello.o
+    gcc hello.c -o hello.o
 # 1.预处理，生成预编译文件（i.文件）：
     gcc –E hello.c –o hello.i
 # 2.编译，生成汇编代码（.s文件）：

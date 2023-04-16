@@ -15,3 +15,6 @@ IPv4：
 
 ### ip/mask
 [ip杠mask写法并非万能](ip杠mask写法并非万能.md)
+
+## ipv6
+[ipv6](ipv6.md)

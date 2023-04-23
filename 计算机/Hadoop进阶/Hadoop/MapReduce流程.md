@@ -7,6 +7,7 @@
 3. Mapper 阶段（Map）：
    1. setup()：初始化 Mapper 阶段的工作，执行一次。
    2. map()：读取输入的键值对，进行处理，产生中间键值对。
+   3. cleanup()：清理 Mapper 阶段的工作，执行一次。
    
 4. Combiner 阶段（Combiner，可选）：
    1. combine()：对 Mapper 阶段输出的中间结果进行合并和优化，减少数据传输和磁盘 I/O 操作，提高性能。

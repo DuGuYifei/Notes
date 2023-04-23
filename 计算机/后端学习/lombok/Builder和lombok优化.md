@@ -1,6 +1,9 @@
 # Builder和lombok优化
 [java中的.builder()方法实现详解_Keson Z的博客-CSDN博客_.builder()](https://blog.csdn.net/weixin_44009447/article/details/118526794)
 
+## 私有构造函数
+builder 模式的核心是私有构造函数，这样就可以防止外部直接调用构造函数来创建对象，而是通过builder来创建对象。
+
 ## 场景模拟
 假如有一结果api结果返回值的类Result，其在代码中频繁被使用：
 ```java

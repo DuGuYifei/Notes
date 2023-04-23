@@ -22,3 +22,8 @@ gitlab-runner register
 ```bash
 docker restart gitlab-runner
 ```
+
+## 3. gitlab-runner的命令
+```bash
+gitlab-runner run # 启动多个runner服务器
+```

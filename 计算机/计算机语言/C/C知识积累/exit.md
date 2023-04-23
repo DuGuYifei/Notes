@@ -5,6 +5,8 @@ exit() 是一个函数调用，它会立即终止程序的执行，并将控制�
 exit() 函数的原型如下：
 
 ```c
+#include <stdlib.h>
+
 void exit(int status);
 
 exit(EXIT_FAILURE);

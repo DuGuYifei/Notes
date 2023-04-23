@@ -9,6 +9,12 @@ $$PR(u) = \sum_{v \in B} \frac{PR(v)}{L(v)}$$
 
 **然后iteration，直到收敛。**
 
+$$v'=M^nv_0$$ 
+
+M是转移矩阵，v是PageRank向量，v'是迭代完n次的的PageRank向量。n是迭代多少代。
+
+$$MMMMM...Mv_0$$
+
 ## example
 
 ## propagation
@@ -29,3 +35,7 @@ $$PR(u) = \sum_{v \in B} \frac{PR(v)}{L(v)}$$
 
 ## convergence 收敛
 ![](2023-04-12-00-18-36.png)
+
+## Spider Traps and Taxation
+
+$$v' = βMv + (1 − β)e/n$$

@@ -52,7 +52,8 @@ This is my notes blog. It includes:
        2. deployment
        3. mvn
        4. Swagger
-       5. Architecture
+       5. lombok
+       6. Architecture
     10. desktop application development
        1.  QT
        2.  WPF

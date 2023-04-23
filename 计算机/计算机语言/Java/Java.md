@@ -1,7 +1,6 @@
 # java
 
-1. [Spring Boot](../../后端学习/SpringBoot/_KnowledgeAccumulation_SpringBoot.md)
-2. [Java 知识积累](Java知识积累/_KnowledgeAccumulation_Java.md)
-3. [IDEA 知识积累](Java_IDEA.md)
-4. [lombok](lombok/_lombok.md)
-5. [命令行](命令行/命令行.md)
+1. [Java 知识积累](Java知识积累/_KnowledgeAccumulation_Java.md)
+2. [IDEA 知识积累](Java_IDEA.md)
+3. [命令行](命令行/命令行.md)
+4. [Java_IDEA](Java_IDEA.md)

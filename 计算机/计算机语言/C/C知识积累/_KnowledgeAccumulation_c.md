@@ -9,6 +9,12 @@
 6. [fork](fork.md)
 7. [perror](perror.md)
 8. [exit](exit.md)
+9. [常量字符串](常量字符串.md)
+10. string.h
+   1.  [strtok](strtok.md)
+   2.  [strcat](strcat.md)
+11. [sprintf](sprintf.md)
+12. [读写文件](../../C%2B%2B/C%2B%2B%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6.md)
 
 ## pthread
 是linux的函数库

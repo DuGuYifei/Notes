@@ -6,7 +6,7 @@
 
 ```cpp
 stringstream ss;
-ss<<str;
+ss << str;
 
 stringstream ss(str);
 ```

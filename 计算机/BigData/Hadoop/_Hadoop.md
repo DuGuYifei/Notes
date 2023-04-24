@@ -1,11 +1,11 @@
 # hadoop
 
 ## 基础
-[ANDB](../../数据库/NoSQL/ANDB/_AdvancedNonrelationalDatabase.md)
+[ANDB](../../%E6%95%B0%E6%8D%AE%E5%BA%93/NoSQL/ANDB/_AdvancedNonrelationalDatabase.md)
 
 ## 进阶
 1. [MapReduce流程](MapReduce流程.md)
-2. [Hadoop VSCode Environment](../Hadoop_VSCodeEnvvironment.md)
+2. [Hadoop VSCode Environment](Hadoop_VSCodeEnvvironment.md)
 3. [Mapper和Reducer的泛型](Mapper和Reducer的泛型.md)
 4. [WritableComparable接口](WritableComparable接口.md)
 5. [setup_clenup_run_context](setup_clenup_run_context.md)

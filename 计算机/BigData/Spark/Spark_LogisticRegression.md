@@ -2,7 +2,7 @@
 
 
 ## 逻辑回归
-[逻辑回归](../../人工智能/AI算法/LogisticRegression.md)
+[逻辑回归](../../%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/AI%E7%AE%97%E6%B3%95/LogisticRegression.md)
 
 ```python
 # Import LogisticRegression

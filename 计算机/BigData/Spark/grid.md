@@ -1,6 +1,6 @@
 # grid
 
-[网格搜索](../../人工智能/AI算法/网格搜索.md)
+[网格搜索](../../%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/AI%E7%AE%97%E6%B3%95/%E7%BD%91%E6%A0%BC%E6%90%9C%E7%B4%A2.md)
 
 ```python
 # Import the tuning submodule

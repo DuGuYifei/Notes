@@ -26,3 +26,4 @@
 24. [遍历](遍历.md)
 25. [sort](sort.md)
 26. [二分搜索sortSearch](二分搜索sortSearch.md)
+27. [lambda表达式](lambda表达式.md)

@@ -63,3 +63,28 @@ public class SeasonEnum {
    }
 }
 ```
+
+
+## 自定义索引
+
+```java
+enum Season{
+    spring(1),summer(2),autumn(3),winter(4);
+
+    private int index;
+
+    Season(int index) {
+        this.index = index;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+    
+}
+```
+

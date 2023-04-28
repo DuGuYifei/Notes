@@ -3,6 +3,7 @@ title: SDL2 RobotUnicornAttack
 date: 2022-09-15 04:02:59
 tags:
  - SDL2
+ - game
  - game remake
 categories:
  - Game

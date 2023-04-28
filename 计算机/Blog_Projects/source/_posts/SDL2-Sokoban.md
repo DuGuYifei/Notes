@@ -3,6 +3,7 @@ title: SDL2 Sokoban
 date: 2022-09-15 04:03:02
 tags:
  - SDL2
+ - game
  - game remake
 categories:
  - Game

@@ -89,3 +89,18 @@ PriorityQueue<int[]>pq = new PriorityQueue<>((a,b) -> {
 
 ## 修改类型自带比较器
 [Comparable泛型接口_compareTo](Comparable泛型接口_compareTo.md)
+
+## 转list
+
+1. **顺序会错误**
+```java
+List<Integer> list = new ArrayList<>(pq);
+```
+
+2. **顺序正确**
+```java
+List<Integer> list = new ArrayList<>();
+while(!pq.isEmpty()) {
+	list.add(pq.poll());
+}
+```

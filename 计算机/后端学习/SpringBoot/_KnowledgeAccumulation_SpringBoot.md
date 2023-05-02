@@ -41,6 +41,7 @@
 5. [HttpServletResponse](HttpServletResponse.md)
 6. [HttpServletRequest](HttpServletRequest.md)
 7. [Cookie](Cookie.md)
+8. [传递参数](@PathVariable@RequestParam@PathParam@QueryParam.md)
 
 ## 数据库问题
 1. [双向单向数据库表映射关系](双向单向数据库表映射关系.md)
@@ -73,7 +74,9 @@
 4. [DAO_DTO_Entity_Controller](DAO_DTO_Entity_Controller.md)
 5. [IoC_DI_DL](IoC_DI_DL.md)
 6. [Tomcat_Netty](Tomcat_Netty.md)
-
+7. [sql文件默认执行](sql文件默认执行.md)
+8. [读取sql文件并执行sql语句或文件](读取sql文件并执行sql语句或文件.md)
+9. [相对路径起始点](相对路径起始点.md)
 
 ## 实操基础案例
 [老师操作simple-rpg](https://git.pg.edu.pl/internet-services-architectures/simple-rpg)

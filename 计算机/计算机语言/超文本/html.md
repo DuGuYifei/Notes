@@ -25,10 +25,11 @@
     2. [xlink:href](#xlinkhref)
     3. [颜色属性](#颜色属性)
 14. [form](#form)
-    1. [method](#method)
+    1. [案例](#案例)
+    2. [method](#method)
        1. [GET](#get)
        2. [POST](#post)
-    2. [input](#input-1)
+    3. [input](#input-1)
        1. [name属性](#name属性)
        2. [radio 单选](#radio-单选)
        3. [checkbox 多选](#checkbox-多选)
@@ -196,6 +197,38 @@ css种获取案例：[attr()获取属性值配合data-](css知识积累/attr()�
 fill
 
 ## form
+### 案例
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form action="http://localhost:8080/predict" method="POST" target="result-frame">
+      <label for="input1">Age:</label>
+      <input type="text" id="input1" name="Age" value=32><br><br>
+      <label for="input2">Height(cm):</label>
+      <input type="text" id="input2" name="Height(cm)" value=175><br><br>
+      <label for="input1">Weight(kg):</label>
+      <input type="text" id="input3" name="Weight(kg)" value="70"><br><br>
+      <label for="input2">Occupation:</label>
+      <input type="text" id="input4" name="Occupation" value="SoftwareEngineer"><br><br>
+      <label for="input1">Education Level:</label>
+      <input type="text" id="input5" name="EducationLevel" value="Master'sDegree"><br><br>
+      <label for="input2">Marital Status:</label>
+      <input type="text" id="input6" name="MaritalStatus" value="Married"><br><br>
+      <label for="input1">Income(USD):</label>
+      <input type="text" id="input7" name="Income(USD)" value=75000><br><br>
+      <label for="input2">Favorite Color:</label>
+      <input type="text" id="input8" name="FavoriteColor" value="Blue"><br><br>
+      <input type="submit"/>
+    </form>
+    <iframe name="result-frame" width="100%" height="300"></iframe>
+  </body>
+</html>
+```
+
 ### method
 [HTML &lt;form&gt; 标签的 method 属性](https://www.w3school.com.cn/tags/att_form_method.asp)
 

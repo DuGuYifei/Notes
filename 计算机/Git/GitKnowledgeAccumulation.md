@@ -500,6 +500,15 @@ git push origin :refs/tags/v1.0  # 删除远程tag
 ![](2023-03-23-01-01-01.png)
 ![](2023-03-23-01-01-10.png)
 
+```bash
+git tag <tag-name> # 创建一个不带注释的 tag
+git tag -a <tag-name> -m "<tag-message>" # 创建一个带注释的 tag
+git push origin <tag-name> # 推送一个 tag 到远程仓库
+git push --tags # 推送所有本地未推送过的 tag 到远程仓库
+git tag -d <tag-name> # 删除本地 tag
+git push origin :refs/tags/<tag-name> # 删除远程 tag
+```
+
 ## 使用操作记载
 
 ### 版本落后了，但没有自己的更新

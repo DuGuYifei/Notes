@@ -72,3 +72,4 @@
 66. [volatile](volatile.md)
 67. [wait_notify_notifyAll](wait_notify_notifyAll.md)
 68. [Gson](Gson.md)
+69. [泛型通配符](泛型通配符.md)

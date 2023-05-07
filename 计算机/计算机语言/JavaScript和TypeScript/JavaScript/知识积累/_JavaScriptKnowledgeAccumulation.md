@@ -36,3 +36,4 @@
 34. [indexedDB报错_put函数只能接受一个引用为0的对象](indexedDB报错_put函数只能接受一个引用为0的对象.md)
 35. [location.reload()](location.reload().md)
 36. [localStorage_IndexedDB](localStorage_IndexedDB.md)
+37. [get做属性时动态更新](get做属性时动态更新.md)

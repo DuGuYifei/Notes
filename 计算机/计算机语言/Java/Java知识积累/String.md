@@ -16,6 +16,7 @@
    7. [str.substring(int begin)](#strsubstringint-begin)
    8. [str.startsWith(string)](#strstartswithstring)
    9. [str.repeat(n)](#strrepeatn)
+   10. [str.contains](#strcontains)
 
 
 ## 对象？数据类型？
@@ -127,3 +128,17 @@ return boolean
 
 ### str.repeat(n)
 返回重复多少次的string
+
+### str.contains
+```java
+class Solution {
+    public boolean queryString(String s, int n) {
+        if(n > 1000) return false;
+        for(int i = 1; i <= n; i++){
+            String str = Integer.toBinaryString(i);
+            if(!s.contains(str)) return false;
+        }
+        return true;
+    }
+}
+```

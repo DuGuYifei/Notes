@@ -104,6 +104,7 @@
 103. [重载运算符](重载运算符.md)
 104. [初始化列表](初始化列表.md)
 105. [minmax_element](minmax_element.md)
+106. [bitset整数转二进制存储](bitset整数转二进制存储.md)
     
 ***WinAPI(below)***
 

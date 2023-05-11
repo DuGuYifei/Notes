@@ -18,3 +18,23 @@ special:ToLowerSpecial 函数也执行类似的操作，但它还接受一个 un
 ```go
 func IndexByte(s string, c byte) int
 ```
+
+## Contains
+作用: 返回字符串 s 是否包含子串 substr。
+```go
+string.Contains(s, substr string) bool
+```
+
+```go
+func queryString(s string, n int) bool {
+	if n > 1000 {
+		return false
+	}
+	for i := (n >> 1) + 1; i <= n; i++ {
+		if !strings.Contains(s, strconv.FormatInt(int64(i), 2)) {
+			return false
+		}
+	}
+	return true
+}
+```

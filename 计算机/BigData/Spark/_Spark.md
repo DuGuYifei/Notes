@@ -51,6 +51,33 @@
 2. [classification](classification.md)
 3. [cluster](kmeans.md)
 
+## 系统学习4-数据清理
+1. [schema_StructType_StructField](schema_StructType_StructField.md)
+2. [不可变性和惰性处理](不可变性和惰性处理.md)
+3. [parquet](parquet.md)
+4. [DataFrame](DataFrame.md)
+5. [分区和ID和惰性处理](分区和ID和惰性处理.md)
+6. [拆分对象和提高导入性能](拆分对象和提高导入性能.md)
+7. [配置spark_conf_get()](配置spark_conf_get.md)
+8. [性能优化](性能优化.md)
+9. [pipeline流水线](pipeline流水线.md)
+
+## 系统学习5
+1. [模型](模型.md)
+
+## 系统学习6-机器学习
+1. [DesicionTree](DesicionTree.md)
+2. [LogisticRegression](LogisticRegression.md)
+3. [Bucketizer](Bucketizer.md)
+4. [Regularization](Regularization.md)
+
+## 系统学习7-推荐引擎
+1. [什么是推荐引擎](什么是推荐引擎.md)
+2. [推荐引擎类型和评分类型](推荐引擎类型和评分类型.md)
+3. [ALS算法](ALS算法.md)
+
+## 案例
+[rdd案例_创建_MapReduceCombineSort](rdd案例_创建_MapReduceCombineSort.md)
 
 ## 积累
 1. [%在query中的使用](%在query中的使用.md)
@@ -86,3 +113,11 @@
 31. [Classification](Classification.md)
 32. [HashingTF](HashingTF.md)
 33. [kmeans](kmeans.md)
+34. [提交pyspark任务](提交pyspark任务.md)
+35. [字符串](字符串.md)
+36. [ArrayType](ArrayType.md)
+37. [WhenOtherwise](WhenOtherwise.md)
+38. [monotonically_increasing_id()](monotonically_increasing_id.md)
+39. [orderBy](orderBy.md)
+40. [写为json](写为json.md)
+41. [corr()](corr().md)

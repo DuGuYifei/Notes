@@ -1,5 +1,7 @@
 # synchronized
 
+[线程锁](线程锁.md)
+
 ## 作用
 
 synchronized 用于修饰方法或者代码块，作用是保证线程安全。

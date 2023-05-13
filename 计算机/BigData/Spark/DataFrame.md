@@ -2,6 +2,11 @@
 1. [简介](#简介)
 2. [常用](#常用)
 	1. [df.columns](#dfcolumns)
+	2. [df.filter](#dffilter)
+		1. [`~`的作用](#的作用)
+	3. [df.select](#dfselect)
+	4. [df.withColumn](#dfwithcolumn)
+	5. [df.drop](#dfdrop)
 3. [创建SparkSession](#创建sparksession)
 4. [打印表格](#打印表格)
 5. [执行查询](#执行查询)
@@ -26,6 +31,44 @@ The Spark DataFrame was designed to behave a lot like a SQL table (a table with 
 # Count the number of columns and their names
 print("There are {} columns in the people_df DataFrame and their names are {}".format(len(people_df.columns), people_df.columns))
 ```
+
+### df.filter
+根据条件筛选满足要求的**行**，类似于 SQL 中的 WHERE 子句
+```python
+# Filter flights by passing a string
+long_flights1 = flights.filter("distance > 1000")
+```
+
+#### `~`的作用
+表示取反，即取不包含的行
+
+```python
+voter_df = voter_df.filter(~col('VOTER_NAME').contains('_'))
+```
+
+### df.select
+返回指定的**列**
+```python
+# Select the first set of columns
+selected1 = flights.select("tailnum", "origin", "dest")
+```
+
+### df.withColumn
+添加新列
+```python
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
+df_with_new_column = df.withColumn("Age Plus One", col("Age") + 1)
+df_with_new_column.show()
+```
+
+### df.drop
+删除列
+```python
+# Drop the columns
+flights = flights.drop("distance", "air_time")
+```
+
 
 ## 创建SparkSession
 要开始使用 Spark DataFrames，您首先必须从 SparkContext 创建一个 SparkSession 对象。 您可以将 SparkContext 视为您与集群的连接，将 SparkSession 视为您与该连接的接口。

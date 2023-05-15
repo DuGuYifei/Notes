@@ -38,3 +38,46 @@ static constexpr auto tri_hash = [fn = hash<int>()](const tuple<int, int, int>& 
 
 unordered_map<tuple<int, int, int>, pair<TreeNode*, int>, decltype(tri_hash)> seen{0, tri_hash};
 ```
+
+## 更优雅的自定义方式
+
+hashset同理
+
+```cpp
+struct VectorHash {
+    std::size_t operator()(const std::vector<int>& vec) const {
+        std::size_t seed = vec.size();
+        for (const auto& num : vec) {
+            seed ^= std::hash<int>{}(num) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+        }
+        return seed;
+    }
+};
+
+class Solution {
+public:
+    int maxEqualRowsAfterFlips(vector<vector<int>>& matrix) {
+        
+        unordered_map<vector<int>, int, VectorHash> vmap;
+        int m = matrix.size();
+        int n = matrix[0].size();
+        int ans = 0;
+        for(int i = 0; i < m; i++){
+            vector<int> zeroTemp;
+            vector<int> oneTemp;
+            for(int j = 0; j < n; j++){
+                if(matrix[i][j] == 0){
+                    zeroTemp.push_back(j);
+                }else{
+                    oneTemp.push_back(j);
+                }
+            }
+            vmap[zeroTemp]++;
+            vmap[oneTemp]++;
+            ans = max(ans, vmap[zeroTemp]);
+            ans = max(ans, vmap[oneTemp]);
+        }
+        return ans;
+    }
+};
+```

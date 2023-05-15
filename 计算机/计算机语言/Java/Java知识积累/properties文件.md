@@ -9,4 +9,6 @@ alchemist.herbPrice = 20
 
 ```Java
 ResourceBundle.getBundle("liuyifei.alchemists.configure").getString("alchemist.herbPrice");
+System.out.println(ResourceBundle.getBundle("application").getString("server.port"));
 ```
+

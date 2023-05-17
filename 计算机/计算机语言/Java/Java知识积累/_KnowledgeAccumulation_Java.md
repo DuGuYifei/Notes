@@ -78,3 +78,6 @@
 72. [线程](线程.md)
 73. [计时](计时.md)
 74. [Serializable](Serializable.md)
+75. [Runtime](Runtime.md)
+76. [MemoryPoolMXBean](MemoryPoolMXBean.md)
+77. [内存情况获取](内存情况获取.md)

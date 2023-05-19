@@ -28,3 +28,4 @@
 26. [main_name](main_name.md)
 27. [httpRequest](httpRequest.md)
 28. [星号解包](星号解包.md)
+29. [python打包exe](python打包exe.md)

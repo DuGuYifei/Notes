@@ -17,14 +17,15 @@
    2. [autocomplete](#autocomplete)
 8. [title属性](#title属性)
 9. [key属性](#key属性)
-10. [audio](#audio)
-11. [邮箱 mailto](#邮箱-mailto)
-12. [data-属性](#data-属性)
-13. [svg](#svg)
+10. [align](#align)
+11. [audio](#audio)
+12. [邮箱 mailto](#邮箱-mailto)
+13. [data-属性](#data-属性)
+14. [svg](#svg)
     1. [symbol 和 use](#symbol-和-use)
     2. [xlink:href](#xlinkhref)
     3. [颜色属性](#颜色属性)
-14. [form](#form)
+15. [form](#form)
     1. [案例](#案例)
     2. [method](#method)
        1. [GET](#get)
@@ -162,6 +163,12 @@ input 只有 `<input>` 但是可以属性 `value=`
 
 ## key属性
 key 属性是对这个元素的唯一标识
+
+## align
+align 属性规定元素的对齐方式。
+```html
+<p align="center">这是一个段落。</p>
+```
 
 ## audio
 可以播放音乐

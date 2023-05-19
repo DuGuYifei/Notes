@@ -81,3 +81,4 @@
 75. [Runtime](Runtime.md)
 76. [MemoryPoolMXBean](MemoryPoolMXBean.md)
 77. [内存情况获取](内存情况获取.md)
+78. [random](random.md)

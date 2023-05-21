@@ -29,6 +29,7 @@
 18. [mkdir 创建文件夹](#mkdir-创建文件夹)
 19. [rm 删除](#rm-删除)
 20. [ls](#ls)
+    1. [查看文件权限](#查看文件权限)
 21. [显示整个路径名](#显示整个路径名)
 22. [查询私有ip](#查询私有ip)
 23. [解决ssh连接后显示为 \[。。@。。 ~\]](#解决ssh连接后显示为--)
@@ -229,6 +230,17 @@ rm -rf 目录名字
 ## ls
 隐藏文件
 `ls -a`
+
+### 查看文件权限
+```bash
+$ ls -l run.sh
+-rw-rw-rw- 1 codespace codespace 56 May 20 23:26 run.sh
+
+$chmod +x run.sh
+
+$ ls -l run.sh
+-rwxrwxrwx 1 codespace codespace 56 May 20 23:26 run.sh
+```
 
 ## 显示整个路径名
 `pwd`
@@ -555,3 +567,8 @@ echo "alias git='git.exe'" >> ~/.bashrc
 8. 3 = 2 + 1 代表可写可执行
 
 ![](2023-03-29-12-18-37.png)
+
+```bash
+chmod 777 file.txt
+chmod +x file.txt
+```

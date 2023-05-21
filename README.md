@@ -54,6 +54,7 @@ This is my notes blog. It includes:
        4. Swagger
        5. lombok
        6. Architecture
+       7. Performance Test and Monitor
     10. desktop application development
        1.  QT
        2.  WPF

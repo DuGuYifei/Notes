@@ -6,4 +6,4 @@
     @ToString.Exclude
     private List<Character> characters;
 ```
-细节见[@OneToMany的mappedby](@OneToMany的mappedby.md)
+细节见[@OneToMany@ManyToOne](%40OneToMany%40ManyToOne.md)

@@ -78,6 +78,11 @@
 8. [读取sql文件并执行sql语句或文件](读取sql文件并执行sql语句或文件.md)
 9. [相对路径起始点](相对路径起始点.md)
 
+## 监控
+1. [MicroMeter](MicroMeter.md)
+2. [actuator](actuator.md)
+3. [Prometheus](Prometheus.md)
+
 ## 实操基础案例
 [老师操作simple-rpg](https://git.pg.edu.pl/internet-services-architectures/simple-rpg)
 [我的Animal_Pet](https://github.com/DuGuYifei/SpringBoot_AnimalPet)

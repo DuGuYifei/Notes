@@ -1,5 +1,31 @@
 # @OneToMany@ManyToOne
 
+## 快速开始
+```java
+class Website{
+  /**
+   * uuid reference to users table
+   */
+  @SerializedName("createdById")
+  @ManyToOne
+  @JoinColumn(name = "createdById")
+  private User user;
+}
+
+class User{
+    
+  /**
+   * The list of websites owned by the user.
+   */
+  @OneToMany(mappedBy = "user")
+  @ToString.Exclude
+  private List<Website> websites;
+}
+```
+User表不会创建websites字段，Website表会创建createdById字段。
+
+name是JoinColumn创建出来的自己这边将作为外键的的`变量名`，mappaedBy是另一边用来对应JoinColumn这一边的`变量名`。
+
 ## 一对多和多对一关系
 
 下例展示了：单向（character和profession）双向

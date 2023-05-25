@@ -18,41 +18,42 @@
     2. [dpkg 安装包管理](#dpkg-安装包管理)
 11. [内存占用查询](#内存占用查询)
 12. [磁盘空间](#磁盘空间)
-13. [清理缓存](#清理缓存)
-14. [~路径](#路径)
-15. [url下载](#url下载)
-16. [mv 移动/重命名](#mv-移动重命名)
+13. [服务器监控](#服务器监控)
+14. [清理缓存](#清理缓存)
+15. [~路径](#路径)
+16. [url下载](#url下载)
+17. [mv 移动/重命名](#mv-移动重命名)
     1. [移动](#移动)
     2. [重命名](#重命名)
-17. [解压和压缩](#解压和压缩)
+18. [解压和压缩](#解压和压缩)
     1. [解压](#解压)
-18. [mkdir 创建文件夹](#mkdir-创建文件夹)
-19. [rm 删除](#rm-删除)
-20. [ls](#ls)
+19. [mkdir 创建文件夹](#mkdir-创建文件夹)
+20. [rm 删除](#rm-删除)
+21. [ls](#ls)
     1. [查看文件权限](#查看文件权限)
-21. [显示整个路径名](#显示整个路径名)
-22. [查询私有ip](#查询私有ip)
-23. [解决ssh连接后显示为 \[。。@。。 ~\]](#解决ssh连接后显示为--)
-24. [服务器](#服务器)
-25. [查询命令位置](#查询命令位置)
-26. [{ }](#-)
-27. [seq](#seq)
-28. [cut](#cut)
-29. [tr](#tr)
-30. [uniq和sort](#uniq和sort)
-31. [awk](#awk)
+22. [显示整个路径名](#显示整个路径名)
+23. [查询私有ip](#查询私有ip)
+24. [解决ssh连接后显示为 \[。。@。。 ~\]](#解决ssh连接后显示为--)
+25. [服务器](#服务器)
+26. [查询命令位置](#查询命令位置)
+27. [{ }](#-)
+28. [seq](#seq)
+29. [cut](#cut)
+30. [tr](#tr)
+31. [uniq和sort](#uniq和sort)
+32. [awk](#awk)
     1. [NR NF FNR](#nr-nf-fnr)
     2. [BEGIN END for循环](#begin-end-for循环)
-32. [grep](#grep)
+33. [grep](#grep)
     1. [grep -P](#grep--p)
-33. [tail head](#tail-head)
-34. [sed](#sed)
-35. ['s///g'](#sg)
-36. [wait](#wait)
-37. [export](#export)
-38. [alias 自定义命令](#alias-自定义命令)
-39. [\>\>](#-2)
-40. [chmod](#chmod)
+34. [tail head](#tail-head)
+35. [sed](#sed)
+36. ['s///g'](#sg)
+37. [wait](#wait)
+38. [export](#export)
+39. [alias 自定义命令](#alias-自定义命令)
+40. [\>\>](#-2)
+41. [chmod](#chmod)
     1. [参数](#参数)
     2. [字母](#字母)
     3. [数字](#数字)
@@ -176,12 +177,35 @@ free -h
 df -hl
 ```
 
+## 服务器监控
+```bash
+top
+```
+
 ## 清理缓存
 ```
 free -h
 sync
 echo 3 > /proc/sys/vm/drop_caches
 free -h
+```
+
+1. PageCache
+```bash
+sudo sync
+sudo echo 1 > /proc/sys/vm/drop_caches
+```
+
+2. 清理目录项和inode缓存
+```bash
+sudo sync
+sudo echo 2 > /proc/sys/vm/drop_caches
+```
+
+3. 执行以下命令以清理PageCache、目录项和inode缓存：
+```bash
+sudo sync
+sudo echo 3 > /proc/sys/vm/drop_caches
 ```
 
 ## ~路径

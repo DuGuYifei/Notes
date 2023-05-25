@@ -41,6 +41,7 @@ This is my notes blog. It includes:
         11. R
         12. Lua
         13. Go
+        14. PHP
     6. Git
     7. 3D Modeling
     8. front end

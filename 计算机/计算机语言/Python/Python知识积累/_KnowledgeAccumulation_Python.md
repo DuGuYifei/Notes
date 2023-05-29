@@ -29,3 +29,4 @@
 27. [httpRequest](httpRequest.md)
 28. [星号解包](星号解包.md)
 29. [python打包exe](python打包exe.md)
+30. [__init__包](init包.md)

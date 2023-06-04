@@ -83,8 +83,8 @@ This is my notes blog. It includes:
             1.  basic info
             2.  multidimensional mode
             3.  tabular mode
-    13. Hadoop Advanced
-        1.  Hadoop
+    13. Big Data
+        1.  Hadoop Advanced
         2.  Spark
     14. Algorithm
     15. small knowlege accumulation

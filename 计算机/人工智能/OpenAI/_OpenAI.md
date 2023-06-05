@@ -1,5 +1,28 @@
 # OpenAI
 
+## python
+```python
+import openai
+
+
+openai.api_key = "API_KEY"
+
+
+def get_completion(prompt, model="gpt-3.5-turbo", temperature=0.3):
+    messages = [{"role": "user", "content": prompt}]
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        temperature=temperature
+    )
+    return response.choices[0].message["content"]
+
+
+def ask(prompt, message='', model="gpt-3.5-turbo", temperature=0.3):
+    new_prompt = f"{prompt}{message}"
+    return get_completion(new_prompt, model, temperature)
+```
+
 ## max_tokens 和 temperature
 max_tokens和temperature都是OpenAI GPT的API参数。
 

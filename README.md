@@ -112,7 +112,8 @@ This is my notes blog. It includes:
     27. plugin development
         1.  VSCode
     28. PS
-    29. Personal thinking
+    29. Prompt Engineering
+    30. Personal thinking
 3.  Other subjects
     1.  Digital Technology in Business Communication
     2.  English

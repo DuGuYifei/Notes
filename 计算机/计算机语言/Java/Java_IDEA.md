@@ -1,6 +1,25 @@
 # Java_IDEA
 
+1. [IntelliJ IDEA](#intellij-idea)
+   1. [test coverage](#test-coverage)
+      1. [报错参数不对](#报错参数不对)
+   2. [添加library](#添加library)
+   3. [打包jar](#打包jar)
+      1. [最后:报错](#最后报错)
+         1. [运行jar如果出现 invalid or corrupt jarfile的报错](#运行jar如果出现-invalid-or-corrupt-jarfile的报错)
+2. [Maven打包](#maven打包)
+   1. [普通打包 找不到主类](#普通打包-找不到主类)
+   2. [跳过test](#跳过test)
+
+
 ## IntelliJ IDEA
+
+### test coverage
+右键`Run 'test' with Coverage`即可
+
+#### 报错参数不对
+其实是因为中文路径或者空格的问题可能，点击 help -> Edit Custom VM Options -> 添加`-Djava.io.tmpdir=xxxx`
+
 ### 添加library
 File->project structure->libraries->➕->jar文件就选java然后找到jar文件就行
 

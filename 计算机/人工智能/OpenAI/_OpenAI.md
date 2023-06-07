@@ -23,6 +23,9 @@ def ask(prompt, message='', model="gpt-3.5-turbo", temperature=0.3):
     return get_completion(new_prompt, model, temperature)
 ```
 
+## js + php + 流式
+[流式](流式.md)
+
 ## max_tokens 和 temperature
 max_tokens和temperature都是OpenAI GPT的API参数。
 

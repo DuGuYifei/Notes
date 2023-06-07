@@ -42,6 +42,7 @@
 6. [HttpServletRequest](HttpServletRequest.md)
 7. [Cookie](Cookie.md)
 8. [传递参数](@PathVariable@RequestParam@PathParam@QueryParam.md)
+9. [对于http请求返回的控制](对于http请求返回的控制.md)
 
 ## 数据库问题
 1. [双向单向数据库表映射关系](双向单向数据库表映射关系.md)

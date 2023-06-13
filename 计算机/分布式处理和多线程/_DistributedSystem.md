@@ -3,7 +3,24 @@
 ## 知识积累
 1. [服务发现](服务发现.md)
 2. [P_V操作](P_V操作.md)
-
+3. [并发和并行和分布式](并发和并行和分布式.md)
+4. [Critial Section](CritialSection.md)
+5. [Race Condition](RaceCondition.md)
+6. [Mutual Exclusion](MutualExclusion.md)
+7. [semaphores](semaphores.md)
+8. [Monitor](Monitor.md)
+9. [Semaphore_Monitor_Mutexes对比](Semaphore_Monitor_Mutex对比.md)
+10. [Threads synchronization](ThreadsSynchronization.md)
+11. [fork()](fork().md)
+12. [Dynamic/Static libraries](Dynamic_Static_libraries.md)
+13. [Distributed critical section support](DistributedCriticalSectionSupport.md)
+14. [Communication patterns in distributed applications](CommunicationPatternsInDistributedApplications.md)
+15. [Condition variables](ConditionVariables.md)
+16. [Producer-Consumer](Producer-Consumer.md)
+17. [Reader-Writer](Reader-Writer.md)
+18. [Five philosophers](FivePhilosophers.md)
+19. [Publisher-Subscriber](Publisher-Subscriber.md)
+20. [活锁](活锁.md)
 
 ## 代码
 

@@ -11,3 +11,5 @@ try (FileInputStream inputStream = new FileInputStream("file.txt")) {
 当 try 块执行结束时，会自动调用 [close()](close.md) 方法来关闭 inputStream 资源，即使发生异常也会被正确地关闭。
 
 [finally](finally.md)
+
+但是需要implement `AutoCloseable`接口

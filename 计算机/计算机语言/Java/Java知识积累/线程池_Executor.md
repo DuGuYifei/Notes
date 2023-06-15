@@ -1,7 +1,9 @@
-# 线程池
+# 线程池_Executor
 
 
 ## 基本
+
+### 固定size
 ```java
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -15,6 +17,16 @@ executor.execute(new Runnable() {
 });
 executor.shutdown();
 ```
+
+### dynamic size
+```java
+ExecutorService dynamicExecutor = new ThreadPoolExecutor(
+    2, //minimum number of threads
+    16, //maximum number of threads
+    60, // maximum time of thread inactive state
+    TimeUnit.SECONDS, // time unit of third parameter
+    new LinkedBlockingQueue<Runnable>() //task queue to be used by threads
+)
 
 ```java
 import java.util.concurrent.ExecutorService;
@@ -38,6 +50,15 @@ public class ThreadPoolExample {
     }
 }
 ```
+
+## submit()
+
+1. 传递[Runnable or Callable](Runnable_Callable.md)对象给`ExecutorService`的`submit()`方法，可以将任务提交给线程池执行。
+2. `Future<T>` object is returned by the `submit()` method.
+   1. 它可以用于判断是否任务执行完毕
+   2. `get()`方法可以等待完成并获取任务执行的结果（blocking function）
+   3. `isDone()` 方法可以判断任务是否执行完毕
+   4. `cancel()` 方法可以取消任务的执行
 
 ## 多任务判断结束
 

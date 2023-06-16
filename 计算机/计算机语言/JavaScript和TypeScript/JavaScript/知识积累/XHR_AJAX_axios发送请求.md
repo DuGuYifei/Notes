@@ -16,7 +16,7 @@
 	3. [POST](#post-1)
 
 ## nodejs内置
-[nodejs内置的http模块](../../../../前端学习/nodejs/内置的http模块.md)
+[nodejs内置的http模块](../../../../%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/nodejs/%E5%86%85%E7%BD%AE%E7%9A%84http%E6%A8%A1%E5%9D%97.md)
 
 ## 对比链接和关系
 [AJAX和XHR和Axios和Fetch_格雷狐思的博客-CSDN博客_xhr ajax axios fetch](https://blog.csdn.net/hangao233/article/details/122737838)

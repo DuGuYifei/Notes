@@ -37,6 +37,9 @@ Configuration -> Data Sources -> Add data source
 ## 添加dashboard
 [Dashboards | Grafana Labs](https://grafana.com/grafana/dashboards/)
 
+## 分布式
+Grafana允许分布式，即另一个服务器部署grafana，同时Grafana有自己的云版本，网址是：https://用户名.grafana.net/
+
 ## 参考文献
 1. [SLS时序监控实战: Spring Boot应用监控最佳实践-阿里云开发者社区](https://developer.aliyun.com/article/770726)
 2. [Prometheus + Spring Boot 应用监控 - 废物大师兄 - 博客园](https://www.cnblogs.com/cjsblog/p/14434883.html)

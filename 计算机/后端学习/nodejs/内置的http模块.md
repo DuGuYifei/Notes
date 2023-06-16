@@ -1,6 +1,6 @@
 # 内置的http模块
 
-[XHR_AJAX_axios发送请求](../../计算机语言/JavaScript和TypeScript/JavaScript/知识积累/XHR_AJAX_axios发送请求.md)
+[XHR_AJAX_axios发送请求](../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/JavaScript%E5%92%8CTypeScript/JavaScript/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/XHR_AJAX_axios%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82.md)
 
 ```javascript
 const http = require('http');

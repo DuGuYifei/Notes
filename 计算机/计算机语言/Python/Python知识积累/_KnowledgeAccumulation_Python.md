@@ -30,3 +30,6 @@
 28. [星号解包](星号解包.md)
 29. [python打包exe](python打包exe.md)
 30. [__init__包](init包.md)
+31. [excel](excel.md)
+32. [selenium](selenium.md)
+33. [bs4整理html内容](bs4整理html内容.md)

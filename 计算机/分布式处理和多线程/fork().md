@@ -1,5 +1,7 @@
 # fork()
 
+[fork](../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/C/C%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/fork.md)
+
 ## 介绍
 
 fork 是一个系统调用，i.e. system call. Used to create a new process by **duplicating** the calling process. The new process is referred to as the child process.

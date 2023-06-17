@@ -56,7 +56,7 @@ throw new GenericConflictError("The user already exists");
 
 ### 原理
 
-@RestControllerAdvice是@ControllerAdvice和@ResponseBody的组合注解，它是一个增强的Controller，里面使用了@ExceptionHandler、@InitBinder、@ModelAttribute注解的方法都会作用在所有的@RequestMapping注解的方法上。
+`@RestControllerAdvice`是`@ControllerAdvice`和`@ResponseBody`的组合注解，它是一个增强的Controller，里面使用了@ExceptionHandler、@InitBinder、@ModelAttribute注解的方法都会作用在所有的@RequestMapping注解的方法上。
 
 ## @ControllerAdvice
 
@@ -66,6 +66,7 @@ throw new GenericConflictError("The user already exists");
 1. 和RestControllerAdvice不同的是，ControllerAdvice不会将返回值转换为json格式。
 2. @ControllerAdvice用于处理传统的Spring MVC控制器（**Controller**）。这些控制器返回的是视图（View）或模型与视图（ModelAndView），主要用于传统的Web应用程序。@ControllerAdvice注解的类可以包含异常处理方法，用于捕获控制器方法中抛出的异常，并进行适当的处理。
 3. @RestControllerAdvice用于处理基于RESTful风格的控制器（**RestController**）。这些控制器返回的是数据（通常是JSON或XML），主要用于构建Web服务的后端。@RestControllerAdvice注解的类可以包含异常处理方法，用于捕获RESTful控制器方法中抛出的异常，并以适当的方式返回错误响应。
+4. @RestControllerAdvice是@ControllerAdvice和@ResponseBody的组合注解。
 
 ## @ResponseBody
 
@@ -103,6 +104,8 @@ public class ControllerExceptionHandler {
 ```
 
 ## 案例2
+一个全局异常处理类，用于处理所有的HTTP错误和未知异常。
+
 ```java
 package lsea.middleware;
 
@@ -161,5 +164,42 @@ public class GlobalExceptionHandler {
 
     return ResponseEntity.status(422).body(result);
   }
+}
+```
+
+案例中的ErrorResult类：
+
+```java
+package lsea.utils;
+
+import javax.annotation.Nullable;
+import lombok.*;
+
+/**
+ * Represents a standard error result.
+ */
+@Builder
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class ErrorResult {
+
+  /**
+   * The error message.
+   */
+  @Nullable
+  private String message;
+
+  /**
+   * The HTTP status code of the response.
+   */
+  private final boolean success = false;
+
+  /**
+   * The HTTP status code of the response.
+   */
+  private int status;
 }
 ```

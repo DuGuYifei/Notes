@@ -49,3 +49,13 @@ class Employee implements Serializable {
 ```
 
 否则由于自动生成的serialVersionUID不一样，会报错。
+
+## 反序列化
+案例：
+[udp](udp.md)
+
+其他：
+```java
+ObjectInputStream in = new ObjectInputStream(new FileInputStream("employee.ser"));
+Employee e = (Employee) in.readObject();
+```

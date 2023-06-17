@@ -32,6 +32,7 @@
 26. [@Size](@Size.md)
 27. [@Enumerated](@Enumerated.md)
 28. [@ConditionalOnProfile](@ConditionalOnProfile.md)
+29. [JPA参数化查询@Query](JPA参数化查询@Query.md)
 
 ## RESTFUL请求
 1. [ResponseEntity](ResponseEntity.md)
@@ -54,14 +55,16 @@
 7. [JPA和Hibernate](JPA和Hibernate.md)
 8. [字段带下划线findBy问题](字段带下划线findBy问题.md)
 9. [enum的字段如何映射](enum的字段如何映射.md)
+10. [JPA参数化查询@Query](JPA参数化查询@Query.md)
 
 ## 代码知识
 1. [UriComponentsBuilder](UriComponentsBuilder.md)
 2. [properties文件配置不同环境](properties文件配置不同环境.md)
 3. [获取properties文件内容](../../计算机语言/Java/Java知识积累/properties文件)
 4. [Profile](Profile.md)
-5. [Environment](Environment.md)
-6. [ValidatorFactory和validator](ValidatorFactory和validator.md)
+5. [setProperty](setProperty.md)
+6. [Environment](Environment.md)
+7. [ValidatorFactory和validator](ValidatorFactory和validator.md)
 
 ## Springboot Test
 1. [SpringbootTest](SpringbootTest.md)
@@ -78,6 +81,8 @@
 7. [sql文件默认执行](sql文件默认执行.md)
 8. [读取sql文件并执行sql语句或文件](读取sql文件并执行sql语句或文件.md)
 9. [相对路径起始点](相对路径起始点.md)
+10. [springboot集成javaEE](springboot集成javaEE.md)
+11. [BCrypt和密码](../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/Java/Java%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/BCrypt%E5%92%8C%E5%AF%86%E7%A0%81.md)
 
 ## 监控
 1. [MicroMeter](MicroMeter.md)

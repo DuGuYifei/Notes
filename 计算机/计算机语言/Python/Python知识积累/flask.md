@@ -39,3 +39,7 @@ app 是flask的核心实例
 
 ## @app.router
 路由器，用于定义路由和请求方法
+
+## warning: production env
+
+[pywsgi](pywsgi.md)

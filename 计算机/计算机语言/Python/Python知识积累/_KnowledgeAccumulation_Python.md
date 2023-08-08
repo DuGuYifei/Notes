@@ -36,3 +36,4 @@
 33. [bs4整理html内容](bs4整理html内容.md)
 34. [UI](UI.md)
 35. [threading多线程](threading多线程.md)
+36. [configparser](configparser.md)

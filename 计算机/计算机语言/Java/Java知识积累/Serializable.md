@@ -50,6 +50,24 @@ class Employee implements Serializable {
 
 否则由于自动生成的serialVersionUID不一样，会报错。
 
+### @Serial
+
+
+作用是指定serialVersionUID，这样就不用手动指定了。
+
+```java
+import java.io.Serializable;
+public class User implements Serializable {
+    @Serial // 指定序列化版本号
+    private static final long serialVersionUID = 1L;
+    
+    private String name;
+    private int age;
+    
+    // 构造函数、getter和setter方法省略
+}
+```
+
 ## 反序列化
 案例：
 [udp](udp.md)

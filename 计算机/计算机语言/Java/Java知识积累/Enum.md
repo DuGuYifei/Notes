@@ -1,5 +1,42 @@
 # Enum
 
+## int或string或同时，以及enum和mysql关系
+[案例](https://yulaiz.com/java-mysql-enum/)
+
+其中int和string同时，且mysql是数字：
+```java
+public enum OrderStatus {
+    CREATE(0, "创建"),
+    PAYING(1, "支付中"),
+    IN_PROGRESS(2, "支付成功"),
+    FAILED(3, "支付失败"),
+    REVERSED(4, "取消订单");
+
+    private int value;
+    private String desc;
+
+    OrderStatus(int value, String desc) {
+        this.value = value;
+        this.desc = desc;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+}
+
+public class OrderInfo {
+    private int id;
+    private OrderStatus status;
+}
+
+orderInfo.setStatus(OrderStatus.CREATE);
+```
+
 ## 案例
 ```java
 enum Season{

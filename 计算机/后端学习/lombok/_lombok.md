@@ -5,3 +5,4 @@
 3. [@ToString](@ToString.md)
 4. [@SneakyThrows](@SneakyThrows.md)
 5. [@Singular](@Singular.md)
+6. [@NonNull](@NonNull.md)

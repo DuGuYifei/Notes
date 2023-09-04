@@ -33,6 +33,7 @@
 27. [@Enumerated](@Enumerated.md)
 28. [@ConditionalOnProfile](@ConditionalOnProfile.md)
 29. [JPA参数化查询@Query](JPA参数化查询@Query.md)
+30. [@ComponentScan](@ComponentScan.md)
 
 ## RESTFUL请求
 1. [ResponseEntity](ResponseEntity.md)

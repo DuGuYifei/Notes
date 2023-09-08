@@ -26,3 +26,7 @@
         return ResponseEntity.created(builder.pathSegment("api", "animals", "{name}").buildAndExpand(animal.getName()).toUri()).build();
     }
 ```
+
+## 解决自动生成的json的字段名成为下划线连接
+
+[@JsonProperty](@JsonProperty.md)

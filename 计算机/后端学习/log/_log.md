@@ -7,9 +7,11 @@
 
 [Log4j2与Slf4j最佳实践](https://zhuanlan.zhihu.com/p/36554554)
 
+[log4j2哔哩哔哩教程](https://www.bilibili.com/video/BV1jo4y1x7Td/)
+
 ### 理解
 
-slf4j 相当于一个统一接口，log4j2 相当于一个实现，log4j2 也可以换成其他的实现，比如 logback。可以直接用log4j2，但是slf4j可以使用户不用重写代码，直接替换log4j2为其他的实现。
+slf4j 相当于一个统一接口，log4j2 相当于一个实现，log4j2 也可以换成其他的实现，比如 logback(springboot 默认)。可以直接用log4j2，但是slf4j可以使用户不用重写代码，直接替换log4j2为其他的实现。
 
 ### 名词解释
 1. RollingFile 会在文件大小达到指定大小时，将当前日志文件重命名，然后创建一个新的日志文件继续记录日志。并可以设置最大文件数量，当文件数量达到最大值时，会将最早的日志文件删除。
@@ -27,6 +29,19 @@ slf4j 相当于一个统一接口，log4j2 相当于一个实现，log4j2 也可
 1. 想要性能，异步 + RandomAccessFile
 2. 想要实时滚动更新的日志，异步 + RollingFile
 3. 我喜欢：异步 + RollingRandomAccessFile
+
+### 各种框架
+1. log4j
+2. jul
+3. jcl
+4. logback
+5. log4j2
+6. commons-logging
+
+统一接口：slf4j
+
+### log4j2
+[log4j2](log4j2.md)
 
 ## go
 

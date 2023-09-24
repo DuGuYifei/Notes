@@ -24,7 +24,7 @@ class User{
 ```
 User表不会创建websites字段，Website表会创建createdById字段。
 
-name是JoinColumn创建出来的自己这边将作为外键的的`变量名`，mappaedBy是另一边用来对应JoinColumn这一边的`变量名`。
+name是JoinColumn创建出来的自己这边将作为外键的的`字段名`，mappaedBy是另一边用来对应JoinColumn这一边的`变量名`。
 
 ## 一对多和多对一关系
 

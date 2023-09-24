@@ -15,3 +15,4 @@
 8. [UNIX_TIMESTAMP](UNIX_TIMESTAMP.md)
 9. [HAVING](HAVING.md)
 10. [索引](索引.md)
+11. [limit和offset顺序](limixt和offset顺序.md)

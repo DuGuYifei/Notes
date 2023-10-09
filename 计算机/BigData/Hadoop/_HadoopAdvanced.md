@@ -20,3 +20,4 @@
 14. [设置百分比进度](%E8%AE%BE%E7%BD%AE%E7%99%BE%E5%88%86%E6%AF%94%E8%BF%9B%E5%BA%A6.md)
 15. [key是重复使用的引用变量](key%E6%98%AF%E9%87%8D%E5%A4%8D%E4%BD%BF%E7%94%A8%E7%9A%84%E5%BC%95%E7%94%A8%E5%8F%98%E9%87%8F.md)
 16. [ArrayWritable](ArrayWritable.md)
+17. [HadoopHiveHBaseZookeeper](HadoopHiveHBaseZookeeper关系.md)

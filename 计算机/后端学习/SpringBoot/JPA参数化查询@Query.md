@@ -5,6 +5,11 @@
 ```java
 @Query("SELECT * FROM user WHERE name = ?1 AND age = ?2")
 User findUserByNameAndAge(String name, Integer age);
+
+@Transactional
+@Modifying
+@Query(value = "insert into t_contacts (name, email, phone, question) values (:name, :email, :phone, :question)", nativeQuery = true)
+void addOne(@Param("name")String name, @Param("email")String email, @Param("phone")String phone, @Param("question")String question);
 ```
 
 ```java

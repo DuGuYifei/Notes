@@ -1,9 +1,11 @@
 # README
 
+# DEPRECATED
 Transfer to [https://liuyifei.tech/share/notes](https://liuyifei.tech/share/notes)
 
 ----------------------------------------------------
 
+# Catelog
 Learning Tree Graph
 ![](2022-12-09-01-59-01.png)
 

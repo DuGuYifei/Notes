@@ -1,0 +1,3 @@
+# Configured和Tool
+
+在Hadoop开发中，通常使用Configured和Tool两个类来编写MapReduce程序。其中，Configured是一个Hadoop提供的抽象类，它封装了常见的Hadoop配置信息，并提供了一些便利的方法来读取和设置配置信息；而Tool是一个接口，它继承了Configured，并添加了一些额外的方法，可以用来处理命令行参数和启动作业。

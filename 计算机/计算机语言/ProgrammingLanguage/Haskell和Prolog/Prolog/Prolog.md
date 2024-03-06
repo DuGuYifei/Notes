@@ -1,0 +1,3 @@
+# Prolog
+- swipl-win
+- TkEclipse

@@ -1,0 +1,2 @@
+# @SneakyThrows
+Lombok的@SneakyThrows就是为了消除这样的模板代码。 使用注解后不需要担心Exception的处理

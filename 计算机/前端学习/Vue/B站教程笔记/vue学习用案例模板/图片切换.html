@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片切换</title>
+</head>
+
+<body>
+    <div id="app">
+        <img src="prev.png" alt="前一张" v-show="imgIdx > 0" @click="prev">
+        <img :src="imgArr[imgIdx]" :alt="'这是图片'+imgIdx" title="imgIdx">
+        <img src="next.png" alt="后一张" v-show="imgIdx < imgArr.length-1" @click="next">
+    </div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                imgArr:[
+                    '1','2','3','4'
+                ],
+                imgIdx:0
+            },
+            methods: {
+                next(){
+                    if(this.imgIdx < this.imgArr.length-1)
+                    {
+                        this.imgIdx++;
+                    }
+                },
+                prev(){
+                    if(this.imgIdx > 0)
+                    {
+                        this.imgIdx--;
+                    }
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

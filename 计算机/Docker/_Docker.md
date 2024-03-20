@@ -8,6 +8,7 @@
 1. 打开linux子系统就行，不用开“windows虚拟机监视程序平台”
 2. 需要WSL2/docker目录，
    见[【WSL】Windows下Linux子系统](../_小知识积累/【WSL】Windows下Linux子系统.md)
+3. [linux快速安装docker](linux快速安装docker.md)
 
 ## 命令
 1. [容器](容器.md)
@@ -18,6 +19,7 @@
 6. [-t_--tag](-t_--tag.md)
 7. [exec](exec.md)
 8. [network](docker网络_容器通信.md)
+9. [cp宿主机和容器之间复制文件](cp宿主机和容器之间复制文件.md)
 
 ## Dockerfile 和 docker-compose.yml
 1. [docker_compose](docker_compose.md)

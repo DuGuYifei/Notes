@@ -1,3 +1,3 @@
 git add .
 git commit --amend --no-edit
-git push origin main -f
+git push origin master -f

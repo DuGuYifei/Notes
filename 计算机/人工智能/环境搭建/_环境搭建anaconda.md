@@ -1,4 +1,5 @@
-# 环境搭建
+# 环境搭建anaconda
+不再推荐，我不喜欢anaconda，我觉得venv就挺好的。
 
 ## Anaconda
 • NVDIA

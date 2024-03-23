@@ -11,7 +11,7 @@ description:
 ---
 
 # Introduction
-![](Personal-Webpage/2022-09-21-07-40-08.png)
+![](attachments/Personal-Webpage/2022-09-21-07-40-08.png)
 
 [https://duguyifei.github.io](https://duguyifei.github.io)
 

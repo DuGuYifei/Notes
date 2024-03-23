@@ -8,12 +8,12 @@ tags:
 categories:
  - AI
 description:
- <img src="./Robomaster风车能量靶识别/2022-09-15-04-26-13.png">
+ <img src="./attachments/Robomaster风车能量靶识别/2022-09-15-04-26-13.png">
  <a herf="https://www.bilibili.com/video/BV1tW4y1y7Zy/">Video：https://www.bilibili.com/video/BV1tW4y1y7Zy/</a>
 ---
 
 # 图像识别 Robomaster 风车能量靶识别
-![](Robomaster风车能量靶识别/2022-09-15-04-26-13.png)
+![](attachments/Robomaster风车能量靶识别/2022-09-15-04-26-13.png)
 
 use opencv and some algorithm inside opencv.
 

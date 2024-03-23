@@ -17,7 +17,7 @@ This is an app based on **indexedDB** which is used for merchant to record order
 
 This project is created for my customer who don't want back-end and want to use it in ipad, so it is designed by indexedDB. Then it support **export and import json file**.
 
-![](BagPack个人商铺/2023-02-27-18-26-31.png)
+![](attachments/BagPack个人商铺/2023-02-27-18-26-31.png)
 
 ## Tech:
 * vue

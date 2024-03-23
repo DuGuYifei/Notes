@@ -8,12 +8,12 @@ tags:
 categories:
  - Game
 description:
-  <img src="./SDL2-RobotUnicornAttack/robotunicorn.jpg">
+  <img src="./attachments/SDL2-RobotUnicornAttack/robotunicorn.jpg">
   A RobotUnicornAttack game remake using SDL2. This was my first game, which I made during my first semester of learning programming. It included pixel collision checking, but at the time, I didn't realize the complexity of the algorithm.
 ---
 
 # Robot Unicorn Attack
-![](SDL2-Sokoban/2022-09-15-04-28-46.png)
+![](attachments/SDL2-Sokoban/2022-09-15-04-28-46.png)
 
 A RobotUnicornAttack game remake using SDL2. This was my first game, which I made during my first semester of learning programming. It included pixel collision checking, but at the time, I didn't realize the complexity of the algorithm.
 

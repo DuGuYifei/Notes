@@ -8,11 +8,11 @@ categories:
  - Game
 description:
  <div style="text-align:center;">
-   <img src="./Monster-Duel-Dice/2022-09-15-04-23-33.png" width="40%" style="display:inline-block;">
-   <img src="./Monster-Duel-Dice/2023-03-10-17-53-36.png" width="40%" style="display:inline-block;">
+   <img src="./attachments/Monster-Duel-Dice/2022-09-15-04-23-33.png" width="40%" style="display:inline-block;">
+   <img src="./attachments/Monster-Duel-Dice/2023-03-10-17-53-36.png" width="40%" style="display:inline-block;">
    <br>
-   <img src="./Monster-Duel-Dice/2023-03-10-17-57-26.png" width="40%" style="display:inline-block;">
-   <img src="./Monster-Duel-Dice/2023-03-10-17-55-41.png" width="40%" style="display:inline-block;">
+   <img src="./attachments/Monster-Duel-Dice/2023-03-10-17-57-26.png" width="40%" style="display:inline-block;">
+   <img src="./attachments/Monster-Duel-Dice/2023-03-10-17-55-41.png" width="40%" style="display:inline-block;">
  </div>
  A game I designed in primary school inspired by Dungeon Dice Monsters which can be played by 2 players. <br />
  Player use three dice to obtain different commands and use these commands to control monsters on the panel. The panel will be projected onto the large battlefield between two players.
@@ -21,17 +21,17 @@ description:
 
 # Monster Duel Dice
 
-![](Monster-Duel-Dice/2022-09-15-04-23-33.png)
+![](attachments/Monster-Duel-Dice/2022-09-15-04-23-33.png)
 
-![](Monster-Duel-Dice/2023-03-10-17-53-36.png)
+![](attachments/Monster-Duel-Dice/2023-03-10-17-53-36.png)
 
-![](Monster-Duel-Dice/2023-03-10-17-57-26.png)
+![](attachments/Monster-Duel-Dice/2023-03-10-17-57-26.png)
 
-![](Monster-Duel-Dice/2023-03-10-17-54-57.png)
+![](attachments/Monster-Duel-Dice/2023-03-10-17-54-57.png)
 
-![](Monster-Duel-Dice/2023-03-10-17-55-41.png)
+![](attachments/Monster-Duel-Dice/2023-03-10-17-55-41.png)
 
-![](Monster-Duel-Dice/2023-03-10-17-56-36.png)
+![](attachments/Monster-Duel-Dice/2023-03-10-17-56-36.png)
 
 A game I designed in primary school inspired by Dungeon Dice Monsters which can be played by 2 players.
 

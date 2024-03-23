@@ -6,14 +6,14 @@ tags:
 categories:
  - Front
 description:
- <img src="./Vue-MusicPlayer/2022-09-15-05-15-04.png">
+ <img src="./attachments/Vue-MusicPlayer/2022-09-15-05-15-04.png">
  <a herf="https://duguyifei.github.io/Vue_MusicPlayer_Demo/">
  链接：https://duguyifei.github.io/Vue_MusicPlayer_Demo/
  </a>
 ---
 
 # Vue Music Player
-![](Vue-MusicPlayer/2022-09-15-05-15-04.png)
+![](attachments/Vue-MusicPlayer/2022-09-15-05-15-04.png)
 
 A Vue project of music player.
 

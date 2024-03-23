@@ -8,13 +8,13 @@ tags:
 categories:
  - Game
 description:
-  <img src="./RoomEscape-HoobyPresentation/2022-09-15-04-20-56.png">
+  <img src="./attachments/RoomEscape-HoobyPresentation/2022-09-15-04-20-56.png">
   A very simple unity escaping room game which is used to do presentation in class. The model inside is built by myself in MagicaVoxel(a really interesting pixel model app).
 ---
 
 # presentation by making a pixel game
 
-![](RoomEscape-HoobyPresentation/2022-09-15-04-20-56.png)
+![](attachments/RoomEscape-HoobyPresentation/2022-09-15-04-20-56.png)
 
 Make a unity escaping room game to make class presentation.
 

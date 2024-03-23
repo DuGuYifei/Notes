@@ -9,12 +9,12 @@ tags:
 categories:
  - AI
 description: 
- <img src="./Yolov5_fps游戏AI挂的原理研究/2022-09-06-17-22-27.png" >
+ <img src="./attachments/Yolov5_fps游戏AI挂的原理研究/2022-09-06-17-22-27.png" >
  使用Yolov5对屏幕实时检测，并控制鼠标
 ---
 
 # 使用Yolov5对fps游戏AI挂的原理研究项目
-![](Yolov5_fps游戏AI挂的原理研究/2022-09-06-17-22-27.png)
+![](attachments/Yolov5_fps游戏AI挂的原理研究/2022-09-06-17-22-27.png)
 [yolov5_valorant项目网址](https://github.com/DuGuYifei/Yolov5_FPS_AICheatPrinciple)
 
 

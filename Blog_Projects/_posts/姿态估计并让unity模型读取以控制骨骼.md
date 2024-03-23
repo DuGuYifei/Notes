@@ -11,7 +11,7 @@ tags:
 categories:
  - AI
 description: 
- <img src="./姿态估计并让unity模型读取以控制骨骼/2022-09-14-17-01-16.png" >
+ <img src="./attachments/姿态估计并让unity模型读取以控制骨骼/2022-09-14-17-01-16.png" >
  使用HMFormer进行非实时姿态估计，并使用unity读取结果以控制模型骨骼
 ---
 

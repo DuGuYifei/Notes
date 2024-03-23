@@ -8,7 +8,7 @@ tags:
 categories:
  - Game
 description:
-  <img src="https://duguyifei.github.io/blog/RoomEscape-HoobyPresentation/2022-09-15-04-20-56.png">
+  <img src="./RoomEscape-HoobyPresentation/2022-09-15-04-20-56.png">
   A very simple unity escaping room game which is used to do presentation in class. The model inside is built by myself in MagicaVoxel(a really interesting pixel model app).
 ---
 

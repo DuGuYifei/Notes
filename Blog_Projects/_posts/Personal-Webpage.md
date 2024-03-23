@@ -6,7 +6,7 @@ tags:
 categories:
  - Front
 description: 
- <img src="https://duguyifei.github.io/blog/Personal-Webpage/2022-09-21-07-40-08.png">
+ <img src="./Personal-Webpage/2022-09-21-07-40-08.png">
  The personal webpage in my github io (https://duguyifei.github.io).
 ---
 

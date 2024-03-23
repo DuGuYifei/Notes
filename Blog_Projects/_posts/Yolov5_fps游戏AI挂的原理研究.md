@@ -9,7 +9,7 @@ tags:
 categories:
  - AI
 description: 
- <img src="https://duguyifei.github.io/blog/Yolov5_fps游戏AI挂的原理研究/2022-09-06-17-22-27.png" >
+ <img src="./Yolov5_fps游戏AI挂的原理研究/2022-09-06-17-22-27.png" >
  使用Yolov5对屏幕实时检测，并控制鼠标
 ---
 

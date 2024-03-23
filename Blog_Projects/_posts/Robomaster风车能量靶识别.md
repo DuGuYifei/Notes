@@ -8,7 +8,7 @@ tags:
 categories:
  - AI
 description:
- <img src="https://duguyifei.github.io/blog/Robomaster风车能量靶识别/2022-09-15-04-26-13.png">
+ <img src="./Robomaster风车能量靶识别/2022-09-15-04-26-13.png">
  <a herf="https://www.bilibili.com/video/BV1tW4y1y7Zy/">Video：https://www.bilibili.com/video/BV1tW4y1y7Zy/</a>
 ---
 

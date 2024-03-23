@@ -8,7 +8,7 @@ tags:
 categories:
  - Game
 description:
-  <img src="https://duguyifei.github.io/blog/SDL2-Sokoban/2022-09-15-04-28-46.png">
+  <img src="./SDL2-Sokoban/2022-09-15-04-28-46.png">
   A sokoban game remake with SDL2. Simulated the lifecycle running process of a game engine.
 ---
 

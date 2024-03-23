@@ -6,7 +6,7 @@ tags:
 categories:
  - Front
 description:
- <img src="https://duguyifei.github.io/blog/Vue-MusicPlayer/2022-09-15-05-15-04.png">
+ <img src="./Vue-MusicPlayer/2022-09-15-05-15-04.png">
  <a herf="https://duguyifei.github.io/Vue_MusicPlayer_Demo/">
  链接：https://duguyifei.github.io/Vue_MusicPlayer_Demo/
  </a>

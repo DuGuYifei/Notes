@@ -8,7 +8,7 @@ tags:
 categories:
  - Game
 description:
-  <img src="https://duguyifei.github.io/blog/SDL2-RobotUnicornAttack/robotunicorn.jpg">
+  <img src="./SDL2-RobotUnicornAttack/robotunicorn.jpg">
   A RobotUnicornAttack game remake using SDL2. This was my first game, which I made during my first semester of learning programming. It included pixel collision checking, but at the time, I didn't realize the complexity of the algorithm.
 ---
 

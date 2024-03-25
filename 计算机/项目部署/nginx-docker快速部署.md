@@ -14,5 +14,10 @@ volumes:
 ```
 
 想要修改配置文件：
-1. `/etc/nginx/conf.d`
-2. 使用
+1. `/etc/nginx/conf.d/default.conf`：修改默认配置文件
+2. 使用命令：`docker exec -it nginx /bin/bash`进入容器，修改配置文件
+3. 重启容器：`docker restart nginx`
+4. 也可以使用`docker cp`命令将配置文件拷贝到容器中
+```
+docker cp default.conf nginx:/etc/nginx/conf.d/default.conf
+```

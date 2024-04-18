@@ -23,3 +23,7 @@ MLP：Multi-Layer Perceptron 多层感知器
 一些名词：
 1. GAN - Generative Adversarial Networks 生成对抗网络
 2. LSTM - Long Short-Term Memory 长短期记忆(神经网络)
+
+## experience
+
+![alt text](_attachments/Lecture1-Introduction/image-1.png)

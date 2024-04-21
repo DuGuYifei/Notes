@@ -1,5 +1,15 @@
 # Normalizing Flows
 
+1. [Normalizing Flows](#normalizing-flows)
+   1. [理解](#理解)
+   2. [Change of Variables Formula (变量变换公式)](#change-of-variables-formula-变量变换公式)
+      1. [条件](#条件)
+      2. [Stacking (叠加)](#stacking-叠加)
+      3. [Log-Likelihood (对数似然)](#log-likelihood-对数似然)
+   3. [Forward and Reverse Parameterizations (正向和反向参数化)](#forward-and-reverse-parameterizations-正向和反向参数化)
+   4. [Jacobian Determinant Computation (雅可比行列式计算)](#jacobian-determinant-computation-雅可比行列式计算)
+
+
 ## 理解
 Normalizing Flows（NF）的核心思想是利用可逆变换（flows）将一个复杂的分布变形（变换）为一个简单的分布，通常是高斯分布。
 
@@ -9,9 +19,12 @@ normalizing是指把一个分布normalize输出空间的概率分布。（归一
 
 ## Change of Variables Formula (变量变换公式)
 
+补充:
+$$det(M^{-1})=det(M)^{-1}$$
+
 1. 对于一维,z属于均值分布[0,1]
    1. ![alt text](_attachments/Normalizing_Flows/image.png)
-   2. $$p_2(x)=p_1(z)|f^{(1)}(x)|$$
+   2. $$p_2(x)=p_1(z)|f^{-1(1)}(x)|=p_1(z)|f^{(1)}(z)|^{-1}$$
 2. 对于2维,向量z属于均值分布$[0,1]^2$
    1. shift
       1. f(z) = z + shift = x

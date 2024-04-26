@@ -36,3 +36,10 @@
    2. fragment shader：片元着色器，用于处理像素的颜色和属性
    3. 一般情况下，vertex shader和fragment shader是成对出现的，用于处理顶点和像素的渲染过程
    4. 除了vertex shader和fragment shader之外，还有其他类型的shader，如几何着色器、计算着色器、外壳着色器和域着色器等，他们在比如几何着色器用于处理几何图元的渲染过程，计算着色器用于处理通用计算过程，外壳着色器用于处理曲面细分过程，域着色器用于处理曲面细分过程等
+
+## 从编写到被执行
+1. 编写shader
+2. 用其他应用程序比如c++写的程序，调用opengl的api来编译
+3. 链接多个着色器(opengl api)
+4. 加载到gpu(opengl api)
+5. GPU执行shader程序

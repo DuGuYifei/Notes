@@ -1,4 +1,4 @@
-# Lecture1 - Introduction
+# Lecture 1 - Introduction
 
 ## 结构
 AI -> ML -> DL

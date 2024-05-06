@@ -1,5 +1,15 @@
 # Hidden Markov Models
 
+1. [Hidden Markov Models](#hidden-markov-models)
+   1. [Motivation](#motivation)
+   2. [General case](#general-case)
+   3. [discrete case](#discrete-case)
+   4. [Parameter Tying (参数绑定)](#parameter-tying-参数绑定)
+   5. [案例](#案例)
+   6. [HMMs相关任务](#hmms相关任务)
+      1. [Inference (推断潜在变量)](#inference-推断潜在变量)
+
+
 ## Motivation
 
 Probabilistic latent variable models for sequences of observations X1, X2, ..., XT.

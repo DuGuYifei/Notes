@@ -39,3 +39,5 @@
 36. [configparser](configparser.md)
 37. [打印错误traceback](打印错误traceback.md)
 38. [pyodbc和pymysql链接数据库](pyodbc和pymysql链接数据库.md)
+39. [del关键字](del关键字.md)
+40. [yield关键字](yield关键字.md)

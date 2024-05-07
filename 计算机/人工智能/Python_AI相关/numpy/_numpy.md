@@ -1,4 +1,5 @@
 # numpy
 
-1. [arrange](arrange.md)
+1. [arange](arange.md)
 2. [矩阵](矩阵.md)
+3. [random_permutation](random_permutation.md)

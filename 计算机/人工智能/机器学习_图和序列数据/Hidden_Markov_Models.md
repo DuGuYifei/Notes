@@ -8,6 +8,7 @@
    5. [案例](#案例)
    6. [HMMs相关任务](#hmms相关任务)
       1. [Inference (推断潜在变量)](#inference-推断潜在变量)
+      2. [Forward Algorithm - Filtering](#forward-algorithm---filtering)
 
 
 ## Motivation
@@ -109,3 +110,6 @@ $$P(Z_1=z_1, Z_2=z_2, ..., Z_T=z_T, X_1=x_1, X_2=x_2, ..., X_T=x_T) \\= P(Z_1=z_
       3. 在解码问题中，例如在给定一段加密文本的情况下，你可能想找到最有可能的原始文本序列。
 
 ![alt text](_attachments/Hidden_Markov_Models/image-4.png)
+
+### Forward Algorithm - Filtering
+

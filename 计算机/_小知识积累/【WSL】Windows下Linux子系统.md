@@ -1,7 +1,7 @@
 # 【WSL】Windows下Linux子系统
 
 ## WSL1 和 WSL2
-![](2022-10-28-03-42-31.png)
+![](_attachments/old/2022-10-28-03-42-31.png)
 注：
 1. 不是说wsl2就不能和windows互通文件。WSL 2 不能与 windows 跨操作系统文件操作(Windows 访问 WSL2 的方法为进行 WSL2 环境键入 “cd ~” 进入主目录后，再键入"explorer.exe ."可在windows 文件管理器中访问 WSL 2 文件，此外还可以通过虚拟机的方法互通文件，如网络，文件共享等)，**而 WSL 1 则与 windows 在同一文件系统中**。
 2. WSL1 和 WSL2 都可以实现在 windows 中带来 linux 操作体验；

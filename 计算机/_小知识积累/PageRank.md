@@ -18,23 +18,23 @@ $$MMMMM...Mv_0$$
 ## example
 
 ## propagation
-![](2023-04-12-00-16-06.png)
+![](_attachments/old/2023-04-12-00-16-06.png)
 
-![](2023-04-12-00-16-48.png)
+![](_attachments/old/2023-04-12-00-16-48.png)
 
-![](2023-04-12-00-17-08.png)
+![](_attachments/old/2023-04-12-00-17-08.png)
 
 
 ## aggregation
-![](2023-04-12-00-17-38.png)
+![](_attachments/old/2023-04-12-00-17-38.png)
 
-![](2023-04-12-00-18-13.png)
+![](_attachments/old/2023-04-12-00-18-13.png)
 
 ## 2nd iteration
-![](2023-04-12-00-18-23.png)
+![](_attachments/old/2023-04-12-00-18-23.png)
 
 ## convergence 收敛
-![](2023-04-12-00-18-36.png)
+![](_attachments/old/2023-04-12-00-18-36.png)
 
 ## Spider Traps and Taxation
 

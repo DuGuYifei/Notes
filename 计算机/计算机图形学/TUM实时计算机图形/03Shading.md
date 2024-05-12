@@ -9,6 +9,11 @@
       4. [4. YUV](#4-yuv)
          1. [案例和一个计算用矩阵](#案例和一个计算用矩阵)
          2. [一个精度降低但是视觉上几乎无损的例子](#一个精度降低但是视觉上几乎无损的例子)
+   2. [Appearance modelling (表面建模)](#appearance-modelling-表面建模)
+      1. [保存格式](#保存格式)
+      2. [Rendering](#rendering)
+      3. [Shading](#shading)
+         1. [shading interpolation - Barycentric Coordinates (重心坐标)](#shading-interpolation---barycentric-coordinates-重心坐标)
 
 
 ## color models
@@ -58,3 +63,41 @@ chromatic ("bunt") light 意思就是有色光，即不是白光。
 
 #### 一个精度降低但是视觉上几乎无损的例子
 ![alt text](_attachments/03Shading/image-3.png)
+
+## Appearance modelling (表面建模)
+
+Triangle mesh:
+1. 颜色是赋给polygon vertices的额外属性
+   1. 颜色可以在三角形内插（interpolated）来获得一个平滑的表面颜色
+   2. 当指定为恒定face color时，颜色是非平滑的，即在三角形内部颜色是恒定的
+
+### 保存格式
+
+![alt text](_attachments/03Shading/image-9.png)
+
+模型文件会有一个C来对应到具体的颜色index。
+
+### Rendering
+
+渲染是指将3D模型转换为2D图像的过程。
+
+![alt text](_attachments/03Shading/image-5.png)
+
+像素的颜色代表眼睛的射线穿过像素中心点时，与模型表面的交点的颜色。（只是意义上的“代表”，实际上是通过插值得到的）
+
+### Shading
+
+着色是渲染的一个重要部分
+
+1. 像素中心点在三角形内即颜色由这个三角形决定
+   1. ![alt text](_attachments/03Shading/image-6.png)
+2. Constant: 每个face一个颜色。比如总是使用第一个顶点的颜色
+3. 每个面上的顶点颜色平滑变化
+
+![alt text](_attachments/03Shading/image-7.png)
+
+#### shading interpolation - Barycentric Coordinates (重心坐标)
+
+![alt text](_attachments/03Shading/image-8.png)
+
+每个三角形占总面积的比例，代表了它对面顶点颜色的权重。

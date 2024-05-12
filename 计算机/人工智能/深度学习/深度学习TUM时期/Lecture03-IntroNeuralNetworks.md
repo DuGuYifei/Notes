@@ -64,14 +64,14 @@ sigmoid其实就是logistic函数，tanh是sigmoid的变形。
 2. 为什么要构造层的结构？
    1. 为了引入非线性
    2. 方便使用API化的AI框架
-   3. computational graphs方便计算梯度
+   3. computational graphs方便计算梯度（比如分层graph就没有loop）
 
 ### 小结
 
 - 给定一个数据集和ground truth对$[x_i;y_i]$
 - 找到优化的weights和biass使用随机梯度下降（SGD stochastic gradient descent）或者其他优化方法使得损失函数最小。
   - **Compute gradients** with backpropagation (use batch-mode; 后面会学到)
-    - 很复杂的函数计算梯度很难，所以后面会有一些技巧比如backpropagation
+    - 很复杂的函数计算梯度很难，所以后面会有一些技术比如[backpropagation](./Lecture04-OptimizationAndBackprop.md)
   - Iterate many times over training set (SGD; 后面会学到)
 
 ## Computational Graphs (计算图)
@@ -132,7 +132,9 @@ optimization is done using gradient-based solvers, 不只是梯度下降
 
 参数$\theta$每次减去负的梯度乘以学习率$\alpha$。
 
-#### Back Propagation
+#### Backpropagation
+
+[Backpropagation](./Lecture04-OptimizationAndBackprop.md)
 
 使用chain rull来计算梯度。
 

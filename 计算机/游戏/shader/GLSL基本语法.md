@@ -64,6 +64,8 @@ main
 
 顶点着色器会计算一些数据，然后通过`out`关键字传递给其他着色器。其他着色器则通过`in`关键字接收这些数据。
 
+上一个shader输出的变量名和下一个输入的变量名可以不一样，但是要顺序一样。但推荐保持一致，以便于理解。
+
 `in`和`out`旧版本的GLSL中使用`attribute`和`varying`关键字。
 
 传递顺序：
@@ -249,6 +251,9 @@ Data dataValue = Data(1.4, vec2(16.0, 22.5));
 bool val = {true};
 const float array[3] = {2.5, 7.0, 1.5};
 Data dataValue = {1.0, {-19.0, 4.5};
+
+//vec所有值用一个值初始化
+vec4 v = vec4(1.0);
 ```
 
 **用作输入输出的变量不允许初始化。**
@@ -511,6 +516,8 @@ layout(location = 1) subroutine uniform SubroutineTypeName subroutineVariableNam
 ```
 
 ## 12. 内置函数
+
+[内置函数积累](内置函数.md)
 
 * 三角函数：sin、cos、tan、asin、acos、atan；
 * 指数函数：pow、exp、log、exp2、log2；

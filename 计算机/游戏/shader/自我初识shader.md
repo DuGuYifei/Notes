@@ -43,3 +43,5 @@
 3. 链接多个着色器(opengl api)
 4. 加载到gpu(opengl api)
 5. GPU执行shader程序
+
+举个基本的理解例子：vertex shader里有in (attribute),out (varying),uniform (uniform)三种变量，in是输入，out是输出，uniform是全局变量。而in的值，是程序通过比如opengl的api - glVertexAttribPointer来传入的，uniform的值是通过glUniform传入的，out的值是vertex shader传给fragment shader的。

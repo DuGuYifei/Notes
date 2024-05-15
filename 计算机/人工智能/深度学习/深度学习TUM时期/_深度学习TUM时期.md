@@ -7,3 +7,4 @@
 3. [Lecture 2.2 - Logistic Regression](./Lecture02.2-LogisticRegression.md)
 4. [Lecture 3 - Intro Neural Networks](./Lecture03-IntroNeuralNetworks.md)
 5. [Lecture 4 - Optimization and Backprop](./Lecture04-OptimizationAndBackprop.md)
+6. [Lecture 5 - Scaling Optimization](./Lecture05-ScalingOptimization.md)

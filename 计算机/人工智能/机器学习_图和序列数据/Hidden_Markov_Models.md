@@ -1,14 +1,13 @@
 # Hidden Markov Models
 
-1. [Hidden Markov Models](#hidden-markov-models)
-   1. [Motivation](#motivation)
-   2. [General case](#general-case)
-   3. [discrete case](#discrete-case)
-   4. [Parameter Tying (参数绑定)](#parameter-tying-参数绑定)
-   5. [案例](#案例)
-   6. [HMMs相关任务](#hmms相关任务)
-      1. [Inference (推断潜在变量)](#inference-推断潜在变量)
-      2. [Forward Algorithm - Filtering](#forward-algorithm---filtering)
+- [Motivation](#motivation)
+- [General case](#general-case)
+- [discrete case](#discrete-case)
+- [Parameter Tying (参数绑定)](#parameter-tying-参数绑定)
+- [案例](#案例)
+- [HMMs相关任务](#hmms相关任务)
+  - [Inference (推断潜在变量)](#inference-推断潜在变量)
+  - [Forward Algorithm - Filtering](#forward-algorithm---filtering)
 
 
 ## Motivation
@@ -76,7 +75,7 @@ $$P(Z_1=z_1, Z_2=z_2, ..., Z_T=z_T, X_1=x_1, X_2=x_2, ..., X_T=x_T) \\= P(Z_1=z_
 
 **关键是注意B是实际为什么时候观测发生的概率**
 
-[贝叶斯定理](../机器学习和数学/贝叶斯定理.md)
+[贝叶斯定理](../../../其他学科知识积累/Maths/贝叶斯定理.md)
 
 ## HMMs相关任务
 

@@ -63,6 +63,7 @@ $$\frac{\partial L}{\partial w_{i,k}}=\frac{\partial L}{\partial \hat{y}_i}\frac
 2. 用向前传递时的前一层的传过来的值作为参数值
 3. 用向后传递的值去乘以2中的值
 4. 只计算按权重的值，不计算输入的值，比如最初的x,y，如下图中的x,y，最后梯度下降
+5. 不需要矩阵对矩阵求导，只需要拿每个矩阵比如输入X当作一个标量求导
 
 ![alt text](_attachments/Lecture04-OptimizationAndBackprop/image-15.png)
 
@@ -127,7 +128,9 @@ $$W^\prime = W - \alpha \nabla_W f_{\{x,y\}}(W)$$
 ###### 2.1.1.1.1. 对于Binary Cross Entropy Loss案例
 1. 最后一层
 
-注意sigmoid求导结果是$\hat{y}_i(1-\hat{y}_i)$是没错的
+注意：
+1. sigmoid求导结果是$\hat{y}_i(1-\hat{y}_i)$是没错的
+2. sigmoid求导结果里的$\hat{y}$是当前forward的输出不是backward到当前的$dy$
 
 ![alt text](_attachments/Lecture04-OptimizationAndBackprop/image-13.png)
 

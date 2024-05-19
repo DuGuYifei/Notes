@@ -5,7 +5,7 @@
 ```cpp
 element = cv2.getStructuringElement(cv2.MORPH_CROSS,(5,5))
 ```
-![](2022-07-28-03-07-26.png)
+![](_attachments/old/2022-07-28-03-07-26.png)
 
 ```cpp
 cv::Mat element = getStructuringElement(cv::MORPH_RECT,cv::Size(3, 3), cv::Point(-1, -1));

@@ -1,4 +1,4 @@
-# 二值化_threshold
+# threshold_二值化
 
 [【opencv】阈值处理函数threshold()详解\_ingy的博客-CSDN博客\_opencv threshold](https://blog.csdn.net/simonyucsdy/article/details/106525717)
 
@@ -15,9 +15,9 @@ double cv::threshold(InputArray src, OutputArray dst, double thres, double maxva
 * maxval：二值图像中灰度最大值；
 
 * type：阈值操作类型，具体的阈值操作实现如下图所示：
-  ![](2022-07-27-01-25-34.png)
+  ![](_attachments/old/2022-07-27-01-25-34.png)
 
-![](2022-07-27-01-26-01.png)
+![](_attachments/old/2022-07-27-01-26-01.png)
 
 ## 测试
 
@@ -44,14 +44,14 @@ double cv::threshold(InputArray src, OutputArray dst, double thres, double maxva
 
 |类型|图片|
 |-|-|
-|原灰度图|![](2022-07-27-02-26-23.png)|
-|THRESH_BINARY|![](2022-07-27-02-32-42.png)|
-|THRESH_BINARY_INV|![](2022-07-27-02-33-08.png)|
-|THRESH_TRUNC|![](2022-07-27-02-33-22.png)|
-|THRESH_TOZERO|![](2022-07-27-02-33-26.png)|
-|THRESH_TOZERO_INV|![](2022-07-27-02-33-34.png)|
-|THRESH_OTSU|![](2022-07-27-02-33-41.png)|
-|THRESH_TRIANGLE|![](2022-07-27-02-33-46.png)|
+|原灰度图|![](_attachments/old/2022-07-27-02-26-23.png)|
+|THRESH_BINARY|![](_attachments/old/2022-07-27-02-32-42.png)|
+|THRESH_BINARY_INV|![](_attachments/old/2022-07-27-02-33-08.png)|
+|THRESH_TRUNC|![](_attachments/old/2022-07-27-02-33-22.png)|
+|THRESH_TOZERO|![](_attachments/old/2022-07-27-02-33-26.png)|
+|THRESH_TOZERO_INV|![](_attachments/old/2022-07-27-02-33-34.png)|
+|THRESH_OTSU|![](_attachments/old/2022-07-27-02-33-41.png)|
+|THRESH_TRIANGLE|![](_attachments/old/2022-07-27-02-33-46.png)|
 
 注意：
 如果采用彩色图像进行计算会得到彩色效果，而不是预期的二值化结

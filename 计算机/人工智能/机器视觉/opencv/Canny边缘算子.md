@@ -31,4 +31,4 @@ cv2.imshow("Canny_edge_1", edge)
 edge1 = cv2.Canny(grad_x, grad_y, 10, 100)
 cv2.imshow("Canny_edge_2", edge1)
 ```
-![](2022-07-27-17-59-05.png)
+![](_attachments/old/2022-07-27-17-59-05.png)

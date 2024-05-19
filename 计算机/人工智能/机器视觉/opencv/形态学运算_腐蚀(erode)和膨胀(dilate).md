@@ -17,10 +17,10 @@
 原文链接：https://blog.csdn.net/luolaihua2018/article/details/111712087
 
 ## 膨胀
-![](2022-07-27-02-53-57.png)
+![](_attachments/old/2022-07-27-02-53-57.png)
 
 ## 腐蚀
-![](2022-07-27-02-54-20.png)
+![](_attachments/old/2022-07-27-02-54-20.png)
 
 ## 高级运算
 [形态学运算_morphologyEx](形态学运算_morphologyEx.md)

@@ -202,7 +202,7 @@ $$L(y,\hat{y}; \theta) = L(y,\hat{y}) + \lambda R(\theta)$$
 下图的理解：
 1. $\theta$是权重
 2. 当训练结果是忽略一些特征时，L1放轻了惩罚，使得结果更趋向于稀疏
-3. 当训练结果是忽略一些特征时，L2放重了惩罚，使得结果更趋向于权重平滑
+3. 当训练结果是使用所有特征时，L2放轻了惩罚，使得结果更趋向于权重平滑
 
 ![alt text](_attachments/Lecture04-OptimizationAndBackprop/image-24.png)
 

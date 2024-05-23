@@ -1,4 +1,4 @@
-# Lecture 2.2 - Logistic Regression
+# Lecture 02.2 - Logistic Regression
 
 - [1. 起源](#1-起源)
 - [2. 介绍](#2-介绍)

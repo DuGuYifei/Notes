@@ -1,4 +1,4 @@
-# Lecture 3 - Intro Neural Networks
+# Lecture 03 - Intro Neural Networks
 
 - [1. 基础概念](#1-基础概念)
 - [2. Linear Score Function](#2-linear-score-function)

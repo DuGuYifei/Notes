@@ -1,4 +1,4 @@
-# Lecture 2.1 - ML Basics
+# Lecture 02.1 - ML Basics
 
 - [1. 学习方法](#1-学习方法)
 - [2. 以Image Classification为例](#2-以image-classification为例)

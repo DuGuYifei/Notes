@@ -1,4 +1,4 @@
-# Lecture 5 - Scaling Optimization
+# Lecture 05 - Scaling Optimization
 
 - [1. Convergence of Gradient Descent](#1-convergence-of-gradient-descent)
   - [1.1. Local Minima vs Global Minima](#11-local-minima-vs-global-minima)

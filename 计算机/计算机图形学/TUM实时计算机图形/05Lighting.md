@@ -1,6 +1,25 @@
 # Lighting
 
-## 1. 光照
+- [1. 介绍](#1-介绍)
+- [2. 表面朝向](#2-表面朝向)
+  - [2.1. Per-vertex normal](#21-per-vertex-normal)
+    - [2.1.1. 标准化法线](#211-标准化法线)
+    - [2.1.2. 中心差分法](#212-中心差分法)
+    - [2.1.3. 保存格式](#213-保存格式)
+- [3. Light reflection(光反射)计算](#3-light-reflection光反射计算)
+  - [3.1. Lambert反射模型-漫反射](#31-lambert反射模型-漫反射)
+    - [3.1.1. 粗糙材料的漫反射(Diffuse(Lambertian) reflection - Rough material)](#311-粗糙材料的漫反射diffuselambertian-reflection---rough-material)
+  - [3.2. Phong光照模型-三光照模型](#32-phong光照模型-三光照模型)
+    - [3.2.1. 镜面反射(Specular(glossy) reflection - Smooth material)](#321-镜面反射specularglossy-reflection---smooth-material)
+      - [3.2.1.1. specular exponent(镜面反射指数)](#3211-specular-exponent镜面反射指数)
+    - [3.2.2. 反射方向计算(r向量)](#322-反射方向计算r向量)
+    - [三光合并模型](#三光合并模型)
+      - [强度](#强度)
+      - [颜色](#颜色)
+    - [Phong反射光颜色局限-材质和镜面反射](#phong反射光颜色局限-材质和镜面反射)
+- [4. Phong Shading 和 Gouraud Shading](#4-phong-shading-和-gouraud-shading)
+
+## 1. 介绍
 
 照亮模型需要：
 1. 光源属性（比如光强度，颜色，位置等）
@@ -10,7 +29,30 @@
 
 ## 2. 表面朝向
 
-### 2.1 Lambert反射模型
+tangent_plane(切线平面) + normal_vector(normalize到1)
+
+### 2.1. Per-vertex normal
+
+#### 2.1.1. 标准化法线
+
+![alt text](_attachments/05Lighting/image.png)
+
+$$\vec{N_v}=\sum_{i=1}^{k}\vec{N_i}/||\sum_{i=1}^{k}\vec{N_i}||$$
+
+#### 2.1.2. 中心差分法
+
+[中心差分法](../计算机图形学知识积累/中心差分法计算法线.md)
+
+#### 2.1.3. 保存格式
+
+1. 存储为$n_i$ ([obj文件格式](../计算机图形学知识积累/obj文件格式.md))
+2. render时候，插值计算
+
+![alt text](_attachments/05Lighting/image-1.png)
+
+## 3. Light reflection(光反射)计算
+
+### 3.1. Lambert反射模型-漫反射
 
 Lambert反射模型：表面朝向和光线朝向之间的夹角越小，反射光越强。
 
@@ -24,56 +66,92 @@ Lambert反射模型：表面朝向和光线朝向之间的夹角越小，反射�
 
 ![alt text](_attachments/05Lighting/image-2.png)
 
-### surface normal
-
-tangent plane + normal vector(normalize to 1)
-
-#### Per-vertex normal
-
-##### 标准化法线
-
-![alt text](_attachments/05Lighting/image.png)
-
-$$\vec{N_v}=\sum_{i=1}^{k}\vec{N_i}/||\sum_{i=1}^{k}\vec{N_i}||$$
-
-##### 中心差分法
-
-[中心差分法](../计算机图形学知识积累/中心差分法计算法线.md)
-
-##### 保存格式
-
-1. 存储为$n_i$ ([obj文件格式](../计算机图形学知识积累/obj文件格式.md))
-2. render时候，插值计算
-
-![alt text](_attachments/05Lighting/image-1.png)
-
-##### Light reflection(光反射)
-
-###### 粗糙材料的漫反射（Lambertian reflection）
+#### 3.1.1. 粗糙材料的漫反射(Diffuse(Lambertian) reflection - Rough material)
 
 1. 无论入射方向，都均匀散射
 2. $k_d$是漫反射系数,范围$[0,1]$
 3. $I_i$是光源强度, $I_r$是反射光强度
 4. $n$是法向量
+5. $w_r$和$w_i$是观察方向和入射方向的单位向量
+6. $x$是某个位置
+7. $I$是关于位置和方向的函数
+8. $l_i$是光源方向，因此$n\cdot l_i$是光源方向和法向量的夹角的cos值，然后即3.1的公式了
 
 $$I_r(x,\omega_r)=k_d(n\cdot l_i)I_i(x,\omega_i)$$
 
 ![alt text](_attachments/05Lighting/image-3.png)
 
-###### 镜面反射
+### 3.2. Phong光照模型-三光照模型
+
+#### 3.2.1. 镜面反射(Specular(glossy) reflection - Smooth material)
 1. 光主要反射到镜像方向周围
 2. $k_s$是镜面反射系数，范围$[0,1]$
 3. $n$是镜面指数/高光指数，控制高光的范围
-4. r是反射方向，v是视线方向（相机方向）
+4. $r$是反射方向，$v$是视线方向（相机方向）
 5. $I_i$是光源强度, $I_r$是反射光强度
+6. $w_r$和$w_i$是观察方向和入射方向的单位向量
+7. $x$是某个位置
+8. $I$是关于位置和方向的函数
 
 $$I_r(x,\omega_r)=k_s(r\cdot v)^nI_i(x,\omega_i)$$
 
 ![alt text](_attachments/05Lighting/image-4.png)
 
+##### 3.2.1.1. specular exponent(镜面反射指数)
 
-## 3. 光照模型（暂定）
+![alt text](_attachments/05Lighting/image-6.png)
 
-* Gouraud Shading，着色应用在顶点上，用顶点的法线算出顶点的颜色，然后面内部像素的颜色用顶点的颜色进行插值的方法得出。
-* Phong shading着色应用在每个像素上，同样是求面的顶点法线，然后面内部的每个像素的法线用插值的方法得出，再计算每个像素的颜色
+#### 3.2.2. 反射方向计算(r向量)
 
+![alt text](_attachments/05Lighting/image-5.png)
+
+$$r=2(n\cdot l)n-l$$
+
+* n是法向量
+* l是点到光源的向量
+* 都是单位长度的向量
+* 理解：n*l就是$||n||*||l||*cosθ$，就是图中蓝色的线
+
+#### 三光合并模型
+
+##### 强度
+
+$$I_r(x, \omega_v) = \\k_d \cdot (l \cdot n) \cdot I_i(x, \omega_i) + \\k_s \cdot (r \cdot v)^n \cdot I_i(x, \omega_i) + \\k_a \cdot I_a$$
+
+* 漫反射光 + 镜面反射光 + 环境光
+* Ambient term（环境光项）是一个常数背景光
+
+![alt text](_attachments/05Lighting/image-8.png)
+
+![alt text](_attachments/05Lighting/image-7.png)
+
+不同角度的光和形状的样子：
+
+![alt text](_attachments/05Lighting/image-9.png)
+
+##### 颜色
+
+$$C_r(x, \omega_v) = \\k_d \cdot (l \cdot n) \cdot C_SC_L + \\k_s \cdot (r \cdot v)^n \cdot C_L + \\k_a \cdot C_SC_A$$
+
+* $C_S$是表面颜色
+* $C_L$是光源颜色
+* $C_A$是环境光颜色
+* 表面颜色只与漫反射和环境光交互，不与镜面反射交互
+* 镜面反射用的是光源颜色
+
+#### Phong反射光颜色局限-材质和镜面反射
+
+* 在蜡质、涂层或塑料等材料的表面，镜面反射光的颜色主要是光源的颜色
+* 而在金属表面，镜面反射光的颜色不仅是光源的颜色，还会被金属本身的颜色所调制，产生混合后的颜色效果。
+
+所以老说有的游戏很多材质有塑料感。
+
+## 4. Phong Shading 和 Gouraud Shading
+
+* Gouraud Shading，着色应用在顶点上，用**顶点的法线算出顶点的颜色**，然后**面内部像素的颜色**用**顶点的颜色**进行插值的方法得出。
+* Phong shading，着色应用在每个像素上，同样是求面的顶点法线，然后**面内部每个像素的法线**用**顶点的法线**进行插值的方法得出，再**用像素的法线计算每个像素的颜色**。
+  * 面法线->顶点法线->插值像素法线->计算像素颜色
+
+上述通过法线计算颜色其实就是前面上面光照强度的计算公式，只是来源的强度就是原本的颜色，所以光照强度可以得到颜色。
+
+Phone Shading和Phong光照模型都是Bui Tuong Phong在"Illumination for Computer Generated Pictures"中提出的。

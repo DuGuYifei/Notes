@@ -1,4 +1,4 @@
-# Lighting
+# 05 Lighting
 
 - [1. 介绍](#1-介绍)
 - [2. 表面朝向](#2-表面朝向)
@@ -17,7 +17,9 @@
       - [强度](#强度)
       - [颜色](#颜色)
     - [Phong反射光颜色局限-材质和镜面反射](#phong反射光颜色局限-材质和镜面反射)
-- [4. Phong Shading 和 Gouraud Shading](#4-phong-shading-和-gouraud-shading)
+  - [Blinn-Phong光照模型](#blinn-phong光照模型)
+    - [存在的意义-Phong对比](#存在的意义-phong对比)
+- [4. Phong Shading,Gouraud Shading,Flat Shading](#4-phong-shadinggouraud-shadingflat-shading)
 
 ## 1. 介绍
 
@@ -146,12 +148,22 @@ $$C_r(x, \omega_v) = \\k_d \cdot (l \cdot n) \cdot C_SC_L + \\k_s \cdot (r \cdot
 
 所以老说有的游戏很多材质有塑料感。
 
-## 4. Phong Shading 和 Gouraud Shading
+### Blinn-Phong光照模型
 
-* Gouraud Shading，着色应用在顶点上，用**顶点的法线算出顶点的颜色**，然后**面内部像素的颜色**用**顶点的颜色**进行插值的方法得出。
-* Phong shading，着色应用在每个像素上，同样是求面的顶点法线，然后**面内部每个像素的法线**用**顶点的法线**进行插值的方法得出，再**用像素的法线计算每个像素的颜色**。
-  * 面法线->顶点法线->插值像素法线->计算像素颜色
+$$h=\frac{l+v}{||l+v||}$$
 
-上述通过法线计算颜色其实就是前面上面光照强度的计算公式，只是来源的强度就是原本的颜色，所以光照强度可以得到颜色。
+$$I_r(x,\omega_r)=k_s(h\cdot n)^nI_i(x,\omega_i)$$
 
-Phone Shading和Phong光照模型都是Bui Tuong Phong在"Illumination for Computer Generated Pictures"中提出的。
+#### 存在的意义-Phong对比
+
+和镜面反射对比：
+* 镜面反射：
+  * $r=2(n\cdot l)n-l$
+  * $I_r(x,\omega_r)=k_s(r\cdot v)^nI_i(x,\omega_i)$
+  * 只和r(反射方向)，v(光源方向)之间的夹角有关，那么视线在不同位置，可能会亮，可能会暗
+* Blinn-Phong：$h=\frac{l+v}{||l+v||}$
+  * 夹角变成了h和n的夹角，h是l(光源方向)和v(视线方向)的中间向量，所以不会因为视线位置不同而亮暗不一样，因为这个中间向量始终会因为视角变化而变化
+
+## 4. Phong Shading,Gouraud Shading,Flat Shading
+
+[Phong Shading,Gouraud Shading,Flat Shading](./03Shading.md)

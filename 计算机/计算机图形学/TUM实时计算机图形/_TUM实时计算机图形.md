@@ -5,3 +5,4 @@
 3. [03Shading](03Shading.md)
 4. [04Texture Mapping](04TextureMapping.md)
 5. [05Lighting](05Lighting.md)
+6. [06NormalMapping](06NormalMapping.md)

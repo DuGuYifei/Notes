@@ -6,3 +6,4 @@
 4. [仿射变换-仿射变换-旋转_平移_缩放_剪切_投影_反射_变换矩阵](仿射变换-旋转_平移_缩放_剪切_投影_反射_变换矩阵.md)
 5. [右手系左手系](右手系左手系.md)
 6. [Ramer-Douglas-Peucker算法](Ramer-Douglas-Peucker算法.md)
+7. [法线和viewMatrix变换](法线和viewMatrix变换.md)

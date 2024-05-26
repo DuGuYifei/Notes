@@ -1,19 +1,19 @@
 # 03 Shading
 
-1. [03 Shading](#03-shading)
-   1. [color models](#color-models)
-      1. [1. RGB](#1-rgb)
-      2. [2. CMY(K)](#2-cmyk)
-         1. [色域 (Gamut)](#色域-gamut)
-      3. [3. HSV](#3-hsv)
-      4. [4. YUV](#4-yuv)
-         1. [案例和一个计算用矩阵](#案例和一个计算用矩阵)
-         2. [一个精度降低但是视觉上几乎无损的例子](#一个精度降低但是视觉上几乎无损的例子)
-   2. [Appearance modelling (表面建模)](#appearance-modelling-表面建模)
-      1. [保存格式](#保存格式)
-      2. [Rendering](#rendering)
-      3. [Shading](#shading)
-         1. [shading interpolation - Barycentric Coordinates (重心坐标)](#shading-interpolation---barycentric-coordinates-重心坐标)
+- [color models](#color-models)
+  - [1. RGB](#1-rgb)
+  - [2. CMY(K)](#2-cmyk)
+    - [色域 (Gamut)](#色域-gamut)
+  - [3. HSV](#3-hsv)
+  - [4. YUV](#4-yuv)
+    - [案例和一个计算用矩阵](#案例和一个计算用矩阵)
+    - [一个精度降低但是视觉上几乎无损的例子](#一个精度降低但是视觉上几乎无损的例子)
+- [Appearance modelling (表面建模)](#appearance-modelling-表面建模)
+  - [保存格式](#保存格式)
+  - [Rendering](#rendering)
+  - [Shading](#shading)
+    - [shading interpolation - Barycentric Coordinates (重心坐标)](#shading-interpolation---barycentric-coordinates-重心坐标)
+    - [Phong Shading, Gouraud Shading, Flat Shading](#phong-shading-gouraud-shading-flat-shading)
 
 
 ## color models
@@ -101,3 +101,15 @@ Triangle mesh:
 ![alt text](_attachments/03Shading/image-8.png)
 
 每个三角形占总面积的比例，代表了它对面顶点颜色的权重。
+
+#### Phong Shading, Gouraud Shading, Flat Shading
+
+* Gouraud Shading，着色应用在顶点上，用**顶点的法线算出顶点的颜色**，然后**面内部像素的颜色**用**顶点的颜色**进行插值的方法得出。
+* Phong shading，着色应用在每个像素上，同样是求面的顶点法线，然后**面内部每个像素的法线**用**顶点的法线**进行插值的方法得出，再**用像素的法线计算每个像素的颜色**。
+  * 面法线->顶点法线->插值像素法线->计算像素颜色
+
+上述通过法线计算颜色其实就是前面上面光照强度的计算公式，只是来源的强度就是原本的颜色，所以光照强度可以得到颜色。
+
+Phone Shading和[Phong光照模型](./05Lighting.md)都是Bui Tuong Phong在"Illumination for Computer Generated Pictures"中提出的。
+
+* Flat Shading，每个面都是一个颜色，不进行插值。(有趣的结果：模型像是开了wireframe，因为每个面都是一个颜色)

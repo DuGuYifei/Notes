@@ -1,10 +1,19 @@
 # Pytorch Ovewrview
 
-## 基本结构
+- [1. 基本结构](#1-基本结构)
+- [2. Some key features](#2-some-key-features)
+- [3. References on Pytorch](#3-references-on-pytorch)
+- [4. Tensorboard (also in Pytorch)](#4-tensorboard-also-in-pytorch)
+- [5. 更高级的框架 - Pytorch Lightning](#5-更高级的框架---pytorch-lightning)
+  - [5.1. LightningModule](#51-lightningmodule)
+  - [5.2. Trainer](#52-trainer)
+
+
+## 1. 基本结构
 
 ![alt text](_attachments/PytorchOverview/image.png)
 
-## Some key features
+## 2. Some key features
 1. Device management:
     ```python
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
@@ -63,24 +72,24 @@
                 running_loss = 0.0
     ```
 
-## References on Pytorch
+## 3. References on Pytorch
 * Repository: https://github.com/pytorch/pytorch
 * Examples (recommendation):https://github.com/pytorch/examples
 * PyTorch for NumPy users:https://github.com/wkentaro/pytorch-for-numpyusers
 
-## Tensorboard (also in Pytorch)
+## 4. Tensorboard (also in Pytorch)
 
 * Visualize Networks
 * In short: document everything!
   * Weight Initialization
 
-## 更高级的框架 - Pytorch Lightning
+## 5. 更高级的框架 - Pytorch Lightning
 
 1. Research code: 这是编写模型时最有趣的部分，包括针对新任务或模型的具体算法和技术。在 PyTorch Lightning 中，这部分通常封装在 LightningModule 类中。
 2. Engineering code: 这部分对于所有项目和模型来说都是相同的，主要处理如模型训练、评估等通用流程。这部分代码在 Trainer 类中实现。
 3. Non-essential code: 包括日志记录、运行组织等辅助功能，通常通过 Callbacks 实现。
 
-### LightningModule
+### 5.1. LightningModule
 
 如何使用 LightningModule 来封装一个模型:
 
@@ -106,7 +115,7 @@ class LitModel(pl.LightningModule):
 ```
 
 
-### Trainer
+### 5.2. Trainer
 
 如何使用 Trainer 类来训练模型:
 

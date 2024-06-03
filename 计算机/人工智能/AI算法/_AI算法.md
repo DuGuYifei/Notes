@@ -9,3 +9,4 @@
 7. [GPT](GPT.md)
 8. [Faster-RCNN](Faster-RCNN.md)
 9. [Yolo](./YOLO.md)
+10. [softmax函数计算时候为什么要减去一个最大值](./softmax函数计算时候为什么要减去一个最大值.md)

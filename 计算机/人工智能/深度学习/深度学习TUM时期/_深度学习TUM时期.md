@@ -9,3 +9,4 @@
 5. [Lecture 4 - Optimization and Backprop](./Lecture04-OptimizationAndBackprop.md)
 6. [Lecture 5 - Scaling Optimization](./Lecture05-ScalingOptimization.md)
 7. [Lecture 6 - Training Neural Networks](./Lecture06-TrainingNeuralNetworks.md)
+8. [Lecture 7 - Losses and Activations](./Lecture07-LossesAndActivations.md)

@@ -6,3 +6,4 @@
 4. [04Texture Mapping](04TextureMapping.md)
 5. [05Lighting](05Lighting.md)
 6. [06Normal Mapping](06NormalMapping.md)
+7. [07Graphics APIs](07GraphicsAPIs.md)

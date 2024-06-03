@@ -44,8 +44,8 @@ Pokemoney = poke + money = pocket + money = 宝可梦 :)
 <div style="text-align:center;">
     <img src="./attachments/Pokemoney/login_page.png" width="30%" style="display:inline-block;">
     <img src="./attachments/Pokemoney/Ledger_books.png" width="30%" style="display:inline-block;">
-    <img src="./attachments/Pokemoney/The app navigation.png" width="30%" style="display:inline-block;">
-    <img src="./attachments/Pokemoney/main page 1.png" width="30%" style="display:inline-block;">
+    <img src="./attachments/Pokemoney/The_app_navigation.png" width="30%" style="display:inline-block;">
+    <img src="./attachments/Pokemoney/main_page_1.png" width="30%" style="display:inline-block;">
     <img src="./attachments/Pokemoney/Funds_main.png" width="30%" style="display:inline-block;">
     <img src="./attachments/Pokemoney/Funds_MoreDetails.png" width="30%" style="display:inline-block;">
 </div>

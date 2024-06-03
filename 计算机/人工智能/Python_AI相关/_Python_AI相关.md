@@ -4,6 +4,7 @@
 2. [numpy](numpy/_numpy.md)
 3. [matplotlib](matplotlib/_matplotlib.md)
 4. [pytorch](pytorch/_pytorch.md)
+5. [tensorboard](tensorboard/_tensorboard.md)
 
 ## AI python框架对比
 Two big:

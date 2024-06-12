@@ -1,0 +1,34 @@
+# Lecture 08 - 补充Exercise 8 - Transfer Learning And Autoencoders
+
+
+## Transfer Learning
+
+* 问题陈述：
+    * 训练深度神经网络需要大量数据
+    * 收集大量数据是昂贵的或者根本不可能的
+  * 理念：
+    * 一些问题/任务是密切相关的
+    * 我们能否从一个任务中转移知识到另一个任务？
+    * 我们能否重用（至少部分）预训练网络用于新任务？
+
+![alt text](_attachments/Lecture08-补充Exercise8-TransferLearningAndAutoencoders/image.png)
+
+![alt text](_attachments/Lecture08-补充Exercise8-TransferLearningAndAutoencoders/image-1.png)
+
+![alt text](_attachments/Lecture08-补充Exercise8-TransferLearningAndAutoencoders/image-2.png)
+
+
+## Autoencoders
+
+![alt text](_attachments/Lecture08-补充Exercise8-TransferLearningAndAutoencoders/image-3.png)
+
+encode到一个低维度的bottleneck(瓶颈)，再decode重构输入
+
+
+## Transfer Learning with Autoencoders
+![alt text](_attachments/Lecture08-补充Exercise8-TransferLearningAndAutoencoders/image-4.png)
+
+* 先基于大量数据训练一个autoencoder
+* 再取出encoder部分，用于新任务的特征提取
+
+

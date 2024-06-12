@@ -169,6 +169,7 @@ Disable a random set of neurons (typically 50%) during training.
     * Train: $E[z] \\= \frac{1}{4}(\theta_10+\theta_20+\theta_1x_1+\theta_20+\theta_10+\theta_2x_2+\theta_1x1+\theta_2x_2)\\=\frac{1}{2}(\theta_1x_1+\theta_2x_2)$
       * 理解1：这里的1/4是因为有4种可能的组合，每种组合的概率是1/4，所以期望就是拿概率乘以每种组合的值。
       * 理解2：然后计算期望值的结果可以看到和测试时的公式是一样的，因为测试时就是以这个原理才乘以了p。
+    * 根据GPT显示，也可以不通过test时候 * p 补偿，而是通过在train的时候将dropout的mask * (1-p)
 
 #### 3.4.3. Dropout: Before
 

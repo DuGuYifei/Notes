@@ -12,7 +12,7 @@
         - [2.1.1.1.1. 对于Binary Cross Entropy Loss案例](#21111-对于binary-cross-entropy-loss案例)
     - [2.1.2. 权重数量](#212-权重数量)
     - [2.1.3. 其他问题未来学习](#213-其他问题未来学习)
-  - [2.2. Regularization（正则化）(我认为就是泛化)](#22-regularization正则化我认为就是泛化)
+  - [2.2. Regularization（正则化）(我认为就是泛化generalization)](#22-regularization正则化我认为就是泛化generalization)
     - [2.2.1. over- and underfitting](#221-over--and-underfitting)
     - [2.2.2. 正则化技巧](#222-正则化技巧)
       - [2.2.2.1. L1/L2 regularization](#2221-l1l2-regularization)
@@ -154,7 +154,7 @@ bias数量就是该层神经元的数量，因为一般每个神经元都有一�
 3. 如何对大量的数据集进行梯度计算
 4. 如何加速
 
-### 2.2. Regularization（正则化）(我认为就是泛化)
+### 2.2. Regularization（正则化）(我认为就是泛化generalization)
 
 需要一个channelization的tool或者process来面对新的没见过的样本，以此来优化一个函数。
 

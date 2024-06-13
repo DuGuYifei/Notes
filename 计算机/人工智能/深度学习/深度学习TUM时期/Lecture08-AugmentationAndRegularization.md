@@ -25,6 +25,7 @@
     - [3.5.4. BN: Train vs Test](#354-bn-train-vs-test)
     - [3.5.5. BN: What do you get?](#355-bn-what-do-you-get)
     - [3.5.6. 补充](#356-补充)
+    - [代码实践](#代码实践)
 - [4. Why not simply more layers?](#4-why-not-simply-more-layers)
 
 
@@ -277,7 +278,152 @@ Disadvantages
        * ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-15.png)
        * 自我理解：对于图像，这样的话，可以保证不同的坐标间的相关性，当然，如果遇到特定情况，比如每个点单独有作用的，好像可以不用所有点一起，当然我没有idea什么情况是这个。 
    * 但不管是哪个normalization都是为了让nonlinearity更加稳定，从而让训练更加容易。
+  
 
+#### 代码实践
+
+```python
+def batchnorm_forward(x, gamma, beta, bn_param):
+    """
+    Forward pass for batch normalization.
+
+    During training the sample mean and (uncorrected) sample variance are
+    computed from minibatch statistics and used to normalize the incoming data.
+    During training we also keep an exponentially decaying running mean of the mean
+    and variance of each feature, and these averages are used to normalize data
+    at test-time.
+
+    At each timestep we update the running averages for mean and variance using
+    an exponential decay based on the momentum parameter:
+
+    running_mean = momentum * running_mean + (1 - momentum) * sample_mean
+    running_var = momentum * running_var + (1 - momentum) * sample_var
+
+    Note that the batch normalization paper suggests a different test-time
+    behavior: they compute sample mean and variance for each feature using a
+    large number of training images rather than using a running average. For
+    this implementation we have chosen to use running averages instead since
+    they do not require an additional estimation step; the torch7 implementation
+    of batch normalization also uses running averages.
+
+    Input:
+    - x: Data of shape (N, D)
+    - gamma: Scale parameter of shape (D,)
+    - beta: Shift paremeter of shape (D,)
+    - bn_param: Dictionary with the following keys:
+      - mode: 'train' or 'test'; required
+      - eps: Constant for numeric stability
+      - momentum: Constant for running mean / variance.
+      - running_mean: Array of shape (D,) giving running mean of features
+      - running_var Array of shape (D,) giving running variance of features
+
+    Returns a tuple of:
+    - out: of shape (N, D)
+    - cache: A tuple of values needed in the backward pass
+    """
+    mode = bn_param['mode']
+    eps = bn_param.get('eps', 1e-5)
+    momentum = bn_param.get('momentum', 0.9)
+
+    N, D = x.shape
+    running_mean = bn_param.get('running_mean', np.zeros(D, dtype=x.dtype))
+    running_var = bn_param.get('running_var', np.zeros(D, dtype=x.dtype))
+    out, cache = None, None
+    if mode == 'train':
+        sample_mean = np.mean(x, axis=0)
+
+        x_minus_mean = x - sample_mean
+
+        sq = x_minus_mean ** 2
+
+        var = 1. / N * np.sum(sq, axis=0)
+
+        sqrtvar = np.sqrt(var + eps)
+
+        ivar = 1. / sqrtvar
+
+        x_norm = x_minus_mean * ivar
+
+        gammax = gamma * x_norm
+
+        out = gammax + beta
+
+        running_var = momentum * running_var + (1 - momentum) * var
+        running_mean = momentum * running_mean + (1 - momentum) * sample_mean
+
+        cache = (out, x_norm, beta, gamma, x_minus_mean, ivar, sqrtvar, var, eps)
+
+    elif mode == 'test':
+
+        x = (x - running_mean) / np.sqrt(running_var)
+        out = x * gamma + beta
+
+    else:
+        raise ValueError('Invalid forward batchnorm mode "%s"' % mode)
+
+    # Store the updated running means back into bn_param
+    bn_param['running_mean'] = running_mean
+    bn_param['running_var'] = running_var
+
+    return out, cache
+
+
+def batchnorm_backward(dout, cache):
+    """
+    Backward pass for batch normalization.
+
+    For this implementation, you should write out a computation graph for
+    batch normalization on paper and propagate gradients backward through
+    intermediate nodes.
+
+    Inputs:
+    - dout: Upstream derivatives, of shape (N, D)
+    - cache: Variable of intermediates from batchnorm_forward.
+
+    Returns a tuple of:
+    - dx: Gradient with respect to inputs x, of shape (N, D)
+    - dgamma: Gradient with respect to scale parameter gamma, of shape (D,)
+    - dbeta: Gradient with respect to shift parameter beta, of shape (D,)
+    """
+    dx, dgamma, dbeta = None, None, None
+    ########################################################################
+    # TODO: Implement the backward pass for batch normalization.           #
+    ########################################################################
+
+    out, x_norm, beta, gamma, x_minus_mean, ivar, sqrtvar, var, eps = cache
+
+    N, D = dout.shape
+
+    dgamma = np.sum(dout * x_norm, axis=0)
+    dbeta = np.sum(dout, axis=0)
+    dx_norm = dout * gamma
+    divar = np.sum(dx_norm * x_minus_mean, axis=0)
+    dx_minus_mean_1 = dx_norm * ivar
+    dsqrtvar = -1./ var * divar
+    dvar = 0.5 * 1. / np.sqrt(var + eps) * dsqrtvar
+    dsq = 1. / N * np.ones(x_minus_mean.shape) * dvar
+    dx_minus_mean_2 = 2 * x_minus_mean * dsq
+    dx_minus_mean = dx_minus_mean_1 + dx_minus_mean_2
+    dmean = -1 * np.sum(dx_minus_mean, axis=0)
+    dx_in_mean = 1. / N * np.ones(x_minus_mean.shape) * dmean
+    dx = dx_in_mean + dx_minus_mean
+
+    ########################################################################
+    #                           END OF YOUR CODE                           #
+    ########################################################################
+
+    return dx, dgamma, dbeta
+```
+
+领悟：
+1. forward很好懂，主要是backward
+2. backward的时候，可以尝试根据forward的所有等式一个一个推导比较好写
+3. `np.sum`一般在维度发生变化时候使用，可以将所有的样本的梯度影响都考虑到
+4. `dx`和`dx_minus_mean`都用`+`，说明在backprop时候，如果一个顶点指向两个方向，但是两个方向之间是相互独立的，那么就可以直接相加。
+   1. ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-16.png)
+   2. ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-19.png)
+   3. ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-17.png)
+   4. ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-18.png)
 
 ## 4. Why not simply more layers?
 翻译：

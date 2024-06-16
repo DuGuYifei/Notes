@@ -25,7 +25,7 @@
     - [3.5.4. BN: Train vs Test](#354-bn-train-vs-test)
     - [3.5.5. BN: What do you get?](#355-bn-what-do-you-get)
     - [3.5.6. 补充](#356-补充)
-    - [代码实践](#代码实践)
+    - [3.5.7. 代码实践](#357-代码实践)
 - [4. Why not simply more layers?](#4-why-not-simply-more-layers)
 
 
@@ -278,9 +278,10 @@ Disadvantages
        * ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-15.png)
        * 自我理解：对于图像，这样的话，可以保证不同的坐标间的相关性，当然，如果遇到特定情况，比如每个点单独有作用的，好像可以不用所有点一起，当然我没有idea什么情况是这个。 
    * 但不管是哪个normalization都是为了让nonlinearity更加稳定，从而让训练更加容易。
-  
 
-#### 代码实践
+
+#### 3.5.7. 代码实践
+
 
 ```python
 def batchnorm_forward(x, gamma, beta, bn_param):
@@ -418,7 +419,8 @@ def batchnorm_backward(dout, cache):
 领悟：
 1. forward很好懂，主要是backward
 2. backward的时候，可以尝试根据forward的所有等式一个一个推导比较好写
-3. `np.sum`一般在维度发生变化时候使用，可以将所有的样本的梯度影响都考虑到
+3. `np.sum`原因不仅仅是维度的变化，更是因为求导时有$(1^N)^T$，那么当他右乘一个矩阵时，相当于右边的矩阵进行`np.sum`，所以这里也是这样的。
+   1. ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-20.png)
 4. `dx`和`dx_minus_mean`都用`+`，说明在backprop时候，如果一个顶点指向两个方向，但是两个方向之间是相互独立的，那么就可以直接相加。
    1. ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-16.png)
    2. ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-19.png)
@@ -427,7 +429,7 @@ def batchnorm_backward(dout, cache):
 
 ## 4. Why not simply more layers?
 翻译：
-* 至少有一个隐藏层的神经网络是通用函数逼近器。
+* 至少有一个隐藏层的神经网络 是 通用函数逼近器。
 * 但泛化是另一个问题。
 * 为什么不只是更深，然后得到更好的结果？
   * 没有结构！！

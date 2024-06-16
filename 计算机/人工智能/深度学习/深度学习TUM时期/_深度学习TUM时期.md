@@ -12,3 +12,4 @@
 8. [Lecture 07 - Losses and Activations](./Lecture07-LossesAndActivations.md)
 9. [Lecture 08 - Augmentation and Regularization](./Lecture08-AugmentationAndRegularization.md)
 10. [Lecture 08 - 补充Exercise 8 - Transfer Learning And Autoencoders](./Lecture08-补充Exercise8-TransferLearningAndAutoencoders.md)
+11. [Lecture 09 - Convolutional Neural Networks](./Lecture09-ConvolutionalNeuralNetworks.md)

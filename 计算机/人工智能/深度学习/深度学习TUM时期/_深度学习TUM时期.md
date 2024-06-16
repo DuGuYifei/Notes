@@ -13,3 +13,4 @@
 9. [Lecture 08 - Augmentation and Regularization](./Lecture08-AugmentationAndRegularization.md)
 10. [Lecture 08 - 补充Exercise 8 - Transfer Learning And Autoencoders](./Lecture08-补充Exercise8-TransferLearningAndAutoencoders.md)
 11. [Lecture 09 - Convolutional Neural Networks](./Lecture09-ConvolutionalNeuralNetworks.md)
+12. [Lecture 09 - 补充Exercise 9 - Convolution的BN和Dropout](./Lecture09-补充Exercise9-Convolution的BN和Dropout.md)

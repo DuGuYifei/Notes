@@ -31,4 +31,31 @@ encode到一个低维度的bottleneck(瓶颈)，再decode重构输入
 * 先基于大量数据训练一个autoencoder
 * 再取出encoder部分，用于新任务的特征提取
 
+实际代码中：注意它将autoencoder的encoder部分作为一个模型，然后再在这个encoder的基础上再加上一个classifier的后半部分即可。forward函数中，先将输入通过encoder，再通过classifier的模型。
 
+```python
+class Classifier(nn.Module):
+
+    def __init__(self, hparams, encoder):
+        super().__init__()
+        # set hyperparams
+        self.hparams = hparams
+        self.encoder = encoder
+        self.model = nn.Identity()
+        self.device = hparams.get("device", torch.device("cuda" if torch.cuda.is_available() else "cpu"))
+
+        self.inside_size = hparams.get("n_hidden", 256)
+        self.model = nn.Sequential(
+            nn.Linear(encoder.latent_dim, self.inside_size),
+            nn.ReLU(),
+            nn.Linear(self.inside_size, 10),
+            nn.Softmax(dim=1) # 因为是多分类问题
+        )
+
+        self.set_optimizer()
+        
+    def forward(self, x):
+        x = self.encoder(x)
+        x = self.model(x)
+        return x
+```

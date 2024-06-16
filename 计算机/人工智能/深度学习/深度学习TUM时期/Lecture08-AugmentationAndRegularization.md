@@ -278,6 +278,7 @@ Disadvantages
        * ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-15.png)
        * 自我理解：对于图像，这样的话，可以保证不同的坐标间的相关性，当然，如果遇到特定情况，比如每个点单独有作用的，好像可以不用所有点一起，当然我没有idea什么情况是这个。 
    * 但不管是哪个normalization都是为了让nonlinearity更加稳定，从而让训练更加容易。
+   * [Spatial Batch Normalization](./Lecture09-补充Exercise9-Convolution的BN和Dropout.md#spatial-batch-normalization)
 
 
 #### 3.5.7. 代码实践

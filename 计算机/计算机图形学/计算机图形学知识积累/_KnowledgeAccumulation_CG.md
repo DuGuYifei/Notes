@@ -7,4 +7,5 @@
 5. [右手系左手系](右手系左手系.md)
 6. [Ramer-Douglas-Peucker算法](Ramer-Douglas-Peucker算法.md)
 7. [法线和viewMatrix变换](法线和viewMatrix变换.md)
-8. [射线和线段或三角形的交点](射线和线段的交点.md)
+8. [射线和线段或三角形的交点](射线和线段或三角形的交点.md)
+9. [点是否在三角形内](点是否在三角形内.md)

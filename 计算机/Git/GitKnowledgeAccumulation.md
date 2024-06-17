@@ -2,51 +2,56 @@
 
 ![](2022-12-17-07-33-13.png)
 
-1. [连接账户（多个账户）](#连接账户多个账户)
-2. [know\_hosts文件](#know_hosts文件)
-3. [GitLens 和 在VSCode中使用自带git功能](#gitlens-和-在vscode中使用自带git功能)
-4. [Git系统基础介绍](#git系统基础介绍)
-5. [Git基本操作](#git基本操作)
-6. [更新链接](#更新链接)
-7. [Git删除branch](#git删除branch)
-8. [Git 切换分支](#git-切换分支)
-   1. [Git 新仓库切换分支，其实就是创建分支](#git-新仓库切换分支其实就是创建分支)
-9. [设置默认分支为main](#设置默认分支为main)
-10. [重命名分支](#重命名分支)
-11. [改变git buffer支持大文件](#改变git-buffer支持大文件)
-12. [Git 大文件 LFS (Large file storage)](#git-大文件-lfs-large-file-storage)
-13. [asset release](#asset-release)
-14. [从缓存区删除文件（适用于删除仓库文件不过需要commit再push）](#从缓存区删除文件适用于删除仓库文件不过需要commit再push)
-15. [彻底删除（包括物理的）](#彻底删除包括物理的)
-16. [子目录](#子目录)
-17. [子模块](#子模块)
-    1. [子模块的更新](#子模块的更新)
-18. [忽略某个文件/文件夹](#忽略某个文件文件夹)
-19. [同时push多个仓库](#同时push多个仓库)
-20. [克隆到指定文件夹](#克隆到指定文件夹)
-21. [gh-pages的分支](#gh-pages的分支)
-22. [pull request](#pull-request)
-    1. [当原主人更新时](#当原主人更新时)
-    2. [处理pull request](#处理pull-request)
-       1. [直接在原主人上修改](#直接在原主人上修改)
-       2. [直接拉取refs只读](#直接拉取refs只读)
-       3. [自己新建分支来解决](#自己新建分支来解决)
-23. [git commit 修改](#git-commit-修改)
-    1. [继续上次commit](#继续上次commit)
-24. [git merge / rebase](#git-merge--rebase)
-25. [git pull / fetch](#git-pull--fetch)
-26. [git stash](#git-stash)
-    1. [应用场景1：改动同一分支/不想git pull产生新的commit点](#应用场景1改动同一分支不想git-pull产生新的commit点)
-    2. [应用场景2：不小心改动其他分支](#应用场景2不小心改动其他分支)
-27. [强制推送](#强制推送)
-28. [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
-29. [撤销](#撤销)
-30. [git cherry pick](#git-cherry-pick)
-31. [项目迁移](#项目迁移)
-32. [tag](#tag)
-33. [使用操作记载](#使用操作记载)
-    1. [版本落后了，但没有自己的更新](#版本落后了但没有自己的更新)
-    2. [不想创建merge的commit号，但想代码合并](#不想创建merge的commit号但想代码合并)
+- [连接账户（多个账户）](#连接账户多个账户)
+- [know\_hosts文件](#know_hosts文件)
+- [GitLens 和 在VSCode中使用自带git功能](#gitlens-和-在vscode中使用自带git功能)
+- [Git系统基础介绍](#git系统基础介绍)
+- [Git基本操作](#git基本操作)
+- [更新链接](#更新链接)
+- [Git删除branch](#git删除branch)
+- [Git 切换分支](#git-切换分支)
+  - [Git 新仓库切换分支，其实就是创建分支](#git-新仓库切换分支其实就是创建分支)
+- [设置默认分支为main](#设置默认分支为main)
+- [重命名分支](#重命名分支)
+- [改变git buffer支持大文件](#改变git-buffer支持大文件)
+- [Git 大文件 LFS (Large file storage)](#git-大文件-lfs-large-file-storage)
+- [asset release](#asset-release)
+- [从缓存区删除文件（适用于删除仓库文件不过需要commit再push）](#从缓存区删除文件适用于删除仓库文件不过需要commit再push)
+- [彻底删除（包括物理的）](#彻底删除包括物理的)
+- [子目录](#子目录)
+- [子模块](#子模块)
+  - [子模块的更新](#子模块的更新)
+- [忽略某个文件/文件夹](#忽略某个文件文件夹)
+- [同时push多个仓库](#同时push多个仓库)
+- [克隆到指定文件夹](#克隆到指定文件夹)
+- [gh-pages的分支](#gh-pages的分支)
+- [pull request](#pull-request)
+  - [当原主人更新时](#当原主人更新时)
+  - [处理pull request](#处理pull-request)
+    - [直接在原主人上修改](#直接在原主人上修改)
+    - [直接拉取refs只读](#直接拉取refs只读)
+    - [自己新建分支来解决](#自己新建分支来解决)
+- [git commit 修改](#git-commit-修改)
+  - [继续上次commit](#继续上次commit)
+- [git merge / rebase](#git-merge--rebase)
+- [git pull / fetch](#git-pull--fetch)
+- [git stash](#git-stash)
+  - [应用场景1：改动同一分支/不想git pull产生新的commit点](#应用场景1改动同一分支不想git-pull产生新的commit点)
+  - [应用场景2：不小心改动其他分支](#应用场景2不小心改动其他分支)
+- [强制推送](#强制推送)
+- [关于git所在文件夹和操作系统的思考](#关于git所在文件夹和操作系统的思考)
+- [撤销](#撤销)
+- [git cherry pick](#git-cherry-pick)
+- [项目迁移](#项目迁移)
+- [tag](#tag)
+- [使用操作记载](#使用操作记载)
+  - [版本落后了，但没有自己的更新](#版本落后了但没有自己的更新)
+  - [不想创建merge的commit号，但想代码合并](#不想创建merge的commit号但想代码合并)
+- [git status 中文显示问题](#git-status-中文显示问题)
+  - [解决数字：](#解决数字)
+  - [解决乱码](#解决乱码)
+    - [cmd 修改启动命令 (不推荐修改注册表)](#cmd-修改启动命令-不推荐修改注册表)
+    - [powershell 配置启动文件，即：`C:\Users\username\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`](#powershell-配置启动文件即cusersusernamedocumentswindowspowershellmicrosoftpowershell_profileps1)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -515,4 +520,40 @@ git reset --hard 版本
 ### 不想创建merge的commit号，但想代码合并
 ```bash
 git rebase 想要拉到本分支的目标分支
+```
+
+## git status 中文显示问题
+
+### 解决数字：
+
+![alt text](_attachments/GitKnowledgeAccumulation/image.png)
+
+```bash
+git config --global core.quotepath false
+```
+
+### 解决乱码
+
+![alt text](_attachments/GitKnowledgeAccumulation/image-1.png)
+
+#### cmd 修改启动命令 (不推荐修改注册表)
+```
+%SystemRoot%\system32\cmd.exe /k chcp 65001
+```
+
+#### powershell 配置启动文件，即：`C:\Users\username\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+```powershell
+notepad $PROFILE
+```
+
+添加
+```ps1
+$OutputEncoding = [System.Text.Encoding]::UTF8
+[console]::InputEncoding = [System.Text.Encoding]::UTF8
+[console]::OutputEncoding = [System.Text.Encoding]::UTF8
+```
+
+若遇到“此系统禁止运行脚本”：管理员启动powershell，输入
+```powershell
+Set-ExecutionPolicy RemoteSigned
 ```

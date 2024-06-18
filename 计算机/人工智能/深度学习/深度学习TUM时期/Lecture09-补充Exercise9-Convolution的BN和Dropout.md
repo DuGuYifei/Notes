@@ -13,6 +13,15 @@
 
 理解：其实很简单，就是mean和var计算时候变成了$\frac{1}{N*H*W}$。
 
+pytorch中的实现：
+
+```python
+nn.BatchNorm2d(num_features, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+```
+
+其中:`num_features`是输入的channel数。
+
+
 ## Dropout for Convolutional Layers
 
 * Regular Dropout

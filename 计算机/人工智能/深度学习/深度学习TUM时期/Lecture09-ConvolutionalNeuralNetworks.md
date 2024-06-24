@@ -10,6 +10,7 @@
   - [2.4. 参数和小结](#24-参数和小结)
   - [2.5. 不同的Filter](#25-不同的filter)
   - [2.6. Dimensions](#26-dimensions)
+    - [2.6.1. Valid Convolution vs Same Convolution](#261-valid-convolution-vs-same-convolution)
   - [2.7. Shape of Weights Tensor](#27-shape-of-weights-tensor)
 - [3. Pooling](#3-pooling)
   - [3.1. 介绍](#31-介绍)
@@ -96,7 +97,7 @@ $$f*g = \int_{-\infty}^{\infty} f(\tau)g(t-\tau)d\tau$$
 ### 2.4. 参数和小结
 
 1. 一次卷积层的参数量由Filter决定 = 卷积核宽 * 卷积核高 * 通道数 (由输入决定) * 卷积核个数 + 卷积核个数（bias）
-   1. 通道数：输入的图片的通道数
+   1. 通道数：输入的图片的通道数 - 卷积核在channel这个维度上的数字也是不一样的
    2. 卷积核个数：输出的feature map的个数
    3. 为什么要加卷积核个数：每个卷积核都有一个bias。
 2. 每个filter提取一个不同的图片特征
@@ -132,7 +133,7 @@ w/o padding:
 
 Note: 
 1. 如果N-F不能被S整除，那么就要考虑padding的问题，否则就是illegal。
-2. Filter的个数会是下一个层的通道数。[参数和小结](#参数和小结)
+2. Filter的个数会是下一个层的通道数。[参数和小结](#24-参数和小结)
 
 ![alt text](_attachments/Lecture09-ConvolutionalNeuralNetworks/image-5.png)
 
@@ -145,7 +146,7 @@ w/ padding:
 4. Padding: P
 5. Output: $(\frac{N+2P-F}{S}+1) * (\frac{N+2P-F}{S}+1)$ 
 
-叫法：
+#### 2.6.1. Valid Convolution vs Same Convolution
 * Valid Convolution: 
   * no padding
 * Same Convolution: 
@@ -280,3 +281,5 @@ PS:
 ![alt text](_attachments/Lecture09-ConvolutionalNeuralNetworks/image-10.png)
 
 ![alt text](_attachments/Lecture09-ConvolutionalNeuralNetworks/image-11.png)
+
+PS: 历史验证是，当年AlexNet是11*11来提取高频，但是对中频不好，第二次这个人用ZFNet用7*7，然后牛津大学的VGG用连续的3*3发现效果更好，低频中频高频的特征都能提取到。（频率这里是指特征的频率，比如花色的墙显然比纯色的白墙高频）

@@ -1,7 +1,8 @@
 # Lecture 08 - 补充Exercise 8 - Transfer Learning And Autoencoders
 
-
 ## Transfer Learning
+
+2024-06-25 补充：在后面的[Lecture 11](./Lecture11-RNNsAndTransformers.md)中，也有正课学到Transfer Learning。
 
 * 问题陈述：
     * 训练深度神经网络需要大量数据

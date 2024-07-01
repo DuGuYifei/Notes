@@ -1,6 +1,40 @@
 # Lecture 10 - Architectures
 
-## Test Benchmarks (测试基准) - ImageNet
+- [1. Test Benchmarks (测试基准) - ImageNet](#1-test-benchmarks-测试基准---imagenet)
+- [2. Common Performance Metrics](#2-common-performance-metrics)
+- [3. Classic Architectures](#3-classic-architectures)
+  - [3.1. LeNet](#31-lenet)
+  - [3.2. AlexNet](#32-alexnet)
+  - [3.3. VGGNet](#33-vggnet)
+- [4. Skip Connections 跳跃连接](#4-skip-connections-跳跃连接)
+  - [4.1. 跳跃连接引言](#41-跳跃连接引言)
+  - [4.2. Residual Block 残差块](#42-residual-block-残差块)
+  - [4.3. ResNet Block](#43-resnet-block)
+  - [4.4. ResNet](#44-resnet)
+    - [4.4.1. Error 和 Depth 的关系](#441-error-和-depth-的关系)
+    - [4.4.2. Why ResNet works?](#442-why-resnet-works)
+  - [4.5. 代码实现](#45-代码实现)
+- [5. 1x1 Convolution](#5-1x1-convolution)
+- [6. Inception Layer](#6-inception-layer)
+  - [6.1. 概念](#61-概念)
+  - [6.2. 解决Computational Cost的问题证明](#62-解决computational-cost的问题证明)
+  - [6.3. GoogLeNet](#63-googlenet)
+- [7. Xception Net](#7-xception-net)
+  - [7.1. 简介](#71-简介)
+  - [7.2. Depthwise Separable Convolutions](#72-depthwise-separable-convolutions)
+    - [7.2.1. WHY Depthwise Separable Convolutions?](#721-why-depthwise-separable-convolutions)
+    - [7.2.2. 个人思考-DSC的特征提取效果](#722-个人思考-dsc的特征提取效果)
+- [8. 小结](#8-小结)
+- [9. Fully Convolutional Networks](#9-fully-convolutional-networks)
+  - [9.1. 简介](#91-简介)
+  - [9.2. 如何Upsample](#92-如何upsample)
+    - [9.2.1. Interpolation 插值](#921-interpolation-插值)
+    - [9.2.2. Transposed Convolution 转置卷积](#922-transposed-convolution-转置卷积)
+  - [9.3. Refined Outputs（细化输出）](#93-refined-outputs细化输出)
+    - [9.3.1. U-Net](#931-u-net)
+
+
+## 1. Test Benchmarks (测试基准) - ImageNet
 
 PS: 不是网络，是数据集
 
@@ -8,15 +42,15 @@ ImageNet Dataset：ILSVRC (ImageNet Large Scale Visual Recognition Challenge)
 
 这个数据集一般用来测试网络的性能。
 
-## Common Performance Metrics
+## 2. Common Performance Metrics
 
 1. Top-1 score: 检测一个样本的最高概率的label是否正确
 2. Top-5 score: 检测一个样本的label是否在最高的5个概率中
 3. Top-5 error: 测试样本中，label不在最高的5个概率中的比例
 
-## Classic Architectures
+## 3. Classic Architectures
 
-### LeNet
+### 3.1. LeNet
 
 * 太老了，所以当时用的filter数量比较少
 * 太老了，用了avg pooling而不是max pooling
@@ -30,7 +64,7 @@ deeper: width ↓, height ↓, number of filters ↑
 
 PS:MNIST 手写数字识别的数据集
 
-### AlexNet
+### 3.2. AlexNet
 
 ![alt text](_attachments/Lecture10-Architectures/image-1.png)
 
@@ -40,7 +74,7 @@ PS:MNIST 手写数字识别的数据集
 
 PS: 用了cuda，但是是C++写的
 
-### VGGNet
+### 3.3. VGGNet
 
 PS: VGG 是Visual Geometry Group的缩写，是牛津大学的一个研究组
 
@@ -61,9 +95,9 @@ PS: 下图中 "x2" 意味着连续两层的Conv，"x3" 意味着连续三层的C
 
 PS：也证明了不是越深越好，其中一个原因是需要back prop，即使是ReLU，在层数多的情况下，也会导致梯度消失。这个其中的原因也会涉及到比如数字是32bit或者16bit的限制之类的。
 
-## Skip Connections 跳跃连接
+## 4. Skip Connections 跳跃连接
 
-### 跳跃连接引言
+### 4.1. 跳跃连接引言
 
 * 越多的层数，越难训练
 * 梯度消失和梯度爆炸
@@ -74,7 +108,7 @@ PS：也证明了不是越深越好，其中一个原因是需要back prop，即
 2. **网络性能退化**：在理论上，网络层次的增加应该带来性能的提升或至少保持稳定。然而，在实际操作中，增加更多的层次有时会导致网络性能退化，而不是提高。这是因为网络变得越来越难以训练。跳跃连接**允许模型在增加深度的同时，保持或者提升性能**。
 3. **特征重用**：通过跳跃连接，网络可以直接使用**原始的输入或早期层的特征**，这样可以在网络深层中重用有效的特征。这意味着网络不必在每一层重新学习相同的特征表示，从而提高了学习效率和网络的表达能力。（**我的理解：就是相当于中间的一堆w和b都是0，直接把输入的x传到后面的层来用**）
 
-### Residual Block 残差块
+### 4.2. Residual Block 残差块
 
 ![alt text](_attachments/Lecture10-Architectures/image-4.png)
 
@@ -82,13 +116,13 @@ PS：也证明了不是越深越好，其中一个原因是需要back prop，即
 * 通常直接使用 same convolutions 策略，因为要相加，所以要保持大小一致
 * 否则我们需要convert维度with a matrix of learned weights or zero padding(理解：这里的0填充不是每次conv时候0填充而是直接将矩阵的维度通过0填充扩展到和前面一样)
 
-### ResNet Block
+### 4.3. ResNet Block
 
 ![alt text](_attachments/Lecture10-Architectures/image-5.png)
 
 直接将 **identity** 的x加到后面，可能跳过的不止一两层，可能是多层
 
-### ResNet
+### 4.4. ResNet
 
 * [Xavier](./Lecture07-LossesAndActivations.md#32-xavier-initialization-glorot-initialization)/2 initialization
 * [SGD + Momentum (0.9)](./Lecture05-ScalingOptimization.md#34-gradient-descent-with-momentum-使用动量的梯度下降)
@@ -103,19 +137,19 @@ ResNet-152: 60M parameters
 
 ![ResNet-152](_attachments/Lecture10-Architectures/image-6.png)
 
-#### Error 和 Depth 的关系
+#### 4.4.1. Error 和 Depth 的关系
 
 * 对于plain: if we make the network deeper, at some point performance will degrade
 * 对于ResNet: 通常来说，更深的网络会有更好的性能
 
 ![alt text](_attachments/Lecture10-Architectures/image-7.png)
 
-#### Why ResNet works?
+#### 4.4.2. Why ResNet works?
 
 * ResNet的一个假设是：identity mapping is easier to learn than the residual mapping (理解：easier 不是说训练的时候更快，而是说更容易学习到有用的特征以及不会梯度消失之类的)
 * Guarantees performace只会improve (理解：跳跃连接保证了即使残差块未能有效学习任何有用的变换，网络的输出至少可以是前一层的输出。这意味着在最坏的情况下，网络的性能至少与不加任何残差块的情况相当。就像前面[引言](#跳跃连接引言)中提到的特征重用)
 
-### 代码实现
+### 4.5. 代码实现
 
 关键在于forward函数里：
 
@@ -165,7 +199,7 @@ def forward(self, x):
         return out
 ```
 
-## 1x1 Convolution
+## 5. 1x1 Convolution
 
 看起来只是等比例放大，但是放到三维的有很多层的conv块的情况下看，就：
 
@@ -178,9 +212,9 @@ def forward(self, x):
 
 （GPT:用1x1的conv层来代替FC层的好处是，1x1的conv层可以保持空间信息）。
 
-## Inception Layer
+## 6. Inception Layer
 
-### 概念
+### 6.1. 概念
 
 * 不像前面那些论文说多大的filter，而是直接用所有的filter大小
 * 但是必须用same convolutions策略，因为要concatenate
@@ -197,7 +231,7 @@ def forward(self, x):
 
 ![alt text](_attachments/Lecture10-Architectures/image-12.png)
 
-### 解决Computational Cost的问题证明
+### 6.2. 解决Computational Cost的问题证明
 
 使用1x1的conv来减少channel数量。下面两张图就是先用1x1的conv来减少channel数量，然后再用5x5的conv来提取特征。
 
@@ -205,7 +239,7 @@ def forward(self, x):
 
 ![alt text](_attachments/Lecture10-Architectures/image-11.png)
 
-### GoogLeNet
+### 6.3. GoogLeNet
 
 Incaption Layer和在Incption Layer之间的Max Pooling，这个中间的Max Pooling是可以更好的减少size。
 
@@ -217,15 +251,15 @@ Incaption Layer和在Incption Layer之间的Max Pooling，这个中间的Max Poo
 
 ![alt text](_attachments/Lecture10-Architectures/inceptionoverall_00.png)
 
-## Xception Net
+## 7. Xception Net
 
-### 简介
+### 7.1. 简介
 
 * 极限版的Inception: 用**Depthwise Separable Convolutions**来代替Inception的normal convolutions
 * 36 conv layers, structured into several modules with **skip connections**
 * 胜过Inception Net V3
 
-### Depthwise Separable Convolutions
+### 7.2. Depthwise Separable Convolutions
 
 即原本一个卷积核的channel是和输入一样的，现在一个输入的channel可以分配给多个卷积核。
 
@@ -241,13 +275,13 @@ classtorch.nn.ConvTranspose2d(in_channels, out_channels, kernel_size, stride=1, 
 
 PS：[ConvTranspose2d 转置卷积](../深度学习知识积累/转置卷积TransposeConvolution.md)
 
-#### WHY Depthwise Separable Convolutions?
+#### 7.2.1. WHY Depthwise Separable Convolutions?
 
 减少计算量。
 
 ![alt text](_attachments/Lecture10-Architectures/image-15.png)
 
-#### 个人思考-DSC的特征提取效果
+#### 7.2.2. 个人思考-DSC的特征提取效果
 
 难道dsc的特征提取效果不会比常规的低吗？因为原本一个卷积核卷出来对不同通道之间的关系会有保留，现在分开了，最后再通过一个1x1的conv来等比例放大缩小，不会没什么效果吗？
 
@@ -262,16 +296,16 @@ GPT回答：
 4. 实验与应用表现
     * 实际应用中，深度可分离卷积已被广泛采用，并在多项任务中表现出色。例如，Google的MobileNet系列在移动和边缘设备上提供了高效的图像识别解决方案，这得益于深度可分离卷积的使用。实验和实际部署证明，虽然单独的深度和逐点卷积可能损失了一些特征处理能力，组合使用时能够达到非常好的性能和效率平衡。
 
-## 小结
+## 8. 小结
 
 ![alt text](_attachments/Lecture10-Architectures/image-16.png)
 
 * Xception和ResNet之间的深度革命的high level idea都是more depth more useful，而过去都是层数过多会导致梯度消失。
   * 关键在于用了skip connection
 
-## Fully Convolutional Networks
+## 9. Fully Convolutional Networks
 
-### 简介
+### 9.1. 简介
 
 FCN 全卷积网络
 
@@ -283,9 +317,9 @@ FCN 全卷积网络
 
 ![alt text](_attachments/Lecture10-Architectures/image-17.png)
 
-### 如何Upsample
+### 9.2. 如何Upsample
 
-#### Interpolation 插值
+#### 9.2.1. Interpolation 插值
 
 实际上就是特殊的转置卷积，用固定值而非学习性来转置卷积。
 
@@ -293,7 +327,7 @@ FCN 全卷积网络
 * Bilinear Interpolation: 用周围四个像素的值进行线性插值
 * Bicubic Interpolation: 用周围16个像素的值进行三次插值
 
-#### Transposed Convolution 转置卷积
+#### 9.2.2. Transposed Convolution 转置卷积
 
 [转置卷积Transpose Convolution](../深度学习知识积累/转置卷积TransposeConvolution.md)
 
@@ -303,12 +337,12 @@ FCN 全卷积网络
 
 Note: Transpose convolution之后还是可以有conv层的，来更好的提取特征、优化结果。
 
-### Refined Outputs（细化输出）
+### 9.3. Refined Outputs（细化输出）
 
 * If one does a cascade of **unpooling + conv** operations(用于decoder部分), we get to the **encoder-decoder architecture**.
 * Even more refined: **Autoencoder**s （即encoder-decoder的结构）） with **skip connections** (AKA **U-Net**)
 
-#### U-Net
+#### 9.3.1. U-Net
 
 ![alt text](_attachments/Lecture10-Architectures/image-18.png)
 

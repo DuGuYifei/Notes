@@ -2,7 +2,7 @@
 
 ## sockaddr_in
 
-![](2023-04-16-19-12-43.png)
+![](_attachments/sockaddr和sockaddr_in和in_addr/2023-04-16-19-12-43.png)
 
 ```c
 struct sockaddr_in{
@@ -53,7 +53,7 @@ struct sockaddr{
 
 下图是 sockaddr 与 sockaddr_in 的对比（括号中的数字表示所占用的字节数）：
 
-![](2023-04-16-19-13-39.png)
+![](_attachments/sockaddr和sockaddr_in和in_addr/2023-04-16-19-13-39.png)
 
 **sockaddr 和 sockaddr_in 的长度相同，都是16字节**，只是将IP地址和端口号合并到一起，用一个成员 `sa_data` 表示。要想给 sa_data 赋值，必须同时指明IP地址和端口号，例如"127.0.0.1:80"，遗憾的是，没有相关函数将这个字符串转换成需要的形式，也就很难给 sockaddr 类型的变量赋值，所以使用 sockaddr_in 来代替。这两个结构体的长度相同，强制转换类型时不会丢失字节，也没有多余的字节。
 

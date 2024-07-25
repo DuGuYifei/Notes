@@ -16,3 +16,4 @@
 12. [Lecture 09 - 补充Exercise 9 - Convolution的BN和Dropout](./Lecture09-补充Exercise9-Convolution的BN和Dropout.md)
 13. [Lecture 10 - Architectures](./Lecture10-Architectures.md)
 14. [Lecture 11 - RNNs and Transformers](./Lecture11-RNNsAndTransformers.md)
+15. [Lecture 11 - 补充Excerise 11 - Tokenizer](./Lecture11-补充Excerise11-Tokenizer.md)

@@ -216,7 +216,7 @@ A layer to be applied after Fully Connected (or Convolutional) layer and before 
    1. ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-10.png)
    2. 必须要backpropagate这个东西，正好根据上面公式它是differentiable的。
 2. Allow the network to change the range:
-   1. 可以有两个可学习的超参数，让这个range更灵活，比如甚至它可以将整个normalize返回回去
+   1. 可以有两个可学习的参数，让这个range更灵活，比如甚至它可以将整个normalize返回回去
       1. 比如$\gamma^{(k)}=\sqrt{Var[x^{(k)}]}$，$\beta^{(k)}=E[x^{(k)}]$
    2. $$y^{(k)}=\gamma^{(k)}\hat{x}^{(k)}+\beta^{(k)}$$
 

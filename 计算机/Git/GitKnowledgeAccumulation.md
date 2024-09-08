@@ -1,6 +1,6 @@
 # 知识积累 Git
 
-![](2022-12-17-07-33-13.png)
+![](_attachments/GitKnowledgeAccumulation/2022-12-17-07-33-13.png)
 
 - [连接账户（多个账户）](#连接账户多个账户)
 - [know\_hosts文件](#know_hosts文件)
@@ -52,6 +52,7 @@
   - [解决乱码](#解决乱码)
     - [cmd 修改启动命令 (不推荐修改注册表)](#cmd-修改启动命令-不推荐修改注册表)
     - [powershell 配置启动文件，即：`C:\Users\username\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`](#powershell-配置启动文件即cusersusernamedocumentswindowspowershellmicrosoftpowershell_profileps1)
+- [空树引用](#空树引用)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -230,7 +231,7 @@ git push origin master #上传大文件
 
 ## asset release
 在右侧有一个release按钮
-![release](2022-02-14-13-37-58.png)
+![release](_attachments/GitKnowledgeAccumulation/2022-02-14-13-37-58.png)
 
 ## 从缓存区删除文件（适用于删除仓库文件不过需要commit再push）
 ```bash
@@ -293,8 +294,8 @@ source/*
 
 ## 同时push多个仓库
 进入你的项目目录，打开.git/config文件(.git是隐藏目录，需要打开显示隐藏文件...)
-![](2022-08-13-00-55-55.png)
-![](2022-08-13-00-56-10.png)
+![](_attachments/GitKnowledgeAccumulation/2022-08-13-00-55-55.png)
+![](_attachments/GitKnowledgeAccumulation/2022-08-13-00-56-10.png)
 
 ## 克隆到指定文件夹
 ```bash
@@ -379,15 +380,15 @@ git merge是用来合并两个分支的。
 ```
 git checkout -b mywork origin
 ```
-![](2022-11-07-04-27-10.png)
+![](_attachments/GitKnowledgeAccumulation/2022-11-07-04-27-10.png)
 
 * 但是与此同时，有些人也在"origin"分支上做了一些修改并且做了提交了. 这就意味着"origin"和"mywork"这两个分支各自"前进"了，它们之间"分叉"了。
 
-![](2022-11-07-04-27-33.png)
+![](_attachments/GitKnowledgeAccumulation/2022-11-07-04-27-33.png)
 
 * 在这里，你可以用"pull"命令把"origin"分支上的修改拉下来并且和你的修改合并； 结果看起来就像一个新的"合并的提交"(merge commit):
 
-![](2022-11-07-04-27-57.png)
+![](_attachments/GitKnowledgeAccumulation/2022-11-07-04-27-57.png)
 
 * 但是，如果你想让"mywork"分支历史看起来像没有经过任何合并一样，你也许可以用 git rebase:
 ```bash
@@ -395,11 +396,11 @@ git checkout mywork
 git rebase origin
 ```
 这些命令会把你的"mywork"分支里的每个提交(commit)取消掉，并且把它们临时 保存为补丁(patch)(这些补丁放到".git/rebase"目录中),然后把"mywork"分支更新 为最新的"origin"分支，最后把保存的这些补丁应用到"mywork"分支上。
-![](2022-11-07-04-28-47.png)
+![](_attachments/GitKnowledgeAccumulation/2022-11-07-04-28-47.png)
 
 当'mywork'分支更新之后，它会指向这些新创建的提交(commit),而那些老的提交会被丢弃。 如果运行垃圾收集命令(pruning garbage collection), 这些被丢弃的提交就会删除. （请查看 git gc)
 
-![](2022-11-07-04-30-43.png)
+![](_attachments/GitKnowledgeAccumulation/2022-11-07-04-30-43.png)
 
 
 ## git pull / fetch
@@ -476,7 +477,7 @@ git reset HEAD^ hello.php  # 回退 hello.php 文件的版本到上一个版本
 ## git cherry pick
 只摘取少数commit提交记录到当前分支，但是注意，内容虽然pick过来但是commit号会是新的
 
-![](2022-12-17-07-38-36.png)
+![](_attachments/GitKnowledgeAccumulation/2022-12-17-07-38-36.png)
 * `git cherry-pick commit号1 commit号2`
 * `git cherry-pick commit号1..commit号n` `(1,n]`
 * `git cherry-pick commit号1^..commit号n` `[1,n]`
@@ -497,8 +498,8 @@ git push origin --tags  # 推送所有tag到远程
 git push origin :refs/tags/v1.0  # 删除远程tag
 ```
 
-![](2023-03-23-01-01-01.png)
-![](2023-03-23-01-01-10.png)
+![](_attachments/GitKnowledgeAccumulation/2023-03-23-01-01-01.png)
+![](_attachments/GitKnowledgeAccumulation/2023-03-23-01-01-10.png)
 
 ```bash
 git tag <tag-name> # 创建一个不带注释的 tag
@@ -557,3 +558,10 @@ $OutputEncoding = [System.Text.Encoding]::UTF8
 ```powershell
 Set-ExecutionPolicy RemoteSigned
 ```
+
+## 空树引用
+```bash
+git diff --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 比较的分支
+```
+
+特殊的hash值，表示一个空树对象，即没有任何文件的提交。这个hash值是git的一个特殊值，可以用来比较工作区和暂存区的差异。

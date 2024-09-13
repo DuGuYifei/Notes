@@ -30,3 +30,6 @@
 27. [lambda表达式](lambda表达式.md)
 28. [time](time.md)
 29. [cache](cache.md)
+30. [读取json的时间为time类型](读取json的时间为time类型.md)
+31. [windows函数](windows函数.md)
+32. [C语言调用](C语言调用.md)

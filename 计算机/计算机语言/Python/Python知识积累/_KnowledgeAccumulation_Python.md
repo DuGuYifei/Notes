@@ -41,3 +41,4 @@
 38. [pyodbc和pymysql链接数据库](pyodbc和pymysql链接数据库.md)
 39. [del关键字](del关键字.md)
 40. [yield关键字](yield关键字.md)
+41. [log和输出重定向](log和输出重定向.md)

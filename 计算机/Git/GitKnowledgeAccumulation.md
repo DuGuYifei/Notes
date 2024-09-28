@@ -53,6 +53,7 @@
     - [cmd 修改启动命令 (不推荐修改注册表)](#cmd-修改启动命令-不推荐修改注册表)
     - [powershell 配置启动文件，即：`C:\Users\username\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`](#powershell-配置启动文件即cusersusernamedocumentswindowspowershellmicrosoftpowershell_profileps1)
 - [空树引用](#空树引用)
+- [删除所有历史commit里的某个文件](#删除所有历史commit里的某个文件)
 
 ## 连接账户（多个账户）
 [一台电脑上的git同时使用两个github账户_AI悦创的博客-CSDN博客_git 两个账号](https://blog.csdn.net/qq_33254766/article/details/122941664)
@@ -565,3 +566,13 @@ git diff --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 比较的分支
 ```
 
 特殊的hash值，表示一个空树对象，即没有任何文件的提交。这个hash值是git的一个特殊值，可以用来比较工作区和暂存区的差异。
+
+## 删除所有历史commit里的某个文件
+
+```bash
+git filter-branch --force --index-filter ^
+  "git rm --cached --ignore-unmatch *.png" ^
+  --prune-empty --tag-name-filter cat -- --all
+```
+
+windows下的换行符是`^`，linux下是`\`

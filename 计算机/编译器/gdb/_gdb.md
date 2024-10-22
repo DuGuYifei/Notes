@@ -36,3 +36,18 @@ vscode:`launch.json`
 }
 ```
 
+```sh
+$ clang++ -g -std=c++23 -o hello2 hello2.cpp
+$ gdb ./hello2
+(gdb) run
+Program received signal SIGSEGV, Segmentation fault.
+(gdb) backtrace
+// ...
+#16 in main (argc=0x1, argv=0x7fffffffe868) at hello2.cpp:3
+(gdb) up 16
+(gdb) print argc
+1
+(gdb) quit
+```
+
+![alt text](_attachments/_gdb/image.png)

@@ -28,4 +28,6 @@ $(\nabla f(X))_{ij} = \frac{\partial f}{\partial x_{ij}} = 1$
 
 ### 5. 海森矩阵
 
+其实就是二阶导数
+
 ![alt text](_attachments/标量求导_梯度_Jacobian_Hessian/image.png)

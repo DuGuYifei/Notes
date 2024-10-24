@@ -106,6 +106,8 @@
 105. [minmax_element](minmax_element.md)
 106. [bitset整数转二进制存储](bitset整数转二进制存储.md)
 107. [shared_ptr](shared_ptr.md)
+108. [sizeof和alignof](sizeof和alignof.md)
+109. [any和variant](any和variant.md)
     
 ***WinAPI(below)***
 

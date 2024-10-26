@@ -21,8 +21,13 @@ $$f(X) = tr(X) = \sum_{i=1}^n\sum_{j=1}^m x_{ij}$$
 
 $(\nabla f(X))_{ij} = \frac{\partial f}{\partial x_{ij}} = 1$
 
+![alt text](_attachments/标量求导_梯度_Jacobian_Hessian/image-1.png)
+![alt text](_attachments/标量求导_梯度_Jacobian_Hessian/image-2.png)
+
 
 ### 4. 雅可比
+
+![alt text](_attachments/标量求导_梯度_Jacobian_Hessian/image-3.png)
 
 即[矩阵求导](矩阵求导.md)
 

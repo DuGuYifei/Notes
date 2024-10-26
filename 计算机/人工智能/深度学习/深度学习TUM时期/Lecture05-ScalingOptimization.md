@@ -257,7 +257,7 @@ $$\theta^{k+1}=\theta^k-\alpha\frac{\tilde m^{k+1}}{\sqrt{\tilde v^{k+1}}+\epsil
 
 ## 4. 数学
 
-1. [Jacobians and Hessians](../../../../其他学科知识积累/Maths/标量求导_梯度_Jacobian_Hessian.md)
+1. [Jacobians and Hessians](../../../../其他学科知识积累/Maths/标量求导_梯度_Jacobian_Hessian_散度.md)
 2. Newtons' method
 3. Taylor series expansion
 4. BFGS and L-BFGS

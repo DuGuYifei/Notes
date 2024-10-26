@@ -7,7 +7,7 @@
 5. [矩阵求导](矩阵求导.md)
 6. [向量的模的求导](向量的模的求导.md)
 7. [Hadamard积](Hadamard积.md)
-8. [标量求导_梯度_Jacobian_Hessian](标量求导_梯度_Jacobian_Hessian.md)
+8. [标量求导_梯度_Jacobian_Hessian_散度](标量求导_梯度_Jacobian_Hessian_散度.md)
 9. [数学期望和方差](数学期望和方差.md)
 10. [乘积的方差](乘积的方差.md)
 11. [特征值和特征向量](特征值和特征向量.md)

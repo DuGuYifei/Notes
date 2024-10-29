@@ -109,6 +109,9 @@
 108. [sizeof和alignof](sizeof和alignof.md)
 109. [any和variant](any和variant.md)
 110. [complex复数](complex复数.md)
+111. [宏定义](宏定义.md)
+112. [volatile](volatile.md)
+113. [thread_local](thread_local.md)
     
 ***WinAPI(below)***
 

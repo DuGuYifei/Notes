@@ -53,3 +53,20 @@ int main()
         return lv;
     }
 ```
+
+```cpp
+#include <random>
+
+class Scene1 : public Scene{
+    //...
+    std::random_device rd;
+    std::mt19937 gen;
+    std::uniform_real_distribution<float> dis;
+    //...
+public:
+    Scene1() : gen(rd()), dis(0.f, 1.f) {}
+}
+
+// 生成随机数
+dis(gen)
+```

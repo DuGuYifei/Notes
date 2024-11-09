@@ -59,13 +59,14 @@ $$\frac{\partial L}{\partial w_{i,k}}=\frac{\partial L}{\partial \hat{y}_i}\frac
 我们要计算所有与权重$W$和偏置$b$有关的梯度。
 
 **理解：**
-1. 和向前计算的结果无关，总是从1开始back，而不是loss的值或者y_predict的值
+1. 和向前计算的结果无关，总是用1从loss结果层开始back，而不是loss的值或者y_predict的值
    1. loss只是用来看的
    2. y_predict还没到反向的时候，还要再走一次loss function
 2. 用向前传递时的前一层的传过来的值作为参数值
 3. 即向后传播时，如果参数的导数带x，则用2说的值
-4. 只计算按权重的值，不计算输入的值，比如最初的x,y，如下图中的x,y，最后梯度下降
-5. 不需要矩阵对矩阵求导，只需要拿每个矩阵比如输入X当作一个标量求导
+4. 结果要乘在向后传播时从后面一层传过来的d_out
+5. 只计算按权重的值，不计算输入的值，比如最初的x,y，如下图中的x,y，最后梯度下降
+6. 不需要矩阵对矩阵求导，只需要拿每个矩阵比如输入X当作一个标量求导
 
 ![alt text](_attachments/Lecture04-OptimizationAndBackprop/image-15.png)
 
@@ -90,6 +91,8 @@ $$\frac{\partial L}{\partial w_{i,k}}=\frac{\partial L}{\partial \hat{y}_i}\frac
 ## 2. Optimization
 
 ### 2.1. Gradient Descent
+
+`GD`和`Backprop`的关系：其实就是GD用backprop计算到当前参数的梯度来更新参数，即W = W - alpha * dW
 
 ![alt text](_attachments/Lecture04-OptimizationAndBackprop/image-9.png)
 

@@ -113,6 +113,7 @@
 112. [volatile](volatile.md)
 113. [thread_local](thread_local.md)
 114. [自定义iterator](自定义iterator.md)
+115. [文件流stream](文件流stream.md)
     
 ***WinAPI(below)***
 

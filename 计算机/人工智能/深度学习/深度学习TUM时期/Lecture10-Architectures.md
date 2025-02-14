@@ -60,7 +60,7 @@ ImageNet Dataset：ILSVRC (ImageNet Large Scale Visual Recognition Challenge)
 
 Conv->Pool->Conv->Pool->Conv->FC
 
-deeper: width ↓, height ↓, number of filters ↑
+deeper: width ↓, height ↓, number of filters ↑ （上图不准，LeNet-5里有5和16两种filter数量的conv，另：VGGNet遵循相同规律）
 
 PS:MNIST 手写数字识别的数据集
 
@@ -70,6 +70,7 @@ PS:MNIST 手写数字识别的数据集
 
 * 用了ReLU instead of tanh/sigmoid
 * Similar to LeNet, but much bigger (~1000 times) - 60M parameters
+* 开始使用大小不同的filter了。
 
 
 PS: 用了cuda，但是是C++写的
@@ -146,7 +147,7 @@ ResNet-152: 60M parameters
 
 #### 4.4.2. Why ResNet works?
 
-* ResNet的一个假设是：identity mapping is easier to learn than the residual mapping (理解：easier 不是说训练的时候更快，而是说更容易学习到有用的特征以及不会梯度消失之类的)
+* ResNet的一个假设是：identity is easy for the residual block to learn (理解：easier 不是说训练的时候更快，而是说更容易学习到有用的特征以及不会梯度消失之类的)
 * Guarantees performace只会improve (理解：跳跃连接保证了即使残差块未能有效学习任何有用的变换，网络的输出至少可以是前一层的输出。这意味着在最坏的情况下，网络的性能至少与不加任何残差块的情况相当。就像前面[引言](#跳跃连接引言)中提到的特征重用)
 
 ### 4.5. 代码实现
@@ -261,7 +262,7 @@ Incaption Layer和在Incption Layer之间的Max Pooling，这个中间的Max Poo
 
 ### 7.2. Depthwise Separable Convolutions
 
-即原本一个卷积核的channel是和输入一样的，现在一个输入的channel可以分配给多个卷积核。
+即原本一个卷积核的channel是和输入一样的，现在一个输入的channel可以分配给多个卷积核。然后分别经过depthwise convolution后再通过pointwise convolution（1x1的conv）来减少channel数量。参数量从 $C_{in} * C_{out} * k^2$ 变为 $C_{in} * k^2 + C_{in} * C_{out}$（这里计算省略了H和W的维度）。
 
 DSC之后会有相同深度的输出，但是对于常规的一个卷积核conv输出会只有一个channel，整个层的输出是filter个数的channel。所以为了保持channel数量，需要再加一个1x1的conv，即可将DSC之后的输出变为只有一层channel的输出。这样就又变成常规的一个卷积核的结果size了。**然后最后的输出的channel数量不是根据DSC的个数，而是根据1x1的conv的filter个数**。比如下面WHY Depthwise Separable Convolutions章节的例子里，用了256*256个1x1卷积核，所以最后的输出是256个channel。
 

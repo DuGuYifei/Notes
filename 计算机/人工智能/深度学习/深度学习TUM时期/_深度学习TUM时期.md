@@ -17,3 +17,4 @@
 13. [Lecture 10 - Architectures](./Lecture10-Architectures.md)
 14. [Lecture 11 - RNNs and Transformers](./Lecture11-RNNsAndTransformers.md)
 15. [Lecture 11 - 补充Excerise 11 - Tokenizer](./Lecture11-补充Excerise11-Tokenizer.md)
+16. [Lecture 12 - Advanced topics](./Lecture12-AdvancedTopics.md)

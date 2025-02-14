@@ -195,6 +195,13 @@ Look-ahead momentum
 * $\beta$：decay rate(衰减率) often 0.9
 * $\epsilon$：避免除零, often $10^{-8}$
 
+**注意：**
+* 它虽然和second order momentum长得像，但实际上是first order。
+* 是否是second order关键在用什么累加，下面second-order里的v是二阶矩阵估计。
+  * RMSProp的s_t是梯度平方的指数加权移动平均（exponentially weighted moving average of squared gradients）
+  * First Momentum的m相当于速度，是梯度的指数移动平均（Exponential Moving Average, EMA）
+  * Second Momentum的v是梯度的二阶矩的估计，即梯度值的平方的指数移动平均。
+
 gpt:
 ```
 问题：为什么波动大的方向，梯度的平方就会变大？

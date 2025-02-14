@@ -186,7 +186,7 @@ $$L = \frac{1}{N} \sum_{i=1}^{N} L_i$$
 ### 2.3. 小结
 
 1. Sigmoid/TanH are not really used in feedward nets today
-2. ReLU is the standatd choice
+2. ReLU is the standard choice
 3. Second choise are the variants of ReLU or Maxout
 4. Recurrent nets will require Sigmoid/TanH or similar
 

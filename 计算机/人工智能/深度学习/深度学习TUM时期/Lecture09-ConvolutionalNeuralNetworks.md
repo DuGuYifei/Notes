@@ -139,7 +139,7 @@ Note:
 
 上图不是一个Good Idea，偶尔才是，因为shrink太快了。所以一般都要用padding，这样就可以获得图片边缘的像素点作为被卷积的对象中心。正常情况都用0填充。
 
-w/ padding:
+w/ padding: (N就是WH)
 1. Input: N * N
 2. Filter: F * F
 3. Stride: S
@@ -282,4 +282,4 @@ PS:
 
 ![alt text](_attachments/Lecture09-ConvolutionalNeuralNetworks/image-11.png)
 
-PS: 历史验证是，当年AlexNet是11*11来提取高频，但是对中频不好，第二次这个人用ZFNet用7*7，然后牛津大学的VGG用连续的3*3发现效果更好，低频中频高频的特征都能提取到。（频率这里是指特征的频率，比如花色的墙显然比纯色的白墙高频）
+PS: 历史验证是，当年AlexNet是11 * 11来提取高频，但是对中频不好，第二次这个人用ZFNet用7 * 7，然后牛津大学的VGG用连续的3 * 3发现效果更好，低频中频高频的特征都能提取到。（频率这里是指特征的频率，比如花色的墙显然比纯色的白墙高频）

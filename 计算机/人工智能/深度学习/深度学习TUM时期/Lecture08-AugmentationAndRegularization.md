@@ -8,7 +8,7 @@
   - [2.4. Advanced](#24-advanced)
   - [2.5. 补充](#25-补充)
 - [3. Advanced Regularization](#3-advanced-regularization)
-  - [3.1. L2 Regularization - 不是weight decay](#31-l2-regularization---不是weight-decay)
+  - [3.1. L2 Regularization](#31-l2-regularization)
     - [3.1.1. L2 Regularization](#311-l2-regularization)
     - [3.1.2. Weight decay](#312-weight-decay)
   - [3.2. Early Stopping](#32-early-stopping)
@@ -98,7 +98,9 @@ Random brightness and contrast changes （随机亮度和对比度变化）
 
 Recap: Regularization是为了让训练更难，从而不会过拟合，从而提高泛化能力即对新数据的适应能力。
 
-### 3.1. L2 Regularization - 不是weight decay
+### 3.1. L2 Regularization
+
+不是weight decay但是本质上一样，pytorch也是通过weight decay实现L2 regularization。
 
 #### 3.1.1. L2 Regularization
 [L1 L2 Regularization](./Lecture04-OptimizationAndBackprop.md#222-正则化技巧)
@@ -273,7 +275,7 @@ Disadvantages
 
    * 上图理解：
      * 正方体是输入到一个层的tensor
-     * 蓝色的就是normalize什么东西，对于BN就是对单个特征（channel）的所有样本进行normalize，对于LN就是对单个样本的所有特征进行normalize，对于IN就是对单个样本的单个特征的内部值进行normalize，对于GN就是对单个样本的一组特征进行normalize。
+     * 蓝色的就是normalize什么东西，对于BN就是对批次中每个特征单独归一化normalize，对于LN就是对每个样本的所有特征归一化，对于IN就是对单个样本的单个特征的内部值进行normalize，对于GN就是对单个样本的一组特征进行normalize。
      * **备注：所以比如BN，不是说每个坐标的像素点的某个channel计算均值和方差然后normalize，而是这个channel下，所有坐标点一起计算均值和方差然后normalize。这几个normalization都是这样。**
        * ![alt text](_attachments/Lecture08-AugmentationAndRegularization/image-15.png)
        * 自我理解：对于图像，这样的话，可以保证不同的坐标间的相关性，当然，如果遇到特定情况，比如每个点单独有作用的，好像可以不用所有点一起，当然我没有idea什么情况是这个。 

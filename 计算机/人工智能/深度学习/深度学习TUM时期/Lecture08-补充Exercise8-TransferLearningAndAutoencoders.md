@@ -23,7 +23,7 @@
 
 ![alt text](_attachments/Lecture08-补充Exercise8-TransferLearningAndAutoencoders/image-3.png)
 
-encode到一个低维度的bottleneck(瓶颈)，再decode重构输入
+encode到一个低维度的bottleneck(瓶颈,也是latent space潜在空间)，再decode重构输入
 
 
 ## Transfer Learning with Autoencoders
@@ -60,3 +60,16 @@ class Classifier(nn.Module):
         x = self.model(x)
         return x
 ```
+
+## AE和VAE
+
+1. AE
+   
+   ![alt text](_attachments/Lecture08-补充Exercise8-TransferLearningAndAutoencoders/image-5.png)
+
+2. VAE
+
+    ![alt text](_attachments/Lecture08-补充Exercise8-TransferLearningAndAutoencoders/image-6.png)
+
+
+VAE的encoder输出到latent space的不再不仅仅是潜在向量，而是潜在分布的参数（通常是均值和方差），解码器生成数据之前，会从这个分布随机采样一个向量。

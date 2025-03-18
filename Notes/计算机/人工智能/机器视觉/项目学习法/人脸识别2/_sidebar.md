@@ -1,0 +1,53 @@
+- [返回上级目录](../)
+
+- 项目/
+    - famous48/
+        - [Readme.txt](Readme.txt)
+        - [show_images.m](show_images.m)
+        - [x24x24.txt](x24x24.txt)
+        - [y24x24.txt](y24x24.txt)
+        - [z24x24.txt](z24x24.txt)
+    - Haar/
+        - [HAAR.h](HAAR.h)
+        - [HAAR_2.h](HAAR_2.h)
+        - [haar_error.txt](haar_error.txt)
+        - [haar_test.txt](haar_test.txt)
+        - [haar_testLHH.txt](haar_testLHH.txt)
+        - [haar_train.txt](haar_train.txt)
+    - Hog/
+        - [histograms_test.txt](histograms_test.txt)
+        - [histograms_testLHH.txt](histograms_testLHH.txt)
+        - [histograms_train.txt](histograms_train.txt)
+        - [hog_error.txt](hog_error.txt)
+    - HogPython/
+        - .idea/
+            - inspectionProfiles/
+                - [profiles_settings.xml](profiles_settings.xml)
+                - [Project_Default.xml](Project_Default.xml)
+            - [HogPython.iml](HogPython.iml)
+            - [misc.xml](misc.xml)
+            - [modules.xml](modules.xml)
+        - [HogTrain.py](HogTrain.py)
+        - [test.py](test.py)
+    - LBPH/
+        - [lbph_error.txt](lbph_error.txt)
+        - [lbph_test.txt](lbph_test.txt)
+        - [lbph_testLHH.txt](lbph_testLHH.txt)
+        - [lbph_train.txt](lbph_train.txt)
+        - [test_lbph.txt](test_lbph.txt)
+        - [train_lbph.txt](train_lbph.txt)
+    - LHH_system/
+        - [LHH_error_new.txt](LHH_error_new.txt)
+        - [LHH_error_old.txt](LHH_error_old.txt)
+        - [LHH_Haar_train.txt](LHH_Haar_train.txt)
+        - [LHH_Hog_train.txt](LHH_Hog_train.txt)
+        - [LHH_LBPH_train.txt](LHH_LBPH_train.txt)
+        - [LHH_Weight_train.txt](LHH_Weight_train.txt)
+    - [Famous48 Face Recognize Report.docx](Famous48 Face Recognize Report.docx)
+    - [Famous48 Face Recognize Report.pdf](Famous48 Face Recognize Report.pdf)
+    - [Haar.h](Haar.h)
+    - [Hog.h](Hog.h)
+    - [LBPH.h](LBPH.h)
+    - [main.cpp](main.cpp)
+    - [Params.h](Params.h)
+- [人脸识别AI课程项目.md](人脸识别AI课程项目.md)

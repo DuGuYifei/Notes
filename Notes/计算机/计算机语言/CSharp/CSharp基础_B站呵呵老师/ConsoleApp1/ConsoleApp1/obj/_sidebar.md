@@ -1,0 +1,23 @@
+- [返回上级目录](../)
+
+- Debug/
+    - netcoreapp3.1/
+        - [.NETCoreApp,Version=v3.1.AssemblyAttributes.cs](.NETCoreApp,Version=v3.1.AssemblyAttributes.cs)
+        - [apphost.exe](apphost.exe)
+        - [ConsoleApp1.AssemblyInfo.cs](ConsoleApp1.AssemblyInfo.cs)
+        - [ConsoleApp1.AssemblyInfoInputs.cache](ConsoleApp1.AssemblyInfoInputs.cache)
+        - [ConsoleApp1.assets.cache](ConsoleApp1.assets.cache)
+        - [ConsoleApp1.csproj.AssemblyReference.cache](ConsoleApp1.csproj.AssemblyReference.cache)
+        - [ConsoleApp1.csproj.CoreCompileInputs.cache](ConsoleApp1.csproj.CoreCompileInputs.cache)
+        - [ConsoleApp1.csproj.FileListAbsolute.txt](ConsoleApp1.csproj.FileListAbsolute.txt)
+        - [ConsoleApp1.dll](ConsoleApp1.dll)
+        - [ConsoleApp1.genruntimeconfig.cache](ConsoleApp1.genruntimeconfig.cache)
+        - [ConsoleApp1.pdb](ConsoleApp1.pdb)
+        - [打开笔记本.onetoc2](打开笔记本.onetoc2)
+    - [打开笔记本.onetoc2](打开笔记本.onetoc2)
+- [ConsoleApp1.csproj.nuget.dgspec.json](ConsoleApp1.csproj.nuget.dgspec.json)
+- [ConsoleApp1.csproj.nuget.g.props](ConsoleApp1.csproj.nuget.g.props)
+- [ConsoleApp1.csproj.nuget.g.targets](ConsoleApp1.csproj.nuget.g.targets)
+- [project.assets.json](project.assets.json)
+- [project.nuget.cache](project.nuget.cache)
+- [打开笔记本.onetoc2](打开笔记本.onetoc2)

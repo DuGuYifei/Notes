@@ -1,0 +1,13 @@
+- [返回上级目录](../)
+
+- [_AI算法.md](_AI算法.md)
+- [BERT.md](BERT.md)
+- [Faster-RCNN.md](Faster-RCNN.md)
+- [GPT.md](GPT.md)
+- [LogisticRegression.md](LogisticRegression.md)
+- [softmax函数计算时候为什么要减去一个最大值.md](softmax函数计算时候为什么要减去一个最大值.md)
+- [SVM.md](SVM.md)
+- [Transform.md](Transform.md)
+- [YOLO.md](YOLO.md)
+- [网格搜索.md](网格搜索.md)
+- [轮廓查找.md](轮廓查找.md)

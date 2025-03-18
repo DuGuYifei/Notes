@@ -1,0 +1,36 @@
+- [返回上级目录](../)
+
+- DigitTechnologyInBusinessCommunication/
+    - [DigitTechforBusinessCommunication.md](DigitTechforBusinessCommunication.md)
+- English/
+    - [_English.md](_English.md)
+    - [BusinessEnglish_VocaularyReview.md](BusinessEnglish_VocaularyReview.md)
+    - [Dictionary.md](Dictionary.md)
+    - [Grammar.md](Grammar.md)
+    - [Phrase.md](Phrase.md)
+    - [英文写信.md](英文写信.md)
+- Maths/
+    - [_KnowledgeAccumulation_Maths.md](_KnowledgeAccumulation_Maths.md)
+    - [Hadamard积.md](Hadamard积.md)
+    - [z-score归一化.md](z-score归一化.md)
+    - [乘积的方差.md](乘积的方差.md)
+    - [二项式定理和组合C的N项和.md](二项式定理和组合C的N项和.md)
+    - [向量的模的求导.md](向量的模的求导.md)
+    - [常见分布.md](常见分布.md)
+    - [数学期望和方差.md](数学期望和方差.md)
+    - [标量求导_梯度_Jacobian_Hessian_散度.md](标量求导_梯度_Jacobian_Hessian_散度.md)
+    - [欧几里得_欧拉定理_偶数.md](欧几里得_欧拉定理_偶数.md)
+    - [欧几里得最大公约数.md](欧几里得最大公约数.md)
+    - [正(半)定矩阵.md](正(半)定矩阵.md)
+    - [特征值和特征向量.md](特征值和特征向量.md)
+    - [矩阵求导.md](矩阵求导.md)
+    - [行列式展开.md](行列式展开.md)
+    - [裴蜀定理.md](裴蜀定理.md)
+    - [贝叶斯定理.md](贝叶斯定理.md)
+- Physics/
+    - Physics/
+        - OneNote_RecycleBin/
+            - [OneNote_DeletedPages.one](OneNote_DeletedPages.one)
+            - [打开笔记本.onetoc2](打开笔记本.onetoc2)
+        - [Semester2.one](Semester2.one)
+        - [打开笔记本.onetoc2](打开笔记本.onetoc2)

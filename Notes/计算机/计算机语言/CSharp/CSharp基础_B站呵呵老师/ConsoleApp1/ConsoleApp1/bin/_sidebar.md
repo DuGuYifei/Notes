@@ -1,0 +1,13 @@
+- [返回上级目录](../)
+
+- Debug/
+    - netcoreapp3.1/
+        - [ConsoleApp1.deps.json](ConsoleApp1.deps.json)
+        - [ConsoleApp1.dll](ConsoleApp1.dll)
+        - [ConsoleApp1.exe](ConsoleApp1.exe)
+        - [ConsoleApp1.pdb](ConsoleApp1.pdb)
+        - [ConsoleApp1.runtimeconfig.dev.json](ConsoleApp1.runtimeconfig.dev.json)
+        - [ConsoleApp1.runtimeconfig.json](ConsoleApp1.runtimeconfig.json)
+        - [打开笔记本.onetoc2](打开笔记本.onetoc2)
+    - [打开笔记本.onetoc2](打开笔记本.onetoc2)
+- [打开笔记本.onetoc2](打开笔记本.onetoc2)

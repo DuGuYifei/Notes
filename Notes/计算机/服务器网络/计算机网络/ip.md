@@ -7,11 +7,11 @@ windows：ipconfig /all
 linux: ip addr show
 
 ## ip分类
-![](2022-11-10-00-25-16.png)
+![](_attachments/old/2022-11-10-00-25-16.png)
 
 ### 私有ip范围
 IPv4：
-![](2022-11-10-00-26-02.png)
+![](_attachments/old/2022-11-10-00-26-02.png)
 
 ### ip/mask
 [ip杠mask写法并非万能](ip杠mask写法并非万能.md)

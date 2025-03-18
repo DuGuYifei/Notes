@@ -49,4 +49,4 @@ while (Thread.interrupted ()) {
 ```
 
 ## 六个状态
-![](2023-06-14-06-39-27.png)
+![](_attachments/old/2023-06-14-06-39-27.png)

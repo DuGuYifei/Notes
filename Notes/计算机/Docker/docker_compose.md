@@ -18,7 +18,7 @@ docker-compose up
 ```
 
 ## example
-![](2023-01-26-23-39-11.png)
+![](_attachments/old/2023-01-26-23-39-11.png)
 ```yml
 version: "3"
 services:

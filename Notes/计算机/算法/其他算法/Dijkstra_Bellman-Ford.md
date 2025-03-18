@@ -35,20 +35,20 @@ Until no temporary labels are changed in (a) or (b), do the following.
 **(b)** Take a vertex v which has a smallest temporary label in the graph. Set $v_{i+1} = v$ and make its temporary label permanent.
 
 ### Example
-![](dijkstra.gif)
+![](_attachments/old/dijkstra.gif)
 In this gif above, I use blue number to show which is the distance to the beginning vertex. The blue node is the vertex have passed, the red node is the node havn't passed. Each step, it will choose the next shortest path.
 
 ### Developed Algrithm of Dijkstra - A Star (Use case)
 In my study experience, I once make a Wargame [(The link of video of my game)](https://www.bilibili.com/video/BV1mq4y1o7ww). The item in the chess need find the shortest path when player click a target grid.
 
-![](Wargame.gif)
+![](_attachments/old/Wargame.gif)
 
 It has enemy (obstacle) in the map.
 
 It not only calculate by **the distance from start vertex to candidate vertex**, but also **the estimated distance from the current vertex to the end point**.
 
 The code screenshot in C# (Unity Game Engine):
-![](2023-02-03-23-33-17.png)
+![](_attachments/old/2023-02-03-23-33-17.png)
 
 
 ## Bellman-Ford algorithm
@@ -74,7 +74,7 @@ for(i = 1; i <= n - 1; i++)
 ```
 
 ### Example
-![](2023-02-04-00-10-52.png)
+![](_attachments/old/2023-02-04-00-10-52.png)
 
 We use this as an example. Below is the sequence of edge gaven:
 

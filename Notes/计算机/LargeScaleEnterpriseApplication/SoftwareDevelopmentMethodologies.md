@@ -11,7 +11,7 @@
 
 ## 1. Waterfall Model
 
-![](2023-06-13-23-02-04.png)
+![](_attachments/old/2023-06-13-23-02-04.png)
 
 All the phases are completed one after another. Once a phase is completed, the process goes to the next phase and there is no turning back. The phases do not overlap.
 
@@ -44,7 +44,7 @@ Srunm 是 Agile 敏捷开发的一种框架。
 3. Scrum Master: 敏捷教练，负责协调开发团队和产品负责人。
 4. Sprint: 一个迭代周期，一般为 2-4 周。
 5. Burndown: 燃尽图，用于跟踪开发进度。
-	![](2023-06-13-23-24-43.png)
+	![](_attachments/old/2023-06-13-23-24-43.png)
 
 ## Agile 的一种实现方式 - Extreme Programming (XP)
 

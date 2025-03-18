@@ -168,7 +168,7 @@ let timerId = setTimeout(function request() {
 
 1. setInterval:
 
-![](2022-08-22-01-55-44.png)
+![](_attachments/old/2022-08-22-01-55-44.png)
 
 使用 setInterval 时，func 函数的实际调用间隔要比代码中设定的**时间间隔要短**！
 这也是正常的，因为 **func 的执行所花费的时间“消耗”了一部分间隔时间**。
@@ -180,7 +180,7 @@ let timerId = setTimeout(function request() {
 
 2. setTimeout:
 
-![](2022-08-22-01-56-26.png)
+![](_attachments/old/2022-08-22-01-56-26.png)
 
 嵌套的 setTimeout 就能**确保延时的固定**（这里是 100 毫秒）。
 

@@ -5,7 +5,7 @@ CI_CD: Continuous Integration and Continuous Delivery
 ## Gitlab
 [使用docker做gitlab-runner](../Docker/gitlab-runner.md)
 
-![](2023-03-23-04-12-10.png)
+![](_attachments/old/2023-03-23-04-12-10.png)
 
 `.gitlab-ci.yml`: 用于配置gitlab的CI/CD，直接存到仓库里，点击`Add CI/CD configuration`之后commit就行了
 ```yml

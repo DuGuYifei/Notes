@@ -27,8 +27,8 @@ public interface CharacterRepository extends JpaRepository<Character, Long> {
 ```
 
 **规则：**
-![](2022-11-20-10-19-43.png)
-![](2022-11-20-10-21-35.png)
+![](_attachments/old/2022-11-20-10-19-43.png)
+![](_attachments/old/2022-11-20-10-21-35.png)
 
 * Spring Data JPA框架在进行方法名解析时，会先把方法名多余的前缀截取掉，比如find，findBy，read，readBy，get，getBy，然后对剩下的部分进行解析。
 * 假如创建如下的查询：findByUserName（），框架在解析该方法时，首先剔除findBy，然后对剩下的属性进行解析，假设查询实体为User：

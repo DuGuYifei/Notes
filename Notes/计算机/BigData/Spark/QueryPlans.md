@@ -14,21 +14,21 @@ df.registerTempTable('df')
 spark.sql('EXPLAIN SELECT * FROM df').first()
 ``` 
 
-![](2023-03-24-04-00-43.png)
+![](_attachments/old/2023-03-24-04-00-43.png)
 
 ```PYTHON
 df.explain()
 ```
-![](2023-03-24-04-23-26.png)
+![](_attachments/old/2023-03-24-04-23-26.png)
 
 ```PYTHON
 spark.sql("SELECT * from df").explain()
 ```
 
-![](2023-03-24-04-23-59.png)
+![](_attachments/old/2023-03-24-04-23-59.png)
 
 ```PYTHON
 df.cache()
 df.explain()
 ```
-![](2023-03-24-04-24-40.png)
+![](_attachments/old/2023-03-24-04-24-40.png)

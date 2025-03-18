@@ -20,7 +20,7 @@
 
 ## 对比链接和关系
 [AJAX和XHR和Axios和Fetch_格雷狐思的博客-CSDN博客_xhr ajax axios fetch](https://blog.csdn.net/hangao233/article/details/122737838)
-![](2023-01-27-01-07-55.png)
+![](_attachments/old/2023-01-27-01-07-55.png)
 
 ## AJAX
 Asynchronous JavaScript And XML “异步的 Javascript 和 XML”
@@ -59,7 +59,7 @@ Fetch 是在 ES6 出现的，它使用了 ES6 提出的 promise 对象。它是 
 ```
 上段代码利用 Fetch 发送了一个最简单的 get 请求，其中最重要的特点之一就是采用了.then 链式调用的方式处理结果，这样不仅利于代码的可读，而且也解决了回调地狱的问题。
 
-![](2023-01-27-01-12-41.png)
+![](_attachments/old/2023-01-27-01-12-41.png)
 
 ## XHR
 `XMLHttpRequest`

@@ -30,9 +30,9 @@ tar -zxvf grafana-7.4.3.linux-amd64.tar.gz
 ## 添加数据源
 Configuration -> Data Sources -> Add data source
 
-![](2023-05-21-20-19-48.png)
+![](_attachments/old/2023-05-21-20-19-48.png)
 
-![](2023-05-21-20-27-50.png)
+![](_attachments/old/2023-05-21-20-27-50.png)
 
 ## 添加dashboard
 [Dashboards | Grafana Labs](https://grafana.com/grafana/dashboards/)

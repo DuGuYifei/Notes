@@ -3,8 +3,8 @@
 ## 目的
 隐藏真实ip地址和用80端口提供多个服务
 
-![](2022-12-11-22-58-57.png)
-![](2022-12-11-23-00-49.png)
+![](_attachments/old/2022-12-11-22-58-57.png)
+![](_attachments/old/2022-12-11-23-00-49.png)
 
 ## proxy 和 reverse proxy
 1. proxt通常客户端使用,reverse proxy 通常服务端使用

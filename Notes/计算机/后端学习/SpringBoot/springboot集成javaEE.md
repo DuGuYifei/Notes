@@ -5,7 +5,7 @@
 
 我的设置案例：
 
-![](2023-06-17-02-13-40.png)
+![](_attachments/old/2023-06-17-02-13-40.png)
 
 上图中webapp文件夹可以通过file->project structure->modules->web->web resource directories来设置intelliJ的识别，当然不识别也没关系。
 
@@ -93,7 +93,7 @@ spring.mvc.view.suffix=.jsp
 
 项目结构:
 
-![](2023-06-17-02-17-02.png)
+![](_attachments/old/2023-06-17-02-17-02.png)
 
 userServlet可以在这里找到：[servlet](../JavaEE/Servlet.md)
 

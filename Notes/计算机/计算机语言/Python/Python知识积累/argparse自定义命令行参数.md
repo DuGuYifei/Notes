@@ -30,7 +30,7 @@ if __name__ == '__main__':
 python arg.py -h 
 ```
 
-![](2022-09-05-02-37-26.png)
+![](_attachments/old/2022-09-05-02-37-26.png)
 
 我们可以直接通过**args.addresses**获得它的参数值。
 

@@ -171,9 +171,9 @@ STORED AS RCFILE
 
 After using `describe extended [table]` and `describe formatted table`, the output is almost same between SEQUENCEFILE ORC PARQUET RCFILE.
 
-![](2022-11-23-20-35-44.png)
+![](_attachments/old/2022-11-23-20-35-44.png)
 
-![](2022-11-23-20-36-33.png) ![](2022-11-23-20-35-57.png)
+![](_attachments/old/2022-11-23-20-36-33.png) ![](_attachments/old/2022-11-23-20-35-57.png)
 
 
 But of course, they have different structures.
@@ -182,17 +182,17 @@ But of course, they have different structures.
 1.	Sequencefile: 
 Horizontal row-store. 
 Divide into block. Have its own structure depend on compress configuration.
-![](2022-11-23-20-40-30.png)
+![](_attachments/old/2022-11-23-20-40-30.png)
 2.	Parquet: 
 Column-store. Group columns then store block as column.
-![](2022-11-23-20-40-36.png)
+![](_attachments/old/2022-11-23-20-40-36.png)
 3.	RCfile: 
 row column file. Group rows then store as block.
-![](2022-11-23-20-40-43.png)
+![](_attachments/old/2022-11-23-20-40-43.png)
 4.	ORC: 
 column-oriented. 
 Divide into stripes. Each stripe includes an index, data, and Footer. The index stores the maximum/minimum values of each column and the position of each row in the column.
-![](2022-11-23-20-40-50.png)
+![](_attachments/old/2022-11-23-20-40-50.png)
 
 ##### AVRO
 Create table for storing data in AVRO:

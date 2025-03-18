@@ -5,7 +5,7 @@ dom，即document object model(文本对象模型)。整个页面元素统称dom
 本质上是一种接口（API)，是专门操作网页内容的API标准
 
 * dom树
-![](2022-08-12-21-24-52.png)
+![](_attachments/old/2022-08-12-21-24-52.png)
 
 * dom操作：
 1.dom元素获取

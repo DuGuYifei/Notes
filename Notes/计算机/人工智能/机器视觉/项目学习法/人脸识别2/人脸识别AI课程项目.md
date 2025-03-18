@@ -45,15 +45,15 @@
 1. Haar
    * Haar features:
      * The original ([A General Framework for Object Detection](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=710772)):\
-        ![](2022-03-26-21-37-04.png)
+        ![](_attachments/old/2022-03-26-21-37-04.png)
      * New:\
-        ![](2022-03-26-21-18-41.png)
+        ![](_attachments/old/2022-03-26-21-18-41.png)
    * Calculate `integral image` (Lefttop to right bottom)
    * Calculate Haar value (∑Black - ∑White)
      * for number of each haar value is as follows:
-        ![](2022-03-26-21-46-09.png)
+        ![](_attachments/old/2022-03-26-21-46-09.png)
         (for 24*24 window:)
-        ![](2022-03-26-21-46-50.png)
+        ![](_attachments/old/2022-03-26-21-46-50.png)
 
 
 2. Adaboost (Adaptive boosting)
@@ -62,11 +62,11 @@
    
 3. LBPH
    * Base:
-        ![](2022-03-26-23-28-55.png)
+        ![](_attachments/old/2022-03-26-23-28-55.png)
    * Optimization
-        ![](2022-03-27-00-18-17.png)
+        ![](_attachments/old/2022-03-27-00-18-17.png)
         * rotation mode
-            ![](2022-03-27-00-36-48.png)
+            ![](_attachments/old/2022-03-27-00-36-48.png)
         * Uniform Pattern
             Count hop time in binary number. (<=2, >2)
    * After calculating the LBP, we need divide the image into m*n part (can also give different weights). Make histogram for each part. Axis X is the pattern of LBP. For example, when the neighbour is 8, it will be 0-255 (if it is not ULBP, otherwise only 59 dimensions). Axis Y is the ratio of the amount of this pattern. (I don't plan to use number of amount, because when get new image, the number of pixels will be different)
@@ -80,7 +80,7 @@
         1. Sort points descending.
         2. Calculate IOU.
             * $IOU = {A∩B \over A∪B}$
-            * ![](2022-03-27-03-04-21.png)
+            * ![](_attachments/old/2022-03-27-03-04-21.png)
         3. If IOU bigger than the threshold, remove the one which has lower points.
         4. Repeat step 2-3.
 
@@ -337,4 +337,4 @@ void LBPH::predict(InputArray _src, int &minClass, double &minDist) const {
 
 
 ## Others
-![](2022-05-08-00-20-44.png)
+![](_attachments/old/2022-05-08-00-20-44.png)

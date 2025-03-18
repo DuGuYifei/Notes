@@ -87,7 +87,7 @@ Intelligence (in terms of rationality and elasticity) is achieved by having foll
 3. Mobility 移动性（改变位置的能力——在使用移动代理的系统中）(usually but not always) 注意：代理不是病毒 -- 移动性需要执行环境的支持。
 
 ## generic agent architecture
-![](2023-01-18-09-18-49.png)
+![](_attachments/old/2023-01-18-09-18-49.png)
 ```
 observation  <- percepty
 decision
@@ -95,7 +95,7 @@ action       -> effectors
 ```
 
 ## statefull agent architecture
-![](2023-01-18-09-19-31.png)
+![](_attachments/old/2023-01-18-09-19-31.png)
 
 
 ## agent internal models
@@ -122,7 +122,7 @@ Cons：
 
 #### Example: BDI - Belief Desire Intention
 It is worth using in very simple environments.
-![](2023-01-18-09-59-20.png)
+![](_attachments/old/2023-01-18-09-59-20.png)
 
 ### 2. Reactive decision making
 An antidote to the imperfection of using formal logic 使用形式逻辑的不完美之处的解毒剂 (It is opposing to the formal logic architecture):
@@ -158,19 +158,19 @@ Each layer is connected with each other.
 It’s similar to big corporation decision making scheme. Decisions on each layer are made based on summed data from previous layers. There is no way of correcting a decision that the higher layer made (from lower layer).
 它类似于大公司的决策方案。 每一层的决策都是基于前几层的汇总数据做出的。 没有办法纠正更高层（从较低层）做出的决定。
 
-![](2023-01-18-10-10-19.png)
+![](_attachments/old/2023-01-18-10-10-19.png)
 
 ##### double-pass (dwuprzebiegowa)
 It’s similar to a military decision making scheme. Information is represented to next layers in more and more synthetic form. Two-pass gives a way of correcting a decision made in the lower layer based on the information from the higher level.
 这类似于军事决策方案。 信息以越来越多的合成形式呈现给下一层。  Two-pass 给出了一种根据来自较高层的信息来纠正较低层做出的决定的方法。
 
-![](2023-01-18-10-10-55.png)
+![](_attachments/old/2023-01-18-10-10-55.png)
 
 #### Horizontal Architecture
 Layers are placed independently - when the data goes through a layer it goes directly to the decision module that decides on a reaction, so it needs to be very fast.
 层是独立放置的——当数据通过一个层时，它会直接进入决定反应的决策模块，因此它需要非常快。
 
-![](2023-01-18-10-11-22.png)
+![](_attachments/old/2023-01-18-10-11-22.png)
 
 ## comparison of BDI and reactive approaches
 Formal logic:
@@ -193,7 +193,7 @@ It is an antidote to the imperfection of using formal logic
 
 
 ## structure of an agent application
-![](2023-01-18-09-39-56.png)
+![](_attachments/old/2023-01-18-09-39-56.png)
 
 ## taxonomy (分类法) of agent environments
 1. **Available - unavailable**：（可访问性）accessible
@@ -217,7 +217,7 @@ It is an antidote to the imperfection of using formal logic
 需要注意的是，对于大多数真实环境，环境的确定性并不是问题的显着简化，因为它的不可用性将在智能体对环境的感知中起决定性作用。
 
 ## representation of environment percepts
-![](2023-01-18-09-18-49.png)
+![](_attachments/old/2023-01-18-09-18-49.png)
 ```
 observation  <- percepty
 decision
@@ -402,7 +402,7 @@ The set of all individually rational and pareto-optimal agreements constitutes t
 3. Cooperation: when all elements of the NS set are preferred by each of the agents for joint execution. 合作：当 NS 集合的所有元素都被每个代理首选联合执行时。
 
 ## taxonomy of coordination models
-![](2023-01-17-23-03-49.png)
+![](_attachments/old/2023-01-17-23-03-49.png)
 
 ### Direct
 Not practical for set of agents

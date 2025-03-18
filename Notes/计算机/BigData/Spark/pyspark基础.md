@@ -222,7 +222,7 @@ df2 = df2.withColumn('part', when(df2.id < 25000, 0)
 							.otherwise(3))
 							.show()
 ```
-![](2023-03-22-07-14-06.png)
+![](_attachments/old/2023-03-22-07-14-06.png)
 
 ### repartition
 
@@ -235,7 +235,7 @@ print(df2.rdd.getNumPartitions()) # 4
 ```bash
 ls sherlocl_parts
 ```
-![](2023-03-22-07-18-13.png)
+![](_attachments/old/2023-03-22-07-18-13.png)
 
 ```python
 df_parts = spark.read.text('sherlock_parts')

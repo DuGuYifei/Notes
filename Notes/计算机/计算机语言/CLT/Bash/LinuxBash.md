@@ -590,7 +590,7 @@ echo "alias git='git.exe'" >> ~/.bashrc
 7. 5 = 4 + 1 代表可读可执行
 8. 3 = 2 + 1 代表可写可执行
 
-![](2023-03-29-12-18-37.png)
+![](_attachments/old/2023-03-29-12-18-37.png)
 
 ```bash
 chmod 777 file.txt

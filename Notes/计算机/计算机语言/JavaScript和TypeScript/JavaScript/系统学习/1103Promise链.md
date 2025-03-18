@@ -316,4 +316,4 @@ loadJson('/article/promise-chaining/user.json')
 
 这是一个完整的流程图：
 
-![](2022-08-30-15-37-38.png)
+![](_attachments/old/2022-08-30-15-37-38.png)

@@ -26,7 +26,7 @@ In the bus LAN of the **CSMA/CD (IEEE 802.3) protocol**, each node occupies the 
 [Performance analysis of the IEEE 802.4 token-passing system with finite buffers and asymmetric loads](https://www.sciencedirect.com/science/article/pii/S0140366498001200)
 In *Performance analysis of the IEEE 802.4 token-passing system with finite buffers and asymmetric loads (1999)*, a performance analysis of the IEEE 802.4 token-passing system with finite buffers, a single access class and asymmetric loads is presented under the realistic assumption that frames can arrive at any arbitrary instant. 
 
-![](2022-10-28-21-37-06.png)
+![](_attachments/old/2022-10-28-21-37-06.png)
 
 In the picture showed the mean token-rotation time of the model in this paper. (line of "Analysis 18" in the figure is the result of the reference article of this paper.) We can find under these assumption, the performance will increase rapidly before 20/sec and gradully flatten after that. The highest time is 140 millionseconds. 
 
@@ -35,13 +35,13 @@ But this article didn't consider the priority mechanism of the IEEE 802.4 token-
 ### Consider the priority mechanism
 [IEEE  802.4  令牌总线网实时应用性能分析算法](https://www.doc88.com/p-2394901303386.html)
 
-![](2022-10-28-23-58-52.png)
+![](_attachments/old/2022-10-28-23-58-52.png)
 
 The abscissa is the relative velocity where 1.0 is base velocity. 
 
 In the figure, T is time of token rotation. It shows the same tend as previous article. 
 
-![](2022-10-28-23-57-03.png)
+![](_attachments/old/2022-10-28-23-57-03.png)
 
 $W_t$ is waiting time. At low load, due to the short rotate time of the token, each priority packet can obtain sufficient service time, so the results for different priority packets are basically the same. But at high load, packets with higher priority will be served first, while packets with lower priority will wait longer.
 

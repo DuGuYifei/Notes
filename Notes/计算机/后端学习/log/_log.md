@@ -23,7 +23,7 @@ slf4j 相当于一个统一接口，log4j2 相当于一个实现，log4j2 也可
 
 速度对比：RandomAccessFile > RollingFile
 
-![速度对比](image.png)
+![速度对比](_attachments/old/image.png)
 
 综上：
 1. 想要性能，异步 + RandomAccessFile

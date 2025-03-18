@@ -24,7 +24,7 @@ OutputStream是一个抽象类，定义了所有输出流的基本功能。它�
       2. Auto character translation between the local character set and Unicode.
 
 ### 类视图
-![](2023-06-08-14-29-39.png)
+![](_attachments/old/2023-06-08-14-29-39.png)
 
 ## close
 

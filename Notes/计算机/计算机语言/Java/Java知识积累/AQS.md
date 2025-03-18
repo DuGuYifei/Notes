@@ -6,4 +6,4 @@ AQS 是 AbstractQueuedSynchronizer 的简称，是一个用来构建锁和同步
 
 悟：就像是一个用semaphore实现的monitor。
 
-![](2023-06-17-18-22-49.png)
+![](_attachments/old/2023-06-17-18-22-49.png)

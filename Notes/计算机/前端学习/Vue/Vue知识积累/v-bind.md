@@ -23,7 +23,7 @@
         var app = new Vue({
             el:"#app",
             data:{
-                imgSrc:"http://127.0.0.1:5500//计算机/前端学习/Vue/Vue知识积累/2022-08-12-17-42-50.png",
+                imgSrc:"http://127.0.0.1:5500//计算机/前端学习/Vue/Vue知识积累/_attachments/old/2022-08-12-17-42-50.png",
                 imgTitle:"嘿嘿",
                 isActive:false
             },

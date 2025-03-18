@@ -1,7 +1,7 @@
 # HadoopHiveHBaseZookeeper关系
 
 ## 结构
-![Hadoop系统几个结构关系](Hadoop系统几个结构关系.png)
+![Hadoop系统几个结构关系](_attachments/old/Hadoop系统几个结构关系.png)
 
 ## Quara解释初步了解
 Hadoop - 是一种处理大数据的技术/方法/框架。
@@ -25,4 +25,4 @@ Zookeeper - 是 Hadoop 的生态系统/网络组件，集成了 Hadoop 中的所
 3. 编写 Pig 脚本或 Hive 查询，从可用的 hive 表中找出最高工资。
 
 ## HBase
-![hbase](hbase.png)
+![hbase](_attachments/old/hbase.png)

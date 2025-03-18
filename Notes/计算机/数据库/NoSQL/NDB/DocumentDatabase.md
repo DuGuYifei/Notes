@@ -130,7 +130,7 @@ mongo 数据库有社区（免费）、企业（有支持）和 atlas 版本。 
 这是部分工具，对我们来说最重要的是允许我们与数据库 (shell) 通信的文本工具。
 
 MongoDB charts
-![](2022-11-28-14-46-47.png)
+![](_attachments/old/2022-11-28-14-46-47.png)
 
 ### JSON
 * JavaScript Object Notation
@@ -241,7 +241,7 @@ In NoSQL databases, the basic solution to most of the problems is to add **more 
 在多台服务器上存储相同的数据意味着如果其中一台发生故障，数据库不必停止，数据几乎可以连续使用。
 **有可能**通过在不同的服务器之间spread它们来**提高读取的效率**。 然而，这种方法有一些**禁忌症**，稍后讨论
 
-![](2022-12-12-13-18-56.png)
+![](_attachments/old/2022-12-12-13-18-56.png)
 In a replica set there are multiple Mongo servers (mongod) that store the same data.
 One of them (primary) handles all write operations, which the server then **asynchronously replicates** to the secondary replicas. The replica set may contain an  arbiter. An arbiter is a server that does not store data, but votes for the primary  server.
 在副本集中有多个 Mongo 服务器（mongod）**存储相同的数据**。
@@ -286,12 +286,12 @@ The **read preference** values ​mean:
 • 分片时的迁移延迟 - 由于在辅助副本上应用数据迁移的延迟，可能会发生相同数据被读取 2 次或某些数据被省略的情况
 
 #### 心跳验证可用性
-![](2022-12-12-13-33-28.png)
+![](_attachments/old/2022-12-12-13-33-28.png)
 Servers in a replica set control the database status through messages called  **heartbeat**. Heartbeat is sent every 2 seconds, **if there is no response from any of the  servers for 10 seconds, this server is treated as unavailable.**
 副本集中的服务器通过称为心跳的消息控制数据库状态。 **心跳每 2 秒发送一次，如果 10 秒内没有任何服务器响应，则该服务器被视为不可用。**
 
 ##### 主节点选举
-![](2022-12-12-13-36-07.png)
+![](_attachments/old/2022-12-12-13-36-07.png)
 如果检测到主节点不可用，则选择一个新节点（从可以成为主节点的副本中（稍后详细介绍））
 
 * priority
@@ -394,14 +394,14 @@ Write concern 指示在 mongo 通知客户端操作成功完成之前，有多�
 由于数据分散在多个分片中，如果其中一个分片发生故障，**只会丢失对它存储的那部分数据的访问。**
 
 
-![](2022-12-12-14-22-28.png)
+![](_attachments/old/2022-12-12-14-22-28.png)
 分片集群由以下组件组成： 
 • Shard分片：每个分片包含数据的一个子集。 每个分片都设置为副本集(replica set)。
 • mongos：mongos 充当查询路由器(query router)和客户端应用程序与分片集群(sharded cluster)之间的中介(intermediary)。 从 Mongo 4.4 开始，mongos 支持“**对冲读取(hedged reads)**”，可用于**提高响应速度**（**从副本replica读取数据时，查询被发送到两个副本并返回更快的响应**） 
 • 配置服务器：一个副本集，用于**存储元数据和集群配置。**
 
 #### primary shard (per database)
-![](2022-12-18-20-07-52.png)
+![](_attachments/old/2022-12-18-20-07-52.png)
 
 分片集群中的每个数据库都有其主分片，其上存储非分片集合。
 
@@ -441,7 +441,7 @@ Mongo 中的分片基于在集合级别指定的分片键将文档分散到不�
 * low shard key frequence
 * non-monotonically changeing shard keys 非单调变化的分片键
 
-![](2022-12-18-20-49-58.png)
+![](_attachments/old/2022-12-18-20-49-58.png)
 
 选择分片键时，请记住以下几点： 
 • 键值数量少时，数据可拆分成的块数有限，这会降低分布收益。
@@ -463,7 +463,7 @@ Mongo 中的分片基于在集合级别指定的分片键将文档分散到不�
   分组范围读取允许您将对选定范围的分片键值的查询定向到仅包含该范围的那些分片，从而提高性能（其他分片不需要搜索它们的基础）。
 
 #### Zones
-![](2022-12-18-20-53-49.png)
+![](_attachments/old/2022-12-18-20-53-49.png)
 
 - it is possible to create zones defined by shard key ranges and assign them to shards
 - balancer will move chunks only to shards in the appropriate zone
@@ -473,10 +473,10 @@ Mongo 中的分片基于在集合级别指定的分片键将文档分散到不�
 
 #### Read
 1. without reference to shard key
-   ![](2022-12-18-21-09-43.png)
+   ![](_attachments/old/2022-12-18-21-09-43.png)
    A read request that does not query a shard key is forwarded by the router to all  shards. The router combines the received responses and returns them to the client.
 2. with reference to shard key or shard key prefix
-   ![](2022-12-18-21-10-02.png)
+   ![](_attachments/old/2022-12-18-21-10-02.png)
    With a shard key given, the router selects an appropriate shard based on the  configuration, sends a query to it, and the received response is forwarded to the  client.
   Possible intermediate version: 
   Shard key {a: 1, b: 1, c: 1} 

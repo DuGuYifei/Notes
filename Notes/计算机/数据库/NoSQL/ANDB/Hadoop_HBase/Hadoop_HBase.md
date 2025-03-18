@@ -72,7 +72,7 @@
 • In column-oriented databases data are stored column-by-column: 
 `((1234, 1234, 1234, 5678), (abcd, efab, cdef,  cdef), (1, 1, 1, 1))`
 
-![](2023-01-11-15-08-56.png)
+![](_attachments/old/2023-01-11-15-08-56.png)
 
 #### why column-oriented database
 • 稍微简化一下，我们可以说在关系数据库中有两种访问数据的方法： 
@@ -103,7 +103,7 @@ Selectivity of the query = average% of records returned from the table
 • Each value is placed on a certain row, in a certain column (cell) and has a certain time stamp, which is also a version marker
 
 ### organization of data
-![](2023-01-11-15-17-52.png)
+![](_attachments/old/2023-01-11-15-17-52.png)
 
 • The data are stored in the way that allows for sparse filling of the matrix or rows and columns,
 • Within one column family on can easily adds columns without adverse performance effects,
@@ -157,7 +157,7 @@ Keys are sorted lexicographically, i.e. 1, 10, 2, 20, 3…
 
 启动命令：`hbase shell`
 
-![](2023-01-11-08-31-34.png)
+![](_attachments/old/2023-01-11-08-31-34.png)
 
 ```bash
 create

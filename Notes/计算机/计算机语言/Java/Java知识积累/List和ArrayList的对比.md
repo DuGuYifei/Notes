@@ -8,7 +8,7 @@ List是一个接口，ArrayList是封装对象。
 
 1. 错误
 `List<T> = new List<T>()`
-![](2022-11-05-03-37-16.png)
+![](_attachments/old/2022-11-05-03-37-16.png)
 
 2. 正确
    * `List list = new ArrayList();` 这句创建了一个ArrayList的对象后把上溯到了List。此时它是一个List对象了，有些ArrayList有但是List没有的属性和方法，它就不能再用了。

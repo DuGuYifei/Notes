@@ -13,7 +13,7 @@ bad_udf = udf(lambda x: int(x.indices[0])
 						else 0,
 						IntegerType())
 ```
-![](2023-03-24-05-21-27.png)
+![](_attachments/old/2023-03-24-05-21-27.png)
 
 ## CountVecotrizer
 
@@ -31,7 +31,7 @@ model = cv.fit(df)
 result = model.transform(df)
 print(result)
 ```
-![](2023-03-24-05-29-48.png)
+![](_attachments/old/2023-03-24-05-29-48.png)
 
 * 10 代表有10个tokens在vacabulary（所有words的行加起来10个单词），
 * 中间`[...]`是index

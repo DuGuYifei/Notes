@@ -11,7 +11,7 @@ JPA是Java Persistence API, 用于对象持久化的 API，是 Java EE 5.0 平�
 
 ## JPA Lifecycle
 
-![](2023-06-17-01-18-57.png)
+![](_attachments/old/2023-06-17-01-18-57.png)
 
 四个状态：
 1. New (Transient): The entity is newly created and not yet associated with a persistence context. It is not yet managed by the JPA implementation.

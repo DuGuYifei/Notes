@@ -5,7 +5,7 @@
 df.select('part', 'titie').distinct().sort('part').show(truncate=False)
 ```
 
-![](2023-03-22-07-37-58.png)
+![](_attachments/old/2023-03-22-07-37-58.png)
 
 ## moving window query
 
@@ -20,7 +20,7 @@ query = """
 spark.sql(query).sort('id').show()
 ```
 
-![](2023-03-22-07-40-20.png)
+![](_attachments/old/2023-03-22-07-40-20.png)
 
 ## LAG window function
 
@@ -39,7 +39,7 @@ lag_query = """
 spark.sql(lag_query).show()
 ```
 
-![](2023-03-22-08-21-38.png)
+![](_attachments/old/2023-03-22-08-21-38.png)
 
 ```python
 lag_query = """
@@ -71,7 +71,7 @@ ORDER BY count DESC
 spark.sql(query3agg).show()
 ```
 
-![](2023-03-22-08-36-40.png)
+![](_attachments/old/2023-03-22-08-36-40.png)
 
 
 找出最长的3-tuples

@@ -90,4 +90,4 @@ public class IndexControllerTest {
 }
 ```
 
-![](2023-04-11-05-05-59.png)
+![](_attachments/old/2023-04-11-05-05-59.png)

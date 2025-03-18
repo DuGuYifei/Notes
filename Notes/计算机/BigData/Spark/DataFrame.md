@@ -117,7 +117,7 @@ print(pd_counts.head())
 ```
 
 ## 从pandas dataframe创建表
-![](2023-03-31-17-17-22.png)
+![](_attachments/old/2023-03-31-17-17-22.png)
 
 ```python
 flights = spark.createDataFrame("flights")

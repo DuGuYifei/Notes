@@ -31,8 +31,8 @@ new String()和new String(“”)都是申明一个新的空字符串，**是空
 
 即对于equals相等的字符串，若在常量池（无new）中，仅有一份，在堆中（有new）有多份
 
-![](2022-12-04-13-06-38.png)
-![](2022-12-04-13-06-42.png)
+![](_attachments/old/2022-12-04-13-06-38.png)
+![](_attachments/old/2022-12-04-13-06-42.png)
 
 ## 比较
 `equals()` 方法、`equalsIgnoreCase()` 方法、 `compareTo()`方法

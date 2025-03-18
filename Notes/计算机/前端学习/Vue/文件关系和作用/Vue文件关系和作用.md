@@ -140,11 +140,11 @@ module.exports = {
 ```bash
 vue create vue-cli
 ```
-1. ![](2022-11-27-17-58-26.png)
+1. ![](_attachments/old/2022-11-27-17-58-26.png)
     其实一样的
 2. src文件夹下多了assets和components文件夹
    * assets 图片字体等
    * components 组件
-3. ![](2022-11-27-18-00-58.png)
+3. ![](_attachments/old/2022-11-27-18-00-58.png)
    src文件夹里少了index.html，因为被移动到`public`文件夹里了，**public一般用来放那些静态资源**
 4. npm run build 生成的文件里， `.babelrc.js` = `babel.config.js`, `webpack.config.js` = `vue.config.js`

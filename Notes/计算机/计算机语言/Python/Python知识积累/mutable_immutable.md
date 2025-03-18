@@ -1,7 +1,7 @@
 # mutable immutable
 
 mutable就是创建后可以修改，immutable就是创建后不能修改的。（一般的user defined class都是mutable，当然想要immutable的可以专门搜索一下“python custom immutable class”）
-![](2022-11-29-15-58-17.png)
+![](_attachments/old/2022-11-29-15-58-17.png)
 
 ## immutable
 Immutable，拿int举例。

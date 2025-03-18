@@ -1,8 +1,8 @@
 # Spark
 
 ## 结构
-![](2023-03-31-17-17-22.png)
-![](2023-06-07-22-27-35.png)
+![](_attachments/old/2023-03-31-17-17-22.png)
+![](_attachments/old/2023-06-07-22-27-35.png)
 
 ## 系统介绍-老师lecture
 1. [Spark简介](Spark简介.md)

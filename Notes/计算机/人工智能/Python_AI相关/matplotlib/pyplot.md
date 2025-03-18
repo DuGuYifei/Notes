@@ -23,7 +23,7 @@ fifa_df_germany_age_pandas = fifa_df_germany_age.toPandas()
 fifa_df_germany_age_pandas.plot(kind='density')
 plt.show()
 ```
-![](2023-04-01-02-48-12.png)
+![](_attachments/old/2023-04-01-02-48-12.png)
 
 
 ## scatter

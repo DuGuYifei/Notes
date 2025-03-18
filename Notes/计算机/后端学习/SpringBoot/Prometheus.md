@@ -22,4 +22,4 @@
 
 启动后可以通过 localhost:8080/actuator/prometheus 访问
 
-![](2023-05-21-17-03-20.png)
+![](_attachments/old/2023-05-21-17-03-20.png)

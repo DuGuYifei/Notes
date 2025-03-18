@@ -6,8 +6,8 @@
   * 频繁时候选择v-show，消耗性能小
 * true 元素存在，false从dom树中移除
 
-![](2022-08-15-16-31-22.png)
-![](2022-08-15-16-31-33.png)
+![](_attachments/old/2022-08-15-16-31-22.png)
+![](_attachments/old/2022-08-15-16-31-33.png)
 
 ```html
     <div id="app">

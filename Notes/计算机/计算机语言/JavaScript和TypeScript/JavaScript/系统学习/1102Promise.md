@@ -36,7 +36,7 @@ let promise = new Promise(function(resolve, reject) {
 * state —— 最初是 "pending"，然后在 resolve 被调用时变为 "fulfilled"，或者在 reject 被调用时变为 "rejected"。
 * result —— 最初是 undefined，然后在 resolve(value) 被调用时变为 value，或者在 reject(error) 被调用时变为 error。
 
-![](2022-08-29-15-20-05.png)
+![](_attachments/old/2022-08-29-15-20-05.png)
 
 稍后我们将看到“粉丝”如何订阅这些更改。
 
@@ -58,7 +58,7 @@ let promise = new Promise(function(resolve, reject) {
 
 经过 1 秒的“处理”后，executor 调用 resolve("done") 来产生结果。这将改变 promise 对象的状态：
 
-![](2022-08-29-15-23-27.png)
+![](_attachments/old/2022-08-29-15-23-27.png)
 
 这是一个成功完成任务的例子，一个“成功实现了的诺言”。
 
@@ -70,7 +70,7 @@ let promise = new Promise(function(resolve, reject) {
 });
 ```
 
-![](2022-08-29-15-23-58.png)
+![](_attachments/old/2022-08-29-15-23-58.png)
 
 总而言之，executor 应该执行一项工作（通常是需要花费一些时间的事儿），然后调用 resolve 或 reject 来改变对应的 promise 对象的状态。
 

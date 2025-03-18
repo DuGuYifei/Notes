@@ -8,7 +8,7 @@
 3. `ResponseEntity.created(参数).build`  
    1. accepted:201状态
    2. 参数:
-        ![](2023-02-13-04-49-50.png)
+        ![](_attachments/old/2023-02-13-04-49-50.png)
 
 ## BadRequest添加错误信息
 

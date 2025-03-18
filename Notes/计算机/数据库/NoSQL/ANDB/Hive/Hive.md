@@ -66,7 +66,7 @@ Hive 可以被视为存储在 HDFS 文件中的数据的**附加层**。
 Hive **不是为 [OLTP](../../../DataWarehouse/DataWarehouse基本知识积累.md) 处理而设计**的。 因此，它通常不被称为“数据库”，而是被称为“**数据仓库**”，这意味着它针对分析查询进行了优化。
 
 ## Hive components
-![](2022-11-21-10-47-03.png)
+![](_attachments/old/2022-11-21-10-47-03.png)
 展示了 HIVE 组件(components)和查询执行过程(query execution process)的总体思路。
 
 Components: 
@@ -208,7 +208,7 @@ Now, one of the main problem that sequence file format solves is the problem  of
 
 
 ##### Horizontal row-store
-![](2022-11-22-21-29-22.png)
+![](_attachments/old/2022-11-22-21-29-22.png)
 
 Now, let me remind the idea of **horizontal row-store**. **The set of rows is stored in one block. The whole block is always stored on the same node**
 现在，让我提醒一下水平行存储的概念。 一组行存储在一个块中。 整个区块总是存储在同一个节点上
@@ -232,11 +232,11 @@ Now, let me remind the idea of **horizontal row-store**. **The set of rows is st
 - 行存储保证同一记录中的所有字段位于同一集群节点中，因为它们位于同一 HDFS 块中。
 
 #### Parquet
-![](2022-12-10-16-46-40.png)
+![](_attachments/old/2022-12-10-16-46-40.png)
 **支持将嵌套类型柱状存储**
 
 ##### Column-store
-![](2022-11-22-21-35-44.png)
+![](_attachments/old/2022-11-22-21-35-44.png)
 
 1. Disadvantages: 
 - **cannot** provide **fast query** processing in Hadoop-based systems due to high  overhead of a tuple reconstruction; 
@@ -256,7 +256,7 @@ Now, let me remind the idea of **horizontal row-store**. **The set of rows is st
 
 #### RCFile
 ##### Row Columnar File 行列式文件
-![](2022-11-22-21-39-48.png)
+![](_attachments/old/2022-11-22-21-39-48.png)
 问题是如何提供快速查询处理并确保同一记录的所有字段都位于同一节点中。 这个需求的答案是Row Columnar File，**它把所有的记录分成行组，每个行组存储在同一个节点上，但是是以列的方式。**
 
 - has comparable data loading speed and workload adaptivity with the row-store, 
@@ -287,13 +287,13 @@ Serialization is the **process of converting an object into a stream of bytes to
 Its main purpose is to save the **state of an object** in order to be able to **recreate it when needed**.
 The **reverse process** is called **deserialization**.
 
-![](2022-11-22-21-48-12.png)
+![](_attachments/old/2022-11-22-21-48-12.png)
 
 The producer provides **binary data** and **data schema**. The consumer according to data  schema **deserialize** binary data.
 生产者提供二进制数据和数据模式。 消费者根据数据模式反序列化二进制数据。
 
 ##### The example of Avro schema 
-![](2022-11-22-21-49-44.png)
+![](_attachments/old/2022-11-22-21-49-44.png)
 An Avro schema is created using JSON format.
 
 * type: identifies the JSON field type.
@@ -317,7 +317,7 @@ It defines what fields are contained in the value, and the data  type for each f
 #### ORC
 column-oriented. 比rcfile效率高。
 Divide into stripes. Each stripe includes an index, data, and Footer. The index stores the maximum/minimum values of each column and the position of each row in the column.
-![](2022-11-23-20-40-50.png)
+![](_attachments/old/2022-11-23-20-40-50.png)
 
 ## Data Type
 ### All Types reference

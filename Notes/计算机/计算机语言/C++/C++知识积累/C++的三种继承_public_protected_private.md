@@ -1,6 +1,6 @@
 # C++的三种继承_public_protected_private
 
-![](2022-07-28-22-51-44.png)
+![](_attachments/old/2022-07-28-22-51-44.png)
 
 1. 首先说明一点：类实例（即类对象）不能直接访问类的 private成员和protected成员，但是能直接访问类的public成员。
 

@@ -37,7 +37,7 @@ public class SwaggerConfig {
 ### 2.2 使用
 
 `/swagger-ui.html`
-![](2023-04-09-12-15-56.png)
+![](_attachments/old/2023-04-09-12-15-56.png)
 
 ## 3. 配置
 

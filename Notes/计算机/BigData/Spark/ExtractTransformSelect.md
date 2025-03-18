@@ -28,7 +28,7 @@ df.select(short_udf('textdata')\
 		  .alias('short'))\
 		  .show(3)
 ```
-![](2023-03-24-04-40-59.png)
+![](_attachments/old/2023-03-24-04-40-59.png)
 
 ### array UDF
 ```PYTHON
@@ -40,7 +40,7 @@ in_udf = udf(lambda x:
 
 df3.select('word array', in_udf('word array').alias('without endword')).show(5, truncate=30)
 ```
-![](2023-03-24-04-45-39.png)
+![](_attachments/old/2023-03-24-04-45-39.png)
 
 ### important UDF return types
 ```PYTHON

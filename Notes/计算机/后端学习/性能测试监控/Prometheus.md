@@ -126,7 +126,7 @@ remote_read:
 ## 访问
 使用浏览器访问 http://localhost:9090/targets 可以看到根据 `scrape_configs` 配置的目标。
 
-![](2023-05-21-17-05-36.png)
+![](_attachments/old/2023-05-21-17-05-36.png)
 
 点击graph之类的打开细节：自己调整
 

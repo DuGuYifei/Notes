@@ -4,12 +4,12 @@
 
 [算法_轻松掌握ac自动机](https://www.bilibili.com/video/BV1uJ411Y7Eg?p=4&vd_source=6beebf17d5aa6fb3d9fb4b629d0b319a)
 
-![](2022-08-06-17-41-34.png)
+![](_attachments/old/2022-08-06-17-41-34.png)
 
 注意节点9同时包含she和he
 
-![](2022-08-06-17-52-24.png)
-![](2022-08-06-18-00-20.png)
+![](_attachments/old/2022-08-06-17-52-24.png)
+![](_attachments/old/2022-08-06-18-00-20.png)
 数字是单词长度
 
 `fail指针`：`i->fail = j`,word[j]是word[i]的最长后缀 

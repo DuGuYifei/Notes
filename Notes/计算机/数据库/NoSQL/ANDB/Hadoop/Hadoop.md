@@ -76,9 +76,9 @@ hdfs是否类似mysql的复制，将一个节点的实例复制到其他节点�
 * 保存数据的服务器称为数据节点 (DataNodes)， 
 * 对元数据的访问由称为名称节点 (NameNode) 的单个服务器提供。
 
-![](2022-11-12-02-38-56.png)
+![](_attachments/old/2022-11-12-02-38-56.png)
 New version: federated HDFS, it have more than one namenode and the whole system will not fail when one node fail.
-![](2022-11-12-02-41-15.png)
+![](_attachments/old/2022-11-12-02-41-15.png)
 
 ## MapReduce
 * MapReduce is a method of organizing distributed processing especially for large amounts of data,
@@ -106,8 +106,8 @@ New version: federated HDFS, it have more than one namenode and the whole system
   ```
   * Map: 将数据进行拆分，即把复杂的任务分解为若干个“简单的任务”来并行处理。可以进行拆分的前提是这些小任务可以并行计算，彼此间几乎没有依赖关系。**对一组数据元素进行某种重复式的处理**
   * Reduce:对数据进行汇总,即对map阶段的结果进行全局汇总。**对Map的中间结果进行某种进一步的结果整理。**
-    ![](2022-11-12-12-05-49.png)
-    ![](2022-11-12-12-27-30.png)
+    ![](_attachments/old/2022-11-12-12-05-49.png)
+    ![](_attachments/old/2022-11-12-12-27-30.png)
 
 ### example: counting words
 1. Map
@@ -164,11 +164,11 @@ MAP: (address, line) -> list(word, number of occurences)
 REDUCE: (word, list(number of occurences)) -> (word, number of occurences)
 ```
 5. result
-![](2022-11-12-13-50-13.png)
-![](2022-11-12-13-50-30.png)
+![](_attachments/old/2022-11-12-13-50-13.png)
+![](_attachments/old/2022-11-12-13-50-30.png)
 
 ## Mapreduce Processing
-![](2022-11-12-13-59-41.png)
+![](_attachments/old/2022-11-12-13-59-41.png)
 
 ### Input Format
 * Input for MapReduce is coming from files, most commonly  they are HDFS files of large sizes, 
@@ -212,7 +212,7 @@ REDUCE: (word, list(number of occurences)) -> (word, number of occurences)
 * Reducer 接口扩展了 Combiner 之一，因此可以使用相同的类进行组合（如用于减少）  , 
 * 因此在字数统计示例中，合并所需的唯一代码是：conf.setCombinerClass(Reduce.class)
 
-![](2022-11-12-14-21-45.png)
+![](_attachments/old/2022-11-12-14-21-45.png)
 
 ### Partitioner
 * Partitioning influences how Reduce tasks are assigned to  nodes, 
@@ -268,8 +268,8 @@ COMBINER: (word, list(number of occurences)) ->  (word, number of occurences)
 REDUCE: (word, list(number of occurences)) ->  (word, number of occurences)
 ```
 
-![](2022-11-12-14-31-01.png)
-![](2022-11-12-14-31-17.png)
+![](_attachments/old/2022-11-12-14-31-01.png)
+![](_attachments/old/2022-11-12-14-31-17.png)
 
 ## Hadoop, HDFS, Hive, HBase
 [Hadoop-HDFS-Hive-HBase](Hadoop-HDFS-Hive-HBase.md)

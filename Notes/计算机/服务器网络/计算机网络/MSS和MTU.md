@@ -12,4 +12,4 @@ MMS 代表的是 Maximum Segment Size，即 TCP 协议中的最大报文段长�
 MTU 代表的是 Maximum Transmission Unit，即最大传输单元。它是指网络设备（如路由器）在传输数据时，所能通过的最大数据包长度。MTU 的大小取决于网络设备的硬件类型，如以太网、令牌环、FDDI 等。MTU 的大小也取决于网络设备所连接的网络类型，如以太网、令牌环、FDDI 等。
 
 如果一个段大于MTU，就继续分片，一般来说不会。因为MTU一般都比MSS大，且一般`MSS=MTU-40Byte`，所以TCP分段后，到了IP层大概率就不会再分片了。
-![](2023-04-14-03-12-57.png)
+![](_attachments/old/2023-04-14-03-12-57.png)

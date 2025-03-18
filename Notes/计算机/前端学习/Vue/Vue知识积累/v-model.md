@@ -25,7 +25,7 @@
     </script>
 ```
 
-![](2022-08-17-03-06-29.png)
+![](_attachments/old/2022-08-17-03-06-29.png)
 
 注意如果同时使用 input text 的value属性和v-model属性，会按照v-model的来
 

@@ -23,7 +23,7 @@
 	- 基础结构模式下的扫描是指无线设备搜索和检测其附近可用无线网络的过程。 在基础架构模式下，扫描由笔记本电脑、智能手机或其他无线设备等设备执行，以发现附近的接入点 (AP) 或广播其 SSID（服务集标识符）的路由器。
 8. In 802.11g standard, what is the transmission speed for the 2.4GHz band?
 	- 54Mbps（megabits per second）
-	- ![](2023-05-22-14-55-09.png)
+	- ![](_attachments/old/2023-05-22-14-55-09.png)
 9.  In 802.11b standard, what is the transmission speed for the 2.4GHz band?
     11Mbps（megabits per second）
 10. In 802.11b/g (Europe) standard, how many channels are defined in the 4.4GHz band?

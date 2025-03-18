@@ -86,7 +86,7 @@ https = http + SSL层
     Tomasz
     Add
     Tomasz
-    ![](2022-03-02-14-17-26.png)
+    ![](_attachments/old/2022-03-02-14-17-26.png)
     Tomasz
     Add a site
     Tomasz
@@ -102,7 +102,7 @@ https = http + SSL层
     Tomasz
     you can set your DNS records in cloudflare now
     Tomasz
-    ![](2022-03-02-14-17-55.png)
+    ![](_attachments/old/2022-03-02-14-17-55.png)
     Tomasz
     and here click Proxied
     Tomasz

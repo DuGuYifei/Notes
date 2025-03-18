@@ -4,7 +4,7 @@
 
 `stack`继承自`deque`不是`vector`，vector在容器大小变化时动作大，deque动作小，但是push_back更复杂
 
-![](2022-07-17-17-40-43.png)
+![](_attachments/old/2022-07-17-17-40-43.png)
 
 ```cpp
 `#include <stack>`

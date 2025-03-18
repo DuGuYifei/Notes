@@ -8,7 +8,7 @@
 
 为了获取窗口（window）的宽度和高度，我们可以使用 `document.documentElement` 的 `clientWidth/clientHeight`：
 
-![](2022-09-01-01-58-43.png)
+![](_attachments/old/2022-09-01-01-58-43.png)
 
 ```online
 例如，这个按钮会显示窗口的高度：

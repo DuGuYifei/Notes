@@ -27,7 +27,7 @@
 
 不再是TCP四次挥手了，而是TLS/1.3。
 
-![](2023-06-17-02-40-25.png)
+![](_attachments/old/2023-06-17-02-40-25.png)
 
 ```python
 import http.client
@@ -54,6 +54,6 @@ conn.close()
 
 不再是TCP握手挥手了，而是[QUIC](QUIC.md)，因为TCP三次握手太慢了。
 
-![](2023-06-17-02-40-33.png)
+![](_attachments/old/2023-06-17-02-40-33.png)
 
-![](2023-06-17-02-41-15.png)
+![](_attachments/old/2023-06-17-02-41-15.png)

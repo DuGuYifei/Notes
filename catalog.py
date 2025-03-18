@@ -3,7 +3,15 @@ from pathlib import Path
 
 config = {
     "IgnoreFile": [
-        "gitp.cmd", "gitp.sh", "gitpf.cmd", "_sidebar.md", "README.md", ".gitignore"
+        "gitp.cmd", 
+        "gitp.sh", 
+        "gitpf.cmd", 
+        "_sidebar.md", 
+        "README.md", 
+        ".gitignore",
+        ".nojekyll",
+        "catalog.py",
+        "index.html"
     ],
     "IgnoreDir": [
         ".git",
@@ -76,3 +84,14 @@ base_directory = '.'  # 使用当前目录
 generate_sidebar(base_directory)
 
 print(f"Sidebar generated for each directory in {base_directory}")
+
+# 将当前文件夹的_sidebar.md文件复制到README.md，并加上标题
+
+# 读取当前文件夹的_sidebar.md
+with open('_sidebar.md', 'r', encoding='utf-8') as f:
+    sidebar_content = f.read()
+
+    # 写入README.md
+    with open('README.md', 'w', encoding='utf-8') as f:
+        f.write('# Catalog\n\n')
+        f.write(sidebar_content)

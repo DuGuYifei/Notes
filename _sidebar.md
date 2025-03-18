@@ -1940,6 +1940,3 @@
         - [mysql-docker快速部署.md](mysql-docker快速部署.md)
         - [nginx-docker快速部署.md](nginx-docker快速部署.md)
         - [vim安装.md](vim安装.md)
-- [.nojekyll](.nojekyll)
-- [catalog.py](catalog.py)
-- [index.html](index.html)

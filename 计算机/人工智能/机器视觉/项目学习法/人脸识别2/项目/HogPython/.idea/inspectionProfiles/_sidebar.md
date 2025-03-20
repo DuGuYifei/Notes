@@ -1,4 +1,3 @@
 - [返回上级目录](../)
-
-- [profiles_settings.xml](profiles_settings.xml)
-- [Project_Default.xml](Project_Default.xml)
+- [profiles_settings.xml](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/inspectionProfiles/profiles_settings.xml)
+- [Project_Default.xml](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/inspectionProfiles/Project_Default.xml)

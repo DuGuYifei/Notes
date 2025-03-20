@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [histograms_test.txt](histograms_test.txt)
-- [histograms_testLHH.txt](histograms_testLHH.txt)
-- [histograms_train.txt](histograms_train.txt)
-- [hog_error.txt](hog_error.txt)
+- [histograms_test.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/histograms_test.txt)
+- [histograms_testLHH.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/histograms_testLHH.txt)
+- [histograms_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/histograms_train.txt)
+- [hog_error.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/hog_error.txt)

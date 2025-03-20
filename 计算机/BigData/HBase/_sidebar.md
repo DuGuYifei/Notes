@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [_HBase.md](_HBase.md)
-- [Phoenix.md](Phoenix.md)
-- [RowKey设计.md](RowKey设计.md)
-- [插入数据的key顺序是否影响写入速率.md](插入数据的key顺序是否影响写入速率.md)
+- [_HBase.md](计算机/BigData/HBase/_HBase.md)
+- [Phoenix.md](计算机/BigData/HBase/Phoenix.md)
+- [RowKey设计.md](计算机/BigData/HBase/RowKey设计.md)
+- [插入数据的key顺序是否影响写入速率.md](计算机/BigData/HBase/插入数据的key顺序是否影响写入速率.md)

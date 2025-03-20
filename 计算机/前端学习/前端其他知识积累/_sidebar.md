@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [_KnowledgeAccumulation_Frontend.md](_KnowledgeAccumulation_Frontend.md)
-- [css形成3d图书.md](css形成3d图书.md)
-- [indexedDB.md](indexedDB.md)
-- [readyState.md](readyState.md)
+- [_KnowledgeAccumulation_Frontend.md](计算机/前端学习/前端其他知识积累/_KnowledgeAccumulation_Frontend.md)
+- [css形成3d图书.md](计算机/前端学习/前端其他知识积累/css形成3d图书.md)
+- [indexedDB.md](计算机/前端学习/前端其他知识积累/indexedDB.md)
+- [readyState.md](计算机/前端学习/前端其他知识积累/readyState.md)

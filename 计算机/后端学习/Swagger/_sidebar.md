@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [_swagger.md](_swagger.md)
-- [swagger基本使用流程.md](swagger基本使用流程.md)
-- [UI上的一些操作.md](UI上的一些操作.md)
-- [分组和接口注释.md](分组和接口注释.md)
+- [_swagger.md](计算机/后端学习/Swagger/_swagger.md)
+- [swagger基本使用流程.md](计算机/后端学习/Swagger/swagger基本使用流程.md)
+- [UI上的一些操作.md](计算机/后端学习/Swagger/UI上的一些操作.md)
+- [分组和接口注释.md](计算机/后端学习/Swagger/分组和接口注释.md)

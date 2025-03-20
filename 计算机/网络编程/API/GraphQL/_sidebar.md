@@ -1,3 +1,2 @@
 - [返回上级目录](../)
-
-- [_GraphQL.md](_GraphQL.md)
+- [_GraphQL.md](计算机/网络编程/API/GraphQL/_GraphQL.md)

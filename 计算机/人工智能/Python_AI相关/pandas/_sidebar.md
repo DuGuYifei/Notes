@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [_pandas.md](_pandas.md)
-- [df_head.md](df_head.md)
-- [Series和DataFrame.md](Series和DataFrame.md)
-- [shape.md](shape.md)
+- [_pandas.md](计算机/人工智能/Python_AI相关/pandas/_pandas.md)
+- [df_head.md](计算机/人工智能/Python_AI相关/pandas/df_head.md)
+- [Series和DataFrame.md](计算机/人工智能/Python_AI相关/pandas/Series和DataFrame.md)
+- [shape.md](计算机/人工智能/Python_AI相关/pandas/shape.md)

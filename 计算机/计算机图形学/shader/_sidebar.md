@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [_shader.md](_shader.md)
-- [GLSL基本语法.md](GLSL基本语法.md)
-- [内置函数.md](内置函数.md)
-- [自我初识shader.md](自我初识shader.md)
+- [_shader.md](计算机/计算机图形学/shader/_shader.md)
+- [GLSL基本语法.md](计算机/计算机图形学/shader/GLSL基本语法.md)
+- [内置函数.md](计算机/计算机图形学/shader/内置函数.md)
+- [自我初识shader.md](计算机/计算机图形学/shader/自我初识shader.md)

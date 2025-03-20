@@ -1,3 +1,2 @@
 - [返回上级目录](../)
-
-- [_RDF和SPARQL.md](_RDF和SPARQL.md)
+- [_RDF和SPARQL.md](计算机/BigData/RDF和SPARQL/_RDF和SPARQL.md)

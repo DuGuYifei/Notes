@@ -1,7 +1,6 @@
 - [返回上级目录](../)
-
-- [Readme.txt](Readme.txt)
-- [show_images.m](show_images.m)
-- [x24x24.txt](x24x24.txt)
-- [y24x24.txt](y24x24.txt)
-- [z24x24.txt](z24x24.txt)
+- [Readme.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/Readme.txt)
+- [show_images.m](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/show_images.m)
+- [x24x24.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/x24x24.txt)
+- [y24x24.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/y24x24.txt)
+- [z24x24.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/z24x24.txt)

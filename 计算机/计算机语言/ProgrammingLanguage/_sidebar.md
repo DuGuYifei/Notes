@@ -1,13 +1,12 @@
 - [返回上级目录](../)
-
 - Ada和Smalltalk/
     - Ada/
-        - [Ada.md](Ada.md)
+        - [Ada.md](计算机/计算机语言/ProgrammingLanguage/Ada和Smalltalk/Ada/Ada.md)
     - Smalltalk/
-        - [Smalltalk.md](Smalltalk.md)
+        - [Smalltalk.md](计算机/计算机语言/ProgrammingLanguage/Ada和Smalltalk/Smalltalk/Smalltalk.md)
 - Haskell和Prolog/
     - Haskell/
-        - [Haskell.md](Haskell.md)
+        - [Haskell.md](计算机/计算机语言/ProgrammingLanguage/Haskell和Prolog/Haskell/Haskell.md)
     - Prolog/
-        - [Prolog.md](Prolog.md)
-- [函数式声明式命令式编程.md](函数式声明式命令式编程.md)
+        - [Prolog.md](计算机/计算机语言/ProgrammingLanguage/Haskell和Prolog/Prolog/Prolog.md)
+- [函数式声明式命令式编程.md](计算机/计算机语言/ProgrammingLanguage/函数式声明式命令式编程.md)

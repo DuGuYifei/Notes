@@ -1,7 +1,6 @@
 - [返回上级目录](../)
-
 - inspectionProfiles/
-    - [profiles_settings.xml](profiles_settings.xml)
-- [misc.xml](misc.xml)
-- [modules.xml](modules.xml)
-- [PythonDraft.iml](PythonDraft.iml)
+    - [profiles_settings.xml](计算机/计算机语言/Python/PythonDraft/.idea/inspectionProfiles/profiles_settings.xml)
+- [misc.xml](计算机/计算机语言/Python/PythonDraft/.idea/misc.xml)
+- [modules.xml](计算机/计算机语言/Python/PythonDraft/.idea/modules.xml)
+- [PythonDraft.iml](计算机/计算机语言/Python/PythonDraft/.idea/PythonDraft.iml)

@@ -1,7 +1,6 @@
 - [返回上级目录](../)
-
-- [_numpy.md](_numpy.md)
-- [arange.md](arange.md)
-- [random_permutation.md](random_permutation.md)
-- [乘法.md](乘法.md)
-- [矩阵.md](矩阵.md)
+- [_numpy.md](计算机/人工智能/Python_AI相关/numpy/_numpy.md)
+- [arange.md](计算机/人工智能/Python_AI相关/numpy/arange.md)
+- [random_permutation.md](计算机/人工智能/Python_AI相关/numpy/random_permutation.md)
+- [乘法.md](计算机/人工智能/Python_AI相关/numpy/乘法.md)
+- [矩阵.md](计算机/人工智能/Python_AI相关/numpy/矩阵.md)

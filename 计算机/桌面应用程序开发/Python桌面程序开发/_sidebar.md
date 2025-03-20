@@ -1,5 +1,4 @@
 - [返回上级目录](../)
-
-- [_Python桌面程序开发.md](_Python桌面程序开发.md)
-- [QMutex和QMutexLocker.md](QMutex和QMutexLocker.md)
-- [stylesheet_disabled.md](stylesheet_disabled.md)
+- [_Python桌面程序开发.md](计算机/桌面应用程序开发/Python桌面程序开发/_Python桌面程序开发.md)
+- [QMutex和QMutexLocker.md](计算机/桌面应用程序开发/Python桌面程序开发/QMutex和QMutexLocker.md)
+- [stylesheet_disabled.md](计算机/桌面应用程序开发/Python桌面程序开发/stylesheet_disabled.md)

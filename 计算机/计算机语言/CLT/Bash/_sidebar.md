@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [access.log](access.log)
-- [BianYudong_Task1.sh](BianYudong_Task1.sh)
-- [LinuxBash.md](LinuxBash.md)
-- [vim.md](vim.md)
+- [access.log](计算机/计算机语言/CLT/Bash/access.log)
+- [BianYudong_Task1.sh](计算机/计算机语言/CLT/Bash/BianYudong_Task1.sh)
+- [LinuxBash.md](计算机/计算机语言/CLT/Bash/LinuxBash.md)
+- [vim.md](计算机/计算机语言/CLT/Bash/vim.md)

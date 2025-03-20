@@ -1,4 +1,3 @@
 - [返回上级目录](../)
-
-- [_log.md](_log.md)
-- [log4j2.md](log4j2.md)
+- [_log.md](计算机/后端学习/log/_log.md)
+- [log4j2.md](计算机/后端学习/log/log4j2.md)

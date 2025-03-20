@@ -1,3 +1,2 @@
 - [返回上级目录](../)
-
-- [AgentSystem.md](AgentSystem.md)
+- [AgentSystem.md](计算机/AgentSystem/Theory/AgentSystem.md)

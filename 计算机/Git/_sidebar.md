@@ -1,3 +1,2 @@
 - [返回上级目录](../)
-
-- [GitKnowledgeAccumulation.md](GitKnowledgeAccumulation.md)
+- [GitKnowledgeAccumulation.md](计算机/Git/GitKnowledgeAccumulation.md)

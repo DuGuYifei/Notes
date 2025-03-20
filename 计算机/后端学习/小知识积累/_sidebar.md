@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [_后端小知识积累.md](_后端小知识积累.md)
-- [API测试.md](API测试.md)
-- [DataBufferLimitException_Exceeded_limit_on_max_bytes_to_buffer.md](DataBufferLimitException_Exceeded_limit_on_max_bytes_to_buffer.md)
-- [zookeeper.md](zookeeper.md)
+- [_后端小知识积累.md](计算机/后端学习/小知识积累/_后端小知识积累.md)
+- [API测试.md](计算机/后端学习/小知识积累/API测试.md)
+- [DataBufferLimitException_Exceeded_limit_on_max_bytes_to_buffer.md](计算机/后端学习/小知识积累/DataBufferLimitException_Exceeded_limit_on_max_bytes_to_buffer.md)
+- [zookeeper.md](计算机/后端学习/小知识积累/zookeeper.md)

@@ -1,3 +1,2 @@
 - [返回上级目录](../)
-
-- [Prolog.md](Prolog.md)
+- [Prolog.md](计算机/计算机语言/ProgrammingLanguage/Haskell和Prolog/Prolog/Prolog.md)

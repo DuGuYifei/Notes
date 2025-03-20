@@ -1,13 +1,12 @@
 - [返回上级目录](../)
-
 - GraphQL/
-    - [_GraphQL.md](_GraphQL.md)
+    - [_GraphQL.md](计算机/网络编程/API/GraphQL/_GraphQL.md)
 - gRPC/
-    - [_gRPC.md](_gRPC.md)
-    - [Any类型.md](Any类型.md)
-    - [map类型设值.md](map类型设值.md)
-    - [validation.md](validation.md)
-    - [关键字.md](关键字.md)
+    - [_gRPC.md](计算机/网络编程/API/gRPC/_gRPC.md)
+    - [Any类型.md](计算机/网络编程/API/gRPC/Any类型.md)
+    - [map类型设值.md](计算机/网络编程/API/gRPC/map类型设值.md)
+    - [validation.md](计算机/网络编程/API/gRPC/validation.md)
+    - [关键字.md](计算机/网络编程/API/gRPC/关键字.md)
 - RESTful/
-    - [_RESTful.md](_RESTful.md)
-- [_API(RPC).md](_API(RPC).md)
+    - [_RESTful.md](计算机/网络编程/API/RESTful/_RESTful.md)
+- [_API(RPC).md](计算机/网络编程/API/_API(RPC).md)

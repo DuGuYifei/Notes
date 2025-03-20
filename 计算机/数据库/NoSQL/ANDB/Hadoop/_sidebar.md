@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [BasicOperations.md](BasicOperations.md)
-- [Combiner和Reducer.md](Combiner和Reducer.md)
-- [Hadoop-HDFS-Hive-HBase.md](Hadoop-HDFS-Hive-HBase.md)
-- [Hadoop.md](Hadoop.md)
+- [BasicOperations.md](计算机/数据库/NoSQL/ANDB/Hadoop/BasicOperations.md)
+- [Combiner和Reducer.md](计算机/数据库/NoSQL/ANDB/Hadoop/Combiner和Reducer.md)
+- [Hadoop-HDFS-Hive-HBase.md](计算机/数据库/NoSQL/ANDB/Hadoop/Hadoop-HDFS-Hive-HBase.md)
+- [Hadoop.md](计算机/数据库/NoSQL/ANDB/Hadoop/Hadoop.md)

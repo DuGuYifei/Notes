@@ -1,4 +1,3 @@
 - [返回上级目录](../)
-
-- [_tensorboard.md](_tensorboard.md)
-- [tensorboard基础.md](tensorboard基础.md)
+- [_tensorboard.md](计算机/人工智能/Python_AI相关/tensorboard/_tensorboard.md)
+- [tensorboard基础.md](计算机/人工智能/Python_AI相关/tensorboard/tensorboard基础.md)

@@ -1,4 +1,3 @@
 - [返回上级目录](../)
-
-- [_OpenAI.md](_OpenAI.md)
-- [流式.md](流式.md)
+- [_OpenAI.md](计算机/人工智能/OpenAI/_OpenAI.md)
+- [流式.md](计算机/人工智能/OpenAI/流式.md)

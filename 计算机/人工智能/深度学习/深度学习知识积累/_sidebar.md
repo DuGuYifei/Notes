@@ -1,4 +1,3 @@
 - [返回上级目录](../)
-
-- [_深度学习知识积累.md](_深度学习知识积累.md)
-- [转置卷积TransposeConvolution.md](转置卷积TransposeConvolution.md)
+- [_深度学习知识积累.md](计算机/人工智能/深度学习/深度学习知识积累/_深度学习知识积累.md)
+- [转置卷积TransposeConvolution.md](计算机/人工智能/深度学习/深度学习知识积累/转置卷积TransposeConvolution.md)

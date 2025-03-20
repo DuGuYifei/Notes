@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [01AutoregressiveModels.md](01AutoregressiveModels.md)
-- [02MarkovChains.md](02MarkovChains.md)
-- [03HiddenMarkovChains.md](03HiddenMarkovChains.md)
-- [_机器学习_图和序列数据.md](_机器学习_图和序列数据.md)
+- [01AutoregressiveModels.md](计算机/人工智能/机器学习_图和序列数据/01AutoregressiveModels.md)
+- [02MarkovChains.md](计算机/人工智能/机器学习_图和序列数据/02MarkovChains.md)
+- [03HiddenMarkovChains.md](计算机/人工智能/机器学习_图和序列数据/03HiddenMarkovChains.md)
+- [_机器学习_图和序列数据.md](计算机/人工智能/机器学习_图和序列数据/_机器学习_图和序列数据.md)

@@ -1,9 +1,8 @@
 - [返回上级目录](../)
-
 - OpenXR/
-    - [_OpenXR.md](_OpenXR.md)
-    - [XRRig.md](XRRig.md)
+    - [_OpenXR.md](计算机/游戏/XR/OpenXR/_OpenXR.md)
+    - [XRRig.md](计算机/游戏/XR/OpenXR/XRRig.md)
 - Vuforia/
-    - [_Vuforia.md](_Vuforia.md)
-    - [基础介绍.md](基础介绍.md)
-- [XR.md](XR.md)
+    - [_Vuforia.md](计算机/游戏/XR/Vuforia/_Vuforia.md)
+    - [基础介绍.md](计算机/游戏/XR/Vuforia/基础介绍.md)
+- [XR.md](计算机/游戏/XR/XR.md)

@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [_DataWarehouse.md](_DataWarehouse.md)
-- [DataWarehouse_MultidimensionalAndDataMiningMode.md](DataWarehouse_MultidimensionalAndDataMiningMode.md)
-- [DataWarehouse_TabularMode.md](DataWarehouse_TabularMode.md)
-- [DataWarehouse基本知识积累.md](DataWarehouse基本知识积累.md)
+- [_DataWarehouse.md](计算机/数据库/DataWarehouse/_DataWarehouse.md)
+- [DataWarehouse_MultidimensionalAndDataMiningMode.md](计算机/数据库/DataWarehouse/DataWarehouse_MultidimensionalAndDataMiningMode.md)
+- [DataWarehouse_TabularMode.md](计算机/数据库/DataWarehouse/DataWarehouse_TabularMode.md)
+- [DataWarehouse基本知识积累.md](计算机/数据库/DataWarehouse/DataWarehouse基本知识积累.md)

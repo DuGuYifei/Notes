@@ -1,3 +1,2 @@
 - [返回上级目录](../)
-
-- [VSCodePluginDevelopment.md](VSCodePluginDevelopment.md)
+- [VSCodePluginDevelopment.md](计算机/PluginDevelopment/VSCodePluginDevelopment.md)

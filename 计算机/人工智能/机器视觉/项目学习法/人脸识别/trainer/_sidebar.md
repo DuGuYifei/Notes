@@ -1,4 +1,3 @@
 - [返回上级目录](../)
-
-- [trainer.yml](trainer.yml)
-- [打开笔记本.onetoc2](打开笔记本.onetoc2)
+- [trainer.yml](计算机/人工智能/机器视觉/项目学习法/人脸识别/trainer/trainer.yml)
+- [打开笔记本.onetoc2](计算机/人工智能/机器视觉/项目学习法/人脸识别/trainer/打开笔记本.onetoc2)

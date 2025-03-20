@@ -1,6 +1,5 @@
 - [返回上级目录](../)
-
-- [_LargeScaleEnterpriseApplication.md](_LargeScaleEnterpriseApplication.md)
-- [CI_CD.md](CI_CD.md)
-- [KKC_LSEA_0b00000000.pdf](KKC_LSEA_0b00000000.pdf)
-- [SoftwareDevelopmentMethodologies.md](SoftwareDevelopmentMethodologies.md)
+- [_LargeScaleEnterpriseApplication.md](计算机/LargeScaleEnterpriseApplication/_LargeScaleEnterpriseApplication.md)
+- [CI_CD.md](计算机/LargeScaleEnterpriseApplication/CI_CD.md)
+- [KKC_LSEA_0b00000000.pdf](计算机/LargeScaleEnterpriseApplication/KKC_LSEA_0b00000000.pdf)
+- [SoftwareDevelopmentMethodologies.md](计算机/LargeScaleEnterpriseApplication/SoftwareDevelopmentMethodologies.md)

@@ -1,3 +1,2 @@
 - [返回上级目录](../)
-
-- [Yolo.md](Yolo.md)
+- [Yolo.md](计算机/人工智能/机器视觉/项目学习法/Yolo/Yolo.md)

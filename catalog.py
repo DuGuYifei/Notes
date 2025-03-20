@@ -47,9 +47,9 @@ def generate_sidebar(base_dir):
                 child_content = recurse_folder(item, level + 1)
                 sidebar_content.extend(child_content)
             else:
-                # 添加文件链接
+                # 添加文件链接，路径从 base_dir 开始
                 link_name = item.name
-                path_link = item.relative_to(current_path).as_posix()
+                path_link = item.relative_to(base_dir).as_posix()  # 相对于 base_dir 的路径
                 sidebar_content.append(f"{prefix}- [{link_name}]({path_link})")
 
         # 写入_sidebar.md到当前文件夹
@@ -72,7 +72,7 @@ def generate_sidebar(base_dir):
             with open(sidebar_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             with open(sidebar_path, 'w', encoding='utf-8') as f:
-                f.write(f"- [返回上级目录](../)\n\n")
+                f.write(f"- [返回上级目录](../)\n")
                 f.write(content)
         
         return sidebar_content

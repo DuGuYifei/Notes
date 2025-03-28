@@ -1,3 +1,3 @@
-- [返回上级目录](../)
-- [_Vuforia.md](计算机/游戏/XR/Vuforia/_Vuforia.md)
-- [基础介绍.md](计算机/游戏/XR/Vuforia/基础介绍.md)
+- [返回上级目录](../_sidebar.md)
+- [_Vuforia](_Vuforia.md)
+- [基础介绍](基础介绍.md)

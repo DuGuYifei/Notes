@@ -1,7 +1,0 @@
-- [返回上级目录](../)
-- [LHH_error_new.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_error_new.txt)
-- [LHH_error_old.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_error_old.txt)
-- [LHH_Haar_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_Haar_train.txt)
-- [LHH_Hog_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_Hog_train.txt)
-- [LHH_LBPH_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_LBPH_train.txt)
-- [LHH_Weight_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_Weight_train.txt)

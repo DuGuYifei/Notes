@@ -1,6 +1,2 @@
-- [返回上级目录](../)
-- ConsoleApp1/
-    - DesignTimeBuild/
-        - [.dtbcache.v2](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/DesignTimeBuild/.dtbcache.v2)
-    - v16/
-        - [.suo](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/v16/.suo)
+  - ConsoleApp1
+    - [ConsoleApp1](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/_sidebar.md)

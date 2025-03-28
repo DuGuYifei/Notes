@@ -1,15 +1,2 @@
-- [返回上级目录](../)
-- netcoreapp3.1/
-    - [.NETCoreApp,Version=v3.1.AssemblyAttributes.cs](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs)
-    - [apphost.exe](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/apphost.exe)
-    - [ConsoleApp1.AssemblyInfo.cs](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfo.cs)
-    - [ConsoleApp1.AssemblyInfoInputs.cache](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfoInputs.cache)
-    - [ConsoleApp1.assets.cache](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.assets.cache)
-    - [ConsoleApp1.csproj.AssemblyReference.cache](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.AssemblyReference.cache)
-    - [ConsoleApp1.csproj.CoreCompileInputs.cache](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.CoreCompileInputs.cache)
-    - [ConsoleApp1.csproj.FileListAbsolute.txt](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.FileListAbsolute.txt)
-    - [ConsoleApp1.dll](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll)
-    - [ConsoleApp1.genruntimeconfig.cache](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.genruntimeconfig.cache)
-    - [ConsoleApp1.pdb](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb)
-    - [打开笔记本.onetoc2](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/打开笔记本.onetoc2)
-- [打开笔记本.onetoc2](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/打开笔记本.onetoc2)
+  - netcoreapp3.1
+    - [netcoreapp3.1](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/_sidebar.md)

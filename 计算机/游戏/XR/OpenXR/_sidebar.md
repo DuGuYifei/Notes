@@ -1,3 +1,3 @@
-- [返回上级目录](../)
-- [_OpenXR.md](计算机/游戏/XR/OpenXR/_OpenXR.md)
-- [XRRig.md](计算机/游戏/XR/OpenXR/XRRig.md)
+- [返回上级目录](../_sidebar.md)
+- [XRRig](XRRig.md)
+- [_OpenXR](_OpenXR.md)

@@ -1,3 +1,3 @@
-- [返回上级目录](../)
-- [_Doris.md](计算机/BigData/Doris/_Doris.md)
-- [创建表案例.md](计算机/BigData/Doris/创建表案例.md)
+- [返回上级目录](../_sidebar.md)
+- [_Doris](_Doris.md)
+- [创建表案例](创建表案例.md)

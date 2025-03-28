@@ -1,4 +1,2 @@
-- [返回上级目录](../)
-- [B站_U5shader着色器.one](计算机/游戏/特效/UnityShader/B站_U5shader着色器.one)
-- [UnityShader.md](计算机/游戏/特效/UnityShader/UnityShader.md)
-- [打开笔记本.onetoc2](计算机/游戏/特效/UnityShader/打开笔记本.onetoc2)
+- [返回上级目录](../_sidebar.md)
+- [UnityShader](UnityShader.md)

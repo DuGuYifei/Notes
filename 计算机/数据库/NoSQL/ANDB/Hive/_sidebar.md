@@ -1,4 +1,4 @@
-- [返回上级目录](../)
-- [Hive.md](计算机/数据库/NoSQL/ANDB/Hive/Hive.md)
-- [Hive_DataWarehouse_Example.md](计算机/数据库/NoSQL/ANDB/Hive/Hive_DataWarehouse_Example.md)
-- [Hive_Operations.md](计算机/数据库/NoSQL/ANDB/Hive/Hive_Operations.md)
+- [返回上级目录](../_sidebar.md)
+- [Hive](Hive.md)
+- [Hive_DataWarehouse_Example](Hive_DataWarehouse_Example.md)
+- [Hive_Operations](Hive_Operations.md)

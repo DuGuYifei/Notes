@@ -1,2 +1,0 @@
-- [返回上级目录](../)
-- [profiles_settings.xml](计算机/计算机语言/Python/PythonDraft/.idea/inspectionProfiles/profiles_settings.xml)

@@ -1,18 +1,17 @@
-- [返回上级目录](../)
-- BigTable/
-    - [BigTable.md](计算机/数据库/NoSQL/ANDB/BigTable/BigTable.md)
-- Hadoop/
-    - [BasicOperations.md](计算机/数据库/NoSQL/ANDB/Hadoop/BasicOperations.md)
-    - [Combiner和Reducer.md](计算机/数据库/NoSQL/ANDB/Hadoop/Combiner和Reducer.md)
-    - [Hadoop-HDFS-Hive-HBase.md](计算机/数据库/NoSQL/ANDB/Hadoop/Hadoop-HDFS-Hive-HBase.md)
-    - [Hadoop.md](计算机/数据库/NoSQL/ANDB/Hadoop/Hadoop.md)
-- Hadoop_HBase/
-    - [Hadoop_HBase.md](计算机/数据库/NoSQL/ANDB/Hadoop_HBase/Hadoop_HBase.md)
-- Hadoop_Pig/
-    - [AZTNBD_Pig.pdf](计算机/数据库/NoSQL/ANDB/Hadoop_Pig/AZTNBD_Pig.pdf)
-    - [Hadoop_Pig.md](计算机/数据库/NoSQL/ANDB/Hadoop_Pig/Hadoop_Pig.md)
-- Hive/
-    - [Hive.md](计算机/数据库/NoSQL/ANDB/Hive/Hive.md)
-    - [Hive_DataWarehouse_Example.md](计算机/数据库/NoSQL/ANDB/Hive/Hive_DataWarehouse_Example.md)
-    - [Hive_Operations.md](计算机/数据库/NoSQL/ANDB/Hive/Hive_Operations.md)
-- [_AdvancedNonrelationalDatabase.md](计算机/数据库/NoSQL/ANDB/_AdvancedNonrelationalDatabase.md)
+- [返回上级目录](../_sidebar.md)
+- BigTable
+    - [BigTable](BigTable/BigTable.md)
+- Hadoop
+    - [BasicOperations](Hadoop/BasicOperations.md)
+    - [Combiner和Reducer](Hadoop/Combiner和Reducer.md)
+    - [Hadoop-HDFS-Hive-HBase](Hadoop/Hadoop-HDFS-Hive-HBase.md)
+    - [Hadoop](Hadoop/Hadoop.md)
+- Hadoop_HBase
+    - [Hadoop_HBase](Hadoop_HBase/Hadoop_HBase.md)
+- Hadoop_Pig
+    - [Hadoop_Pig](Hadoop_Pig/Hadoop_Pig.md)
+- Hive
+    - [Hive](Hive/Hive.md)
+    - [Hive_DataWarehouse_Example](Hive/Hive_DataWarehouse_Example.md)
+    - [Hive_Operations](Hive/Hive_Operations.md)
+- [_AdvancedNonrelationalDatabase](_AdvancedNonrelationalDatabase.md)

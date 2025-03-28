@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [_cmake.md](计算机/编译器/cmake/_cmake.md)
+- [返回上级目录](../_sidebar.md)
+- [_cmake](_cmake.md)

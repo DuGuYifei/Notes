@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [HMFormer.md](计算机/人工智能/机器视觉/项目学习法/姿态估计_HMFormer/HMFormer.md)
+- [返回上级目录](../_sidebar.md)
+- [HMFormer](HMFormer.md)

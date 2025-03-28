@@ -1,3 +1,3 @@
-- [返回上级目录](../)
-- [_OpenAI.md](计算机/人工智能/OpenAI/_OpenAI.md)
-- [流式.md](计算机/人工智能/OpenAI/流式.md)
+- [返回上级目录](../_sidebar.md)
+- [_OpenAI](_OpenAI.md)
+- [流式](流式.md)

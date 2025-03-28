@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [BigTable.md](计算机/数据库/NoSQL/ANDB/BigTable/BigTable.md)
+- [返回上级目录](../_sidebar.md)
+- [BigTable](BigTable.md)

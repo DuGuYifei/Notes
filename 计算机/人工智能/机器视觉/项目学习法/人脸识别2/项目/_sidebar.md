@@ -1,50 +1,12 @@
-- [返回上级目录](../)
-- famous48/
-    - [Readme.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/Readme.txt)
-    - [show_images.m](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/show_images.m)
-    - [x24x24.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/x24x24.txt)
-    - [y24x24.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/y24x24.txt)
-    - [z24x24.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/z24x24.txt)
-- Haar/
-    - [HAAR.h](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/HAAR.h)
-    - [HAAR_2.h](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/HAAR_2.h)
-    - [haar_error.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_error.txt)
-    - [haar_test.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_test.txt)
-    - [haar_testLHH.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_testLHH.txt)
-    - [haar_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_train.txt)
-- Hog/
-    - [histograms_test.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/histograms_test.txt)
-    - [histograms_testLHH.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/histograms_testLHH.txt)
-    - [histograms_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/histograms_train.txt)
-    - [hog_error.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/hog_error.txt)
-- HogPython/
-    - .idea/
-        - inspectionProfiles/
-            - [profiles_settings.xml](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/inspectionProfiles/profiles_settings.xml)
-            - [Project_Default.xml](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/inspectionProfiles/Project_Default.xml)
-        - [HogPython.iml](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/HogPython.iml)
-        - [misc.xml](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/misc.xml)
-        - [modules.xml](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/modules.xml)
-    - [HogTrain.py](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/HogTrain.py)
-    - [test.py](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/test.py)
-- LBPH/
-    - [lbph_error.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/lbph_error.txt)
-    - [lbph_test.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/lbph_test.txt)
-    - [lbph_testLHH.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/lbph_testLHH.txt)
-    - [lbph_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/lbph_train.txt)
-    - [test_lbph.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/test_lbph.txt)
-    - [train_lbph.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/train_lbph.txt)
-- LHH_system/
-    - [LHH_error_new.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_error_new.txt)
-    - [LHH_error_old.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_error_old.txt)
-    - [LHH_Haar_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_Haar_train.txt)
-    - [LHH_Hog_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_Hog_train.txt)
-    - [LHH_LBPH_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_LBPH_train.txt)
-    - [LHH_Weight_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_Weight_train.txt)
-- [Famous48 Face Recognize Report.docx](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Famous48 Face Recognize Report.docx)
-- [Famous48 Face Recognize Report.pdf](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Famous48 Face Recognize Report.pdf)
-- [Haar.h](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar.h)
-- [Hog.h](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog.h)
-- [LBPH.h](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH.h)
-- [main.cpp](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/main.cpp)
-- [Params.h](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Params.h)
+  - Haar
+    - [Haar](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/_sidebar.md)
+  - Hog
+    - [Hog](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/_sidebar.md)
+  - HogPython
+    - [HogPython](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/_sidebar.md)
+  - LBPH
+    - [LBPH](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/_sidebar.md)
+  - LHH_system
+    - [LHH_system](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/_sidebar.md)
+  - famous48
+    - [famous48](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/_sidebar.md)

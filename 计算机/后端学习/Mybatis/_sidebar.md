@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [_Mybatis.md](计算机/后端学习/Mybatis/_Mybatis.md)
+- [返回上级目录](../_sidebar.md)
+- [_Mybatis](_Mybatis.md)

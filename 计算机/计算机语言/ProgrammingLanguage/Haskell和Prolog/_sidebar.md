@@ -1,5 +1,5 @@
-- [返回上级目录](../)
-- Haskell/
-    - [Haskell.md](计算机/计算机语言/ProgrammingLanguage/Haskell和Prolog/Haskell/Haskell.md)
-- Prolog/
-    - [Prolog.md](计算机/计算机语言/ProgrammingLanguage/Haskell和Prolog/Prolog/Prolog.md)
+- [返回上级目录](../_sidebar.md)
+- Haskell
+    - [Haskell](Haskell/Haskell.md)
+- Prolog
+    - [Prolog](Prolog/Prolog.md)

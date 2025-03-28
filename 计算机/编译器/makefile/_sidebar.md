@@ -1,4 +1,4 @@
-- [返回上级目录](../)
-- [_makefile.md](计算机/编译器/makefile/_makefile.md)
-- [vscode制表键变空格问题.md](计算机/编译器/makefile/vscode制表键变空格问题.md)
-- [基础.md](计算机/编译器/makefile/基础.md)
+- [返回上级目录](../_sidebar.md)
+- [_makefile](_makefile.md)
+- [vscode制表键变空格问题](vscode制表键变空格问题.md)
+- [基础](基础.md)

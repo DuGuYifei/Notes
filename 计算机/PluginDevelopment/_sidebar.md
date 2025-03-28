@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [VSCodePluginDevelopment.md](计算机/PluginDevelopment/VSCodePluginDevelopment.md)
+- [返回上级目录](../_sidebar.md)
+- [VSCodePluginDevelopment](VSCodePluginDevelopment.md)

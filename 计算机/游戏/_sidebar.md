@@ -1,105 +1,82 @@
-- [返回上级目录](../)
-- Godot/
-    - [_Godot.md](计算机/游戏/Godot/_Godot.md)
-    - [Godot如何使用本地库.md](计算机/游戏/Godot/Godot如何使用本地库.md)
-- UE/
-    - UE斯坦福课程/
-        - [_UE斯坦福课程.md](计算机/游戏/UE/UE斯坦福课程/_UE斯坦福课程.md)
-        - [第01章Github.md](计算机/游戏/UE/UE斯坦福课程/第01章Github.md)
-        - [第02章01C++基础类.md](计算机/游戏/UE/UE斯坦福课程/第02章01C++基础类.md)
-        - [第02章02添加组件.md](计算机/游戏/UE/UE斯坦福课程/第02章02添加组件.md)
-        - [第02章03绑定运动输入.md](计算机/游戏/UE/UE斯坦福课程/第02章03绑定运动输入.md)
-        - [第02章04角色设置.md](计算机/游戏/UE/UE斯坦福课程/第02章04角色设置.md)
-    - UE知识积累/
-        - API/
-            - [_API.md](计算机/游戏/UE/UE知识积累/API/_API.md)
-            - [AddMovementInput.md](计算机/游戏/UE/UE知识积累/API/AddMovementInput.md)
-            - [CreateDefaultSubobject.md](计算机/游戏/UE/UE知识积累/API/CreateDefaultSubobject.md)
-        - [_KnowledgeAccumulation_UE.md](计算机/游戏/UE/UE知识积累/_KnowledgeAccumulation_UE.md)
-        - [AutoPossessPlayer.md](计算机/游戏/UE/UE知识积累/AutoPossessPlayer.md)
-        - [GENERATED_BODY().md](计算机/游戏/UE/UE知识积累/GENERATED_BODY().md)
-        - [UCLASS().md](计算机/游戏/UE/UE知识积累/UCLASS().md)
-        - [UE容器库.md](计算机/游戏/UE/UE知识积累/UE容器库.md)
-        - [Unreal扩展.md](计算机/游戏/UE/UE知识积累/Unreal扩展.md)
-        - [XXX_API的类宏定义.md](计算机/游戏/UE/UE知识积累/XXX_API的类宏定义.md)
-        - [代码规范.md](计算机/游戏/UE/UE知识积累/代码规范.md)
-        - [修改缓存位置.md](计算机/游戏/UE/UE知识积累/修改缓存位置.md)
-        - [修改语言.md](计算机/游戏/UE/UE知识积累/修改语言.md)
-        - [找不到新建的类.md](计算机/游戏/UE/UE知识积累/找不到新建的类.md)
-        - [生命周期.md](计算机/游戏/UE/UE知识积累/生命周期.md)
-        - [编辑器基本操作.md](计算机/游戏/UE/UE知识积累/编辑器基本操作.md)
-    - [_UE.md](计算机/游戏/UE/_UE.md)
-- Unity/
-    - Unity中的MVC思想_唐老狮/
-        - [Unity中的MVC思想_唐老师.md](计算机/游戏/Unity/Unity中的MVC思想_唐老狮/Unity中的MVC思想_唐老师.md)
-        - [打开笔记本.onetoc2](计算机/游戏/Unity/Unity中的MVC思想_唐老狮/打开笔记本.onetoc2)
-        - [第二章MVC基础.one](计算机/游戏/Unity/Unity中的MVC思想_唐老狮/第二章MVC基础.one)
-    - Unity协同函数和异步加载/
-        - [Coroutine.one](计算机/游戏/Unity/Unity协同函数和异步加载/Coroutine.one)
-        - [Unity协同函数和异步加载.md](计算机/游戏/Unity/Unity协同函数和异步加载/Unity协同函数和异步加载.md)
-        - [打开笔记本.onetoc2](计算机/游戏/Unity/Unity协同函数和异步加载/打开笔记本.onetoc2)
-        - [资源加载.one](计算机/游戏/Unity/Unity协同函数和异步加载/资源加载.one)
-    - Unity基础_呵呵老师/
-        - [Unity基础_呵呵老师.md](计算机/游戏/Unity/Unity基础_呵呵老师/Unity基础_呵呵老师.md)
-        - [打开笔记本.onetoc2](计算机/游戏/Unity/Unity基础_呵呵老师/打开笔记本.onetoc2)
-        - [老司机带你做游戏.one](计算机/游戏/Unity/Unity基础_呵呵老师/老司机带你做游戏.one)
-    - Unity学习日志/
-        - OneNote_RecycleBin/
-            - [OneNote_DeletedPages.one](计算机/游戏/Unity/Unity学习日志/OneNote_RecycleBin/OneNote_DeletedPages.one)
-            - [打开笔记本.onetoc2](计算机/游戏/Unity/Unity学习日志/OneNote_RecycleBin/打开笔记本.onetoc2)
-        - [CSharp.one](计算机/游戏/Unity/Unity学习日志/CSharp.one)
-        - [CSharp学习日志.md](计算机/游戏/Unity/Unity学习日志/CSharp学习日志.md)
-        - [Unity学习日志.md](计算机/游戏/Unity/Unity学习日志/Unity学习日志.md)
-        - [对象池.md](计算机/游戏/Unity/Unity学习日志/对象池.md)
-        - [对象池.one](计算机/游戏/Unity/Unity学习日志/对象池.one)
-        - [打开笔记本.onetoc2](计算机/游戏/Unity/Unity学习日志/打开笔记本.onetoc2)
-        - [旋转.md](计算机/游戏/Unity/Unity学习日志/旋转.md)
-        - [旋转.one](计算机/游戏/Unity/Unity学习日志/旋转.one)
-        - [暂停.md](计算机/游戏/Unity/Unity学习日志/暂停.md)
-        - [暂停.one](计算机/游戏/Unity/Unity学习日志/暂停.one)
-        - [物体移动.md](计算机/游戏/Unity/Unity学习日志/物体移动.md)
-        - [物体移动.one](计算机/游戏/Unity/Unity学习日志/物体移动.one)
-        - [触发器.md](计算机/游戏/Unity/Unity学习日志/触发器.md)
-        - [触发器.one](计算机/游戏/Unity/Unity学习日志/触发器.one)
-        - [随手记.md](计算机/游戏/Unity/Unity学习日志/随手记.md)
-        - [随手记.one](计算机/游戏/Unity/Unity学习日志/随手记.one)
-    - Unity知识积累/
-        - [_KnowledgeAccumulation_Unity.md](计算机/游戏/Unity/Unity知识积累/_KnowledgeAccumulation_Unity.md)
-        - [Cinemachine.md](计算机/游戏/Unity/Unity知识积累/Cinemachine.md)
-        - [Cloth组件.md](计算机/游戏/Unity/Unity知识积累/Cloth组件.md)
-        - [CreateAssetMenu.md](计算机/游戏/Unity/Unity知识积累/CreateAssetMenu.md)
-        - [SerializeField.md](计算机/游戏/Unity/Unity知识积累/SerializeField.md)
-        - [Tilemap以及随机地图.md](计算机/游戏/Unity/Unity知识积累/Tilemap以及随机地图.md)
-        - [Transform.LookAt.md](计算机/游戏/Unity/Unity知识积累/Transform.LookAt.md)
-        - [Update和FixedUpdate.md](计算机/游戏/Unity/Unity知识积累/Update和FixedUpdate.md)
-        - [叉积.md](计算机/游戏/Unity/Unity知识积累/叉积.md)
-        - [基础状态机.md](计算机/游戏/Unity/Unity知识积累/基础状态机.md)
-        - [投影.md](计算机/游戏/Unity/Unity知识积累/投影.md)
-        - [旋转和四元数.md](计算机/游戏/Unity/Unity知识积累/旋转和四元数.md)
-        - [获取并控制骨骼.md](计算机/游戏/Unity/Unity知识积累/获取并控制骨骼.md)
-    - [Unity.md](计算机/游戏/Unity/Unity.md)
-- XR/
-    - OpenXR/
-        - [_OpenXR.md](计算机/游戏/XR/OpenXR/_OpenXR.md)
-        - [XRRig.md](计算机/游戏/XR/OpenXR/XRRig.md)
-    - Vuforia/
-        - [_Vuforia.md](计算机/游戏/XR/Vuforia/_Vuforia.md)
-        - [基础介绍.md](计算机/游戏/XR/Vuforia/基础介绍.md)
-    - [XR.md](计算机/游戏/XR/XR.md)
-- 游戏引擎制作/
-    - [_游戏引擎制作.md](计算机/游戏/游戏引擎制作/_游戏引擎制作.md)
-- 游戏设计/
-    - [ECS框架.md](计算机/游戏/游戏设计/ECS框架.md)
-    - [MDA框架.md](计算机/游戏/游戏设计/MDA框架.md)
-    - [MDA框架.one](计算机/游戏/游戏设计/MDA框架.one)
-    - [打开笔记本.onetoc2](计算机/游戏/游戏设计/打开笔记本.onetoc2)
-    - [游戏分析玩进游戏公司.md](计算机/游戏/游戏设计/游戏分析玩进游戏公司.md)
-    - [游戏分析，玩进游戏公司.one](计算机/游戏/游戏设计/游戏分析，玩进游戏公司.one)
-    - [游戏设计.md](计算机/游戏/游戏设计/游戏设计.md)
-- 特效/
-    - UnityShader/
-        - [B站_U5shader着色器.one](计算机/游戏/特效/UnityShader/B站_U5shader着色器.one)
-        - [UnityShader.md](计算机/游戏/特效/UnityShader/UnityShader.md)
-        - [打开笔记本.onetoc2](计算机/游戏/特效/UnityShader/打开笔记本.onetoc2)
-    - [特效.md](计算机/游戏/特效/特效.md)
-- [游戏.md](计算机/游戏/游戏.md)
+- [返回上级目录](../_sidebar.md)
+- Godot
+    - [Godot如何使用本地库](Godot/Godot如何使用本地库.md)
+    - [_Godot](Godot/_Godot.md)
+- UE
+    - UE斯坦福课程
+        - [_UE斯坦福课程](UE/UE斯坦福课程/_UE斯坦福课程.md)
+        - [第01章Github](UE/UE斯坦福课程/第01章Github.md)
+        - [第02章01C++基础类](UE/UE斯坦福课程/第02章01C++基础类.md)
+        - [第02章02添加组件](UE/UE斯坦福课程/第02章02添加组件.md)
+        - [第02章03绑定运动输入](UE/UE斯坦福课程/第02章03绑定运动输入.md)
+        - [第02章04角色设置](UE/UE斯坦福课程/第02章04角色设置.md)
+    - UE知识积累
+        - API
+            - [AddMovementInput](UE/UE知识积累/API/AddMovementInput.md)
+            - [CreateDefaultSubobject](UE/UE知识积累/API/CreateDefaultSubobject.md)
+            - [_API](UE/UE知识积累/API/_API.md)
+        - [AutoPossessPlayer](UE/UE知识积累/AutoPossessPlayer.md)
+        - [GENERATED_BODY()](UE/UE知识积累/GENERATED_BODY().md)
+        - [UCLASS()](UE/UE知识积累/UCLASS().md)
+        - [UE容器库](UE/UE知识积累/UE容器库.md)
+        - [Unreal扩展](UE/UE知识积累/Unreal扩展.md)
+        - [XXX_API的类宏定义](UE/UE知识积累/XXX_API的类宏定义.md)
+        - [_KnowledgeAccumulation_UE](UE/UE知识积累/_KnowledgeAccumulation_UE.md)
+        - [代码规范](UE/UE知识积累/代码规范.md)
+        - [修改缓存位置](UE/UE知识积累/修改缓存位置.md)
+        - [修改语言](UE/UE知识积累/修改语言.md)
+        - [找不到新建的类](UE/UE知识积累/找不到新建的类.md)
+        - [生命周期](UE/UE知识积累/生命周期.md)
+        - [编辑器基本操作](UE/UE知识积累/编辑器基本操作.md)
+    - [_UE](UE/_UE.md)
+- Unity
+    - [Unity](Unity/Unity.md)
+    - Unity中的MVC思想_唐老狮
+        - [Unity中的MVC思想_唐老师](Unity/Unity中的MVC思想_唐老狮/Unity中的MVC思想_唐老师.md)
+    - Unity协同函数和异步加载
+        - [Unity协同函数和异步加载](Unity/Unity协同函数和异步加载/Unity协同函数和异步加载.md)
+    - Unity基础_呵呵老师
+        - [Unity基础_呵呵老师](Unity/Unity基础_呵呵老师/Unity基础_呵呵老师.md)
+    - Unity学习日志
+        - [CSharp学习日志](Unity/Unity学习日志/CSharp学习日志.md)
+        - [Unity学习日志](Unity/Unity学习日志/Unity学习日志.md)
+        - [对象池](Unity/Unity学习日志/对象池.md)
+        - [旋转](Unity/Unity学习日志/旋转.md)
+        - [暂停](Unity/Unity学习日志/暂停.md)
+        - [物体移动](Unity/Unity学习日志/物体移动.md)
+        - [触发器](Unity/Unity学习日志/触发器.md)
+        - [随手记](Unity/Unity学习日志/随手记.md)
+    - Unity知识积累
+        - [Cinemachine](Unity/Unity知识积累/Cinemachine.md)
+        - [Cloth组件](Unity/Unity知识积累/Cloth组件.md)
+        - [CreateAssetMenu](Unity/Unity知识积累/CreateAssetMenu.md)
+        - [SerializeField](Unity/Unity知识积累/SerializeField.md)
+        - [Tilemap以及随机地图](Unity/Unity知识积累/Tilemap以及随机地图.md)
+        - [Transform.LookAt](Unity/Unity知识积累/Transform.LookAt.md)
+        - [Update和FixedUpdate](Unity/Unity知识积累/Update和FixedUpdate.md)
+        - [_KnowledgeAccumulation_Unity](Unity/Unity知识积累/_KnowledgeAccumulation_Unity.md)
+        - [叉积](Unity/Unity知识积累/叉积.md)
+        - [基础状态机](Unity/Unity知识积累/基础状态机.md)
+        - [投影](Unity/Unity知识积累/投影.md)
+        - [旋转和四元数](Unity/Unity知识积累/旋转和四元数.md)
+        - [获取并控制骨骼](Unity/Unity知识积累/获取并控制骨骼.md)
+- XR
+    - OpenXR
+        - [XRRig](XR/OpenXR/XRRig.md)
+        - [_OpenXR](XR/OpenXR/_OpenXR.md)
+    - Vuforia
+        - [_Vuforia](XR/Vuforia/_Vuforia.md)
+        - [基础介绍](XR/Vuforia/基础介绍.md)
+    - [XR](XR/XR.md)
+- [游戏](游戏.md)
+- 游戏引擎制作
+    - [_游戏引擎制作](游戏引擎制作/_游戏引擎制作.md)
+- 游戏设计
+    - [ECS框架](游戏设计/ECS框架.md)
+    - [MDA框架](游戏设计/MDA框架.md)
+    - [游戏分析玩进游戏公司](游戏设计/游戏分析玩进游戏公司.md)
+    - [游戏设计](游戏设计/游戏设计.md)
+- 特效
+    - UnityShader
+        - [UnityShader](特效/UnityShader/UnityShader.md)
+    - [特效](特效/特效.md)

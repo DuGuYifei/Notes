@@ -1,3 +1,2 @@
-- [返回上级目录](../)
-- [AZTNBD_Pig.pdf](计算机/数据库/NoSQL/ANDB/Hadoop_Pig/AZTNBD_Pig.pdf)
-- [Hadoop_Pig.md](计算机/数据库/NoSQL/ANDB/Hadoop_Pig/Hadoop_Pig.md)
+- [返回上级目录](../_sidebar.md)
+- [Hadoop_Pig](Hadoop_Pig.md)

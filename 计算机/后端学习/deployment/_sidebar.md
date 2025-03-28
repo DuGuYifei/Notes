@@ -1,3 +1,3 @@
-- [返回上级目录](../)
-- [_deployement.md](计算机/后端学习/deployment/_deployement.md)
-- [CI-CD.md](计算机/后端学习/deployment/CI-CD.md)
+- [返回上级目录](../_sidebar.md)
+- [CI-CD](CI-CD.md)
+- [_deployement](_deployement.md)

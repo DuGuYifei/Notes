@@ -1,3 +1,0 @@
-- [返回上级目录](../)
-- [profiles_settings.xml](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/inspectionProfiles/profiles_settings.xml)
-- [打开笔记本.onetoc2](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/inspectionProfiles/打开笔记本.onetoc2)

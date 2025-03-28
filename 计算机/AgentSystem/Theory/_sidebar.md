@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [AgentSystem.md](计算机/AgentSystem/Theory/AgentSystem.md)
+- [返回上级目录](../_sidebar.md)
+- [AgentSystem](AgentSystem.md)

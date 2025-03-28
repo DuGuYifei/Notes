@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [3dsMax.md](计算机/建模/3dsMax/3dsMax.md)
+- [返回上级目录](../_sidebar.md)
+- [3dsMax](3dsMax.md)

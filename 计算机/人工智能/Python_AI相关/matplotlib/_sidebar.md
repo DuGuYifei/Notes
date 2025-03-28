@@ -1,3 +1,3 @@
-- [返回上级目录](../)
-- [_matplotlib.md](计算机/人工智能/Python_AI相关/matplotlib/_matplotlib.md)
-- [pyplot.md](计算机/人工智能/Python_AI相关/matplotlib/pyplot.md)
+- [返回上级目录](../_sidebar.md)
+- [_matplotlib](_matplotlib.md)
+- [pyplot](pyplot.md)

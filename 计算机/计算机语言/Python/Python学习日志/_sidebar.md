@@ -1,3 +1,0 @@
-- [返回上级目录](../)
-- [基础.one](计算机/计算机语言/Python/Python学习日志/基础.one)
-- [打开笔记本.onetoc2](计算机/计算机语言/Python/Python学习日志/打开笔记本.onetoc2)

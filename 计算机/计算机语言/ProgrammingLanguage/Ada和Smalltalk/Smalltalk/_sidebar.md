@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [Smalltalk.md](计算机/计算机语言/ProgrammingLanguage/Ada和Smalltalk/Smalltalk/Smalltalk.md)
+- [返回上级目录](../_sidebar.md)
+- [Smalltalk](Smalltalk.md)

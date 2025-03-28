@@ -1,4 +1,2 @@
-- [返回上级目录](../)
-- [main.cpp](计算机/人工智能/机器视觉/项目学习法/Robomaster能量靶识别/main.cpp)
-- [Robomaster能量靶识别.md](计算机/人工智能/机器视觉/项目学习法/Robomaster能量靶识别/Robomaster能量靶识别.md)
-- [svm.xml](计算机/人工智能/机器视觉/项目学习法/Robomaster能量靶识别/svm.xml)
+- [返回上级目录](../_sidebar.md)
+- [Robomaster能量靶识别](Robomaster能量靶识别.md)

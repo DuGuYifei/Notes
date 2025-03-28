@@ -1,7 +1,0 @@
-- [返回上级目录](../)
-- [HAAR.h](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/HAAR.h)
-- [HAAR_2.h](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/HAAR_2.h)
-- [haar_error.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_error.txt)
-- [haar_test.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_test.txt)
-- [haar_testLHH.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_testLHH.txt)
-- [haar_train.txt](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_train.txt)

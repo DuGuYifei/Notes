@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [_GraphQL.md](计算机/网络编程/API/GraphQL/_GraphQL.md)
+- [返回上级目录](../_sidebar.md)
+- [_GraphQL](_GraphQL.md)

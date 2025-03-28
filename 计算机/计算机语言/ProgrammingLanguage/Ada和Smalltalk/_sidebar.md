@@ -1,5 +1,5 @@
-- [返回上级目录](../)
-- Ada/
-    - [Ada.md](计算机/计算机语言/ProgrammingLanguage/Ada和Smalltalk/Ada/Ada.md)
-- Smalltalk/
-    - [Smalltalk.md](计算机/计算机语言/ProgrammingLanguage/Ada和Smalltalk/Smalltalk/Smalltalk.md)
+- [返回上级目录](../_sidebar.md)
+- Ada
+    - [Ada](Ada/Ada.md)
+- Smalltalk
+    - [Smalltalk](Smalltalk/Smalltalk.md)

@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [_Databrick.md](计算机/BigData/Databrick/_Databrick.md)
+- [返回上级目录](../_sidebar.md)
+- [_Databrick](_Databrick.md)

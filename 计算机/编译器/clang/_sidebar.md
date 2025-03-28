@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [_clang.md](计算机/编译器/clang/_clang.md)
+- [返回上级目录](../_sidebar.md)
+- [_clang](_clang.md)

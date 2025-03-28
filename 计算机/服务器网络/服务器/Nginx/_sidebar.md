@@ -1,4 +1,4 @@
-- [返回上级目录](../)
-- [_Nginx.md](计算机/服务器网络/服务器/Nginx/_Nginx.md)
-- [proxy.md](计算机/服务器网络/服务器/Nginx/proxy.md)
-- [解决vue跳转404问题.md](计算机/服务器网络/服务器/Nginx/解决vue跳转404问题.md)
+- [返回上级目录](../_sidebar.md)
+- [_Nginx](_Nginx.md)
+- [proxy](proxy.md)
+- [解决vue跳转404问题](解决vue跳转404问题.md)

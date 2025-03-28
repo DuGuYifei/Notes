@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [DBMS_Oracle.md](计算机/数据库/DBMS_Oracle/DBMS_Oracle.md)
+- [返回上级目录](../_sidebar.md)
+- [DBMS_Oracle](DBMS_Oracle.md)

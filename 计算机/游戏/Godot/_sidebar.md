@@ -1,3 +1,3 @@
-- [返回上级目录](../)
-- [_Godot.md](计算机/游戏/Godot/_Godot.md)
-- [Godot如何使用本地库.md](计算机/游戏/Godot/Godot如何使用本地库.md)
+- [返回上级目录](../_sidebar.md)
+- [Godot如何使用本地库](Godot如何使用本地库.md)
+- [_Godot](_Godot.md)

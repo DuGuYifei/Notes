@@ -1,9 +1,2 @@
-- [返回上级目录](../)
-- .idea/
-    - inspectionProfiles/
-        - [profiles_settings.xml](计算机/计算机语言/Python/PythonDraft/.idea/inspectionProfiles/profiles_settings.xml)
-    - [misc.xml](计算机/计算机语言/Python/PythonDraft/.idea/misc.xml)
-    - [modules.xml](计算机/计算机语言/Python/PythonDraft/.idea/modules.xml)
-    - [PythonDraft.iml](计算机/计算机语言/Python/PythonDraft/.idea/PythonDraft.iml)
-- [DownloadURL.py](计算机/计算机语言/Python/PythonDraft/DownloadURL.py)
-- [Email.py](计算机/计算机语言/Python/PythonDraft/Email.py)
+  - .idea
+    - [.idea](计算机/计算机语言/Python/PythonDraft/.idea/_sidebar.md)

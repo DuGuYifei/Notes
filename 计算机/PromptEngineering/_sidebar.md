@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [_PromptEngineering.md](计算机/PromptEngineering/_PromptEngineering.md)
+- [返回上级目录](../_sidebar.md)
+- [_PromptEngineering](_PromptEngineering.md)

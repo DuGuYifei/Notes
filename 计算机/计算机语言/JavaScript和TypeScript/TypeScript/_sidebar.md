@@ -1,8 +1,8 @@
-- [返回上级目录](../)
-- 知识积累/
-    - [_TypeScriptKnowledgeAccumulation.md](计算机/计算机语言/JavaScript和TypeScript/TypeScript/知识积累/_TypeScriptKnowledgeAccumulation.md)
-    - [import_export.md](计算机/计算机语言/JavaScript和TypeScript/TypeScript/知识积累/import_export.md)
-    - [interface和class区别.md](计算机/计算机语言/JavaScript和TypeScript/TypeScript/知识积累/interface和class区别.md)
-    - [函数.md](计算机/计算机语言/JavaScript和TypeScript/TypeScript/知识积累/函数.md)
-    - [问号冒号点感叹号叠加.md](计算机/计算机语言/JavaScript和TypeScript/TypeScript/知识积累/问号冒号点感叹号叠加.md)
-- [TypeScript.md](计算机/计算机语言/JavaScript和TypeScript/TypeScript/TypeScript.md)
+- [返回上级目录](../_sidebar.md)
+- [TypeScript](TypeScript.md)
+- 知识积累
+    - [_TypeScriptKnowledgeAccumulation](知识积累/_TypeScriptKnowledgeAccumulation.md)
+    - [import_export](知识积累/import_export.md)
+    - [interface和class区别](知识积累/interface和class区别.md)
+    - [函数](知识积累/函数.md)
+    - [问号冒号点感叹号叠加](知识积累/问号冒号点感叹号叠加.md)

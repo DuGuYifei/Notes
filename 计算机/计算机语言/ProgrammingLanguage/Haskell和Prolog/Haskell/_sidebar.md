@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [Haskell.md](计算机/计算机语言/ProgrammingLanguage/Haskell和Prolog/Haskell/Haskell.md)
+- [返回上级目录](../_sidebar.md)
+- [Haskell](Haskell.md)

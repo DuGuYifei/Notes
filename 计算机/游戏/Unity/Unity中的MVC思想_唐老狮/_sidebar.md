@@ -1,4 +1,2 @@
-- [返回上级目录](../)
-- [Unity中的MVC思想_唐老师.md](计算机/游戏/Unity/Unity中的MVC思想_唐老狮/Unity中的MVC思想_唐老师.md)
-- [打开笔记本.onetoc2](计算机/游戏/Unity/Unity中的MVC思想_唐老狮/打开笔记本.onetoc2)
-- [第二章MVC基础.one](计算机/游戏/Unity/Unity中的MVC思想_唐老狮/第二章MVC基础.one)
+- [返回上级目录](../_sidebar.md)
+- [Unity中的MVC思想_唐老师](Unity中的MVC思想_唐老师.md)

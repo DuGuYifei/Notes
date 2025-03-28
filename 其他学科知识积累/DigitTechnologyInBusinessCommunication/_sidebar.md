@@ -1,2 +1,2 @@
-- [返回上级目录](../)
-- [DigitTechforBusinessCommunication.md](其他学科知识积累/DigitTechnologyInBusinessCommunication/DigitTechforBusinessCommunication.md)
+- [返回上级目录](../_sidebar.md)
+- [DigitTechforBusinessCommunication](DigitTechforBusinessCommunication.md)

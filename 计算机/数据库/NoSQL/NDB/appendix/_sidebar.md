@@ -1,3 +1,7 @@
 - [返回上级目录](../_sidebar.md)
+- [MongoDB_Dist_lab1.](MongoDB_Dist_lab1.pdf)
+- [MongoDB_Dist_lab2.](MongoDB_Dist_lab2.pdf)
+- [MongoDB_lab1.](MongoDB_lab1.pdf)
+- [MongoDB_lab2.](MongoDB_lab2.pdf)
 - [Mongo_Operations](Mongo_Operations.md)
 - [Redis的简单应用_超卖](Redis的简单应用_超卖.md)

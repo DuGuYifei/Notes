@@ -1,12 +1,95 @@
 - [返回上级目录](../_sidebar.md)
 - Robomaster能量靶识别
     - [Robomaster能量靶识别](Robomaster能量靶识别/Robomaster能量靶识别.md)
+    - [main.](Robomaster能量靶识别/main.cpp)
+    - [svm.](Robomaster能量靶识别/svm.xml)
 - Yolo
     - [Yolo](Yolo/Yolo.md)
 - 人脸识别
+    - .idea
+        - inspectionProfiles
+            - [profiles_settings.](人脸识别/.idea/inspectionProfiles/profiles_settings.xml)
+            - [打开笔记本.onet](人脸识别/.idea/inspectionProfiles/打开笔记本.onetoc2)
+        - [misc.](人脸识别/.idea/misc.xml)
+        - [modules.](人脸识别/.idea/modules.xml)
+        - [other.](人脸识别/.idea/other.xml)
+        - [vcs.](人脸识别/.idea/vcs.xml)
+        - [人脸识别.](人脸识别/.idea/人脸识别.iml)
+        - [打开笔记本.onet](人脸识别/.idea/打开笔记本.onetoc2)
+    - [01读取图片](人脸识别/01读取图片.py)
+    - [02灰度转换](人脸识别/02灰度转换.py)
+    - [03修改尺寸](人脸识别/03修改尺寸.py)
+    - [04绘制矩形](人脸识别/04绘制矩形.py)
+    - [05人脸检测](人脸识别/05人脸检测.py)
+    - [06检测多个](人脸识别/06检测多个.py)
+    - [07视频检测](人脸识别/07视频检测.py)
+    - [08照片录入](人脸识别/08照片录入.py)
+    - [09数据训练](人脸识别/09数据训练.py)
+    - [10人脸识别](人脸识别/10人脸识别.py)
+    - [11网页视频](人脸识别/11网页视频.py)
+    - data
+        - [打开笔记本.onet](人脸识别/data/打开笔记本.onetoc2)
+    - recordInfo
+        - [打开笔记本.onet](人脸识别/recordInfo/打开笔记本.onetoc2)
+    - trainer
+        - [trainer.](人脸识别/trainer/trainer.yml)
+        - [打开笔记本.onet](人脸识别/trainer/打开笔记本.onetoc2)
+    - [人脸识别test.](人脸识别/人脸识别test.mp4)
     - [初试人脸识别](人脸识别/初试人脸识别.md)
+    - [基础实战.](人脸识别/基础实战.one)
+    - [打开笔记本.onet](人脸识别/打开笔记本.onetoc2)
 - 人脸识别2
     - [人脸识别AI课程项目](人脸识别2/人脸识别AI课程项目.md)
+    - 项目
+        - [Famous48 Face Recognize Report.d](人脸识别2/项目/Famous48 Face Recognize Report.docx)
+        - [Famous48 Face Recognize Report.](人脸识别2/项目/Famous48 Face Recognize Report.pdf)
+        - Haar
+            - [HAA](人脸识别2/项目/Haar/HAAR.h)
+            - [HAAR_](人脸识别2/项目/Haar/HAAR_2.h)
+            - [haar_error.](人脸识别2/项目/Haar/haar_error.txt)
+            - [haar_test.](人脸识别2/项目/Haar/haar_test.txt)
+            - [haar_testLHH.](人脸识别2/项目/Haar/haar_testLHH.txt)
+            - [haar_train.](人脸识别2/项目/Haar/haar_train.txt)
+        - [Haa](人脸识别2/项目/Haar.h)
+        - Hog
+            - [histograms_test.](人脸识别2/项目/Hog/histograms_test.txt)
+            - [histograms_testLHH.](人脸识别2/项目/Hog/histograms_testLHH.txt)
+            - [histograms_train.](人脸识别2/项目/Hog/histograms_train.txt)
+            - [hog_error.](人脸识别2/项目/Hog/hog_error.txt)
+        - [Ho](人脸识别2/项目/Hog.h)
+        - HogPython
+            - .idea
+                - [HogPython.](人脸识别2/项目/HogPython/.idea/HogPython.iml)
+                - inspectionProfiles
+                    - [Project_Default.](人脸识别2/项目/HogPython/.idea/inspectionProfiles/Project_Default.xml)
+                    - [profiles_settings.](人脸识别2/项目/HogPython/.idea/inspectionProfiles/profiles_settings.xml)
+                - [misc.](人脸识别2/项目/HogPython/.idea/misc.xml)
+                - [modules.](人脸识别2/项目/HogPython/.idea/modules.xml)
+            - [HogTrain](人脸识别2/项目/HogPython/HogTrain.py)
+            - [test](人脸识别2/项目/HogPython/test.py)
+        - LBPH
+            - [lbph_error.](人脸识别2/项目/LBPH/lbph_error.txt)
+            - [lbph_test.](人脸识别2/项目/LBPH/lbph_test.txt)
+            - [lbph_testLHH.](人脸识别2/项目/LBPH/lbph_testLHH.txt)
+            - [lbph_train.](人脸识别2/项目/LBPH/lbph_train.txt)
+            - [test_lbph.](人脸识别2/项目/LBPH/test_lbph.txt)
+            - [train_lbph.](人脸识别2/项目/LBPH/train_lbph.txt)
+        - [LBP](人脸识别2/项目/LBPH.h)
+        - LHH_system
+            - [LHH_Haar_train.](人脸识别2/项目/LHH_system/LHH_Haar_train.txt)
+            - [LHH_Hog_train.](人脸识别2/项目/LHH_system/LHH_Hog_train.txt)
+            - [LHH_LBPH_train.](人脸识别2/项目/LHH_system/LHH_LBPH_train.txt)
+            - [LHH_Weight_train.](人脸识别2/项目/LHH_system/LHH_Weight_train.txt)
+            - [LHH_error_new.](人脸识别2/项目/LHH_system/LHH_error_new.txt)
+            - [LHH_error_old.](人脸识别2/项目/LHH_system/LHH_error_old.txt)
+        - [Param](人脸识别2/项目/Params.h)
+        - famous48
+            - [Readme.](人脸识别2/项目/famous48/Readme.txt)
+            - [show_image](人脸识别2/项目/famous48/show_images.m)
+            - [x24x24.](人脸识别2/项目/famous48/x24x24.txt)
+            - [y24x24.](人脸识别2/项目/famous48/y24x24.txt)
+            - [z24x24.](人脸识别2/项目/famous48/z24x24.txt)
+        - [main.](人脸识别2/项目/main.cpp)
 - 姿态估计_HMFormer
     - [HMFormer](姿态估计_HMFormer/HMFormer.md)
 - 姿态估计_alphapose

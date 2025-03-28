@@ -16,20 +16,15 @@ def generate_sidebar(path, visible_root):
 
         if full_path.is_dir():
             # 递归子目录时，visible_root 变为子目录的路径
-            print("=====")
             # join visible_root and entry
             temp_visible_root = visible_root / entry
-            print(full_path)
-            print(visible_root)
-            print(temp_visible_root)
-            print(entry)
-            print("=====")
             subdir_entries = generate_sidebar(full_path, temp_visible_root)
             if subdir_entries:
                 entries.append(f"- {entry}")
                 entries.extend([f"    {line.replace('](', f']({entry}/')}" for line in subdir_entries])
 
-        elif full_path.suffix == ".md":
+        # elif full_path.suffix == ".md":
+        else:
             # 相对于 visible_root 计算路径
             rel_path = full_path.relative_to(visible_root).as_posix()
             print(rel_path)

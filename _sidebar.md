@@ -26,6 +26,13 @@
         - [行列式展开](其他学科知识积累/Maths/行列式展开.md)
         - [裴蜀定理](其他学科知识积累/Maths/裴蜀定理.md)
         - [贝叶斯定理](其他学科知识积累/Maths/贝叶斯定理.md)
+    - Physics
+        - Physics
+            - OneNote_RecycleBin
+                - [OneNote_DeletedPages.](其他学科知识积累/Physics/Physics/OneNote_RecycleBin/OneNote_DeletedPages.one)
+                - [打开笔记本.onet](其他学科知识积累/Physics/Physics/OneNote_RecycleBin/打开笔记本.onetoc2)
+            - [Semester2.](其他学科知识积累/Physics/Physics/Semester2.one)
+            - [打开笔记本.onet](其他学科知识积累/Physics/Physics/打开笔记本.onetoc2)
 - 计算机
     - AgentSystem
         - Jade
@@ -105,6 +112,8 @@
             - [corr()](计算机/BigData/Spark/corr().md)
             - [countByKey_items](计算机/BigData/Spark/countByKey_items.md)
             - [createDataFrame](计算机/BigData/Spark/createDataFrame.md)
+            - [dbc_spark_tutorial.h](计算机/BigData/Spark/dbc_spark_tutorial.html)
+            - [dbc_word_count.h](计算机/BigData/Spark/dbc_word_count.html)
             - [describe基础统计](计算机/BigData/Spark/describe基础统计.md)
             - [drop](计算机/BigData/Spark/drop.md)
             - [dropDuplicates](计算机/BigData/Spark/dropDuplicates.md)
@@ -192,9 +201,24 @@
     - Git
         - [GitKnowledgeAccumulation](计算机/Git/GitKnowledgeAccumulation.md)
     - InternetServiceArchitecture
+        - [01 Spring Platform.](计算机/InternetServiceArchitecture/01 Spring Platform.pdf)
+        - [02 Spring Data JPA.](计算机/InternetServiceArchitecture/02 Spring Data JPA.pdf)
+        - [03 Spring MVC - REST Services.](计算机/InternetServiceArchitecture/03 Spring MVC - REST Services.pdf)
+        - [04 Microservices.](计算机/InternetServiceArchitecture/04 Microservices.pdf)
+        - [05 JavaScript - Consuming Services.](计算机/InternetServiceArchitecture/05 JavaScript - Consuming Services.pdf)
+        - [06 Microservices - configuration.](计算机/InternetServiceArchitecture/06 Microservices - configuration.pdf)
+        - [07 Angular.](计算机/InternetServiceArchitecture/07 Angular.pdf)
+        - [09 deployment introduction.](计算机/InternetServiceArchitecture/09 deployment introduction.pdf)
+        - [10 aui-blockchain-1.](计算机/InternetServiceArchitecture/10 aui-blockchain-1.pdf)
+        - [11 aui-blockchain-2.](计算机/InternetServiceArchitecture/11 aui-blockchain-2.pdf)
+        - [12 2022 lecture - Web 3.0.](计算机/InternetServiceArchitecture/12 2022 lecture - Web 3.0.pdf)
+        - [13 2022 lecture - Microservices.](计算机/InternetServiceArchitecture/13 2022 lecture - Microservices.pdf)
+        - [14 2022 lecture - BaaS.](计算机/InternetServiceArchitecture/14 2022 lecture - BaaS.pdf)
+        - [15 2022 lecture - Summary.](计算机/InternetServiceArchitecture/15 2022 lecture - Summary.pdf)
         - [_InternetServiceArchitecture](计算机/InternetServiceArchitecture/_InternetServiceArchitecture.md)
     - LargeScaleEnterpriseApplication
         - [CI_CD](计算机/LargeScaleEnterpriseApplication/CI_CD.md)
+        - [KKC_LSEA_0b00000000.](计算机/LargeScaleEnterpriseApplication/KKC_LSEA_0b00000000.pdf)
         - [SoftwareDevelopmentMethodologies](计算机/LargeScaleEnterpriseApplication/SoftwareDevelopmentMethodologies.md)
         - [_LargeScaleEnterpriseApplication](计算机/LargeScaleEnterpriseApplication/_LargeScaleEnterpriseApplication.md)
     - PS
@@ -338,12 +362,95 @@
             - 项目学习法
                 - Robomaster能量靶识别
                     - [Robomaster能量靶识别](计算机/人工智能/机器视觉/项目学习法/Robomaster能量靶识别/Robomaster能量靶识别.md)
+                    - [main.](计算机/人工智能/机器视觉/项目学习法/Robomaster能量靶识别/main.cpp)
+                    - [svm.](计算机/人工智能/机器视觉/项目学习法/Robomaster能量靶识别/svm.xml)
                 - Yolo
                     - [Yolo](计算机/人工智能/机器视觉/项目学习法/Yolo/Yolo.md)
                 - 人脸识别
+                    - .idea
+                        - inspectionProfiles
+                            - [profiles_settings.](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/inspectionProfiles/profiles_settings.xml)
+                            - [打开笔记本.onet](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/inspectionProfiles/打开笔记本.onetoc2)
+                        - [misc.](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/misc.xml)
+                        - [modules.](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/modules.xml)
+                        - [other.](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/other.xml)
+                        - [vcs.](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/vcs.xml)
+                        - [人脸识别.](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/人脸识别.iml)
+                        - [打开笔记本.onet](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/打开笔记本.onetoc2)
+                    - [01读取图片](计算机/人工智能/机器视觉/项目学习法/人脸识别/01读取图片.py)
+                    - [02灰度转换](计算机/人工智能/机器视觉/项目学习法/人脸识别/02灰度转换.py)
+                    - [03修改尺寸](计算机/人工智能/机器视觉/项目学习法/人脸识别/03修改尺寸.py)
+                    - [04绘制矩形](计算机/人工智能/机器视觉/项目学习法/人脸识别/04绘制矩形.py)
+                    - [05人脸检测](计算机/人工智能/机器视觉/项目学习法/人脸识别/05人脸检测.py)
+                    - [06检测多个](计算机/人工智能/机器视觉/项目学习法/人脸识别/06检测多个.py)
+                    - [07视频检测](计算机/人工智能/机器视觉/项目学习法/人脸识别/07视频检测.py)
+                    - [08照片录入](计算机/人工智能/机器视觉/项目学习法/人脸识别/08照片录入.py)
+                    - [09数据训练](计算机/人工智能/机器视觉/项目学习法/人脸识别/09数据训练.py)
+                    - [10人脸识别](计算机/人工智能/机器视觉/项目学习法/人脸识别/10人脸识别.py)
+                    - [11网页视频](计算机/人工智能/机器视觉/项目学习法/人脸识别/11网页视频.py)
+                    - data
+                        - [打开笔记本.onet](计算机/人工智能/机器视觉/项目学习法/人脸识别/data/打开笔记本.onetoc2)
+                    - recordInfo
+                        - [打开笔记本.onet](计算机/人工智能/机器视觉/项目学习法/人脸识别/recordInfo/打开笔记本.onetoc2)
+                    - trainer
+                        - [trainer.](计算机/人工智能/机器视觉/项目学习法/人脸识别/trainer/trainer.yml)
+                        - [打开笔记本.onet](计算机/人工智能/机器视觉/项目学习法/人脸识别/trainer/打开笔记本.onetoc2)
+                    - [人脸识别test.](计算机/人工智能/机器视觉/项目学习法/人脸识别/人脸识别test.mp4)
                     - [初试人脸识别](计算机/人工智能/机器视觉/项目学习法/人脸识别/初试人脸识别.md)
+                    - [基础实战.](计算机/人工智能/机器视觉/项目学习法/人脸识别/基础实战.one)
+                    - [打开笔记本.onet](计算机/人工智能/机器视觉/项目学习法/人脸识别/打开笔记本.onetoc2)
                 - 人脸识别2
                     - [人脸识别AI课程项目](计算机/人工智能/机器视觉/项目学习法/人脸识别2/人脸识别AI课程项目.md)
+                    - 项目
+                        - [Famous48 Face Recognize Report.d](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Famous48 Face Recognize Report.docx)
+                        - [Famous48 Face Recognize Report.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Famous48 Face Recognize Report.pdf)
+                        - Haar
+                            - [HAA](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/HAAR.h)
+                            - [HAAR_](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/HAAR_2.h)
+                            - [haar_error.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_error.txt)
+                            - [haar_test.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_test.txt)
+                            - [haar_testLHH.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_testLHH.txt)
+                            - [haar_train.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/haar_train.txt)
+                        - [Haa](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar.h)
+                        - Hog
+                            - [histograms_test.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/histograms_test.txt)
+                            - [histograms_testLHH.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/histograms_testLHH.txt)
+                            - [histograms_train.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/histograms_train.txt)
+                            - [hog_error.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/hog_error.txt)
+                        - [Ho](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog.h)
+                        - HogPython
+                            - .idea
+                                - [HogPython.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/HogPython.iml)
+                                - inspectionProfiles
+                                    - [Project_Default.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/inspectionProfiles/Project_Default.xml)
+                                    - [profiles_settings.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/inspectionProfiles/profiles_settings.xml)
+                                - [misc.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/misc.xml)
+                                - [modules.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/modules.xml)
+                            - [HogTrain](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/HogTrain.py)
+                            - [test](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/test.py)
+                        - LBPH
+                            - [lbph_error.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/lbph_error.txt)
+                            - [lbph_test.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/lbph_test.txt)
+                            - [lbph_testLHH.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/lbph_testLHH.txt)
+                            - [lbph_train.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/lbph_train.txt)
+                            - [test_lbph.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/test_lbph.txt)
+                            - [train_lbph.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/train_lbph.txt)
+                        - [LBP](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH.h)
+                        - LHH_system
+                            - [LHH_Haar_train.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_Haar_train.txt)
+                            - [LHH_Hog_train.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_Hog_train.txt)
+                            - [LHH_LBPH_train.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_LBPH_train.txt)
+                            - [LHH_Weight_train.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_Weight_train.txt)
+                            - [LHH_error_new.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_error_new.txt)
+                            - [LHH_error_old.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/LHH_error_old.txt)
+                        - [Param](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Params.h)
+                        - famous48
+                            - [Readme.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/Readme.txt)
+                            - [show_image](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/show_images.m)
+                            - [x24x24.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/x24x24.txt)
+                            - [y24x24.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/y24x24.txt)
+                            - [z24x24.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/z24x24.txt)
+                        - [main.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/main.cpp)
                 - 姿态估计_HMFormer
                     - [HMFormer](计算机/人工智能/机器视觉/项目学习法/姿态估计_HMFormer/HMFormer.md)
                 - 姿态估计_alphapose
@@ -667,6 +774,7 @@
                 - Hadoop_HBase
                     - [Hadoop_HBase](计算机/数据库/NoSQL/ANDB/Hadoop_HBase/Hadoop_HBase.md)
                 - Hadoop_Pig
+                    - [AZTNBD_Pig.](计算机/数据库/NoSQL/ANDB/Hadoop_Pig/AZTNBD_Pig.pdf)
                     - [Hadoop_Pig](计算机/数据库/NoSQL/ANDB/Hadoop_Pig/Hadoop_Pig.md)
                 - Hive
                     - [Hive](计算机/数据库/NoSQL/ANDB/Hive/Hive.md)
@@ -679,6 +787,10 @@
                 - [KeyValueDatabase_Redis](计算机/数据库/NoSQL/NDB/KeyValueDatabase_Redis.md)
                 - [_NonrelationalDatabase](计算机/数据库/NoSQL/NDB/_NonrelationalDatabase.md)
                 - appendix
+                    - [MongoDB_Dist_lab1.](计算机/数据库/NoSQL/NDB/appendix/MongoDB_Dist_lab1.pdf)
+                    - [MongoDB_Dist_lab2.](计算机/数据库/NoSQL/NDB/appendix/MongoDB_Dist_lab2.pdf)
+                    - [MongoDB_lab1.](计算机/数据库/NoSQL/NDB/appendix/MongoDB_lab1.pdf)
+                    - [MongoDB_lab2.](计算机/数据库/NoSQL/NDB/appendix/MongoDB_lab2.pdf)
                     - [Mongo_Operations](计算机/数据库/NoSQL/NDB/appendix/Mongo_Operations.md)
                     - [Redis的简单应用_超卖](计算机/数据库/NoSQL/NDB/appendix/Redis的简单应用_超卖.md)
             - [_NoSQL](计算机/数据库/NoSQL/_NoSQL.md)
@@ -778,6 +890,19 @@
             - [无标度网络](计算机/服务器网络/计算机网络/无标度网络.md)
             - [物理网卡-子网卡-虚拟VLAN网卡](计算机/服务器网络/计算机网络/物理网卡-子网卡-虚拟VLAN网卡.md)
             - 系统学习_计算机网络
+                - [01A - CN  Teleinformatics Systems 2022.](计算机/服务器网络/计算机网络/系统学习_计算机网络/01A - CN  Teleinformatics Systems 2022.pdf)
+                - [02A - CN  CN Architectures 2022.](计算机/服务器网络/计算机网络/系统学习_计算机网络/02A - CN  CN Architectures 2022.pdf)
+                - [03A - CN  LAN Characteristics 2022.](计算机/服务器网络/计算机网络/系统学习_计算机网络/03A - CN  LAN Characteristics 2022.pdf)
+                - [04A - CN Classic LANs IEEE 802.3-5 2022.](计算机/服务器网络/计算机网络/系统学习_计算机网络/04A - CN Classic LANs IEEE 802.3-5 2022.pdf)
+                - [05A - Evolution of the  Ethernet standard.](计算机/服务器网络/计算机网络/系统学习_计算机网络/05A - Evolution of the  Ethernet standard.pdf)
+                - [06B - Computer Networks-Network Interconnection.](计算机/服务器网络/计算机网络/系统学习_计算机网络/06B - Computer Networks-Network Interconnection.pdf)
+                - [07B - Computer Networks-VLANs.](计算机/服务器网络/计算机网络/系统学习_计算机网络/07B - Computer Networks-VLANs.pdf)
+                - [08C - Computer Networks - WiFi.](计算机/服务器网络/计算机网络/系统学习_计算机网络/08C - Computer Networks - WiFi.pdf)
+                - [09A - CN WANs -  Introduction and concepts of routing  (IGP) for IP nets 2022.](计算机/服务器网络/计算机网络/系统学习_计算机网络/09A - CN WANs -  Introduction and concepts of routing  (IGP) for IP nets 2022.pdf)
+                - [10C-12C - Computer Networks-IPv4-IPv6.](计算机/服务器网络/计算机网络/系统学习_计算机网络/10C-12C - Computer Networks-IPv4-IPv6.pdf)
+                - [13A - CN TCP  UDP protocols. Flow and congestion control v 2023.](计算机/服务器网络/计算机网络/系统学习_计算机网络/13A - CN TCP  UDP protocols. Flow and congestion control v 2023.pdf)
+                - [14C - Computer Networks-Network security.](计算机/服务器网络/计算机网络/系统学习_计算机网络/14C - Computer Networks-Network security.pdf)
+                - [15C - Computer Networks-Services and applications.](计算机/服务器网络/计算机网络/系统学习_计算机网络/15C - Computer Networks-Services and applications.pdf)
                 - [_系统学习_计算机网络](计算机/服务器网络/计算机网络/系统学习_计算机网络/_系统学习_计算机网络.md)
             - [队头阻塞](计算机/服务器网络/计算机网络/队头阻塞.md)
     - 桌面应用程序开发
@@ -873,19 +998,37 @@
             - [Unity](计算机/游戏/Unity/Unity.md)
             - Unity中的MVC思想_唐老狮
                 - [Unity中的MVC思想_唐老师](计算机/游戏/Unity/Unity中的MVC思想_唐老狮/Unity中的MVC思想_唐老师.md)
+                - [打开笔记本.onet](计算机/游戏/Unity/Unity中的MVC思想_唐老狮/打开笔记本.onetoc2)
+                - [第二章MVC基础.](计算机/游戏/Unity/Unity中的MVC思想_唐老狮/第二章MVC基础.one)
             - Unity协同函数和异步加载
+                - [Coroutine.](计算机/游戏/Unity/Unity协同函数和异步加载/Coroutine.one)
                 - [Unity协同函数和异步加载](计算机/游戏/Unity/Unity协同函数和异步加载/Unity协同函数和异步加载.md)
+                - [打开笔记本.onet](计算机/游戏/Unity/Unity协同函数和异步加载/打开笔记本.onetoc2)
+                - [资源加载.](计算机/游戏/Unity/Unity协同函数和异步加载/资源加载.one)
             - Unity基础_呵呵老师
                 - [Unity基础_呵呵老师](计算机/游戏/Unity/Unity基础_呵呵老师/Unity基础_呵呵老师.md)
+                - [打开笔记本.onet](计算机/游戏/Unity/Unity基础_呵呵老师/打开笔记本.onetoc2)
+                - [老司机带你做游戏.](计算机/游戏/Unity/Unity基础_呵呵老师/老司机带你做游戏.one)
             - Unity学习日志
+                - [CSharp.](计算机/游戏/Unity/Unity学习日志/CSharp.one)
                 - [CSharp学习日志](计算机/游戏/Unity/Unity学习日志/CSharp学习日志.md)
+                - OneNote_RecycleBin
+                    - [OneNote_DeletedPages.](计算机/游戏/Unity/Unity学习日志/OneNote_RecycleBin/OneNote_DeletedPages.one)
+                    - [打开笔记本.onet](计算机/游戏/Unity/Unity学习日志/OneNote_RecycleBin/打开笔记本.onetoc2)
                 - [Unity学习日志](计算机/游戏/Unity/Unity学习日志/Unity学习日志.md)
                 - [对象池](计算机/游戏/Unity/Unity学习日志/对象池.md)
+                - [对象池.](计算机/游戏/Unity/Unity学习日志/对象池.one)
+                - [打开笔记本.onet](计算机/游戏/Unity/Unity学习日志/打开笔记本.onetoc2)
                 - [旋转](计算机/游戏/Unity/Unity学习日志/旋转.md)
+                - [旋转.](计算机/游戏/Unity/Unity学习日志/旋转.one)
                 - [暂停](计算机/游戏/Unity/Unity学习日志/暂停.md)
+                - [暂停.](计算机/游戏/Unity/Unity学习日志/暂停.one)
                 - [物体移动](计算机/游戏/Unity/Unity学习日志/物体移动.md)
+                - [物体移动.](计算机/游戏/Unity/Unity学习日志/物体移动.one)
                 - [触发器](计算机/游戏/Unity/Unity学习日志/触发器.md)
+                - [触发器.](计算机/游戏/Unity/Unity学习日志/触发器.one)
                 - [随手记](计算机/游戏/Unity/Unity学习日志/随手记.md)
+                - [随手记.](计算机/游戏/Unity/Unity学习日志/随手记.one)
             - Unity知识积累
                 - [Cinemachine](计算机/游戏/Unity/Unity知识积累/Cinemachine.md)
                 - [Cloth组件](计算机/游戏/Unity/Unity知识积累/Cloth组件.md)
@@ -914,11 +1057,16 @@
         - 游戏设计
             - [ECS框架](计算机/游戏/游戏设计/ECS框架.md)
             - [MDA框架](计算机/游戏/游戏设计/MDA框架.md)
+            - [MDA框架.](计算机/游戏/游戏设计/MDA框架.one)
+            - [打开笔记本.onet](计算机/游戏/游戏设计/打开笔记本.onetoc2)
             - [游戏分析玩进游戏公司](计算机/游戏/游戏设计/游戏分析玩进游戏公司.md)
+            - [游戏分析，玩进游戏公司.](计算机/游戏/游戏设计/游戏分析，玩进游戏公司.one)
             - [游戏设计](计算机/游戏/游戏设计/游戏设计.md)
         - 特效
             - UnityShader
+                - [B站_U5shader着色器.](计算机/游戏/特效/UnityShader/B站_U5shader着色器.one)
                 - [UnityShader](计算机/游戏/特效/UnityShader/UnityShader.md)
+                - [打开笔记本.onet](计算机/游戏/特效/UnityShader/打开笔记本.onetoc2)
             - [特效](计算机/游戏/特效/特效.md)
     - 算法
         - [位运算](计算机/算法/位运算.md)
@@ -1007,6 +1155,9 @@
             - [_编译器知识积累](计算机/编译器/编译器知识积累/_编译器知识积累.md)
             - [动态静态链接库](计算机/编译器/编译器知识积累/动态静态链接库.md)
         - 编译器设计
+            - [打开笔记本.onet](计算机/编译器/编译器设计/打开笔记本.onetoc2)
+            - [极简编译器原理.](计算机/编译器/编译器设计/极简编译器原理.one)
+            - [编译原理.](计算机/编译器/编译器设计/编译原理.one)
             - [编译器设计](计算机/编译器/编译器设计/编译器设计.md)
     - 网络编程
         - API
@@ -1247,7 +1398,9 @@
                 - [上一行](计算机/计算机语言/CLT/ANSI/上一行.md)
                 - [改变颜色](计算机/计算机语言/CLT/ANSI/改变颜色.md)
             - Bash
+                - [BianYudong_Task1](计算机/计算机语言/CLT/Bash/BianYudong_Task1.sh)
                 - [LinuxBash](计算机/计算机语言/CLT/Bash/LinuxBash.md)
+                - [access.](计算机/计算机语言/CLT/Bash/access.log)
                 - [vim](计算机/计算机语言/CLT/Bash/vim.md)
             - [CLT](计算机/计算机语言/CLT/CLT.md)
             - windows命令
@@ -1271,6 +1424,56 @@
             - [CSharp](计算机/计算机语言/CSharp/CSharp.md)
             - CSharp基础_B站呵呵老师
                 - [CSharp基础B站呵呵老师](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/CSharp基础B站呵呵老师.md)
+                - ConsoleApp1
+                    - .vs
+                        - ConsoleApp1
+                            - DesignTimeBuild
+                                - [.dtbcache](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/DesignTimeBuild/.dtbcache.v2)
+                            - v16
+                                - [.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/v16/.suo)
+                    - ConsoleApp1
+                        - [ConsoleApp1.csp](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj)
+                        - [Program](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/Program.cs)
+                        - bin
+                            - Debug
+                                - netcoreapp3.1
+                                    - [ConsoleApp1.deps.j](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.deps.json)
+                                    - [ConsoleApp1.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.dll)
+                                    - [ConsoleApp1.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.exe)
+                                    - [ConsoleApp1.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.pdb)
+                                    - [ConsoleApp1.runtimeconfig.dev.j](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.dev.json)
+                                    - [ConsoleApp1.runtimeconfig.j](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.json)
+                                    - [打开笔记本.onet](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/打开笔记本.onetoc2)
+                                - [打开笔记本.onet](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/打开笔记本.onetoc2)
+                            - [打开笔记本.onet](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/打开笔记本.onetoc2)
+                        - obj
+                            - [ConsoleApp1.csproj.nuget.dgspec.j](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json)
+                            - [ConsoleApp1.csproj.nuget.g.pr](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.props)
+                            - [ConsoleApp1.csproj.nuget.g.targ](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.targets)
+                            - Debug
+                                - netcoreapp3.1
+                                    - [.NETCoreApp,Version=v3.1.AssemblyAttributes](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs)
+                                    - [ConsoleApp1.AssemblyInfo](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfo.cs)
+                                    - [ConsoleApp1.AssemblyInfoInputs.ca](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfoInputs.cache)
+                                    - [ConsoleApp1.assets.ca](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.assets.cache)
+                                    - [ConsoleApp1.csproj.AssemblyReference.ca](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.AssemblyReference.cache)
+                                    - [ConsoleApp1.csproj.CoreCompileInputs.ca](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.CoreCompileInputs.cache)
+                                    - [ConsoleApp1.csproj.FileListAbsolute.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.FileListAbsolute.txt)
+                                    - [ConsoleApp1.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll)
+                                    - [ConsoleApp1.genruntimeconfig.ca](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.genruntimeconfig.cache)
+                                    - [ConsoleApp1.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb)
+                                    - [apphost.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/apphost.exe)
+                                    - [打开笔记本.onet](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/打开笔记本.onetoc2)
+                                - [打开笔记本.onet](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/打开笔记本.onetoc2)
+                            - [project.assets.j](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/project.assets.json)
+                            - [project.nuget.ca](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/project.nuget.cache)
+                            - [打开笔记本.onet](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/打开笔记本.onetoc2)
+                        - [打开笔记本.onet](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/打开笔记本.onetoc2)
+                    - [ConsoleApp1.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1.sln)
+                    - [打开笔记本.onet](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/打开笔记本.onetoc2)
+                - [打开笔记本.onet](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/打开笔记本.onetoc2)
+                - [第一章.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/第一章.one)
+                - [第二章.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/第二章.one)
             - CSharp知识积累
                 - [$@](计算机/计算机语言/CSharp/CSharp知识积累/$@.md)
                 - [Any](计算机/计算机语言/CSharp/CSharp知识积累/Any.md)
@@ -1633,8 +1836,26 @@
             - [函数式声明式命令式编程](计算机/计算机语言/ProgrammingLanguage/函数式声明式命令式编程.md)
         - Python
             - [Python](计算机/计算机语言/Python/Python.md)
+            - PythonDraft
+                - .idea
+                    - [PythonDraft.](计算机/计算机语言/Python/PythonDraft/.idea/PythonDraft.iml)
+                    - inspectionProfiles
+                        - [profiles_settings.](计算机/计算机语言/Python/PythonDraft/.idea/inspectionProfiles/profiles_settings.xml)
+                    - [misc.](计算机/计算机语言/Python/PythonDraft/.idea/misc.xml)
+                    - [modules.](计算机/计算机语言/Python/PythonDraft/.idea/modules.xml)
+                - [DownloadURL](计算机/计算机语言/Python/PythonDraft/DownloadURL.py)
+                - [Email](计算机/计算机语言/Python/PythonDraft/Email.py)
             - Python基础
+                - Python基础
+                    - [打开笔记本.onet](计算机/计算机语言/Python/Python基础/Python基础/打开笔记本.onetoc2)
+                    - [模块一基础知识.](计算机/计算机语言/Python/Python基础/Python基础/模块一基础知识.one)
+                    - [模块二_函数和模块.](计算机/计算机语言/Python/Python基础/Python基础/模块二_函数和模块.one)
                 - [Python基础](计算机/计算机语言/Python/Python基础/Python基础.md)
+                - python3.9课件
+                    - [python3.9.](计算机/计算机语言/Python/Python基础/python3.9课件/python3.9.txt)
+            - Python学习日志
+                - [基础.](计算机/计算机语言/Python/Python学习日志/基础.one)
+                - [打开笔记本.onet](计算机/计算机语言/Python/Python学习日志/打开笔记本.onetoc2)
             - Python知识积累
                 - [None和null](计算机/计算机语言/Python/Python知识积累/None和null.md)
                 - [Python用于html](计算机/计算机语言/Python/Python知识积累/Python用于html.md)

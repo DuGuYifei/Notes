@@ -1,2 +1,6 @@
-  - OneNote_RecycleBin
-    - [OneNote_RecycleBin](其他学科知识积累/Physics/Physics/OneNote_RecycleBin/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- OneNote_RecycleBin
+    - [OneNote_DeletedPages.](OneNote_RecycleBin/OneNote_DeletedPages.one)
+    - [打开笔记本.onet](OneNote_RecycleBin/打开笔记本.onetoc2)
+- [Semester2.](Semester2.one)
+- [打开笔记本.onet](打开笔记本.onetoc2)

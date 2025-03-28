@@ -1,2 +1,33 @@
 - [返回上级目录](../_sidebar.md)
+- .idea
+    - inspectionProfiles
+        - [profiles_settings.](.idea/inspectionProfiles/profiles_settings.xml)
+        - [打开笔记本.onet](.idea/inspectionProfiles/打开笔记本.onetoc2)
+    - [misc.](.idea/misc.xml)
+    - [modules.](.idea/modules.xml)
+    - [other.](.idea/other.xml)
+    - [vcs.](.idea/vcs.xml)
+    - [人脸识别.](.idea/人脸识别.iml)
+    - [打开笔记本.onet](.idea/打开笔记本.onetoc2)
+- [01读取图片](01读取图片.py)
+- [02灰度转换](02灰度转换.py)
+- [03修改尺寸](03修改尺寸.py)
+- [04绘制矩形](04绘制矩形.py)
+- [05人脸检测](05人脸检测.py)
+- [06检测多个](06检测多个.py)
+- [07视频检测](07视频检测.py)
+- [08照片录入](08照片录入.py)
+- [09数据训练](09数据训练.py)
+- [10人脸识别](10人脸识别.py)
+- [11网页视频](11网页视频.py)
+- data
+    - [打开笔记本.onet](data/打开笔记本.onetoc2)
+- recordInfo
+    - [打开笔记本.onet](recordInfo/打开笔记本.onetoc2)
+- trainer
+    - [trainer.](trainer/trainer.yml)
+    - [打开笔记本.onet](trainer/打开笔记本.onetoc2)
+- [人脸识别test.](人脸识别test.mp4)
 - [初试人脸识别](初试人脸识别.md)
+- [基础实战.](基础实战.one)
+- [打开笔记本.onet](打开笔记本.onetoc2)

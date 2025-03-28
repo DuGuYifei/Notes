@@ -1,7 +1,25 @@
 - [返回上级目录](../_sidebar.md)
 - [Python](Python.md)
+- PythonDraft
+    - .idea
+        - [PythonDraft.](PythonDraft/.idea/PythonDraft.iml)
+        - inspectionProfiles
+            - [profiles_settings.](PythonDraft/.idea/inspectionProfiles/profiles_settings.xml)
+        - [misc.](PythonDraft/.idea/misc.xml)
+        - [modules.](PythonDraft/.idea/modules.xml)
+    - [DownloadURL](PythonDraft/DownloadURL.py)
+    - [Email](PythonDraft/Email.py)
 - Python基础
+    - Python基础
+        - [打开笔记本.onet](Python基础/Python基础/打开笔记本.onetoc2)
+        - [模块一基础知识.](Python基础/Python基础/模块一基础知识.one)
+        - [模块二_函数和模块.](Python基础/Python基础/模块二_函数和模块.one)
     - [Python基础](Python基础/Python基础.md)
+    - python3.9课件
+        - [python3.9.](Python基础/python3.9课件/python3.9.txt)
+- Python学习日志
+    - [基础.](Python学习日志/基础.one)
+    - [打开笔记本.onet](Python学习日志/打开笔记本.onetoc2)
 - Python知识积累
     - [None和null](Python知识积累/None和null.md)
     - [Python用于html](Python知识积累/Python用于html.md)

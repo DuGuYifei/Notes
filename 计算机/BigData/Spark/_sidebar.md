@@ -35,6 +35,8 @@
 - [corr()](corr().md)
 - [countByKey_items](countByKey_items.md)
 - [createDataFrame](createDataFrame.md)
+- [dbc_spark_tutorial.h](dbc_spark_tutorial.html)
+- [dbc_word_count.h](dbc_word_count.html)
 - [describe基础统计](describe基础统计.md)
 - [drop](drop.md)
 - [dropDuplicates](dropDuplicates.md)

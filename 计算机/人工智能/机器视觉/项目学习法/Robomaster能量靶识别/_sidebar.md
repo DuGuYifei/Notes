@@ -1,2 +1,4 @@
 - [返回上级目录](../_sidebar.md)
 - [Robomaster能量靶识别](Robomaster能量靶识别.md)
+- [main.](main.cpp)
+- [svm.](svm.xml)

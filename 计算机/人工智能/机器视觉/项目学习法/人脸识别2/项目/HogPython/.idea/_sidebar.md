@@ -1,2 +1,7 @@
-  - inspectionProfiles
-    - [inspectionProfiles](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/.idea/inspectionProfiles/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- [HogPython.](HogPython.iml)
+- inspectionProfiles
+    - [Project_Default.](inspectionProfiles/Project_Default.xml)
+    - [profiles_settings.](inspectionProfiles/profiles_settings.xml)
+- [misc.](misc.xml)
+- [modules.](modules.xml)

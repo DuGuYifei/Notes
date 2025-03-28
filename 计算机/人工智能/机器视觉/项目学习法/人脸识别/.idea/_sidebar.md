@@ -1,2 +1,10 @@
-  - inspectionProfiles
-    - [inspectionProfiles](计算机/人工智能/机器视觉/项目学习法/人脸识别/.idea/inspectionProfiles/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- inspectionProfiles
+    - [profiles_settings.](inspectionProfiles/profiles_settings.xml)
+    - [打开笔记本.onet](inspectionProfiles/打开笔记本.onetoc2)
+- [misc.](misc.xml)
+- [modules.](modules.xml)
+- [other.](other.xml)
+- [vcs.](vcs.xml)
+- [人脸识别.](人脸识别.iml)
+- [打开笔记本.onet](打开笔记本.onetoc2)

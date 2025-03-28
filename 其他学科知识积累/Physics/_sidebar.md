@@ -1,2 +1,7 @@
-  - Physics
-    - [Physics](其他学科知识积累/Physics/Physics/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- Physics
+    - OneNote_RecycleBin
+        - [OneNote_DeletedPages.](Physics/OneNote_RecycleBin/OneNote_DeletedPages.one)
+        - [打开笔记本.onet](Physics/OneNote_RecycleBin/打开笔记本.onetoc2)
+    - [Semester2.](Physics/Semester2.one)
+    - [打开笔记本.onet](Physics/打开笔记本.onetoc2)

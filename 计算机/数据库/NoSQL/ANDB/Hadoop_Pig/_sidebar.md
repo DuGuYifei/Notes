@@ -1,2 +1,3 @@
 - [返回上级目录](../_sidebar.md)
+- [AZTNBD_Pig.](AZTNBD_Pig.pdf)
 - [Hadoop_Pig](Hadoop_Pig.md)

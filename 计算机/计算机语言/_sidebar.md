@@ -162,7 +162,9 @@
         - [上一行](CLT/ANSI/上一行.md)
         - [改变颜色](CLT/ANSI/改变颜色.md)
     - Bash
+        - [BianYudong_Task1](CLT/Bash/BianYudong_Task1.sh)
         - [LinuxBash](CLT/Bash/LinuxBash.md)
+        - [access.](CLT/Bash/access.log)
         - [vim](CLT/Bash/vim.md)
     - [CLT](CLT/CLT.md)
     - windows命令
@@ -186,6 +188,56 @@
     - [CSharp](CSharp/CSharp.md)
     - CSharp基础_B站呵呵老师
         - [CSharp基础B站呵呵老师](CSharp/CSharp基础_B站呵呵老师/CSharp基础B站呵呵老师.md)
+        - ConsoleApp1
+            - .vs
+                - ConsoleApp1
+                    - DesignTimeBuild
+                        - [.dtbcache](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/DesignTimeBuild/.dtbcache.v2)
+                    - v16
+                        - [.](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/v16/.suo)
+            - ConsoleApp1
+                - [ConsoleApp1.csp](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj)
+                - [Program](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/Program.cs)
+                - bin
+                    - Debug
+                        - netcoreapp3.1
+                            - [ConsoleApp1.deps.j](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.deps.json)
+                            - [ConsoleApp1.](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.dll)
+                            - [ConsoleApp1.](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.exe)
+                            - [ConsoleApp1.](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.pdb)
+                            - [ConsoleApp1.runtimeconfig.dev.j](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.dev.json)
+                            - [ConsoleApp1.runtimeconfig.j](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.json)
+                            - [打开笔记本.onet](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/打开笔记本.onetoc2)
+                        - [打开笔记本.onet](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/打开笔记本.onetoc2)
+                    - [打开笔记本.onet](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/打开笔记本.onetoc2)
+                - obj
+                    - [ConsoleApp1.csproj.nuget.dgspec.j](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json)
+                    - [ConsoleApp1.csproj.nuget.g.pr](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.props)
+                    - [ConsoleApp1.csproj.nuget.g.targ](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.targets)
+                    - Debug
+                        - netcoreapp3.1
+                            - [.NETCoreApp,Version=v3.1.AssemblyAttributes](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs)
+                            - [ConsoleApp1.AssemblyInfo](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfo.cs)
+                            - [ConsoleApp1.AssemblyInfoInputs.ca](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfoInputs.cache)
+                            - [ConsoleApp1.assets.ca](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.assets.cache)
+                            - [ConsoleApp1.csproj.AssemblyReference.ca](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.AssemblyReference.cache)
+                            - [ConsoleApp1.csproj.CoreCompileInputs.ca](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.CoreCompileInputs.cache)
+                            - [ConsoleApp1.csproj.FileListAbsolute.](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.FileListAbsolute.txt)
+                            - [ConsoleApp1.](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll)
+                            - [ConsoleApp1.genruntimeconfig.ca](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.genruntimeconfig.cache)
+                            - [ConsoleApp1.](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb)
+                            - [apphost.](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/apphost.exe)
+                            - [打开笔记本.onet](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/打开笔记本.onetoc2)
+                        - [打开笔记本.onet](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/打开笔记本.onetoc2)
+                    - [project.assets.j](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/project.assets.json)
+                    - [project.nuget.ca](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/project.nuget.cache)
+                    - [打开笔记本.onet](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/打开笔记本.onetoc2)
+                - [打开笔记本.onet](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/打开笔记本.onetoc2)
+            - [ConsoleApp1.](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1.sln)
+            - [打开笔记本.onet](CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/打开笔记本.onetoc2)
+        - [打开笔记本.onet](CSharp/CSharp基础_B站呵呵老师/打开笔记本.onetoc2)
+        - [第一章.](CSharp/CSharp基础_B站呵呵老师/第一章.one)
+        - [第二章.](CSharp/CSharp基础_B站呵呵老师/第二章.one)
     - CSharp知识积累
         - [$@](CSharp/CSharp知识积累/$@.md)
         - [Any](CSharp/CSharp知识积累/Any.md)
@@ -548,8 +600,26 @@
     - [函数式声明式命令式编程](ProgrammingLanguage/函数式声明式命令式编程.md)
 - Python
     - [Python](Python/Python.md)
+    - PythonDraft
+        - .idea
+            - [PythonDraft.](Python/PythonDraft/.idea/PythonDraft.iml)
+            - inspectionProfiles
+                - [profiles_settings.](Python/PythonDraft/.idea/inspectionProfiles/profiles_settings.xml)
+            - [misc.](Python/PythonDraft/.idea/misc.xml)
+            - [modules.](Python/PythonDraft/.idea/modules.xml)
+        - [DownloadURL](Python/PythonDraft/DownloadURL.py)
+        - [Email](Python/PythonDraft/Email.py)
     - Python基础
+        - Python基础
+            - [打开笔记本.onet](Python/Python基础/Python基础/打开笔记本.onetoc2)
+            - [模块一基础知识.](Python/Python基础/Python基础/模块一基础知识.one)
+            - [模块二_函数和模块.](Python/Python基础/Python基础/模块二_函数和模块.one)
         - [Python基础](Python/Python基础/Python基础.md)
+        - python3.9课件
+            - [python3.9.](Python/Python基础/python3.9课件/python3.9.txt)
+    - Python学习日志
+        - [基础.](Python/Python学习日志/基础.one)
+        - [打开笔记本.onet](Python/Python学习日志/打开笔记本.onetoc2)
     - Python知识积累
         - [None和null](Python/Python知识积累/None和null.md)
         - [Python用于html](Python/Python知识积累/Python用于html.md)

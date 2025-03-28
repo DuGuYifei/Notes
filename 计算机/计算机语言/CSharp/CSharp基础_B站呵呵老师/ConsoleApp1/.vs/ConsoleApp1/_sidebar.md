@@ -1,4 +1,5 @@
-  - DesignTimeBuild
-    - [DesignTimeBuild](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/DesignTimeBuild/_sidebar.md)
-  - v16
-    - [v16](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/v16/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- DesignTimeBuild
+    - [.dtbcache](DesignTimeBuild/.dtbcache.v2)
+- v16
+    - [.](v16/.suo)

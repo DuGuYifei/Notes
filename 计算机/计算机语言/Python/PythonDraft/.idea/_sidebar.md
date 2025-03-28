@@ -1,2 +1,6 @@
-  - inspectionProfiles
-    - [inspectionProfiles](计算机/计算机语言/Python/PythonDraft/.idea/inspectionProfiles/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- [PythonDraft.](PythonDraft.iml)
+- inspectionProfiles
+    - [profiles_settings.](inspectionProfiles/profiles_settings.xml)
+- [misc.](misc.xml)
+- [modules.](modules.xml)

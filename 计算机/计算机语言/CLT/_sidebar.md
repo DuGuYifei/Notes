@@ -4,7 +4,9 @@
     - [上一行](ANSI/上一行.md)
     - [改变颜色](ANSI/改变颜色.md)
 - Bash
+    - [BianYudong_Task1](Bash/BianYudong_Task1.sh)
     - [LinuxBash](Bash/LinuxBash.md)
+    - [access.](Bash/access.log)
     - [vim](Bash/vim.md)
 - [CLT](CLT.md)
 - windows命令

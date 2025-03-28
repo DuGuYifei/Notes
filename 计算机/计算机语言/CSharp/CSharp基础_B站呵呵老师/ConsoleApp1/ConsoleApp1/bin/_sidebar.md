@@ -1,2 +1,12 @@
-  - Debug
-    - [Debug](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- Debug
+    - netcoreapp3.1
+        - [ConsoleApp1.deps.j](Debug/netcoreapp3.1/ConsoleApp1.deps.json)
+        - [ConsoleApp1.](Debug/netcoreapp3.1/ConsoleApp1.dll)
+        - [ConsoleApp1.](Debug/netcoreapp3.1/ConsoleApp1.exe)
+        - [ConsoleApp1.](Debug/netcoreapp3.1/ConsoleApp1.pdb)
+        - [ConsoleApp1.runtimeconfig.dev.j](Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.dev.json)
+        - [ConsoleApp1.runtimeconfig.j](Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.json)
+        - [打开笔记本.onet](Debug/netcoreapp3.1/打开笔记本.onetoc2)
+    - [打开笔记本.onet](Debug/打开笔记本.onetoc2)
+- [打开笔记本.onet](打开笔记本.onetoc2)

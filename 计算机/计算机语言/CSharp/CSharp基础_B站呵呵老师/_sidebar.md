@@ -1,2 +1,52 @@
 - [返回上级目录](../_sidebar.md)
 - [CSharp基础B站呵呵老师](CSharp基础B站呵呵老师.md)
+- ConsoleApp1
+    - .vs
+        - ConsoleApp1
+            - DesignTimeBuild
+                - [.dtbcache](ConsoleApp1/.vs/ConsoleApp1/DesignTimeBuild/.dtbcache.v2)
+            - v16
+                - [.](ConsoleApp1/.vs/ConsoleApp1/v16/.suo)
+    - ConsoleApp1
+        - [ConsoleApp1.csp](ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj)
+        - [Program](ConsoleApp1/ConsoleApp1/Program.cs)
+        - bin
+            - Debug
+                - netcoreapp3.1
+                    - [ConsoleApp1.deps.j](ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.deps.json)
+                    - [ConsoleApp1.](ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.dll)
+                    - [ConsoleApp1.](ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.exe)
+                    - [ConsoleApp1.](ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.pdb)
+                    - [ConsoleApp1.runtimeconfig.dev.j](ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.dev.json)
+                    - [ConsoleApp1.runtimeconfig.j](ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.json)
+                    - [打开笔记本.onet](ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/打开笔记本.onetoc2)
+                - [打开笔记本.onet](ConsoleApp1/ConsoleApp1/bin/Debug/打开笔记本.onetoc2)
+            - [打开笔记本.onet](ConsoleApp1/ConsoleApp1/bin/打开笔记本.onetoc2)
+        - obj
+            - [ConsoleApp1.csproj.nuget.dgspec.j](ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json)
+            - [ConsoleApp1.csproj.nuget.g.pr](ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.props)
+            - [ConsoleApp1.csproj.nuget.g.targ](ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.targets)
+            - Debug
+                - netcoreapp3.1
+                    - [.NETCoreApp,Version=v3.1.AssemblyAttributes](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs)
+                    - [ConsoleApp1.AssemblyInfo](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfo.cs)
+                    - [ConsoleApp1.AssemblyInfoInputs.ca](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfoInputs.cache)
+                    - [ConsoleApp1.assets.ca](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.assets.cache)
+                    - [ConsoleApp1.csproj.AssemblyReference.ca](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.AssemblyReference.cache)
+                    - [ConsoleApp1.csproj.CoreCompileInputs.ca](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.CoreCompileInputs.cache)
+                    - [ConsoleApp1.csproj.FileListAbsolute.](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.FileListAbsolute.txt)
+                    - [ConsoleApp1.](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll)
+                    - [ConsoleApp1.genruntimeconfig.ca](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.genruntimeconfig.cache)
+                    - [ConsoleApp1.](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb)
+                    - [apphost.](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/apphost.exe)
+                    - [打开笔记本.onet](ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/打开笔记本.onetoc2)
+                - [打开笔记本.onet](ConsoleApp1/ConsoleApp1/obj/Debug/打开笔记本.onetoc2)
+            - [project.assets.j](ConsoleApp1/ConsoleApp1/obj/project.assets.json)
+            - [project.nuget.ca](ConsoleApp1/ConsoleApp1/obj/project.nuget.cache)
+            - [打开笔记本.onet](ConsoleApp1/ConsoleApp1/obj/打开笔记本.onetoc2)
+        - [打开笔记本.onet](ConsoleApp1/ConsoleApp1/打开笔记本.onetoc2)
+    - [ConsoleApp1.](ConsoleApp1/ConsoleApp1.sln)
+    - [打开笔记本.onet](ConsoleApp1/打开笔记本.onetoc2)
+- [打开笔记本.onet](打开笔记本.onetoc2)
+- [第一章.](第一章.one)
+- [第二章.](第二章.one)

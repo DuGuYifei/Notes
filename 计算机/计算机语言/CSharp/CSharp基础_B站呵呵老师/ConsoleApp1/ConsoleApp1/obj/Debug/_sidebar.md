@@ -1,2 +1,15 @@
-  - netcoreapp3.1
-    - [netcoreapp3.1](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- netcoreapp3.1
+    - [.NETCoreApp,Version=v3.1.AssemblyAttributes](netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs)
+    - [ConsoleApp1.AssemblyInfo](netcoreapp3.1/ConsoleApp1.AssemblyInfo.cs)
+    - [ConsoleApp1.AssemblyInfoInputs.ca](netcoreapp3.1/ConsoleApp1.AssemblyInfoInputs.cache)
+    - [ConsoleApp1.assets.ca](netcoreapp3.1/ConsoleApp1.assets.cache)
+    - [ConsoleApp1.csproj.AssemblyReference.ca](netcoreapp3.1/ConsoleApp1.csproj.AssemblyReference.cache)
+    - [ConsoleApp1.csproj.CoreCompileInputs.ca](netcoreapp3.1/ConsoleApp1.csproj.CoreCompileInputs.cache)
+    - [ConsoleApp1.csproj.FileListAbsolute.](netcoreapp3.1/ConsoleApp1.csproj.FileListAbsolute.txt)
+    - [ConsoleApp1.](netcoreapp3.1/ConsoleApp1.dll)
+    - [ConsoleApp1.genruntimeconfig.ca](netcoreapp3.1/ConsoleApp1.genruntimeconfig.cache)
+    - [ConsoleApp1.](netcoreapp3.1/ConsoleApp1.pdb)
+    - [apphost.](netcoreapp3.1/apphost.exe)
+    - [打开笔记本.onet](netcoreapp3.1/打开笔记本.onetoc2)
+- [打开笔记本.onet](打开笔记本.onetoc2)

@@ -1,12 +1,50 @@
-  - Haar
-    - [Haar](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Haar/_sidebar.md)
-  - Hog
-    - [Hog](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/Hog/_sidebar.md)
-  - HogPython
-    - [HogPython](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/HogPython/_sidebar.md)
-  - LBPH
-    - [LBPH](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LBPH/_sidebar.md)
-  - LHH_system
-    - [LHH_system](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/LHH_system/_sidebar.md)
-  - famous48
-    - [famous48](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- [Famous48 Face Recognize Report.d](Famous48 Face Recognize Report.docx)
+- [Famous48 Face Recognize Report.](Famous48 Face Recognize Report.pdf)
+- Haar
+    - [HAA](Haar/HAAR.h)
+    - [HAAR_](Haar/HAAR_2.h)
+    - [haar_error.](Haar/haar_error.txt)
+    - [haar_test.](Haar/haar_test.txt)
+    - [haar_testLHH.](Haar/haar_testLHH.txt)
+    - [haar_train.](Haar/haar_train.txt)
+- [Haa](Haar.h)
+- Hog
+    - [histograms_test.](Hog/histograms_test.txt)
+    - [histograms_testLHH.](Hog/histograms_testLHH.txt)
+    - [histograms_train.](Hog/histograms_train.txt)
+    - [hog_error.](Hog/hog_error.txt)
+- [Ho](Hog.h)
+- HogPython
+    - .idea
+        - [HogPython.](HogPython/.idea/HogPython.iml)
+        - inspectionProfiles
+            - [Project_Default.](HogPython/.idea/inspectionProfiles/Project_Default.xml)
+            - [profiles_settings.](HogPython/.idea/inspectionProfiles/profiles_settings.xml)
+        - [misc.](HogPython/.idea/misc.xml)
+        - [modules.](HogPython/.idea/modules.xml)
+    - [HogTrain](HogPython/HogTrain.py)
+    - [test](HogPython/test.py)
+- LBPH
+    - [lbph_error.](LBPH/lbph_error.txt)
+    - [lbph_test.](LBPH/lbph_test.txt)
+    - [lbph_testLHH.](LBPH/lbph_testLHH.txt)
+    - [lbph_train.](LBPH/lbph_train.txt)
+    - [test_lbph.](LBPH/test_lbph.txt)
+    - [train_lbph.](LBPH/train_lbph.txt)
+- [LBP](LBPH.h)
+- LHH_system
+    - [LHH_Haar_train.](LHH_system/LHH_Haar_train.txt)
+    - [LHH_Hog_train.](LHH_system/LHH_Hog_train.txt)
+    - [LHH_LBPH_train.](LHH_system/LHH_LBPH_train.txt)
+    - [LHH_Weight_train.](LHH_system/LHH_Weight_train.txt)
+    - [LHH_error_new.](LHH_system/LHH_error_new.txt)
+    - [LHH_error_old.](LHH_system/LHH_error_old.txt)
+- [Param](Params.h)
+- famous48
+    - [Readme.](famous48/Readme.txt)
+    - [show_image](famous48/show_images.m)
+    - [x24x24.](famous48/x24x24.txt)
+    - [y24x24.](famous48/y24x24.txt)
+    - [z24x24.](famous48/z24x24.txt)
+- [main.](main.cpp)

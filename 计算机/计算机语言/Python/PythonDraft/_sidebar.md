@@ -1,2 +1,9 @@
-  - .idea
-    - [.idea](计算机/计算机语言/Python/PythonDraft/.idea/_sidebar.md)
+- [返回上级目录](../_sidebar.md)
+- .idea
+    - [PythonDraft.](.idea/PythonDraft.iml)
+    - inspectionProfiles
+        - [profiles_settings.](.idea/inspectionProfiles/profiles_settings.xml)
+    - [misc.](.idea/misc.xml)
+    - [modules.](.idea/modules.xml)
+- [DownloadURL](DownloadURL.py)
+- [Email](Email.py)

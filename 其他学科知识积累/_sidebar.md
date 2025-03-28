@@ -26,3 +26,10 @@
     - [行列式展开](Maths/行列式展开.md)
     - [裴蜀定理](Maths/裴蜀定理.md)
     - [贝叶斯定理](Maths/贝叶斯定理.md)
+- Physics
+    - Physics
+        - OneNote_RecycleBin
+            - [OneNote_DeletedPages.](Physics/Physics/OneNote_RecycleBin/OneNote_DeletedPages.one)
+            - [打开笔记本.onet](Physics/Physics/OneNote_RecycleBin/打开笔记本.onetoc2)
+        - [Semester2.](Physics/Physics/Semester2.one)
+        - [打开笔记本.onet](Physics/Physics/打开笔记本.onetoc2)

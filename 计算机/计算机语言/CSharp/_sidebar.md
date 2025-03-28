@@ -2,6 +2,56 @@
 - [CSharp](CSharp.md)
 - CSharp基础_B站呵呵老师
     - [CSharp基础B站呵呵老师](CSharp基础_B站呵呵老师/CSharp基础B站呵呵老师.md)
+    - ConsoleApp1
+        - .vs
+            - ConsoleApp1
+                - DesignTimeBuild
+                    - [.dtbcache](CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/DesignTimeBuild/.dtbcache.v2)
+                - v16
+                    - [.](CSharp基础_B站呵呵老师/ConsoleApp1/.vs/ConsoleApp1/v16/.suo)
+        - ConsoleApp1
+            - [ConsoleApp1.csp](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj)
+            - [Program](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/Program.cs)
+            - bin
+                - Debug
+                    - netcoreapp3.1
+                        - [ConsoleApp1.deps.j](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.deps.json)
+                        - [ConsoleApp1.](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.dll)
+                        - [ConsoleApp1.](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.exe)
+                        - [ConsoleApp1.](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.pdb)
+                        - [ConsoleApp1.runtimeconfig.dev.j](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.dev.json)
+                        - [ConsoleApp1.runtimeconfig.j](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.runtimeconfig.json)
+                        - [打开笔记本.onet](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/netcoreapp3.1/打开笔记本.onetoc2)
+                    - [打开笔记本.onet](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/Debug/打开笔记本.onetoc2)
+                - [打开笔记本.onet](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/bin/打开笔记本.onetoc2)
+            - obj
+                - [ConsoleApp1.csproj.nuget.dgspec.j](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json)
+                - [ConsoleApp1.csproj.nuget.g.pr](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.props)
+                - [ConsoleApp1.csproj.nuget.g.targ](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.targets)
+                - Debug
+                    - netcoreapp3.1
+                        - [.NETCoreApp,Version=v3.1.AssemblyAttributes](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs)
+                        - [ConsoleApp1.AssemblyInfo](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfo.cs)
+                        - [ConsoleApp1.AssemblyInfoInputs.ca](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfoInputs.cache)
+                        - [ConsoleApp1.assets.ca](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.assets.cache)
+                        - [ConsoleApp1.csproj.AssemblyReference.ca](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.AssemblyReference.cache)
+                        - [ConsoleApp1.csproj.CoreCompileInputs.ca](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.CoreCompileInputs.cache)
+                        - [ConsoleApp1.csproj.FileListAbsolute.](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.csproj.FileListAbsolute.txt)
+                        - [ConsoleApp1.](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll)
+                        - [ConsoleApp1.genruntimeconfig.ca](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.genruntimeconfig.cache)
+                        - [ConsoleApp1.](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb)
+                        - [apphost.](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/apphost.exe)
+                        - [打开笔记本.onet](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/netcoreapp3.1/打开笔记本.onetoc2)
+                    - [打开笔记本.onet](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/Debug/打开笔记本.onetoc2)
+                - [project.assets.j](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/project.assets.json)
+                - [project.nuget.ca](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/project.nuget.cache)
+                - [打开笔记本.onet](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/obj/打开笔记本.onetoc2)
+            - [打开笔记本.onet](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1/打开笔记本.onetoc2)
+        - [ConsoleApp1.](CSharp基础_B站呵呵老师/ConsoleApp1/ConsoleApp1.sln)
+        - [打开笔记本.onet](CSharp基础_B站呵呵老师/ConsoleApp1/打开笔记本.onetoc2)
+    - [打开笔记本.onet](CSharp基础_B站呵呵老师/打开笔记本.onetoc2)
+    - [第一章.](CSharp基础_B站呵呵老师/第一章.one)
+    - [第二章.](CSharp基础_B站呵呵老师/第二章.one)
 - CSharp知识积累
     - [$@](CSharp知识积累/$@.md)
     - [Any](CSharp知识积累/Any.md)

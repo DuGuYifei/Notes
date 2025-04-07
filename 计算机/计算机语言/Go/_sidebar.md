@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
-- [%v%q](%v%q.md)
+- [百分号占位符](百分号占位符.md)
 - [C语言调用](C语言调用.md)
 - [GOPATH和GOMODULE](GOPATH和GOMODULE.md)
 - [_Go](_Go.md)

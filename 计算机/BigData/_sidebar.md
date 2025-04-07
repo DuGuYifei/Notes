@@ -31,7 +31,7 @@
 - RDF和SPARQL
     - [_RDF和SPARQL](RDF和SPARQL/_RDF和SPARQL.md)
 - Spark
-    - [%在query中的使用](Spark/%在query中的使用.md)
+    - [%在query中的使用](Spark/百分号在query中的使用.md)
     - [ALS算法](Spark/ALS算法.md)
     - [ArrayType](Spark/ArrayType.md)
     - [Bucketizer](Spark/Bucketizer.md)

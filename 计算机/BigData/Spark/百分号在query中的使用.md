@@ -1,4 +1,4 @@
-# %在query中的使用
+# 百分号在query中的使用
 
 ```python
 #   Most frequent 3-tuple per chapter

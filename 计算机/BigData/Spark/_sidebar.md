@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
-- [%在query中的使用](%在query中的使用.md)
+- [%在query中的使用](百分号在query中的使用.md)
 - [ALS算法](ALS算法.md)
 - [ArrayType](ArrayType.md)
 - [Bucketizer](Bucketizer.md)

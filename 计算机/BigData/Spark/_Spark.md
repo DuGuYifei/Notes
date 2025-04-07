@@ -88,7 +88,7 @@
 [rdd案例_创建_MapReduceCombineSort](rdd案例_创建_MapReduceCombineSort.md)
 
 ## 积累
-1. [%在query中的使用](%在query中的使用.md)
+1. [%在query中的使用](百分号在query中的使用.md)
 2. [ListTables](ListTables.md)
 3. [registerTempTable](registerTempTable.md)
 4. [first](first.md)

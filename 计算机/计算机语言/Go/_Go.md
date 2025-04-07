@@ -6,7 +6,7 @@
 4. [new和make](new和make.md)
 5. [os.OpenFile](os_OpenFile.md)
 6. [defer](defer.md)
-7. [%v%q](%v%q.md)
+7. [百分号占位符](百分号占位符.md)
 8. [log服务](log服务.md)
 9. [go](go.md)
 10. [传参换行必须有逗号](传参换行必须有逗号.md)

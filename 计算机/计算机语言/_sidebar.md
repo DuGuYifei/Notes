@@ -267,7 +267,7 @@
         - [获取屏幕信息](CSharp/CSharp知识积累/获取屏幕信息.md)
         - [静态类](CSharp/CSharp知识积累/静态类.md)
 - Go
-    - [%v%q](Go/%v%q.md)
+    - [百分号占位符](Go/百分号占位符.md)
     - [C语言调用](Go/C语言调用.md)
     - [GOPATH和GOMODULE](Go/GOPATH和GOMODULE.md)
     - [_Go](Go/_Go.md)

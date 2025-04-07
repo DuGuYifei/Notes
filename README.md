@@ -117,7 +117,7 @@
         - RDF和SPARQL/
             - [_RDF和SPARQL.md](计算机/BigData/RDF和SPARQL/_RDF和SPARQL.md)
         - Spark/
-            - [%在query中的使用.md](计算机/BigData/Spark/%在query中的使用.md)
+            - [%在query中的使用.md](计算机/BigData/Spark/百分号在query中的使用.md)
             - [_Spark.md](计算机/BigData/Spark/_Spark.md)
             - [alias.md](计算机/BigData/Spark/alias.md)
             - [ALS算法.md](计算机/BigData/Spark/ALS算法.md)
@@ -1505,7 +1505,7 @@
                 - [静态类.md](计算机/计算机语言/CSharp/CSharp知识积累/静态类.md)
             - [CSharp.md](计算机/计算机语言/CSharp/CSharp.md)
         - Go/
-            - [%v%q.md](计算机/计算机语言/Go/%v%q.md)
+            - [%v%q.md](计算机/计算机语言/Go/百分号占位符.md)
             - [_Go.md](计算机/计算机语言/Go/_Go.md)
             - [append和三个点和slice的取集合.md](计算机/计算机语言/Go/append和三个点和slice的取集合.md)
             - [cache.md](计算机/计算机语言/Go/cache.md)

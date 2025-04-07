@@ -76,7 +76,7 @@
         - RDF和SPARQL
             - [_RDF和SPARQL](计算机/BigData/RDF和SPARQL/_RDF和SPARQL.md)
         - Spark
-            - [%在query中的使用](计算机/BigData/Spark/%在query中的使用.md)
+            - [%在query中的使用](计算机/BigData/Spark/百分号在query中的使用.md)
             - [ALS算法](计算机/BigData/Spark/ALS算法.md)
             - [ArrayType](计算机/BigData/Spark/ArrayType.md)
             - [Bucketizer](计算机/BigData/Spark/Bucketizer.md)
@@ -1506,7 +1506,7 @@
                 - [获取屏幕信息](计算机/计算机语言/CSharp/CSharp知识积累/获取屏幕信息.md)
                 - [静态类](计算机/计算机语言/CSharp/CSharp知识积累/静态类.md)
         - Go
-            - [%v%q](计算机/计算机语言/Go/%v%q.md)
+            - [百分号占位符](计算机/计算机语言/Go/百分号占位符.md)
             - [C语言调用](计算机/计算机语言/Go/C语言调用.md)
             - [GOPATH和GOMODULE](计算机/计算机语言/Go/GOPATH和GOMODULE.md)
             - [_Go](计算机/计算机语言/Go/_Go.md)

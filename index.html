@@ -17,12 +17,12 @@
   <script>
     window.$docsify = {
       routerMode: 'history',
-      name: "Blog",
+      name: "Notes",
       relativePath: true,
       // 侧边栏文档目录
       loadSidebar: true,
-      subMaxLevel: 3,
-      sidebarDisplayLevel: 3, // set sidebar display level
+      subMaxLevel: 99,
+      sidebarDisplayLevel: 1, // set sidebar display level
       // 跳转后自动到顶部
       auto2top: true,
       // coverpage: true,
@@ -52,7 +52,8 @@
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script> -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+
   <!-- 代码高亮  //unpkg.com/prismjs/components/ -->
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-python.js"></script>
@@ -61,8 +62,10 @@
   <script src="//unpkg.com/prismjs/components/prism-csharp.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-docker.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-powershell.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-cpp.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-go.js"></script>
+
+  <!-- 侧边栏目录折叠 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
   <!-- 多tab支持 -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@latest"></script> -->
@@ -78,9 +81,6 @@
 
   <!-- 图片放大缩小 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-
-  <!-- 侧边栏目录折叠 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
   <!-- 页面右侧 TOC -->
   <script src="//cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js"></script>

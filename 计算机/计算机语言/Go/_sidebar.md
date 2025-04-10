@@ -1,5 +1,4 @@
 - [返回上级目录](../_sidebar.md)
-- [百分号占位符](百分号占位符.md)
 - [C语言调用](C语言调用.md)
 - [GOPATH和GOMODULE](GOPATH和GOMODULE.md)
 - [_Go](_Go.md)
@@ -32,5 +31,6 @@
 - [基础声明变量_类型_函数](基础声明变量_类型_函数.md)
 - [断言](断言.md)
 - [模拟enum](模拟enum.md)
+- [百分号占位符](百分号占位符.md)
 - [读取json的时间为time类型](读取json的时间为time类型.md)
 - [遍历](遍历.md)

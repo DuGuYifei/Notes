@@ -41,7 +41,6 @@
     - RDF和SPARQL
         - [_RDF和SPARQL](BigData/RDF和SPARQL/_RDF和SPARQL.md)
     - Spark
-        - [%在query中的使用](BigData/Spark/百分号在query中的使用.md)
         - [ALS算法](BigData/Spark/ALS算法.md)
         - [ArrayType](BigData/Spark/ArrayType.md)
         - [Bucketizer](BigData/Spark/Bucketizer.md)
@@ -131,6 +130,7 @@
         - [提交pyspark任务](BigData/Spark/提交pyspark任务.md)
         - [数据类型_cast](BigData/Spark/数据类型_cast.md)
         - [模型](BigData/Spark/模型.md)
+        - [百分号在query中的使用](BigData/Spark/百分号在query中的使用.md)
         - [过时的pyspark_mllib](BigData/Spark/过时的pyspark_mllib.md)
         - [连接cluster](BigData/Spark/连接cluster.md)
         - [配置spark_conf_get](BigData/Spark/配置spark_conf_get.md)
@@ -165,6 +165,8 @@
     - [控制台上下左右键](Docker/控制台上下左右键.md)
 - Git
     - [GitKnowledgeAccumulation](Git/GitKnowledgeAccumulation.md)
+    - [Git下载某个版本的某个文件夹](Git/Git下载某个版本的某个文件夹.md)
+    - [_git](Git/_git.md)
 - InternetServiceArchitecture
     - [01 Spring Platform.](InternetServiceArchitecture/01 Spring Platform.pdf)
     - [02 Spring Data JPA.](InternetServiceArchitecture/02 Spring Data JPA.pdf)
@@ -1471,7 +1473,6 @@
             - [获取屏幕信息](计算机语言/CSharp/CSharp知识积累/获取屏幕信息.md)
             - [静态类](计算机语言/CSharp/CSharp知识积累/静态类.md)
     - Go
-        - [%v%q](计算机语言/Go/百分号占位符.md)
         - [C语言调用](计算机语言/Go/C语言调用.md)
         - [GOPATH和GOMODULE](计算机语言/Go/GOPATH和GOMODULE.md)
         - [_Go](计算机语言/Go/_Go.md)
@@ -1504,6 +1505,7 @@
         - [基础声明变量_类型_函数](计算机语言/Go/基础声明变量_类型_函数.md)
         - [断言](计算机语言/Go/断言.md)
         - [模拟enum](计算机语言/Go/模拟enum.md)
+        - [百分号占位符](计算机语言/Go/百分号占位符.md)
         - [读取json的时间为time类型](计算机语言/Go/读取json的时间为time类型.md)
         - [遍历](计算机语言/Go/遍历.md)
     - Java

@@ -267,7 +267,6 @@
         - [获取屏幕信息](CSharp/CSharp知识积累/获取屏幕信息.md)
         - [静态类](CSharp/CSharp知识积累/静态类.md)
 - Go
-    - [百分号占位符](Go/百分号占位符.md)
     - [C语言调用](Go/C语言调用.md)
     - [GOPATH和GOMODULE](Go/GOPATH和GOMODULE.md)
     - [_Go](Go/_Go.md)
@@ -300,6 +299,7 @@
     - [基础声明变量_类型_函数](Go/基础声明变量_类型_函数.md)
     - [断言](Go/断言.md)
     - [模拟enum](Go/模拟enum.md)
+    - [百分号占位符](Go/百分号占位符.md)
     - [读取json的时间为time类型](Go/读取json的时间为time类型.md)
     - [遍历](Go/遍历.md)
 - Java

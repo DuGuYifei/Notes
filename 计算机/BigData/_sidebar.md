@@ -31,7 +31,6 @@
 - RDF和SPARQL
     - [_RDF和SPARQL](RDF和SPARQL/_RDF和SPARQL.md)
 - Spark
-    - [%在query中的使用](Spark/百分号在query中的使用.md)
     - [ALS算法](Spark/ALS算法.md)
     - [ArrayType](Spark/ArrayType.md)
     - [Bucketizer](Spark/Bucketizer.md)
@@ -121,6 +120,7 @@
     - [提交pyspark任务](Spark/提交pyspark任务.md)
     - [数据类型_cast](Spark/数据类型_cast.md)
     - [模型](Spark/模型.md)
+    - [百分号在query中的使用](Spark/百分号在query中的使用.md)
     - [过时的pyspark_mllib](Spark/过时的pyspark_mllib.md)
     - [连接cluster](Spark/连接cluster.md)
     - [配置spark_conf_get](Spark/配置spark_conf_get.md)

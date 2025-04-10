@@ -1,5 +1,4 @@
 - [返回上级目录](../_sidebar.md)
-- [%在query中的使用](百分号在query中的使用.md)
 - [ALS算法](ALS算法.md)
 - [ArrayType](ArrayType.md)
 - [Bucketizer](Bucketizer.md)
@@ -89,6 +88,7 @@
 - [提交pyspark任务](提交pyspark任务.md)
 - [数据类型_cast](数据类型_cast.md)
 - [模型](模型.md)
+- [百分号在query中的使用](百分号在query中的使用.md)
 - [过时的pyspark_mllib](过时的pyspark_mllib.md)
 - [连接cluster](连接cluster.md)
 - [配置spark_conf_get](配置spark_conf_get.md)

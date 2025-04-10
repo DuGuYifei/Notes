@@ -9,7 +9,7 @@ def generate_sidebar(path, visible_root):
     ignore_dirs = {".obsidian", ".git", "_attachments", "MyGameDesign", "images", "vue学习用案例模板"}
 
     entries = []
-    for entry in sorted(os.listdir(path)):
+    for entry in sorted(os.listdir(path), key=lambda s: (0 if s.startswith('_') else 1, s)):
         full_path = Path(path) / entry
         if entry in ignore_files or any(part in ignore_dirs for part in full_path.parts):
             continue

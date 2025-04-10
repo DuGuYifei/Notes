@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
-- [Godot如何使用本地库](Godot如何使用本地库.md)
 - [_Godot](_Godot.md)
+- [Godot如何使用本地库](Godot如何使用本地库.md)

@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_AI算法](_AI算法.md)
 - [BERT](BERT.md)
 - [Faster-RCNN](Faster-RCNN.md)
 - [GPT](GPT.md)
@@ -6,7 +7,6 @@
 - [SVM](SVM.md)
 - [Transform](Transform.md)
 - [YOLO](YOLO.md)
-- [_AI算法](_AI算法.md)
 - [softmax函数计算时候为什么要减去一个最大值](softmax函数计算时候为什么要减去一个最大值.md)
 - [网格搜索](网格搜索.md)
 - [轮廓查找](轮廓查找.md)

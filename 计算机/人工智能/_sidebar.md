@@ -1,5 +1,7 @@
 - [返回上级目录](../_sidebar.md)
+- [_人工智能](_人工智能.md)
 - AI算法
+    - [_AI算法](AI算法/_AI算法.md)
     - [BERT](AI算法/BERT.md)
     - [Faster-RCNN](AI算法/Faster-RCNN.md)
     - [GPT](AI算法/GPT.md)
@@ -7,7 +9,6 @@
     - [SVM](AI算法/SVM.md)
     - [Transform](AI算法/Transform.md)
     - [YOLO](AI算法/YOLO.md)
-    - [_AI算法](AI算法/_AI算法.md)
     - [softmax函数计算时候为什么要减去一个最大值](AI算法/softmax函数计算时候为什么要减去一个最大值.md)
     - [网格搜索](AI算法/网格搜索.md)
     - [轮廓查找](AI算法/轮廓查找.md)
@@ -26,14 +27,14 @@
         - [乘法](Python_AI相关/numpy/乘法.md)
         - [矩阵](Python_AI相关/numpy/矩阵.md)
     - pandas
-        - [Series和DataFrame](Python_AI相关/pandas/Series和DataFrame.md)
         - [_pandas](Python_AI相关/pandas/_pandas.md)
+        - [Series和DataFrame](Python_AI相关/pandas/Series和DataFrame.md)
         - [df_head](Python_AI相关/pandas/df_head.md)
         - [shape](Python_AI相关/pandas/shape.md)
     - pytorch
+        - [_pytorch](Python_AI相关/pytorch/_pytorch.md)
         - [CrossEntropyLoss](Python_AI相关/pytorch/CrossEntropyLoss.md)
         - [PytorchOverview](Python_AI相关/pytorch/PytorchOverview.md)
-        - [_pytorch](Python_AI相关/pytorch/_pytorch.md)
         - [backward自动的实现原理-autograd-gradfn](Python_AI相关/pytorch/backward自动的实现原理-autograd-gradfn.md)
         - [nn和torch混用导致的问题](Python_AI相关/pytorch/nn和torch混用导致的问题.md)
         - [pytorch基础](Python_AI相关/pytorch/pytorch基础.md)
@@ -41,34 +42,33 @@
     - tensorboard
         - [_tensorboard](Python_AI相关/tensorboard/_tensorboard.md)
         - [tensorboard基础](Python_AI相关/tensorboard/tensorboard基础.md)
-- [_人工智能](_人工智能.md)
 - 吴恩达机器学习
+    - [_吴恩达机器学习](吴恩达机器学习/_吴恩达机器学习.md)
     - [2.2-2.3监督学习](吴恩达机器学习/2.2-2.3监督学习.md)
     - [2.4-2.5非监督学习](吴恩达机器学习/2.4-2.5非监督学习.md)
     - [3.1-3.6线性回归](吴恩达机器学习/3.1-3.6线性回归.md)
-    - [_吴恩达机器学习](吴恩达机器学习/_吴恩达机器学习.md)
 - 机器学习_图和序列数据
+    - [_机器学习_图和序列数据](机器学习_图和序列数据/_机器学习_图和序列数据.md)
     - [01AutoregressiveModels](机器学习_图和序列数据/01AutoregressiveModels.md)
     - [02MarkovChains](机器学习_图和序列数据/02MarkovChains.md)
     - [03HiddenMarkovChains](机器学习_图和序列数据/03HiddenMarkovChains.md)
-    - [_机器学习_图和序列数据](机器学习_图和序列数据/_机器学习_图和序列数据.md)
 - 机器学习和数学
     - [_机器学习和数学](机器学习和数学/_机器学习和数学.md)
     - [模型方差](机器学习和数学/模型方差.md)
     - [线性回归_梯度下降_矩阵求导](机器学习和数学/线性回归_梯度下降_矩阵求导.md)
 - 机器学习进阶_深度生成模型
+    - [_机器学习进阶_深度生成模型](机器学习进阶_深度生成模型/_机器学习进阶_深度生成模型.md)
     - [Normalizing_Flows](机器学习进阶_深度生成模型/Normalizing_Flows.md)
     - [Variational_Inference](机器学习进阶_深度生成模型/Variational_Inference.md)
-    - [_机器学习进阶_深度生成模型](机器学习进阶_深度生成模型/_机器学习进阶_深度生成模型.md)
 - 机器视觉
     - opencv
+        - [_opencv](机器视觉/opencv/_opencv.md)
         - [BGR和RGB](机器视觉/opencv/BGR和RGB.md)
         - [Canny边缘算子](机器视觉/opencv/Canny边缘算子.md)
         - [Mat](机器视觉/opencv/Mat.md)
         - [Mat和numpy的关系以及python屏幕截图并转换成opencv可读的形式](机器视觉/opencv/Mat和numpy的关系以及python屏幕截图并转换成opencv可读的形式.md)
         - [SVM](机器视觉/opencv/SVM.md)
         - [Scalar类_三四元组可选](机器视觉/opencv/Scalar类_三四元组可选.md)
-        - [_opencv](机器视觉/opencv/_opencv.md)
         - [approxPolyDP_多边形拟合](机器视觉/opencv/approxPolyDP_多边形拟合.md)
         - [boundingRect_外接矩形](机器视觉/opencv/boundingRect_外接矩形.md)
         - [c++中添加opencv](机器视觉/opencv/c++中添加opencv.md)
@@ -188,6 +188,7 @@
 - 深度学习
     - [_深度学习](深度学习/_深度学习.md)
     - 深度学习GUT时期
+        - [_深度学习GUT时期](深度学习/深度学习GUT时期/_深度学习GUT时期.md)
         - [AlexNet](深度学习/深度学习GUT时期/AlexNet.md)
         - [BackwardPassPhase](深度学习/深度学习GUT时期/BackwardPassPhase.md)
         - [Dropout随机失活](深度学习/深度学习GUT时期/Dropout随机失活.md)
@@ -204,12 +205,12 @@
         - [TransferLearning](深度学习/深度学习GUT时期/TransferLearning.md)
         - [TransformerModel](深度学习/深度学习GUT时期/TransformerModel.md)
         - [WordEmbeddings](深度学习/深度学习GUT时期/WordEmbeddings.md)
-        - [_深度学习GUT时期](深度学习/深度学习GUT时期/_深度学习GUT时期.md)
         - [正则化RegularizationMethod](深度学习/深度学习GUT时期/正则化RegularizationMethod.md)
         - [激活函数](深度学习/深度学习GUT时期/激活函数.md)
         - [计算参数量和输出大小](深度学习/深度学习GUT时期/计算参数量和输出大小.md)
         - [随机初始化权重](深度学习/深度学习GUT时期/随机初始化权重.md)
     - 深度学习TUM时期
+        - [_深度学习TUM时期](深度学习/深度学习TUM时期/_深度学习TUM时期.md)
         - [Lecture01-Introduction](深度学习/深度学习TUM时期/Lecture01-Introduction.md)
         - [Lecture02.1-MLBasics](深度学习/深度学习TUM时期/Lecture02.1-MLBasics.md)
         - [Lecture02.2-LogisticRegression](深度学习/深度学习TUM时期/Lecture02.2-LogisticRegression.md)
@@ -226,7 +227,6 @@
         - [Lecture11-RNNsAndTransformers](深度学习/深度学习TUM时期/Lecture11-RNNsAndTransformers.md)
         - [Lecture11-补充Excerise11-Tokenizer](深度学习/深度学习TUM时期/Lecture11-补充Excerise11-Tokenizer.md)
         - [Lecture12-AdvancedTopics](深度学习/深度学习TUM时期/Lecture12-AdvancedTopics.md)
-        - [_深度学习TUM时期](深度学习/深度学习TUM时期/_深度学习TUM时期.md)
     - 深度学习知识积累
         - [_深度学习知识积累](深度学习/深度学习知识积累/_深度学习知识积累.md)
         - [转置卷积TransposeConvolution](深度学习/深度学习知识积累/转置卷积TransposeConvolution.md)

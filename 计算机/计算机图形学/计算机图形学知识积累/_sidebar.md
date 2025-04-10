@@ -1,7 +1,7 @@
 - [返回上级目录](../_sidebar.md)
+- [_KnowledgeAccumulation_CG](_KnowledgeAccumulation_CG.md)
 - [ModelMatrix_ViewMatrix_ProjectionMatrix](ModelMatrix_ViewMatrix_ProjectionMatrix.md)
 - [Ramer-Douglas-Peucker算法](Ramer-Douglas-Peucker算法.md)
-- [_KnowledgeAccumulation_CG](_KnowledgeAccumulation_CG.md)
 - [obj文件格式](obj文件格式.md)
 - [中心差分法计算法线](中心差分法计算法线.md)
 - [仿射变换-旋转_平移_缩放_剪切_投影_反射_变换矩阵](仿射变换-旋转_平移_缩放_剪切_投影_反射_变换矩阵.md)

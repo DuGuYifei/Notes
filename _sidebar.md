@@ -1,24 +1,16 @@
-- .obsidian
-    - [app.j](.obsidian/app.json)
-    - [appearance.j](.obsidian/appearance.json)
-    - [core-plugins-migration.j](.obsidian/core-plugins-migration.json)
-    - [core-plugins.j](.obsidian/core-plugins.json)
-    - [workspace.j](.obsidian/workspace.json)
-- [CN](CNAME)
-- [_404](_404.md)
 - 其他学科知识积累
     - DigitTechnologyInBusinessCommunication
         - [DigitTechforBusinessCommunication](其他学科知识积累/DigitTechnologyInBusinessCommunication/DigitTechforBusinessCommunication.md)
     - English
+        - [_English](其他学科知识积累/English/_English.md)
         - [BusinessEnglish_VocaularyReview](其他学科知识积累/English/BusinessEnglish_VocaularyReview.md)
         - [Dictionary](其他学科知识积累/English/Dictionary.md)
         - [Grammar](其他学科知识积累/English/Grammar.md)
         - [Phrase](其他学科知识积累/English/Phrase.md)
-        - [_English](其他学科知识积累/English/_English.md)
         - [英文写信](其他学科知识积累/English/英文写信.md)
     - Maths
-        - [Hadamard积](其他学科知识积累/Maths/Hadamard积.md)
         - [_KnowledgeAccumulation_Maths](其他学科知识积累/Maths/_KnowledgeAccumulation_Maths.md)
+        - [Hadamard积](其他学科知识积累/Maths/Hadamard积.md)
         - [z-score归一化](其他学科知识积累/Maths/z-score归一化.md)
         - [乘积的方差](其他学科知识积累/Maths/乘积的方差.md)
         - [二项式定理和组合C的N项和](其他学科知识积累/Maths/二项式定理和组合C的N项和.md)
@@ -42,27 +34,68 @@
             - [Semester2.](其他学科知识积累/Physics/Physics/Semester2.one)
             - [打开笔记本.onet](其他学科知识积累/Physics/Physics/打开笔记本.onetoc2)
 - 计算机
+    - _小知识积累
+        - [_计算机_小知识积累](计算机/_小知识积累/_计算机_小知识积累.md)
+        - [Excel前N个字节](计算机/_小知识积累/Excel前N个字节.md)
+        - [GrayCode格雷码](计算机/_小知识积累/GrayCode格雷码.md)
+        - [Hyper-v](计算机/_小知识积累/Hyper-v.md)
+        - [Inno_Setup打包](计算机/_小知识积累/Inno_Setup打包.md)
+        - [MT(d)和MD(d)的区别](计算机/_小知识积累/MT(d)和MD(d)的区别.md)
+        - [OP和OOP](计算机/_小知识积累/OP和OOP.md)
+        - [PageRank](计算机/_小知识积累/PageRank.md)
+        - [SQL服务占用内存](计算机/_小知识积累/SQL服务占用内存.md)
+        - [UTF-8](计算机/_小知识积累/UTF-8.md)
+        - [VSCode中C函数危险报错](计算机/_小知识积累/VSCode中C函数危险报错.md)
+        - [VSCode中DebugC_C++](计算机/_小知识积累/VSCode中DebugC_C++.md)
+        - [VSCode快速以当前文件夹打开](计算机/_小知识积累/VSCode快速以当前文件夹打开.md)
+        - [VSCode的snippet](计算机/_小知识积累/VSCode的snippet.md)
+        - [VSCode让两个文件关联有互相的提示](计算机/_小知识积累/VSCode让两个文件关联有互相的提示.md)
+        - [VScode正则表达式替换](计算机/_小知识积累/VScode正则表达式替换.md)
+        - [VS两个项目在同一解决方案下](计算机/_小知识积累/VS两个项目在同一解决方案下.md)
+        - [VS快捷键和特殊语法](计算机/_小知识积累/VS快捷键和特殊语法.md)
+        - [gh-pages](计算机/_小知识积累/gh-pages.md)
+        - [oh-my-posh](计算机/_小知识积累/oh-my-posh.md)
+        - [powershell编码问题](计算机/_小知识积累/powershell编码问题.md)
+        - [ssh配置文件位置和权限问题](计算机/_小知识积累/ssh配置文件位置和权限问题.md)
+        - [ventoy装系统工具](计算机/_小知识积累/ventoy装系统工具.md)
+        - [vscode和wsl配置cpp环境](计算机/_小知识积累/vscode和wsl配置cpp环境.md)
+        - [【WSL】Windows下Linux子系统](计算机/_小知识积累/【WSL】Windows下Linux子系统.md)
+        - [三元问号直接接属性](计算机/_小知识积累/三元问号直接接属性.md)
+        - [中文用户名导致软件打不开解决方案](计算机/_小知识积累/中文用户名导致软件打不开解决方案.md)
+        - [井号在html中](计算机/_小知识积累/井号在html中.md)
+        - [代码变量被优化掉](计算机/_小知识积累/代码变量被优化掉.md)
+        - [原码反码补码](计算机/_小知识积累/原码反码补码.md)
+        - [幂等](计算机/_小知识积累/幂等.md)
+        - [开源许可证](计算机/_小知识积累/开源许可证.md)
+        - [更换壁纸时的特殊消息](计算机/_小知识积累/更换壁纸时的特殊消息.md)
+        - [正则表达式](计算机/_小知识积累/正则表达式.md)
+        - [繁体中文和简体中文快捷键切换](计算机/_小知识积累/繁体中文和简体中文快捷键切换.md)
+        - [解决端口不能使用Hyper-v导致](计算机/_小知识积累/解决端口不能使用Hyper-v导致.md)
+        - [计算机更新卡在logo界面不更新解决办法](计算机/_小知识积累/计算机更新卡在logo界面不更新解决办法.md)
+        - [链接wifi蓝屏](计算机/_小知识积累/链接wifi蓝屏.md)
     - AgentSystem
         - Jade
+            - [_Jade](计算机/AgentSystem/Jade/_Jade.md)
             - [AID](计算机/AgentSystem/Jade/AID.md)
             - [Jade的基本程序关系](计算机/AgentSystem/Jade/Jade的基本程序关系.md)
             - [MessageTemplate_Match](计算机/AgentSystem/Jade/MessageTemplate_Match.md)
-            - [_Jade](计算机/AgentSystem/Jade/_Jade.md)
             - [获取命令行参数](计算机/AgentSystem/Jade/获取命令行参数.md)
         - Theory
             - [AgentSystem](计算机/AgentSystem/Theory/AgentSystem.md)
     - BigData
+        - [_BigData](计算机/BigData/_BigData.md)
         - Databrick
             - [_Databrick](计算机/BigData/Databrick/_Databrick.md)
         - Doris
             - [_Doris](计算机/BigData/Doris/_Doris.md)
             - [创建表案例](计算机/BigData/Doris/创建表案例.md)
         - HBase
+            - [_HBase](计算机/BigData/HBase/_HBase.md)
             - [Phoenix](计算机/BigData/HBase/Phoenix.md)
             - [RowKey设计](计算机/BigData/HBase/RowKey设计.md)
-            - [_HBase](计算机/BigData/HBase/_HBase.md)
             - [插入数据的key顺序是否影响写入速率](计算机/BigData/HBase/插入数据的key顺序是否影响写入速率.md)
         - Hadoop
+            - [_HadoopAdvanced](计算机/BigData/Hadoop/_HadoopAdvanced.md)
             - [ArrayWritable](计算机/BigData/Hadoop/ArrayWritable.md)
             - [Configured和Tool](计算机/BigData/Hadoop/Configured和Tool.md)
             - [HadoopHiveHBaseZookeepergua](计算机/BigData/Hadoop/HadoopHiveHBaseZookeepergua.md)
@@ -71,7 +104,6 @@
             - [MapReduce流程](计算机/BigData/Hadoop/MapReduce流程.md)
             - [Mapper和Reducer的泛型](计算机/BigData/Hadoop/Mapper和Reducer的泛型.md)
             - [WritableComparable接口](计算机/BigData/Hadoop/WritableComparable接口.md)
-            - [_HadoopAdvanced](计算机/BigData/Hadoop/_HadoopAdvanced.md)
             - [key是重复使用的引用变量](计算机/BigData/Hadoop/key是重复使用的引用变量.md)
             - [map和reduce执行次数](计算机/BigData/Hadoop/map和reduce执行次数.md)
             - [map和reduce里context.write有null值](计算机/BigData/Hadoop/map和reduce里context.write有null值.md)
@@ -84,6 +116,7 @@
         - RDF和SPARQL
             - [_RDF和SPARQL](计算机/BigData/RDF和SPARQL/_RDF和SPARQL.md)
         - Spark
+            - [_Spark](计算机/BigData/Spark/_Spark.md)
             - [ALS算法](计算机/BigData/Spark/ALS算法.md)
             - [ArrayType](计算机/BigData/Spark/ArrayType.md)
             - [Bucketizer](计算机/BigData/Spark/Bucketizer.md)
@@ -112,7 +145,6 @@
             - [Transformers_Estimators](计算机/BigData/Spark/Transformers_Estimators.md)
             - [VectorAssembler](计算机/BigData/Spark/VectorAssembler.md)
             - [WhenOtherwise](计算机/BigData/Spark/WhenOtherwise.md)
-            - [_Spark](计算机/BigData/Spark/_Spark.md)
             - [alias](计算机/BigData/Spark/alias.md)
             - [array_contains](计算机/BigData/Spark/array_contains.md)
             - [collect](计算机/BigData/Spark/collect.md)
@@ -178,8 +210,8 @@
             - [连接cluster](计算机/BigData/Spark/连接cluster.md)
             - [配置spark_conf_get](计算机/BigData/Spark/配置spark_conf_get.md)
             - [预测_transform和评估模型_evaluate](计算机/BigData/Spark/预测_transform和评估模型_evaluate.md)
-        - [_BigData](计算机/BigData/_BigData.md)
     - Docker
+        - [_Docker](计算机/Docker/_Docker.md)
         - [--privileged](计算机/Docker/--privileged.md)
         - [-itd](计算机/Docker/-itd.md)
         - [-p](计算机/Docker/-p.md)
@@ -187,7 +219,6 @@
         - [DockerHub](计算机/Docker/DockerHub.md)
         - [Dockerfile](计算机/Docker/Dockerfile.md)
         - [EXPOSE](计算机/Docker/EXPOSE.md)
-        - [_Docker](计算机/Docker/_Docker.md)
         - [command中bash脚本不可用](计算机/Docker/command中bash脚本不可用.md)
         - [container和image](计算机/Docker/container和image.md)
         - [cp宿主机和容器之间复制文件](计算机/Docker/cp宿主机和容器之间复制文件.md)
@@ -207,10 +238,11 @@
         - [挂载硬盘不能直接在命令中使用硬盘内文件](计算机/Docker/挂载硬盘不能直接在命令中使用硬盘内文件.md)
         - [控制台上下左右键](计算机/Docker/控制台上下左右键.md)
     - Git
+        - [_git](计算机/Git/_git.md)
         - [GitKnowledgeAccumulation](计算机/Git/GitKnowledgeAccumulation.md)
         - [Git下载某个版本的某个文件夹](计算机/Git/Git下载某个版本的某个文件夹.md)
-        - [_git](计算机/Git/_git.md)
     - InternetServiceArchitecture
+        - [_InternetServiceArchitecture](计算机/InternetServiceArchitecture/_InternetServiceArchitecture.md)
         - [01 Spring Platform.](计算机/InternetServiceArchitecture/01 Spring Platform.pdf)
         - [02 Spring Data JPA.](计算机/InternetServiceArchitecture/02 Spring Data JPA.pdf)
         - [03 Spring MVC - REST Services.](计算机/InternetServiceArchitecture/03 Spring MVC - REST Services.pdf)
@@ -225,12 +257,11 @@
         - [13 2022 lecture - Microservices.](计算机/InternetServiceArchitecture/13 2022 lecture - Microservices.pdf)
         - [14 2022 lecture - BaaS.](计算机/InternetServiceArchitecture/14 2022 lecture - BaaS.pdf)
         - [15 2022 lecture - Summary.](计算机/InternetServiceArchitecture/15 2022 lecture - Summary.pdf)
-        - [_InternetServiceArchitecture](计算机/InternetServiceArchitecture/_InternetServiceArchitecture.md)
     - LargeScaleEnterpriseApplication
+        - [_LargeScaleEnterpriseApplication](计算机/LargeScaleEnterpriseApplication/_LargeScaleEnterpriseApplication.md)
         - [CI_CD](计算机/LargeScaleEnterpriseApplication/CI_CD.md)
         - [KKC_LSEA_0b00000000.](计算机/LargeScaleEnterpriseApplication/KKC_LSEA_0b00000000.pdf)
         - [SoftwareDevelopmentMethodologies](计算机/LargeScaleEnterpriseApplication/SoftwareDevelopmentMethodologies.md)
-        - [_LargeScaleEnterpriseApplication](计算机/LargeScaleEnterpriseApplication/_LargeScaleEnterpriseApplication.md)
     - PS
         - [PS](计算机/PS/PS.md)
     - PluginDevelopment
@@ -239,47 +270,10 @@
         - [_PromptEngineering](计算机/PromptEngineering/_PromptEngineering.md)
     - Web3
         - [_Web3](计算机/Web3/_Web3.md)
-    - _小知识积累
-        - [Excel前N个字节](计算机/_小知识积累/Excel前N个字节.md)
-        - [GrayCode格雷码](计算机/_小知识积累/GrayCode格雷码.md)
-        - [Hyper-v](计算机/_小知识积累/Hyper-v.md)
-        - [Inno_Setup打包](计算机/_小知识积累/Inno_Setup打包.md)
-        - [MT(d)和MD(d)的区别](计算机/_小知识积累/MT(d)和MD(d)的区别.md)
-        - [OP和OOP](计算机/_小知识积累/OP和OOP.md)
-        - [PageRank](计算机/_小知识积累/PageRank.md)
-        - [SQL服务占用内存](计算机/_小知识积累/SQL服务占用内存.md)
-        - [UTF-8](计算机/_小知识积累/UTF-8.md)
-        - [VSCode中C函数危险报错](计算机/_小知识积累/VSCode中C函数危险报错.md)
-        - [VSCode中DebugC_C++](计算机/_小知识积累/VSCode中DebugC_C++.md)
-        - [VSCode快速以当前文件夹打开](计算机/_小知识积累/VSCode快速以当前文件夹打开.md)
-        - [VSCode的snippet](计算机/_小知识积累/VSCode的snippet.md)
-        - [VSCode让两个文件关联有互相的提示](计算机/_小知识积累/VSCode让两个文件关联有互相的提示.md)
-        - [VScode正则表达式替换](计算机/_小知识积累/VScode正则表达式替换.md)
-        - [VS两个项目在同一解决方案下](计算机/_小知识积累/VS两个项目在同一解决方案下.md)
-        - [VS快捷键和特殊语法](计算机/_小知识积累/VS快捷键和特殊语法.md)
-        - [_计算机_小知识积累](计算机/_小知识积累/_计算机_小知识积累.md)
-        - [gh-pages](计算机/_小知识积累/gh-pages.md)
-        - [oh-my-posh](计算机/_小知识积累/oh-my-posh.md)
-        - [powershell编码问题](计算机/_小知识积累/powershell编码问题.md)
-        - [ssh配置文件位置和权限问题](计算机/_小知识积累/ssh配置文件位置和权限问题.md)
-        - [ventoy装系统工具](计算机/_小知识积累/ventoy装系统工具.md)
-        - [vscode和wsl配置cpp环境](计算机/_小知识积累/vscode和wsl配置cpp环境.md)
-        - [【WSL】Windows下Linux子系统](计算机/_小知识积累/【WSL】Windows下Linux子系统.md)
-        - [三元问号直接接属性](计算机/_小知识积累/三元问号直接接属性.md)
-        - [中文用户名导致软件打不开解决方案](计算机/_小知识积累/中文用户名导致软件打不开解决方案.md)
-        - [井号在html中](计算机/_小知识积累/井号在html中.md)
-        - [代码变量被优化掉](计算机/_小知识积累/代码变量被优化掉.md)
-        - [原码反码补码](计算机/_小知识积累/原码反码补码.md)
-        - [幂等](计算机/_小知识积累/幂等.md)
-        - [开源许可证](计算机/_小知识积累/开源许可证.md)
-        - [更换壁纸时的特殊消息](计算机/_小知识积累/更换壁纸时的特殊消息.md)
-        - [正则表达式](计算机/_小知识积累/正则表达式.md)
-        - [繁体中文和简体中文快捷键切换](计算机/_小知识积累/繁体中文和简体中文快捷键切换.md)
-        - [解决端口不能使用Hyper-v导致](计算机/_小知识积累/解决端口不能使用Hyper-v导致.md)
-        - [计算机更新卡在logo界面不更新解决办法](计算机/_小知识积累/计算机更新卡在logo界面不更新解决办法.md)
-        - [链接wifi蓝屏](计算机/_小知识积累/链接wifi蓝屏.md)
     - 人工智能
+        - [_人工智能](计算机/人工智能/_人工智能.md)
         - AI算法
+            - [_AI算法](计算机/人工智能/AI算法/_AI算法.md)
             - [BERT](计算机/人工智能/AI算法/BERT.md)
             - [Faster-RCNN](计算机/人工智能/AI算法/Faster-RCNN.md)
             - [GPT](计算机/人工智能/AI算法/GPT.md)
@@ -287,7 +281,6 @@
             - [SVM](计算机/人工智能/AI算法/SVM.md)
             - [Transform](计算机/人工智能/AI算法/Transform.md)
             - [YOLO](计算机/人工智能/AI算法/YOLO.md)
-            - [_AI算法](计算机/人工智能/AI算法/_AI算法.md)
             - [softmax函数计算时候为什么要减去一个最大值](计算机/人工智能/AI算法/softmax函数计算时候为什么要减去一个最大值.md)
             - [网格搜索](计算机/人工智能/AI算法/网格搜索.md)
             - [轮廓查找](计算机/人工智能/AI算法/轮廓查找.md)
@@ -306,14 +299,14 @@
                 - [乘法](计算机/人工智能/Python_AI相关/numpy/乘法.md)
                 - [矩阵](计算机/人工智能/Python_AI相关/numpy/矩阵.md)
             - pandas
-                - [Series和DataFrame](计算机/人工智能/Python_AI相关/pandas/Series和DataFrame.md)
                 - [_pandas](计算机/人工智能/Python_AI相关/pandas/_pandas.md)
+                - [Series和DataFrame](计算机/人工智能/Python_AI相关/pandas/Series和DataFrame.md)
                 - [df_head](计算机/人工智能/Python_AI相关/pandas/df_head.md)
                 - [shape](计算机/人工智能/Python_AI相关/pandas/shape.md)
             - pytorch
+                - [_pytorch](计算机/人工智能/Python_AI相关/pytorch/_pytorch.md)
                 - [CrossEntropyLoss](计算机/人工智能/Python_AI相关/pytorch/CrossEntropyLoss.md)
                 - [PytorchOverview](计算机/人工智能/Python_AI相关/pytorch/PytorchOverview.md)
-                - [_pytorch](计算机/人工智能/Python_AI相关/pytorch/_pytorch.md)
                 - [backward自动的实现原理-autograd-gradfn](计算机/人工智能/Python_AI相关/pytorch/backward自动的实现原理-autograd-gradfn.md)
                 - [nn和torch混用导致的问题](计算机/人工智能/Python_AI相关/pytorch/nn和torch混用导致的问题.md)
                 - [pytorch基础](计算机/人工智能/Python_AI相关/pytorch/pytorch基础.md)
@@ -321,34 +314,33 @@
             - tensorboard
                 - [_tensorboard](计算机/人工智能/Python_AI相关/tensorboard/_tensorboard.md)
                 - [tensorboard基础](计算机/人工智能/Python_AI相关/tensorboard/tensorboard基础.md)
-        - [_人工智能](计算机/人工智能/_人工智能.md)
         - 吴恩达机器学习
+            - [_吴恩达机器学习](计算机/人工智能/吴恩达机器学习/_吴恩达机器学习.md)
             - [2.2-2.3监督学习](计算机/人工智能/吴恩达机器学习/2.2-2.3监督学习.md)
             - [2.4-2.5非监督学习](计算机/人工智能/吴恩达机器学习/2.4-2.5非监督学习.md)
             - [3.1-3.6线性回归](计算机/人工智能/吴恩达机器学习/3.1-3.6线性回归.md)
-            - [_吴恩达机器学习](计算机/人工智能/吴恩达机器学习/_吴恩达机器学习.md)
         - 机器学习_图和序列数据
+            - [_机器学习_图和序列数据](计算机/人工智能/机器学习_图和序列数据/_机器学习_图和序列数据.md)
             - [01AutoregressiveModels](计算机/人工智能/机器学习_图和序列数据/01AutoregressiveModels.md)
             - [02MarkovChains](计算机/人工智能/机器学习_图和序列数据/02MarkovChains.md)
             - [03HiddenMarkovChains](计算机/人工智能/机器学习_图和序列数据/03HiddenMarkovChains.md)
-            - [_机器学习_图和序列数据](计算机/人工智能/机器学习_图和序列数据/_机器学习_图和序列数据.md)
         - 机器学习和数学
             - [_机器学习和数学](计算机/人工智能/机器学习和数学/_机器学习和数学.md)
             - [模型方差](计算机/人工智能/机器学习和数学/模型方差.md)
             - [线性回归_梯度下降_矩阵求导](计算机/人工智能/机器学习和数学/线性回归_梯度下降_矩阵求导.md)
         - 机器学习进阶_深度生成模型
+            - [_机器学习进阶_深度生成模型](计算机/人工智能/机器学习进阶_深度生成模型/_机器学习进阶_深度生成模型.md)
             - [Normalizing_Flows](计算机/人工智能/机器学习进阶_深度生成模型/Normalizing_Flows.md)
             - [Variational_Inference](计算机/人工智能/机器学习进阶_深度生成模型/Variational_Inference.md)
-            - [_机器学习进阶_深度生成模型](计算机/人工智能/机器学习进阶_深度生成模型/_机器学习进阶_深度生成模型.md)
         - 机器视觉
             - opencv
+                - [_opencv](计算机/人工智能/机器视觉/opencv/_opencv.md)
                 - [BGR和RGB](计算机/人工智能/机器视觉/opencv/BGR和RGB.md)
                 - [Canny边缘算子](计算机/人工智能/机器视觉/opencv/Canny边缘算子.md)
                 - [Mat](计算机/人工智能/机器视觉/opencv/Mat.md)
                 - [Mat和numpy的关系以及python屏幕截图并转换成opencv可读的形式](计算机/人工智能/机器视觉/opencv/Mat和numpy的关系以及python屏幕截图并转换成opencv可读的形式.md)
                 - [SVM](计算机/人工智能/机器视觉/opencv/SVM.md)
                 - [Scalar类_三四元组可选](计算机/人工智能/机器视觉/opencv/Scalar类_三四元组可选.md)
-                - [_opencv](计算机/人工智能/机器视觉/opencv/_opencv.md)
                 - [approxPolyDP_多边形拟合](计算机/人工智能/机器视觉/opencv/approxPolyDP_多边形拟合.md)
                 - [boundingRect_外接矩形](计算机/人工智能/机器视觉/opencv/boundingRect_外接矩形.md)
                 - [c++中添加opencv](计算机/人工智能/机器视觉/opencv/c++中添加opencv.md)
@@ -468,6 +460,7 @@
         - 深度学习
             - [_深度学习](计算机/人工智能/深度学习/_深度学习.md)
             - 深度学习GUT时期
+                - [_深度学习GUT时期](计算机/人工智能/深度学习/深度学习GUT时期/_深度学习GUT时期.md)
                 - [AlexNet](计算机/人工智能/深度学习/深度学习GUT时期/AlexNet.md)
                 - [BackwardPassPhase](计算机/人工智能/深度学习/深度学习GUT时期/BackwardPassPhase.md)
                 - [Dropout随机失活](计算机/人工智能/深度学习/深度学习GUT时期/Dropout随机失活.md)
@@ -484,12 +477,12 @@
                 - [TransferLearning](计算机/人工智能/深度学习/深度学习GUT时期/TransferLearning.md)
                 - [TransformerModel](计算机/人工智能/深度学习/深度学习GUT时期/TransformerModel.md)
                 - [WordEmbeddings](计算机/人工智能/深度学习/深度学习GUT时期/WordEmbeddings.md)
-                - [_深度学习GUT时期](计算机/人工智能/深度学习/深度学习GUT时期/_深度学习GUT时期.md)
                 - [正则化RegularizationMethod](计算机/人工智能/深度学习/深度学习GUT时期/正则化RegularizationMethod.md)
                 - [激活函数](计算机/人工智能/深度学习/深度学习GUT时期/激活函数.md)
                 - [计算参数量和输出大小](计算机/人工智能/深度学习/深度学习GUT时期/计算参数量和输出大小.md)
                 - [随机初始化权重](计算机/人工智能/深度学习/深度学习GUT时期/随机初始化权重.md)
             - 深度学习TUM时期
+                - [_深度学习TUM时期](计算机/人工智能/深度学习/深度学习TUM时期/_深度学习TUM时期.md)
                 - [Lecture01-Introduction](计算机/人工智能/深度学习/深度学习TUM时期/Lecture01-Introduction.md)
                 - [Lecture02.1-MLBasics](计算机/人工智能/深度学习/深度学习TUM时期/Lecture02.1-MLBasics.md)
                 - [Lecture02.2-LogisticRegression](计算机/人工智能/深度学习/深度学习TUM时期/Lecture02.2-LogisticRegression.md)
@@ -506,7 +499,6 @@
                 - [Lecture11-RNNsAndTransformers](计算机/人工智能/深度学习/深度学习TUM时期/Lecture11-RNNsAndTransformers.md)
                 - [Lecture11-补充Excerise11-Tokenizer](计算机/人工智能/深度学习/深度学习TUM时期/Lecture11-补充Excerise11-Tokenizer.md)
                 - [Lecture12-AdvancedTopics](计算机/人工智能/深度学习/深度学习TUM时期/Lecture12-AdvancedTopics.md)
-                - [_深度学习TUM时期](计算机/人工智能/深度学习/深度学习TUM时期/_深度学习TUM时期.md)
             - 深度学习知识积累
                 - [_深度学习知识积累](计算机/人工智能/深度学习/深度学习知识积累/_深度学习知识积累.md)
                 - [转置卷积TransposeConvolution](计算机/人工智能/深度学习/深度学习知识积累/转置卷积TransposeConvolution.md)
@@ -514,6 +506,7 @@
             - [_环境搭建anaconda](计算机/人工智能/环境搭建/_环境搭建anaconda.md)
         - [词汇收集](计算机/人工智能/词汇收集.md)
     - 分布式处理和多线程
+        - [_DistributedSystem](计算机/分布式处理和多线程/_DistributedSystem.md)
         - [CommunicationPatternsInDistributedApplications](计算机/分布式处理和多线程/CommunicationPatternsInDistributedApplications.md)
         - [ConditionVariables](计算机/分布式处理和多线程/ConditionVariables.md)
         - [CritialSection](计算机/分布式处理和多线程/CritialSection.md)
@@ -529,7 +522,6 @@
         - [Reader-Writer](计算机/分布式处理和多线程/Reader-Writer.md)
         - [Semaphore_Monitor_Mutex对比](计算机/分布式处理和多线程/Semaphore_Monitor_Mutex对比.md)
         - [ThreadsSynchronization](计算机/分布式处理和多线程/ThreadsSynchronization.md)
-        - [_DistributedSystem](计算机/分布式处理和多线程/_DistributedSystem.md)
         - [epoll](计算机/分布式处理和多线程/epoll.md)
         - [fork()](计算机/分布式处理和多线程/fork().md)
         - [pipe](计算机/分布式处理和多线程/pipe.md)
@@ -544,9 +536,9 @@
         - Angular
             - [_KnowledgeAccumulation_Angular](计算机/前端学习/Angular/_KnowledgeAccumulation_Angular.md)
         - React
+            - [_React](计算机/前端学习/React/_React.md)
             - Nextjs
                 - [_Nextjs](计算机/前端学习/React/Nextjs/_Nextjs.md)
-            - [_React](计算机/前端学习/React/_React.md)
             - [localStorage_window等client变量server端会报错](计算机/前端学习/React/localStorage_window等client变量server端会报错.md)
             - [useState_useEffect渲染顺序](计算机/前端学习/React/useState_useEffect渲染顺序.md)
         - Vue
@@ -554,6 +546,7 @@
                 - [_B站教程笔记](计算机/前端学习/Vue/B站教程笔记/_B站教程笔记.md)
             - [Vue](计算机/前端学习/Vue/Vue.md)
             - Vue知识积累
+                - [_KnowledgeAccumulation_Vue](计算机/前端学习/Vue/Vue知识积累/_KnowledgeAccumulation_Vue.md)
                 - [Build问题](计算机/前端学习/Vue/Vue知识积累/Build问题.md)
                 - [ElementPlus上传文件](计算机/前端学习/Vue/Vue知识积累/ElementPlus上传文件.md)
                 - [ElementPlus图标icon不显示](计算机/前端学习/Vue/Vue知识积累/ElementPlus图标icon不显示.md)
@@ -563,7 +556,6 @@
                 - [ElementPlus表单校验trigger](计算机/前端学习/Vue/Vue知识积累/ElementPlus表单校验trigger.md)
                 - [ElementPlus表格排序](计算机/前端学习/Vue/Vue知识积累/ElementPlus表格排序.md)
                 - [Vue3的基础export结构](计算机/前端学习/Vue/Vue知识积累/Vue3的基础export结构.md)
-                - [_KnowledgeAccumulation_Vue](计算机/前端学习/Vue/Vue知识积累/_KnowledgeAccumulation_Vue.md)
                 - [app.component](计算机/前端学习/Vue/Vue知识积累/app.component.md)
                 - [axios+vue](计算机/前端学习/Vue/Vue知识积累/axios+vue.md)
                 - [computed](计算机/前端学习/Vue/Vue知识积累/computed.md)
@@ -611,17 +603,18 @@
         - [前端学习技能树](计算机/前端学习/前端学习技能树.md)
     - 后端学习
         - Architecture
+            - [_Architecture](计算机/后端学习/Architecture/_Architecture.md)
             - [ABAC](计算机/后端学习/Architecture/ABAC.md)
             - [DAC](计算机/后端学习/Architecture/DAC.md)
             - [Kerberos](计算机/后端学习/Architecture/Kerberos.md)
             - [MAC](计算机/后端学习/Architecture/MAC.md)
             - [OAuth](计算机/后端学习/Architecture/OAuth.md)
             - [RBAC](计算机/后端学习/Architecture/RBAC.md)
-            - [_Architecture](计算机/后端学习/Architecture/_Architecture.md)
         - JUnit
             - [_JUnit](计算机/后端学习/JUnit/_JUnit.md)
             - [assert](计算机/后端学习/JUnit/assert.md)
         - JavaEE
+            - [_JavaEE](计算机/后端学习/JavaEE/_JavaEE.md)
             - [EntityManager_EntityManagerFactory](计算机/后端学习/JavaEE/EntityManager_EntityManagerFactory.md)
             - [EntityTransaction](计算机/后端学习/JavaEE/EntityTransaction.md)
             - [JPA](计算机/后端学习/JavaEE/JPA.md)
@@ -629,10 +622,10 @@
             - [JPQL](计算机/后端学习/JavaEE/JPQL.md)
             - [JSP_JSTL](计算机/后端学习/JavaEE/JSP_JSTL.md)
             - [Servlet](计算机/后端学习/JavaEE/Servlet.md)
-            - [_JavaEE](计算机/后端学习/JavaEE/_JavaEE.md)
         - Mybatis
             - [_Mybatis](计算机/后端学习/Mybatis/_Mybatis.md)
         - SpringBoot
+            - [_KnowledgeAccumulation_SpringBoot](计算机/后端学习/SpringBoot/_KnowledgeAccumulation_SpringBoot.md)
             - [@Autowired](计算机/后端学习/SpringBoot/@Autowired.md)
             - [@Basic](计算机/后端学习/SpringBoot/@Basic.md)
             - [@Bean和@Component区别](计算机/后端学习/SpringBoot/@Bean和@Component区别.md)
@@ -681,15 +674,14 @@
             - [ResponseEntity](计算机/后端学习/SpringBoot/ResponseEntity.md)
             - [SpringBoot_MySQL](计算机/后端学习/SpringBoot/SpringBoot_MySQL.md)
             - SpringCloud
-                - [Feign基本使用](计算机/后端学习/SpringBoot/SpringCloud/Feign基本使用.md)
                 - [_SpringCloud](计算机/后端学习/SpringBoot/SpringCloud/_SpringCloud.md)
+                - [Feign基本使用](计算机/后端学习/SpringBoot/SpringCloud/Feign基本使用.md)
             - [SpringbootSecurity](计算机/后端学习/SpringBoot/SpringbootSecurity.md)
             - [SpringbootTest](计算机/后端学习/SpringBoot/SpringbootTest.md)
             - [Tomcat_Netty](计算机/后端学习/SpringBoot/Tomcat_Netty.md)
             - [UriComponentsBuilder](计算机/后端学习/SpringBoot/UriComponentsBuilder.md)
             - [Validation](计算机/后端学习/SpringBoot/Validation.md)
             - [ValidatorFactory和validator](计算机/后端学习/SpringBoot/ValidatorFactory和validator.md)
-            - [_KnowledgeAccumulation_SpringBoot](计算机/后端学习/SpringBoot/_KnowledgeAccumulation_SpringBoot.md)
             - [actuator](计算机/后端学习/SpringBoot/actuator.md)
             - [api带文件](计算机/后端学习/SpringBoot/api带文件.md)
             - [cascade](计算机/后端学习/SpringBoot/cascade.md)
@@ -714,24 +706,24 @@
             - [请求的大小和文件大小限制](计算机/后端学习/SpringBoot/请求的大小和文件大小限制.md)
             - [读取sql文件并执行sql语句或文件](计算机/后端学习/SpringBoot/读取sql文件并执行sql语句或文件.md)
         - Swagger
-            - [UI上的一些操作](计算机/后端学习/Swagger/UI上的一些操作.md)
             - [_swagger](计算机/后端学习/Swagger/_swagger.md)
+            - [UI上的一些操作](计算机/后端学习/Swagger/UI上的一些操作.md)
             - [swagger基本使用流程](计算机/后端学习/Swagger/swagger基本使用流程.md)
             - [分组和接口注释](计算机/后端学习/Swagger/分组和接口注释.md)
         - deployment
-            - [CI-CD](计算机/后端学习/deployment/CI-CD.md)
             - [_deployement](计算机/后端学习/deployment/_deployement.md)
+            - [CI-CD](计算机/后端学习/deployment/CI-CD.md)
         - log
             - [_log](计算机/后端学习/log/_log.md)
             - [log4j2](计算机/后端学习/log/log4j2.md)
         - lombok
+            - [_lombok](计算机/后端学习/lombok/_lombok.md)
             - [@AllArgsConstructor@NoArgsConstructor](计算机/后端学习/lombok/@AllArgsConstructor@NoArgsConstructor.md)
             - [@NonNull](计算机/后端学习/lombok/@NonNull.md)
             - [@Singular](计算机/后端学习/lombok/@Singular.md)
             - [@SneakyThrows](计算机/后端学习/lombok/@SneakyThrows.md)
             - [@ToString](计算机/后端学习/lombok/@ToString.md)
             - [Builder和lombok优化](计算机/后端学习/lombok/Builder和lombok优化.md)
-            - [_lombok](计算机/后端学习/lombok/_lombok.md)
         - mvn
             - [_mvn](计算机/后端学习/mvn/_mvn.md)
             - [test和选择-跳过](计算机/后端学习/mvn/test和选择-跳过.md)
@@ -744,14 +736,14 @@
             - [内置的http模块](计算机/后端学习/nodejs/内置的http模块.md)
         - [后端学习](计算机/后端学习/后端学习.md)
         - 小知识积累
+            - [_后端小知识积累](计算机/后端学习/小知识积累/_后端小知识积累.md)
             - [API测试](计算机/后端学习/小知识积累/API测试.md)
             - [DataBufferLimitException_Exceeded_limit_on_max_bytes_to_buffer](计算机/后端学习/小知识积累/DataBufferLimitException_Exceeded_limit_on_max_bytes_to_buffer.md)
-            - [_后端小知识积累](计算机/后端学习/小知识积累/_后端小知识积累.md)
             - [zookeeper](计算机/后端学习/小知识积累/zookeeper.md)
         - 性能测试监控
+            - [_性能测试监控](计算机/后端学习/性能测试监控/_性能测试监控.md)
             - [Grafana](计算机/后端学习/性能测试监控/Grafana.md)
             - [Prometheus](计算机/后端学习/性能测试监控/Prometheus.md)
-            - [_性能测试监控](计算机/后端学习/性能测试监控/_性能测试监控.md)
             - [ab](计算机/后端学习/性能测试监控/ab.md)
     - 小程序
         - 微信小程序
@@ -765,15 +757,18 @@
     - 感悟
         - [什么是webapp](计算机/感悟/什么是webapp.md)
     - 数据库
+        - [_数据库](计算机/数据库/_数据库.md)
         - DBMS_Oracle
             - [DBMS_Oracle](计算机/数据库/DBMS_Oracle/DBMS_Oracle.md)
         - DataWarehouse
+            - [_DataWarehouse](计算机/数据库/DataWarehouse/_DataWarehouse.md)
             - [DataWarehouse_MultidimensionalAndDataMiningMode](计算机/数据库/DataWarehouse/DataWarehouse_MultidimensionalAndDataMiningMode.md)
             - [DataWarehouse_TabularMode](计算机/数据库/DataWarehouse/DataWarehouse_TabularMode.md)
             - [DataWarehouse基本知识积累](计算机/数据库/DataWarehouse/DataWarehouse基本知识积累.md)
-            - [_DataWarehouse](计算机/数据库/DataWarehouse/_DataWarehouse.md)
         - NoSQL
+            - [_NoSQL](计算机/数据库/NoSQL/_NoSQL.md)
             - ANDB
+                - [_AdvancedNonrelationalDatabase](计算机/数据库/NoSQL/ANDB/_AdvancedNonrelationalDatabase.md)
                 - BigTable
                     - [BigTable](计算机/数据库/NoSQL/ANDB/BigTable/BigTable.md)
                 - Hadoop
@@ -790,12 +785,11 @@
                     - [Hive](计算机/数据库/NoSQL/ANDB/Hive/Hive.md)
                     - [Hive_DataWarehouse_Example](计算机/数据库/NoSQL/ANDB/Hive/Hive_DataWarehouse_Example.md)
                     - [Hive_Operations](计算机/数据库/NoSQL/ANDB/Hive/Hive_Operations.md)
-                - [_AdvancedNonrelationalDatabase](计算机/数据库/NoSQL/ANDB/_AdvancedNonrelationalDatabase.md)
             - NDB
+                - [_NonrelationalDatabase](计算机/数据库/NoSQL/NDB/_NonrelationalDatabase.md)
                 - [DocumentDatabase](计算机/数据库/NoSQL/NDB/DocumentDatabase.md)
                 - [GraphDatabase_neo4j](计算机/数据库/NoSQL/NDB/GraphDatabase_neo4j.md)
                 - [KeyValueDatabase_Redis](计算机/数据库/NoSQL/NDB/KeyValueDatabase_Redis.md)
-                - [_NonrelationalDatabase](计算机/数据库/NoSQL/NDB/_NonrelationalDatabase.md)
                 - appendix
                     - [MongoDB_Dist_lab1.](计算机/数据库/NoSQL/NDB/appendix/MongoDB_Dist_lab1.pdf)
                     - [MongoDB_Dist_lab2.](计算机/数据库/NoSQL/NDB/appendix/MongoDB_Dist_lab2.pdf)
@@ -803,8 +797,8 @@
                     - [MongoDB_lab2.](计算机/数据库/NoSQL/NDB/appendix/MongoDB_lab2.pdf)
                     - [Mongo_Operations](计算机/数据库/NoSQL/NDB/appendix/Mongo_Operations.md)
                     - [Redis的简单应用_超卖](计算机/数据库/NoSQL/NDB/appendix/Redis的简单应用_超卖.md)
-            - [_NoSQL](计算机/数据库/NoSQL/_NoSQL.md)
         - SQL
+            - [_SQL](计算机/数据库/SQL/_SQL.md)
             - [DateDatetimeTimestamp](计算机/数据库/SQL/DateDatetimeTimestamp.md)
             - [HAVING](计算机/数据库/SQL/HAVING.md)
             - [OVER_PARTITION_ORDER_LEAD_SUM](计算机/数据库/SQL/OVER_PARTITION_ORDER_LEAD_SUM.md)
@@ -813,21 +807,19 @@
             - [SQL基础知识](计算机/数据库/SQL/SQL基础知识.md)
             - [UNIX_TIMESTAMP](计算机/数据库/SQL/UNIX_TIMESTAMP.md)
             - [WindowFunction](计算机/数据库/SQL/WindowFunction.md)
-            - [_SQL](计算机/数据库/SQL/_SQL.md)
             - [limit和offset顺序](计算机/数据库/SQL/limit和offset顺序.md)
             - [mysql](计算机/数据库/SQL/mysql.md)
             - [sum函数](计算机/数据库/SQL/sum函数.md)
             - [unique](计算机/数据库/SQL/unique.md)
             - [索引](计算机/数据库/SQL/索引.md)
-        - [_数据库](计算机/数据库/_数据库.md)
         - [数据库其他知识积累](计算机/数据库/数据库其他知识积累.md)
     - 服务器网络
         - AZURE
+            - [_azure](计算机/服务器网络/AZURE/_azure.md)
             - [AZURE_CLI](计算机/服务器网络/AZURE/AZURE_CLI.md)
             - [AZURE虚拟机保持公共ip](计算机/服务器网络/AZURE/AZURE虚拟机保持公共ip.md)
             - [AZURE虚拟机定时重启](计算机/服务器网络/AZURE/AZURE虚拟机定时重启.md)
             - [CreateAZUREVM](计算机/服务器网络/AZURE/CreateAZUREVM.md)
-            - [_azure](计算机/服务器网络/AZURE/_azure.md)
             - [web_app_service(slot)](计算机/服务器网络/AZURE/web_app_service(slot).md)
             - [重新部署虚拟机](计算机/服务器网络/AZURE/重新部署虚拟机.md)
         - Tencent
@@ -840,10 +832,10 @@
             - [图形化界面和windows远程控制](计算机/服务器网络/云服务器操作知识积累/图形化界面和windows远程控制.md)
             - [物理机与虚拟机文件互传](计算机/服务器网络/云服务器操作知识积累/物理机与虚拟机文件互传.md)
         - 域名和网址以及超文本传输协议
+            - [_域名_网址_超文本传输协议](计算机/服务器网络/域名和网址以及超文本传输协议/_域名_网址_超文本传输协议.md)
             - [GithubPages的DNS解析](计算机/服务器网络/域名和网址以及超文本传输协议/GithubPages的DNS解析.md)
             - [HTML到服务器](计算机/服务器网络/域名和网址以及超文本传输协议/HTML到服务器.md)
             - [QUIC](计算机/服务器网络/域名和网址以及超文本传输协议/QUIC.md)
-            - [_域名_网址_超文本传输协议](计算机/服务器网络/域名和网址以及超文本传输协议/_域名_网址_超文本传输协议.md)
             - [cookie_session_token](计算机/服务器网络/域名和网址以及超文本传输协议/cookie_session_token.md)
             - [header](计算机/服务器网络/域名和网址以及超文本传输协议/header.md)
             - [https和http以及https的申请](计算机/服务器网络/域名和网址以及超文本传输协议/https和http以及https的申请.md)
@@ -866,10 +858,11 @@
                 - [端口映射_端口转发](计算机/服务器网络/服务器/服务器知识积累/端口映射_端口转发.md)
         - [服务器和网络](计算机/服务器网络/服务器和网络.md)
         - 网络攻防
+            - [_网络攻防](计算机/服务器网络/网络攻防/_网络攻防.md)
             - [SQL注入](计算机/服务器网络/网络攻防/SQL注入.md)
             - [SSRF与POST和GET](计算机/服务器网络/网络攻防/SSRF与POST和GET.md)
-            - [_网络攻防](计算机/服务器网络/网络攻防/_网络攻防.md)
         - 计算机网络
+            - [_计算机网络](计算机/服务器网络/计算机网络/_计算机网络.md)
             - [ARP_RARP_IGMP_ICMP](计算机/服务器网络/计算机网络/ARP_RARP_IGMP_ICMP.md)
             - [ASN](计算机/服务器网络/计算机网络/ASN.md)
             - [DHCP](计算机/服务器网络/计算机网络/DHCP.md)
@@ -887,7 +880,6 @@
             - [UDP](计算机/服务器网络/计算机网络/UDP.md)
             - [VLAN_IEEE802_1](计算机/服务器网络/计算机网络/VLAN_IEEE802_1.md)
             - [Wifi](计算机/服务器网络/计算机网络/Wifi.md)
-            - [_计算机网络](计算机/服务器网络/计算机网络/_计算机网络.md)
             - [accept队列](计算机/服务器网络/计算机网络/accept队列.md)
             - [ip](计算机/服务器网络/计算机网络/ip.md)
             - [ipv6](计算机/服务器网络/计算机网络/ipv6.md)
@@ -900,6 +892,7 @@
             - [无标度网络](计算机/服务器网络/计算机网络/无标度网络.md)
             - [物理网卡-子网卡-虚拟VLAN网卡](计算机/服务器网络/计算机网络/物理网卡-子网卡-虚拟VLAN网卡.md)
             - 系统学习_计算机网络
+                - [_系统学习_计算机网络](计算机/服务器网络/计算机网络/系统学习_计算机网络/_系统学习_计算机网络.md)
                 - [01A - CN  Teleinformatics Systems 2022.](计算机/服务器网络/计算机网络/系统学习_计算机网络/01A - CN  Teleinformatics Systems 2022.pdf)
                 - [02A - CN  CN Architectures 2022.](计算机/服务器网络/计算机网络/系统学习_计算机网络/02A - CN  CN Architectures 2022.pdf)
                 - [03A - CN  LAN Characteristics 2022.](计算机/服务器网络/计算机网络/系统学习_计算机网络/03A - CN  LAN Characteristics 2022.pdf)
@@ -913,27 +906,27 @@
                 - [13A - CN TCP  UDP protocols. Flow and congestion control v 2023.](计算机/服务器网络/计算机网络/系统学习_计算机网络/13A - CN TCP  UDP protocols. Flow and congestion control v 2023.pdf)
                 - [14C - Computer Networks-Network security.](计算机/服务器网络/计算机网络/系统学习_计算机网络/14C - Computer Networks-Network security.pdf)
                 - [15C - Computer Networks-Services and applications.](计算机/服务器网络/计算机网络/系统学习_计算机网络/15C - Computer Networks-Services and applications.pdf)
-                - [_系统学习_计算机网络](计算机/服务器网络/计算机网络/系统学习_计算机网络/_系统学习_计算机网络.md)
             - [队头阻塞](计算机/服务器网络/计算机网络/队头阻塞.md)
     - 桌面应用程序开发
+        - [_桌面应用程序开发](计算机/桌面应用程序开发/_桌面应用程序开发.md)
         - Go桌面程序开发
-            - [Fyne-绑定函数绑定值](计算机/桌面应用程序开发/Go桌面程序开发/Fyne-绑定函数绑定值.md)
             - [_Go桌面程序开发](计算机/桌面应用程序开发/Go桌面程序开发/_Go桌面程序开发.md)
+            - [Fyne-绑定函数绑定值](计算机/桌面应用程序开发/Go桌面程序开发/Fyne-绑定函数绑定值.md)
         - MFC
             - [_MFC](计算机/桌面应用程序开发/MFC/_MFC.md)
             - [简介入门](计算机/桌面应用程序开发/MFC/简介入门.md)
         - Python桌面程序开发
-            - [QMutex和QMutexLocker](计算机/桌面应用程序开发/Python桌面程序开发/QMutex和QMutexLocker.md)
             - [_Python桌面程序开发](计算机/桌面应用程序开发/Python桌面程序开发/_Python桌面程序开发.md)
+            - [QMutex和QMutexLocker](计算机/桌面应用程序开发/Python桌面程序开发/QMutex和QMutexLocker.md)
             - [stylesheet_disabled](计算机/桌面应用程序开发/Python桌面程序开发/stylesheet_disabled.md)
         - QT
+            - [_QT](计算机/桌面应用程序开发/QT/_QT.md)
             - [QLabel](计算机/桌面应用程序开发/QT/QLabel.md)
             - [QMainwindo_QWidget_QDialog](计算机/桌面应用程序开发/QT/QMainwindo_QWidget_QDialog.md)
             - [QPushButton](计算机/桌面应用程序开发/QT/QPushButton.md)
             - [Qt坐标系和修改位置move](计算机/桌面应用程序开发/QT/Qt坐标系和修改位置move.md)
             - [Qt控件概览](计算机/桌面应用程序开发/QT/Qt控件概览.md)
             - [SetGeometry](计算机/桌面应用程序开发/QT/SetGeometry.md)
-            - [_QT](计算机/桌面应用程序开发/QT/_QT.md)
             - [close和destroy和deleteLater](计算机/桌面应用程序开发/QT/close和destroy和deleteLater.md)
             - [connect](计算机/桌面应用程序开发/QT/connect.md)
             - [http客户端操作](计算机/桌面应用程序开发/QT/http客户端操作.md)
@@ -954,6 +947,7 @@
             - [自定义信号和槽](计算机/桌面应用程序开发/QT/自定义信号和槽.md)
             - [获取mac和ip地址](计算机/桌面应用程序开发/QT/获取mac和ip地址.md)
         - WPF
+            - [_WPF](计算机/桌面应用程序开发/WPF/_WPF.md)
             - [Binding](计算机/桌面应用程序开发/WPF/Binding.md)
             - [Border](计算机/桌面应用程序开发/WPF/Border.md)
             - [Button](计算机/桌面应用程序开发/WPF/Button.md)
@@ -966,18 +960,17 @@
             - [TextBlock和TextBox](计算机/桌面应用程序开发/WPF/TextBlock和TextBox.md)
             - [Thickness](计算机/桌面应用程序开发/WPF/Thickness.md)
             - [ToggleButton](计算机/桌面应用程序开发/WPF/ToggleButton.md)
-            - [_WPF](计算机/桌面应用程序开发/WPF/_WPF.md)
             - [xaml中的命名空间](计算机/桌面应用程序开发/WPF/xaml中的命名空间.md)
             - [xaml布局](计算机/桌面应用程序开发/WPF/xaml布局.md)
             - [控件使用命名空间内自定义其他控件](计算机/桌面应用程序开发/WPF/控件使用命名空间内自定义其他控件.md)
             - [控件添加函数](计算机/桌面应用程序开发/WPF/控件添加函数.md)
             - [项目输出带多了一层文件夹](计算机/桌面应用程序开发/WPF/项目输出带多了一层文件夹.md)
-        - [_桌面应用程序开发](计算机/桌面应用程序开发/_桌面应用程序开发.md)
     - 游戏
         - Godot
-            - [Godot如何使用本地库](计算机/游戏/Godot/Godot如何使用本地库.md)
             - [_Godot](计算机/游戏/Godot/_Godot.md)
+            - [Godot如何使用本地库](计算机/游戏/Godot/Godot如何使用本地库.md)
         - UE
+            - [_UE](计算机/游戏/UE/_UE.md)
             - UE斯坦福课程
                 - [_UE斯坦福课程](计算机/游戏/UE/UE斯坦福课程/_UE斯坦福课程.md)
                 - [第01章Github](计算机/游戏/UE/UE斯坦福课程/第01章Github.md)
@@ -986,24 +979,23 @@
                 - [第02章03绑定运动输入](计算机/游戏/UE/UE斯坦福课程/第02章03绑定运动输入.md)
                 - [第02章04角色设置](计算机/游戏/UE/UE斯坦福课程/第02章04角色设置.md)
             - UE知识积累
+                - [_KnowledgeAccumulation_UE](计算机/游戏/UE/UE知识积累/_KnowledgeAccumulation_UE.md)
                 - API
+                    - [_API](计算机/游戏/UE/UE知识积累/API/_API.md)
                     - [AddMovementInput](计算机/游戏/UE/UE知识积累/API/AddMovementInput.md)
                     - [CreateDefaultSubobject](计算机/游戏/UE/UE知识积累/API/CreateDefaultSubobject.md)
-                    - [_API](计算机/游戏/UE/UE知识积累/API/_API.md)
                 - [AutoPossessPlayer](计算机/游戏/UE/UE知识积累/AutoPossessPlayer.md)
                 - [GENERATED_BODY()](计算机/游戏/UE/UE知识积累/GENERATED_BODY().md)
                 - [UCLASS()](计算机/游戏/UE/UE知识积累/UCLASS().md)
                 - [UE容器库](计算机/游戏/UE/UE知识积累/UE容器库.md)
                 - [Unreal扩展](计算机/游戏/UE/UE知识积累/Unreal扩展.md)
                 - [XXX_API的类宏定义](计算机/游戏/UE/UE知识积累/XXX_API的类宏定义.md)
-                - [_KnowledgeAccumulation_UE](计算机/游戏/UE/UE知识积累/_KnowledgeAccumulation_UE.md)
                 - [代码规范](计算机/游戏/UE/UE知识积累/代码规范.md)
                 - [修改缓存位置](计算机/游戏/UE/UE知识积累/修改缓存位置.md)
                 - [修改语言](计算机/游戏/UE/UE知识积累/修改语言.md)
                 - [找不到新建的类](计算机/游戏/UE/UE知识积累/找不到新建的类.md)
                 - [生命周期](计算机/游戏/UE/UE知识积累/生命周期.md)
                 - [编辑器基本操作](计算机/游戏/UE/UE知识积累/编辑器基本操作.md)
-            - [_UE](计算机/游戏/UE/_UE.md)
         - Unity
             - DOTS
                 - [DOTS](计算机/游戏/Unity/DOTS/DOTS.md)
@@ -1043,6 +1035,7 @@
                 - [随手记](计算机/游戏/Unity/Unity学习日志/随手记.md)
                 - [随手记.](计算机/游戏/Unity/Unity学习日志/随手记.one)
             - Unity知识积累
+                - [_KnowledgeAccumulation_Unity](计算机/游戏/Unity/Unity知识积累/_KnowledgeAccumulation_Unity.md)
                 - [Cinemachine](计算机/游戏/Unity/Unity知识积累/Cinemachine.md)
                 - [Cloth组件](计算机/游戏/Unity/Unity知识积累/Cloth组件.md)
                 - [CreateAssetMenu](计算机/游戏/Unity/Unity知识积累/CreateAssetMenu.md)
@@ -1050,7 +1043,6 @@
                 - [Tilemap以及随机地图](计算机/游戏/Unity/Unity知识积累/Tilemap以及随机地图.md)
                 - [Transform.LookAt](计算机/游戏/Unity/Unity知识积累/Transform.LookAt.md)
                 - [Update和FixedUpdate](计算机/游戏/Unity/Unity知识积累/Update和FixedUpdate.md)
-                - [_KnowledgeAccumulation_Unity](计算机/游戏/Unity/Unity知识积累/_KnowledgeAccumulation_Unity.md)
                 - [叉积](计算机/游戏/Unity/Unity知识积累/叉积.md)
                 - [基础状态机](计算机/游戏/Unity/Unity知识积累/基础状态机.md)
                 - [投影](计算机/游戏/Unity/Unity知识积累/投影.md)
@@ -1058,8 +1050,8 @@
                 - [获取并控制骨骼](计算机/游戏/Unity/Unity知识积累/获取并控制骨骼.md)
         - XR
             - OpenXR
-                - [XRRig](计算机/游戏/XR/OpenXR/XRRig.md)
                 - [_OpenXR](计算机/游戏/XR/OpenXR/_OpenXR.md)
+                - [XRRig](计算机/游戏/XR/OpenXR/XRRig.md)
             - Vuforia
                 - [_Vuforia](计算机/游戏/XR/Vuforia/_Vuforia.md)
                 - [基础介绍](计算机/游戏/XR/Vuforia/基础介绍.md)
@@ -1084,12 +1076,13 @@
     - 算法
         - [位运算](计算机/算法/位运算.md)
         - 其他算法
+            - [_其他算法](计算机/算法/其他算法/_其他算法.md)
             - [Dijkstra](计算机/算法/其他算法/Dijkstra.md)
             - [Dijkstra_Bellman-Ford](计算机/算法/其他算法/Dijkstra_Bellman-Ford.md)
-            - [_其他算法](计算机/算法/其他算法/_其他算法.md)
             - [凸包算法_Jarvis算法_Graham算法_Andrew算法](计算机/算法/其他算法/凸包算法_Jarvis算法_Graham算法_Andrew算法.md)
             - [最小费用最大流](计算机/算法/其他算法/最小费用最大流.md)
         - 基本算法
+            - [_基本算法](计算机/算法/基本算法/_基本算法.md)
             - [0到2中的另外两个](计算机/算法/基本算法/0到2中的另外两个.md)
             - [2的n次幂](计算机/算法/基本算法/2的n次幂.md)
             - [AC自动机](计算机/算法/基本算法/AC自动机.md)
@@ -1099,7 +1092,6 @@
             - [KMP](计算机/算法/基本算法/KMP.md)
             - [NP问题](计算机/算法/基本算法/NP问题.md)
             - [Tire_前缀树_字典树](计算机/算法/基本算法/Tire_前缀树_字典树.md)
-            - [_基本算法](计算机/算法/基本算法/_基本算法.md)
             - [sliding-window滑动窗口算法](计算机/算法/基本算法/sliding-window滑动窗口算法.md)
             - [二分法](计算机/算法/基本算法/二分法.md)
             - [二进制中1的个数](计算机/算法/基本算法/二进制中1的个数.md)
@@ -1149,12 +1141,12 @@
         - cmake
             - [_cmake](计算机/编译器/cmake/_cmake.md)
         - gcc
+            - [_gcc](计算机/编译器/gcc/_gcc.md)
             - [-I](计算机/编译器/gcc/-I.md)
             - [-Wall](计算机/编译器/gcc/-Wall.md)
             - [-fPIC](计算机/编译器/gcc/-fPIC.md)
             - [-g](计算机/编译器/gcc/-g.md)
             - [-shared](计算机/编译器/gcc/-shared.md)
-            - [_gcc](计算机/编译器/gcc/_gcc.md)
             - [gcc_g++常用命令](计算机/编译器/gcc/gcc_g++常用命令.md)
             - [动态静态链接库](计算机/编译器/gcc/动态静态链接库.md)
         - gdb
@@ -1173,24 +1165,24 @@
             - [编译原理.](计算机/编译器/编译器设计/编译原理.one)
             - [编译器设计](计算机/编译器/编译器设计/编译器设计.md)
     - 网络编程
+        - [_网络编程](计算机/网络编程/_网络编程.md)
         - API
+            - [_API(RPC)](计算机/网络编程/API/_API(RPC).md)
             - GraphQL
                 - [_GraphQL](计算机/网络编程/API/GraphQL/_GraphQL.md)
             - RESTful
                 - [_RESTful](计算机/网络编程/API/RESTful/_RESTful.md)
-            - [_API(RPC)](计算机/网络编程/API/_API(RPC).md)
             - gRPC
-                - [Any类型](计算机/网络编程/API/gRPC/Any类型.md)
                 - [_gRPC](计算机/网络编程/API/gRPC/_gRPC.md)
+                - [Any类型](计算机/网络编程/API/gRPC/Any类型.md)
                 - [map类型设值](计算机/网络编程/API/gRPC/map类型设值.md)
                 - [validation](计算机/网络编程/API/gRPC/validation.md)
                 - [关键字](计算机/网络编程/API/gRPC/关键字.md)
-        - [_网络编程](计算机/网络编程/_网络编程.md)
         - socket
+            - [_socket编程](计算机/网络编程/socket/_socket编程.md)
             - [SOCK_STREAM和SOCK_DGRAM](计算机/网络编程/socket/SOCK_STREAM和SOCK_DGRAM.md)
             - [TCP_in_PHP](计算机/网络编程/socket/TCP_in_PHP.md)
             - [WSAStartup()WSACleanup()](计算机/网络编程/socket/WSAStartup()WSACleanup().md)
-            - [_socket编程](计算机/网络编程/socket/_socket编程.md)
             - [bind()](计算机/网络编程/socket/bind().md)
             - [close()和shutdown()](计算机/网络编程/socket/close()和shutdown().md)
             - [connect()](计算机/网络编程/socket/connect().md)
@@ -1210,7 +1202,9 @@
         - [进程_线程_协程](计算机/计算机原理和操作系统/进程_线程_协程.md)
         - [进程间通信方式](计算机/计算机原理和操作系统/进程间通信方式.md)
     - 计算机图形学
+        - [_计算机图形学](计算机/计算机图形学/_计算机图形学.md)
         - TUM实时计算机图形
+            - [_TUM实时计算机图形](计算机/计算机图形学/TUM实时计算机图形/_TUM实时计算机图形.md)
             - [01Gemoetry](计算机/计算机图形学/TUM实时计算机图形/01Gemoetry.md)
             - [02ProceduralModeling](计算机/计算机图形学/TUM实时计算机图形/02ProceduralModeling.md)
             - [03Shading](计算机/计算机图形学/TUM实时计算机图形/03Shading.md)
@@ -1224,20 +1218,18 @@
             - [13RayTracing](计算机/计算机图形学/TUM实时计算机图形/13RayTracing.md)
             - [14ShadowMapping](计算机/计算机图形学/TUM实时计算机图形/14ShadowMapping.md)
             - [15Billboards](计算机/计算机图形学/TUM实时计算机图形/15Billboards.md)
-            - [_TUM实时计算机图形](计算机/计算机图形学/TUM实时计算机图形/_TUM实时计算机图形.md)
-        - [_计算机图形学](计算机/计算机图形学/_计算机图形学.md)
         - games101
             - [_games101](计算机/计算机图形学/games101/_games101.md)
             - [领域总览](计算机/计算机图形学/games101/领域总览.md)
         - shader
-            - [GLSL基本语法](计算机/计算机图形学/shader/GLSL基本语法.md)
             - [_shader](计算机/计算机图形学/shader/_shader.md)
+            - [GLSL基本语法](计算机/计算机图形学/shader/GLSL基本语法.md)
             - [内置函数](计算机/计算机图形学/shader/内置函数.md)
             - [自我初识shader](计算机/计算机图形学/shader/自我初识shader.md)
         - 计算机图形学知识积累
+            - [_KnowledgeAccumulation_CG](计算机/计算机图形学/计算机图形学知识积累/_KnowledgeAccumulation_CG.md)
             - [ModelMatrix_ViewMatrix_ProjectionMatrix](计算机/计算机图形学/计算机图形学知识积累/ModelMatrix_ViewMatrix_ProjectionMatrix.md)
             - [Ramer-Douglas-Peucker算法](计算机/计算机图形学/计算机图形学知识积累/Ramer-Douglas-Peucker算法.md)
-            - [_KnowledgeAccumulation_CG](计算机/计算机图形学/计算机图形学知识积累/_KnowledgeAccumulation_CG.md)
             - [obj文件格式](计算机/计算机图形学/计算机图形学知识积累/obj文件格式.md)
             - [中心差分法计算法线](计算机/计算机图形学/计算机图形学知识积累/中心差分法计算法线.md)
             - [仿射变换-旋转_平移_缩放_剪切_投影_反射_变换矩阵](计算机/计算机图形学/计算机图形学知识积累/仿射变换-旋转_平移_缩放_剪切_投影_反射_变换矩阵.md)
@@ -1250,10 +1242,10 @@
     - 计算机语言
         - C
             - C知识积累
+                - [_KnowledgeAccumulation_c](计算机/计算机语言/C/C知识积累/_KnowledgeAccumulation_c.md)
                 - [GetMessage_PeekMessage_PostMessage](计算机/计算机语言/C/C知识积累/GetMessage_PeekMessage_PostMessage.md)
                 - [Global和剪切板Clipboard](计算机/计算机语言/C/C知识积累/Global和剪切板Clipboard.md)
                 - [WindowProc原理和CreateWindow](计算机/计算机语言/C/C知识积累/WindowProc原理和CreateWindow.md)
-                - [_KnowledgeAccumulation_c](计算机/计算机语言/C/C知识积累/_KnowledgeAccumulation_c.md)
                 - [exit](计算机/计算机语言/C/C知识积累/exit.md)
                 - [fork](计算机/计算机语言/C/C知识积累/fork.md)
                 - [malloc_realloc_free](计算机/计算机语言/C/C知识积累/malloc_realloc_free.md)
@@ -1270,6 +1262,7 @@
                 - [常量字符串](计算机/计算机语言/C/C知识积累/常量字符串.md)
         - C++
             - C++知识积累
+                - [_KnowledgeAccumulation_cpp](计算机/计算机语言/C++/C++知识积累/_KnowledgeAccumulation_cpp.md)
                 - [&和const的加速](计算机/计算机语言/C++/C++知识积累/&和const的加速.md)
                 - [++的问题](计算机/计算机语言/C++/C++知识积累/++的问题.md)
                 - [C++实现WebBroswer](计算机/计算机语言/C++/C++知识积累/C++实现WebBroswer.md)
@@ -1285,7 +1278,6 @@
                 - [SendMessage()模拟鼠标键盘输入给另一个窗口](计算机/计算机语言/C++/C++知识积累/SendMessage()模拟鼠标键盘输入给另一个窗口.md)
                 - [SetWindowPos和MoveWindow](计算机/计算机语言/C++/C++知识积累/SetWindowPos和MoveWindow.md)
                 - [UTF8到GBK](计算机/计算机语言/C++/C++知识积累/UTF8到GBK.md)
-                - [_KnowledgeAccumulation_cpp](计算机/计算机语言/C++/C++知识积累/_KnowledgeAccumulation_cpp.md)
                 - [accumulate](计算机/计算机语言/C++/C++知识积累/accumulate.md)
                 - [any和variant](计算机/计算机语言/C++/C++知识积累/any和variant.md)
                 - [auto和decltype](计算机/计算机语言/C++/C++知识积累/auto和decltype.md)
@@ -1488,6 +1480,7 @@
                 - [第一章.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/第一章.one)
                 - [第二章.](计算机/计算机语言/CSharp/CSharp基础_B站呵呵老师/第二章.one)
             - CSharp知识积累
+                - [_KnowlegeAccumulation_csharp](计算机/计算机语言/CSharp/CSharp知识积累/_KnowlegeAccumulation_csharp.md)
                 - [$@](计算机/计算机语言/CSharp/CSharp知识积累/$@.md)
                 - [Any](计算机/计算机语言/CSharp/CSharp知识积累/Any.md)
                 - [Assert](计算机/计算机语言/CSharp/CSharp知识积累/Assert.md)
@@ -1496,7 +1489,6 @@
                 - [MessageBox](计算机/计算机语言/CSharp/CSharp知识积累/MessageBox.md)
                 - [Thread和Task区别](计算机/计算机语言/CSharp/CSharp知识积累/Thread和Task区别.md)
                 - [Type](计算机/计算机语言/CSharp/CSharp知识积累/Type.md)
-                - [_KnowlegeAccumulation_csharp](计算机/计算机语言/CSharp/CSharp知识积累/_KnowlegeAccumulation_csharp.md)
                 - [get_set](计算机/计算机语言/CSharp/CSharp知识积累/get_set.md)
                 - [lambda表达式](计算机/计算机语言/CSharp/CSharp知识积累/lambda表达式.md)
                 - [nuget](计算机/计算机语言/CSharp/CSharp知识积累/nuget.md)
@@ -1516,9 +1508,9 @@
                 - [获取屏幕信息](计算机/计算机语言/CSharp/CSharp知识积累/获取屏幕信息.md)
                 - [静态类](计算机/计算机语言/CSharp/CSharp知识积累/静态类.md)
         - Go
+            - [_Go](计算机/计算机语言/Go/_Go.md)
             - [C语言调用](计算机/计算机语言/Go/C语言调用.md)
             - [GOPATH和GOMODULE](计算机/计算机语言/Go/GOPATH和GOMODULE.md)
-            - [_Go](计算机/计算机语言/Go/_Go.md)
             - [append和三个点和slice的取集合](计算机/计算机语言/Go/append和三个点和slice的取集合.md)
             - [cache](计算机/计算机语言/Go/cache.md)
             - [channel](计算机/计算机语言/Go/channel.md)
@@ -1555,6 +1547,7 @@
             - [Java](计算机/计算机语言/Java/Java.md)
             - [Java_IDEA](计算机/计算机语言/Java/Java_IDEA.md)
             - Java知识积累
+                - [_KnowledgeAccumulation_Java](计算机/计算机语言/Java/Java知识积累/_KnowledgeAccumulation_Java.md)
                 - [AQS](计算机/计算机语言/Java/Java知识积累/AQS.md)
                 - [AtomicInteger](计算机/计算机语言/Java/Java知识积累/AtomicInteger.md)
                 - [AtomicReference](计算机/计算机语言/Java/Java知识积累/AtomicReference.md)
@@ -1608,7 +1601,6 @@
                 - [Timer](计算机/计算机语言/Java/Java知识积累/Timer.md)
                 - [UUID](计算机/计算机语言/Java/Java知识积累/UUID.md)
                 - [Vector](计算机/计算机语言/Java/Java知识积累/Vector.md)
-                - [_KnowledgeAccumulation_Java](计算机/计算机语言/Java/Java知识积累/_KnowledgeAccumulation_Java.md)
                 - [add-offer_remove-poll_element-peek](计算机/计算机语言/Java/Java知识积累/add-offer_remove-poll_element-peek.md)
                 - [binarySearch](计算机/计算机语言/Java/Java知识积累/binarySearch.md)
                 - [clone](计算机/计算机语言/Java/Java知识积累/clone.md)
@@ -1669,10 +1661,10 @@
             - JavaScript
                 - [JavaScript](计算机/计算机语言/JavaScript和TypeScript/JavaScript/JavaScript.md)
                 - 知识积累
+                    - [_JavaScriptKnowledgeAccumulation](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/_JavaScriptKnowledgeAccumulation.md)
                     - [!==,===,!=,==](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/!==,===,!=,==.md)
                     - [Proxy和Reflect](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/Proxy和Reflect.md)
                     - [XHR_AJAX_axios发送请求](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/XHR_AJAX_axios发送请求.md)
-                    - [_JavaScriptKnowledgeAccumulation](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/_JavaScriptKnowledgeAccumulation.md)
                     - [alert提示](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/alert提示.md)
                     - [console.log](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/console.log.md)
                     - [dollar符号](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/dollar符号.md)
@@ -1708,6 +1700,7 @@
                     - [问号冒号点感叹号叠加](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/问号冒号点感叹号叠加.md)
                     - [防抖和节流](计算机/计算机语言/JavaScript和TypeScript/JavaScript/知识积累/防抖和节流.md)
                 - 系统学习
+                    - [_JavaScript系统学习](计算机/计算机语言/JavaScript和TypeScript/JavaScript/系统学习/_JavaScript系统学习.md)
                     - [0101JavaScript简介](计算机/计算机语言/JavaScript和TypeScript/JavaScript/系统学习/0101JavaScript简介.md)
                     - [0102规范与手册](计算机/计算机语言/JavaScript和TypeScript/JavaScript/系统学习/0102规范与手册.md)
                     - [0103开发者控制台](计算机/计算机语言/JavaScript和TypeScript/JavaScript/系统学习/0103开发者控制台.md)
@@ -1815,7 +1808,6 @@
                     - [1603事件委托](计算机/计算机语言/JavaScript和TypeScript/JavaScript/系统学习/1603事件委托.md)
                     - [1604浏览器默认行为](计算机/计算机语言/JavaScript和TypeScript/JavaScript/系统学习/1604浏览器默认行为.md)
                     - [1605创建自定义事件](计算机/计算机语言/JavaScript和TypeScript/JavaScript/系统学习/1605创建自定义事件.md)
-                    - [_JavaScript系统学习](计算机/计算机语言/JavaScript和TypeScript/JavaScript/系统学习/_JavaScript系统学习.md)
             - TypeScript
                 - [TypeScript](计算机/计算机语言/JavaScript和TypeScript/TypeScript/TypeScript.md)
                 - 知识积累
@@ -1829,8 +1821,8 @@
         - Markdown
             - [markdown](计算机/计算机语言/Markdown/markdown.md)
         - PHP
-            - [PHP环境搭建](计算机/计算机语言/PHP/PHP环境搭建.md)
             - [_PHP](计算机/计算机语言/PHP/_PHP.md)
+            - [PHP环境搭建](计算机/计算机语言/PHP/PHP环境搭建.md)
             - [array和object的区别](计算机/计算机语言/PHP/array和object的区别.md)
             - [json_decode和json_encode](计算机/计算机语言/PHP/json_decode和json_encode.md)
             - [发送_接收请求](计算机/计算机语言/PHP/发送_接收请求.md)
@@ -1870,10 +1862,10 @@
                 - [基础.](计算机/计算机语言/Python/Python学习日志/基础.one)
                 - [打开笔记本.onet](计算机/计算机语言/Python/Python学习日志/打开笔记本.onetoc2)
             - Python知识积累
+                - [_KnowledgeAccumulation_Python](计算机/计算机语言/Python/Python知识积累/_KnowledgeAccumulation_Python.md)
                 - [None和null](计算机/计算机语言/Python/Python知识积累/None和null.md)
                 - [Python用于html](计算机/计算机语言/Python/Python知识积累/Python用于html.md)
                 - [UI](计算机/计算机语言/Python/Python知识积累/UI.md)
-                - [_KnowledgeAccumulation_Python](计算机/计算机语言/Python/Python知识积累/_KnowledgeAccumulation_Python.md)
                 - [argparse自定义命令行参数](计算机/计算机语言/Python/Python知识积累/argparse自定义命令行参数.md)
                 - [bs4整理html内容](计算机/计算机语言/Python/Python知识积累/bs4整理html内容.md)
                 - [configparser](计算机/计算机语言/Python/Python知识积累/configparser.md)
@@ -1914,9 +1906,9 @@
                 - [雷达图](计算机/计算机语言/Python/Python知识积累/雷达图.md)
                 - [鼠标输入事件](计算机/计算机语言/Python/Python知识积累/鼠标输入事件.md)
         - R
+            - [_KnowledgeAccumulation_R](计算机/计算机语言/R/_KnowledgeAccumulation_R.md)
             - [GIS](计算机/计算机语言/R/GIS.md)
             - [Google_ggmap](计算机/计算机语言/R/Google_ggmap.md)
-            - [_KnowledgeAccumulation_R](计算机/计算机语言/R/_KnowledgeAccumulation_R.md)
             - [dataframe用某列做index](计算机/计算机语言/R/dataframe用某列做index.md)
             - [kmeans_GISMap](计算机/计算机语言/R/kmeans_GISMap.md)
             - [下载包的问题](计算机/计算机语言/R/下载包的问题.md)

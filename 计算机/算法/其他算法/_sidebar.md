@@ -1,6 +1,6 @@
 - [返回上级目录](../_sidebar.md)
+- [_其他算法](_其他算法.md)
 - [Dijkstra](Dijkstra.md)
 - [Dijkstra_Bellman-Ford](Dijkstra_Bellman-Ford.md)
-- [_其他算法](_其他算法.md)
 - [凸包算法_Jarvis算法_Graham算法_Andrew算法](凸包算法_Jarvis算法_Graham算法_Andrew算法.md)
 - [最小费用最大流](最小费用最大流.md)

@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_KnowledgeAccumulation_Java](_KnowledgeAccumulation_Java.md)
 - [AQS](AQS.md)
 - [AtomicInteger](AtomicInteger.md)
 - [AtomicReference](AtomicReference.md)
@@ -52,7 +53,6 @@
 - [Timer](Timer.md)
 - [UUID](UUID.md)
 - [Vector](Vector.md)
-- [_KnowledgeAccumulation_Java](_KnowledgeAccumulation_Java.md)
 - [add-offer_remove-poll_element-peek](add-offer_remove-poll_element-peek.md)
 - [binarySearch](binarySearch.md)
 - [clone](clone.md)

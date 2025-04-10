@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_KnowledgeAccumulation_Vue](_KnowledgeAccumulation_Vue.md)
 - [Build问题](Build问题.md)
 - [ElementPlus上传文件](ElementPlus上传文件.md)
 - [ElementPlus图标icon不显示](ElementPlus图标icon不显示.md)
@@ -8,7 +9,6 @@
 - [ElementPlus表单校验trigger](ElementPlus表单校验trigger.md)
 - [ElementPlus表格排序](ElementPlus表格排序.md)
 - [Vue3的基础export结构](Vue3的基础export结构.md)
-- [_KnowledgeAccumulation_Vue](_KnowledgeAccumulation_Vue.md)
 - [app.component](app.component.md)
 - [axios+vue](axios+vue.md)
 - [computed](computed.md)

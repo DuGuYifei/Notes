@@ -1,5 +1,7 @@
 - [返回上级目录](../_sidebar.md)
+- [_计算机图形学](_计算机图形学.md)
 - TUM实时计算机图形
+    - [_TUM实时计算机图形](TUM实时计算机图形/_TUM实时计算机图形.md)
     - [01Gemoetry](TUM实时计算机图形/01Gemoetry.md)
     - [02ProceduralModeling](TUM实时计算机图形/02ProceduralModeling.md)
     - [03Shading](TUM实时计算机图形/03Shading.md)
@@ -13,20 +15,18 @@
     - [13RayTracing](TUM实时计算机图形/13RayTracing.md)
     - [14ShadowMapping](TUM实时计算机图形/14ShadowMapping.md)
     - [15Billboards](TUM实时计算机图形/15Billboards.md)
-    - [_TUM实时计算机图形](TUM实时计算机图形/_TUM实时计算机图形.md)
-- [_计算机图形学](_计算机图形学.md)
 - games101
     - [_games101](games101/_games101.md)
     - [领域总览](games101/领域总览.md)
 - shader
-    - [GLSL基本语法](shader/GLSL基本语法.md)
     - [_shader](shader/_shader.md)
+    - [GLSL基本语法](shader/GLSL基本语法.md)
     - [内置函数](shader/内置函数.md)
     - [自我初识shader](shader/自我初识shader.md)
 - 计算机图形学知识积累
+    - [_KnowledgeAccumulation_CG](计算机图形学知识积累/_KnowledgeAccumulation_CG.md)
     - [ModelMatrix_ViewMatrix_ProjectionMatrix](计算机图形学知识积累/ModelMatrix_ViewMatrix_ProjectionMatrix.md)
     - [Ramer-Douglas-Peucker算法](计算机图形学知识积累/Ramer-Douglas-Peucker算法.md)
-    - [_KnowledgeAccumulation_CG](计算机图形学知识积累/_KnowledgeAccumulation_CG.md)
     - [obj文件格式](计算机图形学知识积累/obj文件格式.md)
     - [中心差分法计算法线](计算机图形学知识积累/中心差分法计算法线.md)
     - [仿射变换-旋转_平移_缩放_剪切_投影_反射_变换矩阵](计算机图形学知识积累/仿射变换-旋转_平移_缩放_剪切_投影_反射_变换矩阵.md)

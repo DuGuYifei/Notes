@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_深度学习GUT时期](_深度学习GUT时期.md)
 - [AlexNet](AlexNet.md)
 - [BackwardPassPhase](BackwardPassPhase.md)
 - [Dropout随机失活](Dropout随机失活.md)
@@ -15,7 +16,6 @@
 - [TransferLearning](TransferLearning.md)
 - [TransformerModel](TransformerModel.md)
 - [WordEmbeddings](WordEmbeddings.md)
-- [_深度学习GUT时期](_深度学习GUT时期.md)
 - [正则化RegularizationMethod](正则化RegularizationMethod.md)
 - [激活函数](激活函数.md)
 - [计算参数量和输出大小](计算参数量和输出大小.md)

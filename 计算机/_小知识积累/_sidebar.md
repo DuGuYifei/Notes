@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_计算机_小知识积累](_计算机_小知识积累.md)
 - [Excel前N个字节](Excel前N个字节.md)
 - [GrayCode格雷码](GrayCode格雷码.md)
 - [Hyper-v](Hyper-v.md)
@@ -16,7 +17,6 @@
 - [VScode正则表达式替换](VScode正则表达式替换.md)
 - [VS两个项目在同一解决方案下](VS两个项目在同一解决方案下.md)
 - [VS快捷键和特殊语法](VS快捷键和特殊语法.md)
-- [_计算机_小知识积累](_计算机_小知识积累.md)
 - [gh-pages](gh-pages.md)
 - [oh-my-posh](oh-my-posh.md)
 - [powershell编码问题](powershell编码问题.md)

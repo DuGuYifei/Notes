@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_HBase](_HBase.md)
 - [Phoenix](Phoenix.md)
 - [RowKey设计](RowKey设计.md)
-- [_HBase](_HBase.md)
 - [插入数据的key顺序是否影响写入速率](插入数据的key顺序是否影响写入速率.md)

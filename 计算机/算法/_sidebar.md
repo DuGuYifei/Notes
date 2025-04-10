@@ -1,12 +1,13 @@
 - [返回上级目录](../_sidebar.md)
 - [位运算](位运算.md)
 - 其他算法
+    - [_其他算法](其他算法/_其他算法.md)
     - [Dijkstra](其他算法/Dijkstra.md)
     - [Dijkstra_Bellman-Ford](其他算法/Dijkstra_Bellman-Ford.md)
-    - [_其他算法](其他算法/_其他算法.md)
     - [凸包算法_Jarvis算法_Graham算法_Andrew算法](其他算法/凸包算法_Jarvis算法_Graham算法_Andrew算法.md)
     - [最小费用最大流](其他算法/最小费用最大流.md)
 - 基本算法
+    - [_基本算法](基本算法/_基本算法.md)
     - [0到2中的另外两个](基本算法/0到2中的另外两个.md)
     - [2的n次幂](基本算法/2的n次幂.md)
     - [AC自动机](基本算法/AC自动机.md)
@@ -16,7 +17,6 @@
     - [KMP](基本算法/KMP.md)
     - [NP问题](基本算法/NP问题.md)
     - [Tire_前缀树_字典树](基本算法/Tire_前缀树_字典树.md)
-    - [_基本算法](基本算法/_基本算法.md)
     - [sliding-window滑动窗口算法](基本算法/sliding-window滑动窗口算法.md)
     - [二分法](基本算法/二分法.md)
     - [二进制中1的个数](基本算法/二进制中1的个数.md)

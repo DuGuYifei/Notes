@@ -1,6 +1,7 @@
 - [返回上级目录](../_sidebar.md)
 - [_深度学习](_深度学习.md)
 - 深度学习GUT时期
+    - [_深度学习GUT时期](深度学习GUT时期/_深度学习GUT时期.md)
     - [AlexNet](深度学习GUT时期/AlexNet.md)
     - [BackwardPassPhase](深度学习GUT时期/BackwardPassPhase.md)
     - [Dropout随机失活](深度学习GUT时期/Dropout随机失活.md)
@@ -17,12 +18,12 @@
     - [TransferLearning](深度学习GUT时期/TransferLearning.md)
     - [TransformerModel](深度学习GUT时期/TransformerModel.md)
     - [WordEmbeddings](深度学习GUT时期/WordEmbeddings.md)
-    - [_深度学习GUT时期](深度学习GUT时期/_深度学习GUT时期.md)
     - [正则化RegularizationMethod](深度学习GUT时期/正则化RegularizationMethod.md)
     - [激活函数](深度学习GUT时期/激活函数.md)
     - [计算参数量和输出大小](深度学习GUT时期/计算参数量和输出大小.md)
     - [随机初始化权重](深度学习GUT时期/随机初始化权重.md)
 - 深度学习TUM时期
+    - [_深度学习TUM时期](深度学习TUM时期/_深度学习TUM时期.md)
     - [Lecture01-Introduction](深度学习TUM时期/Lecture01-Introduction.md)
     - [Lecture02.1-MLBasics](深度学习TUM时期/Lecture02.1-MLBasics.md)
     - [Lecture02.2-LogisticRegression](深度学习TUM时期/Lecture02.2-LogisticRegression.md)
@@ -39,7 +40,6 @@
     - [Lecture11-RNNsAndTransformers](深度学习TUM时期/Lecture11-RNNsAndTransformers.md)
     - [Lecture11-补充Excerise11-Tokenizer](深度学习TUM时期/Lecture11-补充Excerise11-Tokenizer.md)
     - [Lecture12-AdvancedTopics](深度学习TUM时期/Lecture12-AdvancedTopics.md)
-    - [_深度学习TUM时期](深度学习TUM时期/_深度学习TUM时期.md)
 - 深度学习知识积累
     - [_深度学习知识积累](深度学习知识积累/_深度学习知识积累.md)
     - [转置卷积TransposeConvolution](深度学习知识积累/转置卷积TransposeConvolution.md)

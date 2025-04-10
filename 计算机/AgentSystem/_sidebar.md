@@ -1,9 +1,9 @@
 - [返回上级目录](../_sidebar.md)
 - Jade
+    - [_Jade](Jade/_Jade.md)
     - [AID](Jade/AID.md)
     - [Jade的基本程序关系](Jade/Jade的基本程序关系.md)
     - [MessageTemplate_Match](Jade/MessageTemplate_Match.md)
-    - [_Jade](Jade/_Jade.md)
     - [获取命令行参数](Jade/获取命令行参数.md)
 - Theory
     - [AgentSystem](Theory/AgentSystem.md)

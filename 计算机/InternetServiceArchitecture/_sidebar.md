@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_InternetServiceArchitecture](_InternetServiceArchitecture.md)
 - [01 Spring Platform.](01 Spring Platform.pdf)
 - [02 Spring Data JPA.](02 Spring Data JPA.pdf)
 - [03 Spring MVC - REST Services.](03 Spring MVC - REST Services.pdf)
@@ -13,4 +14,3 @@
 - [13 2022 lecture - Microservices.](13 2022 lecture - Microservices.pdf)
 - [14 2022 lecture - BaaS.](14 2022 lecture - BaaS.pdf)
 - [15 2022 lecture - Summary.](15 2022 lecture - Summary.pdf)
-- [_InternetServiceArchitecture](_InternetServiceArchitecture.md)

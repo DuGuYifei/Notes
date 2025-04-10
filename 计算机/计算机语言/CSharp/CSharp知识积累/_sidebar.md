@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_KnowlegeAccumulation_csharp](_KnowlegeAccumulation_csharp.md)
 - [$@]($@.md)
 - [Any](Any.md)
 - [Assert](Assert.md)
@@ -7,7 +8,6 @@
 - [MessageBox](MessageBox.md)
 - [Thread和Task区别](Thread和Task区别.md)
 - [Type](Type.md)
-- [_KnowlegeAccumulation_csharp](_KnowlegeAccumulation_csharp.md)
 - [get_set](get_set.md)
 - [lambda表达式](lambda表达式.md)
 - [nuget](nuget.md)

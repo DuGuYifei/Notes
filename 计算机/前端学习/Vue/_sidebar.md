@@ -3,6 +3,7 @@
     - [_B站教程笔记](B站教程笔记/_B站教程笔记.md)
 - [Vue](Vue.md)
 - Vue知识积累
+    - [_KnowledgeAccumulation_Vue](Vue知识积累/_KnowledgeAccumulation_Vue.md)
     - [Build问题](Vue知识积累/Build问题.md)
     - [ElementPlus上传文件](Vue知识积累/ElementPlus上传文件.md)
     - [ElementPlus图标icon不显示](Vue知识积累/ElementPlus图标icon不显示.md)
@@ -12,7 +13,6 @@
     - [ElementPlus表单校验trigger](Vue知识积累/ElementPlus表单校验trigger.md)
     - [ElementPlus表格排序](Vue知识积累/ElementPlus表格排序.md)
     - [Vue3的基础export结构](Vue知识积累/Vue3的基础export结构.md)
-    - [_KnowledgeAccumulation_Vue](Vue知识积累/_KnowledgeAccumulation_Vue.md)
     - [app.component](Vue知识积累/app.component.md)
     - [axios+vue](Vue知识积累/axios+vue.md)
     - [computed](Vue知识积累/computed.md)

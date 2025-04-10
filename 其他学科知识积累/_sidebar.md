@@ -2,15 +2,15 @@
 - DigitTechnologyInBusinessCommunication
     - [DigitTechforBusinessCommunication](DigitTechnologyInBusinessCommunication/DigitTechforBusinessCommunication.md)
 - English
+    - [_English](English/_English.md)
     - [BusinessEnglish_VocaularyReview](English/BusinessEnglish_VocaularyReview.md)
     - [Dictionary](English/Dictionary.md)
     - [Grammar](English/Grammar.md)
     - [Phrase](English/Phrase.md)
-    - [_English](English/_English.md)
     - [英文写信](English/英文写信.md)
 - Maths
-    - [Hadamard积](Maths/Hadamard积.md)
     - [_KnowledgeAccumulation_Maths](Maths/_KnowledgeAccumulation_Maths.md)
+    - [Hadamard积](Maths/Hadamard积.md)
     - [z-score归一化](Maths/z-score归一化.md)
     - [乘积的方差](Maths/乘积的方差.md)
     - [二项式定理和组合C的N项和](Maths/二项式定理和组合C的N项和.md)

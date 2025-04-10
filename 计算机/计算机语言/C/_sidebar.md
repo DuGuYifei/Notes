@@ -1,9 +1,9 @@
 - [返回上级目录](../_sidebar.md)
 - C知识积累
+    - [_KnowledgeAccumulation_c](C知识积累/_KnowledgeAccumulation_c.md)
     - [GetMessage_PeekMessage_PostMessage](C知识积累/GetMessage_PeekMessage_PostMessage.md)
     - [Global和剪切板Clipboard](C知识积累/Global和剪切板Clipboard.md)
     - [WindowProc原理和CreateWindow](C知识积累/WindowProc原理和CreateWindow.md)
-    - [_KnowledgeAccumulation_c](C知识积累/_KnowledgeAccumulation_c.md)
     - [exit](C知识积累/exit.md)
     - [fork](C知识积累/fork.md)
     - [malloc_realloc_free](C知识积累/malloc_realloc_free.md)

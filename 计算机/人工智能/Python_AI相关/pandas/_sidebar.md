@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
-- [Series和DataFrame](Series和DataFrame.md)
 - [_pandas](_pandas.md)
+- [Series和DataFrame](Series和DataFrame.md)
 - [df_head](df_head.md)
 - [shape](shape.md)

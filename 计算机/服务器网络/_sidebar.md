@@ -1,10 +1,10 @@
 - [返回上级目录](../_sidebar.md)
 - AZURE
+    - [_azure](AZURE/_azure.md)
     - [AZURE_CLI](AZURE/AZURE_CLI.md)
     - [AZURE虚拟机保持公共ip](AZURE/AZURE虚拟机保持公共ip.md)
     - [AZURE虚拟机定时重启](AZURE/AZURE虚拟机定时重启.md)
     - [CreateAZUREVM](AZURE/CreateAZUREVM.md)
-    - [_azure](AZURE/_azure.md)
     - [web_app_service(slot)](AZURE/web_app_service(slot).md)
     - [重新部署虚拟机](AZURE/重新部署虚拟机.md)
 - Tencent
@@ -17,10 +17,10 @@
     - [图形化界面和windows远程控制](云服务器操作知识积累/图形化界面和windows远程控制.md)
     - [物理机与虚拟机文件互传](云服务器操作知识积累/物理机与虚拟机文件互传.md)
 - 域名和网址以及超文本传输协议
+    - [_域名_网址_超文本传输协议](域名和网址以及超文本传输协议/_域名_网址_超文本传输协议.md)
     - [GithubPages的DNS解析](域名和网址以及超文本传输协议/GithubPages的DNS解析.md)
     - [HTML到服务器](域名和网址以及超文本传输协议/HTML到服务器.md)
     - [QUIC](域名和网址以及超文本传输协议/QUIC.md)
-    - [_域名_网址_超文本传输协议](域名和网址以及超文本传输协议/_域名_网址_超文本传输协议.md)
     - [cookie_session_token](域名和网址以及超文本传输协议/cookie_session_token.md)
     - [header](域名和网址以及超文本传输协议/header.md)
     - [https和http以及https的申请](域名和网址以及超文本传输协议/https和http以及https的申请.md)
@@ -43,10 +43,11 @@
         - [端口映射_端口转发](服务器/服务器知识积累/端口映射_端口转发.md)
 - [服务器和网络](服务器和网络.md)
 - 网络攻防
+    - [_网络攻防](网络攻防/_网络攻防.md)
     - [SQL注入](网络攻防/SQL注入.md)
     - [SSRF与POST和GET](网络攻防/SSRF与POST和GET.md)
-    - [_网络攻防](网络攻防/_网络攻防.md)
 - 计算机网络
+    - [_计算机网络](计算机网络/_计算机网络.md)
     - [ARP_RARP_IGMP_ICMP](计算机网络/ARP_RARP_IGMP_ICMP.md)
     - [ASN](计算机网络/ASN.md)
     - [DHCP](计算机网络/DHCP.md)
@@ -64,7 +65,6 @@
     - [UDP](计算机网络/UDP.md)
     - [VLAN_IEEE802_1](计算机网络/VLAN_IEEE802_1.md)
     - [Wifi](计算机网络/Wifi.md)
-    - [_计算机网络](计算机网络/_计算机网络.md)
     - [accept队列](计算机网络/accept队列.md)
     - [ip](计算机网络/ip.md)
     - [ipv6](计算机网络/ipv6.md)
@@ -77,6 +77,7 @@
     - [无标度网络](计算机网络/无标度网络.md)
     - [物理网卡-子网卡-虚拟VLAN网卡](计算机网络/物理网卡-子网卡-虚拟VLAN网卡.md)
     - 系统学习_计算机网络
+        - [_系统学习_计算机网络](计算机网络/系统学习_计算机网络/_系统学习_计算机网络.md)
         - [01A - CN  Teleinformatics Systems 2022.](计算机网络/系统学习_计算机网络/01A - CN  Teleinformatics Systems 2022.pdf)
         - [02A - CN  CN Architectures 2022.](计算机网络/系统学习_计算机网络/02A - CN  CN Architectures 2022.pdf)
         - [03A - CN  LAN Characteristics 2022.](计算机网络/系统学习_计算机网络/03A - CN  LAN Characteristics 2022.pdf)
@@ -90,5 +91,4 @@
         - [13A - CN TCP  UDP protocols. Flow and congestion control v 2023.](计算机网络/系统学习_计算机网络/13A - CN TCP  UDP protocols. Flow and congestion control v 2023.pdf)
         - [14C - Computer Networks-Network security.](计算机网络/系统学习_计算机网络/14C - Computer Networks-Network security.pdf)
         - [15C - Computer Networks-Services and applications.](计算机网络/系统学习_计算机网络/15C - Computer Networks-Services and applications.pdf)
-        - [_系统学习_计算机网络](计算机网络/系统学习_计算机网络/_系统学习_计算机网络.md)
     - [队头阻塞](计算机网络/队头阻塞.md)

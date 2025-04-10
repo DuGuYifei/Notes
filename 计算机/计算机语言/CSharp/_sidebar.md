@@ -53,6 +53,7 @@
     - [第一章.](CSharp基础_B站呵呵老师/第一章.one)
     - [第二章.](CSharp基础_B站呵呵老师/第二章.one)
 - CSharp知识积累
+    - [_KnowlegeAccumulation_csharp](CSharp知识积累/_KnowlegeAccumulation_csharp.md)
     - [$@](CSharp知识积累/$@.md)
     - [Any](CSharp知识积累/Any.md)
     - [Assert](CSharp知识积累/Assert.md)
@@ -61,7 +62,6 @@
     - [MessageBox](CSharp知识积累/MessageBox.md)
     - [Thread和Task区别](CSharp知识积累/Thread和Task区别.md)
     - [Type](CSharp知识积累/Type.md)
-    - [_KnowlegeAccumulation_csharp](CSharp知识积累/_KnowlegeAccumulation_csharp.md)
     - [get_set](CSharp知识积累/get_set.md)
     - [lambda表达式](CSharp知识积累/lambda表达式.md)
     - [nuget](CSharp知识积累/nuget.md)

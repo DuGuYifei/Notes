@@ -1,7 +1,7 @@
 - [返回上级目录](../_sidebar.md)
+- [_KnowledgeAccumulation_R](_KnowledgeAccumulation_R.md)
 - [GIS](GIS.md)
 - [Google_ggmap](Google_ggmap.md)
-- [_KnowledgeAccumulation_R](_KnowledgeAccumulation_R.md)
 - [dataframe用某列做index](dataframe用某列做index.md)
 - [kmeans_GISMap](kmeans_GISMap.md)
 - [下载包的问题](下载包的问题.md)

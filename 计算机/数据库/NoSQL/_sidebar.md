@@ -1,5 +1,7 @@
 - [返回上级目录](../_sidebar.md)
+- [_NoSQL](_NoSQL.md)
 - ANDB
+    - [_AdvancedNonrelationalDatabase](ANDB/_AdvancedNonrelationalDatabase.md)
     - BigTable
         - [BigTable](ANDB/BigTable/BigTable.md)
     - Hadoop
@@ -16,12 +18,11 @@
         - [Hive](ANDB/Hive/Hive.md)
         - [Hive_DataWarehouse_Example](ANDB/Hive/Hive_DataWarehouse_Example.md)
         - [Hive_Operations](ANDB/Hive/Hive_Operations.md)
-    - [_AdvancedNonrelationalDatabase](ANDB/_AdvancedNonrelationalDatabase.md)
 - NDB
+    - [_NonrelationalDatabase](NDB/_NonrelationalDatabase.md)
     - [DocumentDatabase](NDB/DocumentDatabase.md)
     - [GraphDatabase_neo4j](NDB/GraphDatabase_neo4j.md)
     - [KeyValueDatabase_Redis](NDB/KeyValueDatabase_Redis.md)
-    - [_NonrelationalDatabase](NDB/_NonrelationalDatabase.md)
     - appendix
         - [MongoDB_Dist_lab1.](NDB/appendix/MongoDB_Dist_lab1.pdf)
         - [MongoDB_Dist_lab2.](NDB/appendix/MongoDB_Dist_lab2.pdf)
@@ -29,4 +30,3 @@
         - [MongoDB_lab2.](NDB/appendix/MongoDB_lab2.pdf)
         - [Mongo_Operations](NDB/appendix/Mongo_Operations.md)
         - [Redis的简单应用_超卖](NDB/appendix/Redis的简单应用_超卖.md)
-- [_NoSQL](_NoSQL.md)

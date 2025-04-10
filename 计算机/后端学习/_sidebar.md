@@ -1,16 +1,17 @@
 - [返回上级目录](../_sidebar.md)
 - Architecture
+    - [_Architecture](Architecture/_Architecture.md)
     - [ABAC](Architecture/ABAC.md)
     - [DAC](Architecture/DAC.md)
     - [Kerberos](Architecture/Kerberos.md)
     - [MAC](Architecture/MAC.md)
     - [OAuth](Architecture/OAuth.md)
     - [RBAC](Architecture/RBAC.md)
-    - [_Architecture](Architecture/_Architecture.md)
 - JUnit
     - [_JUnit](JUnit/_JUnit.md)
     - [assert](JUnit/assert.md)
 - JavaEE
+    - [_JavaEE](JavaEE/_JavaEE.md)
     - [EntityManager_EntityManagerFactory](JavaEE/EntityManager_EntityManagerFactory.md)
     - [EntityTransaction](JavaEE/EntityTransaction.md)
     - [JPA](JavaEE/JPA.md)
@@ -18,10 +19,10 @@
     - [JPQL](JavaEE/JPQL.md)
     - [JSP_JSTL](JavaEE/JSP_JSTL.md)
     - [Servlet](JavaEE/Servlet.md)
-    - [_JavaEE](JavaEE/_JavaEE.md)
 - Mybatis
     - [_Mybatis](Mybatis/_Mybatis.md)
 - SpringBoot
+    - [_KnowledgeAccumulation_SpringBoot](SpringBoot/_KnowledgeAccumulation_SpringBoot.md)
     - [@Autowired](SpringBoot/@Autowired.md)
     - [@Basic](SpringBoot/@Basic.md)
     - [@Bean和@Component区别](SpringBoot/@Bean和@Component区别.md)
@@ -70,15 +71,14 @@
     - [ResponseEntity](SpringBoot/ResponseEntity.md)
     - [SpringBoot_MySQL](SpringBoot/SpringBoot_MySQL.md)
     - SpringCloud
-        - [Feign基本使用](SpringBoot/SpringCloud/Feign基本使用.md)
         - [_SpringCloud](SpringBoot/SpringCloud/_SpringCloud.md)
+        - [Feign基本使用](SpringBoot/SpringCloud/Feign基本使用.md)
     - [SpringbootSecurity](SpringBoot/SpringbootSecurity.md)
     - [SpringbootTest](SpringBoot/SpringbootTest.md)
     - [Tomcat_Netty](SpringBoot/Tomcat_Netty.md)
     - [UriComponentsBuilder](SpringBoot/UriComponentsBuilder.md)
     - [Validation](SpringBoot/Validation.md)
     - [ValidatorFactory和validator](SpringBoot/ValidatorFactory和validator.md)
-    - [_KnowledgeAccumulation_SpringBoot](SpringBoot/_KnowledgeAccumulation_SpringBoot.md)
     - [actuator](SpringBoot/actuator.md)
     - [api带文件](SpringBoot/api带文件.md)
     - [cascade](SpringBoot/cascade.md)
@@ -103,24 +103,24 @@
     - [请求的大小和文件大小限制](SpringBoot/请求的大小和文件大小限制.md)
     - [读取sql文件并执行sql语句或文件](SpringBoot/读取sql文件并执行sql语句或文件.md)
 - Swagger
-    - [UI上的一些操作](Swagger/UI上的一些操作.md)
     - [_swagger](Swagger/_swagger.md)
+    - [UI上的一些操作](Swagger/UI上的一些操作.md)
     - [swagger基本使用流程](Swagger/swagger基本使用流程.md)
     - [分组和接口注释](Swagger/分组和接口注释.md)
 - deployment
-    - [CI-CD](deployment/CI-CD.md)
     - [_deployement](deployment/_deployement.md)
+    - [CI-CD](deployment/CI-CD.md)
 - log
     - [_log](log/_log.md)
     - [log4j2](log/log4j2.md)
 - lombok
+    - [_lombok](lombok/_lombok.md)
     - [@AllArgsConstructor@NoArgsConstructor](lombok/@AllArgsConstructor@NoArgsConstructor.md)
     - [@NonNull](lombok/@NonNull.md)
     - [@Singular](lombok/@Singular.md)
     - [@SneakyThrows](lombok/@SneakyThrows.md)
     - [@ToString](lombok/@ToString.md)
     - [Builder和lombok优化](lombok/Builder和lombok优化.md)
-    - [_lombok](lombok/_lombok.md)
 - mvn
     - [_mvn](mvn/_mvn.md)
     - [test和选择-跳过](mvn/test和选择-跳过.md)
@@ -133,12 +133,12 @@
     - [内置的http模块](nodejs/内置的http模块.md)
 - [后端学习](后端学习.md)
 - 小知识积累
+    - [_后端小知识积累](小知识积累/_后端小知识积累.md)
     - [API测试](小知识积累/API测试.md)
     - [DataBufferLimitException_Exceeded_limit_on_max_bytes_to_buffer](小知识积累/DataBufferLimitException_Exceeded_limit_on_max_bytes_to_buffer.md)
-    - [_后端小知识积累](小知识积累/_后端小知识积累.md)
     - [zookeeper](小知识积累/zookeeper.md)
 - 性能测试监控
+    - [_性能测试监控](性能测试监控/_性能测试监控.md)
     - [Grafana](性能测试监控/Grafana.md)
     - [Prometheus](性能测试监控/Prometheus.md)
-    - [_性能测试监控](性能测试监控/_性能测试监控.md)
     - [ab](性能测试监控/ab.md)

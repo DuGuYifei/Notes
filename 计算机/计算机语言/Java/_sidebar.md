@@ -2,6 +2,7 @@
 - [Java](Java.md)
 - [Java_IDEA](Java_IDEA.md)
 - Java知识积累
+    - [_KnowledgeAccumulation_Java](Java知识积累/_KnowledgeAccumulation_Java.md)
     - [AQS](Java知识积累/AQS.md)
     - [AtomicInteger](Java知识积累/AtomicInteger.md)
     - [AtomicReference](Java知识积累/AtomicReference.md)
@@ -55,7 +56,6 @@
     - [Timer](Java知识积累/Timer.md)
     - [UUID](Java知识积累/UUID.md)
     - [Vector](Java知识积累/Vector.md)
-    - [_KnowledgeAccumulation_Java](Java知识积累/_KnowledgeAccumulation_Java.md)
     - [add-offer_remove-poll_element-peek](Java知识积累/add-offer_remove-poll_element-peek.md)
     - [binarySearch](Java知识积累/binarySearch.md)
     - [clone](Java知识积累/clone.md)

@@ -1,13 +1,16 @@
 - [返回上级目录](../_sidebar.md)
+- [_数据库](_数据库.md)
 - DBMS_Oracle
     - [DBMS_Oracle](DBMS_Oracle/DBMS_Oracle.md)
 - DataWarehouse
+    - [_DataWarehouse](DataWarehouse/_DataWarehouse.md)
     - [DataWarehouse_MultidimensionalAndDataMiningMode](DataWarehouse/DataWarehouse_MultidimensionalAndDataMiningMode.md)
     - [DataWarehouse_TabularMode](DataWarehouse/DataWarehouse_TabularMode.md)
     - [DataWarehouse基本知识积累](DataWarehouse/DataWarehouse基本知识积累.md)
-    - [_DataWarehouse](DataWarehouse/_DataWarehouse.md)
 - NoSQL
+    - [_NoSQL](NoSQL/_NoSQL.md)
     - ANDB
+        - [_AdvancedNonrelationalDatabase](NoSQL/ANDB/_AdvancedNonrelationalDatabase.md)
         - BigTable
             - [BigTable](NoSQL/ANDB/BigTable/BigTable.md)
         - Hadoop
@@ -24,12 +27,11 @@
             - [Hive](NoSQL/ANDB/Hive/Hive.md)
             - [Hive_DataWarehouse_Example](NoSQL/ANDB/Hive/Hive_DataWarehouse_Example.md)
             - [Hive_Operations](NoSQL/ANDB/Hive/Hive_Operations.md)
-        - [_AdvancedNonrelationalDatabase](NoSQL/ANDB/_AdvancedNonrelationalDatabase.md)
     - NDB
+        - [_NonrelationalDatabase](NoSQL/NDB/_NonrelationalDatabase.md)
         - [DocumentDatabase](NoSQL/NDB/DocumentDatabase.md)
         - [GraphDatabase_neo4j](NoSQL/NDB/GraphDatabase_neo4j.md)
         - [KeyValueDatabase_Redis](NoSQL/NDB/KeyValueDatabase_Redis.md)
-        - [_NonrelationalDatabase](NoSQL/NDB/_NonrelationalDatabase.md)
         - appendix
             - [MongoDB_Dist_lab1.](NoSQL/NDB/appendix/MongoDB_Dist_lab1.pdf)
             - [MongoDB_Dist_lab2.](NoSQL/NDB/appendix/MongoDB_Dist_lab2.pdf)
@@ -37,8 +39,8 @@
             - [MongoDB_lab2.](NoSQL/NDB/appendix/MongoDB_lab2.pdf)
             - [Mongo_Operations](NoSQL/NDB/appendix/Mongo_Operations.md)
             - [Redis的简单应用_超卖](NoSQL/NDB/appendix/Redis的简单应用_超卖.md)
-    - [_NoSQL](NoSQL/_NoSQL.md)
 - SQL
+    - [_SQL](SQL/_SQL.md)
     - [DateDatetimeTimestamp](SQL/DateDatetimeTimestamp.md)
     - [HAVING](SQL/HAVING.md)
     - [OVER_PARTITION_ORDER_LEAD_SUM](SQL/OVER_PARTITION_ORDER_LEAD_SUM.md)
@@ -47,11 +49,9 @@
     - [SQL基础知识](SQL/SQL基础知识.md)
     - [UNIX_TIMESTAMP](SQL/UNIX_TIMESTAMP.md)
     - [WindowFunction](SQL/WindowFunction.md)
-    - [_SQL](SQL/_SQL.md)
     - [limit和offset顺序](SQL/limit和offset顺序.md)
     - [mysql](SQL/mysql.md)
     - [sum函数](SQL/sum函数.md)
     - [unique](SQL/unique.md)
     - [索引](SQL/索引.md)
-- [_数据库](_数据库.md)
 - [数据库其他知识积累](数据库其他知识积累.md)

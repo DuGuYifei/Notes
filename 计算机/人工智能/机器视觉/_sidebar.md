@@ -1,12 +1,12 @@
 - [返回上级目录](../_sidebar.md)
 - opencv
+    - [_opencv](opencv/_opencv.md)
     - [BGR和RGB](opencv/BGR和RGB.md)
     - [Canny边缘算子](opencv/Canny边缘算子.md)
     - [Mat](opencv/Mat.md)
     - [Mat和numpy的关系以及python屏幕截图并转换成opencv可读的形式](opencv/Mat和numpy的关系以及python屏幕截图并转换成opencv可读的形式.md)
     - [SVM](opencv/SVM.md)
     - [Scalar类_三四元组可选](opencv/Scalar类_三四元组可选.md)
-    - [_opencv](opencv/_opencv.md)
     - [approxPolyDP_多边形拟合](opencv/approxPolyDP_多边形拟合.md)
     - [boundingRect_外接矩形](opencv/boundingRect_外接矩形.md)
     - [c++中添加opencv](opencv/c++中添加opencv.md)

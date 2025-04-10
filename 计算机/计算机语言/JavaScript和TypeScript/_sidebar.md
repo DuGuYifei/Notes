@@ -2,10 +2,10 @@
 - JavaScript
     - [JavaScript](JavaScript/JavaScript.md)
     - 知识积累
+        - [_JavaScriptKnowledgeAccumulation](JavaScript/知识积累/_JavaScriptKnowledgeAccumulation.md)
         - [!==,===,!=,==](JavaScript/知识积累/!==,===,!=,==.md)
         - [Proxy和Reflect](JavaScript/知识积累/Proxy和Reflect.md)
         - [XHR_AJAX_axios发送请求](JavaScript/知识积累/XHR_AJAX_axios发送请求.md)
-        - [_JavaScriptKnowledgeAccumulation](JavaScript/知识积累/_JavaScriptKnowledgeAccumulation.md)
         - [alert提示](JavaScript/知识积累/alert提示.md)
         - [console.log](JavaScript/知识积累/console.log.md)
         - [dollar符号](JavaScript/知识积累/dollar符号.md)
@@ -41,6 +41,7 @@
         - [问号冒号点感叹号叠加](JavaScript/知识积累/问号冒号点感叹号叠加.md)
         - [防抖和节流](JavaScript/知识积累/防抖和节流.md)
     - 系统学习
+        - [_JavaScript系统学习](JavaScript/系统学习/_JavaScript系统学习.md)
         - [0101JavaScript简介](JavaScript/系统学习/0101JavaScript简介.md)
         - [0102规范与手册](JavaScript/系统学习/0102规范与手册.md)
         - [0103开发者控制台](JavaScript/系统学习/0103开发者控制台.md)
@@ -148,7 +149,6 @@
         - [1603事件委托](JavaScript/系统学习/1603事件委托.md)
         - [1604浏览器默认行为](JavaScript/系统学习/1604浏览器默认行为.md)
         - [1605创建自定义事件](JavaScript/系统学习/1605创建自定义事件.md)
-        - [_JavaScript系统学习](JavaScript/系统学习/_JavaScript系统学习.md)
 - TypeScript
     - [TypeScript](TypeScript/TypeScript.md)
     - 知识积累

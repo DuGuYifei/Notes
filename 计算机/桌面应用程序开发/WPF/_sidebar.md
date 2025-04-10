@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_WPF](_WPF.md)
 - [Binding](Binding.md)
 - [Border](Border.md)
 - [Button](Button.md)
@@ -11,7 +12,6 @@
 - [TextBlock和TextBox](TextBlock和TextBox.md)
 - [Thickness](Thickness.md)
 - [ToggleButton](ToggleButton.md)
-- [_WPF](_WPF.md)
 - [xaml中的命名空间](xaml中的命名空间.md)
 - [xaml布局](xaml布局.md)
 - [控件使用命名空间内自定义其他控件](控件使用命名空间内自定义其他控件.md)

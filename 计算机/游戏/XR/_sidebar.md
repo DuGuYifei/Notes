@@ -1,7 +1,7 @@
 - [返回上级目录](../_sidebar.md)
 - OpenXR
-    - [XRRig](OpenXR/XRRig.md)
     - [_OpenXR](OpenXR/_OpenXR.md)
+    - [XRRig](OpenXR/XRRig.md)
 - Vuforia
     - [_Vuforia](Vuforia/_Vuforia.md)
     - [基础介绍](Vuforia/基础介绍.md)

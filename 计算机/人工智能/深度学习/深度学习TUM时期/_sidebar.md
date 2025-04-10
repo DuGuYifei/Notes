@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_深度学习TUM时期](_深度学习TUM时期.md)
 - [Lecture01-Introduction](Lecture01-Introduction.md)
 - [Lecture02.1-MLBasics](Lecture02.1-MLBasics.md)
 - [Lecture02.2-LogisticRegression](Lecture02.2-LogisticRegression.md)
@@ -15,4 +16,3 @@
 - [Lecture11-RNNsAndTransformers](Lecture11-RNNsAndTransformers.md)
 - [Lecture11-补充Excerise11-Tokenizer](Lecture11-补充Excerise11-Tokenizer.md)
 - [Lecture12-AdvancedTopics](Lecture12-AdvancedTopics.md)
-- [_深度学习TUM时期](_深度学习TUM时期.md)

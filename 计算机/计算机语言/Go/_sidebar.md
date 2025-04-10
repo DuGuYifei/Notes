@@ -1,7 +1,7 @@
 - [返回上级目录](../_sidebar.md)
+- [_Go](_Go.md)
 - [C语言调用](C语言调用.md)
 - [GOPATH和GOMODULE](GOPATH和GOMODULE.md)
-- [_Go](_Go.md)
 - [append和三个点和slice的取集合](append和三个点和slice的取集合.md)
 - [cache](cache.md)
 - [channel](channel.md)

@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_DataWarehouse](_DataWarehouse.md)
 - [DataWarehouse_MultidimensionalAndDataMiningMode](DataWarehouse_MultidimensionalAndDataMiningMode.md)
 - [DataWarehouse_TabularMode](DataWarehouse_TabularMode.md)
 - [DataWarehouse基本知识积累](DataWarehouse基本知识积累.md)
-- [_DataWarehouse](_DataWarehouse.md)

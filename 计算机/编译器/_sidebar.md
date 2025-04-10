@@ -4,12 +4,12 @@
 - cmake
     - [_cmake](cmake/_cmake.md)
 - gcc
+    - [_gcc](gcc/_gcc.md)
     - [-I](gcc/-I.md)
     - [-Wall](gcc/-Wall.md)
     - [-fPIC](gcc/-fPIC.md)
     - [-g](gcc/-g.md)
     - [-shared](gcc/-shared.md)
-    - [_gcc](gcc/_gcc.md)
     - [gcc_g++常用命令](gcc/gcc_g++常用命令.md)
     - [动态静态链接库](gcc/动态静态链接库.md)
 - gdb

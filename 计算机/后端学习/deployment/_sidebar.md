@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
-- [CI-CD](CI-CD.md)
 - [_deployement](_deployement.md)
+- [CI-CD](CI-CD.md)

@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_HadoopAdvanced](_HadoopAdvanced.md)
 - [ArrayWritable](ArrayWritable.md)
 - [Configured和Tool](Configured和Tool.md)
 - [HadoopHiveHBaseZookeepergua](HadoopHiveHBaseZookeepergua.md)
@@ -7,7 +8,6 @@
 - [MapReduce流程](MapReduce流程.md)
 - [Mapper和Reducer的泛型](Mapper和Reducer的泛型.md)
 - [WritableComparable接口](WritableComparable接口.md)
-- [_HadoopAdvanced](_HadoopAdvanced.md)
 - [key是重复使用的引用变量](key是重复使用的引用变量.md)
 - [map和reduce执行次数](map和reduce执行次数.md)
 - [map和reduce里context.write有null值](map和reduce里context.write有null值.md)

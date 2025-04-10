@@ -1,4 +1,5 @@
 - [返回上级目录](../_sidebar.md)
+- [_JavaEE](_JavaEE.md)
 - [EntityManager_EntityManagerFactory](EntityManager_EntityManagerFactory.md)
 - [EntityTransaction](EntityTransaction.md)
 - [JPA](JPA.md)
@@ -6,4 +7,3 @@
 - [JPQL](JPQL.md)
 - [JSP_JSTL](JSP_JSTL.md)
 - [Servlet](Servlet.md)
-- [_JavaEE](_JavaEE.md)

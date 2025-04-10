@@ -1,8 +1,8 @@
 - [返回上级目录](../_sidebar.md)
+- [_NonrelationalDatabase](_NonrelationalDatabase.md)
 - [DocumentDatabase](DocumentDatabase.md)
 - [GraphDatabase_neo4j](GraphDatabase_neo4j.md)
 - [KeyValueDatabase_Redis](KeyValueDatabase_Redis.md)
-- [_NonrelationalDatabase](_NonrelationalDatabase.md)
 - appendix
     - [MongoDB_Dist_lab1.](appendix/MongoDB_Dist_lab1.pdf)
     - [MongoDB_Dist_lab2.](appendix/MongoDB_Dist_lab2.pdf)

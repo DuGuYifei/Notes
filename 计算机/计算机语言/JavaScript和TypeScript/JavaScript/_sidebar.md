@@ -1,10 +1,10 @@
 - [返回上级目录](../_sidebar.md)
 - [JavaScript](JavaScript.md)
 - 知识积累
+    - [_JavaScriptKnowledgeAccumulation](知识积累/_JavaScriptKnowledgeAccumulation.md)
     - [!==,===,!=,==](知识积累/!==,===,!=,==.md)
     - [Proxy和Reflect](知识积累/Proxy和Reflect.md)
     - [XHR_AJAX_axios发送请求](知识积累/XHR_AJAX_axios发送请求.md)
-    - [_JavaScriptKnowledgeAccumulation](知识积累/_JavaScriptKnowledgeAccumulation.md)
     - [alert提示](知识积累/alert提示.md)
     - [console.log](知识积累/console.log.md)
     - [dollar符号](知识积累/dollar符号.md)
@@ -40,6 +40,7 @@
     - [问号冒号点感叹号叠加](知识积累/问号冒号点感叹号叠加.md)
     - [防抖和节流](知识积累/防抖和节流.md)
 - 系统学习
+    - [_JavaScript系统学习](系统学习/_JavaScript系统学习.md)
     - [0101JavaScript简介](系统学习/0101JavaScript简介.md)
     - [0102规范与手册](系统学习/0102规范与手册.md)
     - [0103开发者控制台](系统学习/0103开发者控制台.md)
@@ -147,4 +148,3 @@
     - [1603事件委托](系统学习/1603事件委托.md)
     - [1604浏览器默认行为](系统学习/1604浏览器默认行为.md)
     - [1605创建自定义事件](系统学习/1605创建自定义事件.md)
-    - [_JavaScript系统学习](系统学习/_JavaScript系统学习.md)

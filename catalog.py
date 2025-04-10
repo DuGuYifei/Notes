@@ -4,9 +4,9 @@ from pathlib import Path
 def generate_sidebar(path, visible_root):
     ignore_files = {
         "gitp.cmd", "gitp.sh", "gitpf.cmd", "_sidebar.md", "README.md",
-        ".gitignore", ".nojekyll", "catalog.py", "index.html"
+        ".gitignore", ".nojekyll", "catalog.py", "index.html", "CNAME", "_404.md"
     }
-    ignore_dirs = {".git", "_attachments", "MyGameDesign", "images", "vue学习用案例模板"}
+    ignore_dirs = {".obsidian", ".git", "_attachments", "MyGameDesign", "images", "vue学习用案例模板"}
 
     entries = []
     for entry in sorted(os.listdir(path)):

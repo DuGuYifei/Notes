@@ -44,3 +44,6 @@ def generate_sidebar(path, visible_root):
 base_path = Path(".")
 # 调用时，把当前目录作为 base_path，同时 visible_root 也设置为 base_path
 generate_sidebar(base_path, base_path)
+
+# 下载 "https://raw.githubusercontent.com/DuGuYifei/DuGuYifei/main/README.md" 到当前目录 覆盖
+os.system("curl -o README.md https://raw.githubusercontent.com/DuGuYifei/DuGuYifei/main/README.md")

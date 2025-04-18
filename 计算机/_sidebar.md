@@ -563,6 +563,7 @@
     - 前端其他知识积累
         - [_KnowledgeAccumulation_Frontend](前端学习/前端其他知识积累/_KnowledgeAccumulation_Frontend.md)
         - [css形成3d图书](前端学习/前端其他知识积累/css形成3d图书.md)
+        - [favicons的设置](前端学习/前端其他知识积累/favicons的设置.md)
         - [indexedDB](前端学习/前端其他知识积累/indexedDB.md)
         - [readyState](前端学习/前端其他知识积累/readyState.md)
     - [前端学习技能树](前端学习/前端学习技能树.md)

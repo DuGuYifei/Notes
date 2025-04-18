@@ -1,3 +1,12 @@
+- [_navbar](_navbar.md)
+- favicons
+    - [android-chrome-192x192.](favicons/android-chrome-192x192.png)
+    - [android-chrome-512x512.](favicons/android-chrome-512x512.png)
+    - [apple-touch-icon.](favicons/apple-touch-icon.png)
+    - [favicon-16x16.](favicons/favicon-16x16.png)
+    - [favicon-32x32.](favicons/favicon-32x32.png)
+    - [favicon.](favicons/favicon.ico)
+    - [site.webmanif](favicons/site.webmanifest)
 - 其他学科知识积累
     - DigitTechnologyInBusinessCommunication
         - [DigitTechforBusinessCommunication](其他学科知识积累/DigitTechnologyInBusinessCommunication/DigitTechforBusinessCommunication.md)
@@ -598,6 +607,7 @@
         - 前端其他知识积累
             - [_KnowledgeAccumulation_Frontend](计算机/前端学习/前端其他知识积累/_KnowledgeAccumulation_Frontend.md)
             - [css形成3d图书](计算机/前端学习/前端其他知识积累/css形成3d图书.md)
+            - [favicons的设置](计算机/前端学习/前端其他知识积累/favicons的设置.md)
             - [indexedDB](计算机/前端学习/前端其他知识积累/indexedDB.md)
             - [readyState](计算机/前端学习/前端其他知识积累/readyState.md)
         - [前端学习技能树](计算机/前端学习/前端学习技能树.md)

@@ -5,7 +5,7 @@
 
 # Websites
 
-<img src="https://github.com/user-attachments/assets/b62460bf-1f6f-40cb-af17-f371ffed406a" width="50%" align="right" >
+<img src="https://github.com/user-attachments/assets/69945499-d089-4651-89be-4eed23f11872" width="40%" align="right" >
 
 |🌍 My website | [https://about.liuyifei.tech](https://about.liuyifei.tech) |
 | :------------: | :--------------------------------------------------------- |

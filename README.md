@@ -8,7 +8,7 @@
 <img src="https://github.com/user-attachments/assets/69945499-d089-4651-89be-4eed23f11872" width="40%" align="right" style="position: fixed; bottom: 0px; right: 0px; z-index: 1000;" >
 
 |🌍 My website | [https://about.liuyifei.tech](https://about.liuyifei.tech) |
-| :------------: | :--------------------------------------------------------- |
+| :------------ | :--------------------------------------------------------- |
 |🎮 Project blog | [https://project.liuyifei.tech](https://project.liuyifei.tech)|
 |📚 Notes blog | [https://notes.liuyifei.tech](https://notes.liuyifei.tech)|
 |🎖️ Leetcode | [https://leetcode.cn/u/duguyifei/](https://leetcode.cn/u/duguyifei/)|
@@ -89,6 +89,7 @@
 
   ![ChatGPT](https://img.shields.io/badge/-ChatGPT-gray?logo=OPenAI)
   ![Copilot](https://img.shields.io/badge/-Copilot-4f42c6?logo=github)
+  ![ChatGPT](https://img.shields.io/badge/-Claude-gray?logo=Claude)
   ![DeepSeek](https://img.shields.io/badge/-DeepSeek-8ab0f2?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAMFBMVEVHcExNa/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5Na/5glKuKAAAAD3RSTlMA05QmPhvxp+O+dGJWhBD9rd47AAAA0UlEQVQokcWR2RbDIAhEARXXhP//26IYY9o+9pzOQ9C5LkwE+K9CiaTllIfrCJkRReTUWRMyu/VPlKU+rVodOJ+TTvBmwg7Aa83djAAkD3kAXsMg8k6dDehj46LZ9xvZO3+knVIRqaNfSaN4wxGKLWgGr8jjfMRJw/BYM5m6yzKjmYVywL6XzmgRp7N+493WPE3bXltX5nw5ONeFee1941zeqaDivB96vYLGOkby3moO8KSJejfxtPdLG/W82hRslPMBu8rEXOCbQqu1ha/o13oBhAwQQ4gEzPgAAAAASUVORK5CYII=)
 
   ![Nginx](https://img.shields.io/badge/-Nginx-099543?logo=Nginx)

@@ -249,6 +249,9 @@
         - [softmax函数计算时候为什么要减去一个最大值](人工智能/AI算法/softmax函数计算时候为什么要减去一个最大值.md)
         - [网格搜索](人工智能/AI算法/网格搜索.md)
         - [轮廓查找](人工智能/AI算法/轮廓查找.md)
+    - LLM
+        - [_LLM](人工智能/LLM/_LLM.md)
+        - [RAG](人工智能/LLM/RAG.md)
     - OpenAI
         - [_OpenAI](人工智能/OpenAI/_OpenAI.md)
         - [流式](人工智能/OpenAI/流式.md)
@@ -932,6 +935,11 @@
         - [控件添加函数](桌面应用程序开发/WPF/控件添加函数.md)
         - [项目输出带多了一层文件夹](桌面应用程序开发/WPF/项目输出带多了一层文件夹.md)
 - 游戏
+    - [_游戏](游戏/_游戏.md)
+    - GameServer
+        - [_GameServer](游戏/GameServer/_GameServer.md)
+        - [KCP](游戏/GameServer/KCP.md)
+        - [RingBuffer_Disruptor_无锁队列](游戏/GameServer/RingBuffer_Disruptor_无锁队列.md)
     - Godot
         - [_Godot](游戏/Godot/_Godot.md)
         - [Godot如何使用本地库](游戏/Godot/Godot如何使用本地库.md)
@@ -964,7 +972,10 @@
             - [编辑器基本操作](游戏/UE/UE知识积累/编辑器基本操作.md)
     - Unity
         - DOTS
+            - [Authoring](游戏/Unity/DOTS/Authoring.md)
+            - [Collision](游戏/Unity/DOTS/Collision.md)
             - [DOTS](游戏/Unity/DOTS/DOTS.md)
+            - [IJobEntity](游戏/Unity/DOTS/IJobEntity.md)
             - [经验反思](游戏/Unity/DOTS/经验反思.md)
         - [Unity](游戏/Unity/Unity.md)
         - Unity中的MVC思想_唐老狮
@@ -1022,17 +1033,16 @@
             - [_Vuforia](游戏/XR/Vuforia/_Vuforia.md)
             - [基础介绍](游戏/XR/Vuforia/基础介绍.md)
         - [XR](游戏/XR/XR.md)
-    - [游戏](游戏/游戏.md)
     - 游戏引擎制作
         - [_游戏引擎制作](游戏/游戏引擎制作/_游戏引擎制作.md)
     - 游戏设计
+        - [_游戏设计](游戏/游戏设计/_游戏设计.md)
         - [ECS框架](游戏/游戏设计/ECS框架.md)
         - [MDA框架](游戏/游戏设计/MDA框架.md)
         - [MDA框架.](游戏/游戏设计/MDA框架.one)
         - [打开笔记本.onet](游戏/游戏设计/打开笔记本.onetoc2)
         - [游戏分析玩进游戏公司](游戏/游戏设计/游戏分析玩进游戏公司.md)
         - [游戏分析，玩进游戏公司.](游戏/游戏设计/游戏分析，玩进游戏公司.one)
-        - [游戏设计](游戏/游戏设计/游戏设计.md)
     - 特效
         - UnityShader
             - [B站_U5shader着色器.](游戏/特效/UnityShader/B站_U5shader着色器.one)

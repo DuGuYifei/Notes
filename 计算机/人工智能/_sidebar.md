@@ -12,6 +12,9 @@
     - [softmax函数计算时候为什么要减去一个最大值](AI算法/softmax函数计算时候为什么要减去一个最大值.md)
     - [网格搜索](AI算法/网格搜索.md)
     - [轮廓查找](AI算法/轮廓查找.md)
+- LLM
+    - [_LLM](LLM/_LLM.md)
+    - [RAG](LLM/RAG.md)
 - OpenAI
     - [_OpenAI](OpenAI/_OpenAI.md)
     - [流式](OpenAI/流式.md)

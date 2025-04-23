@@ -768,11 +768,11 @@
                 - [Redis的简单应用_超卖](数据库/NoSQL/NDB/appendix/Redis的简单应用_超卖.md)
     - SQL
         - [_SQL](数据库/SQL/_SQL.md)
+        - [CTE_WITH](数据库/SQL/CTE_WITH.md)
         - [DateDatetimeTimestamp](数据库/SQL/DateDatetimeTimestamp.md)
+        - [EXPLAIN查询计划分析](数据库/SQL/EXPLAIN查询计划分析.md)
         - [HAVING](数据库/SQL/HAVING.md)
-        - [OVER_PARTITION_ORDER_LEAD_SUM](数据库/SQL/OVER_PARTITION_ORDER_LEAD_SUM.md)
         - [PreparedStatement](数据库/SQL/PreparedStatement.md)
-        - [ROW_NUMBER](数据库/SQL/ROW_NUMBER.md)
         - [SQL基础知识](数据库/SQL/SQL基础知识.md)
         - [UNIX_TIMESTAMP](数据库/SQL/UNIX_TIMESTAMP.md)
         - [WindowFunction](数据库/SQL/WindowFunction.md)
@@ -780,6 +780,7 @@
         - [mysql](数据库/SQL/mysql.md)
         - [sum函数](数据库/SQL/sum函数.md)
         - [unique](数据库/SQL/unique.md)
+        - [测试与清洗常用语法](数据库/SQL/测试与清洗常用语法.md)
         - [索引](数据库/SQL/索引.md)
     - [数据库其他知识积累](数据库/数据库其他知识积累.md)
 - 服务器网络

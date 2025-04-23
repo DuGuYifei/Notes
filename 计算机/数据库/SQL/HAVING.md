@@ -51,3 +51,17 @@ HAVING
   SUM(CASE WHEN amount < 0 THEN -amount ELSE 0 END) >= 1000
   OR COUNT(CASE WHEN amount < 0 THEN 1 END) >= 5
 ```
+
+```sql
+SELECT customer_id, SUM(amount) AS total
+FROM orders
+GROUP BY customer_id
+WHERE SUM(amount) > 150;   -- ❌ 错误：WHERE 不能用聚合函数
+```
+
+```sql
+SELECT customer_id, SUM(amount) AS total
+FROM orders
+GROUP BY customer_id
+HAVING SUM(amount) > 150;
+```

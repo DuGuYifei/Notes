@@ -53,8 +53,31 @@ Tabular = realtional + multidimensional
 ### Star Schema 星型图式
 要求将模型表分为 维度（dimension） 和 事实（fact）
 
+```
+               dim_date
+                   |
+dim_customer - fct_orders - dim_product
+                   |
+               dim_warehouse
+```
+
 ### Snowflake Schema 雪花图式
+
 它是星型模式的扩展，增加了功能。与星型模式不同，雪花模式中的维度表被规范化为多个相关表。
+
+为什么不用 Snowflake Schema？	
+
+太复杂，JOIN 多，性能低，Star 更适合数据分析
+
+```
+          dim_category
+                 ↑
+             dim_product
+                 ↑
+dim_customer - fact_sales
+                 ↓
+            dim_warehouse
+```
 
 #### 关键点
 它的维度表可以继续分（比如我有书作为维度表，那我还可以每本书有作者作为一个维度表）

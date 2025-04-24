@@ -1,19 +1,19 @@
 # mysql
 
-1. [linux](#linux)
-   1. [安装](#安装)
-   2. [让root远程可访问](#让root远程可访问)
-2. [要允许访问 mysql 端口](#要允许访问-mysql-端口)
-   1. [数据库管理](#数据库管理)
-3. [查询端口号](#查询端口号)
-4. [查询用户](#查询用户)
-5. [数据库管理](#数据库管理-1)
-   1. [备份与回复](#备份与回复)
-   2. [创建与删除内容](#创建与删除内容)
-6. [编程语言连接](#编程语言连接)
-   1. [java](#java)
-7. [docker](#docker)
-8. [reserved words 保留名称](#reserved-words-保留名称)
+- [linux](#linux)
+  - [安装](#安装)
+  - [让root远程可访问](#让root远程可访问)
+- [要允许访问 mysql 端口](#要允许访问-mysql-端口)
+  - [数据库管理](#数据库管理)
+- [查询端口号](#查询端口号)
+- [查询用户](#查询用户)
+- [数据库管理](#数据库管理-1)
+  - [备份与回复](#备份与回复)
+  - [创建与删除内容](#创建与删除内容)
+- [编程语言连接](#编程语言连接)
+  - [java](#java)
+- [docker](#docker)
+- [reserved words 保留名称](#reserved-words-保留名称)
 
 ## linux
 写在前面：
@@ -208,11 +208,11 @@ mysql -u root –p123456 wdg < /home/wdg/wdg.sql
 
 ## 编程语言连接
 ### java
-[JDBC_mysql](../../计算机语言/Java/Java知识积累/JDBC_mysql.md)
-[SpringBoot_MySQL](../../后端学习/SpringBoot/SpringBoot_MySQL.md)
+[JDBC_mysql](../../../计算机语言/Java/Java知识积累/JDBC_mysql.md)
+[SpringBoot_MySQL](../../../后端学习/SpringBoot/SpringBoot_MySQL.md)
 
 ## docker
-[docker mysql](../../Docker/docker_mysql.md)
+[docker mysql](docker_mysql.md)
 
 ## reserved words 保留名称
 [fw_error_www](https://dev.mysql.com/doc/refman/8.0/en/keywords.html)

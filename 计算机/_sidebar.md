@@ -238,6 +238,8 @@
             - [WindowFunction](DataStack/数据库/SQL/WindowFunction.md)
             - [limit和offset顺序](DataStack/数据库/SQL/limit和offset顺序.md)
             - [mysql](DataStack/数据库/SQL/mysql.md)
+            - [postgresql](DataStack/数据库/SQL/postgresql.md)
+            - [postgresql_vs_mysql](DataStack/数据库/SQL/postgresql_vs_mysql.md)
             - [sum函数](DataStack/数据库/SQL/sum函数.md)
             - [unique](DataStack/数据库/SQL/unique.md)
             - [测试与清洗常用语法](DataStack/数据库/SQL/测试与清洗常用语法.md)

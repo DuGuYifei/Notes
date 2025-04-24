@@ -10,6 +10,8 @@
 - [WindowFunction](WindowFunction.md)
 - [limit和offset顺序](limit和offset顺序.md)
 - [mysql](mysql.md)
+- [postgresql](postgresql.md)
+- [postgresql_vs_mysql](postgresql_vs_mysql.md)
 - [sum函数](sum函数.md)
 - [unique](unique.md)
 - [测试与清洗常用语法](测试与清洗常用语法.md)

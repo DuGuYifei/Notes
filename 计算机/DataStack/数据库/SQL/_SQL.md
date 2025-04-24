@@ -3,6 +3,8 @@
 ## 其他
 1. [SQL基础知识](SQL基础知识.md)
 2. [mysql](mysql.md)
+3. [postgresql](postgresql.md)
+4. [postgresql vs mysql](postgresql_vs_mysql.md)
 
 ## 知识积累
 1. [Prepared statement](PreparedStatement.md)

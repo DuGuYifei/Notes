@@ -189,6 +189,8 @@
         - [WindowFunction](数据库/SQL/WindowFunction.md)
         - [limit和offset顺序](数据库/SQL/limit和offset顺序.md)
         - [mysql](数据库/SQL/mysql.md)
+        - [postgresql](数据库/SQL/postgresql.md)
+        - [postgresql_vs_mysql](数据库/SQL/postgresql_vs_mysql.md)
         - [sum函数](数据库/SQL/sum函数.md)
         - [unique](数据库/SQL/unique.md)
         - [测试与清洗常用语法](数据库/SQL/测试与清洗常用语法.md)

@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
-- [_Architecture](_Architecture.md)
+- [_AuthArchitecture](_AuthArchitecture.md)
 - [ABAC](ABAC.md)
 - [DAC](DAC.md)
 - [Kerberos](Kerberos.md)

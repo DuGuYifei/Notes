@@ -639,14 +639,14 @@
         - [readyState](前端学习/前端其他知识积累/readyState.md)
     - [前端学习技能树](前端学习/前端学习技能树.md)
 - 后端学习
-    - Architecture
-        - [_Architecture](后端学习/Architecture/_Architecture.md)
-        - [ABAC](后端学习/Architecture/ABAC.md)
-        - [DAC](后端学习/Architecture/DAC.md)
-        - [Kerberos](后端学习/Architecture/Kerberos.md)
-        - [MAC](后端学习/Architecture/MAC.md)
-        - [OAuth](后端学习/Architecture/OAuth.md)
-        - [RBAC](后端学习/Architecture/RBAC.md)
+    - AuthArchitecture
+        - [_AuthArchitecture](后端学习/AuthArchitecture/_AuthArchitecture.md)
+        - [ABAC](后端学习/AuthArchitecture/ABAC.md)
+        - [DAC](后端学习/AuthArchitecture/DAC.md)
+        - [Kerberos](后端学习/AuthArchitecture/Kerberos.md)
+        - [MAC](后端学习/AuthArchitecture/MAC.md)
+        - [OAuth](后端学习/AuthArchitecture/OAuth.md)
+        - [RBAC](后端学习/AuthArchitecture/RBAC.md)
     - JUnit
         - [_JUnit](后端学习/JUnit/_JUnit.md)
         - [assert](后端学习/JUnit/assert.md)
@@ -750,6 +750,9 @@
     - deployment
         - [_deployement](后端学习/deployment/_deployement.md)
         - [CI-CD](后端学习/deployment/CI-CD.md)
+    - go_architecture
+        - [_go_architecture](后端学习/go_architecture/_go_architecture.md)
+        - [go的架构设计小知识](后端学习/go_architecture/go的架构设计小知识.md)
     - log
         - [_log](后端学习/log/_log.md)
         - [log4j2](后端学习/log/log4j2.md)

@@ -1,12 +1,12 @@
 - [返回上级目录](../_sidebar.md)
-- Architecture
-    - [_Architecture](Architecture/_Architecture.md)
-    - [ABAC](Architecture/ABAC.md)
-    - [DAC](Architecture/DAC.md)
-    - [Kerberos](Architecture/Kerberos.md)
-    - [MAC](Architecture/MAC.md)
-    - [OAuth](Architecture/OAuth.md)
-    - [RBAC](Architecture/RBAC.md)
+- AuthArchitecture
+    - [_AuthArchitecture](AuthArchitecture/_AuthArchitecture.md)
+    - [ABAC](AuthArchitecture/ABAC.md)
+    - [DAC](AuthArchitecture/DAC.md)
+    - [Kerberos](AuthArchitecture/Kerberos.md)
+    - [MAC](AuthArchitecture/MAC.md)
+    - [OAuth](AuthArchitecture/OAuth.md)
+    - [RBAC](AuthArchitecture/RBAC.md)
 - JUnit
     - [_JUnit](JUnit/_JUnit.md)
     - [assert](JUnit/assert.md)
@@ -110,6 +110,9 @@
 - deployment
     - [_deployement](deployment/_deployement.md)
     - [CI-CD](deployment/CI-CD.md)
+- go_architecture
+    - [_go_architecture](go_architecture/_go_architecture.md)
+    - [go的架构设计小知识](go_architecture/go的架构设计小知识.md)
 - log
     - [_log](log/_log.md)
     - [log4j2](log/log4j2.md)

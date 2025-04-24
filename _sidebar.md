@@ -1971,4 +1971,5 @@
         - [java17下载安装](计算机/项目部署/java17下载安装.md)
         - [mysql-docker快速部署](计算机/项目部署/mysql-docker快速部署.md)
         - [nginx-docker快速部署](计算机/项目部署/nginx-docker快速部署.md)
+        - [postgresql-docker快速部署](计算机/项目部署/postgresql-docker快速部署.md)
         - [vim安装](计算机/项目部署/vim安装.md)

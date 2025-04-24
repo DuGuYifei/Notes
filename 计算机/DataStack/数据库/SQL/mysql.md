@@ -14,10 +14,14 @@
   - [java](#java)
 - [docker](#docker)
 - [reserved words 保留名称](#reserved-words-保留名称)
+- [mysql vs postgresql](#mysql-vs-postgresql)
 
 ## linux
+
 写在前面：
+
 host的`%`指的是任何主机的ip，但不包括本机，即localhost和127.0.0.1
+
 ### 安装
 [How To Install MySQL on Ubuntu 20.04  | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
 
@@ -214,5 +218,11 @@ mysql -u root –p123456 wdg < /home/wdg/wdg.sql
 ## docker
 [docker mysql](docker_mysql.md)
 
+[docker快速部署](../../../项目部署/mysql-docker快速部署.md)
+
 ## reserved words 保留名称
 [fw_error_www](https://dev.mysql.com/doc/refman/8.0/en/keywords.html)
+
+## mysql vs postgresql
+
+[postgres vs mysql](./postgresql_vs_mysql.md)

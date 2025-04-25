@@ -11,6 +11,7 @@
     - Maths
         - [_KnowledgeAccumulation_Maths](其他学科知识积累/Maths/_KnowledgeAccumulation_Maths.md)
         - [Hadamard积](其他学科知识积累/Maths/Hadamard积.md)
+        - [modulo常用公式](其他学科知识积累/Maths/modulo常用公式.md)
         - [z-score归一化](其他学科知识积累/Maths/z-score归一化.md)
         - [乘积的方差](其他学科知识积累/Maths/乘积的方差.md)
         - [二项式定理和组合C的N项和](其他学科知识积累/Maths/二项式定理和组合C的N项和.md)

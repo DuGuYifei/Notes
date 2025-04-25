@@ -1,3 +1,4 @@
 - [返回上级目录](../_sidebar.md)
 - [_go_architecture](_go_architecture.md)
+- [GORM](GORM.md)
 - [go的架构设计小知识](go的架构设计小知识.md)

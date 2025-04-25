@@ -754,6 +754,7 @@
         - [CI-CD](后端学习/deployment/CI-CD.md)
     - go_architecture
         - [_go_architecture](后端学习/go_architecture/_go_architecture.md)
+        - [GORM](后端学习/go_architecture/GORM.md)
         - [go的架构设计小知识](后端学习/go_architecture/go的架构设计小知识.md)
     - log
         - [_log](后端学习/log/_log.md)

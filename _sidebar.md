@@ -791,6 +791,8 @@
         - go_architecture
             - [_go_architecture](计算机/后端学习/go_architecture/_go_architecture.md)
             - [GORM](计算机/后端学习/go_architecture/GORM.md)
+            - [Krato经验](计算机/后端学习/go_architecture/Krato经验.md)
+            - [Wire](计算机/后端学习/go_architecture/Wire.md)
             - [go的架构设计小知识](计算机/后端学习/go_architecture/go的架构设计小知识.md)
         - log
             - [_log](计算机/后端学习/log/_log.md)

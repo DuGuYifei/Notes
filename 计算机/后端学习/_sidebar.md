@@ -113,6 +113,8 @@
 - go_architecture
     - [_go_architecture](go_architecture/_go_architecture.md)
     - [GORM](go_architecture/GORM.md)
+    - [Krato经验](go_architecture/Krato经验.md)
+    - [Wire](go_architecture/Wire.md)
     - [go的架构设计小知识](go_architecture/go的架构设计小知识.md)
 - log
     - [_log](log/_log.md)

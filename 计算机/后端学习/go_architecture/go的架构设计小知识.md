@@ -169,4 +169,12 @@ Kratos 是由bilibili开源的 Go 微服务框架，强调现代架构、云原�
 
 > **Kratos 本身就是一个集成了 gRPC、Wire、GORM、Protobuf、配置中心、链路追踪等云原生组件的全功能微服务框架，适合构建高规范、高性能、可扩展的中大型 Go 服务。**
 
+## 其他开源大框架
 
+下面都是微服务框架，不想kratos：
+1. 腾讯有 Tars、Taf
+2. 字节有 Kitex
+3. 美团有 Merlin、后来的 mPaaS
+4. 阿里有 SofaStack
+
+但是字节有一整套的CloudWeGo，包含http请求等。但是，很多东西都要自己装，麻烦，不如学会kratos。

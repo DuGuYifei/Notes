@@ -116,6 +116,7 @@
     - [Krato经验](go_architecture/Krato经验.md)
     - [Wire](go_architecture/Wire.md)
     - [go的架构设计小知识](go_architecture/go的架构设计小知识.md)
+    - [log系统](go_architecture/log系统.md)
 - log
     - [_log](log/_log.md)
     - [log4j2](log/log4j2.md)

@@ -794,6 +794,7 @@
             - [Krato经验](计算机/后端学习/go_architecture/Krato经验.md)
             - [Wire](计算机/后端学习/go_architecture/Wire.md)
             - [go的架构设计小知识](计算机/后端学习/go_architecture/go的架构设计小知识.md)
+            - [log系统](计算机/后端学习/go_architecture/log系统.md)
         - log
             - [_log](计算机/后端学习/log/_log.md)
             - [log4j2](计算机/后端学习/log/log4j2.md)

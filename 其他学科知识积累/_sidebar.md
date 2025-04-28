@@ -8,6 +8,9 @@
     - [Grammar](English/Grammar.md)
     - [Phrase](English/Phrase.md)
     - [英文写信](English/英文写信.md)
+- Germany
+    - [_Germany](Germany/_Germany.md)
+    - [20250427](Germany/20250427.md)
 - Maths
     - [_KnowledgeAccumulation_Maths](Maths/_KnowledgeAccumulation_Maths.md)
     - [Hadamard积](Maths/Hadamard积.md)

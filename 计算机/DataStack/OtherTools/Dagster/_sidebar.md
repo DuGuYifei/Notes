@@ -1,3 +1,4 @@
 - [返回上级目录](../_sidebar.md)
 - [_Dagster](_Dagster.md)
+- [dbt_assets](dbt_assets.md)
 - [基础](基础.md)

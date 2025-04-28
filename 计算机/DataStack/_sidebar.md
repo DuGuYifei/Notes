@@ -132,9 +132,11 @@
     - [_OtherTools](OtherTools/_OtherTools.md)
     - Dagster
         - [_Dagster](OtherTools/Dagster/_Dagster.md)
+        - [dbt_assets](OtherTools/Dagster/dbt_assets.md)
         - [基础](OtherTools/Dagster/基础.md)
     - dbt
         - [_dbt](OtherTools/dbt/_dbt.md)
+        - [materialized](OtherTools/dbt/materialized.md)
         - [基础](OtherTools/dbt/基础.md)
 - 数据库
     - [_数据库](数据库/_数据库.md)

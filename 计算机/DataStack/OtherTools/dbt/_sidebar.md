@@ -1,3 +1,4 @@
 - [返回上级目录](../_sidebar.md)
 - [_dbt](_dbt.md)
+- [materialized](materialized.md)
 - [基础](基础.md)

@@ -181,9 +181,11 @@
         - [_OtherTools](DataStack/OtherTools/_OtherTools.md)
         - Dagster
             - [_Dagster](DataStack/OtherTools/Dagster/_Dagster.md)
+            - [dbt_assets](DataStack/OtherTools/Dagster/dbt_assets.md)
             - [基础](DataStack/OtherTools/Dagster/基础.md)
         - dbt
             - [_dbt](DataStack/OtherTools/dbt/_dbt.md)
+            - [materialized](DataStack/OtherTools/dbt/materialized.md)
             - [基础](DataStack/OtherTools/dbt/基础.md)
     - 数据库
         - [_数据库](DataStack/数据库/_数据库.md)

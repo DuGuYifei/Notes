@@ -2,7 +2,9 @@
 - [_OtherTools](_OtherTools.md)
 - Dagster
     - [_Dagster](Dagster/_Dagster.md)
+    - [dbt_assets](Dagster/dbt_assets.md)
     - [基础](Dagster/基础.md)
 - dbt
     - [_dbt](dbt/_dbt.md)
+    - [materialized](dbt/materialized.md)
     - [基础](dbt/基础.md)

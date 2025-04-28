@@ -8,6 +8,9 @@
         - [Grammar](其他学科知识积累/English/Grammar.md)
         - [Phrase](其他学科知识积累/English/Phrase.md)
         - [英文写信](其他学科知识积累/English/英文写信.md)
+    - Germany
+        - [_Germany](其他学科知识积累/Germany/_Germany.md)
+        - [20250427](其他学科知识积累/Germany/20250427.md)
     - Maths
         - [_KnowledgeAccumulation_Maths](其他学科知识积累/Maths/_KnowledgeAccumulation_Maths.md)
         - [Hadamard积](其他学科知识积累/Maths/Hadamard积.md)
@@ -217,9 +220,11 @@
             - [_OtherTools](计算机/DataStack/OtherTools/_OtherTools.md)
             - Dagster
                 - [_Dagster](计算机/DataStack/OtherTools/Dagster/_Dagster.md)
+                - [dbt_assets](计算机/DataStack/OtherTools/Dagster/dbt_assets.md)
                 - [基础](计算机/DataStack/OtherTools/Dagster/基础.md)
             - dbt
                 - [_dbt](计算机/DataStack/OtherTools/dbt/_dbt.md)
+                - [materialized](计算机/DataStack/OtherTools/dbt/materialized.md)
                 - [基础](计算机/DataStack/OtherTools/dbt/基础.md)
         - 数据库
             - [_数据库](计算机/DataStack/数据库/_数据库.md)

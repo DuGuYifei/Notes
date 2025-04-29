@@ -48,11 +48,11 @@
       },
       // 全文搜索
       search: {
-        depth: 6,
-        noData: "没有搜到!",
-        placeholder: "搜索...",
+        depth: 99,
+        noData: 'No Results',
+        placeholder: 'Type to search',
         // 避免搜索索引冲突,同一域下的多个网站之间
-        // namespace: "website-1",
+        namespace: "https://notes.liuyifei.tech",
       },
       // 底部导航
       pagination: {
@@ -61,44 +61,72 @@
         crossChapter: true,
         crossChapterText: true,
       },
-      plugins: [
-        function reload_page(hook, vm) {
-          // hook.init(function () {
-          //   console.log("init");
-          // });
-          // hook.mounted(function () {
-          //   console.log("mounted");
-          // });
-          // hook.beforeEach(function (markdown) {
-          //   console.log("beforeEach");
-          //   return markdown;
-          // });
-          // hook.afterEach(function (html) {
-          //   console.log("afterEach");
-          //   return html;
-          // });
-          // hook.doneEach(function () {
-          //   console.log("doneEach");
-          // });
-          // hook.ready(function () {
-          //   console.log("ready");
-          // });
+      latex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']], // default
+        displayMath: [['$$', '$$']],               // default
+      }
+      // plugins: [
+      //   function reload_page(hook, vm) {
+      //     // hook.init(function () {
+      //     //   console.log("init");
+      //     // });
+      //     // hook.mounted(function () {
+      //     //   console.log("mounted");
+      //     // });
+      //     // hook.beforeEach(function (markdown) {
+      //     //   console.log("beforeEach");
+      //     //   return markdown;
+      //     // });
+      //     // hook.afterEach(function (html) {
+      //     //   console.log("afterEach");
+      //     //   return html;
+      //     // });
+      //     // hook.doneEach(function () {
+      //     //   console.log("doneEach");
+      //     // });
+      //     // hook.ready(function () {
+      //     //   console.log("ready");
+      //     // });
 
-          hook.beforeEach(function (markdown) {
-            const path = location.pathname;
-            if (/\.[a-z0-9]+(\?.*)?$/i.test(path)) {
-              console.log("刷新界面");
-              location.reload();
-              return;
-            }
-          });
-        },
-      ],
+      //     hook.beforeEach(function (markdown) {
+      //       const path = location.pathname;
+      //       if (/\.[a-z0-9]+(\?.*)?$/i.test(path)) {
+      //         console.log("刷新界面");
+      //         location.reload();
+      //         return markdown;
+      //       }
+      //       return markdown;
+      //     });
+      //   },
+      // ],
     };
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+
+  <!-- 全文搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+  <script>
+    (function () {
+      var myLinkPlugin = function (hook, vm) {
+        hook.beforeEach(function (markdown) {
+          const path = location.pathname;
+          if (/\.[a-z0-9]+(\?.*)?$/i.test(path)) {
+            console.log("刷新界面");
+            location.reload();
+            return markdown;
+          }
+          return markdown;
+        });
+      };
+
+      // Add plugin to docsify's plugin array
+      $docsify = $docsify || {};
+      $docsify.plugins = [].concat(myLinkPlugin, $docsify.plugins || []);
+    })();
+  </script>
 
   <!-- 代码高亮  //unpkg.com/prismjs/components/ -->
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
@@ -122,9 +150,6 @@
   <!-- 底部 上一页下一页 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
-  <!-- 全文搜索 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
-
   <!-- 图片放大缩小 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 
@@ -135,14 +160,9 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 
   <!-- 数学 -->
-  <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
-  <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
-
-  <!-- CDN files for docsify-katex -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-  <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
-
+  <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
+  <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
 </body>
 
 </html>

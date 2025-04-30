@@ -3,6 +3,7 @@
 1. [数据库](./数据库/_数据库.md)
 2. [Big Data](./BigData/_BigData.md)
 3. [Other Tools](./OtherTools/_OtherTools.md)
+4. [DBSAndModernCPUArch](./DBSAndModernCPUArch/DBSAndModernCPUArch.md)
 
 
 “Modern Data Stack”（现代数据栈）是指一组用于现代数据处理与分析的工具集合，通常部署在云端，强调模块化、可扩展性、实时处理和易于协作。下面是按类别列出的完整组件（截至2025年的主流架构）：

@@ -1,3 +1,4 @@
 - [返回上级目录](../_sidebar.md)
 - [_LLM](_LLM.md)
+- [Fine-tuning](Fine-tuning.md)
 - [RAG](RAG.md)

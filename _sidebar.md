@@ -14,6 +14,7 @@
     - Maths
         - [_KnowledgeAccumulation_Maths](其他学科知识积累/Maths/_KnowledgeAccumulation_Maths.md)
         - [Hadamard积](其他学科知识积累/Maths/Hadamard积.md)
+        - [KL散度](其他学科知识积累/Maths/KL散度.md)
         - [modulo常用公式](其他学科知识积累/Maths/modulo常用公式.md)
         - [z-score归一化](其他学科知识积累/Maths/z-score归一化.md)
         - [乘积的方差](其他学科知识积累/Maths/乘积的方差.md)
@@ -362,6 +363,7 @@
             - [轮廓查找](计算机/人工智能/AI算法/轮廓查找.md)
         - LLM
             - [_LLM](计算机/人工智能/LLM/_LLM.md)
+            - [Fine-tuning](计算机/人工智能/LLM/Fine-tuning.md)
             - [RAG](计算机/人工智能/LLM/RAG.md)
         - OpenAI
             - [_OpenAI](计算机/人工智能/OpenAI/_OpenAI.md)

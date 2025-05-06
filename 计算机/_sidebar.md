@@ -323,6 +323,7 @@
         - [轮廓查找](人工智能/AI算法/轮廓查找.md)
     - LLM
         - [_LLM](人工智能/LLM/_LLM.md)
+        - [Fine-tuning](人工智能/LLM/Fine-tuning.md)
         - [RAG](人工智能/LLM/RAG.md)
     - OpenAI
         - [_OpenAI](人工智能/OpenAI/_OpenAI.md)

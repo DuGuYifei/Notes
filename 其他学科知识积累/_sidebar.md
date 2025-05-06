@@ -14,6 +14,7 @@
 - Maths
     - [_KnowledgeAccumulation_Maths](Maths/_KnowledgeAccumulation_Maths.md)
     - [Hadamard积](Maths/Hadamard积.md)
+    - [KL散度](Maths/KL散度.md)
     - [modulo常用公式](Maths/modulo常用公式.md)
     - [z-score归一化](Maths/z-score归一化.md)
     - [乘积的方差](Maths/乘积的方差.md)

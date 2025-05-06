@@ -1,6 +1,7 @@
 - [返回上级目录](../_sidebar.md)
 - [_KnowledgeAccumulation_Maths](_KnowledgeAccumulation_Maths.md)
 - [Hadamard积](Hadamard积.md)
+- [KL散度](KL散度.md)
 - [modulo常用公式](modulo常用公式.md)
 - [z-score归一化](z-score归一化.md)
 - [乘积的方差](乘积的方差.md)

@@ -324,7 +324,11 @@
     - LLM
         - [_LLM](人工智能/LLM/_LLM.md)
         - [Fine-tuning](人工智能/LLM/Fine-tuning.md)
+        - [LoRA](人工智能/LLM/LoRA.md)
         - [RAG](人工智能/LLM/RAG.md)
+        - [padding-truncate](人工智能/LLM/padding-truncate.md)
+        - [pipeline](人工智能/LLM/pipeline.md)
+        - [tokenizer](人工智能/LLM/tokenizer.md)
     - OpenAI
         - [_OpenAI](人工智能/OpenAI/_OpenAI.md)
         - [流式](人工智能/OpenAI/流式.md)

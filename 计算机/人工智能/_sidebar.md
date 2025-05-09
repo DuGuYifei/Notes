@@ -15,7 +15,11 @@
 - LLM
     - [_LLM](LLM/_LLM.md)
     - [Fine-tuning](LLM/Fine-tuning.md)
+    - [LoRA](LLM/LoRA.md)
     - [RAG](LLM/RAG.md)
+    - [padding-truncate](LLM/padding-truncate.md)
+    - [pipeline](LLM/pipeline.md)
+    - [tokenizer](LLM/tokenizer.md)
 - OpenAI
     - [_OpenAI](OpenAI/_OpenAI.md)
     - [流式](OpenAI/流式.md)

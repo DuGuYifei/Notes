@@ -1,8 +1,12 @@
 # LLM
 
-## TUM学期目录
+## 理论
 1. [Fine-tuning](Fine-tuning.md)
+2. [RAG](RAG.md)
 
-## 自学目录
+## 实操
 
-1. [RAG](RAG.md)
+1. [pipeline](pipeline.md)
+2. [tokenizer](tokenizer.md)
+3. [padding](padding-truncate.md)
+4. [LoRA](LoRA.md)

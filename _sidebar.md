@@ -11,6 +11,7 @@
     - Germany
         - [_Germany](其他学科知识积累/Germany/_Germany.md)
         - [20250427](其他学科知识积累/Germany/20250427.md)
+        - [自整理单词本](其他学科知识积累/Germany/自整理单词本.md)
     - Maths
         - [_KnowledgeAccumulation_Maths](其他学科知识积累/Maths/_KnowledgeAccumulation_Maths.md)
         - [Hadamard积](其他学科知识积累/Maths/Hadamard积.md)

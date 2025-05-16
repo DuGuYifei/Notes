@@ -45,3 +45,4 @@
 12. [DockerHub](DockerHub.md)
 13. [gitlab-runner](gitlab-runner.md)
 14. [java_mvn](java_mvn.md)
+15. [不要用latest标签](不要用latest标签.md)

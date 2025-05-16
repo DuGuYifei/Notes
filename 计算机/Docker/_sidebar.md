@@ -20,6 +20,7 @@
 - [java自定义](java自定义.md)
 - [linux快速安装docker](linux快速安装docker.md)
 - [nginx](nginx.md)
+- [不要用latest标签](不要用latest标签.md)
 - [创建反向代理](创建反向代理.md)
 - [容器](容器.md)
 - [挂载硬盘](挂载硬盘.md)

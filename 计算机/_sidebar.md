@@ -1903,6 +1903,7 @@
             - [数组读取的冒号](计算机语言/Python/Python知识积累/数组读取的冒号.md)
             - [文件读写和编码问题](计算机语言/Python/Python知识积累/文件读写和编码问题.md)
             - [星号解包](计算机语言/Python/Python知识积累/星号解包.md)
+            - [最高层依赖查看](计算机语言/Python/Python知识积累/最高层依赖查看.md)
             - [电脑中多个python版本](计算机语言/Python/Python知识积累/电脑中多个python版本.md)
             - [窗口句柄](计算机语言/Python/Python知识积累/窗口句柄.md)
             - [转string的方法](计算机语言/Python/Python知识积累/转string的方法.md)

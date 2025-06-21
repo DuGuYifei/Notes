@@ -658,6 +658,7 @@
         - [数组读取的冒号](Python/Python知识积累/数组读取的冒号.md)
         - [文件读写和编码问题](Python/Python知识积累/文件读写和编码问题.md)
         - [星号解包](Python/Python知识积累/星号解包.md)
+        - [最高层依赖查看](Python/Python知识积累/最高层依赖查看.md)
         - [电脑中多个python版本](Python/Python知识积累/电脑中多个python版本.md)
         - [窗口句柄](Python/Python知识积累/窗口句柄.md)
         - [转string的方法](Python/Python知识积累/转string的方法.md)

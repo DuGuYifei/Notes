@@ -1946,6 +1946,10 @@
         - [超文本](计算机语言/超文本/超文本.md)
 - 项目部署
     - [_项目部署](项目部署/_项目部署.md)
+    - [Ansible](项目部署/Ansible.md)
+    - [BitbucketPipeline](项目部署/BitbucketPipeline.md)
+    - [GithubActions](项目部署/GithubActions.md)
+    - [Terraform](项目部署/Terraform.md)
     - [java17下载安装](项目部署/java17下载安装.md)
     - [mysql-docker快速部署](项目部署/mysql-docker快速部署.md)
     - [nginx-docker快速部署](项目部署/nginx-docker快速部署.md)

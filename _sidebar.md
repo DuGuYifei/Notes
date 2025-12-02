@@ -1014,6 +1014,8 @@
             - [Godot如何使用本地库](计算机/游戏/Godot/Godot如何使用本地库.md)
         - UE
             - [_UE](计算机/游戏/UE/_UE.md)
+            - Gameplay框架入门指南
+                - [_Gameplay框架入门指南](计算机/游戏/UE/Gameplay框架入门指南/_Gameplay框架入门指南.md)
             - UE斯坦福课程
                 - [_UE斯坦福课程](计算机/游戏/UE/UE斯坦福课程/_UE斯坦福课程.md)
                 - [第01章Github](计算机/游戏/UE/UE斯坦福课程/第01章Github.md)

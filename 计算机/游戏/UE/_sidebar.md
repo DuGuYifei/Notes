@@ -1,5 +1,7 @@
 - [返回上级目录](../_sidebar.md)
 - [_UE](_UE.md)
+- Gameplay框架入门指南
+    - [_Gameplay框架入门指南](Gameplay框架入门指南/_Gameplay框架入门指南.md)
 - UE斯坦福课程
     - [_UE斯坦福课程](UE斯坦福课程/_UE斯坦福课程.md)
     - [第01章Github](UE斯坦福课程/第01章Github.md)

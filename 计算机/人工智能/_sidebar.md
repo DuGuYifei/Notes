@@ -12,6 +12,9 @@
     - [softmax函数计算时候为什么要减去一个最大值](AI算法/softmax函数计算时候为什么要减去一个最大值.md)
     - [网格搜索](AI算法/网格搜索.md)
     - [轮廓查找](AI算法/轮廓查找.md)
+- AgentGoogleWhitepaper
+    - [AgentGoogleWhitepaper](AgentGoogleWhitepaper/AgentGoogleWhitepaper.md)
+    - [Introduction_to_Agents_Whitepaper](AgentGoogleWhitepaper/Introduction_to_Agents_Whitepaper.md)
 - LLM
     - [_LLM](LLM/_LLM.md)
     - [Fine-tuning](LLM/Fine-tuning.md)

@@ -13,11 +13,13 @@
     - [网格搜索](AI算法/网格搜索.md)
     - [轮廓查找](AI算法/轮廓查找.md)
 - AgentGoogleWhitepaper
-    - [AgentGoogleWhitepaper](AgentGoogleWhitepaper/AgentGoogleWhitepaper.md)
-    - [Introduction_to_Agents_Whitepaper](AgentGoogleWhitepaper/Introduction_to_Agents_Whitepaper.md)
+    - [_AgentGoogleWhitepaper](AgentGoogleWhitepaper/_AgentGoogleWhitepaper.md)
+    - [01_Introduction_to_Agents_Whitepaper](AgentGoogleWhitepaper/01_Introduction_to_Agents_Whitepaper.md)
+    - [02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper](AgentGoogleWhitepaper/02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper.md)
 - LLM
     - [_LLM](LLM/_LLM.md)
     - [Fine-tuning](LLM/Fine-tuning.md)
+    - [GraphRAG](LLM/GraphRAG.md)
     - [LoRA](LLM/LoRA.md)
     - [RAG](LLM/RAG.md)
     - [padding-truncate](LLM/padding-truncate.md)

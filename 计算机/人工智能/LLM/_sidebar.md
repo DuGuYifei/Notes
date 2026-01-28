@@ -1,6 +1,7 @@
 - [返回上级目录](../_sidebar.md)
 - [_LLM](_LLM.md)
 - [Fine-tuning](Fine-tuning.md)
+- [GraphRAG](GraphRAG.md)
 - [LoRA](LoRA.md)
 - [RAG](RAG.md)
 - [padding-truncate](padding-truncate.md)

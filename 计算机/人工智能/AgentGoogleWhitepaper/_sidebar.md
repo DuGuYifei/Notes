@@ -1,3 +1,4 @@
 - [返回上级目录](../_sidebar.md)
-- [AgentGoogleWhitepaper](AgentGoogleWhitepaper.md)
-- [Introduction_to_Agents_Whitepaper](Introduction_to_Agents_Whitepaper.md)
+- [_AgentGoogleWhitepaper](_AgentGoogleWhitepaper.md)
+- [01_Introduction_to_Agents_Whitepaper](01_Introduction_to_Agents_Whitepaper.md)
+- [02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper](02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper.md)

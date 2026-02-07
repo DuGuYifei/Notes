@@ -17,6 +17,7 @@
 - [VScode正则表达式替换](VScode正则表达式替换.md)
 - [VS两个项目在同一解决方案下](VS两个项目在同一解决方案下.md)
 - [VS快捷键和特殊语法](VS快捷键和特殊语法.md)
+- [attrib文件夹显示和隐藏](attrib文件夹显示和隐藏.md)
 - [gh-pages](gh-pages.md)
 - [oh-my-posh](oh-my-posh.md)
 - [powershell编码问题](powershell编码问题.md)

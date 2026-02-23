@@ -56,6 +56,8 @@ $$\vec{N_v}=\sum_{i=1}^{k}\vec{N_i}/||\sum_{i=1}^{k}\vec{N_i}||$$
 
 ### 3.1. Lambert反射模型-漫反射
 
+Lambert只考虑漫反射。
+
 Lambert反射模型：表面朝向和光线朝向之间的夹角越小，反射光越强。
 
 有效照亮面积: dA = dA´ / cosθ

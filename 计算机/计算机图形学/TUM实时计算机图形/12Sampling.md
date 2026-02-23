@@ -1,8 +1,25 @@
 # 12 Sampling
 
-## Sampling and Aliasing 采样和走样
+- [1. Sampling and Aliasing 采样和走样](#1-sampling-and-aliasing-采样和走样)
+  - [1.1. 采样案例](#11-采样案例)
+  - [1.2. 走样的影响](#12-走样的影响)
+  - [1.3. 如何避免因信号下采样导致的走样问题](#13-如何避免因信号下采样导致的走样问题)
+- [2. 超采样 Supersampling](#2-超采样-supersampling)
+  - [2.1. Jittered Random Sampling vs Uniform supersampling](#21-jittered-random-sampling-vs-uniform-supersampling)
+  - [2.2. 颠簸随机采样vs泊松盘采样](#22-颠簸随机采样vs泊松盘采样)
+- [3. 预过滤 Prefiltering](#3-预过滤-prefiltering)
+  - [3.1. Texture minification - mipmapping](#31-texture-minification---mipmapping)
+    - [3.1.1. Pixel to texel ratial 像素到纹理元素比例](#311-pixel-to-texel-ratial-像素到纹理元素比例)
+    - [3.1.2. 如何选择正确的细节级别](#312-如何选择正确的细节级别)
+    - [3.1.3. Trilinear interpolation 三线性插值](#313-trilinear-interpolation-三线性插值)
+    - [3.1.4. 比较有无mipmap的区别](#314-比较有无mipmap的区别)
+    - [3.1.5. Anisotropic Filtering](#315-anisotropic-filtering)
+- [4. 小结](#4-小结)
 
-### 采样案例
+
+## 1. Sampling and Aliasing 采样和走样
+
+### 1.1. 采样案例
 * example 1
     ![alt text](_attachments/12Sampling/image.png)
 * example 2
@@ -19,7 +36,7 @@
     ![alt text](_attachments/12Sampling/image-3.png)
 
 
-### 走样的影响
+### 1.2. 走样的影响
 
 * 空间走样（Spatial aliasing）：图中示例显示了理想的连续信号和通过不足采样得到的信号，展示了因采样率不够高而引起的空间走样效果。这通常会导致图像中出现锯齿状的边缘。
   * ![alt text](_attachments/12Sampling/image-4.png)
@@ -28,12 +45,12 @@
 
 理解：空间走样就是本来这里起起伏伏，但是采样少了，起伏少了。时间走样就是本来很流畅的旋转，缺帧了，看起来瞬移。
 
-### 如何避免因信号下采样导致的走样问题
+### 1.3. 如何避免因信号下采样导致的走样问题
 
 * 超采样（Supersampling）：通过增加采样频率来解决，即在同一区域内采集更多的样本点，从而更精细地重建图像，减少走样。
 * 预过滤（Prefiltering）：在采样之前降低信号中的最高频率，通常通过一个滤波器来实现，以去除那些可能导致走样的高频成分，再进行采样处理。
 
-## 超采样 Supersampling
+## 2. 超采样 Supersampling
 
 超采样是一种通过在每个像素内采样多个片段(fragments)来增加采样密度的技术，从而实现视觉上的高分辨率效果。这种方法虚拟地增加了视口的分辨率。
 
@@ -54,20 +71,20 @@
     * ![alt text](_attachments/12Sampling/image-9.png)
   * ![alt text](_attachments/12Sampling/image-10.png)
 
-### Jittered Random Sampling vs Uniform supersampling
+### 2.1. Jittered Random Sampling vs Uniform supersampling
 ![alt text](_attachments/12Sampling/image-11.png)
 
 * 颠簸采样通过在每个格子内随机放置采样点，尝试覆盖更广的区域，以此减少走样并提高图像质量。
 * 均匀采样则是在每个像素内以固定的间隔放置采样点，虽然方法简单且易于实现，但在处理复杂图像时可能不如颠簸采样效果好。
 
-### 颠簸随机采样vs泊松盘采样
+### 2.2. 颠簸随机采样vs泊松盘采样
 
 1. Poisson-disk sampling
    1. **随机生成采样点，但限制采样点之间的最小距离**。这种方法确保了采样点之间不会太近，从而避免过度集中和潜在的图案重复，使采样分布更加均匀和自然。
 2. Jittered random sampling
    1. **像素区域进行规则分割，每个分割区域内随机选择一个采样点**。这种方式相较于完全随机采样，通过规则分区来保证了采样的均匀性，避免了采样点过于集中或稀疏的问题。
 
-## 预过滤 Prefiltering
+## 3. 预过滤 Prefiltering
 
 * 降低texture的频率，而不是提高采样频率。
 * 通过平滑处理（滤波）信号，生成逐渐去除细节的多个版本。
@@ -79,7 +96,7 @@
 * 中间图像（StDev = 3）：应用了中等程度的高斯模糊（标准差为3）。这种模糊程度使图像细节开始变得不那么锐利，但仍保留了大部分的结构。
 * 底部图像（StDev = 10）：应用了更强烈的高斯模糊（标准差为10），导致更多细节被模糊处理，色彩过渡变得更加柔和。
 
-### Texture minification - mipmapping
+### 3.1. Texture minification - mipmapping
 
 * Mipmapping是一种纹理预过滤技术。
 * MIP：拉丁语“multum in parvo”，意为“小中见多”，形象地描述了这种技术在小空间内储存多个细节层次的特点。
@@ -96,7 +113,7 @@
 2. usage
    1. 当一个片段（fragment）进行纹理映射时，会计算出在该像素视野下哪个Mipmap级别的一个纹理元素代表了与初始纹理元素数量相同的视觉信息。然后从这个级别开始采样纹理。
 
-#### Pixel to texel ratial 像素到纹理元素比例
+#### 3.1.1. Pixel to texel ratial 像素到纹理元素比例
 
 1. 这个比率描述的是通过一个像素所能看到的纹理元素（texels）的数量，这个数量取决于纹理的分辨率以及纹理化多边形到观察平面的距离。
 
@@ -115,14 +132,14 @@
 
 * 左侧图示：展示了一个多边形在斜视角下的纹理映射。在这种视角下，一个像素可能覆盖更多的纹理元素。
 
-#### 如何选择正确的细节级别
+#### 3.1.2. 如何选择正确的细节级别
 
 * 一个图像的像素覆盖了纹理上的一个区域：当这个像素投影到纹理化的多边形上时，它包括了多个纹理元素（texels）。
 * 目标：大致确定多少纹理影响一个像素的空间。
 
 ![alt text](_attachments/12Sampling/image-16.png)
 
-#### Trilinear interpolation 三线性插值
+#### 3.1.3. Trilinear interpolation 三线性插值
 
 * 使用像素区域的投影来计算“细节级别”：通过将像素的区域投影到纹理上，可以计算出所需的细节级别（Level of Detail, LOD）变量 d：使用一个**浮点数变量d表示不同级别之间的位置**。这个变量可以帮助选择两个连续的Mipmap级别进行插值。
 * 目标：实现至少1:1的像素到纹理元素比率，保证图像的清晰度。
@@ -137,7 +154,7 @@
 3. 好像还可以直接通过距离来算，比如level 0 是 100米，level 1 是 200米，那么160米的距离就用level 0.6。
 4. 理解：0.4 * level 0 的双线性插值结果 + 0.6 * level 1 的双线性插值结果
 
-#### 比较有无mipmap的区别
+#### 3.1.4. 比较有无mipmap的区别
 
 ![alt text](_attachments/12Sampling/image-17.png)
 
@@ -151,7 +168,7 @@
 
 Colored Mipmaps：使用彩色Mipmaps来标识不同层级的Mipmap，有助于理解在渲染过程中各个Mipmap级别的使用情况。这种方法通常用于开发阶段，以便观察和调试Mipmap的选择和应用。
 
-#### Anisotropic Filtering
+#### 3.1.5. Anisotropic Filtering
 
 各向异性过滤 - 比如 terrain rendering
 
@@ -161,7 +178,7 @@ Colored Mipmaps：使用彩色Mipmaps来标识不同层级的Mipmap，有助于�
 * 右侧图像则展示了应用了各向异性过滤技术的地形渲染效果。各向异性过滤是一种纹理过滤技术，特别**适用于从低角度观察纹理**时，如地平线或道路表面，能**显著改善远距离和斜视角下的纹理质量**。
 * 与Mipmapping相比，各向异性过滤提供更清晰和详细的纹理表现，尤其是在视线方向和纹理对齐较低的角度。红圈标出的区域明显显示了地形细节，包括道路和田野的边界，比左侧的Mipmapping图像更为清晰和丰富。
 
-## 小结
+## 4. 小结
 
 * 每个通过所有测试的片段会与颜色缓冲区中的当前值混合。
 * 它会在颜色缓冲区留下一个 RGBA 值和在深度缓冲区留下一个深度值

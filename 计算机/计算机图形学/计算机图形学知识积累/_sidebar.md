@@ -2,6 +2,7 @@
 - [_KnowledgeAccumulation_CG](_KnowledgeAccumulation_CG.md)
 - [ModelMatrix_ViewMatrix_ProjectionMatrix](ModelMatrix_ViewMatrix_ProjectionMatrix.md)
 - [Ramer-Douglas-Peucker算法](Ramer-Douglas-Peucker算法.md)
+- [RayTracing基础](RayTracing基础.md)
 - [obj文件格式](obj文件格式.md)
 - [vertex什么时候存储多个](vertex什么时候存储多个.md)
 - [中心差分法计算法线](中心差分法计算法线.md)

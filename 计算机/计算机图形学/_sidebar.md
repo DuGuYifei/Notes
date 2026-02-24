@@ -2,6 +2,9 @@
 - [_计算机图形学](_计算机图形学.md)
 - TUM图像合成
     - [_TUM图像合成](TUM图像合成/_TUM图像合成.md)
+    - [00CourseOutline](TUM图像合成/00CourseOutline.md)
+    - [01-1OutlookAndRecapI](TUM图像合成/01-1OutlookAndRecapI.md)
+    - [01-2RecapII](TUM图像合成/01-2RecapII.md)
 - TUM实时计算机图形
     - [_TUM实时计算机图形](TUM实时计算机图形/_TUM实时计算机图形.md)
     - [01Gemoetry](TUM实时计算机图形/01Gemoetry.md)
@@ -29,6 +32,7 @@
     - [_KnowledgeAccumulation_CG](计算机图形学知识积累/_KnowledgeAccumulation_CG.md)
     - [ModelMatrix_ViewMatrix_ProjectionMatrix](计算机图形学知识积累/ModelMatrix_ViewMatrix_ProjectionMatrix.md)
     - [Ramer-Douglas-Peucker算法](计算机图形学知识积累/Ramer-Douglas-Peucker算法.md)
+    - [RayTracing基础](计算机图形学知识积累/RayTracing基础.md)
     - [obj文件格式](计算机图形学知识积累/obj文件格式.md)
     - [vertex什么时候存储多个](计算机图形学知识积累/vertex什么时候存储多个.md)
     - [中心差分法计算法线](计算机图形学知识积累/中心差分法计算法线.md)

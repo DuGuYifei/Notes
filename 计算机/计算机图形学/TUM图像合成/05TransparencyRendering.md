@@ -12,7 +12,7 @@
 Alpha 混合公式：
 
 $$
-C = α_src C_src + (1 - α_src) C_dest
+C = α_{src} C_{src} + (1 - α_{src}) C_{dest}
 $$
 
 

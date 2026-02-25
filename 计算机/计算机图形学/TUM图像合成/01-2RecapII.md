@@ -14,7 +14,6 @@
   - [重心坐标插值](#重心坐标插值)
 - [4. Shading](#4-shading)
   - [定义](#定义)
-- [](#)
   - [Flat Shading](#flat-shading)
   - [Gouraud Shading](#gouraud-shading)
   - [Phong Shading](#phong-shading)
@@ -178,7 +177,6 @@ $$
 Shading = 在片元上应用 illumination model 计算颜色。
 
 ![不同shading的视觉效果](_attachments/01-2RecapII/image-2.png)
----
 
 ### Flat Shading
 - 每三角形一次光照计算

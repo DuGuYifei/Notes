@@ -423,8 +423,8 @@ $$
 $$
 \Sigma =
 \begin{bmatrix}
-\sigma_x & \sigma_{xy} & \sigma_{xz} \
-\sigma_{yx} & \sigma_y & \sigma_{yz} \
+\sigma_x & \sigma_{xy} & \sigma_{xz} \\
+\sigma_{yx} & \sigma_y & \sigma_{yz} \\
 \sigma_{zx} & \sigma_{zy} & \sigma_z
 \end{bmatrix}
 $$

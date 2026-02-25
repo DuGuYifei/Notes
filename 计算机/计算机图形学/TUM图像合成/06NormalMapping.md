@@ -222,13 +222,13 @@ $$
 
 $$
 \begin{bmatrix}
-q_1 \
+q_1 \\
 q_2
 \end{bmatrix}
-=============
+=
 
 \begin{bmatrix}
-s_1 & t_1 \
+s_1 & t_1 \\
 s_2 & t_2
 \end{bmatrix}
 \begin{bmatrix}
@@ -241,18 +241,18 @@ $$
 
 $$
 \begin{bmatrix}
-T \
+T \\
 B
 \end{bmatrix}
-=============
+=
 
 \frac{1}{s_1 t_2 - s_2 t_1}
 \begin{bmatrix}
-t_2 & -t_1 \
+t_2 & -t_1 \\
 -s_2 & s_1
 \end{bmatrix}
 \begin{bmatrix}
-q_1 \
+q_1 \\
 q_2
 \end{bmatrix}
 $$

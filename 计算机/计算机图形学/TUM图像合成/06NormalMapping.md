@@ -232,7 +232,7 @@ s_1 & t_1 \\
 s_2 & t_2
 \end{bmatrix}
 \begin{bmatrix}
-T \
+T \\
 B
 \end{bmatrix}
 $$

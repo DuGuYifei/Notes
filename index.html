@@ -27,7 +27,7 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      routerMode: 'history',
+      routerMode: 'hash',
       name: "Notes",
       relativePath: true,
 
@@ -108,7 +108,7 @@
   <!-- 全文搜索 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 
-  <script>
+  <!-- <script>
     (function () {
       var myLinkPlugin = function (hook, vm) {
         hook.beforeEach(function (markdown) {
@@ -126,7 +126,7 @@
       $docsify = $docsify || {};
       $docsify.plugins = [].concat(myLinkPlugin, $docsify.plugins || []);
     })();
-  </script>
+  </script> -->
 
   <!-- 代码高亮  //unpkg.com/prismjs/components/ -->
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>

@@ -90,7 +90,3 @@
             - [y24x24.](人脸识别2/项目/famous48/y24x24.txt)
             - [z24x24.](人脸识别2/项目/famous48/z24x24.txt)
         - [main.](人脸识别2/项目/main.cpp)
-- 姿态估计_HMFormer
-    - [HMFormer](姿态估计_HMFormer/HMFormer.md)
-- 姿态估计_alphapose
-    - [alphapose](姿态估计_alphapose/alphapose.md)

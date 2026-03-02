@@ -24,6 +24,10 @@
     - [waitKey](opencv/waitKey.md)
     - [形态学运算_morphologyEx](opencv/形态学运算_morphologyEx.md)
     - [形态学运算_腐蚀(erode)和膨胀(dilate)](opencv/形态学运算_腐蚀(erode)和膨胀(dilate).md)
+- 姿态估计_HMFormer
+    - [HMFormer](姿态估计_HMFormer/HMFormer.md)
+- 姿态估计_alphapose
+    - [alphapose](姿态估计_alphapose/alphapose.md)
 - 文字识别
     - [_文字识别](文字识别/_文字识别.md)
 - [机器视觉](机器视觉.md)
@@ -119,7 +123,3 @@
                 - [y24x24.](项目学习法/人脸识别2/项目/famous48/y24x24.txt)
                 - [z24x24.](项目学习法/人脸识别2/项目/famous48/z24x24.txt)
             - [main.](项目学习法/人脸识别2/项目/main.cpp)
-    - 姿态估计_HMFormer
-        - [HMFormer](项目学习法/姿态估计_HMFormer/HMFormer.md)
-    - 姿态估计_alphapose
-        - [alphapose](项目学习法/姿态估计_alphapose/alphapose.md)

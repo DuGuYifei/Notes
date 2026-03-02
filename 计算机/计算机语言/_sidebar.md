@@ -40,7 +40,7 @@
         - [accumulate](C++/C++知识积累/accumulate.md)
         - [any和variant](C++/C++知识积累/any和variant.md)
         - [auto和decltype](C++/C++知识积累/auto和decltype.md)
-        - [bitset](C++/C++知识积累/bitset整数转二进制存储.md)
+        - [bitset整数转二进制存储](C++/C++知识积累/bitset整数转二进制存储.md)
         - [char星和constchar星string不能直接比较](C++/C++知识积累/char星和constchar星string不能直接比较.md)
         - [char转string](C++/C++知识积累/char转string.md)
         - [class继承导致的构造函数问题](C++/C++知识积累/class继承导致的构造函数问题.md)

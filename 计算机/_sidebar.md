@@ -66,7 +66,7 @@
             - [_HadoopAdvanced](DataStack/BigData/Hadoop/_HadoopAdvanced.md)
             - [ArrayWritable](DataStack/BigData/Hadoop/ArrayWritable.md)
             - [Configured和Tool](DataStack/BigData/Hadoop/Configured和Tool.md)
-            - [HadoopHiveHBaseZookeepergua](DataStack/BigData/Hadoop/HadoopHiveHBaseZookeeper关系.md)
+            - [HadoopHiveHBaseZookeeper关系](DataStack/BigData/Hadoop/HadoopHiveHBaseZookeeper关系.md)
             - [Hadoop_VSCodeEnvvironment](DataStack/BigData/Hadoop/Hadoop_VSCodeEnvvironment.md)
             - [Hadoop命令运行jar](DataStack/BigData/Hadoop/Hadoop命令运行jar.md)
             - [MapReduce流程](DataStack/BigData/Hadoop/MapReduce流程.md)
@@ -305,8 +305,6 @@
     - [PS](PS/PS.md)
 - PluginDevelopment
     - [VSCodePluginDevelopment](PluginDevelopment/VSCodePluginDevelopment.md)
-- PromptEngineering
-    - [_PromptEngineering](PromptEngineering/_PromptEngineering.md)
 - Web3
     - [_Web3](Web3/_Web3.md)
 - 人工智能
@@ -410,6 +408,10 @@
             - [waitKey](人工智能/机器视觉/opencv/waitKey.md)
             - [形态学运算_morphologyEx](人工智能/机器视觉/opencv/形态学运算_morphologyEx.md)
             - [形态学运算_腐蚀(erode)和膨胀(dilate)](人工智能/机器视觉/opencv/形态学运算_腐蚀(erode)和膨胀(dilate).md)
+        - 姿态估计_HMFormer
+            - [HMFormer](人工智能/机器视觉/姿态估计_HMFormer/HMFormer.md)
+        - 姿态估计_alphapose
+            - [alphapose](人工智能/机器视觉/姿态估计_alphapose/alphapose.md)
         - 文字识别
             - [_文字识别](人工智能/机器视觉/文字识别/_文字识别.md)
         - [机器视觉](人工智能/机器视觉/机器视觉.md)
@@ -505,10 +507,6 @@
                         - [y24x24.](人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/y24x24.txt)
                         - [z24x24.](人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/z24x24.txt)
                     - [main.](人工智能/机器视觉/项目学习法/人脸识别2/项目/main.cpp)
-            - 姿态估计_HMFormer
-                - [HMFormer](人工智能/机器视觉/项目学习法/姿态估计_HMFormer/HMFormer.md)
-            - 姿态估计_alphapose
-                - [alphapose](人工智能/机器视觉/项目学习法/姿态估计_alphapose/alphapose.md)
     - 深度学习
         - [_深度学习](人工智能/深度学习/_深度学习.md)
         - 深度学习GUT时期
@@ -1319,7 +1317,7 @@
             - [accumulate](计算机语言/C++/C++知识积累/accumulate.md)
             - [any和variant](计算机语言/C++/C++知识积累/any和variant.md)
             - [auto和decltype](计算机语言/C++/C++知识积累/auto和decltype.md)
-            - [bitset](计算机语言/C++/C++知识积累/bitset整数转二进制存储.md)
+            - [bitset整数转二进制存储](计算机语言/C++/C++知识积累/bitset整数转二进制存储.md)
             - [char星和constchar星string不能直接比较](计算机语言/C++/C++知识积累/char星和constchar星string不能直接比较.md)
             - [char转string](计算机语言/C++/C++知识积累/char转string.md)
             - [class继承导致的构造函数问题](计算机语言/C++/C++知识积累/class继承导致的构造函数问题.md)

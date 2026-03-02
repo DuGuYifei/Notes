@@ -1,3 +1,5 @@
+- __pycache__
+    - [catalog_ignore.cpython-311.](__pycache__/catalog_ignore.cpython-311.pyc)
 - 其他学科知识积累
     - DigitTechnologyInBusinessCommunication
         - [DigitTechforBusinessCommunication](其他学科知识积累/DigitTechnologyInBusinessCommunication/DigitTechforBusinessCommunication.md)
@@ -107,7 +109,7 @@
                 - [_HadoopAdvanced](计算机/DataStack/BigData/Hadoop/_HadoopAdvanced.md)
                 - [ArrayWritable](计算机/DataStack/BigData/Hadoop/ArrayWritable.md)
                 - [Configured和Tool](计算机/DataStack/BigData/Hadoop/Configured和Tool.md)
-                - [HadoopHiveHBaseZookeepergua](计算机/DataStack/BigData/Hadoop/HadoopHiveHBaseZookeeper关系.md)
+                - [HadoopHiveHBaseZookeeper关系](计算机/DataStack/BigData/Hadoop/HadoopHiveHBaseZookeeper关系.md)
                 - [Hadoop_VSCodeEnvvironment](计算机/DataStack/BigData/Hadoop/Hadoop_VSCodeEnvvironment.md)
                 - [Hadoop命令运行jar](计算机/DataStack/BigData/Hadoop/Hadoop命令运行jar.md)
                 - [MapReduce流程](计算机/DataStack/BigData/Hadoop/MapReduce流程.md)
@@ -346,8 +348,6 @@
         - [PS](计算机/PS/PS.md)
     - PluginDevelopment
         - [VSCodePluginDevelopment](计算机/PluginDevelopment/VSCodePluginDevelopment.md)
-    - PromptEngineering
-        - [_PromptEngineering](计算机/PromptEngineering/_PromptEngineering.md)
     - Web3
         - [_Web3](计算机/Web3/_Web3.md)
     - 人工智能
@@ -451,6 +451,10 @@
                 - [waitKey](计算机/人工智能/机器视觉/opencv/waitKey.md)
                 - [形态学运算_morphologyEx](计算机/人工智能/机器视觉/opencv/形态学运算_morphologyEx.md)
                 - [形态学运算_腐蚀(erode)和膨胀(dilate)](计算机/人工智能/机器视觉/opencv/形态学运算_腐蚀(erode)和膨胀(dilate).md)
+            - 姿态估计_HMFormer
+                - [HMFormer](计算机/人工智能/机器视觉/姿态估计_HMFormer/HMFormer.md)
+            - 姿态估计_alphapose
+                - [alphapose](计算机/人工智能/机器视觉/姿态估计_alphapose/alphapose.md)
             - 文字识别
                 - [_文字识别](计算机/人工智能/机器视觉/文字识别/_文字识别.md)
             - [机器视觉](计算机/人工智能/机器视觉/机器视觉.md)
@@ -546,10 +550,6 @@
                             - [y24x24.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/y24x24.txt)
                             - [z24x24.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/famous48/z24x24.txt)
                         - [main.](计算机/人工智能/机器视觉/项目学习法/人脸识别2/项目/main.cpp)
-                - 姿态估计_HMFormer
-                    - [HMFormer](计算机/人工智能/机器视觉/项目学习法/姿态估计_HMFormer/HMFormer.md)
-                - 姿态估计_alphapose
-                    - [alphapose](计算机/人工智能/机器视觉/项目学习法/姿态估计_alphapose/alphapose.md)
         - 深度学习
             - [_深度学习](计算机/人工智能/深度学习/_深度学习.md)
             - 深度学习GUT时期
@@ -1360,7 +1360,7 @@
                 - [accumulate](计算机/计算机语言/C++/C++知识积累/accumulate.md)
                 - [any和variant](计算机/计算机语言/C++/C++知识积累/any和variant.md)
                 - [auto和decltype](计算机/计算机语言/C++/C++知识积累/auto和decltype.md)
-                - [bitset](计算机/计算机语言/C++/C++知识积累/bitset整数转二进制存储.md)
+                - [bitset整数转二进制存储](计算机/计算机语言/C++/C++知识积累/bitset整数转二进制存储.md)
                 - [char星和constchar星string不能直接比较](计算机/计算机语言/C++/C++知识积累/char星和constchar星string不能直接比较.md)
                 - [char转string](计算机/计算机语言/C++/C++知识积累/char转string.md)
                 - [class继承导致的构造函数问题](计算机/计算机语言/C++/C++知识积累/class继承导致的构造函数问题.md)

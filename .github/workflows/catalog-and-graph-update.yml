@@ -36,7 +36,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Run catalog.py
-        run: python ./catalog.py
+        run: python -B ./catalog.py
 
       - name: Commit and push sidebar update
         run: |

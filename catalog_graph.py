@@ -27,7 +27,7 @@
 #   --max-node-size <float>         Maximum node radius (default: 22.0)
 #   --isolated-out <path>           Optional: write isolated md nodes to this txt file (default: "")
 #
-#   --cluster-topk <int>            Top-K candidate centers stored per cluster (UI shows top3) (default: 30)
+#   --cluster-topk <int>            Top-K candidate centers stored per cluster (UI shows top5) (default: 30)
 #
 #   --cluster-trim-q <float>        Trim quantile for cluster bbox (drop q on each tail).
 #                                   Example: 0.05 => use 5%..95% nodes to compute bbox (default: 0.0)
@@ -526,10 +526,13 @@ def inject_cluster_ui_js(
     if (!c) return;
 
     var lines = [];
+    if (currentMode !== "algo" && c.name) {
+      lines.push("<div style='font-size:13px; font-weight:600; margin-bottom:4px;'>" + escapeHtml(c.name) + "</div>");
+    }
     lines.push("<div style='font-size:13px; font-weight:600; margin-bottom:6px;'>Possible Cluster Centers:</div>");
 
     var top = c.top || [];
-    for (var i = 0; i < Math.min(top.length, 3); i++) {
+    for (var i = 0; i < Math.min(top.length, 5); i++) {
       var row = top[i];
       var label = row.label || row.id;
       lines.push(
@@ -752,7 +755,7 @@ def main():
     ap.add_argument("--isolated-out", default="", help="Optional: write isolated md nodes to this txt file")
 
     # Cluster display (centers)
-    ap.add_argument("--cluster-topk", type=int, default=30, help="Top-K candidate centers stored per cluster (UI shows top3)")
+    ap.add_argument("--cluster-topk", type=int, default=30, help="Top-K candidate centers stored per cluster (UI shows top5)")
 
     # Cluster bbox trimming controls
     ap.add_argument(
@@ -877,7 +880,23 @@ def main():
     f2_top = compute_cluster_topk(md_sub, f2_clusters, topk=int(args.cluster_topk))
     f3_top = compute_cluster_topk(md_sub, f3_clusters, topk=int(args.cluster_topk))
 
-    def build_mode_payload(clusters: dict[int, list[str]], topmap: dict[int, list[tuple[str, int]]]) -> dict:
+    def build_folder_cluster_names(clusters: dict[int, list[str]], depth: int) -> dict[int, str]:
+        out: dict[int, str] = {}
+        for cid, nodes_in in clusters.items():
+            if not nodes_in:
+                continue
+            out[cid] = folder_key(nodes_in[0], depth=depth)
+        return out
+
+    f1_names = build_folder_cluster_names(f1_clusters, depth=1)
+    f2_names = build_folder_cluster_names(f2_clusters, depth=2)
+    f3_names = build_folder_cluster_names(f3_clusters, depth=3)
+
+    def build_mode_payload(
+        clusters: dict[int, list[str]],
+        topmap: dict[int, list[tuple[str, int]]],
+        cluster_names: dict[int, str] | None = None,
+    ) -> dict:
         clusters_payload: dict[str, dict] = {}
         for cid, nodes_in in clusters.items():
             nodes_in_sorted = sorted(nodes_in)
@@ -885,15 +904,18 @@ def main():
             for nid, deg_in in topmap.get(cid, []):
                 label = by_rel[nid].stem if nid in by_rel else nid
                 top_rows.append({"id": nid, "label": label, "deg": int(deg_in)})
-            clusters_payload[str(cid)] = {"nodes": nodes_in_sorted, "top": top_rows}
+            row = {"nodes": nodes_in_sorted, "top": top_rows}
+            if cluster_names and cid in cluster_names:
+                row["name"] = cluster_names[cid]
+            clusters_payload[str(cid)] = row
         return {"clusters": clusters_payload}
 
     payload = {
         "modes": {
             "algo": build_mode_payload(algo_clusters, algo_top),
-            "folder1": build_mode_payload(f1_clusters, f1_top),
-            "folder2": build_mode_payload(f2_clusters, f2_top),
-            "folder3": build_mode_payload(f3_clusters, f3_top),
+            "folder1": build_mode_payload(f1_clusters, f1_top, f1_names),
+            "folder2": build_mode_payload(f2_clusters, f2_top, f2_names),
+            "folder3": build_mode_payload(f3_clusters, f3_top, f3_names),
         }
     }
     payload_json = json.dumps(payload, ensure_ascii=False)

@@ -1,18 +1,18 @@
 # Jade
 
-1. [Java Agent 概述](#java-agent-概述)
-   1. [Java Agent 的作用](#java-agent-的作用)
-2. [教程](#教程)
-3. [发送消息的交互界面](#发送消息的交互界面)
-4. [imtp 和 mtp](#imtp-和-mtp)
-5. [dynamic 和 static environment](#dynamic-和-static-environment)
-6. [命令行创建](#命令行创建)
-   1. [Lab1](#lab1)
-      1. [操作](#操作)
-   2. [Lab2](#lab2)
-   3. [命令使用](#命令使用)
-7. [Java 代码创建](#java-代码创建)
-   1. [知识积累](#知识积累)
+- [Java Agent 概述](#java-agent-概述)
+  - [Java Agent 的作用](#java-agent-的作用)
+- [教程](#教程)
+- [发送消息的交互界面](#发送消息的交互界面)
+- [imtp 和 mtp](#imtp-和-mtp)
+- [dynamic 和 static environment](#dynamic-和-static-environment)
+- [命令行创建](#命令行创建)
+  - [Lab1](#lab1)
+    - [操作](#操作)
+  - [Lab2](#lab2)
+  - [命令使用](#命令使用)
+- [Java 代码创建](#java-代码创建)
+  - [知识积累](#知识积累)
 
 ## Java Agent 概述
 Java Agent 本质上是 JDK 提供的一个工具。
@@ -453,7 +453,7 @@ java ^
 `[我的github网址](还没定)`
 
 ### 知识积累
-1. [AID](Jade/AID.md)
-2. [Jade的基本程序关系](Jade/Jade的基本程序关系.md)
-3. [获取命令行参数](Jade/获取命令行参数.md)
-4. [MessageTemplate_Match](Jade/MessageTemplate_Match.md)
+1. [AID](AID.md)
+2. [Jade的基本程序关系](Jade的基本程序关系.md)
+3. [获取命令行参数](获取命令行参数.md)
+4. [MessageTemplate_Match](MessageTemplate_Match.md)

@@ -13,7 +13,7 @@
 GraphQL 是一种用于构建 API 的查询语言和运行时。它由 Facebook 开发，旨在提高客户端和服务器之间数据交互的效率和灵活性。GraphQL 允许客户端精确指定所需的数据和数据结构，从而避免了传统 RESTful API 的一些缺点，例如过多或过少的数据、多个请求导致的数据重复和混乱的嵌套结构。
 
 ## gRPC
-[_gRPC](_gRPC.md)
+[_gRPC](gRPC/_gRPC.md)
 
 gRPC 是一种高性能的远程过程调用（RPC）框架，使用 Protocol Buffers 作为数据序列化格式。与 GraphQL 相比，gRPC 可以在多种语言和平台上使用，支持多种协议和负载类型，提供了更高效的序列化和反序列化能力。
 

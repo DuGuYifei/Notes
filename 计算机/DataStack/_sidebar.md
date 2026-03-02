@@ -16,7 +16,7 @@
         - [_HadoopAdvanced](BigData/Hadoop/_HadoopAdvanced.md)
         - [ArrayWritable](BigData/Hadoop/ArrayWritable.md)
         - [Configured和Tool](BigData/Hadoop/Configured和Tool.md)
-        - [HadoopHiveHBaseZookeepergua](BigData/Hadoop/HadoopHiveHBaseZookeepergua.md)
+        - [HadoopHiveHBaseZookeepergua](BigData/Hadoop/HadoopHiveHBaseZookeeper关系.md)
         - [Hadoop_VSCodeEnvvironment](BigData/Hadoop/Hadoop_VSCodeEnvvironment.md)
         - [Hadoop命令运行jar](BigData/Hadoop/Hadoop命令运行jar.md)
         - [MapReduce流程](BigData/Hadoop/MapReduce流程.md)

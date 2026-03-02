@@ -5,6 +5,6 @@ IGNORE_FILES = {
     "index.html", "CNAME", "_404.md", "_navbar.md", "graph.html"
 }
 IGNORE_DIRS = {
-    ".obsidian", ".git", "_attachments", "MyGameDesign",
+    ".obsidian", ".github", ".git", "_attachments", "MyGameDesign",
     "images", "vue学习用案例模板", "favicons"
 }

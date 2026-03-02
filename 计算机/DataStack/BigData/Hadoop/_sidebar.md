@@ -2,7 +2,7 @@
 - [_HadoopAdvanced](_HadoopAdvanced.md)
 - [ArrayWritable](ArrayWritable.md)
 - [Configured和Tool](Configured和Tool.md)
-- [HadoopHiveHBaseZookeepergua](HadoopHiveHBaseZookeepergua.md)
+- [HadoopHiveHBaseZookeepergua](HadoopHiveHBaseZookeeper关系.md)
 - [Hadoop_VSCodeEnvvironment](Hadoop_VSCodeEnvvironment.md)
 - [Hadoop命令运行jar](Hadoop命令运行jar.md)
 - [MapReduce流程](MapReduce流程.md)

@@ -1,4 +1,4 @@
-# bitset
+# bitset整数转二进制存储
 ```cpp
 class Solution {
 public:

@@ -19,3 +19,4 @@
 10. [CTE_WITH](CTE_WITH.md)
 11. [测试与清洗常用语法](测试与清洗常用语法.md)
 12. [EXPLAIN查询计划分析](EXPLAIN查询计划分析.md)
+13. [limit和offset顺序](limit和offset顺序.md)

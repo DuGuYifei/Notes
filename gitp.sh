@@ -1,4 +1,3 @@
-python ./catalog.py
 git add .
 WEEKDAY=$(date '+%a')
 case $WEEKDAY in

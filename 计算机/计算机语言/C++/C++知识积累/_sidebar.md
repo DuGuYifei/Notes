@@ -18,7 +18,7 @@
 - [accumulate](accumulate.md)
 - [any和variant](any和variant.md)
 - [auto和decltype](auto和decltype.md)
-- [bitset](bitset.md)
+- [bitset](bitset整数转二进制存储.md)
 - [char星和constchar星string不能直接比较](char星和constchar星string不能直接比较.md)
 - [char转string](char转string.md)
 - [class继承导致的构造函数问题](class继承导致的构造函数问题.md)

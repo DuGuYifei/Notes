@@ -1,12 +1,11 @@
 import os
 from pathlib import Path
 
+from catalog_ignore import IGNORE_FILES, IGNORE_DIRS
+
 def generate_sidebar(path, visible_root):
-    ignore_files = {
-        "gitp.cmd", "gitp.sh", "gitpf.cmd", "_sidebar.md", "README.md",
-        ".gitignore", ".nojekyll", "catalog.py", "index.html", "CNAME", "_404.md", "_navbar.md"
-    }
-    ignore_dirs = {".obsidian", ".git", "_attachments", "MyGameDesign", "images", "vue学习用案例模板", "favicons"}
+    ignore_files = IGNORE_FILES
+    ignore_dirs = IGNORE_DIRS
 
     entries = []
     for entry in sorted(os.listdir(path), key=lambda s: (0 if s.startswith('_') else 1, s)):

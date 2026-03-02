@@ -1,0 +1,63 @@
+name: Catalog And Graph Update
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyvis==0.3.2 markdown-it-py==4.0.0 networkx==3.6.1
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run catalog.py
+        run: python ./catalog.py
+
+      - name: Commit and push sidebar update
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes after catalog.py"
+          else
+            git commit -m "sidebar update"
+            git push origin master
+          fi
+
+      - name: Run catalog_graph.py
+        run: |
+          python -B ./catalog_graph.py . -o ./graph.html --spring-iters 1400 --spring-k 0.12 --scale 14000 --font-size 1 --min-node-size 10 --max-node-size 25 --cluster-topk 10 --no-hub --folder-weight 1.5 --cluster-trim-q 0.0 --dim-alpha 0.2
+
+      - name: Commit and push graph update
+        run: |
+          git add ./graph.html
+          if git diff --cached --quiet; then
+            echo "No changes in graph.html"
+          else
+            git commit -m "graph update"
+            git push origin master
+          fi

@@ -1,2 +1,0 @@
-- [返回上级目录](../_sidebar.md)
-- [catalog_ignore.cpython-311.](catalog_ignore.cpython-311.pyc)

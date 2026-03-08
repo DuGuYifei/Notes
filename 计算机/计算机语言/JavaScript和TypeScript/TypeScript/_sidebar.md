@@ -3,6 +3,6 @@
 - 知识积累
     - [_TypeScriptKnowledgeAccumulation](知识积累/_TypeScriptKnowledgeAccumulation.md)
     - [import_export](知识积累/import_export.md)
-    - [interface和class区别](知识积累/interface和class区别.md)
-    - [函数](知识积累/函数.md)
-    - [问号冒号点感叹号叠加](知识积累/问号冒号点感叹号叠加.md)
+    - [interface和class区别](知识积累/interface%E5%92%8Cclass%E5%8C%BA%E5%88%AB.md)
+    - [函数](知识积累/%E5%87%BD%E6%95%B0.md)
+    - [问号冒号点感叹号叠加](知识积累/%E9%97%AE%E5%8F%B7%E5%86%92%E5%8F%B7%E7%82%B9%E6%84%9F%E5%8F%B9%E5%8F%B7%E5%8F%A0%E5%8A%A0.md)

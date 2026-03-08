@@ -2,4 +2,4 @@
 - [_DataWarehouse](_DataWarehouse.md)
 - [DataWarehouse_MultidimensionalAndDataMiningMode](DataWarehouse_MultidimensionalAndDataMiningMode.md)
 - [DataWarehouse_TabularMode](DataWarehouse_TabularMode.md)
-- [DataWarehouse基本知识积累](DataWarehouse基本知识积累.md)
+- [DataWarehouse基本知识积累](DataWarehouse%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF.md)

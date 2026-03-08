@@ -1,6 +1,6 @@
 - [返回上级目录](../_sidebar.md)
 - [_Jade](_Jade.md)
 - [AID](AID.md)
-- [Jade的基本程序关系](Jade的基本程序关系.md)
+- [Jade的基本程序关系](Jade%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E5%85%B3%E7%B3%BB.md)
 - [MessageTemplate_Match](MessageTemplate_Match.md)
-- [获取命令行参数](获取命令行参数.md)
+- [获取命令行参数](%E8%8E%B7%E5%8F%96%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0.md)

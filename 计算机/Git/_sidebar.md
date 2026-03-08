@@ -1,4 +1,4 @@
 - [返回上级目录](../_sidebar.md)
 - [_git](_git.md)
 - [GitKnowledgeAccumulation](GitKnowledgeAccumulation.md)
-- [Git下载某个版本的某个文件夹](Git下载某个版本的某个文件夹.md)
+- [Git下载某个版本的某个文件夹](Git%E4%B8%8B%E8%BD%BD%E6%9F%90%E4%B8%AA%E7%89%88%E6%9C%AC%E7%9A%84%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9.md)

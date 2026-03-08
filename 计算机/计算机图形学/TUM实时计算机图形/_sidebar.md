@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
-- [_TUM实时计算机图形](_TUM实时计算机图形.md)
+- [_TUM实时计算机图形](_TUM%E5%AE%9E%E6%97%B6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2.md)
 - [01Gemoetry](01Gemoetry.md)
 - [02ProceduralModeling](02ProceduralModeling.md)
 - [03Shading](03Shading.md)

@@ -9,4 +9,4 @@
         - [Haskell](Haskell和Prolog/Haskell/Haskell.md)
     - Prolog
         - [Prolog](Haskell和Prolog/Prolog/Prolog.md)
-- [函数式声明式命令式编程](函数式声明式命令式编程.md)
+- [函数式声明式命令式编程](%E5%87%BD%E6%95%B0%E5%BC%8F%E5%A3%B0%E6%98%8E%E5%BC%8F%E5%91%BD%E4%BB%A4%E5%BC%8F%E7%BC%96%E7%A8%8B.md)

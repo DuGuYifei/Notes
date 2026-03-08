@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+from urllib.parse import quote
 
 from catalog_ignore import IGNORE_FILES, IGNORE_DIRS
 
@@ -34,6 +35,7 @@ def generate_sidebar(path, visible_root):
             # 相对于 visible_root 计算路径
             rel_path = full_path.relative_to(visible_root).as_posix()
             print(rel_path)
+            rel_path = quote(rel_path, safe="/")
             entry_name = format_entry_name(full_path)
             entries.append(f"- [{entry_name}]({rel_path})")
 

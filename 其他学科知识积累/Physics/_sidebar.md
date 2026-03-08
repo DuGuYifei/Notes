@@ -2,6 +2,6 @@
 - Physics
     - OneNote_RecycleBin
         - [OneNote_DeletedPages.one](Physics/OneNote_RecycleBin/OneNote_DeletedPages.one)
-        - [打开笔记本.onetoc2](Physics/OneNote_RecycleBin/打开笔记本.onetoc2)
+        - [打开笔记本.onetoc2](Physics/OneNote_RecycleBin/%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)
     - [Semester2.one](Physics/Semester2.one)
-    - [打开笔记本.onetoc2](Physics/打开笔记本.onetoc2)
+    - [打开笔记本.onetoc2](Physics/%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)

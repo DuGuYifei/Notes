@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
-- [_Go桌面程序开发](_Go桌面程序开发.md)
-- [Fyne-绑定函数绑定值](Fyne-绑定函数绑定值.md)
+- [_Go桌面程序开发](_Go%E6%A1%8C%E9%9D%A2%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91.md)
+- [Fyne-绑定函数绑定值](Fyne-%E7%BB%91%E5%AE%9A%E5%87%BD%E6%95%B0%E7%BB%91%E5%AE%9A%E5%80%BC.md)

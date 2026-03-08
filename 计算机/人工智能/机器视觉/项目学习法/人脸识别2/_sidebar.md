@@ -1,8 +1,8 @@
 - [返回上级目录](../_sidebar.md)
-- [人脸识别AI课程项目](人脸识别AI课程项目.md)
+- [人脸识别AI课程项目](%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%ABAI%E8%AF%BE%E7%A8%8B%E9%A1%B9%E7%9B%AE.md)
 - 项目
-    - [Famous48 Face Recognize Report.docx](项目/Famous48 Face Recognize Report.docx)
-    - [Famous48 Face Recognize Report.pdf](项目/Famous48 Face Recognize Report.pdf)
+    - [Famous48 Face Recognize Report.docx](项目/Famous48%20Face%20Recognize%20Report.docx)
+    - [Famous48 Face Recognize Report.pdf](项目/Famous48%20Face%20Recognize%20Report.pdf)
     - Haar
         - [HAAR.h](项目/Haar/HAAR.h)
         - [HAAR_2.h](项目/Haar/HAAR_2.h)

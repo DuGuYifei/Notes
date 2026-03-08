@@ -4,7 +4,7 @@
 - [ConsoleApp1.csproj.nuget.g.targets](ConsoleApp1.csproj.nuget.g.targets)
 - Debug
     - netcoreapp3.1
-        - [.NETCoreApp,Version=v3.1.AssemblyAttributes.cs](Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs)
+        - [.NETCoreApp,Version=v3.1.AssemblyAttributes.cs](Debug/netcoreapp3.1/.NETCoreApp%2CVersion%3Dv3.1.AssemblyAttributes.cs)
         - [ConsoleApp1.AssemblyInfo.cs](Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfo.cs)
         - [ConsoleApp1.AssemblyInfoInputs.cache](Debug/netcoreapp3.1/ConsoleApp1.AssemblyInfoInputs.cache)
         - [ConsoleApp1.assets.cache](Debug/netcoreapp3.1/ConsoleApp1.assets.cache)
@@ -15,8 +15,8 @@
         - [ConsoleApp1.genruntimeconfig.cache](Debug/netcoreapp3.1/ConsoleApp1.genruntimeconfig.cache)
         - [ConsoleApp1.pdb](Debug/netcoreapp3.1/ConsoleApp1.pdb)
         - [apphost.exe](Debug/netcoreapp3.1/apphost.exe)
-        - [打开笔记本.onetoc2](Debug/netcoreapp3.1/打开笔记本.onetoc2)
-    - [打开笔记本.onetoc2](Debug/打开笔记本.onetoc2)
+        - [打开笔记本.onetoc2](Debug/netcoreapp3.1/%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)
+    - [打开笔记本.onetoc2](Debug/%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)
 - [project.assets.json](project.assets.json)
 - [project.nuget.cache](project.nuget.cache)
-- [打开笔记本.onetoc2](打开笔记本.onetoc2)
+- [打开笔记本.onetoc2](%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)

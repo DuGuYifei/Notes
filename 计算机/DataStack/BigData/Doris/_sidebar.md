@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
 - [_Doris](_Doris.md)
-- [创建表案例](创建表案例.md)
+- [创建表案例](%E5%88%9B%E5%BB%BA%E8%A1%A8%E6%A1%88%E4%BE%8B.md)

@@ -1,2 +1,2 @@
 - [返回上级目录](../_sidebar.md)
-- [_环境搭建anaconda](_环境搭建anaconda.md)
+- [_环境搭建anaconda](_%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAanaconda.md)

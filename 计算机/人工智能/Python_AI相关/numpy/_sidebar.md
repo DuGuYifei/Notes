@@ -2,5 +2,5 @@
 - [_numpy](_numpy.md)
 - [arange](arange.md)
 - [random_permutation](random_permutation.md)
-- [乘法](乘法.md)
-- [矩阵](矩阵.md)
+- [乘法](%E4%B9%98%E6%B3%95.md)
+- [矩阵](%E7%9F%A9%E9%98%B5.md)

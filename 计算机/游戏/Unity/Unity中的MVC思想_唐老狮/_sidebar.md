@@ -1,4 +1,4 @@
 - [返回上级目录](../_sidebar.md)
-- [Unity中的MVC思想_唐老师](Unity中的MVC思想_唐老师.md)
-- [打开笔记本.onetoc2](打开笔记本.onetoc2)
-- [第二章MVC基础.one](第二章MVC基础.one)
+- [Unity中的MVC思想_唐老师](Unity%E4%B8%AD%E7%9A%84MVC%E6%80%9D%E6%83%B3_%E5%94%90%E8%80%81%E5%B8%88.md)
+- [打开笔记本.onetoc2](%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)
+- [第二章MVC基础.one](%E7%AC%AC%E4%BA%8C%E7%AB%A0MVC%E5%9F%BA%E7%A1%80.one)

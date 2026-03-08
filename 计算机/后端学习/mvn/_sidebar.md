@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
 - [_mvn](_mvn.md)
-- [test和选择-跳过](test和选择-跳过.md)
+- [test和选择-跳过](test%E5%92%8C%E9%80%89%E6%8B%A9-%E8%B7%B3%E8%BF%87.md)

@@ -1,10 +1,10 @@
 - [返回上级目录](../_sidebar.md)
 - inspectionProfiles
     - [profiles_settings.xml](inspectionProfiles/profiles_settings.xml)
-    - [打开笔记本.onetoc2](inspectionProfiles/打开笔记本.onetoc2)
+    - [打开笔记本.onetoc2](inspectionProfiles/%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)
 - [misc.xml](misc.xml)
 - [modules.xml](modules.xml)
 - [other.xml](other.xml)
 - [vcs.xml](vcs.xml)
-- [人脸识别.iml](人脸识别.iml)
-- [打开笔记本.onetoc2](打开笔记本.onetoc2)
+- [人脸识别.iml](%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB.iml)
+- [打开笔记本.onetoc2](%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)

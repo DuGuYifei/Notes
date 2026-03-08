@@ -1,6 +1,6 @@
 - [返回上级目录](../_sidebar.md)
 - netcoreapp3.1
-    - [.NETCoreApp,Version=v3.1.AssemblyAttributes.cs](netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs)
+    - [.NETCoreApp,Version=v3.1.AssemblyAttributes.cs](netcoreapp3.1/.NETCoreApp%2CVersion%3Dv3.1.AssemblyAttributes.cs)
     - [ConsoleApp1.AssemblyInfo.cs](netcoreapp3.1/ConsoleApp1.AssemblyInfo.cs)
     - [ConsoleApp1.AssemblyInfoInputs.cache](netcoreapp3.1/ConsoleApp1.AssemblyInfoInputs.cache)
     - [ConsoleApp1.assets.cache](netcoreapp3.1/ConsoleApp1.assets.cache)
@@ -11,5 +11,5 @@
     - [ConsoleApp1.genruntimeconfig.cache](netcoreapp3.1/ConsoleApp1.genruntimeconfig.cache)
     - [ConsoleApp1.pdb](netcoreapp3.1/ConsoleApp1.pdb)
     - [apphost.exe](netcoreapp3.1/apphost.exe)
-    - [打开笔记本.onetoc2](netcoreapp3.1/打开笔记本.onetoc2)
-- [打开笔记本.onetoc2](打开笔记本.onetoc2)
+    - [打开笔记本.onetoc2](netcoreapp3.1/%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)
+- [打开笔记本.onetoc2](%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)

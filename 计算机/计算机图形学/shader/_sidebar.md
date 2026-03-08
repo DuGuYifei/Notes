@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
 - [_shader](_shader.md)
-- [GLSL基本语法](GLSL基本语法.md)
-- [内置函数](内置函数.md)
-- [自我初识shader](自我初识shader.md)
+- [GLSL基本语法](GLSL%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.md)
+- [内置函数](%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0.md)
+- [自我初识shader](%E8%87%AA%E6%88%91%E5%88%9D%E8%AF%86shader.md)

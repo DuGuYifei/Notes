@@ -1,4 +1,4 @@
 - [返回上级目录](../_sidebar.md)
-- [_机器学习进阶_深度生成模型](_机器学习进阶_深度生成模型.md)
+- [_机器学习进阶_深度生成模型](_%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%BF%9B%E9%98%B6_%E6%B7%B1%E5%BA%A6%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B.md)
 - [Normalizing_Flows](Normalizing_Flows.md)
 - [Variational_Inference](Variational_Inference.md)

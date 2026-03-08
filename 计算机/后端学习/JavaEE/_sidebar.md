@@ -3,7 +3,7 @@
 - [EntityManager_EntityManagerFactory](EntityManager_EntityManagerFactory.md)
 - [EntityTransaction](EntityTransaction.md)
 - [JPA](JPA.md)
-- [JPA和JDBC区别](JPA和JDBC区别.md)
+- [JPA和JDBC区别](JPA%E5%92%8CJDBC%E5%8C%BA%E5%88%AB.md)
 - [JPQL](JPQL.md)
 - [JSP_JSTL](JSP_JSTL.md)
 - [Servlet](Servlet.md)

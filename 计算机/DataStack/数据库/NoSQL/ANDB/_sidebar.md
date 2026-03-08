@@ -4,7 +4,7 @@
     - [BigTable](BigTable/BigTable.md)
 - Hadoop
     - [BasicOperations](Hadoop/BasicOperations.md)
-    - [Combiner和Reducer](Hadoop/Combiner和Reducer.md)
+    - [Combiner和Reducer](Hadoop/Combiner%E5%92%8CReducer.md)
     - [Hadoop-HDFS-Hive-HBase](Hadoop/Hadoop-HDFS-Hive-HBase.md)
     - [Hadoop](Hadoop/Hadoop.md)
 - Hadoop_HBase

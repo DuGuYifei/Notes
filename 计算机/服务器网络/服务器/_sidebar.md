@@ -2,10 +2,10 @@
 - Nginx
     - [_Nginx](Nginx/_Nginx.md)
     - [proxy](Nginx/proxy.md)
-    - [解决vue跳转404问题](Nginx/解决vue跳转404问题.md)
-- [服务器](服务器.md)
+    - [解决vue跳转404问题](Nginx/%E8%A7%A3%E5%86%B3vue%E8%B7%B3%E8%BD%AC404%E9%97%AE%E9%A2%98.md)
+- [服务器](%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 - 服务器知识积累
-    - [_服务器知识积累](服务器知识积累/_服务器知识积累.md)
-    - [代理_Proxy和反向代理_ReverseProxy](服务器知识积累/代理_Proxy和反向代理_ReverseProxy.md)
-    - [常用端口](服务器知识积累/常用端口.md)
-    - [端口映射_端口转发](服务器知识积累/端口映射_端口转发.md)
+    - [_服务器知识积累](服务器知识积累/_%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF.md)
+    - [代理_Proxy和反向代理_ReverseProxy](服务器知识积累/%E4%BB%A3%E7%90%86_Proxy%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86_ReverseProxy.md)
+    - [常用端口](服务器知识积累/%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3.md)
+    - [端口映射_端口转发](服务器知识积累/%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84_%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91.md)

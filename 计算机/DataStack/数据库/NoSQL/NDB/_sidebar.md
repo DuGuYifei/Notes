@@ -9,4 +9,4 @@
     - [MongoDB_lab1.pdf](appendix/MongoDB_lab1.pdf)
     - [MongoDB_lab2.pdf](appendix/MongoDB_lab2.pdf)
     - [Mongo_Operations](appendix/Mongo_Operations.md)
-    - [Redis的简单应用_超卖](appendix/Redis的简单应用_超卖.md)
+    - [Redis的简单应用_超卖](appendix/Redis%E7%9A%84%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8_%E8%B6%85%E5%8D%96.md)

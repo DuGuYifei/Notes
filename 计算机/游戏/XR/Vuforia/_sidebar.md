@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
 - [_Vuforia](_Vuforia.md)
-- [基础介绍](基础介绍.md)
+- [基础介绍](%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.md)

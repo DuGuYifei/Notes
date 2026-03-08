@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
-- [_深度学习知识积累](_深度学习知识积累.md)
-- [转置卷积TransposeConvolution](转置卷积TransposeConvolution.md)
+- [_深度学习知识积累](_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF.md)
+- [转置卷积TransposeConvolution](%E8%BD%AC%E7%BD%AE%E5%8D%B7%E7%A7%AFTransposeConvolution.md)

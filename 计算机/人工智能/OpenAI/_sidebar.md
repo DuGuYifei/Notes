@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
 - [_OpenAI](_OpenAI.md)
-- [流式](流式.md)
+- [流式](%E6%B5%81%E5%BC%8F.md)

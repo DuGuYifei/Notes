@@ -1,4 +1,4 @@
 - [返回上级目录](../_sidebar.md)
-- [_Python桌面程序开发](_Python桌面程序开发.md)
-- [QMutex和QMutexLocker](QMutex和QMutexLocker.md)
+- [_Python桌面程序开发](_Python%E6%A1%8C%E9%9D%A2%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91.md)
+- [QMutex和QMutexLocker](QMutex%E5%92%8CQMutexLocker.md)
 - [stylesheet_disabled](stylesheet_disabled.md)

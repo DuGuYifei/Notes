@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
-- [_TUM图像合成](_TUM图像合成.md)
+- [_TUM图像合成](_TUM%E5%9B%BE%E5%83%8F%E5%90%88%E6%88%90.md)
 - [00CourseOutline](00CourseOutline.md)
 - [01-1OutlookAndRecapI](01-1OutlookAndRecapI.md)
 - [01-2RecapII](01-2RecapII.md)

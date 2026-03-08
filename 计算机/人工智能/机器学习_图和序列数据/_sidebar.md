@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
-- [_机器学习_图和序列数据](_机器学习_图和序列数据.md)
+- [_机器学习_图和序列数据](_%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0_%E5%9B%BE%E5%92%8C%E5%BA%8F%E5%88%97%E6%95%B0%E6%8D%AE.md)
 - [01AutoregressiveModels](01AutoregressiveModels.md)
 - [02MarkovChains](02MarkovChains.md)
 - [03HiddenMarkovChains](03HiddenMarkovChains.md)

@@ -6,7 +6,7 @@
         - [BigTable](ANDB/BigTable/BigTable.md)
     - Hadoop
         - [BasicOperations](ANDB/Hadoop/BasicOperations.md)
-        - [Combiner和Reducer](ANDB/Hadoop/Combiner和Reducer.md)
+        - [Combiner和Reducer](ANDB/Hadoop/Combiner%E5%92%8CReducer.md)
         - [Hadoop-HDFS-Hive-HBase](ANDB/Hadoop/Hadoop-HDFS-Hive-HBase.md)
         - [Hadoop](ANDB/Hadoop/Hadoop.md)
     - Hadoop_HBase
@@ -29,4 +29,4 @@
         - [MongoDB_lab1.pdf](NDB/appendix/MongoDB_lab1.pdf)
         - [MongoDB_lab2.pdf](NDB/appendix/MongoDB_lab2.pdf)
         - [Mongo_Operations](NDB/appendix/Mongo_Operations.md)
-        - [Redis的简单应用_超卖](NDB/appendix/Redis的简单应用_超卖.md)
+        - [Redis的简单应用_超卖](NDB/appendix/Redis%E7%9A%84%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8_%E8%B6%85%E5%8D%96.md)

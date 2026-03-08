@@ -1,8 +1,8 @@
 - [返回上级目录](../_sidebar.md)
 - Python基础
-    - [打开笔记本.onetoc2](Python基础/打开笔记本.onetoc2)
-    - [模块一基础知识.one](Python基础/模块一基础知识.one)
-    - [模块二_函数和模块.one](Python基础/模块二_函数和模块.one)
-- [Python基础](Python基础.md)
+    - [打开笔记本.onetoc2](Python基础/%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)
+    - [模块一基础知识.one](Python基础/%E6%A8%A1%E5%9D%97%E4%B8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.one)
+    - [模块二_函数和模块.one](Python基础/%E6%A8%A1%E5%9D%97%E4%BA%8C_%E5%87%BD%E6%95%B0%E5%92%8C%E6%A8%A1%E5%9D%97.one)
+- [Python基础](Python%E5%9F%BA%E7%A1%80.md)
 - python3.9课件
     - [python3.9.txt](python3.9课件/python3.9.txt)

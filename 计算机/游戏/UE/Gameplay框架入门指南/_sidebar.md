@@ -1,2 +1,2 @@
 - [返回上级目录](../_sidebar.md)
-- [_Gameplay框架入门指南](_Gameplay框架入门指南.md)
+- [_Gameplay框架入门指南](_Gameplay%E6%A1%86%E6%9E%B6%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97.md)

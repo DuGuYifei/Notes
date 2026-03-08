@@ -5,5 +5,5 @@
 - [-fPIC](-fPIC.md)
 - [-g](-g.md)
 - [-shared](-shared.md)
-- [gcc_g++常用命令](gcc_g++常用命令.md)
-- [动态静态链接库](动态静态链接库.md)
+- [gcc_g++常用命令](gcc_g%2B%2B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
+- [动态静态链接库](%E5%8A%A8%E6%80%81%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93.md)

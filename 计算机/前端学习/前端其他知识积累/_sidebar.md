@@ -1,6 +1,6 @@
 - [返回上级目录](../_sidebar.md)
 - [_KnowledgeAccumulation_Frontend](_KnowledgeAccumulation_Frontend.md)
-- [css形成3d图书](css形成3d图书.md)
-- [favicons的设置](favicons的设置.md)
+- [css形成3d图书](css%E5%BD%A2%E6%88%903d%E5%9B%BE%E4%B9%A6.md)
+- [favicons的设置](favicons%E7%9A%84%E8%AE%BE%E7%BD%AE.md)
 - [indexedDB](indexedDB.md)
 - [readyState](readyState.md)

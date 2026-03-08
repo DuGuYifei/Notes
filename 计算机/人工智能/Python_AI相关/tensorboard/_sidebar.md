@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
 - [_tensorboard](_tensorboard.md)
-- [tensorboard基础](tensorboard基础.md)
+- [tensorboard基础](tensorboard%E5%9F%BA%E7%A1%80.md)

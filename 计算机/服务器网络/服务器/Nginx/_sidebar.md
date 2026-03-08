@@ -1,4 +1,4 @@
 - [返回上级目录](../_sidebar.md)
 - [_Nginx](_Nginx.md)
 - [proxy](proxy.md)
-- [解决vue跳转404问题](解决vue跳转404问题.md)
+- [解决vue跳转404问题](%E8%A7%A3%E5%86%B3vue%E8%B7%B3%E8%BD%AC404%E9%97%AE%E9%A2%98.md)

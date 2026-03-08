@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
 - [BasicOperations](BasicOperations.md)
-- [Combiner和Reducer](Combiner和Reducer.md)
+- [Combiner和Reducer](Combiner%E5%92%8CReducer.md)
 - [Hadoop-HDFS-Hive-HBase](Hadoop-HDFS-Hive-HBase.md)
 - [Hadoop](Hadoop.md)

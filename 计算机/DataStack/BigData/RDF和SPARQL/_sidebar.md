@@ -1,2 +1,2 @@
 - [返回上级目录](../_sidebar.md)
-- [_RDF和SPARQL](_RDF和SPARQL.md)
+- [_RDF和SPARQL](_RDF%E5%92%8CSPARQL.md)

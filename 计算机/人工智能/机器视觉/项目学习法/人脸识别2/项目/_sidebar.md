@@ -1,6 +1,6 @@
 - [返回上级目录](../_sidebar.md)
-- [Famous48 Face Recognize Report.docx](Famous48 Face Recognize Report.docx)
-- [Famous48 Face Recognize Report.pdf](Famous48 Face Recognize Report.pdf)
+- [Famous48 Face Recognize Report.docx](Famous48%20Face%20Recognize%20Report.docx)
+- [Famous48 Face Recognize Report.pdf](Famous48%20Face%20Recognize%20Report.pdf)
 - Haar
     - [HAAR.h](Haar/HAAR.h)
     - [HAAR_2.h](Haar/HAAR_2.h)

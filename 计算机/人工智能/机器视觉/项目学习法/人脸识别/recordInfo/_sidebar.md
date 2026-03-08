@@ -1,2 +1,2 @@
 - [返回上级目录](../_sidebar.md)
-- [打开笔记本.onetoc2](打开笔记本.onetoc2)
+- [打开笔记本.onetoc2](%E6%89%93%E5%BC%80%E7%AC%94%E8%AE%B0%E6%9C%AC.onetoc2)

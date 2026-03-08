@@ -4,5 +4,5 @@
     - [XRRig](OpenXR/XRRig.md)
 - Vuforia
     - [_Vuforia](Vuforia/_Vuforia.md)
-    - [基础介绍](Vuforia/基础介绍.md)
+    - [基础介绍](Vuforia/%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.md)
 - [XR](XR.md)

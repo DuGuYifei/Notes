@@ -1,6 +1,3 @@
-- __pycache__
-    - [catalog.cpython-311.pyc](__pycache__/catalog.cpython-311.pyc)
-    - [catalog_ignore.cpython-311.pyc](__pycache__/catalog_ignore.cpython-311.pyc)
 - 其他学科知识积累
     - DigitTechnologyInBusinessCommunication
         - [DigitTechforBusinessCommunication](其他学科知识积累/DigitTechnologyInBusinessCommunication/DigitTechforBusinessCommunication.md)

@@ -4,9 +4,9 @@
 - [GraphDatabase_neo4j](GraphDatabase_neo4j.md)
 - [KeyValueDatabase_Redis](KeyValueDatabase_Redis.md)
 - appendix
-    - [MongoDB_Dist_lab1.](appendix/MongoDB_Dist_lab1.pdf)
-    - [MongoDB_Dist_lab2.](appendix/MongoDB_Dist_lab2.pdf)
-    - [MongoDB_lab1.](appendix/MongoDB_lab1.pdf)
-    - [MongoDB_lab2.](appendix/MongoDB_lab2.pdf)
+    - [MongoDB_Dist_lab1.pdf](appendix/MongoDB_Dist_lab1.pdf)
+    - [MongoDB_Dist_lab2.pdf](appendix/MongoDB_Dist_lab2.pdf)
+    - [MongoDB_lab1.pdf](appendix/MongoDB_lab1.pdf)
+    - [MongoDB_lab2.pdf](appendix/MongoDB_lab2.pdf)
     - [Mongo_Operations](appendix/Mongo_Operations.md)
     - [Redis的简单应用_超卖](appendix/Redis的简单应用_超卖.md)

@@ -1,7 +1,7 @@
 - [返回上级目录](../_sidebar.md)
-- [HogPython.](HogPython.iml)
+- [HogPython.iml](HogPython.iml)
 - inspectionProfiles
-    - [Project_Default.](inspectionProfiles/Project_Default.xml)
-    - [profiles_settings.](inspectionProfiles/profiles_settings.xml)
-- [misc.](misc.xml)
-- [modules.](modules.xml)
+    - [Project_Default.xml](inspectionProfiles/Project_Default.xml)
+    - [profiles_settings.xml](inspectionProfiles/profiles_settings.xml)
+- [misc.xml](misc.xml)
+- [modules.xml](modules.xml)

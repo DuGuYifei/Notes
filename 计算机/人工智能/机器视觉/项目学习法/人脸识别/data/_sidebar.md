@@ -1,2 +1,2 @@
 - [返回上级目录](../_sidebar.md)
-- [打开笔记本.onet](打开笔记本.onetoc2)
+- [打开笔记本.onetoc2](打开笔记本.onetoc2)

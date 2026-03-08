@@ -1,10 +1,10 @@
 - [返回上级目录](../_sidebar.md)
 - .idea
-    - [HogPython.](.idea/HogPython.iml)
+    - [HogPython.iml](.idea/HogPython.iml)
     - inspectionProfiles
-        - [Project_Default.](.idea/inspectionProfiles/Project_Default.xml)
-        - [profiles_settings.](.idea/inspectionProfiles/profiles_settings.xml)
-    - [misc.](.idea/misc.xml)
-    - [modules.](.idea/modules.xml)
-- [HogTrain](HogTrain.py)
-- [test](test.py)
+        - [Project_Default.xml](.idea/inspectionProfiles/Project_Default.xml)
+        - [profiles_settings.xml](.idea/inspectionProfiles/profiles_settings.xml)
+    - [misc.xml](.idea/misc.xml)
+    - [modules.xml](.idea/modules.xml)
+- [HogTrain.py](HogTrain.py)
+- [test.py](test.py)

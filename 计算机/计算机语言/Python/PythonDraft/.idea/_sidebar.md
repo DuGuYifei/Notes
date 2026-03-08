@@ -1,6 +1,6 @@
 - [返回上级目录](../_sidebar.md)
-- [PythonDraft.](PythonDraft.iml)
+- [PythonDraft.iml](PythonDraft.iml)
 - inspectionProfiles
-    - [profiles_settings.](inspectionProfiles/profiles_settings.xml)
-- [misc.](misc.xml)
-- [modules.](modules.xml)
+    - [profiles_settings.xml](inspectionProfiles/profiles_settings.xml)
+- [misc.xml](misc.xml)
+- [modules.xml](modules.xml)

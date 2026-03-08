@@ -2,24 +2,24 @@
 - [Python](Python.md)
 - PythonDraft
     - .idea
-        - [PythonDraft.](PythonDraft/.idea/PythonDraft.iml)
+        - [PythonDraft.iml](PythonDraft/.idea/PythonDraft.iml)
         - inspectionProfiles
-            - [profiles_settings.](PythonDraft/.idea/inspectionProfiles/profiles_settings.xml)
-        - [misc.](PythonDraft/.idea/misc.xml)
-        - [modules.](PythonDraft/.idea/modules.xml)
-    - [DownloadURL](PythonDraft/DownloadURL.py)
-    - [Email](PythonDraft/Email.py)
+            - [profiles_settings.xml](PythonDraft/.idea/inspectionProfiles/profiles_settings.xml)
+        - [misc.xml](PythonDraft/.idea/misc.xml)
+        - [modules.xml](PythonDraft/.idea/modules.xml)
+    - [DownloadURL.py](PythonDraft/DownloadURL.py)
+    - [Email.py](PythonDraft/Email.py)
 - Python基础
     - Python基础
-        - [打开笔记本.onet](Python基础/Python基础/打开笔记本.onetoc2)
-        - [模块一基础知识.](Python基础/Python基础/模块一基础知识.one)
-        - [模块二_函数和模块.](Python基础/Python基础/模块二_函数和模块.one)
+        - [打开笔记本.onetoc2](Python基础/Python基础/打开笔记本.onetoc2)
+        - [模块一基础知识.one](Python基础/Python基础/模块一基础知识.one)
+        - [模块二_函数和模块.one](Python基础/Python基础/模块二_函数和模块.one)
     - [Python基础](Python基础/Python基础.md)
     - python3.9课件
-        - [python3.9.](Python基础/python3.9课件/python3.9.txt)
+        - [python3.9.txt](Python基础/python3.9课件/python3.9.txt)
 - Python学习日志
-    - [基础.](Python学习日志/基础.one)
-    - [打开笔记本.onet](Python学习日志/打开笔记本.onetoc2)
+    - [基础.one](Python学习日志/基础.one)
+    - [打开笔记本.onetoc2](Python学习日志/打开笔记本.onetoc2)
 - Python知识积累
     - [_KnowledgeAccumulation_Python](Python知识积累/_KnowledgeAccumulation_Python.md)
     - [None和null](Python知识积累/None和null.md)

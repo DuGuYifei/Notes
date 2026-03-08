@@ -1,6 +1,6 @@
 - [返回上级目录](../_sidebar.md)
 - OneNote_RecycleBin
-    - [OneNote_DeletedPages.](OneNote_RecycleBin/OneNote_DeletedPages.one)
-    - [打开笔记本.onet](OneNote_RecycleBin/打开笔记本.onetoc2)
-- [Semester2.](Semester2.one)
-- [打开笔记本.onet](打开笔记本.onetoc2)
+    - [OneNote_DeletedPages.one](OneNote_RecycleBin/OneNote_DeletedPages.one)
+    - [打开笔记本.onetoc2](OneNote_RecycleBin/打开笔记本.onetoc2)
+- [Semester2.one](Semester2.one)
+- [打开笔记本.onetoc2](打开笔记本.onetoc2)

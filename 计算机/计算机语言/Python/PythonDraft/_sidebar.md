@@ -1,9 +1,9 @@
 - [返回上级目录](../_sidebar.md)
 - .idea
-    - [PythonDraft.](.idea/PythonDraft.iml)
+    - [PythonDraft.iml](.idea/PythonDraft.iml)
     - inspectionProfiles
-        - [profiles_settings.](.idea/inspectionProfiles/profiles_settings.xml)
-    - [misc.](.idea/misc.xml)
-    - [modules.](.idea/modules.xml)
-- [DownloadURL](DownloadURL.py)
-- [Email](Email.py)
+        - [profiles_settings.xml](.idea/inspectionProfiles/profiles_settings.xml)
+    - [misc.xml](.idea/misc.xml)
+    - [modules.xml](.idea/modules.xml)
+- [DownloadURL.py](DownloadURL.py)
+- [Email.py](Email.py)

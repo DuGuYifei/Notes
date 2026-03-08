@@ -1,6 +1,6 @@
 - [返回上级目录](../_sidebar.md)
 - ConsoleApp1
     - DesignTimeBuild
-        - [.dtbcache](ConsoleApp1/DesignTimeBuild/.dtbcache.v2)
+        - [.dtbcache.v2](ConsoleApp1/DesignTimeBuild/.dtbcache.v2)
     - v16
-        - [.](ConsoleApp1/v16/.suo)
+        - [.suo](ConsoleApp1/v16/.suo)

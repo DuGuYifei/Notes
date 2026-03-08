@@ -35,7 +35,7 @@
 - Physics
     - Physics
         - OneNote_RecycleBin
-            - [OneNote_DeletedPages.](Physics/Physics/OneNote_RecycleBin/OneNote_DeletedPages.one)
-            - [打开笔记本.onet](Physics/Physics/OneNote_RecycleBin/打开笔记本.onetoc2)
-        - [Semester2.](Physics/Physics/Semester2.one)
-        - [打开笔记本.onet](Physics/Physics/打开笔记本.onetoc2)
+            - [OneNote_DeletedPages.one](Physics/Physics/OneNote_RecycleBin/OneNote_DeletedPages.one)
+            - [打开笔记本.onetoc2](Physics/Physics/OneNote_RecycleBin/打开笔记本.onetoc2)
+        - [Semester2.one](Physics/Physics/Semester2.one)
+        - [打开笔记本.onetoc2](Physics/Physics/打开笔记本.onetoc2)

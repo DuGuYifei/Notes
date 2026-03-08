@@ -12,7 +12,7 @@
     - Hadoop_HBase
         - [Hadoop_HBase](ANDB/Hadoop_HBase/Hadoop_HBase.md)
     - Hadoop_Pig
-        - [AZTNBD_Pig.](ANDB/Hadoop_Pig/AZTNBD_Pig.pdf)
+        - [AZTNBD_Pig.pdf](ANDB/Hadoop_Pig/AZTNBD_Pig.pdf)
         - [Hadoop_Pig](ANDB/Hadoop_Pig/Hadoop_Pig.md)
     - Hive
         - [Hive](ANDB/Hive/Hive.md)
@@ -24,9 +24,9 @@
     - [GraphDatabase_neo4j](NDB/GraphDatabase_neo4j.md)
     - [KeyValueDatabase_Redis](NDB/KeyValueDatabase_Redis.md)
     - appendix
-        - [MongoDB_Dist_lab1.](NDB/appendix/MongoDB_Dist_lab1.pdf)
-        - [MongoDB_Dist_lab2.](NDB/appendix/MongoDB_Dist_lab2.pdf)
-        - [MongoDB_lab1.](NDB/appendix/MongoDB_lab1.pdf)
-        - [MongoDB_lab2.](NDB/appendix/MongoDB_lab2.pdf)
+        - [MongoDB_Dist_lab1.pdf](NDB/appendix/MongoDB_Dist_lab1.pdf)
+        - [MongoDB_Dist_lab2.pdf](NDB/appendix/MongoDB_Dist_lab2.pdf)
+        - [MongoDB_lab1.pdf](NDB/appendix/MongoDB_lab1.pdf)
+        - [MongoDB_lab2.pdf](NDB/appendix/MongoDB_lab2.pdf)
         - [Mongo_Operations](NDB/appendix/Mongo_Operations.md)
         - [Redis的简单应用_超卖](NDB/appendix/Redis的简单应用_超卖.md)

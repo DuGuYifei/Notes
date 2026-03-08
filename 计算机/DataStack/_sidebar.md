@@ -69,8 +69,8 @@
         - [corr()](BigData/Spark/corr().md)
         - [countByKey_items](BigData/Spark/countByKey_items.md)
         - [createDataFrame](BigData/Spark/createDataFrame.md)
-        - [dbc_spark_tutorial.h](BigData/Spark/dbc_spark_tutorial.html)
-        - [dbc_word_count.h](BigData/Spark/dbc_word_count.html)
+        - [dbc_spark_tutorial.html](BigData/Spark/dbc_spark_tutorial.html)
+        - [dbc_word_count.html](BigData/Spark/dbc_word_count.html)
         - [describe基础统计](BigData/Spark/describe基础统计.md)
         - [drop](BigData/Spark/drop.md)
         - [dropDuplicates](BigData/Spark/dropDuplicates.md)
@@ -161,7 +161,7 @@
             - Hadoop_HBase
                 - [Hadoop_HBase](数据库/NoSQL/ANDB/Hadoop_HBase/Hadoop_HBase.md)
             - Hadoop_Pig
-                - [AZTNBD_Pig.](数据库/NoSQL/ANDB/Hadoop_Pig/AZTNBD_Pig.pdf)
+                - [AZTNBD_Pig.pdf](数据库/NoSQL/ANDB/Hadoop_Pig/AZTNBD_Pig.pdf)
                 - [Hadoop_Pig](数据库/NoSQL/ANDB/Hadoop_Pig/Hadoop_Pig.md)
             - Hive
                 - [Hive](数据库/NoSQL/ANDB/Hive/Hive.md)
@@ -173,10 +173,10 @@
             - [GraphDatabase_neo4j](数据库/NoSQL/NDB/GraphDatabase_neo4j.md)
             - [KeyValueDatabase_Redis](数据库/NoSQL/NDB/KeyValueDatabase_Redis.md)
             - appendix
-                - [MongoDB_Dist_lab1.](数据库/NoSQL/NDB/appendix/MongoDB_Dist_lab1.pdf)
-                - [MongoDB_Dist_lab2.](数据库/NoSQL/NDB/appendix/MongoDB_Dist_lab2.pdf)
-                - [MongoDB_lab1.](数据库/NoSQL/NDB/appendix/MongoDB_lab1.pdf)
-                - [MongoDB_lab2.](数据库/NoSQL/NDB/appendix/MongoDB_lab2.pdf)
+                - [MongoDB_Dist_lab1.pdf](数据库/NoSQL/NDB/appendix/MongoDB_Dist_lab1.pdf)
+                - [MongoDB_Dist_lab2.pdf](数据库/NoSQL/NDB/appendix/MongoDB_Dist_lab2.pdf)
+                - [MongoDB_lab1.pdf](数据库/NoSQL/NDB/appendix/MongoDB_lab1.pdf)
+                - [MongoDB_lab2.pdf](数据库/NoSQL/NDB/appendix/MongoDB_lab2.pdf)
                 - [Mongo_Operations](数据库/NoSQL/NDB/appendix/Mongo_Operations.md)
                 - [Redis的简单应用_超卖](数据库/NoSQL/NDB/appendix/Redis的简单应用_超卖.md)
     - SQL

@@ -1,7 +1,7 @@
 - [返回上级目录](../_sidebar.md)
 - Physics
     - OneNote_RecycleBin
-        - [OneNote_DeletedPages.](Physics/OneNote_RecycleBin/OneNote_DeletedPages.one)
-        - [打开笔记本.onet](Physics/OneNote_RecycleBin/打开笔记本.onetoc2)
-    - [Semester2.](Physics/Semester2.one)
-    - [打开笔记本.onet](Physics/打开笔记本.onetoc2)
+        - [OneNote_DeletedPages.one](Physics/OneNote_RecycleBin/OneNote_DeletedPages.one)
+        - [打开笔记本.onetoc2](Physics/OneNote_RecycleBin/打开笔记本.onetoc2)
+    - [Semester2.one](Physics/Semester2.one)
+    - [打开笔记本.onetoc2](Physics/打开笔记本.onetoc2)

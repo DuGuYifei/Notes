@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
-- [Project_Default.](Project_Default.xml)
-- [profiles_settings.](profiles_settings.xml)
+- [Project_Default.xml](Project_Default.xml)
+- [profiles_settings.xml](profiles_settings.xml)

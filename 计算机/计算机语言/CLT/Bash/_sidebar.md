@@ -1,5 +1,5 @@
 - [返回上级目录](../_sidebar.md)
-- [BianYudong_Task1](BianYudong_Task1.sh)
+- [BianYudong_Task1.sh](BianYudong_Task1.sh)
 - [LinuxBash](LinuxBash.md)
-- [access.](access.log)
+- [access.log](access.log)
 - [vim](vim.md)

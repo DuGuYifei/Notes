@@ -10,7 +10,7 @@
 - Hadoop_HBase
     - [Hadoop_HBase](Hadoop_HBase/Hadoop_HBase.md)
 - Hadoop_Pig
-    - [AZTNBD_Pig.](Hadoop_Pig/AZTNBD_Pig.pdf)
+    - [AZTNBD_Pig.pdf](Hadoop_Pig/AZTNBD_Pig.pdf)
     - [Hadoop_Pig](Hadoop_Pig/Hadoop_Pig.md)
 - Hive
     - [Hive](Hive/Hive.md)

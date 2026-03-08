@@ -1,3 +1,3 @@
 - [返回上级目录](../_sidebar.md)
-- [基础.](基础.one)
-- [打开笔记本.onet](打开笔记本.onetoc2)
+- [基础.one](基础.one)
+- [打开笔记本.onetoc2](打开笔记本.onetoc2)

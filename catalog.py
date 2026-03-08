@@ -3,6 +3,13 @@ from pathlib import Path
 
 from catalog_ignore import IGNORE_FILES, IGNORE_DIRS
 
+
+def format_entry_name(full_path: Path) -> str:
+    """Show markdown files without extension; keep extension for downloadable files."""
+    if full_path.suffix.lower() in {".md", ".markdown"}:
+        return full_path.stem
+    return full_path.name
+
 def generate_sidebar(path, visible_root):
     ignore_files = IGNORE_FILES
     ignore_dirs = IGNORE_DIRS
@@ -27,7 +34,8 @@ def generate_sidebar(path, visible_root):
             # 相对于 visible_root 计算路径
             rel_path = full_path.relative_to(visible_root).as_posix()
             print(rel_path)
-            entries.append(f"- [{entry[:-3]}]({rel_path})")
+            entry_name = format_entry_name(full_path)
+            entries.append(f"- [{entry_name}]({rel_path})")
 
     if entries:
         sidebar_path = Path(path) / "_sidebar.md"

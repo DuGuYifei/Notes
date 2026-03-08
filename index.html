@@ -21,6 +21,13 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" /> -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+  <style>
+    a.download-link::after {
+      content: " \2B07";
+      font-size: 0.85em;
+      opacity: 0.68;
+    }
+  </style>
 </head>
 
 <body>
@@ -64,7 +71,7 @@
       latex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']], // default
         displayMath: [['$$', '$$']],               // default
-      }
+      },
       // plugins: [
       //   function reload_page(hook, vm) {
       //     // hook.init(function () {
@@ -99,6 +106,41 @@
       //     });
       //   },
       // ],
+      plugins: [
+        function rewriteNonMarkdownHashLinks(hook) {
+          var fileExtPattern = /\.[a-z0-9]+(?:$|[?#])/i;
+          var markdownPattern = /\.(md|markdown)(?:$|[?#])/i;
+
+          function rewriteLinks() {
+            var links = document.querySelectorAll('a[href^="#/"]');
+            links.forEach(function (link) {
+              var href = link.getAttribute('href');
+              if (!href) return;
+
+              var hashPath = href.slice(2);
+              var decodedPath = hashPath;
+              try {
+                decodedPath = decodeURIComponent(hashPath);
+              } catch (e) {
+                decodedPath = hashPath;
+              }
+
+              if (!fileExtPattern.test(decodedPath) || markdownPattern.test(decodedPath)) {
+                return;
+              }
+
+              var realPath = hashPath.replace(/^\/+/, '');
+              link.setAttribute('href', realPath);
+              link.setAttribute('download', '');
+              link.setAttribute('data-no-sw', 'true');
+              link.classList.add('download-link');
+            });
+          }
+
+          hook.ready(rewriteLinks);
+          hook.doneEach(rewriteLinks);
+        },
+      ],
     };
   </script>
   <!-- Docsify v4 -->

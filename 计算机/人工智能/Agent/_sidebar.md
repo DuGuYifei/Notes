@@ -1,0 +1,12 @@
+- [返回上级目录](../_sidebar.md)
+- [_Agent](_Agent.md)
+- AgentGoogleWhitepaper
+    - [_AgentGoogleWhitepaper](AgentGoogleWhitepaper/_AgentGoogleWhitepaper.md)
+    - [01_Introduction_to_Agents_Whitepaper](AgentGoogleWhitepaper/01_Introduction_to_Agents_Whitepaper.md)
+    - [02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper](AgentGoogleWhitepaper/02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper.md)
+    - [03_Context_Engineering_Sessions_Memory_Whitepaper](AgentGoogleWhitepaper/03_Context_Engineering_Sessions_Memory_Whitepaper.md)
+    - [04_Agent_Quality_Whitepaper](AgentGoogleWhitepaper/04_Agent_Quality_Whitepaper.md)
+- 通用型Agent
+    - [_通用型Agent](通用型Agent/_%E9%80%9A%E7%94%A8%E5%9E%8BAgent.md)
+    - OpenClaw
+        - [_OpenClaw](通用型Agent/OpenClaw/_OpenClaw.md)

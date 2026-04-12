@@ -41,6 +41,7 @@
     - [计算机更新卡在logo界面不更新解决办法](_小知识积累/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9B%B4%E6%96%B0%E5%8D%A1%E5%9C%A8logo%E7%95%8C%E9%9D%A2%E4%B8%8D%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.md)
     - [链接wifi蓝屏](_小知识积累/%E9%93%BE%E6%8E%A5wifi%E8%93%9D%E5%B1%8F.md)
 - AgentSystem
+    - [_AgentSystem](AgentSystem/_AgentSystem.md)
     - Jade
         - [_Jade](AgentSystem/Jade/_Jade.md)
         - [AID](AgentSystem/Jade/AID.md)
@@ -322,10 +323,18 @@
         - [softmax函数计算时候为什么要减去一个最大值](人工智能/AI算法/softmax%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%87%8F%E5%8E%BB%E4%B8%80%E4%B8%AA%E6%9C%80%E5%A4%A7%E5%80%BC.md)
         - [网格搜索](人工智能/AI算法/%E7%BD%91%E6%A0%BC%E6%90%9C%E7%B4%A2.md)
         - [轮廓查找](人工智能/AI算法/%E8%BD%AE%E5%BB%93%E6%9F%A5%E6%89%BE.md)
-    - AgentGoogleWhitepaper
-        - [_AgentGoogleWhitepaper](人工智能/AgentGoogleWhitepaper/_AgentGoogleWhitepaper.md)
-        - [01_Introduction_to_Agents_Whitepaper](人工智能/AgentGoogleWhitepaper/01_Introduction_to_Agents_Whitepaper.md)
-        - [02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper](人工智能/AgentGoogleWhitepaper/02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper.md)
+    - Agent
+        - [_Agent](人工智能/Agent/_Agent.md)
+        - AgentGoogleWhitepaper
+            - [_AgentGoogleWhitepaper](人工智能/Agent/AgentGoogleWhitepaper/_AgentGoogleWhitepaper.md)
+            - [01_Introduction_to_Agents_Whitepaper](人工智能/Agent/AgentGoogleWhitepaper/01_Introduction_to_Agents_Whitepaper.md)
+            - [02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper](人工智能/Agent/AgentGoogleWhitepaper/02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper.md)
+            - [03_Context_Engineering_Sessions_Memory_Whitepaper](人工智能/Agent/AgentGoogleWhitepaper/03_Context_Engineering_Sessions_Memory_Whitepaper.md)
+            - [04_Agent_Quality_Whitepaper](人工智能/Agent/AgentGoogleWhitepaper/04_Agent_Quality_Whitepaper.md)
+        - 通用型Agent
+            - [_通用型Agent](人工智能/Agent/通用型Agent/_%E9%80%9A%E7%94%A8%E5%9E%8BAgent.md)
+            - OpenClaw
+                - [_OpenClaw](人工智能/Agent/通用型Agent/OpenClaw/_OpenClaw.md)
     - LLM
         - [_LLM](人工智能/LLM/_LLM.md)
         - [Fine-tuning](人工智能/LLM/Fine-tuning.md)
@@ -556,10 +565,6 @@
     - 环境搭建
         - [_环境搭建anaconda](人工智能/环境搭建/_%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAanaconda.md)
     - [词汇收集](人工智能/%E8%AF%8D%E6%B1%87%E6%94%B6%E9%9B%86.md)
-    - 通用型Agent
-        - [_通用型Agent](人工智能/通用型Agent/_%E9%80%9A%E7%94%A8%E5%9E%8BAgent.md)
-        - OpenClaw
-            - [_OpenClaw](人工智能/通用型Agent/OpenClaw/_OpenClaw.md)
 - 分布式处理和多线程
     - [_DistributedSystem](分布式处理和多线程/_DistributedSystem.md)
     - [CommunicationPatternsInDistributedApplications](分布式处理和多线程/CommunicationPatternsInDistributedApplications.md)

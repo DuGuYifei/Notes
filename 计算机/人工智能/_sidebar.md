@@ -12,10 +12,18 @@
     - [softmax函数计算时候为什么要减去一个最大值](AI算法/softmax%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%87%8F%E5%8E%BB%E4%B8%80%E4%B8%AA%E6%9C%80%E5%A4%A7%E5%80%BC.md)
     - [网格搜索](AI算法/%E7%BD%91%E6%A0%BC%E6%90%9C%E7%B4%A2.md)
     - [轮廓查找](AI算法/%E8%BD%AE%E5%BB%93%E6%9F%A5%E6%89%BE.md)
-- AgentGoogleWhitepaper
-    - [_AgentGoogleWhitepaper](AgentGoogleWhitepaper/_AgentGoogleWhitepaper.md)
-    - [01_Introduction_to_Agents_Whitepaper](AgentGoogleWhitepaper/01_Introduction_to_Agents_Whitepaper.md)
-    - [02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper](AgentGoogleWhitepaper/02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper.md)
+- Agent
+    - [_Agent](Agent/_Agent.md)
+    - AgentGoogleWhitepaper
+        - [_AgentGoogleWhitepaper](Agent/AgentGoogleWhitepaper/_AgentGoogleWhitepaper.md)
+        - [01_Introduction_to_Agents_Whitepaper](Agent/AgentGoogleWhitepaper/01_Introduction_to_Agents_Whitepaper.md)
+        - [02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper](Agent/AgentGoogleWhitepaper/02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper.md)
+        - [03_Context_Engineering_Sessions_Memory_Whitepaper](Agent/AgentGoogleWhitepaper/03_Context_Engineering_Sessions_Memory_Whitepaper.md)
+        - [04_Agent_Quality_Whitepaper](Agent/AgentGoogleWhitepaper/04_Agent_Quality_Whitepaper.md)
+    - 通用型Agent
+        - [_通用型Agent](Agent/通用型Agent/_%E9%80%9A%E7%94%A8%E5%9E%8BAgent.md)
+        - OpenClaw
+            - [_OpenClaw](Agent/通用型Agent/OpenClaw/_OpenClaw.md)
 - LLM
     - [_LLM](LLM/_LLM.md)
     - [Fine-tuning](LLM/Fine-tuning.md)
@@ -246,7 +254,3 @@
 - 环境搭建
     - [_环境搭建anaconda](环境搭建/_%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAanaconda.md)
 - [词汇收集](%E8%AF%8D%E6%B1%87%E6%94%B6%E9%9B%86.md)
-- 通用型Agent
-    - [_通用型Agent](通用型Agent/_%E9%80%9A%E7%94%A8%E5%9E%8BAgent.md)
-    - OpenClaw
-        - [_OpenClaw](通用型Agent/OpenClaw/_OpenClaw.md)

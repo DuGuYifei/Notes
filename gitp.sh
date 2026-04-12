@@ -1,3 +1,6 @@
+git stash push -u
+git pull
+git stash pop
 git add .
 WEEKDAY=$(date '+%a')
 case $WEEKDAY in

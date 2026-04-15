@@ -373,12 +373,14 @@
                 - [02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper](计算机/人工智能/Agent/AgentGoogleWhitepaper/02_Agent_Tools_and_Interoperability_with_MCP_Whitepaper.md)
                 - [03_Context_Engineering_Sessions_Memory_Whitepaper](计算机/人工智能/Agent/AgentGoogleWhitepaper/03_Context_Engineering_Sessions_Memory_Whitepaper.md)
                 - [04_Agent_Quality_Whitepaper](计算机/人工智能/Agent/AgentGoogleWhitepaper/04_Agent_Quality_Whitepaper.md)
+                - [05_Prototype_to_Production_Whitepaper](计算机/人工智能/Agent/AgentGoogleWhitepaper/05_Prototype_to_Production_Whitepaper.md)
             - 通用型Agent
                 - [_通用型Agent](计算机/人工智能/Agent/通用型Agent/_%E9%80%9A%E7%94%A8%E5%9E%8BAgent.md)
                 - OpenClaw
                     - [_OpenClaw](计算机/人工智能/Agent/通用型Agent/OpenClaw/_OpenClaw.md)
         - LLM
             - [_LLM](计算机/人工智能/LLM/_LLM.md)
+            - [BLUE和ROUGE](计算机/人工智能/LLM/BLUE%E5%92%8CROUGE.md)
             - [Fine-tuning](计算机/人工智能/LLM/Fine-tuning.md)
             - [GraphRAG](计算机/人工智能/LLM/GraphRAG.md)
             - [LoRA](计算机/人工智能/LLM/LoRA.md)

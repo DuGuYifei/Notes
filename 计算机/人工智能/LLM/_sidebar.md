@@ -1,5 +1,6 @@
 - [返回上级目录](../_sidebar.md)
 - [_LLM](_LLM.md)
+- [BLUE和ROUGE](BLUE%E5%92%8CROUGE.md)
 - [Fine-tuning](Fine-tuning.md)
 - [GraphRAG](GraphRAG.md)
 - [LoRA](LoRA.md)

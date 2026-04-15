@@ -4,6 +4,7 @@
 1. [Fine-tuning](Fine-tuning.md)
 2. [RAG](RAG.md)
 3. [GraphRAG](GraphRAG.md)
+4. [BLUE和ROUGE](BLUE和ROUGE.md)
 
 ## 实操
 

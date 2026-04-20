@@ -27,3 +27,13 @@ public是用来存放静态资源的，比如图片、字体、favicon.ico等，
 
 
 ### page 模式
+
+文件夹格式：
+```
+pages
+├── api
+│   └── icon.js          // API 路由
+├── index.js             // /
+├── pagename
+│   └── [slug].js        // /pagename/:slug
+```

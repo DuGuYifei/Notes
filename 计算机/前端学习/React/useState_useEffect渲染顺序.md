@@ -31,4 +31,4 @@ function Example() {
 ```
 
 顺序：
-useState -> 渲染 -> useEffect
+render(执行函数组件 + useState) → commit(更新DOM) → useEffect执行

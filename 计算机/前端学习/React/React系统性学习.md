@@ -2945,7 +2945,7 @@ function TabSwitcher() {
 
 ### 16.1 高阶组件（HOC）
 
-HOC 是一个接受组件、返回增强组件的函数：
+HOC（Higher-Order Component） 是一个接受组件、返回增强组件的函数：
 
 ```jsx
 // 权限控制 HOC

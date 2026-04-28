@@ -539,6 +539,23 @@ function ProductPage() {
 
 Props 是**只读**的，子组件不能修改它。
 
+**简单案例**：
+
+```jsx
+// 父组件持有数据，通过 props 传给子组件
+function Parent() {
+  const user = { name: '张三', age: 28 }
+  return <Child user={user} greeting="你好" />
+}
+
+function Child({ user, greeting }) {
+  // ❌ 不能修改 props
+  // user.name = '李四'
+
+  return <p>{greeting}，{user.name}！你今年 {user.age} 岁。</p>
+}
+```
+
 ```jsx
 // 复杂 props 示例
 function DataTable({ columns, data, loading, pagination, onSort, onRowClick, renderActions }) {
@@ -604,6 +621,31 @@ function DataTable({ columns, data, loading, pagination, onSort, onRowClick, ren
 
 通过**回调函数** props 实现：
 
+**简单案例**：
+
+```jsx
+// 父组件传入回调，子组件调用时把数据"还给"父组件
+function Parent() {
+  const [msg, setMsg] = useState('（等待子组件输入）')
+  return (
+    <div>
+      <p>父组件收到：{msg}</p>
+      <Child onSend={setMsg} />
+    </div>
+  )
+}
+
+function Child({ onSend }) {
+  const [input, setInput] = useState('')
+  return (
+    <>
+      <input value={input} onChange={e => setInput(e.target.value)} />
+      <button onClick={() => onSend(input)}>发送给父组件</button>
+    </>
+  )
+}
+```
+
 ```jsx
 // 父组件持有状态，子组件通过回调修改
 function FilterableList() {
@@ -651,6 +693,29 @@ function FilterableList() {
 
 **状态提升（Lifting State Up）**：将共享状态提升到最近公共祖先：
 
+**简单案例**：
+
+```jsx
+// 兄弟组件 A 和 B 无法直接通信，把共享状态提到父组件
+function Parent() {
+  const [count, setCount] = useState(0)
+  return (
+    <>
+      <ButtonA onIncrement={() => setCount(c => c + 1)} />
+      <DisplayB count={count} />
+    </>
+  )
+}
+
+function ButtonA({ onIncrement }) {
+  return <button onClick={onIncrement}>+1</button>
+}
+
+function DisplayB({ count }) {
+  return <p>当前计数：{count}</p>
+}
+```
+
 ```jsx
 // ❌ 兄弟组件无法直接通信
 function SearchBox() { /* 不知道 ResultList 的存在 */ }
@@ -687,6 +752,40 @@ function SearchPage() {
 ### 4.4 跨层通信
 
 **Context**：避免 props drilling（多层透传）：
+
+**简单案例**：
+
+```jsx
+// 不用 Context：每层都要手动传 theme（props drilling）
+// <App theme="dark">
+//   <Layout theme="dark">
+//     <Sidebar theme="dark">
+//       <Button theme="dark" />   ← 只有这里需要，却穿透了3层
+
+// 用 Context：直接跨层获取
+const ThemeContext = createContext('light')
+
+function App() {
+  return (
+    <ThemeContext.Provider value="dark">
+      <Layout />   {/* 中间层不需要感知 theme */}
+    </ThemeContext.Provider>
+  )
+}
+
+function Layout() {
+  return <Sidebar />   // 不需要传 theme
+}
+
+function Sidebar() {
+  return <Button />    // 不需要传 theme
+}
+
+function Button() {
+  const theme = useContext(ThemeContext)  // 直接取到 "dark"
+  return <button className={`btn--${theme}`}>点我</button>
+}
+```
 
 ```jsx
 // 创建 Context

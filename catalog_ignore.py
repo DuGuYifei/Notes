@@ -1,6 +1,6 @@
 # ---------- Your precise ignore rules ----------
 IGNORE_FILES = {
-    "gitp.cmd", "gitp.sh", "gitpf.cmd", "_sidebar.md", "README.md",
+    "gitp.cmd", "gitp.sh", "gitpf.cmd", "gitpf.sh", "_sidebar.md", "README.md",
     ".gitignore", ".nojekyll", "catalog.py", "catalog_graph.py", "catalog_ignore.py",
     "index.html", "CNAME", "_404.md", "_navbar.md", "graph.html"
 }

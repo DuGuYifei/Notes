@@ -2,6 +2,10 @@
 
 [Introduction to Agents](https://drive.google.com/file/d/1C-HvqgxM7dj4G2kCQLnuMXi1fTpXRdpx/view)
 
+**Agents are the natural evolution of Language Models, made useful in software.**
+
+**Agents 是语言模型的自然进化，在软件中变得有用。**
+
 - [1. AI 智能体简介 (Introduction to AI Agents)](#1-ai-智能体简介-introduction-to-ai-agents)
   - [1.1. 智能体式问题解决过程 (The Agentic Problem-Solving Process)](#11-智能体式问题解决过程-the-agentic-problem-solving-process)
 - [2. 智能体系统分类法 (A Taxonomy of Agentic Systems)](#2-智能体系统分类法-a-taxonomy-of-agentic-systems)

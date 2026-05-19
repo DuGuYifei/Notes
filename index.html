@@ -107,6 +107,16 @@
       //   },
       // ],
       plugins: [
+        function fixBoldBeforeChinesePunctuation(hook) {
+          hook.beforeEach(function (markdown) {
+            return markdown.replace(
+              /\*\*([^*\n]+?)\*\*(?=[：，。；、！？])/g,
+              function (_, text) {
+                return '<strong>' + text + '</strong>';
+              }
+            );
+          });
+        },
         function rewriteNonMarkdownHashLinks(hook) {
           var fileExtPattern = /\.[a-z0-9]+(?:$|[?#])/i;
           var markdownPattern = /\.(md|markdown)(?:$|[?#])/i;
@@ -202,7 +212,6 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 
   <!-- 数学 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
   <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
 </body>

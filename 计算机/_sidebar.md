@@ -26,6 +26,7 @@
     - [ssh配置文件位置和权限问题](_小知识积累/ssh%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE%E5%92%8C%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98.md)
     - [ventoy装系统工具](_小知识积累/ventoy%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7.md)
     - [vscode和wsl配置cpp环境](_小知识积累/vscode%E5%92%8Cwsl%E9%85%8D%E7%BD%AEcpp%E7%8E%AF%E5%A2%83.md)
+    - [wsl访问windows的vpn用与不用mirrornet](_小知识积累/wsl%E8%AE%BF%E9%97%AEwindows%E7%9A%84vpn%E7%94%A8%E4%B8%8E%E4%B8%8D%E7%94%A8mirrornet.md)
     - [【WSL】Windows下Linux子系统](_小知识积累/%E3%80%90WSL%E3%80%91Windows%E4%B8%8BLinux%E5%AD%90%E7%B3%BB%E7%BB%9F.md)
     - [三元问号直接接属性](_小知识积累/%E4%B8%89%E5%85%83%E9%97%AE%E5%8F%B7%E7%9B%B4%E6%8E%A5%E6%8E%A5%E5%B1%9E%E6%80%A7.md)
     - [中文用户名导致软件打不开解决方案](_小知识积累/%E4%B8%AD%E6%96%87%E7%94%A8%E6%88%B7%E5%90%8D%E5%AF%BC%E8%87%B4%E8%BD%AF%E4%BB%B6%E6%89%93%E4%B8%8D%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)

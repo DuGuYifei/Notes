@@ -18,6 +18,16 @@ firewall=true
 
 ## 不用mirrornet
 
+```bash
+powershell.exe -ExecutionPolicy Bypass -File .\setup-wsl-proxy.ps1
+```
+
+```bash
+source ~/.config/wsl-windows-proxy.sh
+env | grep -iE '^(http|https|all|no)_proxy='
+curl -I --connect-timeout 5 --max-time 15 https://www.google.com
+```
+
 ```powershell
 [CmdletBinding()]
 param(

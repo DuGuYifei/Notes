@@ -91,4 +91,5 @@
         - [13A - CN TCP  UDP protocols. Flow and congestion control v 2023.pdf](计算机网络/系统学习_计算机网络/13A%20-%20CN%20TCP%20%20UDP%20protocols.%20Flow%20and%20congestion%20control%20v%202023.pdf)
         - [14C - Computer Networks-Network security.pdf](计算机网络/系统学习_计算机网络/14C%20-%20Computer%20Networks-Network%20security.pdf)
         - [15C - Computer Networks-Services and applications.pdf](计算机网络/系统学习_计算机网络/15C%20-%20Computer%20Networks-Services%20and%20applications.pdf)
+    - [长连接和多路复用](计算机网络/%E9%95%BF%E8%BF%9E%E6%8E%A5%E5%92%8C%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8.md)
     - [队头阻塞](计算机网络/%E9%98%9F%E5%A4%B4%E9%98%BB%E5%A1%9E.md)

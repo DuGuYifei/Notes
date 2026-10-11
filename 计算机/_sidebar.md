@@ -40,6 +40,7 @@
     - [繁体中文和简体中文快捷键切换](_小知识积累/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87%E5%92%8C%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%87%E6%8D%A2.md)
     - [解决端口不能使用Hyper-v导致](_小知识积累/%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8Hyper-v%E5%AF%BC%E8%87%B4.md)
     - [计算机更新卡在logo界面不更新解决办法](_小知识积累/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9B%B4%E6%96%B0%E5%8D%A1%E5%9C%A8logo%E7%95%8C%E9%9D%A2%E4%B8%8D%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.md)
+    - [让服务器连接本地VPN](_小知识积累/%E8%AE%A9%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%9E%E6%8E%A5%E6%9C%AC%E5%9C%B0VPN.md)
     - [链接wifi蓝屏](_小知识积累/%E9%93%BE%E6%8E%A5wifi%E8%93%9D%E5%B1%8F.md)
 - AgentSystem
     - [_AgentSystem](AgentSystem/_AgentSystem.md)
